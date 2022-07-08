@@ -1,0 +1,4 @@
+# `tsc` output directory.
+dist
+
+node_modules
