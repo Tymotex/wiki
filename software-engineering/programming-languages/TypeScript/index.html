@@ -4,14 +4,20 @@
 <script src=https://tymotex.github.io/wiki/js/popover.688c5dcb89a57776d7f1cbeaf6f7c44b.min.js></script>
 <script src=https://tymotex.github.io/wiki/js/code-title.b35124ad8db0ba37162b886afb711cbc.min.js></script>
 <script src=https://tymotex.github.io/wiki/js/clipboard.de8d8b2221fe27323078cbd76188e364.min.js></script>
-<script>const BASE_URL="https://tymotex.github.io/wiki/",fetchData=Promise.all([fetch("https://tymotex.github.io/wiki/indices/linkIndex.be4f0994810f0687a3a63711cf7e023d.min.json").then(e=>e.json()).then(e=>({index:e.index,links:e.links})),fetch("https://tymotex.github.io/wiki/indices/contentIndex.0342d23b3af60c308957002a75e4640a.min.json").then(e=>e.json())]).then(([{index:e,links:t},n])=>({index:e,links:t,content:n})),render=()=>{const n=new URL(BASE_URL),s=n.pathname,o=window.location.pathname,i=s==o;addCopyButtons(),addTitleToCodeBlocks();const e=document.getElementById("graph-container");if(!e)return requestAnimationFrame(render);e.textContent="";const t=i&&!1;drawGraph("https://tymotex.github.io/wiki",t,[{"/moc":"#4388cc"}],t?{centerForce:1,depth:-1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.5,linkDistance:1,opacityScale:3,repelForce:1,scale:1.4}:{centerForce:1,depth:1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.6,linkDistance:1,opacityScale:3,repelForce:2,scale:1.2}),initPopover("https://tymotex.github.io/wiki",!0,!0)},init=(e=document)=>{addCopyButtons(),addTitleToCodeBlocks(),renderMathInElement(e.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],throwOnError:!1})}</script><script type=module>
+<script>const BASE_URL="https://tymotex.github.io/wiki/",fetchData=Promise.all([fetch("https://tymotex.github.io/wiki/indices/linkIndex.571edf660f70f7d149c655c5563652c5.min.json").then(e=>e.json()).then(e=>({index:e.index,links:e.links})),fetch("https://tymotex.github.io/wiki/indices/contentIndex.bf202e3c0000182e44856e6e4bda5ad4.min.json").then(e=>e.json())]).then(([{index:e,links:t},n])=>({index:e,links:t,content:n})),render=()=>{const n=new URL(BASE_URL),s=n.pathname,o=window.location.pathname,i=s==o;addCopyButtons(),addTitleToCodeBlocks();const e=document.getElementById("graph-container");if(!e)return requestAnimationFrame(render);e.textContent="";const t=i&&!1;drawGraph("https://tymotex.github.io/wiki",t,[{"/moc":"#4388cc"}],t?{centerForce:1,depth:-1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.5,linkDistance:1,opacityScale:3,repelForce:1,scale:1.4}:{centerForce:1,depth:1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.6,linkDistance:1,opacityScale:3,repelForce:2,scale:1.2}),initPopover("https://tymotex.github.io/wiki",!0,!0)},init=(e=document)=>{addCopyButtons(),addTitleToCodeBlocks(),renderMathInElement(e.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],throwOnError:!1})}</script><script type=module>
     import { attachSPARouting } from "https:\/\/tymotex.github.io\/wiki\/js\/router.9d4974281069e9ebb189f642ae1e3ca2.min.js"
     attachSPARouting(init, render)
   </script></head><script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-XYFD95KB4J",{anonymize_ip:!1})}</script><body><div id=search-container><div id=search-space><input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something..."><div id=results-container></div></div></div><script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
 <script defer src=https://tymotex.github.io/wiki/js/search.cf33b507388f3dfd5513a2afcda7af41.min.js></script><div class=singlePage><header><h1 id=page-title><a href=https://tymotex.github.io/wiki/>🪴 Quartz 3.2</a></h1><svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg><div class=spacer></div><div class=darkmode><input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
-<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg></label><label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg></label></div></header><article><p class=meta>Last updated July 8, 2022.</p><ul class=tags></ul><aside class=mainTOC><details><summary>Table of Contents</summary><nav id=TableOfContents><ol><li><a href=#setup>Setup</a><ol><li><a href=#tsconfigjson>tsconfig.json</a></li></ol></li><li><a href=#typing>Typing</a></li></ol></nav></details></aside><p>TypeScript is a programming language made by Microsoft that is <em>superset</em> of <a href=/wiki/software-engineering/programming-languages/JavaScript rel=noopener class=internal-link data-src=/wiki/software-engineering/programming-languages/JavaScript>JavaScript</a>. The reason that TypeScript exists is to make complex JavaScript projects more maintainable and less error-prone by introducing a <a class="internal-link broken">static</a> and <a class="internal-link broken">strong</a> type system. Essentially, it just gives developers a lot of quality-of-life improvements over JavaScript.</p><p>TypeScript gets compiled (or more precisely, &lsquo;<em>transpiled</em>&rsquo;) to JavaScript in the end. This is not new, languages like CoffeeScript, Dart, Scala, etc. can all have JavaScript as what we call a <em>compilation target</em>.</p><p><strong>Why TypeScript is
-<a href=https://survey.stackoverflow.co/2022/#most-loved-dreaded-and-wanted-language-love-dread rel=noopener>loved</a></strong></p><ul><li>Your IDE/editor gets more information about your code and give you very helpful intellisense and code-completion that is not possible with JavaScript. This reason alone, in my experience, pretty much negates any loss in developer velocity from using TypeScript over JavaScript.</li><li>Many errors will surface <em>as you&rsquo;re developing</em> rather than after your code is deployed to production and angry customers complain to you.</li><li>Types serve as a very useful form of documentation for how your functions are to be used and fields an object should contain. You can have a lot more confidence in refactoring a function when you have confidence about what the input types are.</li><li>Complex objects are much <em>less unpleasant</em> to work with. You&rsquo;ll know what its <em>shape</em> is (basically what properties it has and what its nested objects look like), what properties are compulsory or optional and you&rsquo;ll actually know when you&rsquo;ve mispelt a property name.</li><li>You&rsquo;ll <em>almost</em> never have <code>cannot read property '...' of undefined</code> again with <em>non-nullable types</em>.</li></ul><p>The only main reasons <em>not</em> to use TypeScript are because:</p><ul><li>You&rsquo;re stuck with a legacy JavaScript codebase.</li><li>You or your teammates are not willing to learn it, and you need to produce output fast in the short-term (like in a hackathon).</li><li>The project is a very simple or one-off thing that it&rsquo;s not worth setting up the build system.</li></ul><a href=#setup><h2 id=setup><span class=hanchor arialabel=Anchor># </span>Setup</h2></a><p>Install Node.js, <code>npm</code> or <code>yarn</code>. Then, install <code>tsc</code>, the open-source typescript compiler, as a dev dependency in a javascript project:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg></label><label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg></label></div></header><article><p class=meta>Last updated July 10, 2022.</p><ul class=tags></ul><aside class=mainTOC><details><summary>Table of Contents</summary><nav id=TableOfContents><ol><li><a href=#setup>Setup</a><ol><li><a href=#tsconfigjson>tsconfig.json</a></li></ol></li><li><a href=#typing>Typing</a><ol><li><a href=#assigning-types>Assigning Types</a></li><li><a href=#defining-types>Defining Types</a></li><li><a href=#typescript-built-in-types>TypeScript Built-In Types</a></li><li><a href=#object-shape>Object Shape</a></li><li><a href=#arrays>Arrays</a></li><li><a href=#tuples>Tuples</a></li><li><a href=#enums>Enums</a></li><li><a href=#type-inference>Type Inference</a></li><li><a href=#type-checking>Type Checking</a></li><li><a href=#type-assertions-todo>Type Assertions [TODO]</a></li></ol></li><li><a href=#functions>Functions</a><ol><li><a href=#optional--default-parameters>Optional & Default Parameters</a></li><li><a href=#variadic-functions>Variadic Functions</a></li><li><a href=#this>this</a></li><li><a href=#generators>Generators</a></li><li><a href=#iterators>Iterators</a></li><li><a href=#function-overloading>Function Overloading</a></li></ol></li></ol></nav></details></aside><p>TypeScript is a programming language made by Microsoft that is <em>superset</em> of <a href=/wiki/software-engineering/programming-languages/JavaScript rel=noopener class=internal-link data-src=/wiki/software-engineering/programming-languages/JavaScript>JavaScript</a>. The reason that TypeScript exists is to make complex JavaScript projects more maintainable and less error-prone by introducing a <a class="internal-link broken">static</a> and <a class="internal-link broken">strong</a> type system. Essentially, it just gives developers a lot of quality-of-life improvements over JavaScript.</p><p>TypeScript gets compiled (or more precisely, &lsquo;<em>transpiled</em>&rsquo;) to JavaScript in the end. This is not new, languages like CoffeeScript, Dart, Scala, etc. can all have JavaScript as what we call a <em>compilation target</em>.</p><p><strong>Why TypeScript is
+<a href=https://survey.stackoverflow.co/2022/#most-loved-dreaded-and-wanted-language-love-dread rel=noopener>loved</a></strong></p><ul><li>Your IDE/editor gets more information about your code and give you very helpful intellisense and code-completion that is not possible with JavaScript. This reason alone, in my experience, pretty much negates any loss in developer velocity from using TypeScript over JavaScript.</li><li>Many errors will surface <em>as you&rsquo;re developing</em> rather than after your code is deployed to production and angry customers complain to you.</li><li>Types serve as a very useful form of documentation for how your functions are to be used and fields an object should contain. You can have a lot more confidence in refactoring a function when you have confidence about what the input types are.</li><li>Complex objects are much <em>less unpleasant</em> to work with. You&rsquo;ll know what its <em>shape</em> is (basically what properties it has and what its nested objects look like), what properties are compulsory or optional and you&rsquo;ll actually know when you&rsquo;ve mispelt a property name.</li><li>You&rsquo;ll <em>almost</em> never have <code>cannot read property '...' of undefined</code> again.</li></ul><p>The only main reasons <em>not</em> to use TypeScript are because:</p><ul><li>You&rsquo;re stuck with a legacy JavaScript codebase.</li><li>You or your teammates are not willing to learn it, and you need to produce output fast in the short-term (like in a hackathon).</li><li>The project is a very simple or one-off thing that it&rsquo;s not worth setting up the build system.</li></ul><hr><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-toc data-lang=toc><span class=line><span class=cl>style: number
+</span></span><span class=line><span class=cl>min<span class=nb>_</span>depth: 1
+</span></span><span class=line><span class=cl>max<span class=nb>_</span>depth: 6
+</span></span></code></pre></td></tr></table></div></div><hr><a href=#setup><h2 id=setup><span class=hanchor arialabel=Anchor># </span>Setup</h2></a><p>Install Node.js, <code>npm</code> or <code>yarn</code>. Then, install <code>tsc</code>, the open-source typescript compiler, as a dev dependency in a javascript project:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
 </span><span class=lnt>2
 </span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>yarn init   <span class=c1># Inside the project root directory, if it&#39;s a new project.</span>
 </span></span><span class=line><span class=cl>yarn add --dev typescript @types/node ts-node
@@ -46,8 +52,465 @@
 </span></span></span><span class=line><span class=cl><span class=c1></span>		<span class=s2>&#34;src&#34;</span>
 </span></span><span class=line><span class=cl>	<span class=p>]</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
-</span></span></code></pre></td></tr></table></div></div><p>Alternatively, you can generate a <code>tsconfig.json</code> with <code>tsc --init</code>.</p><a href=#typing><h2 id=typing><span class=hanchor arialabel=Anchor># </span>Typing</h2></a><ul><li><strong>Type inference</strong>: you don&rsquo;t have to always supply an explicit type. Often, there&rsquo;ll be enough context for TypeScript to figure it out without ambiguity. In general, we prefer type inference over explict types for conciseness.<div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></span></code></pre></td></tr></table></div></div><p>Alternatively, you can generate a <code>tsconfig.json</code> with <code>tsc --init</code>.</p><p>Some recommended flags include:</p><ul><li><code>noImplicitThis</code>, which forces a type to be explicitly assinged to <code>this</code> inside functions. See <a href=/wiki/software-engineering/programming-languages/TypeScript#this rel=noopener class=internal-link data-src=/wiki/software-engineering/programming-languages/TypeScript>TypeScript</a>.</li></ul><a href=#typing><h2 id=typing><span class=hanchor arialabel=Anchor># </span>Typing</h2></a><p>Broadly speaking, in programming languages, a <em>type</em> is a <a class="internal-link broken">set</a> of values, plus the properties/methods available to them.</p><a href=#assigning-types><h3 id=assigning-types><span class=hanchor arialabel=Anchor># </span>Assigning Types</h3></a><p>Assigning types is straightforward in TypeScript, you just postfix a variable or parameter with a colon and a type.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
 </span><span class=lnt>2
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-typescript data-lang=typescript><span class=line><span class=cl><span class=kr>const</span> <span class=nx>a</span>: <span class=kt>number</span> <span class=o>=</span> <span class=mi>1</span><span class=p>;</span>	
-</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>b</span> <span class=o>=</span> <span class=mi>2</span>
-</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback></code></pre></td></tr></table></div></div></li><li></li></ul></article><hr><div class=page-end><div class=backlinks-container><h3>Backlinks</h3><ul class=backlinks><li>No backlinks found</li></ul></div><div><script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script><h3>Interactive Graph</h3><div id=graph-container></div><style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style><script src=https://tymotex.github.io/wiki/js/graph.afdb02e537635f9a611b53a988e5645b.js></script></div></div><div id=contact_buttons><footer><p>Made by Jacky Zhao using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2022</p><ul><li><a href=/>Home</a></li><li><a href=https://twitter.com/_jzhao>Twitter</a></li><li><a href=https://github.com/jackyzha0>Github</a></li></ul></footer></div></div></body></html>
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-typescript data-lang=typescript><span class=line><span class=cl><span class=c1>// Typing variables.
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kd>let</span> <span class=nx>a</span>: <span class=kt>number</span> <span class=o>=</span> <span class=mi>42</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=kd>let</span> <span class=nx>b</span>: <span class=kt>string</span><span class=p>;</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#defining-types><h3 id=defining-types><span class=hanchor arialabel=Anchor># </span>Defining Types</h3></a><p>Remember, types are just <a class="internal-link broken">sets</a> of values. When you define a <em>type</em>, you are just defining a set of values. The following are all examples of custom types you can define:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-typescript data-lang=typescript><span class=line><span class=cl><span class=kr>type</span> <span class=nx>TwoOrFour</span> <span class=o>=</span> <span class=mi>2</span> <span class=o>|</span> <span class=mi>4</span><span class=p>;</span>                           <span class=c1>// The set consisting of 2 and 4.
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>type</span> <span class=nx>Value</span> <span class=o>=</span> <span class=kt>string</span> <span class=o>|</span> <span class=kt>number</span><span class=p>;</span>                     <span class=c1>// The set of all strings and all numbers.
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>type</span> <span class=nx>RandomThings</span> <span class=o>=</span> <span class=s2>&#34;Hello&#34;</span> <span class=o>|</span> <span class=mi>42</span> <span class=o>|</span> <span class=kc>null</span> <span class=o>|</span> <span class=nb>RegExp</span><span class=p>;</span> <span class=c1>// The set consisting of &#34;Hello&#34;, 42, null and all instances of `RegExp`.
+</span></span></span></code></pre></td></tr></table></div></div><a href=#type-alias><h4 id=type-alias><span class=hanchor arialabel=Anchor># </span>Type Alias</h4></a><p>You can declare <em>type aliases</em> in a very similar way as to how you define variables. Type aliases are block-scoped, just like local variables.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-typescript data-lang=typescript><span class=line><span class=cl><span class=kr>type</span> <span class=nx>Person</span> <span class=o>=</span> <span class=p>{</span> <span class=nx>age</span>: <span class=kt>number</span><span class=p>,</span> <span class=nx>name</span>: <span class=kt>string</span> <span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// Typescript will never infer that `me` is of type `Person` unless you explicitly say.
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>const</span> <span class=nx>me</span>: <span class=kt>Person</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=nx>age</span>: <span class=kt>21</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>	<span class=nx>name</span><span class=o>:</span> <span class=s2>&#34;Tim&#34;</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#union-and-intersection><h4 id=union-and-intersection><span class=hanchor arialabel=Anchor># </span>Union and Intersection</h4></a><p>Again, types are just <em>sets</em> of values. To expand the size of a set, you can union it with other sets, and to narrow the size of a set, you can intersect it other sets. In TypeScript, we use <code>|</code> to union two types and <code>&</code> to intersect two types.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-typescript data-lang=typescript><span class=line><span class=cl><span class=kr>type</span> <span class=nx>Student</span> <span class=o>=</span> <span class=p>{</span> <span class=nx>id</span>: <span class=kt>string</span><span class=p>;</span> <span class=nx>degree</span>: <span class=kt>string</span> <span class=p>};</span>
+</span></span><span class=line><span class=cl><span class=kr>type</span> <span class=nx>Tutor</span> <span class=o>=</span> <span class=p>{</span> <span class=nx>id</span>: <span class=kt>string</span><span class=p>;</span> <span class=nx>courses</span>: <span class=kt>string</span><span class=p>[]</span> <span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>type</span> <span class=nx>StudentOrTutor</span> <span class=o>=</span> <span class=nx>Student</span> <span class=o>|</span> <span class=nx>Tutor</span><span class=p>;</span>    <span class=c1>// Set of all objects that are either `Student`, `Tutor`, or both.
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>type</span> <span class=nx>StudentAndTutor</span> <span class=o>=</span> <span class=nx>Student</span> <span class=o>&amp;</span> <span class=nx>Tutor</span><span class=p>;</span>   <span class=c1>// Set of all objects containing all fields of `Student` AND `Tutor`.
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>student</span>: <span class=kt>Student</span> <span class=o>=</span> <span class=p>{</span> <span class=nx>id</span><span class=o>:</span> <span class=s1>&#39;111&#39;</span><span class=p>,</span> <span class=nx>degree</span><span class=o>:</span> <span class=s1>&#39;Bachelor of Science&#39;</span> <span class=p>};</span>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>tutor</span>: <span class=kt>Tutor</span> <span class=o>=</span> <span class=p>{</span> <span class=nx>id</span><span class=o>:</span> <span class=s1>&#39;222&#39;</span><span class=p>,</span> <span class=nx>courses</span><span class=o>:</span> <span class=p>[</span><span class=s1>&#39;CS101&#39;</span><span class=p>]</span> <span class=p>};</span>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>studentTutor</span>: <span class=kt>StudentAndTutor</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=nx>id</span><span class=o>:</span> <span class=s1>&#39;333&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>	<span class=nx>degree</span><span class=o>:</span> <span class=s1>&#39;Bachelor of Computer Science&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>	<span class=nx>courses</span><span class=o>:</span> <span class=p>[</span><span class=s1>&#39;CS201&#39;</span><span class=p>],</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// For `Student | Tutor`: you can assign any of: `Student`, `Tutor`, or `Student &amp; Tutor`
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>const</span> <span class=nx>uniGoers</span>: <span class=kt>StudentOrTutor</span><span class=p>[]</span> <span class=o>=</span> <span class=p>[</span><span class=nx>student</span><span class=p>,</span> <span class=nx>tutor</span><span class=p>,</span> <span class=nx>studentTutor</span><span class=p>];</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// For `Student &amp; Tutor`: you can only have people who are simultaneously `Student` and `Tutor`.
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>const</span> <span class=nx>studentTutors</span>: <span class=kt>StudentAndTutor</span><span class=p>[]</span> <span class=o>=</span> <span class=p>[</span><span class=nx>studentTutor</span><span class=p>];</span>
+</span></span></code></pre></td></tr></table></div></div><ul><li>To make a type nullable, you can union it with <code>null</code> like this: <code>type MiddleName = string | null;</code></li></ul><a href=#typescript-built-in-types><h3 id=typescript-built-in-types><span class=hanchor arialabel=Anchor># </span>TypeScript Built-In Types</h3></a><p>TypeScript introduces some new built-in data types that aren&rsquo;t present in JavaScript. These are: <code>any</code>, <code>unknown</code>, <code>void</code>,
+<a href=https://www.typescriptlang.org/docs/handbook/2/narrowing.html#the-never-type rel=noopener><code>never</code></a>.</p><a href=#any><h4 id=any><span class=hanchor arialabel=Anchor># </span>any</h4></a><p>The <code>any</code> type represents the set of <em>all</em> values. You can assign a variable of type <code>any</code> to a number, a string, a WebServer object, etc. Only use <code>any</code> as a last resort – always prefer assigning the most specific type that you can. Often, people treat <code>any</code> as a way to &lsquo;opt&rsquo; out of TypeScript for a small part of the code. When something is <code>any</code>, you are free to do erroneous things on it such as invoking methods on it that don&rsquo;t exist, using in arithmetic expressions, accessing undefined properties, etc.</p><a href=#unknown><h4 id=unknown><span class=hanchor arialabel=Anchor># </span>unknown</h4></a><p>The <code>unknown</code> type represents the set of <em>all</em> values, just like <code>any</code>. The difference is that TypeScript does not allow you to use an <code>unknown</code> value until you perform <a href=/wiki/software-engineering/programming-languages/TypeScript#type-checking rel=noopener class=internal-link data-src=/wiki/software-engineering/programming-languages/TypeScript>type checks</a> to narrow down what specific type the <code>unknown</code> value is. For this reason, <code>unknown</code> is considered the type-safe version of <code>any</code>.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-typescript data-lang=typescript><span class=line><span class=cl><span class=kr>const</span> <span class=nx>a</span>: <span class=kt>unknown</span> <span class=o>=</span> <span class=mi>30</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=k>if</span> <span class=p>(</span><span class=k>typeof</span> <span class=nx>a</span> <span class=o>===</span> <span class=s1>&#39;number&#39;</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=kr>const</span> <span class=nx>b</span>: <span class=kt>number</span> <span class=o>=</span> <span class=nx>a</span> <span class=o>+</span> <span class=mi>1</span><span class=p>;</span> <span class=c1>// Now that we are certain `a` is a number, we can use it as one.
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=p>}</span> <span class=k>else</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=kr>const</span> <span class=nx>b</span>: <span class=kt>number</span> <span class=o>=</span> <span class=nx>a</span> <span class=o>+</span> <span class=mi>1</span><span class=p>;</span> <span class=c1>// Error.
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-typescript data-lang=typescript><span class=line><span class=cl><span class=kr>const</span> <span class=nx>a</span>: <span class=kt>any</span> <span class=o>=</span> <span class=s2>&#34;Hello&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>b</span>: <span class=kt>unknown</span> <span class=o>=</span> <span class=s2>&#34;World&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>a</span><span class=p>.</span><span class=nx>toLowerCase</span><span class=p>();</span>   <span class=c1>// This is fine since `a` is `any`.
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=nx>b</span><span class=p>.</span><span class=nx>toLowerCase</span><span class=p>();</span>   <span class=c1>// Error. We need a type check before 
+</span></span></span></code></pre></td></tr></table></div></div><blockquote><p>A useful way to think about <code>any</code> and <code>unknown</code> is: <code>any</code> means &ldquo;I don&rsquo;t care&rdquo;, <code>unknown</code> means &ldquo;I don&rsquo;t know (yet)&rdquo;.</p></blockquote><a href=#object-shape><h3 id=object-shape><span class=hanchor arialabel=Anchor># </span>Object Shape</h3></a><p>An important part of using TypeScript effectively is in defining the <em>shape</em> of object values, or in other words, what properties they have and which ones must be assigned a value or are optional.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-typescript data-lang=typescript><span class=line><span class=cl><span class=c1>// Let typescript infer the object shape.
+</span></span></span><span class=line><span class=cl><span class=c1>// `person` will be of type: { age: number, name: string }.
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>const</span> <span class=nx>person</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=nx>age</span>: <span class=kt>42</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>	<span class=nx>name</span><span class=o>:</span> <span class=s2>&#34;Andrew&#34;</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// You can also explicitly specify the object type. You might do this if you want to set narrower types for the properties.
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>const</span> <span class=nx>person</span><span class=o>:</span> <span class=p>{</span> <span class=nx>age</span>: <span class=kt>number</span><span class=p>,</span> <span class=nx>name</span><span class=o>:</span> <span class=s2>&#34;Andrew&#34;</span> <span class=p>}</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=nx>age</span>: <span class=kt>42</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>	<span class=nx>name</span><span class=o>:</span> <span class=s2>&#34;Andrew&#34;</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// Or more cleanly, define a type:
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>type</span> <span class=nx>Andrew</span> <span class=o>=</span> <span class=p>{</span> <span class=nx>age</span>: <span class=kt>number</span><span class=p>,</span> <span class=nx>name</span><span class=o>:</span> <span class=s2>&#34;Andrew&#34;</span> <span class=p>};</span>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>person</span>: <span class=kt>Andrew</span> <span class=o>=</span> <span class=p>{...};</span>
+</span></span></code></pre></td></tr></table></div></div><p><strong>Note</strong>: the built-in <code>object</code> type is the set of all objects, whether it&rsquo;s <code>{}</code>, <code>{hello: "world"}</code>, <code>[]</code>, <code>new Date()</code>, etc. It&rsquo;s only slightly more restrictive than <code>any</code>.</p><a href=#optional-properties><h4 id=optional-properties><span class=hanchor arialabel=Anchor># </span>Optional Properties</h4></a><p>By default, all properties are treated as compulsory. To allow an object to not define a property, just postfix the property name with <code>?</code>.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-typescript data-lang=typescript><span class=line><span class=cl><span class=kr>type</span> <span class=nx>Person</span> <span class=o>=</span> <span class=p>{</span>  
+</span></span><span class=line><span class=cl>	<span class=nx>firstName</span>: <span class=kt>string</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>	<span class=nx>lastName</span>: <span class=kt>string</span><span class=p>;</span>	
+</span></span><span class=line><span class=cl>	<span class=nx>middleName?</span>: <span class=kt>string</span><span class=p>;</span>   <span class=c1>// Objects of type `Person` can optionally set the `middleName` property.
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=p>};</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#immutable-properties><h4 id=immutable-properties><span class=hanchor arialabel=Anchor># </span>Immutable Properties</h4></a><p>You can make properties immutable by prefixing the property name with the <code>readonly</code> property. It&rsquo;s like as if you declared a property as <code>const</code>, so once it&rsquo;s assigned for the first time, it cannot be reassigned.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-typescript data-lang=typescript><span class=line><span class=cl><span class=kr>type</span> <span class=nx>Person</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=nx>name</span>: <span class=kt>string</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>	<span class=kr>readonly</span> <span class=nx>dateOfBirth</span>: <span class=kt>string</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>me</span>: <span class=kt>Person</span> <span class=o>=</span> <span class=p>{</span> <span class=nx>name</span><span class=o>:</span> <span class=s1>&#39;Tim&#39;</span><span class=p>,</span> <span class=nx>dateOfBirth</span><span class=o>:</span> <span class=s1>&#39;09/03/2001&#39;</span> <span class=p>};</span>
+</span></span><span class=line><span class=cl><span class=nx>me</span><span class=p>.</span><span class=nx>name</span> <span class=o>=</span> <span class=s1>&#39;Andrew&#39;</span><span class=p>;</span>             <span class=c1>// This is fine.
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=nx>me</span><span class=p>.</span><span class=nx>dateOfBirth</span> <span class=o>=</span> <span class=s1>&#39;01/01/1970&#39;</span><span class=p>;</span>  <span class=c1>// Error.
+</span></span></span></code></pre></td></tr></table></div></div><a href=#index-signatures><h4 id=index-signatures><span class=hanchor arialabel=Anchor># </span>Index Signatures</h4></a><p>When you want the flexibility for an object to contain more arbitrary properties with a certain key-value pair type, you can use the index signature syntax, <code>[key: K]: V</code>, where <code>key</code> can be any name you choose.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-typescript data-lang=typescript><span class=line><span class=cl><span class=kr>type</span> <span class=nx>FruitRatings</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=p>[</span><span class=nx>fruitName</span>: <span class=kt>string</span><span class=p>]</span><span class=o>:</span> <span class=kt>number</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>myFruitRatings</span>: <span class=kt>FruitRatings</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=nx>apple</span>: <span class=kt>6</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>	<span class=nx>banana</span>: <span class=kt>7</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>	<span class=nx>cherry</span>: <span class=kt>9</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#arrays><h3 id=arrays><span class=hanchor arialabel=Anchor># </span>Arrays</h3></a><p>To denote a type as an array of items of type <code>T</code>, you can do <code>T[]</code> or <code>Array&lt;T></code> (they&rsquo;re
+<a href=https://stackoverflow.com/questions/36842158/arraytype-vs-type-in-typescript rel=noopener>exactly the same</a>).</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-typescript data-lang=typescript><span class=line><span class=cl><span class=c1>// Array type declaration examples.
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>type</span> <span class=nx>Names</span> <span class=o>=</span> <span class=kt>string</span><span class=p>[];</span>
+</span></span><span class=line><span class=cl><span class=kr>type</span> <span class=nx>People</span> <span class=o>=</span> <span class=p>{</span> <span class=nx>name</span>: <span class=kt>string</span><span class=p>;</span> <span class=p>}[];</span>
+</span></span><span class=line><span class=cl><span class=kr>type</span> <span class=nx>Values</span> <span class=o>=</span> <span class=p>(</span><span class=kt>string</span> <span class=o>|</span> <span class=kt>number</span><span class=p>)[];</span>
+</span></span></code></pre></td></tr></table></div></div><p>In general, try to keep arrays <em>homogenous</em>, that is, of a singular type, otherwise you&rsquo;d have to do type-checking before TypeScript can let you use the items of the array.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-typescript data-lang=typescript><span class=line><span class=cl><span class=c1>// When arrays are not homogenous, that is, of one type, you&#39;d have to do some type checking to work with its items.
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>const</span> <span class=nx>arr</span><span class=o>:</span> <span class=p>(</span><span class=kt>string</span> <span class=o>|</span> <span class=kt>number</span><span class=p>)[]</span> <span class=o>=</span> <span class=p>[</span><span class=mi>42</span><span class=p>,</span> <span class=s2>&#34;Hello&#34;</span><span class=p>];</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>arr</span><span class=p>.</span><span class=nx>forEach</span><span class=p>(</span><span class=nx>item</span> <span class=o>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=k>if</span> <span class=p>(</span><span class=k>typeof</span> <span class=nx>item</span> <span class=o>===</span> <span class=s1>&#39;number&#39;</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>		<span class=c1>// You can use `item` as a number after you&#39;ve type-checked it.
+</span></span></span><span class=line><span class=cl><span class=c1></span>		<span class=kr>const</span> <span class=nx>num</span> <span class=o>=</span> <span class=nx>item</span> <span class=o>*</span> <span class=mi>3</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>		<span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=s1>&#39;Number: &#39;</span><span class=p>,</span> <span class=nx>num</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>	<span class=p>}</span> <span class=k>else</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>		<span class=c1>// `item` must be a string
+</span></span></span><span class=line><span class=cl><span class=c1></span>		<span class=kr>const</span> <span class=nx>s</span> <span class=o>=</span> <span class=nx>item</span> <span class=o>+</span> <span class=s2>&#34; world&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>		<span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=s1>&#39;String: &#39;</span><span class=p>,</span> <span class=nx>s</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>	<span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>})</span>
+</span></span></code></pre></td></tr></table></div></div><p>Arrays are always mutable by default in TypeScript, that is, you can reassign the value at any index and invoke methods that make in-place modifications like <code>push</code> or <code>reverse</code>. To make them immutable, you would prefix them with the <code>readonly</code> modifier.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-typescript data-lang=typescript><span class=line><span class=cl><span class=kr>type</span> <span class=nx>Names</span> <span class=o>=</span> <span class=kr>readonly</span> <span class=kt>string</span><span class=p>[];</span>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>radioheadMembers</span>: <span class=kt>Names</span> <span class=o>=</span> <span class=p>[</span><span class=s1>&#39;Thom&#39;</span><span class=p>,</span> <span class=s1>&#39;Johnny&#39;</span><span class=p>,</span> <span class=s1>&#39;Colin&#39;</span><span class=p>,</span> <span class=s1>&#39;Phil&#39;</span><span class=p>,</span> <span class=s1>&#39;Ed&#39;</span><span class=p>];</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>radioheadMembers</span><span class=p>[</span><span class=mi>1</span><span class=p>]</span> <span class=o>=</span> <span class=s1>&#39;Tim&#39;</span><span class=p>;</span>  <span class=c1>// Error.
+</span></span></span></code></pre></td></tr></table></div></div><a href=#tuples><h3 id=tuples><span class=hanchor arialabel=Anchor># </span>Tuples</h3></a><p>Remember, tuples are just <em>fixed-length arrays</em>. In typescript, we define a tuple by specifying the type of each item like: <code>[T1, T2, ...]</code>:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-typescript data-lang=typescript><span class=line><span class=cl><span class=kr>type</span> <span class=nx>FullName</span> <span class=o>=</span> <span class=p>[</span><span class=kt>string</span><span class=p>,</span> <span class=kt>string</span><span class=p>,</span> <span class=kt>string</span><span class=o>?</span><span class=p>];</span>  <span class=c1>// You can make items optional in a tuple, just like for objects.
+</span></span></span><span class=line><span class=cl><span class=c1></span>                                            <span class=c1>// Note: this is basically the same as: `[string, string] | [string, string, string]`.
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>const</span> <span class=nx>elon</span>: <span class=kt>FullName</span> <span class=o>=</span> <span class=p>[</span><span class=s2>&#34;Elon&#34;</span><span class=p>,</span> <span class=s2>&#34;Reeve&#34;</span><span class=p>,</span> <span class=s2>&#34;Musk&#34;</span><span class=p>];</span>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>jeff</span>: <span class=kt>FullName</span> <span class=o>=</span> <span class=p>[</span><span class=s2>&#34;Jeff&#34;</span><span class=p>,</span> <span class=s2>&#34;Bezos&#34;</span><span class=p>];</span>
+</span></span></code></pre></td></tr></table></div></div><p>You can also make use of the <a href=/wiki/software-engineering/programming-languages/JavaScript#rest-operator rel=noopener class=internal-link data-src=/wiki/software-engineering/programming-languages/JavaScript>rest operator</a>, <code>...</code>, to allow for tuples of arbitrary lengths.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-typescript data-lang=typescript><span class=line><span class=cl><span class=kr>type</span> <span class=nx>FullName</span> <span class=o>=</span> <span class=p>[</span><span class=kt>string</span><span class=p>,</span> <span class=kt>string</span><span class=p>,</span> <span class=p>...</span><span class=kt>string</span><span class=p>[]];</span>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>queenElizabethII</span> <span class=o>=</span> <span class=p>[</span><span class=s1>&#39;Elizabeth&#39;</span><span class=p>,</span> <span class=s1>&#39;Alexandra&#39;</span><span class=p>,</span> <span class=s1>&#39;Mary&#39;</span><span class=p>,</span> <span class=s1>&#39;Windsor&#39;</span><span class=p>];</span>
+</span></span></code></pre></td></tr></table></div></div><p><strong>Caveat</strong>: <em>tuples are not immutable by default</em>.
+Unlike in other languages like Python, the items of a tuple in TypeScript <em>can</em> be mutated, that is, reassigned after definition. To make tuples immutable, you would do the same thing as you would for making arrays immutable: prefix it with the <code>readonly</code> modifier.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-typescript data-lang=typescript><span class=line><span class=cl><span class=kr>type</span> <span class=nx>Coordinate</span> <span class=o>=</span> <span class=kr>readonly</span> <span class=p>[</span><span class=kt>number</span><span class=p>,</span> <span class=kt>number</span><span class=p>];</span>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>point</span>: <span class=kt>Coordinate</span> <span class=o>=</span> <span class=p>[</span><span class=mi>1</span><span class=p>,</span> <span class=mi>2</span><span class=p>];</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>point</span><span class=p>[</span><span class=mi>0</span><span class=p>]</span> <span class=o>=</span> <span class=mi>3</span><span class=p>;</span>   <span class=c1>// Error.
+</span></span></span></code></pre></td></tr></table></div></div><a href=#enums><h3 id=enums><span class=hanchor arialabel=Anchor># </span>Enums</h3></a><p>Enums are data types that have a <em>fixed set</em> of constant values. They&rsquo;re a great way to group together a lot of related constants. <em>Note</em>: JavaScript doesn&rsquo;t have enums.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-typescript data-lang=typescript><span class=line><span class=cl><span class=kr>enum</span> <span class=nx>Theme</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=nx>Light</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>	<span class=nx>Dark</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>	<span class=nx>HighContrastLight</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>	<span class=nx>HighContrastDark</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// You access the fields of the enum in the same way that you&#39;d access an object.
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>const</span> <span class=nx>theme</span>: <span class=kt>Theme</span> <span class=o>=</span> <span class=nx>Theme</span><span class=p>.</span><span class=nx>Dark</span><span class=p>;</span>
+</span></span></code></pre></td></tr></table></div></div><p>In the example above, every enum value gets implicitly assigned a counter value starting from 0. It&rsquo;s equivalent to doing the following:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-typescript data-lang=typescript><span class=line><span class=cl><span class=kr>enum</span> <span class=nx>Theme</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=nx>Light</span> <span class=o>=</span> <span class=mi>0</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>	<span class=nx>Dark</span> <span class=o>=</span> <span class=mi>1</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>	<span class=nx>HighContrastLight</span> <span class=o>=</span> <span class=mi>2</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>	<span class=nx>HighContrastDark</span> <span class=o>=</span> <span class=mi>3</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>You can also map enum keys to string values instead of integers.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-typescript data-lang=typescript><span class=line><span class=cl><span class=kr>enum</span> <span class=nx>Theme</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=nx>Light</span> <span class=o>=</span> <span class=s1>&#39;#CCCCCC&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>	<span class=nx>Dark</span> <span class=o>=</span> <span class=s1>&#39;#333333&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>	<span class=nx>HighContrastLight</span> <span class=o>=</span> <span class=s1>&#39;#FFFFFF&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>	<span class=nx>HighContrastDark</span> <span class=o>=</span> <span class=s1>&#39;#000000&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#caveats><h4 id=caveats><span class=hanchor arialabel=Anchor># </span>Caveats</h4></a><p>One annoying issue is that you can freely assign numbers to enum types that are clearly outside the bounds of the enum values.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-typescript data-lang=typescript><span class=line><span class=cl><span class=kr>enum</span> <span class=nx>Theme</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=nx>Light</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>	<span class=nx>Dark</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>	<span class=nx>HighContrastLight</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>	<span class=nx>HighContrastDark</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>theme</span>: <span class=kt>Theme</span> <span class=o>=</span> <span class=mi>6</span><span class=p>;</span> <span class=c1>// No complaints from TypeScript.
+</span></span></span></code></pre></td></tr></table></div></div><p>In general, the official docs advise you to avoid enums unless they help significantly with readability. Alternatives to enums include string literals, eg. <code>type Theme = "Light" | "Dark" | ...</code>, or object literals, eg. <code>const Theme = { Light: "Light", Dark: "Dark", ... }</code></p><a href=#type-inference><h3 id=type-inference><span class=hanchor arialabel=Anchor># </span>Type Inference</h3></a><p>You don&rsquo;t have to always supply an explicit type. Often, there&rsquo;ll be enough context for TypeScript to figure it out without ambiguity. In general, we prefer type inference over explict assigning types to varaibles/parameters/etc. for conciseness.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-typescript data-lang=typescript><span class=line><span class=cl><span class=kd>let</span> <span class=nx>a</span>: <span class=kt>number</span> <span class=o>=</span> <span class=mi>42</span><span class=p>;</span>   <span class=c1>// There is no need to do this. It&#39;s clear what type `a` is from the RHS of the assignment.
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kd>let</span> <span class=nx>b</span> <span class=o>=</span> <span class=mi>42</span><span class=p>;</span>           <span class=c1>// Equivalent to above, but it lets typescript assign the type implicitly.
+</span></span></span></code></pre></td></tr></table></div></div><p>This extends to functions as well, meaning that often you won&rsquo;t have to specify the return value.</p><a href=#type-wideningnarrowing-todo><h4 id=type-wideningnarrowing-todo><span class=hanchor arialabel=Anchor># </span>Type Widening/Narrowing [TODO]</h4></a><p>An important implicit rule in TypeScript is that when you let type inference happen for <code>const</code> variables, TypeScript will assign it the <em>narrowest type possible</em> since it knows that a <code>const</code> variable cannot possibly take any other value after its defined.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-typescript data-lang=typescript><span class=line><span class=cl><span class=kd>let</span> <span class=nx>a</span> <span class=o>=</span> <span class=mi>2</span><span class=p>;</span>    <span class=c1>// `a` is of type `number`.
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>const</span> <span class=nx>b</span> <span class=o>=</span> <span class=mi>2</span><span class=p>;</span>  <span class=c1>// `b` is of type `2`, a specific member of `number`.
+</span></span></span></code></pre></td></tr></table></div></div><a href=#type-checking><h3 id=type-checking><span class=hanchor arialabel=Anchor># </span>Type Checking</h3></a><p>Although type checking is done for you statically, there are times when you must perform run-time type checks such as when you&rsquo;re fetching external data. In these times, rely on JavaScript&rsquo;s operators: <code>typeof</code> and <code>instanceof</code>.</p><ol><li>Use the <code>instanceof</code> binary operator to check some value is of a custom type, or a complex built-in type like <code>RegExp</code>.<ul><li>Note that <code>val instanceof T</code> works by checking if <code>T</code> exists anywhere along <code>val</code>&rsquo;s <a href=/wiki/software-engineering/programming-languages/JavaScript#prototypes rel=noopener class=internal-link data-src=/wiki/software-engineering/programming-languages/JavaScript>prototype chain</a>. This is why you get unintuitive results when you use <code>instanceof</code> on primitive types. For example, <code>42 instanceof Number</code> is <code>false</code>, but <code>new Number(42) instanceof Number</code> is <code>true</code>.</li></ul></li><li>Use the <code>typeof</code> unary operator to check some value is some built-in primitive type such as <code>undefined</code>, <code>number</code>, <code>string</code>, <code>boolean</code>, etc.</li></ol><a href=#type-assertions-todo><h3 id=type-assertions-todo><span class=hanchor arialabel=Anchor># </span>Type Assertions [TODO]</h3></a><p>When you&rsquo;re confident that some value should be a certain type but TypeScript isn&rsquo;t, you can make a type assertion with the <code>as</code> keyword.</p><p>You can also make type assertions by prefixing an expression with <code>&lt;T></code>, eg. <code>&lt;Person>person</code> which is the same as <code>person as Person</code>.</p><a href=#functions><h2 id=functions><span class=hanchor arialabel=Anchor># </span>Functions</h2></a><p><strong>Typing Function Delcarations</strong>
+To type a function declaration, you just assign types for each parameter it takes in and then specify the return type by postfixing the parameter list with a colon and a type.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-typescript data-lang=typescript><span class=line><span class=cl><span class=c1>// Typing function parameters and return values.
+</span></span></span><span class=line><span class=cl><span class=c1>// To assign a return type to a function, you postfix the parameter list with a colon and a type.
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=c1>// Regular functions:
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kd>function</span> <span class=nx>increment</span><span class=p>(</span><span class=nx>num</span>: <span class=kt>number</span><span class=p>)</span><span class=o>:</span> <span class=kt>number</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=k>return</span> <span class=nx>num</span> <span class=o>+</span> <span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// Arrow functions:
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>const</span> <span class=nx>decrement</span> <span class=o>=</span> <span class=p>(</span><span class=nx>num</span>: <span class=kt>number</span><span class=p>)</span><span class=o>:</span> <span class=kt>number</span> <span class=o>=&gt;</span> <span class=nx>num</span> <span class=o>-</span> <span class=mi>1</span><span class=p>;</span>
+</span></span></code></pre></td></tr></table></div></div><p><strong>Typing Function Expressions or Arrow Functions</strong>
+What if you want to specify the type of a callback rather than a function declaration? You would use the syntax: <code>(param: Type, ...) => RetType</code>. Although the syntax is inspired by arrow functions, it is not actually defining a function.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-typescript data-lang=typescript><span class=line><span class=cl><span class=kr>type</span> <span class=nx>Greeting</span> <span class=o>=</span> <span class=p>(</span><span class=nx>a</span>: <span class=kt>string</span><span class=p>,</span> <span class=nx>b</span>: <span class=kt>string</span><span class=p>)</span> <span class=o>=&gt;</span> <span class=k>void</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// Note that the parameter names above don&#39;t need to match that of the assigned
+</span></span></span><span class=line><span class=cl><span class=c1>// callback&#39;s parameter names, they&#39;re purely for documentation.
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>const</span> <span class=nx>callback</span>: <span class=kt>Greeting</span> <span class=o>=</span> <span class=p>(</span><span class=nx>name</span><span class=p>,</span> <span class=nx>message</span><span class=p>)</span> <span class=o>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=sb>`Hi, I&#39;m </span><span class=si>${</span><span class=nx>name</span><span class=si>}</span><span class=sb>. </span><span class=si>${</span><span class=nx>message</span><span class=si>}</span><span class=sb>`</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=nx>callback</span><span class=p>(</span><span class=s2>&#34;Linus&#34;</span><span class=p>,</span> <span class=s2>&#34;F*** you, Nvidia.&#34;</span><span class=p>);</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#optional--default-parameters><h3 id=optional--default-parameters><span class=hanchor arialabel=Anchor># </span>Optional & Default Parameters</h3></a><p>Just like how you can make <a href=/wiki/software-engineering/programming-languages/TypeScript#object-shape rel=noopener class=internal-link data-src=/wiki/software-engineering/programming-languages/TypeScript>object properties optional</a> and <a href=/wiki/software-engineering/programming-languages/TypeScript#tuples rel=noopener class=internal-link data-src=/wiki/software-engineering/programming-languages/TypeScript>tuple items optional</a>, you can make function parameters optional by postfixing the parameter name with a <code>?</code>. Alternatively, you can set a default value for a parameter by assigning a value directly after the parameter name, which is pretty much the same as making it optional.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-typescript data-lang=typescript><span class=line><span class=cl><span class=c1>// Optional parameter.
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>const</span> <span class=nx>greet</span> <span class=o>=</span> <span class=p>(</span><span class=nx>name</span>: <span class=kt>string</span><span class=p>,</span> <span class=nx>message?</span>: <span class=kt>string</span><span class=p>)</span> <span class=o>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=sb>`Hi </span><span class=si>${</span><span class=nx>name</span><span class=si>}</span><span class=sb>!`</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>	<span class=k>if</span> <span class=p>(</span><span class=nx>message</span><span class=p>)</span> <span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=nx>message</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// Default parameter. Notice that the parameter type can often be inferred from the
+</span></span></span><span class=line><span class=cl><span class=c1>// default value that you supply.
+</span></span></span><span class=line><span class=cl><span class=c1>// You can also choose to explicitly set the type anyway like: 
+</span></span></span><span class=line><span class=cl><span class=c1>//   `message: string = &#34;You rock.&#34;`
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>const</span> <span class=nx>greet</span> <span class=o>=</span> <span class=p>(</span><span class=nx>name</span>: <span class=kt>string</span><span class=p>,</span> <span class=nx>message</span> <span class=o>=</span> <span class=s2>&#34;You rock.&#34;</span><span class=p>)</span> <span class=o>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=sb>`Hi </span><span class=si>${</span><span class=nx>name</span><span class=si>}</span><span class=sb>! </span><span class=si>${</span><span class=nx>message</span><span class=si>}</span><span class=sb>`</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#variadic-functions><h3 id=variadic-functions><span class=hanchor arialabel=Anchor># </span>Variadic Functions</h3></a><p>A <strong>variadic function</strong> is just one that takes in an arbitrary number of arguments. The vast majority of functions take in a fixed list of parameters, we call these &lsquo;fixed-arity&rsquo; functions. Normally in JavaScript, defining a variadic function requires you to make use of the implicit
+<a href=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments rel=noopener><code>arguments</code></a> array in the function body. In TypeScript, it&rsquo;s way more intuitive and can be done in a type-safe way with the rest operator, <code>...</code>.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-typescript data-lang=typescript><span class=line><span class=cl><span class=kr>const</span> <span class=nx>max</span> <span class=o>=</span> <span class=p>(...</span><span class=nx>nums</span>: <span class=kt>number</span><span class=p>[])</span><span class=o>:</span> <span class=kt>number</span> <span class=o>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=k>if</span> <span class=p>(</span><span class=o>!</span><span class=nx>nums</span> <span class=o>||</span> <span class=nx>nums</span><span class=p>.</span><span class=nx>length</span> <span class=o>===</span> <span class=mi>0</span><span class=p>)</span> <span class=k>return</span> <span class=o>-</span><span class=kc>Infinity</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>	<span class=k>return</span> <span class=nx>nums</span><span class=p>.</span><span class=nx>reduce</span><span class=p>((</span><span class=nx>maxSoFar</span><span class=p>,</span> <span class=nx>currNum</span><span class=p>)</span> <span class=o>=&gt;</span> <span class=p>(</span><span class=nx>maxSoFar</span> <span class=o>&gt;</span> <span class=nx>currNum</span><span class=p>)</span> <span class=o>?</span> <span class=nx>maxSoFar</span> : <span class=kt>currNum</span><span class=p>,</span> <span class=o>-</span><span class=kc>Infinity</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#this><h3 id=this><span class=hanchor arialabel=Anchor># </span>this</h3></a><p>In JavaScript, <code>this</code> is a nightmare for most programmers to work with because its value is different depending on how it is called. In TypeScript, you can minimise surprises around the value of <code>this</code> by assigning a type to it as the first function parameter.</p><p>To illustrate the problem:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-typescript data-lang=typescript><span class=line><span class=cl><span class=kr>type</span> <span class=nx>Person</span> <span class=o>=</span> <span class=p>{</span> <span class=nx>name</span>: <span class=kt>string</span><span class=p>,</span> <span class=nx>greet</span><span class=o>:</span> <span class=p>()</span> <span class=o>=&gt;</span> <span class=k>void</span> <span class=p>};</span>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>person</span>: <span class=kt>Person</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=nx>name</span><span class=o>:</span> <span class=s2>&#34;Linus Torvalds&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>	<span class=nx>greet</span>: <span class=kt>function</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>		<span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=sb>`Hi, I&#39;m </span><span class=si>${</span><span class=k>this</span><span class=p>.</span><span class=nx>name</span><span class=si>}</span><span class=sb>`</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>	<span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=nx>person</span><span class=p>.</span><span class=nx>greet</span><span class=p>();</span> <span class=c1>// This works as expected since `this` is bound to `person`.
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>greet</span> <span class=o>=</span> <span class=nx>person</span><span class=p>.</span><span class=nx>greet</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=nx>greet</span><span class=p>();</span>        <span class=c1>// This fails since the `this` is lost and is no longer bound to `person`.
+</span></span></span></code></pre></td></tr></table></div></div><p>The &lsquo;solution&rsquo; is to assign a type for <code>this</code> so that the developer is warned when <code>this</code> takes on the wrong type when they invoke a function that uses it.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-typescript data-lang=typescript><span class=line><span class=cl><span class=kr>type</span> <span class=nx>Person</span> <span class=o>=</span> <span class=p>{</span> <span class=nx>name</span>: <span class=kt>string</span><span class=p>,</span> <span class=nx>greet</span><span class=o>:</span> <span class=p>(</span><span class=k>this</span><span class=o>:</span> <span class=nx>Person</span><span class=p>)</span> <span class=o>=&gt;</span> <span class=k>void</span> <span class=p>};</span>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>person</span>: <span class=kt>Person</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=nx>name</span><span class=o>:</span> <span class=s2>&#34;Linus Torvalds&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>	<span class=nx>greet</span>: <span class=kt>function</span><span class=p>(</span><span class=k>this</span><span class=o>:</span> <span class=nx>Person</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>		<span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=sb>`Hi, I&#39;m </span><span class=si>${</span><span class=k>this</span><span class=p>.</span><span class=nx>name</span><span class=si>}</span><span class=sb>`</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>	<span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#generators><h3 id=generators><span class=hanchor arialabel=Anchor># </span>Generators</h3></a><p>See <a class="internal-link broken">generators</a>. In JavaScript, you can create a <a href=/wiki/software-engineering/programming-languages/JavaScript#generators rel=noopener class=internal-link data-src=/wiki/software-engineering/programming-languages/JavaScript>generator function</a> by postfixing <code>function</code> with an asterisk, <code>*</code>. <em>Note</em>: you cannot define arrow functions as generator functions (at least as of 2022&rsquo;s ES standard).</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-typescript data-lang=typescript><span class=line><span class=cl><span class=kd>function</span><span class=o>*</span> <span class=nx>fooGenerator() {</span>
+</span></span><span class=line><span class=cl>	<span class=k>yield</span> <span class=mi>42</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>	<span class=k>yield</span> <span class=mi>24</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>fooNums</span> <span class=o>=</span> <span class=nx>fooGenerator</span><span class=p>();</span>
+</span></span><span class=line><span class=cl><span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=nx>fooNums</span><span class=p>.</span><span class=nx>next</span><span class=p>());</span>    <span class=c1>// → { value: 42, done: false }
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=nx>fooNums</span><span class=p>.</span><span class=nx>next</span><span class=p>());</span>    <span class=c1>// → { value: 24, done: false }
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=nx>fooNums</span><span class=p>.</span><span class=nx>next</span><span class=p>());</span>    <span class=c1>// → { value: undefined, done: false }
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=c1>// You can loop through a generator&#39;s values with JavaScript&#39;s for-of loops.
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=k>for</span> <span class=p>(</span><span class=kr>const</span> <span class=nx>item</span> <span class=k>of</span> <span class=nx>fooGenerator</span><span class=p>())</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=nx>item</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>TypeScript automatically infers the return type of the generator to be <code>IterableIterator&lt;number></code>. To assign an explicit type for what gets yielded, do it the same way that you&rsquo;d specify the return value, but wrap it around with <code>IterableIterator</code>.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-typescript data-lang=typescript><span class=line><span class=cl><span class=kd>function</span><span class=o>*</span> <span class=nx>fooGenerator</span><span class=p>()</span><span class=o>:</span> <span class=nx>IterableIterator</span><span class=p>&lt;</span><span class=nt>number</span><span class=p>&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=p>...</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#iterators><h3 id=iterators><span class=hanchor arialabel=Anchor># </span>Iterators</h3></a><p>See <a class="internal-link broken">iterators</a>. In JavaScript, an <em>iterable</em> is an object containing the <code>Symbol.iterator</code> property with the value being a function that returns an <em>iterator</em> (which can be done by defining Symbol.iterator to be a <a href=/wiki/software-engineering/programming-languages/TypeScript#generators rel=noopener class=internal-link data-src=/wiki/software-engineering/programming-languages/TypeScript>generator function</a>, which always returns an iterator). An <em>iterator</em> is an object that defines a <code>next</code> method which returns an object of shape: <code>{ value: any, done: boolean }</code>.</p><p>An object can be both an <em>iterable</em> and an <em>iterator</em> at the same time. When you invoke a generator function, for example, you get an object
+of type <code>IterableIterator</code> which is both, meaning it has a <code>Symbol.iterator</code> property, whose value is a function that returns an iterator, and the <code>next</code> method.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-typescript data-lang=typescript><span class=line><span class=cl><span class=kr>const</span> <span class=nx>favouriteNums</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=o>*</span><span class=p>[</span><span class=nx>Symbol</span><span class=p>.</span><span class=nx>iterator</span><span class=p>]()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>		<span class=k>yield</span> <span class=mi>42</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>		<span class=k>yield</span> <span class=mi>2</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>		<span class=k>yield</span> <span class=mi>4</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>	<span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>for</span> <span class=p>(</span><span class=kr>const</span> <span class=nx>item</span> <span class=k>of</span> <span class=nx>favouriteNums</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=nx>item</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p><strong>Note</strong>: the syntax for defining <code>Symbol.iterator</code> as a generator function might seem strange. See this post for clarifications. As for the square brackets around <code>Symbol.iterator</code>, it&rsquo;s called the
+<a href=https://stackoverflow.com/questions/32515598/square-brackets-javascript-object-key rel=noopener>computed property name syntax</a>, introduced in ES6.</p><a href=#function-overloading><h3 id=function-overloading><span class=hanchor arialabel=Anchor># </span>Function Overloading</h3></a><p>You can define a function type that actually consists of multiple function signatures. See the
+<a href=https://www.typescriptlang.org/docs/handbook/2/functions.html#function-overloads rel=noopener>Function Overloads</a>.</p></article><hr><div class=page-end><div class=backlinks-container><h3>Backlinks</h3><ul class=backlinks><li>No backlinks found</li></ul></div><div><script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script><h3>Interactive Graph</h3><div id=graph-container></div><style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style><script src=https://tymotex.github.io/wiki/js/graph.afdb02e537635f9a611b53a988e5645b.js></script></div></div><div id=contact_buttons><footer><p>Made by Jacky Zhao using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2022</p><ul><li><a href=/>Home</a></li><li><a href=https://twitter.com/_jzhao>Twitter</a></li><li><a href=https://github.com/jackyzha0>Github</a></li></ul></footer></div></div></body></html>
