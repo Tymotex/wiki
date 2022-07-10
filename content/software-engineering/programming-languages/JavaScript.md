@@ -1,8 +1,21 @@
-# JavaScript
+TODO.
 
 There's also [[TypeScript]].
 
-$$
-	\alpha = \beta
-$$
 
+## Prototypes
+TODO.
+
+
+
+
+
+
+
+
+### Rest Operator
+TODO.
+
+
+### Generators
+TODO.
