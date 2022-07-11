@@ -1,6 +1,6 @@
-name: Jacky Zhao
+name: Tim Zhang
 enableToc: true
-openToc: false
+openToc: true
 enableLinkPreview: true
 enableLatex: true
 enableCodeBlockTitle: true
@@ -10,14 +10,9 @@ enableFooter: true
 enableContextualBacklinks: true
 enableRecentNotes: false
 enableGitHubEdit: false
-GitHubLink: https://github.com/jackyzha0/quartz/tree/hugo/content
-description:
-  Host your second brain and digital garden for free. Quartz features extremely fast full-text search,
-  Wikilink support, backlinks, local graph, tags, and link previews.
-page_title:
-  "🪴 Quartz 3.2"
+GitHubLink: https://github.com/Tymotex/wiki/tree/hugo/content
+description: Tim Zhang's developer wiki.
+page_title: "🪴 Tim's Dev Wiki"
 links:
-  - link_name: Twitter
-    link: https://twitter.com/_jzhao
   - link_name: Github
-    link: https://github.com/jackyzha0
+    link: https://github.com/Tymotex/wiki
