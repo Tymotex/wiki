@@ -9,10 +9,10 @@ enableSPA: true
 enableFooter: true
 enableContextualBacklinks: true
 enableRecentNotes: false
-enableGitHubEdit: false
+enableGitHubEdit: true
 GitHubLink: https://github.com/Tymotex/wiki/tree/hugo/content
 description: Tim Zhang's developer wiki.
-page_title: "🪴 Tim's Dev Wiki"
+page_title: "Dev Wiki"
 links:
   - link_name: Github
     link: https://github.com/Tymotex/wiki
