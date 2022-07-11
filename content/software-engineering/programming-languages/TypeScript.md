@@ -2,7 +2,7 @@
 title: TypeScript
 description: TypeScript is a programming language made by Microsoft that is superset of JavaScript.
 ---
-TypeScript is a programming language made by Microsoft that is *superset* of [[JavaScript]]. The reason that TypeScript exists is to make complex JavaScript projects more maintainable and less error-prone by introducing a [[Type System#Static Typing|static]] and [[Type System#Strong Typing|strong]] type system. Essentially, it just gives developers a lot of quality-of-life improvements over JavaScript.
+TypeScript is a programming language made by Microsoft that is *superset* of [[JavaScript]]. The reason that TypeScript exists is to make complex JavaScript projects more maintainable and less error-prone by introducing a [[software-engineering/concepts/programming/Type System#Static Typing|static]] and [[software-engineering/concepts/programming/Type System#Strong Typing|strong]] type system. Essentially, it just gives developers a lot of quality-of-life improvements over JavaScript.
 
 TypeScript gets compiled (or more precisely, '*transpiled*') to JavaScript in the end. This is not new, languages like CoffeeScript, Dart, Scala, etc. can all have JavaScript as what we call a *compilation target*.
 
@@ -400,7 +400,7 @@ const person: Person = {
 ```
 
 ### Generators
-See [[Generators|generators]]. In JavaScript, you can create a [[JavaScript#Generators|generator function]] by postfixing `function` with an asterisk, `*`. *Note*: you cannot define arrow functions as generator functions (at least as of 2022's ES standard).
+See [[software-engineering/concepts/programming/Generators|generators]]. In JavaScript, you can create a [[JavaScript#Generators|generator function]] by postfixing `function` with an asterisk, `*`. *Note*: you cannot define arrow functions as generator functions (at least as of 2022's ES standard).
 ```typescript
 function* fooGenerator() {
 	yield 42;
@@ -425,7 +425,7 @@ function* fooGenerator(): IterableIterator<number> {
 ```
 
 ### Iterators
-See [[Iterators|iterators]]. In JavaScript, an *iterable* is an object containing the `Symbol.iterator` property with the value being a function that returns an *iterator* (which can be done by defining Symbol.iterator to be a [[TypeScript#Generators|generator function]], which always returns an iterator). An *iterator* is an object that defines a `next` method which returns an object of shape: `{ value: any, done: boolean }`.
+See [[software-engineering/concepts/programming/Iterators|iterators]]. In JavaScript, an *iterable* is an object containing the `Symbol.iterator` property with the value being a function that returns an *iterator* (which can be done by defining Symbol.iterator to be a [[TypeScript#Generators|generator function]], which always returns an iterator). An *iterator* is an object that defines a `next` method which returns an object of shape: `{ value: any, done: boolean }`.
 
 An object can be both an *iterable* and an *iterator* at the same time. When you invoke a generator function, for example, you get an object 
 of type `IterableIterator` which is both, meaning it has a `Symbol.iterator` property, whose value is a function that returns an iterator, and the `next` method.
@@ -479,5 +479,29 @@ type Filter<T> = (array: T[], predicate: (elem: T) => boolean) => T[];
 // Wherever you use `Filter`, you have to explicitly bind `T` like `Filter<T>`.
 const filter: Filter<number> = (array, predicate) => ...;
 ```
+
+### Bounded Polymorphism
+Sometimes, saying that a generic function takes in type parameter of `T` is too permissive. Instead, we might want `T` to be a subtype of `U`, that is, we should accept type parameters that are 'at least' `U`. This is called *bounded polymorphism* or *constrained genericity*.
+```typescript
+type Enemy = { health: number };
+type Alien = Enemy & { galaxy: string };
+type Cyborg = Enemy & { model: string };
+
+type AttackEnemy = <T extends Enemy>(enemy: T, damage: number) => void;
+const attackEnemy: AttackEnemy = <T extends Enemy>(enemy: T, damage: number) => {
+	enemy.health -= damage;
+	console.log(`Dealt ${damage}. Enemy now has ${enemy.health} HP left.`);
+};
+
+const enemy: Enemy = { health: 20 };
+const alienEnemy: Alien = { health: 50, galaxy: 'Andromed' };
+const cyborgEnemy: Cyborg = { health: 100, model: 'Terminator Mk. II' };
+
+attackEnemy(enemy, 15);
+attackEnemy(alienEnemy, 10);
+attackEnemy(cyborgEnemy, 8);
+attackEnemy("Hello world", 5);  // Fails because "Hello world" is not a subtype of `Enemy`.
+```
+![[software-engineering/programming-languages/assets/bounded-polymorphism.png|300]]
 
 

@@ -14,10 +14,10 @@ print(next(g))      # → 5
 ```
 At each `yield` statement, execution is suspended at that line and exeuction resumes at the line right after until the next `yield` or until the function terminates.
 
-**Note**: normally, when you invoke a function, a [[Stack Frame|stack frame]] gets allocated on the [[Program Memory#Stack|stack]] section of memory. When you invoke a generator function, the 'stack' frame actually gets allocated in the [[Program Memory#Heap|heap]] instead (at least in [CPython](https://github.com/python/cpython)) and so they persist separately from the regular function call stack.
+**Note**: normally, when you invoke a function, a [[software-engineering/concepts/computer-science/Stack Frame|stack frame]] gets allocated on the [[software-engineering/concepts/computer-science/Program Memory#Stack|stack]] section of memory. When you invoke a generator function, the 'stack' frame actually gets allocated in the [[software-engineering/concepts/computer-science/Program Memory#Heap|heap]] instead (at least in [CPython](https://github.com/python/cpython)) and so they persist separately from the regular function call stack.
 
 ### Generators & Iterator
-All *generators* are [[Iterators|iterators]]. When you invoke a generator function, it returns an *iterator* which you can loop through by invoking some function/method like `next` on them (in the case of Python).
+All *generators* are [[software-engineering/concepts/programming/Iterators|iterators]]. When you invoke a generator function, it returns an *iterator* which you can loop through by invoking some function/method like `next` on them (in the case of Python).
 
 ### Why Use Generators?
 Normally, when you need a list of values of some kind, you'd call a function which returns that entire list of values back to you. Generators are *lazy*, so they only return one value of a stream of values at a time. In other words, you get values from a stream of values *on-demand* rather than getting all values upfront. This is great when you don't know how many values from a stream of values you might need. If you really needed the first 10 values, but you loaded all 1000 values upfront, for example, you're hogging an **unnecessarily large amount of memory**. With generators, you only really hold the memory for a single value of the list, so it's a really common way to optimise for memory usage.
