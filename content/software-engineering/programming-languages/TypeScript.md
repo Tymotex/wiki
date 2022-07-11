@@ -1,3 +1,7 @@
+---
+title: TypeScript
+description: TypeScript is a programming language made by Microsoft that is superset of JavaScript.
+---
 TypeScript is a programming language made by Microsoft that is *superset* of [[JavaScript]]. The reason that TypeScript exists is to make complex JavaScript projects more maintainable and less error-prone by introducing a [[Type System#Static Typing|static]] and [[Type System#Strong Typing|strong]] type system. Essentially, it just gives developers a lot of quality-of-life improvements over JavaScript.
 
 TypeScript gets compiled (or more precisely, '*transpiled*') to JavaScript in the end. This is not new, languages like CoffeeScript, Dart, Scala, etc. can all have JavaScript as what we call a *compilation target*.
@@ -14,13 +18,6 @@ The only main reasons *not* to use TypeScript are because:
 - You or your teammates are not willing to learn it, and you need to produce output fast in the short-term (like in a hackathon).
 - The project is a very simple or one-off thing that it's not worth setting up the build system.
 
----
-```toc
-style: number
-min_depth: 1
-max_depth: 6
-```
----
 ## Setup
 Install Node.js, `npm` or `yarn`. Then, install `tsc`, the open-source typescript compiler, as a dev dependency in a javascript project:
 ```bash
@@ -449,3 +446,38 @@ for (const item of favouriteNums) {
 
 ### Function Overloading
 You can define a function type that actually consists of multiple function signatures. See the [Function Overloads](https://www.typescriptlang.org/docs/handbook/2/functions.html#function-overloads).
+
+## Generic Functions
+See [[Generics]]. In TypeScript, you can define generic functions by specifying a comma-separated list of generic type parameters in angle brackets `<>` right before the parameter list of function. You would use generic functions if you wanted a function to be reusable across multiple types without giving up type safety by resorting to `any`.
+```typescript
+type Filter = <T>(array: T[], predicate: (elem: T) => boolean) => T[];
+
+const filter: Filter = <T>(array: T[], predicate: (elem: T) => boolean) => {
+	const arr: T[] = [];
+	array.forEach((elem) => {
+		if (predicate(elem)) arr.push(elem);
+	});
+	return arr;
+};
+
+// TypeScript can infer that `T` should be `number`.
+console.log(filter([1, 2, 3, 4, 5], (num) => num % 2 === 0));
+
+// To explicitly set `T`, use angle brackets after the function name.
+console.log(filter<number>([1, 2, 3, 4, 5], (num) => num % 2 === 0));
+```
+To make regular function declarations generic, you also place the generic type parameters between angle brackets right before the parameter list:
+```typescript
+function filter<T>(array: T[], predicate: (elem: T) => boolean) => { ... }
+```
+
+#### Bind on Reference
+In the above example, `T` gets *bound* when the function gets invoked, but you could also bind `T` whenever the type alias gets referenced by placing the generic type parameters *after* the type name instead of before the function parameter list:
+```typescript
+type Filter<T> = (array: T[], predicate: (elem: T) => boolean) => T[];
+
+// Wherever you use `Filter`, you have to explicitly bind `T` like `Filter<T>`.
+const filter: Filter<number> = (array, predicate) => ...;
+```
+
+
