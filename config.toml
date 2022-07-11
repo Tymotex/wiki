@@ -1,4 +1,4 @@
-baseURL = "https://tymotex.github.io/wiki/"
+baseURL = "https://wiki.timz.dev/"
 languageCode = "en-us"
 googleAnalytics = "G-XYFD95KB4J"
 pygmentsUseClasses = true
