@@ -46,7 +46,8 @@ Every typescript project should have a `tsconfig.json` file at the root of the p
 Alternatively, you can generate a `tsconfig.json` with `tsc --init`.
 
 Some recommended flags include:
-- `noImplicitThis`, which forces a type to be explicitly assinged to `this` inside functions. See [[TypeScript#this]].
+- `noImplicitThis` – forces a type to be explicitly assinged to `this` inside functions. See [[TypeScript#this]].
+- `noImplicitOverride` – you must always use the `override` modifier for method overriding.
 
 ## Typing
 Broadly speaking, in programming languages, a *type* is a [[Set Theory#Sets|set]] of values, plus the properties/methods available to them.
@@ -502,6 +503,76 @@ attackEnemy(alienEnemy, 10);
 attackEnemy(cyborgEnemy, 8);
 attackEnemy("Hello world", 5);  // Fails because "Hello world" is not a subtype of `Enemy`.
 ```
-![[software-engineering/programming-languages/assets/bounded-polymorphism.png|300]]
+![[software-engineering/programming-languages/assets/bounded-polymorphism.png|250]]
 
+## Object-Oriented Programming
+See [[software-engineering/concepts/programming/Object Oriented Programming|Object Oriented Programming]].
+
+### Access Modifiers
+See [[software-engineering/concepts/programming/Object Oriented Programming#Encapsulation|encapsulation]]. TypeScript offers 3 access modifiers, which can be prefixed to any class field declaration:
+- `private`.
+- `protected` (which makes a member accessible to subclasses as well).
+- `public` .
+If no access modifier is specified, then fields are `public` by default, unlike most languages which default to `private`.
+
+When prefixing a constructor's parameter with an access modifier, it'll declare the field and assign the given value implicitly. 
+```typescript
+class Person {
+	constructor(public name: string) {}
+}
+// ... is a shorthand that's equivalent to:
+class Person {
+	public name: string;
+	constructor(name: string) { this.name = name; }
+}
+
+const person: Person = new Person('Linus Torvalds');
+console.log(person.name);
+```
+
+### Inheritance
+See [[software-engineering/concepts/programming/Object Oriented Programming#Inheritance|inheritance]]. In TypeScript, inheritance works in the same way and uses the same syntax as [[software-engineering/programming-languages/JavaScript#Inheritance|JavaScript's inheritance]].
+
+### Method Overriding
+See [[software-engineering/concepts/programming/Object Oriented Programming#Method Overidding|method overriding]]. By default, every method is '[[software-engineering/concepts/programming/Object Oriented Programming#Virtual Method|virtual]]', so you can override them all. To override a method in TypeScript, just copy the method signature and supply the new method body. As good practice, use the optional `override` modifier so that you're warned when you've got the base class' method signature wrong.
+```typescript
+class Base {
+    // Methods are virtual by default.
+	public foo(): void {
+		console.log('Foo');
+	}
+}
+
+class Sub extends Base {
+    // Explicitly re-implementing the parent's `foo` method.
+	public override foo(): void {
+		console.log('Bar');
+	}
+}
+```
+
+#### Abstract Classes
+See [[software-engineering/concepts/programming/Object Oriented Programming#Abstract Class|abstract classes]]. To make a class abstract, just prefix it with the `abstract` keyword.
+```typescript
+abstract class Employee { ... }
+class SoftwareEngineer extends Employee { ... }
+```
+
+### Abstract Methods
+See [[software-engineering/concepts/programming/Object Oriented Programming#Abstract Method|abstract methods]]. Abstract methods must be inside abstract classes. To make a method abstract, use the `abstract` modifier, explicitly type the method signature and do not provide a body.
+```typescript
+abstract class Employee {
+	constructor(public salary: number) {}
+	public getSalary(): number { return this.salary; }
+	public abstract slackOff(): void;
+}
+
+class SoftwareEngineer extends Employee {
+	constructor() { super(100000); }
+	public override slackOff() { console.log('Time to browse r/ProgrammerHumor...'); }
+}
+
+const linus: Employee = new SoftwareEngineer();
+linus.slackOff();
+```
 

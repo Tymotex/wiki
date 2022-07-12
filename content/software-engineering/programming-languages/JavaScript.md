@@ -3,15 +3,6 @@ TODO.
 There's also [[TypeScript]].
 
 
-## Prototypes
-TODO.
-
-
-
-
-
-
-
 
 ### Rest Operator
 TODO.
@@ -19,3 +10,19 @@ TODO.
 
 ### Generators
 TODO.
+
+## Object Oriented Programming
+### Classes
+TODO.
+
+### Inheritance
+TODO.
+
+### Prototypes
+TODO.
+
+
+
+
+
+
