@@ -4,7 +4,7 @@ description: Object-oriented programming is a programming paradigm that sees pro
 ---
 Object-oriented programming is a [[Programming Paradigm|programming paradigm]] that sees programs as a collection of *objects* interacting with each other. *Objects* are just containers for some data (called 'fields') and functions (called 'methods').
 
-Object-oriented programming involves heavy usage of [[#Classes]] and enable us to make use of concepts like [[#Encapsulation]], [[#Inheritance]], [[#Polymorphism]], etc.
+Object-oriented programming involves heavy usage of [[software-engineering/concepts/programming/Object Oriented Programming#Classes|classes]] and enable us to make use of concepts like [[software-engineering/concepts/programming/Object Oriented Programming#Encapsulation|encapsulation]], [[software-engineering/concepts/programming/Object Oriented Programming#Inheritance|inheritance]], [[software-engineering/concepts/programming/Object Oriented Programming#Polymorphism|polymorphism]], etc.
 
 ### Classes
 TODO.
@@ -44,7 +44,7 @@ TODO.
 TODO.
 
 ### Method Overidding
-Method overriding is when you make a subclass provide an implementation for a method that's defined in its base class. Method overriding enables **[[#Dynamic Polymorphism|runtime polymorphism]]**.
+Method overriding is when you make a subclass provide an implementation for a method that's defined in its base class. Method overriding enables **[[software-engineering/concepts/programming/Object Oriented Programming#Dynamic Polymorphism|runtime polymorphism]]**.
 
 **Differences between languages**
 In many languages, overriding is implicitly done, but it's recommended to explicitly label it.
@@ -55,7 +55,7 @@ In many languages, overriding is implicitly done, but it's recommended to explic
 ### Abstract Class
 An abstract class is just one you can't instantiate, *forcing* the user to choose and instantiate a specific concrete subclass that inherits from the abstract class. 
 
-Abstract classes let you define **both** *concrete methods* and *abstract methods*. If you find that you don't need to define concrete methods, which is usually the majority of the time, then consider using an [[#Interface|interface]] instead.
+Abstract classes let you define **both** *concrete methods* and *abstract methods*. If you find that you don't need to define concrete methods, which is usually the majority of the time, then consider using an [[software-engineering/concepts/programming/Object Oriented Programming#Interface|interface]] instead.
 
 **Differences between languages**
 Making a class abstract differs between programming languages.
@@ -64,7 +64,7 @@ Making a class abstract differs between programming languages.
 - In C++, give the class at least one [[C++|pure virtual function]], eg. `virtual void foo() = 0;`. There is no `abstract` keyword.
 
 #### Abstract Method
-*You can only define abstract methods inside an abstract class*. Abstract methods are ones that **must be overridden** and implemented by the subclasses. If you want to provide a default implementation and allow for subclasses to optionally override a method, use [[#Virtual Method|virtual methods]] instead.
+*You can only define abstract methods inside an abstract class*. Abstract methods are ones that **must be overridden** and implemented by the subclasses. If you want to provide a default implementation and allow for subclasses to optionally override a method, use [[software-engineering/concepts/programming/Object Oriented Programming#Virtual Method|virtual methods]] instead.
 
 You cannot make abstract methods static.
 
@@ -75,7 +75,7 @@ To define abstract methods:
 - In C++, define a pure virtual function: `virtual void foo() = 0;`.
 
 ### Virtual Method
-Virtual methods are methods that can be overridden by subclasses. To force subclasses to implement a method, use [[#Abstract Method|abstract methods]] instead.
+Virtual methods are methods that can be overridden by subclasses. To force subclasses to implement a method, use [[software-engineering/concepts/programming/Object Oriented Programming#Abstract Method|abstract methods]] instead.
 
 You cannot make virtual methods static.
 
@@ -87,7 +87,7 @@ To define virtual methods:
 ### Interface
 An interface is a 'contract' that defines what a user can do with the classes that *implement* that interface. You define the methods (and sometimes constants) that the interface supports, and then leave the implementation details to the subclasses. An interface is not a class, so you cannot instantiate it.
 
-You **cannot supply any implementation** inside interfaces. If you want to provide *some* concrete methods, then consider using an [[#Abstract Class|abstract class]] instead. That being said, some programming languages like C# let you implement a static members inside an interface.
+You **cannot supply any implementation** inside interfaces. If you want to provide *some* concrete methods, then consider using an [[software-engineering/concepts/programming/Object Oriented Programming#Abstract Class|abstract class]] instead. That being said, some programming languages like C# let you implement a static members inside an interface.
 
 **Differences between languages**
 - In TypeScript, you define an interface like this: `interface Blog { ... }`, but it's also used generally outside of OO design.
