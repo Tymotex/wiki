@@ -31,8 +31,8 @@ Inheritance (also called 'subclassing') is when you make one class derive from a
 **Differences between languages**
 Languages will have different syntax for inheritance and ways for subclasses to access their parent class. They may also differ in whether they support [**multiple inheritance**](https://en.wikipedia.org/wiki/Multiple_inheritance) or not.
 - In C++, the inheritance might look like `class Sub : public Base`. *Note*: C++ has concepts like private/public inheritance that other languges don't have.
-- In JavaScript, inheritance looks like `class Sub extends Base`. Within the `Sub` class, you have access to a reference to the base class via the `super` keyword.
-- In C#, inheritance looks like `public class Sub : Base`. Subclasses can access the base class members through the `base` keyword (like JavaScript's `super`).
+- In JavaScript, inheritance looks like `class Sub extends Base`. Within the `Sub` class, you have access the base class' constructor and methods via the `super` keyword.
+- In C#, inheritance looks like `public class Sub : Base`. Subclasses can access the base class' members through the `base` keyword (which is similar to JavaScript's `super` keyword).
 
 ### Polymorphism
 TODO.
