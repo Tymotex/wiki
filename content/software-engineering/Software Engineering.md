@@ -2,16 +2,17 @@
 title: Software Engineering
 description: Software engineering wiki.
 ---
+*Software engineering* is the set of theory and practices around how to write, reason about, and maintain software.
 
-### Technologies
-#### Languages
+Below is a list of notes written in my exploration of software technologies and computer science concepts.
+
+### Programming Languges
 - [[software-engineering/programming-languages/TypeScript|TypeScript]]
 
-#### Frameworks
+### Frameworks
 - [[software-engineering/frameworks/Cypress|Cypress]]
 
 ### Concepts
-#### Programming
 - [[software-engineering/concepts/programming/Generators|Generators]]
 - [[software-engineering/concepts/programming/Iterators|Iterators]]
 ...

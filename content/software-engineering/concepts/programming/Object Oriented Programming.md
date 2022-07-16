@@ -2,7 +2,7 @@
 title: Object Oriented Programming
 description: Object-oriented programming is a programming paradigm that sees programs as a collection of objects interacting with each other.
 ---
-Object-oriented programming is a [[Programming Paradigm|programming paradigm]] that sees programs as a collection of *objects* interacting with each other. *Objects* are just containers for some data (called 'fields') and functions (called 'methods').
+Object-oriented programming is a [[software-engineering/concepts/programming/Programming Paradigm|programming paradigm]] that sees programs as a collection of *objects* interacting with each other. *Objects* are just containers for some data (called 'fields') and functions (called 'methods').
 
 Object-oriented programming involves heavy usage of [[software-engineering/concepts/programming/Object Oriented Programming#Classes|classes]] and enable us to make use of concepts like [[software-engineering/concepts/programming/Object Oriented Programming#Encapsulation|encapsulation]], [[software-engineering/concepts/programming/Object Oriented Programming#Inheritance|inheritance]], [[software-engineering/concepts/programming/Object Oriented Programming#Polymorphism|polymorphism]], etc.
 
@@ -61,7 +61,7 @@ Abstract classes let you define **both** *concrete methods* and *abstract method
 Making a class abstract differs between programming languages.
 - In TypeScript, prefix a class with `abstract`.
 - In C#, prefix a class with `abstract`.
-- In C++, give the class at least one [[C++|pure virtual function]], eg. `virtual void foo() = 0;`. There is no `abstract` keyword.
+- In C++, give the class at least one [[software-engineering/programming-languages/C++|pure virtual function]], eg. `virtual void foo() = 0;`. There is no `abstract` keyword.
 
 #### Abstract Method
 *You can only define abstract methods inside an abstract class*. Abstract methods are ones that **must be overridden** and implemented by the subclasses. If you want to provide a default implementation and allow for subclasses to optionally override a method, use [[software-engineering/concepts/programming/Object Oriented Programming#Virtual Method|virtual methods]] instead.

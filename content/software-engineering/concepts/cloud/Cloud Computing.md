@@ -1,3 +1,8 @@
+---
+title: Cloud Computing
+description: Cloud Computing
+---
+
 Cloud computing describes the usage of a network of remote computers managed by [[software-engineering/concepts/cloud/Cloud Provider|cloud providers]] to handle computing tasks like storing/serving files, running web servers, training machine learning models, etc. *instead* of provisioning your own on-premise computers.
 
 By deploying your compute tasks in the cloud, you no longer have to worry about things like:

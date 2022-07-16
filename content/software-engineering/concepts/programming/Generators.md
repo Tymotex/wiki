@@ -1,3 +1,8 @@
+---
+title: Generators
+description: Generators
+---
+
 Generators are *just functions* which, when invoked, will give you a single value from a list of values. They're *stateful* functions which return the next value in a list of values for each successive invocation.
 
 Usually, programming languages will give you a `yield` keyword which works basically the same way as `return`, but when the function is invoked again, execution resumes after the last `yield`. For example, below is a generator in Python.

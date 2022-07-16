@@ -9,7 +9,7 @@ Below is a hierarchy of very popular, battle-tested programming paradigms, each 
 ![[software-engineering/concepts/programming/assets/programming-paradigms.png]]
 **Note**: there are more paradigms than shown here.
 
-Programming languages often support multiple programming paradigms. For example, JavaScript supports both [[software-engineering/concepts/programming/Object Oriented Programming|object-oriented programming]] and [[Functional Programming|functional programming]] (and more).
+Programming languages often support multiple programming paradigms. For example, JavaScript supports both [[software-engineering/concepts/programming/Object Oriented Programming|object-oriented programming]] and [[software-engineering/concepts/programming/Functional Programming|functional programming]] (and more).
 
 ### Imperative
 Programs are a set of precise instructions for the machine to perform that mutate program state.

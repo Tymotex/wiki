@@ -1,9 +1,6 @@
 ---
-title: 🪴 Tim's Dev Wiki
+title: Developer Wiki
 ---
 
-Welcome to my developer wiki!
-
+Welcome to my developer wiki! 📖
 - [[software-engineering/Software Engineering|Software Engineering]]
-- [[economics/Microeconomics|Microeconomics]]
-- [[economics/Macroeconomics|Macroeconomics]]

@@ -2,7 +2,7 @@
 title: TypeScript
 description: TypeScript is a programming language made by Microsoft that is superset of JavaScript.
 ---
-TypeScript is a programming language made by Microsoft that is *superset* of [[JavaScript]]. The reason that TypeScript exists is to make complex JavaScript projects more maintainable and less error-prone by introducing a [[software-engineering/concepts/programming/Type System#Static Typing|static]] and [[software-engineering/concepts/programming/Type System#Strong Typing|strong]] type system. Essentially, it just gives developers a lot of quality-of-life improvements over JavaScript.
+TypeScript is a programming language made by Microsoft that is *superset* of [[software-engineering/programming-languages/JavaScript|JavaScript]]. The reason that TypeScript exists is to make complex JavaScript projects more maintainable and less error-prone by introducing a [[software-engineering/concepts/programming/Type System#Static Typing|static]] and [[software-engineering/concepts/programming/Type System#Strong Typing|strong]] type system. Essentially, it just gives developers a lot of quality-of-life improvements over JavaScript.
 
 TypeScript gets compiled (or more precisely, '*transpiled*') to JavaScript in the end. This is not new, languages like CoffeeScript, Dart, Scala, etc. can all have JavaScript as what we call a *compilation target*.
 
@@ -46,12 +46,12 @@ Every typescript project should have a `tsconfig.json` file at the root of the p
 Alternatively, you can generate a `tsconfig.json` with `tsc --init`.
 
 Some recommended flags include:
-- `noImplicitThis` – forces a type to be explicitly assinged to `this` inside functions. See [[TypeScript#this]].
+- `noImplicitThis` – forces a type to be explicitly assinged to `this` inside functions. See [[software-engineering/programming-languages/TypeScript#this|TypeScript this]].
 - `noImplicitOverride` – you must always use the `override` modifier for method overriding.
 - `noFallthroughCasesInSwitch` – every case must either `break` or `return`.
 
 ## Typing
-Broadly speaking, in programming languages, a *type* is a [[Set Theory#Sets|set]] of values, plus the properties/methods available to them.
+Broadly speaking, in programming languages, a *type* is a [[maths/discrete-maths/Set Theory#Sets|set]] of values, plus the properties/methods available to them.
 
 ### Assigning Types
 Assigning types is straightforward in TypeScript, you just postfix a variable or parameter with a colon and a type. 
@@ -62,7 +62,7 @@ let b: string;
 ```
 
 ### Defining Types
-Remember, types are just [[Set Theory#Sets|sets]] of values. When you define a *type*, you are just defining a set of values. The following are all examples of custom types you can define:
+Remember, types are just [[maths/discrete-maths/Set Theory#Sets|sets]] of values. When you define a *type*, you are just defining a set of values. The following are all examples of custom types you can define:
 ```typescript
 type TwoOrFour = 2 | 4;                           // The set consisting of 2 and 4.
 type Value = string | number;                     // The set of all strings and all numbers.
@@ -142,7 +142,8 @@ TypeScript introduces some new built-in data types that aren't present in JavaSc
 The `any` type represents the set of *all* values. You can assign a variable of type `any` to a number, a string, a WebServer object, etc. Only use `any` as a last resort – always prefer assigning the most specific type that you can. Often, people treat `any` as a way to 'opt' out of TypeScript for a small part of the code. When something is `any`, you are free to do erroneous things on it such as invoking methods on it that don't exist, using in arithmetic expressions, accessing undefined properties, etc.
 
 #### unknown
-The `unknown` type represents the set of *all* values, just like `any`. The difference is that TypeScript does not allow you to use an `unknown` value until you perform [[TypeScript#Type checking|type checks]] to narrow down what specific type the `unknown` value is. For this reason, `unknown` is considered the type-safe version of `any`.
+The `unknown` type represents the set of *all* values, just like `any`. The difference is that TypeScript does not allow you to use an `unknown` value until you perform [[software-engineering/programming-languages/TypeScript#typeof and instanceof|type checks]] 
+or [[software-engineering/programming-languages/TypeScript#Refinement|refinement]] to narrow down what specific type the `unknown` value is. For this reason, `unknown` is considered the type-safe version of `any`.
 ```typescript
 const a: unknown = 30;
 if (typeof a === 'number') {
@@ -158,6 +159,7 @@ const b: unknown = "World";
 a.toLowerCase();   // This is fine since `a` is `any`.
 b.toLowerCase();   // Error. We need a type check before 
 ```
+
 > A useful way to think about `any` and `unknown` is: `any` means "I don't care", `unknown` means "I don't know (yet)". 
 
 ### Object Shape
@@ -314,7 +316,7 @@ type FullName = [string, string, string?];  // You can make items optional in a 
 const elon: FullName = ["Elon", "Reeve", "Musk"];
 const jeff: FullName = ["Jeff", "Bezos"];
 ```
-You can also make use of the [[JavaScript#Rest Operator|rest operator]], `...`, to allow for tuples of arbitrary lengths.
+You can also make use of the [[software-engineering/programming-languages/JavaScript#Rest Operator|rest operator]], `...`, to allow for tuples of arbitrary lengths.
 ```typescript
 type FullName = [string, string, ...string[]];
 const queenElizabethII = ['Elizabeth', 'Alexandra', 'Mary', 'Windsor'];
@@ -392,7 +394,7 @@ const b = 2;  // `b` is of type `2`, a specific member of `number`.
 ### typeof and instanceof
 Although type checking is done for you statically, there are times when you must perform run-time type checks such as when you're fetching external data. In these times, rely on JavaScript's operators: `typeof` and `instanceof`.
 1. Use the `instanceof` binary operator to check some value is of a custom type, or a complex built-in type like `RegExp`.
-	- Note that `val instanceof T` works by checking if `T` exists anywhere along `val`'s [[JavaScript#Prototypes|prototype chain]]. This is why you get unintuitive results when you use `instanceof` on primitive types. For example, `42 instanceof Number` is `false`, but `new Number(42) instanceof Number` is `true`.
+	- Note that `val instanceof T` works by checking if `T` exists anywhere along `val`'s [[software-engineering/programming-languages/JavaScript#Prototypes|prototype chain]]. This is why you get unintuitive results when you use `instanceof` on primitive types. For example, `42 instanceof Number` is `false`, but `new Number(42) instanceof Number` is `true`.
 2.  Use the `typeof` unary operator to check some value is some built-in primitive type such as `undefined`, `number`, `string`, `boolean`, etc.
 
 ### Type Assertions [TODO]
@@ -470,7 +472,7 @@ const handle = (event: UserEvent): void => {
 	}
 };
 ```
-This kind of type refinement is very useful when working with [[Redux#Reducers|Redux reducers]].
+This kind of type refinement is very useful when working with [[software-engineering/frameworks/Redux#Reducers|Redux reducers]].
 
 #### Type Guards
 Refinement doesn't work as expected when you use a function to do the type-checking. Any type-checking only contributes to refinement if it's in the same scope.
@@ -562,7 +564,7 @@ callback("Linus", "F*** you, Nvidia.");
 ```
 
 ### Optional & Default Parameters
-Just like how you can make [[TypeScript#Object Shape|object properties optional]] and [[TypeScript#Tuples|tuple items optional]], you can make function parameters optional by postfixing the parameter name with a `?`. Alternatively, you can set a default value for a parameter by assigning a value directly after the parameter name, which is pretty much the same as making it optional.
+Just like how you can make [[software-engineering/programming-languages/TypeScript#Optional Properties|object properties optional]] and [[software-engineering/programming-languages/TypeScript#Tuples|tuple items optional]], you can make function parameters optional by postfixing the parameter name with a `?`. Alternatively, you can set a default value for a parameter by assigning a value directly after the parameter name, which is pretty much the same as making it optional.
 ```typescript
 // Optional parameter.
 const greet = (name: string, message?: string) => {
@@ -665,7 +667,7 @@ for (const item of favouriteNums) {
 You can define a function type that actually consists of multiple function signatures. See the [Function Overloads](https://www.typescriptlang.org/docs/handbook/2/functions.html#function-overloads).
 
 ## Generic Functions
-See [[Generics]]. In TypeScript, you can define generic functions by specifying a comma-separated list of generic type parameters in angle brackets `<>` right before the parameter list of function. You would use generic functions if you wanted a function to be reusable across multiple types without giving up type safety by resorting to `any`.
+See [[software-engineering/programming-languages/Generics|generics]]. In TypeScript, you can define generic functions by specifying a comma-separated list of generic type parameters in angle brackets `<>` right before the parameter list of function. You would use generic functions if you wanted a function to be reusable across multiple types without giving up type safety by resorting to `any`.
 ```typescript
 type Filter = <T>(array: T[], predicate: (elem: T) => boolean) => T[];
 
@@ -801,6 +803,15 @@ interface HashMap<K, V> { ... }
 
 
 ## Modules
+
+A brief timeline:
+- 1995: JavaScript was born, but there was no concept of modules which made building complex applications extremely hard. Without modules, a single huge javascript file might be shipped to the user.
+- 2009: people introduced a module system to take advantage of the code splitting optimisation technique where modules are lazily loaded.
+- 2009: Node.js was developed and introduced CommonJS.
+- 
+
+
+
 
 
 In imports, you don't need to specify the `.ts` file extension. This means you can easily import [[software-engineering/programming-languages/TypeScript#Type Declaration Files|type declaration files]] with the extensionless name.

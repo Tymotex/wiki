@@ -1,5 +1,10 @@
+---
+title: Iterators
+description: Iterators
+---
+
 An **iterator** is an *object* that lets you loop through an **iterable**, usually by invoking, implicitly or explicitly, a `next` method.
-- In Python, iterators are objects that expose the `__next__`  [[Python#Dunder Methods|dunder method]] which can be invoked to retrieve the next value in the **iterable**.
+- In Python, iterators are objects that expose the `__next__`  [[software-engineering/programming-languages/Python#Dunder Methods|dunder method]] which can be invoked to retrieve the next value in the **iterable**.
 
 An **iterable** is an object containing a collection of items that you can *get an **iterator** from*, usually, via a method. Iterables are stateless and have no concept of what element is the 'current' element in a traversal – that is what the iterator handles.
 - In Python, that method is `__iter__`.

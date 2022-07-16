@@ -1,6 +1,11 @@
+---
+title: JavaScript
+description: JavaScript
+---
+
 TODO.
 
-There's also [[TypeScript]].
+There's also [[software-engineering/programming-languages/TypeScript]].
 
 
 

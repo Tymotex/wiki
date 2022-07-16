@@ -1,3 +1,8 @@
+---
+title: Arrange, Act, Assert
+description: Arrange, Act, Assert
+---
+
 The 'arrange, act, assert' mantra is a pattern for structuring your [[software-engineering/concepts/testing/Unit Testing|unit tests]] (as well as integration tests and e2e tests). 
 
 The contents of a test should be partitioned into 3 parts in the following order:
@@ -6,7 +11,7 @@ The contents of a test should be partitioned into 3 parts in the following order
 3. **Assert** – the code that makes assertions about what the aftermath should be. 
 
 Some simple, concrete examples of this pattern:
-1. Unit testing a C++ function (using [[GoogleTest]]). This tests a `SymbolTable` class that's meant to be used as a supporting data structure for a [compiler project](https://github.com/Tymotex/Nand2Tetris).
+1. Unit testing a C++ function (using [[software-engineering/frameworks/GoogleTest|GoogleTest]]). This tests a `SymbolTable` class that's meant to be used as a supporting data structure for a [compiler project](https://github.com/Tymotex/Nand2Tetris).
 	```c++
 	TEST(SymbolTableTestSuite, InsertAndRetrieveTest) {
 	    // Arrange.
@@ -51,7 +56,7 @@ Some simple, concrete examples of this pattern:
 	    });
     });
 	```
-1. E2E testing a web app (using [[Cypress]]). This tests that the portfolio website, [timz.dev](https://timz.dev), is able to load the about page via a link on the homepage.
+1. E2E testing a web app (using [[software-engineering/frameworks/Cypress|Cypress]]). This tests that the portfolio website, [timz.dev](https://timz.dev), is able to load the about page via a link on the homepage.
 	```typescript
 	describe("Portfolio page tests", () => {
 	    it("should render the about page after the 'about' link is clicked", () => {

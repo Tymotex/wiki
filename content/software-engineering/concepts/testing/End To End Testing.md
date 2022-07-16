@@ -1,3 +1,8 @@
+---
+title: End To End Testing
+description: End To End Testing
+---
+
 End-to-end (e2e) tests are tests that aim to simulate the user experience as closely as possible and will look almost like manual testing, but automated.
 
 Although end-to-end tests are immensely valuable, it's worth considering reasons why you might not want to write them:

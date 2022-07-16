@@ -1,3 +1,8 @@
+---
+title: Type System
+description: Type System
+---
+
 A *type system* is a set of rules defined by a programming language specification that assigns a *type* to every variable, expression, function, and possibly other things beyond those. 
 
 ### Why Type Systems Exist
@@ -7,16 +12,16 @@ Type systems exist for one reason: to help you write less buggy code in a more s
 
 ### Static Typing
 A *statically typed language* is one where the type system's rules are checked when you run the compiler (ie. at compile-time). It's called 'static' because any type system violations are caught before you execute a single line of your program.
-- Languages like [[C]] and [[Java]] are statically typed. Every valid C or Java program will always know what type an expression, variable, function has before execution.
+- Languages like [[software-engineering/programming-languages/C|C]] and [[software-engineering/programming-languages/Java|Java]] are statically typed. Every valid C or Java program will always know what type an expression, variable, function has before execution.
 
 ### Dynamic Typing
 A *dynamically typed language* is one where the type system's rules are checked during the execution of the program rather than at compile-time. In other words, nothing has a type until you run the program, and only then do the types get assigned to expressions, variables, functions, etc.
-- [[Python]] is a dynamically typed language. You could code up some very obvious type errors like `x = 1 + "hi"` but the program will run fine until it actually executes that line.
+- [[software-engineering/programming-languages/Python|Python]] is a dynamically typed language. You could code up some very obvious type errors like `x = 1 + "hi"` but the program will run fine until it actually executes that line.
 - There is an important trade-off to recognise between static typing and dynamic typing: you would get fewer run-time errors with static typing, however dynamic typing affords you far more flexibility, which generally helps you implement things faster (at least in the short-term).
 
 ### Strong Typing
 There's a lack of a formal definition for this, but a *strongly typed* language is basically one where it is *not possible* for the developer to bypass the type system's rules. In other words, a value's type never changes in unexpected ways, such as through *implicit casts*.
-- [[Python]] is a strongly typed language. It's not possible to implicitly typecast values.
+- [[software-engineering/programming-languages/Python|Python]] is a strongly typed language. It's not possible to implicitly typecast values.
 - **Note**: a language can be both strongly and dynamically typed.
 	```python
 	x = 42
@@ -25,9 +30,9 @@ There's a lack of a formal definition for this, but a *strongly typed* language 
 
 ### Weak Typing
 Just like *strong typing*, there is a lack of a formal definition, but in general: weakly typed programming languages are ones that have a more relaxed enforcement of its type system's rules, meaning that it's possible to violate/bypass them.
-- [[C]] is a classic weakly typed language. Pointers and integers are pretty much fully interchangeable, and you can freely convert a pointer of any type to a pointer of any other type.
+- [[software-engineering/programming-languages/C|C]] is a classic weakly typed language. Pointers and integers are pretty much fully interchangeable, and you can freely convert a pointer of any type to a pointer of any other type.
 	> "C is not a strongly-typed language, but as it has evolved, its type checking has been strengthened. " - Dennis Ritchie.
-- [[JavaScript]] is also a weakly typed language. It's notorious for silently producing (sometimes hilariously) unintuitive results.
+- [[software-engineering/programming-languages/JavaScript|JavaScript]] is also a weakly typed language. It's notorious for silently producing (sometimes hilariously) unintuitive results.
 	```javascript
 	"11" + 1 === "111"
 	"11" — 1 === 10

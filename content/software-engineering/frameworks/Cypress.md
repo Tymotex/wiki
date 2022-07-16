@@ -6,7 +6,7 @@ Cypress is an [[software-engineering/concepts/testing/End To End Testing|end-to-
 
 Cypress tests aim to simulate the user experience as closely as possible. This means that tests you write will usually start up a real browser process, navigate to the URL of your web app, then execute a series of user interactions (eg. clicking on links, buttons, sending keystrokes, etc.) and let you make assertions on how the document should respond and what its contents should have.
 
-The purpose of end-to-end testing this way is to give you confidence that the user can perform critical actions without error. For example, you might have a test that verifies your web app's authentication system, the purchase of an item, the sending of a message, etc. Unit tests with [[Jest]], for example, wouldn't be sufficient for that purpose.
+The purpose of end-to-end testing this way is to give you confidence that the user can perform critical actions without error. For example, you might have a test that verifies your web app's authentication system, the purchase of an item, the sending of a message, etc. Unit tests with [[software-engineering/frameworks/Jest]], for example, wouldn't be sufficient for that purpose.
 
 ### Writing Tests
 
