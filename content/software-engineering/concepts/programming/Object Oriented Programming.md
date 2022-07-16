@@ -94,3 +94,6 @@ You **cannot supply any implementation** inside interfaces. If you want to provi
 - In C#, you define an interface like this: `public interface IFoo { ... }`.
 - In C++, there is no native concept of interfaces, but you can simulate it by making an abstract class whose methods *are all* abstract, ie. all of them are pure virtual functions. Implementing an interface is therefore the same as inheritance.
 All interface members are public by default.
+
+## Criticisms of OOP
+See [Object-Oriented Programming is Bad](https://www.youtube.com/watch?v=QM1iUe6IofM).

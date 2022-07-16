@@ -48,6 +48,7 @@ Alternatively, you can generate a `tsconfig.json` with `tsc --init`.
 Some recommended flags include:
 - `noImplicitThis` – forces a type to be explicitly assinged to `this` inside functions. See [[TypeScript#this]].
 - `noImplicitOverride` – you must always use the `override` modifier for method overriding.
+- `noFallthroughCasesInSwitch` – every case must either `break` or `return`.
 
 ## Typing
 Broadly speaking, in programming languages, a *type* is a [[Set Theory#Sets|set]] of values, plus the properties/methods available to them.
@@ -68,6 +69,12 @@ type Value = string | number;                     // The set of all strings and 
 type RandomThings = "Hello" | 42 | null | RegExp; // The set consisting of "Hello", 42, null and all instances of `RegExp`.
 ```
 
+An important thing to understand about TypeScript (and many other statically-typed languages) is that it has separate namespaces for *values* and *types*. This means that in the following example, a variable identifier with the same name as a type alias are not in conflict. TypeScript can infer if you meant the *value* or the *type*.
+```typescript
+type hello = "world";
+const hello: hello = "world";
+```
+
 #### Type Alias
 You can declare *type aliases* in a very similar way as to how you define variables. Type aliases are block-scoped, just like local variables.
 ```typescript
@@ -79,6 +86,30 @@ const me: Person = {
 	name: "Tim"
 };
 ```
+
+### Interface
+Interfaces are basically an alternative to [[software-engineering/programming-languages/TypeScript#Type Alias|type aliases]], but are mostly better suited for defining object shapes. You can't use `&` or `|` for interfaces, but you can use `extends`.
+```typescript
+// With type aliases, to add additional fields on top another type, you'd use `&`.
+type Employee = { id: string; }
+type SoftwareEngineer = Employee & { techStack: string[]; }
+
+// With interfaces, you just use `extends`, similar to how you do class inheritance.
+interface Employee { id: string }
+interface SoftwareEngineer extends Employee { techStack: string[]; }
+```
+
+#### Classes vs. Interfaces
+Using `interface` does not actually generate any javascript code when transpiled. Using `class`, however, will generate JavaScript code, which enables `instanceof` to work at runtime. A `class Foo { ... }` definition actually creates a *value* `Foo` that can be used in expressions, and a *type* `Foo` that can be used as a type. 
+
+Interfaces don't let you use [[software-engineering/programming-languages/TypeScript#Access Modifiers|access modifiers]]. You can't supply implementations either.
+
+Keep these critical differences in mind when deciding between `class` or `interface`.
+
+### Assignability
+Assignability is about what the rules are around an assignment like this: `const a: A = b;`, where `b` is of type `B`. For assignment to be valid, it must be the case that:
+1. `B` is a subtype of `A` (basically that $B \subseteq A$),
+2. ... or `B` is `any`. *Note*: this rule only exists to make it easier to interoperate with javascript code.
 
 #### Union and Intersection
 Again, types are just *sets* of values. To expand the size of a set, you can union it with other sets, and to narrow the size of a set, you can intersect it other sets. In TypeScript, we use `|` to union two types and `&` to intersect two types.
@@ -154,7 +185,7 @@ const person: Andrew = {...};
 #### Optional Properties
 By default, all properties are treated as compulsory. To allow an object to not define a property, just postfix the property name with `?`.
 ```typescript
-type Person = {  
+type Person = {
 	firstName: string;
 	lastName: string;	
 	middleName?: string;   // Objects of type `Person` can optionally set the `middleName` property.
@@ -186,6 +217,59 @@ const myFruitRatings: FruitRatings = {
 	banana: 7,
 	cherry: 9
 };
+```
+
+#### Indexed Access Types
+See [indexed access types](https://www.typescriptlang.org/docs/handbook/2/indexed-access-types.html). When you define a type for an object shape, if you want to access a nested part of that shape as a type, you can just use the subscript operator `[]`.
+```typescript
+interface Theme {
+	colour: {
+		mode: 'light' | 'dark';
+		palette: {
+			primary: ['#0000FF', '#0044FF', '#0066FF', '#3388FF'];
+			secondary: ['#464646', '#616161', '#7E7E7E', '#AAAAAA'];
+		};
+	};
+}
+
+type ColourOptions = Theme['colour'];
+type Palette = Theme['colour']['palette'];
+```
+Nope, you can't use the `.` operator as if you were accessing object properties.
+
+#### keyof
+The `keyof` unary operator evaluates to the union of a type's keys.
+```typescript
+interface Theme {
+	colour: {
+		mode: 'light' | 'dark';
+		palette: {
+			primary: string[];
+			secondary: string[];
+		};
+	};
+}
+
+type ColourProperties = keyof Theme['colour'];              // → 'mode' | 'palette'
+type PaletteProperties = keyof Theme['colour']['palette'];  // → 'primary' | 'secondary'
+```
+This is helpful for writing getter functions that retrieve values nested in an object:
+```typescript
+const theme: Theme = {
+	colour: {
+		mode: 'dark',
+		palette: {
+			primary: ['#0000FF', '#0044FF', '#0066FF', '#3388FF'],
+			secondary: ['#464646', '#616161', '#7E7E7E', '#AAAAAA'],
+		},
+	},
+};
+
+const getPalette = (theme: Theme, palette: keyof Theme['colour']['palette']): string[] => {
+	return theme['colour']['palette'][palette];
+};
+
+console.log(getPalette(theme, 'primary'));
 ```
 
 ### Arrays
@@ -288,7 +372,7 @@ enum Theme {
 }
 const theme: Theme = 6; // No complaints from TypeScript.
 ```
-In general, the official docs advise you to avoid enums unless they help significantly with readability. Alternatives to enums include string literals, eg. `type Theme = "Light" | "Dark" | ...`, or object literals, eg. `const Theme = { Light: "Light", Dark: "Dark", ... }`
+In general, the official docs advise you to avoid enums unless they help significantly with readability. Alternatives to enums include string literals, eg. `type Theme = "Light" | "Dark" | ...`, or object literals, eg. `const Theme = { Light: "Light", Dark: "Dark", ... }`.
 
 ### Type Inference
 You don't have to always supply an explicit type. Often, there'll be enough context for TypeScript to figure it out without ambiguity. In general, we prefer type inference over explict assigning types to varaibles/parameters/etc. for conciseness.
@@ -299,23 +383,155 @@ let b = 42;           // Equivalent to above, but it lets typescript assign the 
 This extends to functions as well, meaning that often you won't have to specify the return value.
 
 #### Type Widening/Narrowing [TODO]
-An important implicit rule in TypeScript is that when you let type inference happen for `const` variables, TypeScript will assign it the *narrowest type possible* since it knows that a `const` variable cannot possibly take any other value after its defined.
+An important implicit rule in TypeScript is that when you let type inference happen for `const` variables, TypeScript will assign it the *narrowest type possible* since it knows that a `const` variable cannot possibly take any other value after its defined. Otherwise, TypeScript will infer the type to be wider than it might be.
 ```typescript
 let a = 2;    // `a` is of type `number`.
 const b = 2;  // `b` is of type `2`, a specific member of `number`.
 ```
-	
-### Type Checking
+
+### typeof and instanceof
 Although type checking is done for you statically, there are times when you must perform run-time type checks such as when you're fetching external data. In these times, rely on JavaScript's operators: `typeof` and `instanceof`.
 1. Use the `instanceof` binary operator to check some value is of a custom type, or a complex built-in type like `RegExp`.
 	- Note that `val instanceof T` works by checking if `T` exists anywhere along `val`'s [[JavaScript#Prototypes|prototype chain]]. This is why you get unintuitive results when you use `instanceof` on primitive types. For example, `42 instanceof Number` is `false`, but `new Number(42) instanceof Number` is `true`.
 2.  Use the `typeof` unary operator to check some value is some built-in primitive type such as `undefined`, `number`, `string`, `boolean`, etc.
 
 ### Type Assertions [TODO]
-When you're confident that some value should be a certain type but TypeScript isn't, you can make a type assertion with the `as` keyword.
+When you're confident that some value should be a certain type but TypeScript isn't, you can make a type assertion with the `as` keyword. 
+```typescript
+let someVal: any = 123;
 
-You can also make type assertions by prefixing an expression with `<T>`, eg. `<Person>person` which is the same as `person as Person`.
+// Here, you're basically telling TypeScript: "I am 100% sure this is a number. Trust me."
+const val = someVal as number;
+```
+You can also make type assertions by prefixing an expression with `<T>`, eg. `<Person>person` which is exactly the same as `person as Person`.
+> Aim to minimise your usage of type assertions like above. They're considered 'escape hatches' from the language and can prevent you from maximising the benefits of using a type system.
 
+#### Const Assertion
+Use `as const` to tell TypeScript to infer the value to its narrowest possible type.
+```typescript
+const a = [1, 2, 3];           // → Type: `number[]`
+const b = [1, 2, 3] as const;  // → Type: `readonly [1, 2, 3]`
+```
+
+#### Nonnull Assertion
+When you're confident a value is not null, you can postfix that value with `!` to assure TypeScript. If you cannot be confident, then just use a standard null-check: `if (_ === null) ...`.
+```typescript
+type NullableString = string | null;
+const s: NullableString = 'Hello';
+
+// This is basically saying: "Don't worry TypeScript, I'm 100% sure `s` is not null."
+console.log(s!.toUpperCase());
+```
+
+### Refinement
+TypeScript's static analysis can handle *refinement* where, based on the control flow logic, TypeScript can narrow the type of the variable. Refinement can happen when you use `if`, the optional chaining operator `?.`, `||`, `switch`, `typeof`, `instanceof`, `in`, etc.
+```typescript
+type CssWidth = number | string | undefined;
+
+const getPixelWidth = (width: CssWidth): number => {
+	// At this point, TypeScript knows `width` is `number | string | undefined`.
+	if (typeof width === 'undefined') return 0;
+
+	// At this point, TypeScript knows `width` is `number | string`.
+	if (typeof width === 'number') return width;
+
+	// At this point, TypeScript knows `width` is `string`. We can therefore use
+	// string methods on `width` with confidence.
+	return Number(width.slice(0, width.search('px')));
+};
+
+console.log(getPixelWidth(undefined)); // 0
+console.log(getPixelWidth(10));        // 10
+console.log(getPixelWidth('480px'));   // 480
+```
+
+Refinement works with unioned objects, but it's best to use unique strings to help TypeScript infer types properly.
+```typescript
+interface UserTextEvent {
+	type: 'TextEvent';
+	value: string;
+	target: HTMLInputElement;
+}
+interface UserMouseEvent {
+	type: 'MouseEvent';
+	value: [number, number];
+	target: HTMLElement;
+}
+
+type UserEvent = UserTextEvent | UserMouseEvent;
+
+const handle = (event: UserEvent): void => {
+	if (event.type === 'TextEvent') {
+		// At this point, TypeScript is certain that `event` is `UserTextEvent`.
+		// ...
+	} else {
+		// At this point, TypeScript is certain that `event` is `UserMouseEvent`.
+		// ...
+	}
+};
+```
+This kind of type refinement is very useful when working with [[Redux#Reducers|Redux reducers]].
+
+#### Type Guards
+Refinement doesn't work as expected when you use a function to do the type-checking. Any type-checking only contributes to refinement if it's in the same scope.
+```typescript
+const isString = (s: unknown): boolean => {
+	return typeof s === 'string';
+}
+
+const refinementTest = (val: string | number) => {
+	if (isString(val)) {
+		val.toLowerCase();   // Error. TypeScript still thinks `val` is `string | number`.
+		// ...
+	} else {
+		const num = val * 2; // Error. TypeScript still thinks `val` is `string | number`.
+		// ...
+	}
+}
+```
+To fix this, you'd need to define a **type guard** which is a *predicate* function that confirms an argument is a given type. It looks like this:
+```typescript
+const isString = (s: unknown): s is string => {
+	return typeof s === 'string';
+};
+```
+
+### Variance
+It's useful to think of types as just *sets*. When $A$ is a subtype of $B$, it is basically just saying that $A \subseteq B$.
+
+*Variance*, in programming language theory, is how subtyping works for generic types. It is concerned about the idea of whether a generic type like `List<Cat>` is a subtype of `List<Animal>`.
+
+There are 4 kinds of variance:
+- *Invariance* — says that `List<T>` is not a subtype of `List<U>` regardless of whether `T extends U`.
+- *Covariance* — says that `List<T>` is a subtype of `List<U>` if `T extends U`.
+- *Contravariance* — says that `List<T>` is a subtype of `List<U>` if `U extends T`, ie. going the other way of covariance.
+- *Bivariance* — says that `List<T>` is a subtype of `List<U>` if either `T extends U` or `U extends T`.
+
+Every language's type system has different rules around *variance*. As a programming language designer, if you were to allow covariance or contravariance over invariance, then you're allowing for greater flexibility in the type system, but it exposes programmers to greater risk of runtime type errors.
+
+TypeScript tends to be more relaxed by allowing functions to take in covariant arguments. For example, you can pass an argument so long as it is a subtype of the expected parameter, ie. covariant to the expected parameter, but this makes it possible to create run-time type errors like this:
+```typescript
+interface EngineeringStudent {
+	name: string;
+	discipline: string;
+}
+interface FirstYearEngineeringStudent {
+	name: string;
+	discipline?: string;   // This is basically: `string | undefined`.
+}                          // This makes `EngineeringStudent` a subtype of `FirstYearEngineeringStudent`!
+
+// Here, `student` can be `FirstYearEngineeringStudent` or any subtype of it.
+const clearDiscipline = (student: FirstYearEngineeringStudent) => {
+	delete student.discipline;
+};
+
+// The dangers of accepting a covariant argument:
+// We can delete the non-optional `discipline` field and TypeScript will not complain.
+const csStudent: EngineeringStudent = { name: 'Linus', discipline: 'Computer Science' };
+clearDiscipline(csStudent);
+
+console.log(csStudent.discipline);  // → undefined
+```
 
 ## Functions
 **Typing Function Delcarations**
@@ -575,4 +791,88 @@ class SoftwareEngineer extends Employee {
 const linus: Employee = new SoftwareEngineer();
 linus.slackOff();
 ```
+
+### Generic Types in Classes/Interfaces
+You can set class-scoped or interface-scoped generic type parameters:
+```typescript
+class HashMap<K, V> { ... }
+interface HashMap<K, V> { ... }
+```
+
+
+## Modules
+
+
+In imports, you don't need to specify the `.ts` file extension. This means you can easily import [[software-engineering/programming-languages/TypeScript#Type Declaration Files|type declaration files]] with the extensionless name.
+
+## Utility Types
+TypeScript gives you a bunch of [very useful built-in utility types](https://www.typescriptlang.org/docs/handbook/utility-types.html) that you can use to make working with complex types a breeze 🌬️.
+
+### Mapping Types
+Here are some of the most useful utility types for sourcing types from other types:
+- `Partial<T>` — T, but every property is optional.
+- `Omit<T, Keys>` — T, but without the property in `Keys`, which is a union of string property names.
+- `Pick<T, Keys>` — a type with properties `Keys`, a union of string property names, sourced from `T`.
+- `Readonly<T>` — T, but every property is read-only.
+
+Usage examples:
+```typescript
+interface Human {
+    limbs: string[];
+    organs: string[];
+    memories: string[];
+    soul: boolean;
+}
+
+type SubHuman = Partial<Human>;                                 // Human, but all properties are optional.
+type Husk = Omit<Human, 'soul' | 'memories'>;                   // Human, but without the soul or memories.
+type SentimentalProperties = Pick<Human, 'soul' | 'memories'>;  // Only the soul and memories of a human.
+type FrozenHuman = Readonly<Human>;                             // Human, but every property is immutable.
+
+// After experiencing Java programming, I am just a husk ;(
+const me: Husk = {
+    limbs: ["arms", "legs", "..."],
+    organs: ["half a brain", "heart", '...'],
+};
+```
+
+**Note**: behind the scenes, utility types such as the ones above are realised through ['mapped types'](https://www.typescriptlang.org/docs/handbook/2/mapped-types.html).
+```typescript
+// This is the `Partial` type, implemented using mapped types.
+// Many other utility types are implemented in a very similar manner!
+type MyPartial<T> = {
+    [K in keyof T]?: T[K];
+};
+```
+
+### Conditional Types
+Here are some of the most useful utility types that leverage [conditional typing](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html), a TypeScript innovation.
+- `Exclude<T, U>` — removes values in the set `U` from the set `T`.
+- `Extract<T, U>` — picks out elements in `U` that are in `T`.
+- `NonNullable<T>` — excludes `null` from the set `T`.
+- `ReturnType<F>` — the return type of a function's typed signature.
+
+**Note**: just like how you can use the ternary operator, `(condition) ? expr1 : expr2` for conditional expression evaluation, you can use the ternary operator for conditional type evalution. This is what's used to implement those conditional utility types above.
+
+## JavaScript Interoperability
+An excellent reason to adopt TypeScript is that you don't have to rewrite your JavaScript codebase to begin benefiting from a type system.
+
+### Type Declaration Files
+A type declaration file, which goes with the extension `.d.ts`, associates types to JavaScript code. It's a file consisting **only** of *type-level* code, meaning you can't use expressions in there (which means no function implementations, variables, class implementations, etc. can be defined within). As a very loose analogy, `.d.ts` files are kind of like the `.h` header files in C or C++.
+
+If you have a `hello-world.js` file, then the type declaration file must have the name, `hello-world.d.ts`.
+
+> A type declaration is a way to tell TypeScript, “There exists this thing that’s
+defined in JavaScript, and I’m going to describe it to you.” (Programming TypeScript). 
+
+NPM packages that once were intended only for JavaScript developers (eg. jQuery) can be made consumable by TypeScript developers by having these type declaration files. As a TypeScript dev, you'd be able to use pure JS libraries as if they were written in TypeScript.
+
+When type declarations don't ship with an NPM package, they can usually be install individually in the [@types organisation](https://www.npmjs.com/~types) on npm. The type declarations in [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped), a big community effort to bring types to popular JS libraries, are automatically published to the @types organisation.
+
+Eg. to bring jQuery into a TypeScript frontend project, you'd do:
+```bash
+npm install jquery --save              
+npm install @types/jquery --save-dev  # Brings in all the type declaration files.
+```
+
 
