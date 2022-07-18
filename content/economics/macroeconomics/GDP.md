@@ -32,7 +32,6 @@ Although correlated, GDP is *not* a measure of societal wellbeing. *GDP per capi
 GDP only counts the transaction of ***final*** goods and services, which are goods and services that have reached the final owner and will not be resold. This means that the transaction of all intermediate **goods** do not contribute to a country’s GDP, otherwise it would be double counted.
 
 > ️GDP *does not count the value of the inputs*, only the price paid by a **final consumer**.
-**Examples:**
 
 #### Examples
 - If you grow your own vegetables, that doesn’t count to GDP. If you buy vegetables from a supermarket however, then that *will* contribute to the GDP.
@@ -57,7 +56,7 @@ If you’re a foreigner working in Australia, your work contributes to the Austr
 > *Exports contribute* to our GDP. Imports do not.
 
 ## Calculating GDP
-GDP is calculated 3 ways, through the [[economics/macroeconomics/GDP#Production Approach|production approach]], [[economics/macroeconomics/GDP#Expenditure Approach|expenditure approach]] or [[economics/macroeconomics/GDP#Income Approach|income approach]]. These are all meant to arrive at the same value in theory, but in practice, each will have their own measurement errors and report slightly different values of GDP. The ABS takes the average of the 3 values and reports that as the official GDP value in their announcements.
+The GDP value is obtainable through 3 main ways: the [[economics/macroeconomics/GDP#Production Approach|production approach]], [[economics/macroeconomics/GDP#Expenditure Approach|expenditure approach]] and [[economics/macroeconomics/GDP#Income Approach|income approach]]. These are all meant to arrive at the same value in theory, but in practice, each will have their own measurement errors and report slightly different values of GDP. The ABS takes the average of the 3 values and reports that as the official GDP value in their announcements.
 
 *Note*: we use $Y$ as the symbol for GDP.
 
