@@ -2,14 +2,17 @@
 title: TypeScript
 description: TypeScript is a programming language made by Microsoft that is superset of JavaScript.
 ---
+
 TypeScript is a programming language made by Microsoft that is *superset* of [[software-engineering/programming-languages/JavaScript|JavaScript]]. The reason that TypeScript exists is to make complex JavaScript projects more maintainable and less error-prone by introducing a [[software-engineering/concepts/programming/Type System#Static Typing|static]] and [[software-engineering/concepts/programming/Type System#Strong Typing|strong]] type system. Essentially, it just gives developers a lot of quality-of-life improvements over JavaScript.
 
-TypeScript gets compiled (or more precisely, '*transpiled*') to JavaScript in the end. This is not new, languages like CoffeeScript, Dart, Scala, etc. can all have JavaScript as what we call a *compilation target*.
+*Note*: TypeScript gets compiled (or more precisely, '*transpiled*') to JavaScript in the end. This is not new, languages like CoffeeScript, Dart, Scala, etc. can all have JavaScript as what we call a *compilation target*.
+
+> I learned TypeScript from the official docs and from the 'Programming TypeScript' textbook by Boris Cherny.
 
 **Why TypeScript is [loved](https://survey.stackoverflow.co/2022/#most-loved-dreaded-and-wanted-language-love-dread)**
 - Your IDE/editor gets more information about your code and give you very helpful intellisense and code-completion that is not possible with JavaScript. This reason alone, in my experience, pretty much negates any loss in developer velocity from using TypeScript over JavaScript.
 - Many errors will surface *as you're developing* rather than after your code is deployed to production and angry customers complain to you.
-- Types serve as a very useful form of documentation for how your functions are to be used and fields an object should contain. You can have a lot more confidence in refactoring a function when you have confidence about what the input types are.
+- Types serve as a useful concise form of documentation for how your functions are to be used and what fields an object contain.
 - Complex objects are much *less unpleasant* to work with. You'll know what its *shape* is (basically what properties it has and what its nested objects look like), what properties are compulsory or optional and you'll actually know when you've mispelt a property name.
 - You'll *almost* never have `cannot read property '...' of undefined` again.
 
@@ -49,6 +52,7 @@ Some recommended flags include:
 - `noImplicitThis` – forces a type to be explicitly assinged to `this` inside functions. See [[software-engineering/programming-languages/TypeScript#this|TypeScript this]].
 - `noImplicitOverride` – you must always use the `override` modifier for method overriding.
 - `noFallthroughCasesInSwitch` – every case must either `break` or `return`.
+- [`esModuleInterop`](https://www.typescriptlang.org/tsconfig#esModuleInterop) – makes it more smooth to consume JavaScript modules that use CommonJS, AMD or other module systems.
 
 ## Typing
 Broadly speaking, in programming languages, a *type* is a [[maths/discrete-maths/Set Theory#Sets|set]] of values, plus the properties/methods available to them.
@@ -384,7 +388,7 @@ let b = 42;           // Equivalent to above, but it lets typescript assign the 
 ```
 This extends to functions as well, meaning that often you won't have to specify the return value.
 
-#### Type Widening/Narrowing [TODO]
+#### Type Widening/Narrowing
 An important implicit rule in TypeScript is that when you let type inference happen for `const` variables, TypeScript will assign it the *narrowest type possible* since it knows that a `const` variable cannot possibly take any other value after its defined. Otherwise, TypeScript will infer the type to be wider than it might be.
 ```typescript
 let a = 2;    // `a` is of type `number`.
@@ -397,7 +401,7 @@ Although type checking is done for you statically, there are times when you must
 	- Note that `val instanceof T` works by checking if `T` exists anywhere along `val`'s [[software-engineering/programming-languages/JavaScript#Prototypes|prototype chain]]. This is why you get unintuitive results when you use `instanceof` on primitive types. For example, `42 instanceof Number` is `false`, but `new Number(42) instanceof Number` is `true`.
 2.  Use the `typeof` unary operator to check some value is some built-in primitive type such as `undefined`, `number`, `string`, `boolean`, etc.
 
-### Type Assertions [TODO]
+### Type Assertions
 When you're confident that some value should be a certain type but TypeScript isn't, you can make a type assertion with the `as` keyword. 
 ```typescript
 let someVal: any = 123;
@@ -803,18 +807,51 @@ interface HashMap<K, V> { ... }
 
 
 ## Modules
+See [[software-engineering/programming-languages/JavaScript#Modules|JavaScript modules]]. With TypeScript, you can additionally import/export type aliases and interfaces.
 
-A brief timeline:
-- 1995: JavaScript was born, but there was no concept of modules which made building complex applications extremely hard. Without modules, a single huge javascript file might be shipped to the user.
-- 2009: people introduced a module system to take advantage of the code splitting optimisation technique where modules are lazily loaded.
-- 2009: Node.js was developed and introduced CommonJS.
-- 
+**Note**: in import statements, you don't need to specify the `.ts` file extension. This means you can easily import [[software-engineering/programming-languages/TypeScript#Type Declaration Files|type declaration files]] with the extensionless name.
 
+In `thing.ts`:
+```typescript
+// Notice that this file exports a value `Thing` and a type `Thing`, but
+// no name collision happens because 'values' and 'types' are tracked in
+// separate namespaces by the TypeScript compiler.
+export type Thing = {
+	val: number;
+};
+export const Thing = {
+	val: 42,
+};
+```
+In `main.ts`:
+```typescript
+// Notice that you don't need to write the extension in the path: './thing.ts'.
+import { Thing } from './thing';
 
+const thing: Thing = Thing;
+console.log(thing);
+```
 
+## Error Handling
+See [[software-engineering/programming-languages/JavaScript#Error Handling|JavaScript error handling]]. TypeScript doesn't introduce any new syntax for error handling over JavaScript, but the type system allows for streamlining how errors are treated in a project by developers.
 
-
-In imports, you don't need to specify the `.ts` file extension. This means you can easily import [[software-engineering/programming-languages/TypeScript#Type Declaration Files|type declaration files]] with the extensionless name.
+#### Ways of Error Handling
+There are 4 common patterns for handling errors in TypeScript projects, which are also mostly applicable to non-TypeScript projects:
+1. *Just return `null`.*
+   This reveals the least information in the event of an error, but it's the easiest to do. Constant null-checking is required throughout the code however, which can be laborious and verbose.
+2. *Throw an exception.*
+   When an exception is thrown, it must be caught by the caller in a try-catch block (or a `catch` callback if using promises) otherwise a full crash occurs. Making and throwing custom subclasses of `Error` would offer specific information to help with debugging and informing the user about the problem.
+   The main issue is that it's hard to enforce that programmers write the error-handling try-catch logic when they're lazy.
+3. *Return exceptions (rather than throw them)*.
+   This means a function will specify in its return type a union of the expected return type *and* the error classes that it could throw, such as in the following:
+   ```typescript
+	const getData = (): Data | NetworkError => {};
+   ```
+   By putting the error as part of the return type, the user of the function is unlikely to ignore error cases.
+   The idea here is very similar in spirit to [Java's `throws`](https://www.javatpoint.com/throws-keyword-and-difference-between-throw-and-throws) keyword.
+   The downside to this approach is that it'll lead to more verbose function signatures, especially if errors are simply 'bubbled' up the call stack.
+4. *Define and use the `Option` type*.
+  The idea comes from languages like Rust and Haskell. See Rust's documentation on [`std::option`](https://doc.rust-lang.org/std/option/).
 
 ## Utility Types
 TypeScript gives you a bunch of [very useful built-in utility types](https://www.typescriptlang.org/docs/handbook/utility-types.html) that you can use to make working with complex types a breeze 🌬️.
@@ -864,6 +901,9 @@ Here are some of the most useful utility types that leverage [conditional typing
 - `ReturnType<F>` — the return type of a function's typed signature.
 
 **Note**: just like how you can use the ternary operator, `(condition) ? expr1 : expr2` for conditional expression evaluation, you can use the ternary operator for conditional type evalution. This is what's used to implement those conditional utility types above.
+
+## Asynchronous Programming
+See [[software-engineering/programming-languages/JavaScript#Asynchronous Programming|JavaScript asynchronous programming]]. 
 
 ## JavaScript Interoperability
 An excellent reason to adopt TypeScript is that you don't have to rewrite your JavaScript codebase to begin benefiting from a type system.

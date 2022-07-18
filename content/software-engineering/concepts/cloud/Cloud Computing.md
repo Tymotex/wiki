@@ -10,10 +10,11 @@ By deploying your compute tasks in the cloud, you no longer have to worry about 
 - Hiring an IT team to take care of those computers.
 - Dealing with inevitable hardware failures (backing up and restoring data, for example).
 - Paying for the physical space to put your computers and ensuring it's secure from adversaries.
-- [[software-engineering/concepts/cloud/Scaling]] to meet unexpected gain/reduction in usage.
+- [[software-engineering/concepts/cloud/Scaling|Scaling]] to meet unexpected gain/reduction in usage.
 
 Cloud computing is generally divided into 3 groups:
-- [[software-engineering/concepts/cloud/SaaS]], for user-facing, generally non-technical software products like Gmail or Google Drive.
-- [[software-engineering/concepts/cloud/PaaS]], for developer teams who don't want to manage the hardware and software for running computing tasks.
-- [[software-engineering/concepts/cloud/IaaS]], for admins to easily provision and monitor compute resources like storage, networking, RAM, etc.
-![[software-engineering/concepts/cloud/assets/SaaS-PaaS-IaaS.png|600]]
+- [[software-engineering/concepts/cloud/SaaS|SaaS]], for user-facing, generally non-technical software products like Gmail or Google Drive.
+- [[software-engineering/concepts/cloud/PaaS|PaaS]], for developer teams who don't want to manage the hardware and software for running computing tasks.
+- [[software-engineering/concepts/cloud/IaaS|IaaS]], for admins to easily provision and monitor compute resources like storage, networking, RAM, etc.
+
+![[software-engineering/concepts/cloud/assets/SaaS-PaaS-IaaS.png|400]]
