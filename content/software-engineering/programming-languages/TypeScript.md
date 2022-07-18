@@ -3,6 +3,8 @@ title: TypeScript
 description: TypeScript is a programming language made by Microsoft that is superset of JavaScript.
 ---
 
+![[software-engineering/programming-languages/assets/javascript-wallpaper.png]]
+
 TypeScript is a programming language made by Microsoft that is *superset* of [[software-engineering/programming-languages/JavaScript|JavaScript]]. The reason that TypeScript exists is to make complex JavaScript projects more maintainable and less error-prone by introducing a [[software-engineering/concepts/programming/Type System#Static Typing|static]] and [[software-engineering/concepts/programming/Type System#Strong Typing|strong]] type system. Essentially, it just gives developers a lot of quality-of-life improvements over JavaScript.
 
 *Note*: TypeScript gets compiled (or more precisely, '*transpiled*') to JavaScript in the end. This is not new, languages like CoffeeScript, Dart, Scala, etc. can all have JavaScript as what we call a *compilation target*.
@@ -15,11 +17,6 @@ TypeScript is a programming language made by Microsoft that is *superset* of [[s
 - Types serve as a useful concise form of documentation for how your functions are to be used and what fields an object contain.
 - Complex objects are much *less unpleasant* to work with. You'll know what its *shape* is (basically what properties it has and what its nested objects look like), what properties are compulsory or optional and you'll actually know when you've mispelt a property name.
 - You'll *almost* never have `cannot read property '...' of undefined` again.
-
-The only main reasons *not* to use TypeScript are because:
-- You're stuck with a legacy JavaScript codebase.
-- You or your teammates are not willing to learn it, and you need to produce output fast in the short-term (like in a hackathon).
-- The project is a very simple or one-off thing that it's not worth setting up the build system.
 
 ## Setup
 Install Node.js, `npm` or `yarn`. Then, install `tsc`, the open-source typescript compiler, as a dev dependency in a javascript project:

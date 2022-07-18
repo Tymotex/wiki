@@ -97,7 +97,8 @@ table {
 img {
   max-width: 100%;
   border-radius: 3px;
-  margin: 1em 0;
+  display: block;
+  margin: 1em auto;
 }
 
 p > img + em {
