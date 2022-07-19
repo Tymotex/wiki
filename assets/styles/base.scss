@@ -26,6 +26,32 @@ thead {
   }
 }
 
+// Heading colours.
+article {
+  h1 {
+    background: rgba(0, 0, 128, 0.05);
+    padding: 5px 7px;
+  }
+  h2 {
+    background: rgba(128, 0, 128, 0.1);
+    padding: 4px 5px;
+  }
+  h3 {
+    background: rgba(0, 128, 0, 0.1);
+    padding: 2px 3px;
+  }
+}
+
+// Graph customisations
+#graph-container {
+  background: var(--graph-bg) !important;
+  overflow: hidden;
+  height: 60vh;
+  //   box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.278);
+
+  box-shadow: inset 0 -10px 10px -10px #00000055;
+}
+
 .hanchor {
   font-family: Inter;
   margin-left: -1em;
@@ -336,7 +362,7 @@ hr {
 .singlePage {
   padding: 4em 18vw;
 
-  @media all and (max-width: 1200px) {
+  @media all and (max-width: 600px) {
     padding: 25px 5vw;
   }
 }
@@ -372,7 +398,7 @@ hr {
     border: var(--outlinegray) 1px solid;
     border-radius: 5px;
     box-sizing: border-box;
-    min-height: 250px;
+    min-height: 500px;
 
     & > svg {
       margin-bottom: -5px;

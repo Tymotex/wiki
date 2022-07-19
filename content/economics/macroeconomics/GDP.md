@@ -70,7 +70,8 @@ In other words, it’s the total *value-added* of all transactions in a country.
 ### Expenditure Approach
 In the expenditure approach, we measure GDP as the total money spent on *domestically produced final* goods and services by everyone (individuals/businesses in Australia and other countries who consume what Australia supplies).
 
-We can calculate GDP based on total expenditures from different sources: $Y\equiv C+I+G+(X-M)$.
+We can calculate GDP based on total expenditures from different sources: 
+$$\colorbox{#ffffbf}{$Y\equiv C+I+G+(X-M)$}.$$
 - $C$ — **household** **consumption spending**. Ie. how much households spend.
 	- The goods consumed can be categorised into *durable* (longer-lived items whose ownership can be transferred) and *non-durable* (single-use items, like food).
 - $I$ — **gross private investment**. Ie. how much businesses spend.

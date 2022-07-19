@@ -5,14 +5,16 @@ enableLinkPreview: true
 enableLatex: true
 enableCodeBlockTitle: true
 enableCodeBlockCopy: true
-enableSPA: true
+enableSPA: false
 enableFooter: true
 enableContextualBacklinks: true
 enableRecentNotes: false
 enableGitHubEdit: true
 GitHubLink: https://github.com/Tymotex/wiki/tree/hugo/content
 description: Tim Zhang's developer wiki.
-page_title: "Tim's Dev Wiki"
+page_title: "🌱 Tim's Dev Wiki"
 links:
   - link_name: Github
     link: https://github.com/Tymotex/wiki
+  - link_name: LinkedIn
+    link: https://www.linkedin.com/in/timz-seng

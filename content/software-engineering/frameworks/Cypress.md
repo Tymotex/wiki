@@ -3,7 +3,7 @@ title: Cypress
 description: Cypress is an integration testing library for testing web apps.
 ---
 
-![[software-engineering/frameworks/assets/cypress-wallpaper.png]]
+![[software-engineering/frameworks/assets/cypress-wallpaper.png|500]]
 
 Cypress is an [[software-engineering/concepts/testing/End To End Testing|end-to-end testing]] library for testing the entirety of a web app, including its frontend and backend, in a way that closely simulates how real users would use the app. It also has an API for writing [[software-engineering/concepts/testing/Integration Testing|integration tests]] and [[software-engineering/concepts/testing/Unit Testing|unit tests]]. 
 

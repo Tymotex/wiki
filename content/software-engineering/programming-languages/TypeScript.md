@@ -3,7 +3,7 @@ title: TypeScript
 description: TypeScript is a programming language made by Microsoft that is superset of JavaScript.
 ---
 
-![[software-engineering/programming-languages/assets/javascript-wallpaper.png]]
+![[software-engineering/programming-languages/assets/javascript-wallpaper.png|600]]
 
 TypeScript is a programming language made by Microsoft that is *superset* of [[software-engineering/programming-languages/JavaScript|JavaScript]]. The reason that TypeScript exists is to make complex JavaScript projects more maintainable and less error-prone by introducing a [[software-engineering/concepts/programming/Type System#Static Typing|static]] and [[software-engineering/concepts/programming/Type System#Strong Typing|strong]] type system. Essentially, it just gives developers a lot of quality-of-life improvements over JavaScript.
 
@@ -135,7 +135,7 @@ const uniGoers: StudentOrTutor[] = [student, tutor, studentTutor];
 // For `Student & Tutor`: you can only have people who are simultaneously `Student` and `Tutor`.
 const studentTutors: StudentAndTutor[] = [studentTutor];
 ```
-- To make a type nullable, you can union it with `null` like this: `type MiddleName = string | null;`
+To make a type nullable, you can union it with `null` like this: `type MiddleName = string | null;`
 
 ### TypeScript Built-In Types
 TypeScript introduces some new built-in data types that aren't present in JavaScript. These are: `any`, `unknown`, `void`, [`never`](https://www.typescriptlang.org/docs/handbook/2/narrowing.html#the-never-type).
