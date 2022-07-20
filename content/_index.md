@@ -6,7 +6,7 @@ Hi! I'm Tim, a computer science student at the University of New South Wales.
 
 Welcome to my personal developer wiki. This is where I write down things I learn about software engineering, computer science and a bunch of other things. Since mid 2022, I finally decided to ditch [Notion](https://notion.so/) for [Obsidian](https://obsidian.md/) as my knowledge management system. I'm sharing this with the hope that it helps or inspires whoever stumbles upon it 😃.
 
-🌲 These are my [evergreen notes](https://notes.andymatuschak.org/Evergreen_notes). They're a constant work in progress — I'm constantly pruning, editing and adding new notes as I piece together a better understanding of software engineering and other areas of study that interest me.
+🌲 These are my [evergreen notes](https://notes.andymatuschak.org/Evergreen_notes). They're a constant work in progress — I'm pruning, editing and adding new notes as I piece together a better understanding of software engineering as well as other areas of study that interest me.
 
 🗺️ To get around, use the big interactive graph above or start from the subject links below. Use `ctrl+k` to fuzzy search through the entire wiki.
 
