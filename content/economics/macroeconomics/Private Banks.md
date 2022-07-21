@@ -44,7 +44,7 @@ Government regulations set by [APRA](https://www.apra.gov.au/what-prudential-reg
 
 For a bank, there are the following ratios that must be above/below a prescribed safe value:
 1. **Leverage ratio** — $\frac{\text{Loans}}{\text{Equity}}$ should be below a ceiling value.
-2. **Reserve-deposit ratio** (*liquidity coverage ratio*) — $\frac{\text{Reserves}}{\text{Deposits}}$ should be above some floor value. It's called 'liquidity coverage' ratio because there must be sufficient liquid reserves to meet sudden withdrawal demand.
+2. **Reserve-deposit ratio** (*liquidity coverage ratio*) — $\frac{\text{Reserves}}{\text{Deposits}}$ should be above some floor value. It's also called 'liquidity coverage' ratio because there must be sufficient liquid reserves to meet sudden withdrawal demand.
 1. **Capital ratios** — a ratio of equity to a weighted risk measure of their assets. A [[economics/macroeconomics/Bonds|government bond]], for example, is far less risky financial asset than a mortgage arranged with someone with low income.
 2. **Net stable funding ratios** — a value associated with the sources of bank funding. For example, longer-term loans corresponds to a lower likelihood of currency withdrawal.
 3. **Loan to value ratio** — a limit on the amount someone can borrow to hold a certain asset. For instance, a loan-to-value ratio of $0.8$ means that banks will lend a maximum of $80\%$ of the market value of an asset.

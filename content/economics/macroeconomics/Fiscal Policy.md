@@ -14,7 +14,7 @@ Government expenditure occupies about 20% of a country's [[economics/macroeconom
 ![[economics/macroeconomics/assets/gdp-pie.png|500]]
 
 ## 3-Sector Economy
-Considering a three-sector economy in the [[economics/macroeconomics/Keynesian Model|income-expenditure model]], we'd have $Y = C+I^P+G$.
+Considering a three-sector economy in the [[economics/macroeconomics/Income-Expenditure Model|income-expenditure model]], we'd have $Y = C+I^P+G$.
 
 Suppose we have the **tax function**: $T=T_0 + tY$, with $t$ being the *marginal propensity to tax*, or *marginal tax rate*. At equilibrium GDP, we would have: 
 $$

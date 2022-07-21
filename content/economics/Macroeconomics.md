@@ -12,7 +12,7 @@ description: Macroeconomics
 - [[economics/macroeconomics/Labour Market|Labour market]]
 - [[economics/macroeconomics/Interest|Interest]]
 - [[economics/macroeconomics/Savings and Investments|Savings and investments]]
-- [[economics/macroeconomics/Keynesian Model|Keynesian income-expenditure model]]
+- [[economics/macroeconomics/Income-Expenditure Model|Income-expenditure model]]
 - [[economics/macroeconomics/Fiscal Policy|Fiscal policy]]
 - [[economics/macroeconomics/Public Debt|Public debt]]
 - [[economics/macroeconomics/Private Banks|Private Banks]]

@@ -19,5 +19,7 @@ A bond has the following properties which dictate its value:
 Bonds can be traded on the *bond market*.
 
 Remember, $100 now is worth more than $100 in the future in almost all situations. The simple reason for this is because we can earn interest on the $100 by putting it in a savings account, for example. The value of a bond needs to take this into account by discounting the future value of payments:
+
 $$\colorbox{#FFFFBF}{$V_t=\frac{\text{coupon payment}_{1}}{1+i}+\frac{\text{coupon payment}_{2}}{(1+i)^2}+\ldots \text{further rounds of payments.}+\frac{P+\text{coupon payment}_{n}}{(1+i)^n}$}$$
+
 Bond price and the market interest rate are inversely related. Rises in the market interest rate decrease the value of a bond.

@@ -27,3 +27,10 @@ Some standard measures of money used by Australia. *Some figures as of 2022, sou
 | M3          | *M1*, plus any deposits made to non-banks.                                                    | ~2086 billion AUD |
 | Broad money | *M3*, plus all the money borrowed from private sector.                                        | ~2096 billion AUD |
 
+### Money Supply
+Money supply is the amount of money circulating in the economy. It can be a measure of currency, M1, or other standard measures of money.
+
+### Money Demand
+Money demand is basically how much money we, in aggregate, would like to hold in our bank accounts:
+$$\colorbox{#FFFFBF}{$M^D=P\times L(Y, i)$},$$
+where $P$ is the aggregate price level and $L$ is the [liquidity preference function](https://en.wikipedia.org/wiki/Liquidity_preference), which is a function of real GDP and interest rate. 
