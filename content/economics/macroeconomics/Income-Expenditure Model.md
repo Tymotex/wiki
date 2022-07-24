@@ -75,7 +75,7 @@ $$
 ![[economics/macroeconomics/assets/income-expediture-2-sector-savings-and-investment.png|500]]
 
 **Opening the 2-Sector Economy**
-Now let's the consider the economy that includes imports/exports. We have $PAE = C + I^P + X - M$. Assuming that the imports scales linearly with GDP: $M=mY$, where $m$ is the *marginal propensity to import*, we can derive:
+Now let's the consider the economy that includes imports/exports. We have $PAE = C + I^P + X - M$. Assuming that the imports scales linearly with GDP: $M=mY$, where $0<m<c$ is the *marginal propensity to import*, we can derive:
 $$
 \begin{align}
 	Y_\text{Equilibrium} &= PAE = C+ I^P +X -M \\
@@ -89,3 +89,7 @@ Comparing this result with $(1)$, we see that opening the economy makes the mult
 The *'paradox of thrift'* is a paradox where an increase in exogenous household saving, $C_0$, which shifts the aggregate saving function up, does not actually increase the amount of *real* savings. This is because a collective effort of every household to save simply causes the production levels to drop, meaning a reduction in equilibrium GDP and the effects of saving are nullified as shown:
 
 ![[economics/macroeconomics/assets/paradox-of-thrift-graph.png|500]]
+
+> The Paradox of Thrift suggests that while it may be wise for an individual to save money when income is low and job prospects are precarious, it could be collectively disastrous if everyone is thrifty together.
+
+The paradox of thrift is an example of a *[fallacy of composition](https://en.wikipedia.org/wiki/Fallacy_of_composition)*. An example of the fallacy of composition: when you stand up amongst a crowd to get a better view of something, it only works when a few people do it. When everyone does it, then the gains from standing up are nullified. At that point, it would be equivalent to if everyone remained seated.

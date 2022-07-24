@@ -31,6 +31,12 @@ Some standard measures of money used by Australia. *Some figures as of 2022, sou
 Money supply is the amount of money circulating in the economy. It can be a measure of currency, M1, or other standard measures of money.
 
 ### Money Demand
-Money demand is basically how much money we, in aggregate, would like to hold in our bank accounts:
+Money demand is basically how much money we, in aggregate, would like to hold in our bank accounts (as opposed to lower liquidity assets):
 $$\colorbox{#FFFFBF}{$M^D=P\times L(Y, i)$},$$
-where $P$ is the aggregate price level and $L$ is the [liquidity preference function](https://en.wikipedia.org/wiki/Liquidity_preference), which is a function of real GDP and interest rate. 
+where $P$ is the aggregate price level and $L$ is the [liquidity preference function](https://en.wikipedia.org/wiki/Liquidity_preference), which is a function of real GDP and interest rate. A decrease in the [[economics/microeconomics/Opportunity Cost|opportunity cost]] of holding money will shift the money demand curve up.
+
+The *liquidity preference function* looks like this:
+
+![[economics/macroeconomics/assets/liquidity-preference-function.png|500]]
+*Sourced from [Intelligent Economist](https://www.intelligenteconomist.com/liquidity-preference-theory/).*
+

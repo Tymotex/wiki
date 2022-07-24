@@ -40,11 +40,12 @@ The [[economics/macroeconomics/Central Bank|central bank]] can help bail out ban
 Governments can provide deposit insurance that guarantee you can withdraw currency up to some maximum value. In Australia, the government promises you deposits of up to 250000 AUD can be withdrawn without fear of the bank losing your savings. This insurance doesn’t come for free — the government charges a fee to banks to have this insurance, and the banks in turn charge the depositor by lowering the deposit rates or charging more admin fees.
 
 ### Prudential Regulations
-Government regulations set by [APRA](https://www.apra.gov.au/what-prudential-regulation), called 'prudential' or 'macro-prodential' regulations, require banks (and other financial institutions like super funds, insurance companies, etc.) to adhere to certain balance sheet values in order to prevent becoming insolvent.
+Government regulations set by [APRA](https://www.apra.gov.au/what-prudential-regulation), called 'prudential' or 'macro-prudential' regulations, require banks (and other financial institutions like super funds, insurance companies, etc.) to adhere to certain balance sheet values in order to prevent becoming insolvent.
 
 For a bank, there are the following ratios that must be above/below a prescribed safe value:
-1. **Leverage ratio** — $\frac{\text{Loans}}{\text{Equity}}$ should be below a ceiling value.
-2. **Reserve-deposit ratio** (*liquidity coverage ratio*) — $\frac{\text{Reserves}}{\text{Deposits}}$ should be above some floor value. It's also called 'liquidity coverage' ratio because there must be sufficient liquid reserves to meet sudden withdrawal demand.
-1. **Capital ratios** — a ratio of equity to a weighted risk measure of their assets. A [[economics/macroeconomics/Bonds|government bond]], for example, is far less risky financial asset than a mortgage arranged with someone with low income.
-2. **Net stable funding ratios** — a value associated with the sources of bank funding. For example, longer-term loans corresponds to a lower likelihood of currency withdrawal.
-3. **Loan to value ratio** — a limit on the amount someone can borrow to hold a certain asset. For instance, a loan-to-value ratio of $0.8$ means that banks will lend a maximum of $80\%$ of the market value of an asset.
+1. **Leverage ratio** — $\frac{\text{Loans}}{\text{Equity}}$ should be below a ceiling value. 
+	- Note that $\text{Equity = Loans + Reserves - Debt}$. Equity provides a buffer to prevent banks becoming insolvent.
+1. **Reserve-deposit ratio** (*liquidity coverage ratio*) — $\frac{\text{Reserves}}{\text{Deposits}}$ should be above some floor value. It's also called 'liquidity coverage' ratio because there must be sufficient liquid reserves to meet sudden withdrawal demand.
+2. **Capital ratios** — a ratio of equity to a weighted risk measure of their assets. A [[economics/macroeconomics/Bonds|government bond]], for example, is far less risky financial asset than a mortgage arranged with someone with low income.
+3. **Net stable funding ratios** — a value associated with the sources of bank funding. For example, longer-term loans corresponds to a lower likelihood of currency withdrawal.
+4. **Loan to value ratio** — a limit on the amount someone can borrow to hold a certain asset. For instance, a loan-to-value ratio of $0.8$ means that banks will lend a maximum of $80\%$ of the market value of an asset.

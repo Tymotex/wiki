@@ -26,4 +26,3 @@ $$
 $$
 	\Delta P=\colorbox{#ffffbf}{$\pi = \Delta M$}.
 $$
-

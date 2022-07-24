@@ -691,7 +691,7 @@ To make regular function declarations generic, you also place the generic type p
 function filter<T>(array: T[], predicate: (elem: T) => boolean) => { ... }
 ```
 
-#### Bind on Reference
+### Bind on Reference
 In the above example, `T` gets *bound* when the function gets invoked, but you could also bind `T` whenever the type alias gets referenced by placing the generic type parameters *after* the type name instead of before the function parameter list:
 ```typescript
 type Filter<T> = (array: T[], predicate: (elem: T) => boolean) => T[];
@@ -832,7 +832,7 @@ console.log(thing);
 ## Error Handling
 See [[software-engineering/programming-languages/JavaScript#Error Handling|JavaScript error handling]]. TypeScript doesn't introduce any new syntax for error handling over JavaScript, but the type system allows for streamlining how errors are treated in a project by developers.
 
-#### Ways of Error Handling
+### Ways of Error Handling
 There are 4 common patterns for handling errors in TypeScript projects, which are also mostly applicable to non-TypeScript projects:
 1. *Just return `null`.*
    This reveals the least information in the event of an error, but it's the easiest to do. Constant null-checking is required throughout the code however, which can be laborious and verbose.

@@ -12,7 +12,12 @@ Below is a list of notes written in my exploration of software technologies and 
 ### Frameworks
 - [[software-engineering/frameworks/Cypress|Cypress]]
 
+### Software Engineering
+- [[software-engineering/software-engineering/Requirements Engineering|Requirements engineering]]
+- [[software-engineering/software-engineering/Agile|Agile]]
+
 ### Concepts
 - [[software-engineering/concepts/programming/Generators|Generators]]
 - [[software-engineering/concepts/programming/Iterators|Iterators]]
 ...
+

@@ -38,19 +38,29 @@ Supply is affected exogenously by the value of the open market operations the RB
 By undertaking open market operations, the RBA can push the supply curve to intersect with the demand curve as shown above. This is how the RBA sets the *actual* cash rate to be the *target* cash rate that they’ve announced.
 
 ### Expectations Hypothesis
-The *expectations hypothesis* predicts how short-term interest rates like the cash rate affects the long-term interest rates.
+The *expectations hypothesis* predicts how short-term interest rates like the cash rate affects the long-term interest rates after sufficient time. 
 
 The long-term interest rate, $i^N_0$, is simply the average of the current interest rate (at term 0) and all *expected* future interest rates. This is summarised in the following equation:
-$$\colorbox{#FFFFBF}{$i^N_0 = \frac{1}{N}(i^1_0+i^2_1+\ldots+i^N_{N-1})$}$$
+$$
+	\colorbox{#FFFFBF}{$i^N_0 = \frac{1}{N}(i^1_0+i^2_1+\ldots+i^N_{N-1})$}
+$$
 where $i^\alpha_\beta$ is the interest rate associated with a loan spanning $\alpha$ total terms starting from at time $\beta$.
 
 Generally, the cash rate can be expected to have a very large effect on the mortgage rate, savings bank account interest rates, exchange rate (currency tends to appreciate when cash rate rises), and so on.
 
 ### Policy Rule
-A *policy rule*, also called a *monetary policy reaction function*, is a simple approximation of how the cash rate affects macroeconomic variables. The *Taylor rule* is a well-known policy rule, which asserts:
-$$
-	i_\text{nominal cash rate}=1+1.5\pi+0.5\tilde{Y},
-$$
+A *policy rule*, also called a *monetary policy reaction function* (PRF), is a simple approximation of how the cash rate affects macroeconomic variables and therefore is a model that describes how central banks choose their policy interest rates. 
+
+#### Taylor Rule
+The *Taylor rule* is a well-known policy rule, which asserts:
+$$\colorbox{#FFFFBF}{$i_\text{nominal cash rate}=1+1.5\pi+0.5\tilde{Y}$},$$
 where $\tilde{Y}$ is the output gap. Alternatively, using the *real* cash rate, this would be $r_\text{real cash rate} = 1 + 0.5\pi + 0.5\tilde{Y}$.
 
+#### Simple Policy Rule
+The simple monetary policy reaction function is:
+$$
+	r = r_{0}+ \gamma \pi.
+$$
+Here, $\gamma$ is a value chosen by the central bank to represent their *sensitivity to inflation*. A higher $\gamma$ results in a larger increase in the cash rate by the RBA. The constant, $r_0$ is the real cash rate when inflation is $0\%$.
 
+![[economics/macroeconomics/assets/simple-policy-rule-graph.png|500]]

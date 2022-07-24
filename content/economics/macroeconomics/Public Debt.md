@@ -27,9 +27,12 @@ The government budget constraint equation is given as:
 $$
 \begin{align}
 	-(T_t-G_t) &= D_t-D_{t-1} \\ 
-	-(\tilde{T_t} - TR_t - rD_{t-1} - G_t)&= D_t - D_{t-1}\\
-	\underbrace{G_t+TR_t+rD_{t-1}}_{\text{Expenses}} &= \underbrace{\tilde{T_t} + D_t - D_{t-1}}_{\text{Funding sources}}.
+	-(\tilde{T_t} - TR_t - rD_{t-1} - G_t)&= D_t - D_{t-1},\\
 \end{align}
+$$
+rearranging terms, we have:
+$$
+	\underbrace{G_t+TR_t+rD_{t-1}}_{\text{Expenses}} = \underbrace{\tilde{T_t} + D_t - D_{t-1}}_{\text{Funding sources}}.
 $$
 Remember, $T_t=\tilde{T_t}-TR_t-rD_{t-1}$ consists of tax revenue $\tilde{T_t}$ , transfer payments $TR_t$ and interest on debt $rD_{t-1}$. 
 
@@ -64,7 +67,7 @@ $$
 
 -   $g$ is the real growth rate of GDP.
 -   $r$ is the real interest rate.
--   $PBB=\tilde{T_t}-G_t - TR_t$ is the primary budget balance, consisting of taxes $\tilde{T_t}$, government bond interest payments $G_t$, and transfer payments $TR_t$.
+-   $PBB=\tilde{T_t}-G_t - TR_t$ is the *primary budget balance*, consisting of taxes $\tilde{T_t}$, government bond interest payments $G_t$, and transfer payments $TR_t$.
 -   $pbb_t=\frac{PBB}{Y}$.
 
 From the above equation, running a budget surplus (ie. making $pbb_t$ positive) is the best way to reduce debt. Alternatively, if you can achieve $r<g$, then you can still reduce debt that way.
