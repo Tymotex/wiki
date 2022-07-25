@@ -13,6 +13,8 @@ An *investment* is the purchase of an asset or commodity with the expectation of
 > The main difference between a *trader* and an *investor* is how long they hold the asset. Traders focus on capitalising on short-term trends.
 
 ## Investing in the Stock Market
+See [[finance/investment/Stock Market|stock market]].
+
 ### Active vs. Passive Investing
 *Active* management involves monitoring the performance of an investment portfolio and making decisions about whether to buy, sell or hold and asset. It aims to 'beat the market' by adopting certain investing strategies and does not support the [[finance/investment/Efficient Market Hypothesis|efficient market hypothesis]] which implies it's not possible to 'beat the market' over the long run.
 

@@ -7,7 +7,7 @@ description: Stock Market
 
 The *stock market*, also called the *share market*, is the buy/sell [[economics/microeconomics/Market|market]] for [[finance/investment/Stocks|stocks]]. Even though it’s called ‘stock market’, you can also trade other securities like [[finance/investment/Exchange Traded Funds|ETFs]], corporate [[economics/macroeconomics/Bonds|bonds]], [[finance/investment/Derivatives|derivatives]] based on stocks, commodities, currencies and bonds in the stock market. To buy stocks, you need a broker.
 
-A *stock exchange* is a centralised place that has the infrastructure to facilitate the trading of stocks. NASDAQ, NYSE and ASX are examples of *stock exchanges*.  
+A *stock exchange* is a centralised place that has the infrastructure to facilitate the trading of stocks. NASDAQ, NYSE and ASX are examples of *stock exchanges*. Note that
 
 ![[finance/investment/assets/asx-physical-entrance.png|250]]
 
@@ -24,12 +24,6 @@ The profitability of a company can fluctuate massively — due to material short
 The stock market is an example of something closely resembling a [[economics/microeconomics/Market#Perfectly Competitive Markets|perfectly competitive market]]. Share prices are determined by [[economics/microeconomics/Supply and Demand|supply and demand]].
 
 People buy shares through *brokers*.
-
-When companies choose to list themselves on a *stock exchange* like the Nasdaq, they're provided with [[economics/macroeconomics/Liquidity|liquidity]] and a means to acquire money for capital investment, but they're subject to greater expenses and tighter regulation.
-
-An alternative way for companies to raise capital is to sell [[economics/macroeconomics/Bonds|bonds]]. Many companies will opt to sell both stocks and bonds.
-
-
 
 
 

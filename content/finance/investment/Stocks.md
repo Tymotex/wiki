@@ -18,7 +18,7 @@ Your ownership is quantifiable as: $\frac{\text{Company X stocks that you have}}
 
 Companies will usually have millions or billions of total shares, called 'outstanding shares'.
 
-Your ownership gives you 
+Your ownership gives you voting power in meetings and elections within the company. Generally, 1 share held gives you 1 vote, however this is set by the company, who can also split off shares into different classes where one class' shares have a greater weighting than another in terms of voting power.
 
 
 ### FAQ
@@ -43,6 +43,15 @@ The *stock market*, *share market* and *equity market* all refer to the same thi
 In medieval Europe, people recorded debts by etching marks on tally sticks and splitting them. When split, the stick would have a very unique pattern of splitting that was hard to tamper with. The longer part was called the 'stock', given to the lender, the shorter part was called the 'foil', given to the borrower. These sticks were considered legal proofs of transactions for hundreds of years until the 1800s.
 
   ![[finance/investment/assets/tally-sticks.png|150]]
+  
+#### Why do companies sell stocks?
+When companies choose to list themselves on a *stock exchange* like the Nasdaq, they're provided with [[economics/macroeconomics/Liquidity|liquidity]] and a means to acquire money for capital investment. The tradeoff is that they're subject to greater expenses and tighter regulation.
+
+To grow your company into an *empire* requires you to have access to a huge amount of capital, ie. money to invest in your ventures and operations. When a company can attract investors by listing themselves on the stock market, they'll be able to lease an office, hire more people, get more equipment, pursue more marketing efforts, etc.
+
+An alternative way for companies to raise capital is to sell [[economics/macroeconomics/Bonds|bonds]]. Many companies will opt to sell both stocks and bonds. The act of selling shares is called *equity financing* and the act of selling bonds is called *debt financing*. For most startups, they simply don't have the assets to really sustainably meet debt payments, so equity financing is the preferred route, where they don't have to pay as much as they grow.
+
+Companies can also acquire funding from [[finance/investment/Venture Capital|venture capital]] firms or [[finance/investment/Angel Investors|angel investors]].
 
 ### Dividends
 A dividend is a payment distributed by the company to shareholders, usually every 3 months. Many companies won't pay dividends and will reinvest it back into the company.
@@ -50,4 +59,14 @@ A dividend is a payment distributed by the company to shareholders, usually ever
 There are *dividend reinvestment plans* which automatically use the cash payment you'd usually get to buy more of the company's stock.
 
 ### Common Shares vs. Preferred Shares
+Shares are usually either *common shares* and *preferred shares*. Preferred shareholders get priority over common shareholders when receiving dividends and the assets if the company [[finance/investment/Stocks#Liquidation|liquidates]].
 
+### Liquidation
+Liquidation is when a business dies. When liquidated, a business' assets are distributed to shareholders proportionally based on how many shares each of them own.
+
+Businesses die when they become *insolvent*, which means that their liquid assets 
+
+### IPO (Initial Public Offering)
+An *initial public offering* (IPO) is when a private company sells shares to the general public for the first time.
+
+To IPO, a company must clear certain requirements by the [SEC](https://www.sec.gov/).
