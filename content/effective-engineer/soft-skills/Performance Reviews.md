@@ -17,4 +17,4 @@ Make your goals known to your manager/boss. For instance, if you're trying to ge
 3. Note the books you've read and other educational pursuits that show improvement.
 4. Save all the emails where you have received praise for you work.
 
-Put up a fight if you haven't been promoted 
+Put up a fight if you haven't been promoted when you expected to be. If you document *everything*, you'll have a mountain of evidence to support your case that cannot be ignored.
