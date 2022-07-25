@@ -27,6 +27,15 @@ Put simply, if you know the *true* value of jewelry, and you find some overlooke
 
 *Growth investing*, on the other hand, is about investing in the stock of smaller companies whose earnings are expected to climb at a much higher rate than established companies.
 
+### Stocks vs. Bonds
+TODO.
+
+### Capital Gains
+TODO.
+
+TODO: *Capital gains tax*.
+
+
 ### Investing Strategies
 
 > Random youtube comment: For beginners, i would go 95-97% funds / etfs and 3%-5% a stock you like. Gets you into the habit of researching stocks and looking at daily life and what companies impact you.
