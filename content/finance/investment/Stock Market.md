@@ -19,3 +19,12 @@ The basis of the stock market existence is the incentive for companies to acquir
 As a company becomes more profitable, its stocks increase in value (demand). The reverse also happens.
 
 The profitability of a company can fluctuate massively — due to material shortages, leadership changes, bad publicity, new regulations, etc. 
+
+
+
+
+
+https://www.youtube.com/watch?v=8QaP43sFO5A&ab_channel=Benjamin
+
+
+The stock market is a [complex adaptive system](https://en.wikipedia.org/wiki/Complex_adaptive_system). Unlike in the context of maths and science, you can't predict how the overall system behaves just by knowing how each part of the system behave. 

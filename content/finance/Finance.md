@@ -7,9 +7,6 @@ Finance is the study of money and assets and the management of them.
 
 > What's the difference between finance and economics? Finance is concerned about managing money while economics is a social science focusing on how human’s make decisions around the allocation of scarce resources. Finance and economics are different disciplines, however *they inform each other*.
 
-### My Financial Plan
-TODO.
-
 ---
 
 - [[finance/investment/Mutual Funds|Mutual funds]]
