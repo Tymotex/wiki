@@ -55,10 +55,17 @@ TODO: *Capital gains tax*.
 
 
 #### Index Funds
-It's widely recommended that most investors should just make monthly investments ([[finance/investment/Investing#Dollar-Cost Averaging DCA|dollar-cost averaging]]) to a low-cost [[finance/investment/Index Funds|index funds]].
+It's widely recommended that most investors should just make monthly investments ([[finance/investment/Investing#Dollar-Cost Averaging DCA|dollar-cost averaging]]) to a low-cost [[finance/investment/Index Funds|index fund]].
 > "Most investors, both institutional and individual, will find that the best way to own common stocks is through an index fund that charges minimal fees. Those following this path are sure to beat the net results (after fees and expenses) delivered by the great majority of investment professionals" — Warren Buffett's 1996 Letter to Shareholders.
 - In Australia in year 2022, index funds in the S&P/ASX 200 outperformed $\approx 70\text{-}80\%$ of actively managed funds run by professionals.
 
+Jack Bogle recommends to always commit to investing in an index fund, even if they're priced at all-time highs and you're convinced that they're overvalued. 
+
+![[finance/investment/assets/s&p-investing-in-local-peaks.png|500]]
+
+> "Never think you know more than the market does." — Jack Bogle.
+
+Historically, the only time investing in index funds has not worked has been when people cave into their emotions and deviate from their commitment to dollar-cost average invest into an index fund and attempt to beat the market on their own. Just stay the course.
 
 #### Dollar-Cost Averaging (DCA)
 TODO.
