@@ -36,4 +36,19 @@ $$
 $$
 Supposing $A_0 = k\big(C_{0}- cT_{0}+ I_{0}+ G_{0}+ X_{0} - r_0(\alpha + \beta)\big)$, we now have an equation representing the aggregate demand curve:
 $$\colorbox{#FFFFBF}{$ Y_\text{equilibrium} = A_0-k\gamma(\alpha +\beta)\pi$},$$
-which relates the real GDP to the inflation rate.	
+which relates the real GDP to the inflation rate. Although the AD curve links the real GDP and inflation, it does not determine them. That's where we need the aggregate supply curve.
+
+![[economics/macroeconomics/assets/aggregate-demand-curve.png|500]]
+
+Changes to the exogenous variables in the constant $A_0 = k\big(C_{0}- cT_{0}+ I_{0}+ G_{0}+ X_{0} - r_0(\alpha + \beta)\big)$ will cause shifts in the AD curve, often called *AD shocks*.
+
+### Aggregate Supply (AS)
+In the [[economics/macroeconomics/Income-Expenditure Model|income-expenditure model]], we assumed that the prices would stay fixed in the short run. In the aggregate supply and demand model, we assume that the business will choose the new prices, thereby setting the actual inflation rate, by considering 3 factors:
+1. The *expected* inflation rate.
+	**Rational expectations hypothesis** — asserts that people always factor in *all* relevant information, producing the best theoretical possible forecast on what the future inflation rate will be. The actual and expected value differ by a completely unpredictable margin, $\omega$:  $\pi_\text{actual}=\pi_\text{expected}+\omega$
+	**Adaptive expectations hypothesis** — asserts that people will use historical data only in their prediction of the future inflation rate, ie. that $\pi_\text{actual}=\pi_{\text{prev}}$, which makes the AS curve a simple horizontal line:
+		![[economics/macroeconomics/assets/adaptive-expectations-hypothesis-aggregate-supply-curve.png|300]]
+	*Inflation shocks* are when there are changes to the inflation rate. Events that might cause inflation shocks include changes in commodity prices and foreign exchange rates. Factoring in inflation shocks, we'd have $\pi_\text{actual} = \pi_\text{prev}+\epsilon$, where $\epsilon$ is the size of the inflation shock. Note that inflation shocks, although temporary in nature, cause permanent effects to the inflation rate since the adaptive expectations hypothesis asserts that the next period's inflation rate retains the previous period's inflation rate.
+2. Shifts in the aggregate demand curve which impact the business' production costs.
+3. How big the [[economics/macroeconomics/Output Gap|output gap]] is.
+
