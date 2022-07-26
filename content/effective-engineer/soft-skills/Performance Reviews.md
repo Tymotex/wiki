@@ -21,7 +21,13 @@ Maintain [[effective-engineer/soft-skills/Performance Reviews#Document Everythin
 
 Put up a fight if you haven't been promoted when you expected to be. If you document *everything*, you'll have a mountain of evidence to support your case that cannot be ignored.
 
-### Promotions
-Prefer adopting more responsibility and 'bigger' job titles than more money, because the money will naturally follow in the long term. You cannot attain a promotion by working hard quietly, you absolutely must be aggressive in pursuit of it. You don't get opportunities - you make them.
+### Promotions & Raises
+Prefer adopting more responsibility and 'bigger' job titles than more money, because the money will naturally follow in the long term. You cannot attain a promotion by working hard quietly, you absolutely must be aggressive in pursuit of it. You don't get opportunities - you make them.  
 
-Again, make it absolutely clear to management that you want a promotion and intend to 
+Again, make it absolutely clear to management that you want a promotion and intend to [[effective-engineer/soft-skills/Performance Reviews#Document Everything|prove]] you meet the requirements for one.
+
+An extremely powerful case for a promotion is if you can prove, with numbers, that you are worth more than you cost.
+
+**Avoid ultimatums**: Although it sounds like powerful move on paper, don't give your boss an ultimatum where you demand a pay rise or leave the job by accepting a higher-paying offer. You'll piss off people, but more importantly they'll be motivated to find a replacement for you because you'll be seen to be more of a liability than an asset.
+
+**Job hop**: it's a reliable way to get a 'promotion', just at another company. Doing it every 2-3 years seems to be the norm, and it forces you to constantly stay in demand.
