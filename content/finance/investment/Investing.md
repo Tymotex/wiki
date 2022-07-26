@@ -12,7 +12,6 @@ An *investment* is the purchase of an asset or commodity with the expectation of
 
 > The main difference between a *trader* and an *investor* is how long they hold the asset. Traders focus on capitalising on short-term trends.
 
-
 ## Investing in the Stock Market
 See [[finance/investment/Stock Market|stock market]].
 

@@ -36,3 +36,4 @@ globalGraph:
 paths:
   - /software-engineering: "#4388cc"
   - /economics: "#98c379"
+  - /finance: "#FFD700"

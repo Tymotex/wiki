@@ -15,6 +15,7 @@ description: Macroeconomics
 - [[economics/macroeconomics/Income-Expenditure Model|Income-expenditure model]]
 - [[economics/macroeconomics/Fiscal Policy|Fiscal policy]]
 - [[economics/macroeconomics/Public Debt|Public debt]]
-- [[economics/macroeconomics/Private Banks|Private Banks]]
+- [[economics/macroeconomics/Private Banks|Private banks]]
 - [[economics/macroeconomics/Money|Money]]
 - [[economics/macroeconomics/Monetary Policy|Monetary policy & cash rate]]
+- [[economics/macroeconomics/Aggregate Supply and Demand Model|Aggregate supply and demand model]]
