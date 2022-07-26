@@ -19,8 +19,9 @@ Welcome to my personal developer wiki. Learning is incredibly chaotic — this i
 ### Developer Subjects
 - [[software-engineering/Software Engineering|Software Engineering]]
 - [[software-engineering/concepts/cloud/Cloud Computing|Cloud Computing]]
+- [[effective-engineer/Effective Engineer|Maximising your effectiveness as an engineer]]
 
-### Non-developer Subjects
+### Money
 - [[economics/Macroeconomics|Macroeconomics]]
 - [[finance/Finance|Finance]]
 
