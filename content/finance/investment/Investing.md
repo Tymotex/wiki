@@ -12,15 +12,26 @@ An *investment* is the purchase of an asset or commodity with the expectation of
 
 > The main difference between a *trader* and an *investor* is how long they hold the asset. Traders focus on capitalising on short-term trends.
 
+
 ## Investing in the Stock Market
 See [[finance/investment/Stock Market|stock market]].
+
+> Ideas here are sourced from:
+> - 'The Intelligent Investor' by Benjamin Graham
+> - 'A Beginner's Guide to the Stock Market' by Mattew Krater
+> - 'The Barefoot Investor' by Scott Pape
+> - Investopedia articles
+> - [New Money](https://www.youtube.com/c/AussieWealthCreation).
+> - ... and advice from investing pioneers such as Warren Buffett, Charlie Munger, etc.
 
 ### Active vs. Passive Investing
 *Active* management involves monitoring the performance of an investment portfolio and making decisions about whether to buy, sell or hold and asset. It aims to 'beat the market' by adopting certain investing strategies and does not support the [[finance/investment/Efficient Market Hypothesis|efficient market hypothesis]] which implies it's not possible to 'beat the market' over the long run.
 
-*Passive* management, known as 'index investing', is about mirroring a [[finance/investment/Market Index|market index]] and is usually associated with [[finance/investment/Index Funds|index funds]] and [[finance/investment/Exchange Traded Funds|ETFs]]. 
+*Passive* management, known as 'index investing', is about mirroring a [[finance/investment/Market Index|market index]] and is usually associated with [[finance/investment/Index Funds|index funds]] and [[finance/investment/Exchange Traded Funds|ETFs]]. They help *diversify* you across the whole part of the market.
 
 Whether active or passive investment outperforms the other in the long term is an ongoing debate.
+
+Warren Buffett, the world's most successful active *value investor*, recommends most people to pursue passive investing over attempting to do active investing yourself because passive investing removes the irrationality from buy/sell decisions that you're victim to.
 
 ### Value vs. Growth Investing
 *Value investing* is about being able to see the intrinsic value of something, then buying that thing when its priced lower than the intrinsic value. *Value investors* believe the stock market to overreact to good or bad news and set prices that aren't reflective of the true value of a stock, which gives rise to an opportunity to profit.
@@ -41,3 +52,55 @@ TODO: *Capital gains tax*.
 ### Investing Strategies
 
 > Random youtube comment: For beginners, i would go 95-97% funds / etfs and 3%-5% a stock you like. Gets you into the habit of researching stocks and looking at daily life and what companies impact you.
+
+
+#### Index Funds
+It's widely recommended that most investors should just make monthly investments ([[finance/investment/Investing#Dollar-Cost Averaging DCA|dollar-cost averaging]]) to a low-cost [[finance/investment/Index Funds|index funds]].
+> "Most investors, both institutional and individual, will find that the best way to own common stocks is through an index fund that charges minimal fees. Those following this path are sure to beat the net results (after fees and expenses) delivered by the great majority of investment professionals" — Warren Buffett's 1996 Letter to Shareholders.
+- In Australia in year 2022, index funds in the S&P/ASX 200 outperformed $\approx 70\text{-}80\%$ of actively managed funds run by professionals.
+
+
+#### Dollar-Cost Averaging (DCA)
+TODO.
+
+DCA is about regularly putting money into an investment pursuit over the long term, rather than chucking in a huge sum at 'the right time'.
+
+Warren Buffett recommends to do this and commit to it for the long term.
+
+Dollar-cost averaging protects you from making irrational decisions and the effects of large market fluctuations.
+
+![[finance/investment/assets/S&P-dollar-cost-averaging.png|400]]
+
+#### The Buffett/Munger Approach
+1. Understand the business.
+2. Check for a durable competitive advantage.
+3. Management has integrity and talent.
+4. Ensure a marign of safety. 
+
+TODO: Explain each.
+
+#### Patience
+> "You don't make money when you buy and you don't make money when you sell. You make money when you wait." — Charlie Munger.
+
+For active investors, be patient. For passive investors, proceed to regularly invest as normal.
+
+#### Emotions
+
+Avoid headlines.
+
+### Macroeconomic Effects
+Macroeconomic events and variables have a huge effect on stock market performance.
+
+#### Investing During High Inflation
+> "Like virginity, a stable price level seems capable of maintenance, but not of restoration" — Warren Buffett describing inflation and how escalating prices are permanent.
+
+A favourable company to invest in during inflationary periods has two properties:
+1. The freedom to jack up or fine-tune their prices without significantly dropping market share values. Eg. Apple, since they have a unique competitve advantage, can freely increase their prices without huge consequences to their share price. People generally won't try to substitute away to other competitors.
+2.  Low working capital. In other words, the company should be able to generate a lot of cash from little input and have a scalable business model. Eg. Meta can just increase ad frequency to generate more cash, while Ford would have to invest in new factories and equipment.
+Advice [sourced](https://arichlife.com.au/how-warren-buffett-says-to-invest-during-high-inflation/) from Warren Buffett.
+
+#### Interest Rates
+At lower [[economics/macroeconomics/Interest|interest rates]], stock market prices will more easily rise (I think. Need a source and explanation for this).
+
+At higher interest rates, it's harder for stock prices to rise.
+
