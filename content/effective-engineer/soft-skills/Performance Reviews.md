@@ -6,7 +6,7 @@ description: Performance Reviews
 ### Schedule Regular Reviews
 You must have regular one-on-one discussion with your manager/boss about your performance. Ideally weekly or fortnightly at a minimum.
 
-Directly ask how you are doing and what can be improved. [[effective-engineer/soft-skills/Performance Reviews#Document Everything|document]] their response.
+Directly ask how you are doing and what can be improved. [[effective-engineer/soft-skills/Performance Reviews#Document Everything|Document]] their response.
 
 Make your goals known to your manager/boss. For instance, if you're trying to get promoted from an L3 engineer to an L4 engineer, make that obvious every conversation.
 

@@ -43,12 +43,20 @@ which relates the real GDP to the inflation rate. Although the AD curve links th
 Changes to the exogenous variables in the constant $A_0 = k\big(C_{0}- cT_{0}+ I_{0}+ G_{0}+ X_{0} - r_0(\alpha + \beta)\big)$ will cause shifts in the AD curve, often called *AD shocks*.
 
 ### Aggregate Supply (AS)
-In the [[economics/macroeconomics/Income-Expenditure Model|income-expenditure model]], we assumed that the prices would stay fixed in the short run. In the aggregate supply and demand model, we assume that the business will choose the new prices, thereby setting the actual inflation rate, by considering 3 factors:
-1. The *expected* inflation rate.
+In the [[economics/macroeconomics/Income-Expenditure Model|income-expenditure model]], we assumed that the prices would stay fixed in the short run. In the aggregate supply and demand model, we assume that the business will choose the new prices, thereby setting the actual inflation rate, based on 3 factors:
+1. <mark style="background: #ADCCFFA6;">The *expected* inflation rate.</mark> 
+   
 	**Rational expectations hypothesis** — asserts that people always factor in *all* relevant information, producing the best theoretical possible forecast on what the future inflation rate will be. The actual and expected value differ by a completely unpredictable margin, $\omega$:  $\pi_\text{actual}=\pi_\text{expected}+\omega$
+	
 	**Adaptive expectations hypothesis** — asserts that people will use historical data only in their prediction of the future inflation rate, ie. that $\pi_\text{actual}=\pi_{\text{prev}}$, which makes the AS curve a simple horizontal line:
-		![[economics/macroeconomics/assets/adaptive-expectations-hypothesis-aggregate-supply-curve.png|300]]
+		![[economics/macroeconomics/assets/adaptive-expectations-hypothesis-aggregate-supply-curve.png|380]]
+	
 	*Inflation shocks* are when there are changes to the inflation rate. Events that might cause inflation shocks include changes in commodity prices and foreign exchange rates. Factoring in inflation shocks, we'd have $\pi_\text{actual} = \pi_\text{prev}+\epsilon$, where $\epsilon$ is the size of the inflation shock. Note that inflation shocks, although temporary in nature, cause permanent effects to the inflation rate since the adaptive expectations hypothesis asserts that the next period's inflation rate retains the previous period's inflation rate.
-2. Shifts in the aggregate demand curve which impact the business' production costs.
-3. How big the [[economics/macroeconomics/Output Gap|output gap]] is.
+2. <mark style="background: #ADCCFFA6;">Shifts in the aggregate demand curve which impact the business' production costs.</mark> 
+3. <mark style="background: #ADCCFFA6;">Size of the [[economics/macroeconomics/Output Gap|output gap]] is.</mark> 
+	
+	When there exists a short-run expansionary output gap like below for example, businesses will initially ramp up production levels to meet increased demand, but over time they'll experience increased production costs and inflate their prices. When all businesses behave this way, then in aggregate, it'll cause inflation to increase and close the output gap.
+	
+	![[economics/macroeconomics/assets/aggregate-supply-expansionary-output-gap.png|500]]
+
 
