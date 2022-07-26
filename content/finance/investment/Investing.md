@@ -41,7 +41,7 @@ Put simply, if you know the *true* value of jewelry, and you find some overlooke
 *Growth investing*, on the other hand, is about investing in the stock of smaller companies whose earnings are expected to climb at a much higher rate than established companies.
 
 ### Stocks vs. Bonds
-TODO.
+Stocks represent ownership, bonds represent loans. Each have their own pros/cons, but in general: bonds are lower risk and have lower returns. When you're young and don't have strict target dates for financial goals, just go for stocks and allocate a greater percentage of your portfolio to bonds when you require more certainty about your investment returns.
 
 ### Capital Gains
 TODO.
