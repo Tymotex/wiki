@@ -28,6 +28,6 @@ Again, make it absolutely clear to management that you want a promotion and inte
 
 An extremely powerful case for a promotion is if you can prove, with numbers, that you are worth more than you cost.
 
-**Avoid ultimatums**: Although it sounds like powerful move on paper, don't give your boss an ultimatum where you demand a pay rise or leave the job by accepting a higher-paying offer. You'll piss off people, but more importantly they'll be motivated to find a replacement for you because you'll be seen to be more of a liability than an asset.
+**Avoid ultimatums**: Although it sounds like the most powerful 'checkmate' move to make in order to get what you want, don't give your boss an ultimatum where you demand a promotion/pay rise or leave the job by accepting a higher-paying offer. You'll piss off people, but more importantly they'll be motivated to find a replacement for you because you'll be seen to be more of a liability than an asset. Some companies have strict policies that compel managers to never negotiate.
 
 **Job hop**: it's a reliable way to get a 'promotion', just at another company. Doing it every 2-3 years seems to be the norm, and it forces you to constantly stay in demand.
