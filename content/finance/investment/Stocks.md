@@ -53,6 +53,9 @@ An alternative way for companies to raise capital is to sell [[economics/macroec
 
 Companies can also acquire funding from [[finance/investment/Venture Capital|venture capital]] firms or [[finance/investment/Angel Investors|angel investors]].
 
+#### How do companies decide how many 'total shares' there are? Is there a difference between having a total number of shares of 1 million vs. 1 billion?
+ 
+
 ### Dividends
 A dividend is a payment distributed by the company to shareholders, usually every 3 months. Many companies won't pay dividends and will reinvest it back into the company.
 
