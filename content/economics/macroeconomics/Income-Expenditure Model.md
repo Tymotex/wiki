@@ -16,7 +16,7 @@ See the [[economics/macroeconomics/GDP#Expenditure Approach|expenditure approach
 ### Assumptions
 A key assumption of the income-expenditure model is that **prices of goods & services are *‘fixed’* (or *‘sticky’*)**. It assumes that firms will *not* change the prices of their goods & services in response to a change in demand for them in the *short-run*. Instead, they'll respond by adjusting their level of production. 
 
-*Note*: this is a fair assumption since firms cannot know whether it’s reasonable to change costs so quickly, due to **[[economics/macroeconomics/Inflation#'Cost' of Inflation|menu costs]]**. Why? Suppose you’re a cafe owner. When there's a sudden influx of demand, you would probably crank up the level of production rather than increasing the cost of coffee. Eventually in the long-run, if you see that this demand persists then you’d increase prices.
+*Note*: this is a fair assumption since firms cannot know whether it’s reasonable to change costs so quickly, due to **[[economics/macroeconomics/Inflation#'Costs' of Inflation|menu costs]]**. Why? Suppose you’re a cafe owner. When there's a sudden influx of demand, you would probably crank up the level of production rather than increasing the cost of coffee. Eventually in the long-run, if you see that this demand persists then you’d increase prices.
 
 ### Disequilibrium
 The business sector can produce at a level greater than or less than the $PAE$, in which case the economy would be in *disequilibrium*. 

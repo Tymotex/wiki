@@ -29,11 +29,18 @@ Note: we use $\pi$ as the symbol for inflation.
 
 ### Why Inflation Exists
 
+Remember, inflation is just the phenomenon of money having lower purchasing power than before. 
+
+Reasons why money might have lower purchasing power include:
+- An increase in the [[economics/macroeconomics/Money#Money Supply|money supply]] that grows faster than real output. [[economics/macroeconomics/Quantity Theory|Quantity theory]] proposes that the value of money is determined in the same way that almost everything is — *supply and demand*.
+- 
+
+### How Inflation Happens
 A rise in the prices of one commodity or service has a ripple effect that causes a rise in many other things. The price levels of goods and services are very often tightly coupled in this way.
 
 
 
-### 'Cost' of Inflation
+### 'Costs' of Inflation
 It’s typically desirable for economies to maintain a low and stable inflation rate over time, usually in the ballpark of 1-3% per year.
 
 - Inflation is generally bad for your savings because the same amount of money will purchase fewer goods and services in the future. During inflation, you’re incentivised to minimise holdings of currency and ‘store’ wealth in other assets.
