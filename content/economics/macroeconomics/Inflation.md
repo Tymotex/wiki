@@ -3,7 +3,34 @@ title: Inflation
 description: Inflation
 ---
 
-TODO.
+Inflation is the rate at which prices for goods and services increase in an economy over a time period.
+
+Inflation describes a period where *prices in an economy are increasing*, or alternatively, the decline of the purchasing power of a country’s currency. Likewise, deflation describes a period where prices are falling.
+
+The [[economics/macroeconomics/Central Bank|central bank]] measures inflation using a *price index*, which is a value that is representative of the aggregate price level. One standard and very commonly chosen price index central banks use to measure inflation is the [[economics/macroeconomics/Inflation#Consumer Price Index|consumer price index (CPI)]].
+
+Inflation is measured in terms of the CPI between the current year, $CPI$, and its previous year, $CPI_{-1}$:
+$$
+	\pi=\big( \frac{CPI-CPI_{-1}}{CPI_{-1}} \big) \times 100
+$$
+
+We can think of inflation simply as the percentage change in CPI between two periods. 
+
+Note: we use $\pi$ as the symbol for inflation.
+
+
+
+
+- Increasing the [[economics/macroeconomics/Cash Rate|cash rate]] tends to reduce the inflation rate
+
+
+### Consumer Price Index
+
+
+### Why Inflation Exists
+
+A rise in the prices of one commodity or service has a ripple effect that causes a rise in many other things. The price levels of goods and services are very often tightly coupled in this way.
+
 
 
 ### 'Cost' of Inflation
@@ -16,3 +43,6 @@ It’s typically desirable for economies to maintain a low and stable inflation 
 - **Shoe-leather cost** — the real cost of making transactions with banks.
     - When the inflation rate is high, people are usually incentivised to buy and hold more interest-bearing assets.
     - The term ‘shoe-leather’ cost is the cost associated with *literally* wearing out the shoe leather each time you take a physical trip to the bank (back in the early 2000s, that is). Generally however, shoe-leather cost refers to the real cost of making transactions with banks. Inflation increases the transactions you’d make with the bank since you’d want to minimise the amount of currency you have (because they’re decreasing in value).
+
+### Hyperinflation
+TODO.

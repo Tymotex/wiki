@@ -34,6 +34,10 @@ https://www.youtube.com/watch?v=8QaP43sFO5A&ab_channel=Benjamin
 
 The stock market is a [complex adaptive system](https://en.wikipedia.org/wiki/Complex_adaptive_system). Unlike in the context of maths and science, you can't predict how the overall system behaves just by knowing how each part of the system behave. 
 
+#### Things that affect the stock market
+
+- When [[economics/macroeconomics/Central Bank|central banks]] raise or drop the [[economics/macroeconomics/Cash Rate|interest rate]].
+
 
 ### History of the Stock Market
 

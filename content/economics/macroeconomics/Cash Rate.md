@@ -7,7 +7,22 @@ The cash rate, which is set by the [[economics/macroeconomics/Central Bank|RBA]]
 - To 'tighten' monetary policy means to raise the cash rate to discourage lending and therefore lower production.
 - To 'loosen' monetary policy means to lower the cash rate to incentivise lending and therefore boost production.
 
-### Payment Settlement
+## How does the interest rate affect you and the economy?
+When the central bank *raises interest rates*, it'll eventually propagate through the economy, causing private banks to increase the interest rates they offer for savings accounts and the rates they charge on loans, notably *variable-rate mortgages*. When this happens, consumers like you are incentivised to **save more money** and spend less on consumption, which means that businesses will experience less demand for their goods, thus be less inclined to raise prices, hence **reducing the inflation rate**.
+
+> Notably, house prices will tend to drop because mortgage repayments are higher, so people are collectively less willing to take on a bigger mortgage to buy a house.
+
+For businesses, a higher interest rate will discourage them from taking out loans and make capital investments. They'll hire fewer people, lay off more people or cut wages, resulting in a rise in [[economics/macroeconomics/Labour Market|unemployment]] and reduction in disposable income.
+
+There are potentially disastrous consequences to the economy when the central bank changes the interest rate, so they must be very careful about how big the hikes are and for long they're imposed on the economy.
+- When interest rates are increased too much, the economy might enter a [[economics/macroeconomics/GDP#Recession|recession]].
+- When interest rates are decreased too much or not increased by enough, inflation may 'spiral' towards [[economics/macroeconomics/Inflation#Hyperinflation|hyperinflation]].
+
+Interest rate changes can take a long time (eg. 2 years) to propagate through the economy and actually affect it. The central bank needs to produce an accurate forecast about where the economy might be headed to inform their decision about how much to change the interest by.
+
+---
+
+## Payment Settlement
 Suppose Commbank owes Westpac an outstanding $10 million AUD. The payment needs to proceed through accounts held at the RBA, called **Exchange Settlement Accounts (ESA)** which must never have a negative balance. Commbank transfers $10 million from their ESA to Westpac’s ESA. 
 
 If Commbank ever has insufficient funds in their reserve, then it must borrow those funds from another bank which expects full repayment in $<24$ hours (which is where the term ‘overnight’ comes from). When borrowing from other banks' ESAs, the loans are charged an interest rate known as the *cash rate*.
@@ -21,10 +36,10 @@ This creates a 50 basis point ‘channel’ which defines the range the actual c
 
 ![[economics/macroeconomics/assets/cash-rate-channel-system.png|500]]
 
-### Open Market Operations
+## Open Market Operations
 *Open market operations* is the trading of goverment bonds between the central bank and the private sector. The RBA mainly buys bonds from banks to increase their ESA and therefore the [[economics/macroeconomics/Money#Money Supply|money supply]], and sells bonds to banks to decrease their ESA and bring down money supply.
 
-### Supply & Demand for ES Funds
+## Supply & Demand for ES Funds
 Below is the demand curve for banks' ES funds in the overnight cash market.
 
 ![[economics/macroeconomics/assets/ES-funds-demand-curve.png|500]]
@@ -37,8 +52,8 @@ Supply is affected exogenously by the value of the open market operations the RB
 
 By undertaking open market operations, the RBA can push the supply curve to intersect with the demand curve as shown above. This is how the RBA sets the *actual* cash rate to be the *target* cash rate that they’ve announced.
 
-### Expectations Hypothesis
-The *expectations hypothesis* predicts how short-term interest rates like the cash rate affects the long-term interest rates after sufficient time. 
+## Expectations Hypothesis
+The *expectations hypothesis* predicts how short-term interest rates like the cash rate affects the long-term interest rates after sufficient time. Basically, it predicts how the interest rate set by the central bank will propagate throughout the rest of the economy, influencing the interest rates charged by private banks on loans and savings.
 
 The long-term interest rate, $i^N_0$, is simply the average of the current interest rate (at term 0) and all *expected* future interest rates. This is summarised in the following equation:
 $$
@@ -48,7 +63,7 @@ where $i^\alpha_\beta$ is the interest rate associated with a loan spanning $\al
 
 Generally, the cash rate can be expected to have a very large effect on the mortgage rate, savings bank account interest rates, exchange rate (currency tends to appreciate when cash rate rises), and so on.
 
-### Policy Rule
+## Policy Rules
 A *policy rule*, also called a *monetary policy reaction function* (PRF), is a simple approximation of how the cash rate affects macroeconomic variables and therefore is a model that describes how central banks choose their policy interest rates. 
 
 #### Taylor Rule

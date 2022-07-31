@@ -95,3 +95,6 @@ where $W \times L$ is the wage per ‘unit’ of labour times the total labour a
 ***Nominal GDP*** counts everything at *current prices*. It therefore does not account for [[economics/macroeconomics/Inflation|inflation]]. This means that the value of nominal GDP can change year-to-year even when the rate of production has stayed the same, because some goods/services have become more or less valuable over time.
 
 ***Real GDP*** counts the changes in production by holding prices constant at a chosen *base year*’s prices. Which base year you choose affects the real GDP calculated in other years. It's basically *nominal GDP*, but adjusted for inflation.
+
+## Recession
+TODO.https://www.investopedia.com/terms/r/recession.asp 
