@@ -16,4 +16,9 @@ Notable features of Nuxt.js:
 
 ---
 
+## Setup
+Nuxt.js has a `create-vue-app` CLI that sets up everything.
+```bash
+npx create-nuxt-app <project_name>
+```
 
