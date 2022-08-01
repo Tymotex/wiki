@@ -473,7 +473,7 @@ const handle = (event: UserEvent): void => {
 	}
 };
 ```
-This kind of type refinement is very useful when working with [[software-engineering/frameworks/Redux#Reducers|Redux reducers]].
+This kind of type refinement is very useful when working with [[software-engineering/technologies/Redux#Reducers|Redux reducers]].
 
 #### Type Guards
 Refinement doesn't work as expected when you use a function to do the type-checking. Any type-checking only contributes to refinement if it's in the same scope.

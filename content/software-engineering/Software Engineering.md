@@ -10,7 +10,7 @@ Below is a list of notes written in my exploration of software technologies and 
 - [[software-engineering/programming-languages/TypeScript|TypeScript]]
 
 ### Frameworks
-- [[software-engineering/frameworks/Cypress|Cypress]]
+- [[software-engineering/technologies/Cypress|Cypress]]
 
 ### Software Engineering
 - [[software-engineering/software-engineering/Requirements Engineering|Requirements engineering]]

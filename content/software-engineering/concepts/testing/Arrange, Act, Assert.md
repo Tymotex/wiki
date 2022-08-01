@@ -11,7 +11,7 @@ The contents of a test should be partitioned into 3 parts in the following order
 3. **Assert** – the code that makes assertions about what the aftermath should be. 
 
 Some simple, concrete examples of this pattern:
-1. Unit testing a C++ function (using [[software-engineering/frameworks/GoogleTest|GoogleTest]]). This tests a `SymbolTable` class that's meant to be used as a supporting data structure for a [compiler project](https://github.com/Tymotex/Nand2Tetris).
+1. Unit testing a C++ function (using [[software-engineering/technologies/GoogleTest|GoogleTest]]). This tests a `SymbolTable` class that's meant to be used as a supporting data structure for a [compiler project](https://github.com/Tymotex/Nand2Tetris).
 	```c++
 	TEST(SymbolTableTestSuite, InsertAndRetrieveTest) {
 	    // Arrange.
@@ -26,7 +26,7 @@ Some simple, concrete examples of this pattern:
 	    EXPECT_EQ(symbol_table.segment_index("myVar"), 0);
 	}
 	```
-1. Unit testing a frontend React component (using [[software-engineering/frameworks/Jest|Jest]]). This tests the breadcrumbs component on the portfolio website, [timz.dev](https://timz.dev).
+1. Unit testing a frontend React component (using [[software-engineering/technologies/Jest|Jest]]). This tests the breadcrumbs component on the portfolio website, [timz.dev](https://timz.dev).
 	```typescript
 	describe("Breadcrumbs", () => {
 	    test("All crumbs are rendered", () => {
@@ -56,7 +56,7 @@ Some simple, concrete examples of this pattern:
 	    });
     });
 	```
-1. E2E testing a web app (using [[software-engineering/frameworks/Cypress|Cypress]]). This tests that the portfolio website, [timz.dev](https://timz.dev), is able to load the about page via a link on the homepage.
+1. E2E testing a web app (using [[software-engineering/technologies/Cypress|Cypress]]). This tests that the portfolio website, [timz.dev](https://timz.dev), is able to load the about page via a link on the homepage.
 	```typescript
 	describe("Portfolio page tests", () => {
 	    it("should render the about page after the 'about' link is clicked", () => {

@@ -3,13 +3,13 @@ title: Cypress
 description: Cypress is an integration testing library for testing web apps.
 ---
 
-![[software-engineering/frameworks/assets/cypress-wallpaper.png|500]]
+![[software-engineering/technologies/assets/cypress-wallpaper.png|500]]
 
 Cypress is an [[software-engineering/concepts/testing/End To End Testing|end-to-end testing]] library for testing the entirety of a web app, including its frontend and backend, in a way that closely simulates how real users would use the app. It also has an API for writing [[software-engineering/concepts/testing/Integration Testing|integration tests]] and [[software-engineering/concepts/testing/Unit Testing|unit tests]]. 
 
 Cypress tests aim to simulate the user experience as closely as possible. This means that tests you write will usually start up a real browser process, navigate to the URL of your web app, then execute a series of user interactions (eg. clicking on links, buttons, sending keystrokes, etc.) and let you make assertions on how the document should respond and what its contents should have.
 
-The purpose of end-to-end testing this way is to give you confidence that the user can perform critical actions without error. For example, you might have a test that verifies your web app's authentication system, the purchase of an item, the sending of a message, etc. Unit tests with [[software-engineering/frameworks/Jest]], for example, wouldn't be sufficient for that purpose.
+The purpose of end-to-end testing this way is to give you confidence that the user can perform critical actions without error. For example, you might have a test that verifies your web app's authentication system, the purchase of an item, the sending of a message, etc. Unit tests with [[software-engineering/technologies/Jest]], for example, wouldn't be sufficient for that purpose.
 
 ### Writing Tests
 In general, the [[software-engineering/concepts/testing/Arrange, Act, Assert|arrange, act, assert]] pattern for writing unit tests is also a useful way to structure e2e Cypress tests.
@@ -75,7 +75,7 @@ cy.get('@blog');             // Retrieve the subject that 'blog' is assigned to.
 ```
 
 ### Fixtures
-In Cypress, *fixtures* are a collection of static test data that can be used by tests. They're located at `cypress/fixtures` and are typically .json files, but can also be .js, image files, etc. The common usage of fixtures is in [[software-engineering/frameworks/Cypress#Mocking Network Requests|stubbing network requests]].
+In Cypress, *fixtures* are a collection of static test data that can be used by tests. They're located at `cypress/fixtures` and are typically .json files, but can also be .js, image files, etc. The common usage of fixtures is in [[software-engineering/technologies/Cypress#Mocking Network Requests|stubbing network requests]].
 
 ```typescript
 // Loads `cypress/fixtures/blogs.json` and uses it as the response
@@ -86,7 +86,7 @@ cy.fixtures('blogs').as('blogsJson').then((blogs) => {
 ```
 
 ### Reusuable Custom Commands
-Cypress gives you many useful [[software-engineering/frameworks/Cypress#API|commands]], however you might need some custom reusable helper functions to help with stubbing network requests, for example. You define custom helpers in `cypress/support/commands.ts` by doing the following:
+Cypress gives you many useful [[software-engineering/technologies/Cypress#API|commands]], however you might need some custom reusable helper functions to help with stubbing network requests, for example. You define custom helpers in `cypress/support/commands.ts` by doing the following:
 ```typescript
 Cypress.Commands.add("helperName", () => {
 	// ...
