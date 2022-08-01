@@ -14,13 +14,11 @@ Remember, the economy is not a [zero-sum game](https://en.wikipedia.org/wiki/Zer
 Interestingly, the [Islamic banking](https://en.wikipedia.org/wiki/Islamic_banking_and_finance) system prohibits monetary interest for religious reasons, instead it sets up other non-monetary incentive structures to reward lenders.
 
 ## Nominal vs. Real Interest
-**Nominal interest rate** — return on loan in terms of *money*.
+**Nominal interest rate** — the *monetary* interest charged on a loan. It does not take into account the effects of [[economics/macroeconomics/Inflation|inflation]].
 
-- [ZLB (zero lower-bound problem)](https://en.wikipedia.org/wiki/Zero_lower_bound#:~:text=The%20Zero%20Lower%20Bound%20(ZLB,capacity%20to%20stimulate%20economic%20growth.): prior to the global financial crisis in 2007-08, people considered that nominal interest rate $i$ should be bounded by zero, that is $i \geq 0$.
+**Real interest rate** — the interest charged on loan *adjusted for inflation*. The real interest rate can be approximated by the difference between the nominal interest rate and inflation rate: $r \approx i - \pi$, where $i$ is nominal interest rate and $\pi$ is the inflation rate *over the period of the loan* (eg. 1 year).
 
-**Real interest rate** — return on loan in terms of *purchasing power*. The real interest rate is given by the difference between the nominal interest rate and inflation rate: $r \approx i - \pi$, where $i$ is nominal interest rate and $\pi$ is the inflation rate *over the period of the loan* (eg. 1 year).
-
-- If you want to earn a real interest rate of 5%, and you’re expecting inflation to be 2%, then you should set the nominal interest rate to be 7%.
+If you're a lender and want to earn a real interest rate of 5%, for example, and you're expecting the inflation rate to be 2%, then you should set the nominal interest rate to be 7%.
 
 ## Fisher Effect
 The **Fisher Effect** asserts that nominal interest rate will increase 1:1 with inflation, ie. that each 1% rise in inflation will have a corresponding 1% rise in nominal interest rate.

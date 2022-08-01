@@ -97,4 +97,6 @@ where $W \times L$ is the wage per ‘unit’ of labour times the total labour a
 ***Real GDP*** counts the changes in production by holding prices constant at a chosen *base year*’s prices. Which base year you choose affects the real GDP calculated in other years. It's basically *nominal GDP*, but adjusted for inflation.
 
 ## Recession
-TODO.https://www.investopedia.com/terms/r/recession.asp 
+A *recession* is a period, typically several months, where production levels have declined from previous levels and unemployment rates are high. There is no universal formal definition of a recession, but it's typically identified as two consecutive quarters where GDP growth has been negative, which means that the total final goods and services produced in the country has reduced for 6 months straight.
+
+A *depression* is like a recession, but it lasts for many years, is more destructive, and is much rarer.

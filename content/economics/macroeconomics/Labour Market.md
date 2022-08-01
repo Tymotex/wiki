@@ -3,6 +3,8 @@ title: Labour Market
 description: Labour Market
 ---
 
+The labour market, also called the *job market*, is the market for the supply of skills and time from employees and demand from businesses to hire those people.
+
 ### Unemployment
 
 Unemployment is categorised into 3 groups:
