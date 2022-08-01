@@ -3,31 +3,20 @@ title: Inflation
 description: Inflation
 ---
 
-Inflation describes a period where *prices in an economy are increasing*, or alternatively, the decline of the purchasing power of a country’s currency. Likewise, *deflation* describes a period where prices are falling.
+Inflation describes a period where *prices in an economy are increasing*, or alternatively, the decline of the purchasing power of a country’s currency. Likewise, *deflation* describes a period where prices are falling. The *inflation rate* describes a value for how much the prices for goods and services have increased in an economy from one point of time to another.
 
-The inflation rate describes a value for how much the prices for goods and services have increaseed in an economy from one point of time to the another.
-
-The [[economics/macroeconomics/Central Bank|central bank]] measures inflation using a *price index*, which is a value that is representative of the aggregate price level. One standard and very commonly chosen price index central banks use to measure inflation is the [[economics/macroeconomics/Inflation#Consumer Price Index|consumer price index (CPI)]].
-
-Inflation is measured in terms of the CPI between the current year, $CPI$, and its previous year, $CPI_{-1}$:
+The [[economics/macroeconomics/Central Bank|central bank]] measures inflation using a *price index*, which is a value that is representative of the aggregate price level. One standard and very commonly chosen price index central banks use to measure inflation is the [[economics/macroeconomics/Inflation#Consumer Price Index|consumer price index (CPI)]]. Inflation is measured in terms of the CPI between the current year, $CPI$, and its previous year, $CPI_{-1}$:
 $$
 	\pi=\big( \frac{CPI-CPI_{-1}}{CPI_{-1}} \big) \times 100
 $$
-
-We can think of inflation simply as the percentage change in CPI between two periods. 
-
-Note: we use $\pi$ as the symbol for inflation.
-
-
+*Note*: we use $\pi$ as the symbol for inflation.
 
 Inflation is generally bad for your savings because the same amount of money will purchase fewer goods and services in the future. During inflation, you’re incentivised to minimise holdings of currency and ‘store’ wealth in other assets.
 
-- Increasing the [[economics/macroeconomics/Cash Rate|cash rate]] tends to reduce the inflation rate
-
-
-
+Inflation is sometimes classified into 3 types:
 - **Cost-push inflation** is when the costs of a business producing goods and services rises (due to shortages in materials, increases in wage, etc.), causing the price of those goods and services charged to consumers to rise. This assumes demand for the business' output hasn't changed.
 - **Demand-pull inflation** is when the demand for a good or service increases while the supply doesn't, causing prices to rise for that good or service.
+- **Built-in inflation** is when *expectations* about future increases in price are the thing that's pushing prices up.
 
 ## Consumer Price Index
 The consumer price index (CPI) value aims to represent changes to the cost of living experienced by typical households. It does this by comparing the price of a *fixed basket* of ‘standard’ goods/services that households consume at a base year with the price of that same basket of goods/services in subsequent years. The items in such a basket might include milk, clothes, chicken, fruit, etc., basically a huge set of things that are usually good representatives of the average urban consumption (since it's based on real data and constant price sampling).
@@ -44,17 +33,6 @@ The CPI at year 2010 is given by: $CPI=\frac{100\times3 + 50 \times 10}{100 \tim
 **Shortfalls of CPI:**
 - When the quality of an item in the basket changes (eg. a phone gets a hardware upgrade), the CPI value fails to capture that. This means the reported CPI might over-estimate increases in living cost. This is called *quality adjustment bias*.
 - CPI does not take into account the *substitution effect*. Eg. when beef becomes expensive, people will tend to substitute away towards chicken, however the CPI will report its value assuming people continue consuming the same amount of the same things in the fixed basket. This is called *substitution bias*.
-
-## Why Inflation Exists
-
-Remember, inflation is just the phenomenon of money having lower purchasing power than before. 
-
-Reasons why money might have lower purchasing power include:
-- An increase in the [[economics/macroeconomics/Money#Money Supply|money supply]] that grows faster than real output. [[economics/macroeconomics/Quantity Theory|Quantity theory]] proposes that the value of money is determined in the same way that almost everything is — *supply and demand*.
-- 
-
-## How Inflation Happens
-A rise in the prices of one commodity or service has a ripple effect that causes a rise in many other things. The price levels of goods and services are very often tightly coupled in this way.
 
 ## Optimal Inflation Rate
 It’s typically desirable for economies to maintain a low and stable inflation rate over time, usually in the ballpark of 1-3% per year. This is usually controlled through [[economics/macroeconomics/Fiscal Policy|fiscal]] and [[economics/macroeconomics/Monetary Policy|monetary]] policies.
