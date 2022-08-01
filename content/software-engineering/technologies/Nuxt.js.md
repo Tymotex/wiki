@@ -1,10 +1,19 @@
 ---
 title: Nuxt.js
-description: Nuxt.js
+description: Nuxt.js is a production-ready Vue.js framework that also provides excellent developer experience.
 ---
 
-Notable features of Nuxt.js
-- It implements *auto-importing*, Every file has access to every component, meaning you never have to import a component again.
-- You can use it to build [[software-engineering/concepts/full-stack-dev/SPAs|SPAs]], 
+![[software-engineering/technologies/assets/Nuxt.js-logo.png|300]]
 
-Nuxt.js uses Nitro, a server-side program that enables you to use [[software-engineering/concepts/full-stack-dev/Static Site Generation|SSG]], use [[software-engineering/concepts/full-stack-dev/Server-Side Rendering|SSR]], build APIs, deploy to the [[software-engineering/concepts/cloud/CDNs|edge]], etc.
+Nuxt.js is a production-ready Vue.js framework that also provides excellent developer experience. It's inspired by [[software-engineering/technologies/Next.js|Next.js]], hence the naming, and exists for a similar purpose as Next.js but does a few things differently.
+
+Notable features of Nuxt.js:
+- *Auto-importing*, where every file has access to every component, meaning you never have to import a component again.
+- Automatic [[software-engineering/concepts/programming/Code Splitting|code splitting]].
+- Ships with pre-configured packages like [Vuex](https://vuex.vuejs.org/), [Vue Router](https://router.vuejs.org/) and [vue-meta](https://vue-meta.nuxtjs.org/). 
+- Gives you a standard folder structure with special purposes associated with each folder. For example, the `pages/` directory gives you filesystem routing where each of the `.vue` files inside are mapped into web pages, similar to what Next.js does.
+- Nuxt.js uses [Nitro](https://v3.nuxtjs.org/guide/concepts/server-engine/), a server-side program that enables you to use [[software-engineering/concepts/full-stack-dev/Static Site Generation|SSG]], use [[software-engineering/concepts/full-stack-dev/Server-Side Rendering|SSR]], build APIs, deploy to the [[software-engineering/concepts/cloud/CDNs|edge]], etc.
+
+---
+
+
