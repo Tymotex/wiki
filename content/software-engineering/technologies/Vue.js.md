@@ -128,9 +128,43 @@ Directives start with `v-` and are introduced by Vue's template syntax. See the 
 
 #### Computed Properties
 When you want to interpolate values inside the component but the expression is complex, you should extract it out into a *computed property*.
+```vue
+<script>
+export default {
+    data() {
+        return {
+            val: 0,
+        };
+    },
+    computed: {
+        isEven() {
+            return this.val % 2 === 0;
+        },
+    },
+};
+</script>
+<template>
+    <input type="number" v-model="val" />
+    <p v-if="isEven">I'm even</p>
+    <p v-else>I'm odd</p>
+</template>
+```
 
 #### Lifecycle Hooks
 Just like React components, Vue components undergo a similar [lifecycle](https://vuejs.org/api/options-lifecycle.html) consisting of creation, mounting, updating and unmounting.
+```vue
+<script>
+export default {
+    beforeCreate() { alert("Before creation"); },
+    created() { alert("Created!"); },
+    beforeMount() { alert("Before mounting"); },
+    mounted() { alert("Mounted!"); },
+};
+</script>
+<template>
+    <div style="background: black; width: 200px; height: 200px"></div>
+</template>
+```
 
 #### Refs
 Just like React, you can attach a reference to an element and then access and manipulate it after it's been mounted.
@@ -148,10 +182,23 @@ export default {
 </template>
 ```
 
-#### Watchers
-TODO.
-
 #### Emits
 Unlike React, you can make the child trigger events on the parent directly by emitting an event from the child which hits an event handler in the parent.
+```vue
+<!-- ChildComponent.vue -->
+<script>
+export default {
+    methods: {
+        notifyParent() {
+            this.$emit("someEvent", "Hello World!!!");
+        },
+    },
+};
+</script>
+<template>
+    <button @click="notifyParent">Click me</button>
+</template>
 
-TODO.
+<!-- Then in the parent component, you add an event listener for 'someEvent' -->
+<ChildComponent @someEvent="..." />
+```
