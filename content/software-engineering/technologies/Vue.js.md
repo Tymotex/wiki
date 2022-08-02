@@ -41,9 +41,24 @@ export default {
 ```
 You can embed any javascript expression inside the double braces, eg. `{{ 42 + Math.PI }}`
 
+#### Props
+Just like React components, every Vue component can take in props.
+```vue
+<script>
+export default {
+    props: {
+        message: String,
+    },
+};
+</script>
+
+<template>
+    <div>{{ message }}</div>
+</template>
+```
+
 #### V- Directives
 Directives start with `v-` and are introduced by Vue's template syntax. See the [full list of built-in directives](https://vuejs.org/api/built-in-directives.html).
-
 - **Attribute/Prop binding** with `v-bind`, or the short-hand `:`.
 	```vue
 	<div v-bind:class="activeClass">Hi</div>
@@ -72,6 +87,13 @@ Directives start with `v-` and are introduced by Vue's template syntax. See the 
 	</template>
 	```
 - **[List rendering](https://vuejs.org/guide/essentials/list.html)** with `v-for`. 
+	```vue
+	<template>
+	    <ul v-for="message in ['Hello', 'World']">
+	        <li>{{ message }}</li>
+	    </ul>
+	</template>
+	```
 - **Event listeners** with `v-on`, or the short-hand `@`.
 	```vue
 	<script>
@@ -104,3 +126,32 @@ Directives start with `v-` and are introduced by Vue's template syntax. See the 
 	</template>
 	```
 
+#### Computed Properties
+When you want to interpolate values inside the component but the expression is complex, you should extract it out into a *computed property*.
+
+#### Lifecycle Hooks
+Just like React components, Vue components undergo a similar [lifecycle](https://vuejs.org/api/options-lifecycle.html) consisting of creation, mounting, updating and unmounting.
+
+#### Refs
+Just like React, you can attach a reference to an element and then access and manipulate it after it's been mounted.
+```vue
+<script>
+export default {
+    mounted() {
+        this.$refs.animal.innerHTML = "🐕 dogs are better";
+    },
+};
+</script>
+
+<template>
+    <div ref="animal">🐈 cats are better</div>
+</template>
+```
+
+#### Watchers
+TODO.
+
+#### Emits
+Unlike React, you can make the child trigger events on the parent directly by emitting an event from the child which hits an event handler in the parent.
+
+TODO.
