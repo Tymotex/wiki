@@ -19,3 +19,5 @@ description: Macroeconomics
 - [[economics/macroeconomics/Money|Money]]
 - [[economics/macroeconomics/Monetary Policy|Monetary policy & cash rate]]
 - [[economics/macroeconomics/Aggregate Supply and Demand Model|Aggregate supply and demand model]]
+- [[economics/macroeconomics/International Trade|International trade]]
+- [[economics/macroeconomics/Exchange Rate|Exchange rate]]
