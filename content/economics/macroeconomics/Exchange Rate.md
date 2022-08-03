@@ -18,5 +18,25 @@ The *Law of One Price* asserts that a tradable good should be priced the same ir
 ### Purchasing Power Parity
 The *purchasing power parity* is an idea that extends the *Law of One Price* to a general basket of goods and services instead of just one good or service. It asserts that the exchange rate between two currencies will change to reflect the price levels within the two countries, ie. that 
 
-$$e=\frac{P_\text{foreign}}{P_\text{home}}.$$ 
-A rise in prices in the home country will reduce $e$, making it so that the home currency purchases less of the foreign currency. 
+$$
+\begin{align}
+	e&=\frac{P_\text{foreign}}{P_\text{home}}, \\
+	\Delta e &= \pi_\text{foreign} -\pi_\text{home}.
+\end{align}
+$$ 
+A rise in prices, or higher inflation, in the home country will reduce $e$, making it so that the home currency purchases less of the foreign currency. 
+
+## Foreign Exchange Market
+The supply and demand model is useful for seeing how the exchange rate is set between two currencies. In the AUD/USD exchange market, a greater preference for US goods by Australians would push the supply curve to the right, and likeiwse, a greater preference for Australian goods by US residents would push the demand for AUD to the right.
+
+![[economics/macroeconomics/assets/aud-supply-and-demand.png|500]]
+
+### Fixed Exchange Rates
+It's possible to sustain an overvalued fixed exchange rate for the home country's currrency if the central bank purchases the excess supply of the home country's currency
+
+![[economics/macroeconomics/assets/aud-nzd-exchange-market.png|400]]
+
+If market participants doubt the long-term sustainability of an fixed exchange rate, they might sell their holdings of the currency on the inflated value in aggregate, launching what's called a *[speculative attack](https://en.wikipedia.org/wiki/Speculative_attack)*.
+
+### Effect of Monetary Policy
+When [[economics/macroeconomics/Monetary Policy|monetary policy]] tightens in a country, increasing the [[economics/macroeconomics/Cash Rate|interest rates]] will tend to reduce the country's demand for foreign goods & services and increase foreign demand for domestic goods & services, causing the home country's currency to appreciate. A loosening of monetary policy tends to depreciate the country's currency.

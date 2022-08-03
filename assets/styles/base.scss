@@ -26,8 +26,11 @@ thead {
   }
 }
 
-// Heading colours.
 article {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  // Heading colours.
   h1 {
     background: rgba(0, 0, 128, 0.05);
     padding: 5px 7px;
@@ -42,6 +45,11 @@ article {
   }
 }
 
+header {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 // Graph customisations
 #graph-container {
   background: var(--graph-bg) !important;
@@ -51,6 +59,12 @@ article {
 
   box-shadow: inset 0 -10px 10px -10px #00000055;
 }
+
+a.internal-link {
+  text-decoration: underline !important;
+}
+
+// ========================================================================== \\
 
 .hanchor {
   font-family: Inter;
