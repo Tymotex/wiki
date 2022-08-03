@@ -11,7 +11,6 @@ The exchange rate is the pricing of one country's currency relative to other cur
 The real exchange rate, $\frac{e\times P_\text{home}}{P_\text{foreign}}$, gives some measure of *international competitiveness*. If a country's goods & services become less expensive, that is $P_\text{home}$ becomes lower, then it'll tend to have higher net exports.
 
 ## Models of Nominal Exchange Rate
-
 ### Law of One Price
 The *Law of One Price* asserts that a tradable good should be priced the same irrespective of where it's coming from (after the application of taxes and transportation costs). If this is not the case (which it indeed isn't in practice), people can exploit the price difference and make a profit.
 
