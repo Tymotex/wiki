@@ -16,6 +16,7 @@ A container packages all the app's dependencies, so just distributing the Docker
 The host OS has the Docker daemon running.
 
 
+You define everything you need inside a manifest file, called a *Dockerfile*.
 
 
 ## DockerHub
