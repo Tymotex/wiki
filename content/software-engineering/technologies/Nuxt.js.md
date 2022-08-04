@@ -12,7 +12,7 @@ Notable features of Nuxt.js:
 - Automatic [[software-engineering/concepts/programming/Code Splitting|code splitting]].
 - Ships with pre-configured packages like [Vuex](https://vuex.vuejs.org/), [Vue Router](https://router.vuejs.org/) and [vue-meta](https://vue-meta.nuxtjs.org/). 
 - Gives you a standard folder structure with special purposes associated with each folder. For example, the `pages/` directory gives you filesystem routing where each of the `.vue` files inside are mapped into web pages, similar to what Next.js does.
-- Nuxt.js uses [Nitro](https://v3.nuxtjs.org/guide/concepts/server-engine/), a server-side program that enables you to use [[software-engineering/concepts/full-stack-dev/Static Site Generation|SSG]], use [[software-engineering/concepts/full-stack-dev/Server-Side Rendering|SSR]], build APIs, deploy to the [[software-engineering/concepts/cloud/CDNs|edge]], etc.
+- Nuxt.js uses [Nitro](https://v3.nuxtjs.org/guide/concepts/server-engine/), a server-side program that enables you to use [[software-engineering/concepts/full-stack-dev/Static Site Generation|SSG]], use [[software-engineering/concepts/full-stack-dev/Server-Side Rendering|SSR]], build APIs, deploy to the [[software-engineering/concepts/cloud/CDNs|edge]], etc. You can still opt for a pure [[software-engineering/concepts/full-stack-dev/SPAs|SPA]].
 
 ---
 
@@ -20,5 +20,20 @@ Notable features of Nuxt.js:
 Nuxt.js has a `create-vue-app` CLI that sets up everything.
 ```bash
 npx create-nuxt-app <project_name>
+yarn create nuxt-app <project_name> 
 ```
 
+## Core Things to Know
+This section contains a tl;dr of basic things to know to work with Nuxt.js projects.
+
+### Directory Structure
+The basic directory structure is pretty similar to that of Next.js.
+```bash
+.
+├── components/       # All your UI components live here. They're always available through Nuxt.js' auto-import.
+├── pages/            # Filesystem routing. Every .vue file here becomes available at a client-side URL with the corresponding path.
+├── static/           # Publicly accessible unchanging content.
+├── store/            # For Vuex.
+├── test/             # For unit tests.
+└── nuxt.config.js    
+```

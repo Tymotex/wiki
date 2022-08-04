@@ -202,3 +202,9 @@ export default {
 <!-- Then in the parent component, you add an event listener for 'someEvent' -->
 <ChildComponent @someEvent="..." />
 ```
+
+### Styling
+Broadly, there are 2 approaches to applying CSS to Vue components.
+1. Add a `<style scoped>` to the .vue file where the CSS within applies only to that component. You could omit the `scoped` prop to apply styles globally. For SCSS, you can set the prop `lang="scss"`.
+2. Include a .css file from somewhere in the project directory through `<style scoped>@import '...'</style>` or use an ES `import '___.css'`.
+
