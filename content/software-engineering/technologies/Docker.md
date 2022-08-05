@@ -3,31 +3,265 @@ title: Docker
 description: Docker
 ---
 
-Docker is a [[software-engineering/concepts/devops/Containers|containerisation]] tool, or *container runtime*, that packages up an app's source code and dependencies into portable containers that can be run in many different environments. Since a Docker container packages *all* the app's dependencies, just distributing the **Docker image** for that container is sufficient for anyone to run the app anywhere without needing to install anything else. There are alternative container runtimes like [Rocket](https://www.redhat.com/en/topics/containers/what-is-rkt) or [LXD](https://linuxcontainers.org/lxd/).
+![[software-engineering/technologies/assets/docker-wallpaper.png|800]]
+
+Docker is a [[software-engineering/concepts/devops/Containers|containerisation]] tool, or *container runtime*, that packages up an app's source code and dependencies into portable containers that can be run in many different environments. Since a Docker container packages *all* the app's dependencies, just distributing the **Docker image** for that container is sufficient for anyone to run the app anywhere without needing to install anything else. You define everything an app needs inside a manifest file, called a *Dockerfile*. There are alternative container runtimes like [Rocket](https://www.redhat.com/en/topics/containers/what-is-rkt) or [LXD](https://linuxcontainers.org/lxd/).
 
 When you *Dockerise* an app, you get portability. That's the main reason people use it. This means you can have a lot of confidence that the app will work on anything that has a *Docker daemon* running on it, whether it's your laptop, your co-worker's laptop, a VM in a data center, a computer in your office, and so on (with some caveats like not being able to run Windows containers on Linux hosts). Docker is especially great for deploying [[software-engineering/concepts/architecture/Microservice|microservices-based]] applications.
 
+**Terms:**
+- ***Image*** — a read-only ***file*** containing the source code, libs, dependencies and tools for an application. Images are sometimes called *snapshots* because they capture an application and their environment at some point in development. Images are templates for creating *containers*
+- ***Containers*** — a running instance of an image that is a runtime environment for an application. You can think of creating a container as just adding a writable layer on top of an image (which is read-only).
+    - Containers just *processes*, they have a PID, a parent process, can be killed, etc.
+    - A virtual machine virtualises the hardware to run multiple OS instances. A container virtualises an OS to run multiple workloads and multiple containers can share the same OS kernel, making them lightweight
+    - Containers are isolated environments meaning that they have their own filesystem, network, CPU and memory limits, etc.
+    - You can think of a Docker image as a class and a Docker container as an instance of that class
+- ***Dockerfile*** — a file that contains step-by-step instructions for building an image that gets sent to the *Docker engine*. Dockerfiles document the exact environment as a snapshot. The dockerfile is the starting point — a dockerfile's commands are executed, creating an image, then a container is built from that image.
+	![[software-engineering/technologies/assets/dockerfile-to-docker-image.png|340]]
+- ***Tags*** — mutable named references to images. They should generally be human-readable
+    - Eg. the Debian image has a tag called 'buster', a name for Debian 10. You would pull this specific image with `docker pull debian:buster`
+- ***Container orchestration*** — the automated running of multiple containers across multiple machines, including their deployment, scaling, load balancing, etc.
+    - You can always run multiple containers manually, but tools like [[software-engineering/technologies/Kubernetes|Kubernetes]] can automate a lot of it for you.
+
+## Docker Architecture
+Docker follows a client-server architecture where you have a Docker client that sends requests to a Docker daemon using a REST API. Both the client and daemon may run on the same host or on different machines and communicate over the network.
+- **Docker daemon**
+A background process listening for API requests. It manages images, containers, and more
+- **Docker client**
+Issues commands to the Docker daemon. This can be through the [[software-engineering/technologies/Docker#Docker CLI|CLI]], through Docker Desktop, [[software-engineering/technologies/Docker Compose|Docker Compose]], etc.
+- **Docker registries**
+Docker registries store *images*. [[software-engineering/technologies/Docker#DockerHub|Docker Hub]] is the default public registry that images can be pushed to and pulled from (but there exists other registries like GitHub Container Registry and Amazon ECR which has great integrations with ECS for deploying containers)
+
+![[software-engineering/technologies/assets/docker-architecture.png|700]]
+
+## Docker CLI
+```bash
+# ===== Fundamental Commands =====
+docker build <path>         # Creating images, where <path> tells Docker where to find the Dockerfile to use
+  -t <tag>                  # Assign a human-readable name (tag) to the image we're going to create
+	-f <file>                 # Path of the Dockerfile. Without this flag, docker build will use look for a file named exactly Dockerfile in the cwd
+
+# Note: having a .dockerignore file will let you exclude large and unnecessary files from being sent to the daemon
+ 
+docker run <image>          # Running a command in a new container
+	-d                        # Run in detached mode, as a background process
+  -p 8080:80                # Exposes a container port by mapping the host's port 8080 to the container's 80, for instance. 
+													  # -p 8080:80 says "forward any traffic coming to my port 8080 to the container's port 80"
+	--name <containerId>      # Giving an ID to the container. Useful when looking at `docker ps` output. If no name is specified, a random one will be generated
+	-v <volName>:<path>       # Use the given volume <volName> and mount it to <path>
+	-w <path>                 # Sets the working directory (which is necessary if you're going to run commands that depend on being on a certain path)
+	--network <networkName>
+	--networkalias=<name>	
+	-e key=val                # Set an environment variable
+	--env-file <file>         # Use a .env file for setting environment variables
+
+# Note: to get rid of a container, it must first be stopped with `docker stop <containerId>` and then removed with `docker rm <containerId>`
+#       Container IDs can be found in `docker ps` output
+
+docker stop <containerId>   # Stopping a running container. It'll no longer appear in `docker ps`
+docker start <containerId>  # Starting a stopped container
+docker rm <containerId>     # Removing a container
+docker tag <src> <dest>     # Create an alias to another image (like a symbolic link). This is useful for `docker push <image>`
+
+docker images         # `ls` for images
+docker ps             # `ps` for container processes
+	-a                  # Shows all running and stopped containers
+docker logs           # Shows container's output log
+	-f                  # 'follow' the output rather than just printing the output once
+
+docker exec <containerId> <command>       # Runs a command in the given container
+  docker exec -it <containerId> bash      # Starts up a terminal in your container
 
 
+# ===== Docker Hub Operations ====== 
+docker push <image>   # Pushes an image to Docker Hub (you must have logged in earlier with `docker login -u <username>`
+docker pull <image>   # Downloads an image from Docker Hub (which is the default registry)
+
+
+# ===== Frequent Operations =====
+docker kill $(docker ps -q)       # Stopping all containers
+docker rm $(docker ps -a -q)      # Removing all containers
+docker rmi $(docker images -q)    # Removing all images  
+docker rmi -f $(docker images -f "dangling=true" -q)   # Remove all dangling images (images that aren't referenced by any other)
+```
+
+## Dockerfile
+`docker build` uses a sequential list of commands in a Dockerfile and a ***build context*** to build new images. There are lots of [best practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/) for building images efficiently. Building good images and orchestrating them are complex topics by themselves and require effort and experience.
+
+### [Docker Layers](https://vsupalov.com/docker-image-layers/)
+Docker images consist of read-only *layers*, each of which corresponds to a Dockerfile instruction. Each layer stores the set of changes to the filesystem and metadata from the previous layer.
+- *An image is basically a diff*. It just stores what changes from the image it is based on. Every image always has a parent (with some exceptions).
+	- An image *is* a layer. You could use them interchangeably, mostly.
+	- Each layer is a complete image in itself.
+	- Image layers exist to reuse work and save space.
+- You can reduce several layers into one with the squash flag `--squash` in [`docker build`](https://docs.docker.com/engine/reference/commandline/build/).
+- When you run an image to spawn a container, you are adding a writable layer on top of all the underlying read-only layers, called the *container layer*. All changes such as newly created files are written to this writable container layer.
+        ![[software-engineering/technologies/assets/Pasted image 20220805162553.png|400]]
+### [Dockerfile Commands](https://docs.docker.com/engine/reference/builder/)
+```dockerfile
+# Dockerfiles must begin with a **FROM** instruction. It specifies what *base image* to start building on top of.
+FROM <baseImage>
+
+	# In multi-stage builds, you can use **AS** to give a name to a build and then be able to have one stage reference another
+	FROM <baseImage> AS <stageName>	
+
+# Adds a key-value pair custom metadata field to the image. 
+#   - Labels are viewable with `docker inspect` 
+#   - Third party tools around Docker may make use of Labels in your Dockerfiles to organise/manage them
+LABEL maintainer="admin@timz.dev"
+
+# Runs a shell command. It uses `/bin/sh` as the default shell in Linux   
+#   - double quotes must be used
+RUN ["command", "arg1", "arg2", ...]
+RUN command arg1 arg2 ...
+
+# Like **RUN**, but it runs a *default* shell command to start up the application.
+# Unlike **RUN**, it doesn't execute anything when the image is being built!
+#   - There can only exist 1 CMD in a Dockerfile. If multiple exist, only the last one is used
+#   - The default can always be overwritten by a user-supplied command
+CMD ["command", "arg1", "arg2", ...]
+CMD command arg1 arg2 ...
+
+# Which port to listen on at runtime. Uses TCP by default
+EXPOSE <port>
+
+# Set an environment variable
+ENV key="value"
+
+# Copies new files and dirs from a local **<src>** to the container filesystem's **<dest>**.
+# It's better practice to use **COPY** instead of **ADD**.
+#   - **<dest>** is either absolute or *relative to WORKDIR* 
+#   - Dockerfile supports file globbing like in bash
+#   - If **<src>** is a URL, then the file at that URL will be download to the container's **<dest>**
+ADD <src> <dest>
+
+# Almost identical to ADD, but the main difference is it doesn't support URL sources
+COPY <src> <dest>
+
+	# For multi-stage builds, you use **--from** to source files from a previous stage in the build
+	COPY --from=<stageName> <src> <dest>
+
+# Like **CMD**, but the command is always run, whereas **CMD**'s command doesn't get run if the user supplies their own command
+#   - **ENTRYPOINT** is preferred over **CMD** when you need a command to always be executed instead of just being the default
+ENTRYPOINT ["command", "arg1", "arg2", ...]
+ENTRYPOINT command arg1 arg2 ...
+
+# Creates a mount point 
+VOLUME <path>
+
+# Sets what the cwd is within the container's filesystem. 
+# Helpful for subsequent **RUN**, **CMD**, **ENTRYPOINT**, **COPY**/**ADD** instructions
+WORKDIR <path>
+```
+
+**[Example](https://www.youtube.com/watch?v=iqqDU2crIEQ&ab_channel=Docker) Dockerfile**
+```docker
+# You usually start from a base image with `FROM`
+# This is using *node* as a **base image** with the **tag** *12.16.3* (the latest LTS version)
+FROM node:12.16.3         
+
+# Creating a directory. All subsequent commands will use this as the working directory
+WORKDIR /code
+
+# Setting up an environment variable 
+ENV PORT 80
+
+COPY package.json /code/package.json
+
+# Installs all dependencies in package.json
+RUN npm install
+
+COPY . /code
+
+# The default command to be run **when the container is started**.
+# This would run `node src/server.js`
+CMD [ "node", "src/server.js" ]
+```
+
+### Parser Directives
+Parser directives are special comments with the form `# directive=val`
+```docker
+# This defines the location of the Dockerfile syntax that should be used to build the image
+# Note: this has no effect unless you are using the [BuildKit](https://docs.docker.com/develop/develop-images/build_enhancements/) backend
+# syntax=docker/dockerfile:1
+
+# Tells Docker what characters should be used to escape characters. It defaults to be \
+# escape=`
+```
+
+### Variables
+Environment variables defined with `ENV` can be used in other commands. It's similar to how `bash` variables work
+```docker
+FROM ___
+ENV MY_DIR=/home/tim/Projects
+WORKDIR ${MY_DIR}
+ADD . $MY_DIR
+```
+
+## .dockerignore
+When you run `docker build`, the Docker CLI also sends the build context, which is the set of files located at the specified PATH or Git repo URL, over to the Docker daemon. Before that, the CLI checks if a `.dockerignore` is present and ensures that any files declared in there will not be sent to the Docker daemon. It's purpose is similar to `.gitignore`
+
+- `COPY` or `ADD` will also ignore the files in `.dockerignore`
+- The syntax is very similar to `.gitignore`. File globbing is also supported
+
+A typical `.dockerignore` for a React project might looks like this, for example:
+
+```docker
+node_modules
+Dockerfile
+.git
+.gitignore
+.dockerignore
+.env*
+```
+
+After adding this, you'll notice that `docker build` is *way faster* because node_modules isn't being sent to the Docker daemon.
 
 ## DockerHub
-Many container runtime systems have a big public repo of container images. In Docker's case, we have DockerHub. There you'll find images for containers that run, for example, [PostgreSQL](https://hub.docker.com/_/postgres/), [NGINX](https://hub.docker.com/_/nginx), [Node.js](https://hub.docker.com/_/node), [Ubuntu](https://hub.docker.com/_/ubuntu/), etc.
+Many container runtime systems have a big public repo of container images, called a registry. In Docker's case, we have DockerHub. There you'll find images for containers that run, for example, [PostgreSQL](https://hub.docker.com/_/postgres/), [NGINX](https://hub.docker.com/_/nginx), [Node.js](https://hub.docker.com/_/node), [Ubuntu](https://hub.docker.com/_/ubuntu/), etc.
 
-## Containers vs. Virtual Machines
-TODO.
+## Volumes (Shared Filesystems)
+*A problem*: containers can do file manipulation, however any created or updated files are lost when that container process is killed. So when a containerised backend server writes to a database then all the objects in that database are gone.
 
-Containers are considered substantially more lightweight than virtual machines.
+With [volumes](https://docs.docker.com/storage/volumes/), you can connect paths of a container's filesystem to paths of the host machine so that files created or update in that path are also shared with the host. Then when the container is removed or restarted, it would see the files from earlier. 
 
-Containers can have its own concept of a filesystem, networking resources, ...
+- If you had an application using a DBMS like SQLite writing to its database to a file at `/etc/my-project/data.db`, then
 
-Docker shares the host operating system's resources. 
+### Named Volumes
+Docker lets you manage *named volumes*. It hides away the physical location of where the volume is stored so you, as the programmer, just need to work with the name of the volume.
 
-## You can run an operating system in a container??
+```bash
+docker volume create <volumeName>     # Creates a new named volume
+docker volume inspect <volumeName>    # Shows info about the volume such as where its mount point (actual path) is
+```
+
+### Bind Mounts
+Unlike *named volumes*, bind mounts let you control exactly where the *mount point* (path of the shared files) is between host and container.
+- It can be used where named volumes are used, but being able to set where the mount point is lets us mount our host's source code into the container to set up *hot reloading*
+    - In [this example](https://docs.docker.com/get-started/06_bind_mounts/) which uses [nodemon](https://www.npmjs.com/package/nodemon) to watch for code changes, you *bind mount* the directory that you are currently developing in and the container's working directory so that edits made to the code from the host's side also affect the code being run in the container's side.
+        
+        By bind mounting your project's directory and the directory where the container is running your app, you are basically syncing the files you're editing and the files that are in 'production' on the container.
+        
+        Bind mounting is done by passing in a few extra options to your usual `docker run` command:
+	```bash
+	docker run -dp 3000:3000 \
+		 -w /app **-v "$(pwd):/app"** \               # Setting the container's cwd to /app and then bind mounting the host side's (your side's) dev directory to the container side's
+		 node:12-alpine \
+		 sh -c "yarn install && yarn run dev"     # Running a command to kick off the **nodemon** (which is what `yarn run dev` does) after the container starts up
+	```
+- Differences between *bind mounts* and *named volumes*
+	![[software-engineering/technologies/assets/bind-mounts-vs-named-volumes.png|400]]
+
+## Multi-Stage Builds
+
+
+## FAQ
+### You can run an operating system in a container??
 Most Docker examples you see will involve using a base container image containing a Linux distribution like the [official DockerHub image for Ubuntu](https://hub.docker.com/_/ubuntu/).
 
 Docker containers do not contain a complete OS like a virtual machine, it just has a snapshot of the filesystem of a 'donor' OS. This idea is powerful enough that you can run a Linux distribution's entire application layer inside a container, eg. the package manager (`apt`, `pacman`, etc.), spawning a shell, etc.
 
 Not every container 'has' an operating system. You won't be able to launch a shell in a container that doesn't have one.
 
-## Under the hood
+### Under the hood
 TODO.
