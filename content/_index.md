@@ -16,9 +16,9 @@ Welcome to my personal developer wiki. Learning is incredibly chaotic — this i
 
 ---
 
-### Developer Subjects
+### Engineering
 - [[software-engineering/Software Engineering|Software Engineering]]
 
-### Money
+### Economics & Finance
 - [[economics/Macroeconomics|Macroeconomics]]
 - [[finance/Finance|Finance]]
