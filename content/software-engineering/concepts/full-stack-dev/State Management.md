@@ -3,7 +3,7 @@ title: State Management
 description: State Management
 ---
 
-*State*, in this context, is just the read/write data that a UI project like a React app needs. State management is about avoiding making a mess of 
+*State*, in this context, is just the read/write data that a UI project like a React app needs. State management is about avoiding making a mess of this data when you have a complex component hierarchy with some distantly related components that need to read/modify the same part of state.
 
 Suppose you have an app whose component hierarchy looks like this:
 ![[software-engineering/technologies/assets/example-app-hierarchy.png|400]]
@@ -15,8 +15,10 @@ In this example, it's not so bad, but when the component hierarchy is much large
 
 Broadly, those strategies are:
 - Flux (eg. through [Vuex](https://vuex.vuejs.org/)).
-- Redux (eg. through [React Redux](https://react-redux.js.org/)).
+- [[software-engineering/technologies/Redux|Redux]] (eg. through [React Redux](https://react-redux.js.org/)).
 - [React Context](https://reactjs.org/docs/context.html).
 
+Redux, for example, centralises the app's state by extracting out all the main parts of state into a global 'store' and allows all components, regardless of where they are in the hierarchy, to read/write to that store. Any updates to the shared global state made by one component are immediately 'received' by other components dependent on the part of the global state that was updated.
+![[software-engineering/concepts/full-stack-dev/assets/redux-example.png|400]]
 
 
