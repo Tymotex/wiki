@@ -5,9 +5,7 @@ description: Macroeconomics
 
 ![[economics/assets/macroeconomics-wallpaper.png|600]]
 
-An *economy* is simply the sum of all transactions that make it up. *Economic growth* is driven by transactions, ie. spending. When you spend money to acquire goods and services, you enable the people you've paid to do the same. Economic cycles exist because debt enables us to consume/invest more than we produce, forcing us to consume/invest less than we produce when we pay it back.
-
-*Macroeconomics* is the study of the aggregate behaviour of economies and aggregate variables such as a country's GDP, unemployment rate, inflation rate, etc. which are mainly produced by government statistical agencies like the [ABS](https://www.abs.gov.au/) in Australia.
+An *economy* is simply the sum of all transactions that make it up. *Economic growth* is driven by transactions, ie. spending. *Macroeconomics* is the study of the aggregate behaviour of economies and aggregate variables such as a country's GDP, unemployment rate, inflation rate, etc. which are mainly produced by government statistical agencies like the [ABS](https://www.abs.gov.au/) in Australia.
 
 - [[economics/macroeconomics/GDP|GDP]]
 - [[economics/macroeconomics/Inflation|Inflation & CPI]]

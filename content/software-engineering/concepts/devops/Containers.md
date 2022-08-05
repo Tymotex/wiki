@@ -27,3 +27,6 @@ Supposing you had 3 services to be deployed, you could either spin up 3 separate
 ![[software-engineering/concepts/devops/assets/virtual-machine-vs-containers.png|600]]
 *(Image sourced from Nick Janetakis.)*
 
+Prior to the widespread adoption of the cloud, the traditional way to deploy an app is simply to set up a physical set of computers in a server room, then run the app on those computers without any virtualisation. This method has a very expensive upfront cost, challenging to scale, and will result in poor utilisation of compute resources. That's why microservice architectures deployed onto the cloud have become the standard.
+![[software-engineering/concepts/devops/assets/traditional-virtualised-container-deployments.png|800]]
+
