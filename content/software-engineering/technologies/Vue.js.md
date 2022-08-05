@@ -209,5 +209,7 @@ Broadly, there are 2 approaches to applying CSS to Vue components.
 2. Include a .css file from somewhere in the project directory through `<style scoped>@import '...'</style>` or use an ES `import '___.css'`.
 
 ## Vuex
-Vuex, designed after the [Flux](https://facebook.github.io/flux/docs/in-depth-overview/) state management framework, introduces a *single source of truth* to the app that any component can read/write to.
+See [[software-engineering/concepts/full-stack-dev/State Management|state management]].
+
+Vuex, designed after the [Flux](https://facebook.github.io/flux/docs/in-depth-overview/) and [[software-engineering/technologies/Redux|Redux]] state management frameworks, introduces a *single source of truth* to the app that any component can read/write to.
 
