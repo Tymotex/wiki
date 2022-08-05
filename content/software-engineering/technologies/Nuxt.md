@@ -5,7 +5,7 @@ description: Nuxt.js is a production-ready Vue.js framework that also provides e
 
 ![[software-engineering/technologies/assets/Nuxt.js-logo.png|300]]
 
-Nuxt.js is a production-ready Vue.js framework that also provides excellent developer experience. It's inspired by [[software-engineering/technologies/Next.js|Next.js]], hence the naming, and exists for a similar purpose as Next.js but does a few things differently.
+Nuxt.js is a production-ready Vue.js framework that also provides excellent developer experience. It's inspired by [[software-engineering/technologies/Next|Next.js]], hence the naming, and exists for a similar purpose as Next.js but does a few things differently.
 
 Notable features of Nuxt.js:
 - *Auto-importing*, where every file has access to every component, meaning you never have to import a component again.

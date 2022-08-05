@@ -9,17 +9,30 @@ Below is a list of notes written in my exploration of software technologies and 
 ### Programming Languges
 - [[software-engineering/programming-languages/TypeScript|TypeScript]]
 
-### Frameworks
+### Technologies
 - [[software-engineering/technologies/Cypress|Cypress]]
-- [[software-engineering/technologies/Vue.js|Vue.js]]
-- [[software-engineering/technologies/Nuxt.js|Nuxt.js]]
+- [[software-engineering/technologies/Vue|Vue.js]]
+- [[software-engineering/technologies/Nuxt|Nuxt.js]]
+- [[software-engineering/technologies/Docker|Docker]]
+- [[software-engineering/technologies/Docker Compose|Docker Compose]]
+- [[software-engineering/technologies/Tailwind|Tailwind]]
 
 ### Software Engineering
 - [[software-engineering/software-engineering/Requirements Engineering|Requirements]]
 - [[software-engineering/software-engineering/Agile|Agile]]
 
 ### Concepts
-- [[software-engineering/concepts/programming/Generators|Generators]]
-- [[software-engineering/concepts/programming/Iterators|Iterators]]
-...
-
+- **Programming**
+	- [[software-engineering/concepts/programming/Generators|Generators]]
+	- [[software-engineering/concepts/programming/Iterators|Iterators]]
+- **DevOps**
+	- [[software-engineering/concepts/devops/Virtual Machines|Virtual machines]]
+	- [[software-engineering/concepts/devops/Containers|Containers]]
+	- [[software-engineering/concepts/devops/Hypervisor|Hypervisors]]
+- **Fullstack engineering**
+	- [[software-engineering/concepts/full-stack-dev/State Management|State management]]
+- **Architecture**
+	- [[software-engineering/concepts/architecture/Microservice|Microservices]]
+	- [[software-engineering/concepts/architecture/Monolith|Monoliths]]
+- **Operating systems**
+	- [[software-engineering/concepts/operating-systems/User Space and Kernel Space|Userland & Kernel Space]]

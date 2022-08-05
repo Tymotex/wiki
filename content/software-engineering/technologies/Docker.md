@@ -221,39 +221,102 @@ After adding this, you'll notice that `docker build` is *way faster* because nod
 Many container runtime systems have a big public repo of container images, called a registry. In Docker's case, we have DockerHub. There you'll find images for containers that run, for example, [PostgreSQL](https://hub.docker.com/_/postgres/), [NGINX](https://hub.docker.com/_/nginx), [Node.js](https://hub.docker.com/_/node), [Ubuntu](https://hub.docker.com/_/ubuntu/), etc.
 
 ## Volumes (Shared Filesystems)
-*A problem*: containers can do file manipulation, however any created or updated files are lost when that container process is killed. So when a containerised backend server writes to a database then all the objects in that database are gone.
+*A problem*: containers can do file manipulation, however any created or updated files are lost when that container process is killed. When a containerised backend server writes to a database, for example, then all the objects in that database are gone after the container process terminates.
 
-With [volumes](https://docs.docker.com/storage/volumes/), you can connect paths of a container's filesystem to paths of the host machine so that files created or update in that path are also shared with the host. Then when the container is removed or restarted, it would see the files from earlier. 
-
-- If you had an application using a DBMS like SQLite writing to its database to a file at `/etc/my-project/data.db`, then
+With [volumes](https://docs.docker.com/storage/volumes/), you can connect paths of a container's filesystem to paths of the host machine so that files created or updated in that path are also shared with the host. This lets containers persist their filesystem changes. 
 
 ### Named Volumes
 Docker lets you manage *named volumes*. It hides away the physical location of where the volume is stored so you, as the programmer, just need to work with the name of the volume.
-
 ```bash
 docker volume create <volumeName>     # Creates a new named volume
 docker volume inspect <volumeName>    # Shows info about the volume such as where its mount point (actual path) is
 ```
 
 ### Bind Mounts
-Unlike *named volumes*, bind mounts let you control exactly where the *mount point* (path of the shared files) is between host and container.
-- It can be used where named volumes are used, but being able to set where the mount point is lets us mount our host's source code into the container to set up *hot reloading*
-    - In [this example](https://docs.docker.com/get-started/06_bind_mounts/) which uses [nodemon](https://www.npmjs.com/package/nodemon) to watch for code changes, you *bind mount* the directory that you are currently developing in and the container's working directory so that edits made to the code from the host's side also affect the code being run in the container's side.
-        
-        By bind mounting your project's directory and the directory where the container is running your app, you are basically syncing the files you're editing and the files that are in 'production' on the container.
-        
-        Bind mounting is done by passing in a few extra options to your usual `docker run` command:
+Unlike *named volumes*, bind mounts let you control exactly where the *mount point* (the *path* to the directory of the shared files) is between the host and container.
+It can be used where named volumes are used, but being able to set where the mount point is lets us mount our host's source code into the container to set up *hot reloading*
+- In [this example](https://docs.docker.com/get-started/06_bind_mounts/) which uses [nodemon](https://www.npmjs.com/package/nodemon) to watch for code changes, you *bind mount* the directory that you are currently developing in and the container's working directory so that edits made to the code from the host's side also affect the code being run in the container's side.
+	
+	By bind mounting your project's directory and the directory where the container is running your app, you are basically syncing the files you're editing and the files that are in 'production' on the container.
+	
+	Bind mounting is done by passing in a few extra options to your usual `docker run` command:
 	```bash
 	docker run -dp 3000:3000 \
 		 -w /app **-v "$(pwd):/app"** \               # Setting the container's cwd to /app and then bind mounting the host side's (your side's) dev directory to the container side's
 		 node:12-alpine \
 		 sh -c "yarn install && yarn run dev"     # Running a command to kick off the **nodemon** (which is what `yarn run dev` does) after the container starts up
 	```
-- Differences between *bind mounts* and *named volumes*
+- Differences between *bind mounts* and *named volumes*:
 	![[software-engineering/technologies/assets/bind-mounts-vs-named-volumes.png|400]]
 
-## Multi-Stage Builds
+## Multiple Containers
+### Why Use Multiple Containers?
+Although it's possible to run multiple processes in a single container, in general each container should focus on one thing. If you have a container that runs both a backend server *and* a database server like MySQL, then it's generally considered better practice to run both in separate containers because:
+- API servers, database servers and other components scale differently. Keeping them in separate containers lets you scale each component independently of each other. Eg. you might have a low-traffic but data-intensive app which might mean needing twice as many database containers than backend server containers.
+- You can rollout a new version to your web server without affecting the database.
+- For production, it doesn't make sense to ship the database server with the app.
+- Each container is less complex.
 
+### Container Networking
+Containers are isolated processes that have no awareness of other containers running on the same machine. How are they able to talk to each other?
+- Containers are able to communicate iff they are connected to the same network.
+- Containers can be connected to non-Docker workloads.
+- Under the hood, [Docker manipulates `iptables`](https://docs.docker.com/network/iptables/) rules on Linux to create network isolation.
+```bash
+docker network create <networkName>       # Creates a new isolated network.
+docker network ls                         # List all networks being managed by Docker
+docker run
+	--network <networkName>    # Connects a container to the isolated network
+	--network-alias <name>     # Gives the container a name that can be used by other containers on the same network to communicate with
+                               # The alias to IP mapping is managed by Docker, so you only ever have to work with aliases
+```
+
+## Multi-Stage Builds
+Dockerfiles can actually have multiple `FROM` statements. This just means you can create images which derive from multiple bases.
+- Stages are built in the order they appear in the Dockerfile.
+- You can copy some output of one layer to the next, across stages. All unneeded *artifacts* produced from an earlier stage won't be saved in the final image.
+    - It's common to run a build in an early stage, then only copy the build results to the next stage (eg. running `npm build` in 1 stage, then transferring the build files to a directory for [[software-engineering/technologies/NGINX|NGINX]] to serve in the next stage).
+
+### Example
+Suppose you are trying to deploy a React project with NGINX to serve the files resulting from `npm build`.
+```dockerfile
+# ===== Stage 1 =====
+
+# Naming the stage so that it can be referenced by later stages.
+FROM node:14.18.1 AS build 
+WORKDIR /app
+COPY package.json .
+RUN yarn install
+COPY . .
+
+# Creating the production-ready files to be served by NGINX in stage 2.
+RUN ["yarn", "build"]      
+
+# ===== Stage 2 =====
+
+FROM nginx
+
+# From Stage 1, copy the build files into the default directory that NGINX serves files from.
+COPY --from=build /app/build /usr/share/nginx/html
+```
+
+**How was this Dockerfile made?**
+Suppose we're working on a React project. Here would be a simple Dockerfile to start with:
+```dockerfile 
+FROM node:14.18.1
+WORKDIR /app
+COPY package.json .
+RUN yarn install
+COPY . .
+EXPOSE 3000
+CMD ["yarn", "start"]
+```
+When you run `yarn start`, a dev server is spun up which listens to traffic on port 3000 and serves your app. This is not a production-grade server and should not be used in deployment. 
+![[software-engineering/technologies/assets/docker-react-container-example.png|250]]
+For production, we'd actually want to run `yarn build` to get a bunch of optimised, production-ready files, and then get NGINX to serve them:
+![[software-engineering/technologies/assets/docker-react-container-for-prod-example.png|250]]
+We can write a production Dockerfile for the React app by using a first stage that builds the files, and a second stage that spins up an NGINX server to serve those files:
+![[software-engineering/technologies/assets/multi-stage-docker-build-example.png|400]]
 
 ## FAQ
 ### You can run an operating system in a container??

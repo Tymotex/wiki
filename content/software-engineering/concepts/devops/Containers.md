@@ -3,7 +3,7 @@ title: Containers
 description: Containers
 ---
 
-A *container* is a ***process* running in its own *isolated [[software-engineering/concepts/operating-systems/User Space & Kernel Space|user space]]***, that runs an app within. It contains everything required to run the app, which is basically the app's source code and all its dependencies.
+A *container* is a ***process* running in its own *isolated [[software-engineering/concepts/operating-systems/User Space and Kernel Space|user space]]***, that runs an app within. It contains everything required to run the app, which is basically the app's source code and all its dependencies.
 - You can have multiple containers running on the same machine, and they will share the same host operating system services and resources.
 - Containers are defined by a manifest file, which details everything necessary to get your app running within it. In [[software-engineering/technologies/Docker|Docker's]] case, that manifest file is the *Dockerfile*.
 - The best thing about containers, as developers using a containerisation technology like [[software-engineering/technologies/Docker|Docker]], is that it gives you a lot of confidence that your app will work exactly the same, regardless of what environment it's running in.
