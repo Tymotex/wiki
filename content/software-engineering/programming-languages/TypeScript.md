@@ -668,7 +668,7 @@ for (const item of favouriteNums) {
 You can define a function type that actually consists of multiple function signatures. See the [Function Overloads](https://www.typescriptlang.org/docs/handbook/2/functions.html#function-overloads).
 
 ## Generic Functions
-See [[software-engineering/programming-languages/Generics|generics]]. In TypeScript, you can define generic functions by specifying a comma-separated list of generic type parameters in angle brackets `<>` right before the parameter list of function. You would use generic functions if you wanted a function to be reusable across multiple types without giving up type safety by resorting to `any`.
+See [[software-engineering/concepts/programming/Generics|generics]]. In TypeScript, you can define generic functions by specifying a comma-separated list of generic type parameters in angle brackets `<>` right before the parameter list of function. You would use generic functions if you wanted a function to be reusable across multiple types without giving up type safety by resorting to `any`.
 ```typescript
 type Filter = <T>(array: T[], predicate: (elem: T) => boolean) => T[];
 
