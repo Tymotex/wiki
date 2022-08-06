@@ -8,6 +8,7 @@ Below is a list of notes written in my exploration of software technologies and 
 
 ### Programming Languges
 - [[software-engineering/programming-languages/TypeScript|TypeScript]]
+- [[software-engineering/programming-languages/Go|Go]]
 
 ### Technologies
 - [[software-engineering/technologies/Cypress|Cypress]]
