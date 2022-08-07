@@ -142,7 +142,8 @@ Docker images consist of read-only *layers*, each of which corresponds to `RUN`,
 ### [Dockerfile Commands](https://docs.docker.com/engine/reference/builder/)
 Generally, writing a simple Dockerfile goes like this:
 1. Choose a base image to start with (eg. [Node](https://hub.docker.com/_/node), [Alpine](https://hub.docker.com/_/alpine)) and specify it with `FROM`. You must specify a base image. There's no one 'correct' choice, you're free to experiment with different images (eg. using Debian instead of Alpine).
-2. Determine the (ideally) minimal set of steps necessary to get your app running after bootstrapping from the base image, then map each of those steps to a Dockerfile instruction. This is kind of a try-and-fail process.
+    - Ideally, the base image should be well-maintained, slim, and up to date.
+1. Determine the (ideally) minimal set of steps necessary to get your app running after bootstrapping from the base image, then map each of those steps to a Dockerfile instruction. This is kind of a try-and-fail process.
 
 #### From
 Dockerfiles must begin with a `FROM` instruction. It specifies what base image to start building on top of. You can also specify a tag, otherwise it defaults to the tag with the name: 'latest'.
@@ -277,7 +278,7 @@ ADD . $MY_DIR
 The goal is to produce lightweight images.
 - Add unnecessary files to `.dockerignore`. This prevents sending unnecessary data to the Docker daemon when you run `docker build`. A good thing to ignore is the `node_modules` directory.
 - Pick a lightweight base image. Eg. prefer choosing smaller Linux distributions like Alpine over Ubuntu.
-    > Note: the [Alpine Linux](https://alpinelinux.org/about/) distribution is a popular choice for deploying production containers since it's designed for security, resource efficiency and is a lot smaller than other Linux distributions (eg. Ubuntu 16.04 is around 100MB while Alpine's image is around 4MB because it only ships with the most essential production tools). Use this to minimise your image sizes.
+    > Note: the [Alpine Linux](https://alpinelinux.org/about/) distribution is a popular choice for deploying production containers since it's designed for security, resource efficiency and is a lot smaller than other Linux distributions (eg. Ubuntu 16.04 is around 100MB while Alpine's image is around 4MB because it only ships with the most essential production tools). Use this to minimise your image sizes. There are also [good reasons *not* to use Alpine](https://pythonspeed.com/articles/alpine-docker-python/), especially for Python apps where you might end up with slower builds, larger images, and a brittle environment!
 - Merge multiple Dockerfile commands into one. Remember that individual Dockerfile commands correspond to an [[software-engineering/technologies/Docker#Docker Layers|intermediary image]] that is built and cached.
     ```dockerfile
     # Have the following single command:
