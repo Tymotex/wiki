@@ -55,8 +55,8 @@ Docker registries store *images*. [[software-engineering/technologies/Docker#Doc
 The `docker` CLI needs to talk to the Docker daemon, so make sure that is running on the system first. Usually, the workflow goes like this:
 1. [[software-engineering/technologies/Docker#Dockerfile|Write a Dockerfile]] for the app first.
 2. Make an *image* from the Dockerfile using `docker build`. All images that have been built or pulled exist as files somewhere under `/var/lib/docker/` on Linux. They take up quite a lot of space ☹️ (hundreds of MBs or a few GBs).
-   
-   **Note**: if you're aiming to push the built image to DockerHub, for example, then you should tag the image with a name like `<username>/<image_name>` using `docker build -t <username>/<image_name>`.
+   - If you're aiming to push the built image to DockerHub, for example, then you should tag the image with a name like `<username>/<image_name>` using `docker build -t <username>/<image_name>`.
+   - When you make a new image, the previous image will become a dangling image, ie. one that is not referenced. These will stick around in your filesystem and suck up space unless you [remove them](https://stackoverflow.com/questions/32723111/how-to-remove-old-and-unused-docker-images).
 3. Run the image to spawn a *container* process on the system using `docker run`.
 4. If manually managing the container, then use `docker ps` to see all the containers that are currently running and use `docker stop`, `docker start`, `docker rm`, etc. to manage them.
 ```bash
@@ -87,11 +87,13 @@ docker rm <containerId>     # Removing a container
                             #       Container IDs can be found in `docker ps` output
 docker tag <src> <dest>     # Create an alias to another image (like a symbolic link). This is useful for `docker push <image>`
 
-docker images         # `ls` for images
-docker ps             # `ps` for container processes
-    -a                # Shows all running and stopped containers
-docker logs           # Shows container's output log
-    -f                # 'follow' the output rather than just printing the output once
+docker images                  # `ls` for images
+    -a                         # Shows intermediary images for each intermediary layer in the build.
+    --filter "dangling=true"   # Shows all images that aren't referenced by any other image.
+docker ps                      # `ps` for container processes
+    -a                         # Shows all running and stopped containers
+docker logs                    # Shows container's output log
+    -f                         # 'follow' the output rather than just printing the output once
 
 docker exec <containerId> <command>         # Runs a command in the given container
     docker exec -it <containerId> bash      # Starts up a terminal in your container
@@ -119,17 +121,18 @@ docker rmi -f $(docker images -f "dangling=true" -q)   # Remove all dangling ima
 ## Dockerfile
 A Dockerfile is a file that contains a list of sequential commands that can be executed (with `docker build`) along with the ***build context*** to create new Docker images. There are lots of [best practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/) for building images efficiently. Building good images and orchestrating them are complex topics by themselves and require effort and experience.
 
-### [Docker Layers](https://vsupalov.com/docker-image-layers/)
-Docker images consist of read-only *layers*, each of which corresponds to a Dockerfile instruction. Each layer stores the set of changes to the filesystem and metadata from the previous layer.
-- *An image is basically a diff*. It just stores what changes from the image it is based on. Every image always has a parent (with some exceptions).
+### Docker Layers
+Docker images consist of read-only *layers*, each of which corresponds to `RUN`, `COPY` and `ADD` Dockerfile instruction. Each layer stores the set of changes to the filesystem and metadata from the previous layer. Layers exist to be cached and therefore optimise build times. At each instruction in a Dockerfile, the daemon will check its build cache to see if it can skip the current instruction.
+- *An image is basically a diff*. It just stores what changes from the image it is based on. Every image always has a base image that it derives from.
 	- An image *is* a layer. You could use them interchangeably, mostly.
-	- Each layer is a complete image in itself. When you see output like `Step 1/4 : ___` while building an image, each of the steps correspond to the building of an intermediary image. Every intermediary image has an ID associated with it that you can spawn containers from.
+	- Each layer is a complete image in itself. When you see output like `Step 1/4 : ___` while building an image, each of the steps correspond to the building of an *intermediary image*. Every intermediary image has an ID associated with it that you can spawn containers from.
     ```bash
     Step 4/7 : ENV PORT=5678
      ---> Running in 967bbecf48fa   # The ID of the container that this intermediary image is being built in (I think).
     Removing intermediate container 967bbecf48fa
      ---> f8d66c96b15a              # This is the ID of the intermediary image
     ```
+    See all intermediary images with `docker images -a` .
 	- Image layers exist to reuse work and save space.
 - You can reduce several layers into one with the squash flag `--squash` in [`docker build`](https://docs.docker.com/engine/reference/commandline/build/).
 - When you run an image to spawn a container (with `docker run`), you are adding a *read-writable layer on top of all the underlying read-only layers*, called the *container layer*. All changes such as newly created files are written to this writable container layer.
@@ -196,6 +199,7 @@ WORKDIR <path>
 ```
 
 **[Example](https://www.youtube.com/watch?v=iqqDU2crIEQ&ab_channel=Docker) Dockerfile**
+This is an example Dockerfile for a simple Express server, to be used in a development environment.
 ```dockerfile
 # You usually start from a base image with `FROM`
 # This is using `node` as a base image with the tag, 12.16.3, which is the target version.
@@ -214,14 +218,14 @@ RUN npm install
 
 COPY . /code
 
-# The default command to be run **when the container is started**.
+# The default command to be run when the container is started.
 # This would run `node src/server.js`
 CMD [ "node", "src/server.js" ]
 ```
 
 ### Parser Directives
 Parser directives are special comments with the form `# directive=val`
-```docker
+```dockerfile
 # This defines the location of the Dockerfile syntax that should be used to build the image
 # Note: this has no effect unless you are using the [BuildKit](https://docs.docker.com/develop/develop-images/build_enhancements/) backend
 # syntax=docker/dockerfile:1
@@ -232,12 +236,27 @@ Parser directives are special comments with the form `# directive=val`
 
 ### Variables
 Environment variables defined with `ENV` can be used in other commands. It's similar to how `bash` variables work
-```docker
+```dockerfile
 FROM ___
 ENV MY_DIR=/home/tim/Projects
 WORKDIR ${MY_DIR}
 ADD . $MY_DIR
 ```
+
+### Dockerfile Optimisation & Best Practices
+The goal is to produce lightweight images.
+- Add unnecessary files to `.dockerignore`. This prevents sending unnecessary data to the Docker daemon when you run `docker build`. A good thing to ignore is the `node_modules` directory.
+- Pick a lightweight base image. Eg. prefer choosing smaller Linux distributions like Alpine over Ubuntu.
+- Merge multiple Dockerfile commands into one. Remember that individual Dockerfile commands correspond to an [[software-engineering/technologies/Docker#Docker Layers|intermediary image]] that is built and cached.
+    ```dockerfile
+    # Have the following single command:
+    RUN apk update && apk add curl
+    
+    # Instead of multiple commands:
+    RUN apk update
+    RUN apk add curl
+    ```
+- 
 
 ## .dockerignore
 When you run `docker build`, the Docker CLI also sends the build context, which is the set of files located at the specified PATH or Git repo URL, over to the Docker daemon. Before that, the CLI checks if a `.dockerignore` is present and ensures that any files declared in there will not be sent to the Docker daemon. It's purpose is similar to `.gitignore`
