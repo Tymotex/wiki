@@ -54,9 +54,11 @@ Docker registries store *images*. [[software-engineering/technologies/Docker#Doc
 ## Using the Docker CLI
 The `docker` CLI needs to talk to the Docker daemon, so make sure that is running on the system first. Usually, the workflow goes like this:
 1. [[software-engineering/technologies/Docker#Dockerfile|Write a Dockerfile]] for the app first.
-2. Make an *image* from the Dockerfile using `docker build`.
+2. Make an *image* from the Dockerfile using `docker build`. All images that have been built or pulled exist as files somewhere under `/var/lib/docker/` on Linux. They take up quite a lot of space ☹️ (hundreds of MBs or a few GBs).
+   
+   **Note**: if you're aiming to push the built image to DockerHub, for example, then you should tag the image with a name like `<username>/<image_name>` using `docker build -t <username>/<image_name>`.
 3. Run the image to spawn a *container* process on the system using `docker run`.
-4. If manually managing the container, then use `docker stop`, `docker start`, `docker rm`, etc.
+4. If manually managing the container, then use `docker ps` to see all the containers that are currently running and use `docker stop`, `docker start`, `docker rm`, etc. to manage them.
 ```bash
 # ╠════ Fundamental Commands ════╣
 # Note: having a .dockerignore file will let you exclude large and unnecessary files from being sent to the daemon
@@ -115,19 +117,25 @@ docker rmi -f $(docker images -f "dangling=true" -q)   # Remove all dangling ima
 ```
 
 ## Dockerfile
-`docker build` uses a sequential list of commands in a Dockerfile and a ***build context*** to build new images. There are lots of [best practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/) for building images efficiently. Building good images and orchestrating them are complex topics by themselves and require effort and experience.
+A Dockerfile is a file that contains a list of sequential commands that can be executed (with `docker build`) along with the ***build context*** to create new Docker images. There are lots of [best practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/) for building images efficiently. Building good images and orchestrating them are complex topics by themselves and require effort and experience.
 
 ### [Docker Layers](https://vsupalov.com/docker-image-layers/)
 Docker images consist of read-only *layers*, each of which corresponds to a Dockerfile instruction. Each layer stores the set of changes to the filesystem and metadata from the previous layer.
 - *An image is basically a diff*. It just stores what changes from the image it is based on. Every image always has a parent (with some exceptions).
 	- An image *is* a layer. You could use them interchangeably, mostly.
-	- Each layer is a complete image in itself.
+	- Each layer is a complete image in itself. When you see output like `Step 1/4 : ___` while building an image, each of the steps correspond to the building of an intermediary image. Every intermediary image has an ID associated with it that you can spawn containers from.
+    ```bash
+    Step 4/7 : ENV PORT=5678
+     ---> Running in 967bbecf48fa   # The ID of the container that this intermediary image is being built in (I think).
+    Removing intermediate container 967bbecf48fa
+     ---> f8d66c96b15a              # This is the ID of the intermediary image
+    ```
 	- Image layers exist to reuse work and save space.
 - You can reduce several layers into one with the squash flag `--squash` in [`docker build`](https://docs.docker.com/engine/reference/commandline/build/).
-- When you run an image to spawn a container, you are adding a writable layer on top of all the underlying read-only layers, called the *container layer*. All changes such as newly created files are written to this writable container layer.
+- When you run an image to spawn a container (with `docker run`), you are adding a *read-writable layer on top of all the underlying read-only layers*, called the *container layer*. All changes such as newly created files are written to this writable container layer.
 	![[software-engineering/technologies/assets/docker-layers.png|400]]
 ### [Dockerfile Commands](https://docs.docker.com/engine/reference/builder/)
-1. Choose a base image to start with (eg. [Node](https://hub.docker.com/_/node), [Alpine](https://hub.docker.com/_/alpine)) and specify it with `FROM`.
+1. Choose a base image to start with (eg. [Node](https://hub.docker.com/_/node), [Alpine](https://hub.docker.com/_/alpine)) and specify it with `FROM`. You must specify a base image.
 2. 
     > Note: the [Alpine Linux](https://alpinelinux.org/about/) distribution is a popular choice for deploying production containers since it's designed for security, resource efficiency and is a lot smaller than other Linux distributions (eg. Ubuntu 16.04 is around 100MB while Alpine's image is around 4MB because it only ships with the most essential production tools). Use this to minimise your image sizes.
 
