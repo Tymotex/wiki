@@ -159,6 +159,7 @@ Sets what the current working directory is within the container's filesystem. Cr
 ```dockerfile
 WORKDIR <path>
 ```
+As recommended by the [official docs](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#workdir), prefer `WORKDIR` over `RUN mkdir -p ...`.
 
 #### Run
 Runs a shell command. It uses `/bin/sh` as the default shell in Linux. 
