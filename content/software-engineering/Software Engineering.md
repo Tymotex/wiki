@@ -17,6 +17,7 @@ Below is a list of notes written in my exploration of software technologies and 
 - [[software-engineering/technologies/Docker|Docker]]
 - [[software-engineering/technologies/Docker Compose|Docker Compose]]
 - [[software-engineering/technologies/Tailwind|Tailwind]]
+- [[software-engineering/technologies/NGINX|NGINX]]
 
 ### Software Engineering
 - [[software-engineering/software-engineering/Requirements Engineering|Requirements]]

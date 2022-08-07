@@ -11,22 +11,21 @@ description: Docker Compose
 
 ```bash
 docker-compose up      # Starts up all services using `docker-compose.yml`
-	-d                   # Run in the background (detached)
-	--build              # Force-trigger a build
-  -f <file>            # Path of the compose file. By default, `docker-compose.yml` is expected in the cwd
+    -d                 # Run in the background (detached)
+    --build            # Force-trigger a build
+    -f <file>          # Path of the compose file. By default, `docker-compose.yml` is expected in the cwd
 
 docker-compose down    # Tear down all services
-	--volumes            # Also remove volumes
+    --volumes          # Also remove volumes
 
-docker-compose logs    # 
-	-f                   # Follow the live output rather than just dumping it all out on the terminal once
+docker-compose logs
+    -f                 # Follow the live output rather than just dumping it all out on the terminal once
                        # It'll interleave the output of all the running services 
 ```
 
 Docker Compose supports the concatenation of multiple YAML compose files to get a 'merged' compose file where more specialised compose files will overwrite rules in the one before it.
 
-It's common practice to have multiple compose files with slight variations. Eg. in addition to a 'shared' compose file, `docker-compose.yml`, which contains all the config common to both dev and prod, you might also have `docker-compose-dev.yml` and `docker-compose-prod.yml` defining specific setups for development and production.
-- In development for example, you might have a bind mount set up so that you can have hot reloading in the container. But for production, you wouldn't want this
+It's common practice to have multiple compose files with slight variations. Eg. in addition to a 'shared' compose file, `docker-compose.yml`, which contains all the config common to both dev and prod, you might also have `docker-compose-dev.yml` and `docker-compose-prod.yml` defining specific setups for development and production. In development for example, you might have a bind mount set up so that you can have hot reloading in the container. But for production, you wouldn't want this
 
 ### Example
 In the [official Docker tutorial](https://docs.docker.com/get-started/08_using_compose/), we're using these 2 commands to startup our app server and database server:
@@ -84,6 +83,7 @@ services:
 volumes:
 	todo-mysql-data:
 ```
+**Note**: Docker Compose *does not replace* your Dockerfile. See this relevant [StackOverflow post](https://stackoverflow.com/questions/44036337/how-to-convert-a-dockerfile-to-a-docker-compose-image).
 
 Now you just need to run `docker-compose up -d` and both these containers will be created, along with an isolated network and the volumes you listed:
 ![[software-engineering/technologies/assets/docker-compose-example-output.png|400]]

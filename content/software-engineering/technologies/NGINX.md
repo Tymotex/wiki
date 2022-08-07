@@ -12,11 +12,33 @@ NGINX is a production-grade web server that sits between the external web and yo
 ## Directives
 Nginx configuration files contain a custom language consisting of *directives*. See the [list of all directives](https://nginx.org/en/docs/dirindex.html). Directives can reference *variables*. See the [list of all variables](https://nginx.org/en/docs/varindex.html).
 
-The main Nginx configuration file is available at `/etc/nginx/nginx.conf`. 
+The primary Nginx configuration file is available at `/etc/nginx/nginx.conf`. 
 
+### Example nginx.conf
+Multiple `server` blocks mean you're hosting multiple services (websites, for example). 
 ```nginx
 http {
+    # Serving content for a static website, my-web-app.com
+    # Listens on port 80 (by default).
     server {
+        server_name my-web-app.com www.my-web-app.com
+        root /home/tim/my-web-app/build;
+        index index.html
+
+        location / {
+            try_files $uri /index.html
+        }
+    }
+
+    # Serving an API with the URL, my-api.com. Here, Nginx reverse proxies
+    # requests by sending it to the process listening at port 3000 on the
+    # same machine, then responds to the client with the response.
+    server {
+        server_name my-api.com www.my-api.com
+
+        location / {
+            proxy_pass http://localhost:3000;
+        }
     }
 }
 ```
