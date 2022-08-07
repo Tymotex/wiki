@@ -79,7 +79,6 @@ docker run <image>            # Running a command in a new container
     -e key=val                # Set an environment variable
     --env-file <file>         # Use a .env file for setting environment variables
 
-
 docker stop <containerId>   # Stopping a running container. It'll no longer appear in `docker ps`
 docker start <containerId>  # Starting a stopped container
 docker rm <containerId>     # Removing a container
@@ -90,13 +89,14 @@ docker tag <src> <dest>     # Create an alias to another image (like a symbolic 
 docker images                  # `ls` for images
     -a                         # Shows intermediary images for each intermediary layer in the build.
     --filter "dangling=true"   # Shows all images that aren't referenced by any other image.
+    
 docker ps                      # `ps` for container processes
     -a                         # Shows all running and stopped containers
+    
 docker logs                    # Shows container's output log
     -f                         # 'follow' the output rather than just printing the output once
 
-docker exec <containerId> <command>         # Runs a command in the given container
-    docker exec -it <containerId> bash      # Starts up a terminal in your container
+docker exec <containerId> <command>     # Runs a command in the given container
 ```
 
 ### DockerHub
@@ -112,10 +112,12 @@ docker pull <image>   # Downloads an image from Docker Hub (which is the default
 Some command snippets for things I want to do frequently in my workflow.
 ```bash
 # ╠════ Frequent Operations ════╣
-docker kill $(docker ps -q)       # Stopping all containers
-docker rm $(docker ps -a -q)      # Removing all containers
-docker rmi $(docker images -q)    # Removing all images  
-docker rmi -f $(docker images -f "dangling=true" -q)   # Remove all dangling images (images that aren't referenced by any other)
+docker exec -it <containerId> bash      # Starts up a Bash shell in your container.
+
+docker kill $(docker ps -q)             # Stopping all containers.
+docker rm $(docker ps -a -q)            # Removing all containers.
+docker rmi $(docker images -q)          # Removing all images.
+docker rmi -f $(docker images -f "dangling=true" -q)   # Remove all dangling images (images that aren't referenced by any other).
 ```
 
 ## Dockerfile
@@ -138,68 +140,96 @@ Docker images consist of read-only *layers*, each of which corresponds to `RUN`,
 - When you run an image to spawn a container (with `docker run`), you are adding a *read-writable layer on top of all the underlying read-only layers*, called the *container layer*. All changes such as newly created files are written to this writable container layer.
 	![[software-engineering/technologies/assets/docker-layers.png|400]]
 ### [Dockerfile Commands](https://docs.docker.com/engine/reference/builder/)
-1. Choose a base image to start with (eg. [Node](https://hub.docker.com/_/node), [Alpine](https://hub.docker.com/_/alpine)) and specify it with `FROM`. You must specify a base image.
-2. 
-    > Note: the [Alpine Linux](https://alpinelinux.org/about/) distribution is a popular choice for deploying production containers since it's designed for security, resource efficiency and is a lot smaller than other Linux distributions (eg. Ubuntu 16.04 is around 100MB while Alpine's image is around 4MB because it only ships with the most essential production tools). Use this to minimise your image sizes.
+Generally, writing a simple Dockerfile goes like this:
+1. Choose a base image to start with (eg. [Node](https://hub.docker.com/_/node), [Alpine](https://hub.docker.com/_/alpine)) and specify it with `FROM`. You must specify a base image. There's no one 'correct' choice, you're free to experiment with different images (eg. using Debian instead of Alpine).
+2. Determine the (ideally) minimal set of steps necessary to get your app running after bootstrapping from the base image, then map each of those steps to a Dockerfile instruction. This is kind of a try-and-fail process.
 
+#### From
+Dockerfiles must begin with a `FROM` instruction. It specifies what base image to start building on top of. You can also specify a tag, otherwise it defaults to the tag with the name: 'latest'.
 ```dockerfile
-# Dockerfiles must begin with a **FROM** instruction. It specifies what *base image* to start building on top of.
-FROM <baseImage>
+FROM <baseImage>[:tag]
 
-	# In multi-stage builds, you can use **AS** to give a name to a build and then be able to have one stage reference another
-	FROM <baseImage> AS <stageName>	
-
-# Adds a key-value pair custom metadata field to the image. 
-#   - Labels are viewable with `docker inspect` 
-#   - Third party tools around Docker may make use of Labels in your Dockerfiles to organise/manage them
-LABEL maintainer="admin@timz.dev"
-
-# Runs a shell command. It uses `/bin/sh` as the default shell in Linux   
-#   - double quotes must be used
-RUN ["command", "arg1", "arg2", ...]
-RUN command arg1 arg2 ...
-
-# Like **RUN**, but it runs a *default* shell command to start up the application.
-# Unlike **RUN**, it doesn't execute anything when the image is being built!
-#   - There can only exist 1 CMD in a Dockerfile. If multiple exist, only the last one is used
-#   - The default can always be overwritten by a user-supplied command
-CMD ["command", "arg1", "arg2", ...]
-CMD command arg1 arg2 ...
-
-# Which port to listen on at runtime. Uses TCP by default
-EXPOSE <port>
-
-# Set an environment variable
-ENV key="value"
-
-# Copies new files and dirs from a local **<src>** to the container filesystem's **<dest>**.
-# It's better practice to use **COPY** instead of **ADD**.
-#   - **<dest>** is either absolute or *relative to WORKDIR* 
-#   - Dockerfile supports file globbing like in bash
-#   - If **<src>** is a URL, then the file at that URL will be download to the container's **<dest>**
-ADD <src> <dest>
-
-# Almost identical to ADD, but the main difference is it doesn't support URL sources
-COPY <src> <dest>
-
-	# For multi-stage builds, you use **--from** to source files from a previous stage in the build
-	COPY --from=<stageName> <src> <dest>
-
-# Like **CMD**, but the command is always run, whereas **CMD**'s command doesn't get run if the user supplies their own command
-#   - **ENTRYPOINT** is preferred over **CMD** when you need a command to always be executed instead of just being the default
-ENTRYPOINT ["command", "arg1", "arg2", ...]
-ENTRYPOINT command arg1 arg2 ...
-
-# Creates a mount point 
-VOLUME <path>
-
-# Sets what the cwd is within the container's filesystem. 
-# Helpful for subsequent **RUN**, **CMD**, **ENTRYPOINT**, **COPY**/**ADD** instructions
+# In multi-stage builds, you can use AS to give a name to a build and then be able to have one stage 
+# reference another.
+FROM <baseImage> AS <stageName>	
+```
+#### Workdir
+Sets what the current working directory is within the container's filesystem. Creates the folder if it doesn't exist. You might want to use this before subsequent `RUN`, `CMD`, `ENTRYPOINT`, `COPY`/`ADD` instructions.
+```dockerfile
 WORKDIR <path>
 ```
 
-**[Example](https://www.youtube.com/watch?v=iqqDU2crIEQ&ab_channel=Docker) Dockerfile**
-This is an example Dockerfile for a simple Express server, to be used in a development environment.
+#### Run
+Runs a shell command. It uses `/bin/sh` as the default shell in Linux. 
+```dockerfile
+RUN ["command", "arg1", "arg2", ...]
+
+# Or:
+RUN command arg1 arg2 ...
+```
+
+#### Cmd
+Like `RUN`, but it runs a default shell command to start up the application. Unlike `RUN`, it DOES NOT execute anything when the image is being built!
+- There can only exist 1 `CMD` in a Dockerfile. If multiple exist, only the last one is used.
+- The `CMD` can be overwritten by `docker run` if is specifies a command. If you want to guarantee a startup command is always run, then use `ENTRYPOINT`.
+```dockerfile
+CMD ["command", "arg1", "arg2", ...]
+CMD command arg1 arg2 ...
+```
+
+#### Copy
+Copies local files (`<src>`) to the container filesystem (`<dest>`). It's recommended to use `COPY` instead of `ADD`. 
+- `<dest>` is either absolute or relative to `WORKDIR`.
+- Dockerfile supports file globbing like in bash.
+- If `<src>` is a URL, then the file at that URL will be download to the container's `<dest>`.
+```dockerfile
+COPY <src> <dest>
+
+# For multi-stage builds, you use **--from** to source files from a previous stage in the build
+COPY --from=<stageName> <src> <dest>
+```
+
+#### Add
+Almost identical to `COPY`, but the main difference is that it supports URL sources and other things, making it a bit more unpredictable.
+```dockerfile
+ADD <src> <dest>
+```
+
+#### Env
+Set an environment variable in the container. You can reference this variable in subsequent Dockerfile instructions.
+```dockerfile
+ENV key="value"
+```
+
+#### Entrypoint
+Like `CMD`, but the command is always run, whereas `CMD`'s command doesn't get run if the user supplies their own command. `ENTRYPOINT ` is preferred over `CMD ` when you need a command to always be executed instead of just being the default.
+```dockerfile
+ENTRYPOINT ["command", "arg1", "arg2", ...]
+
+# Or:
+ENTRYPOINT command arg1 arg2 ...   
+```
+
+#### Volume
+(Not completely sure) Creates a new empty directory at `/var/lib/docker/volumes` on the host machine (assuming you're using Linux). The `<path>` is the container filesystem path whose contents should be linked to the volume directory created on host.
+```dockerfile
+VOLUME <path>
+```
+
+#### Label
+Adds a key-value pair custom metadata field to the image that are viewable with `docker inspect`. Third party tools around Docker may make use of Labels in your Dockerfiles to organise/manage them.
+```dockerfile
+LABEL maintainer="admin@timz.dev"
+```
+
+#### Expose
+Defines which port to listen on at runtime. Uses TCP by default.
+```dockerfile
+EXPOSE <port>
+```
+
+#### **Example Dockerfile**
+This is an example Dockerfile for a simple Express server, to be used in a development environment. Sourced from [official Docker YouTube](https://www.youtube.com/watch?v=iqqDU2crIEQ&ab_channel=Docker).
 ```dockerfile
 # You usually start from a base image with `FROM`
 # This is using `node` as a base image with the tag, 12.16.3, which is the target version.
@@ -247,6 +277,7 @@ ADD . $MY_DIR
 The goal is to produce lightweight images.
 - Add unnecessary files to `.dockerignore`. This prevents sending unnecessary data to the Docker daemon when you run `docker build`. A good thing to ignore is the `node_modules` directory.
 - Pick a lightweight base image. Eg. prefer choosing smaller Linux distributions like Alpine over Ubuntu.
+    > Note: the [Alpine Linux](https://alpinelinux.org/about/) distribution is a popular choice for deploying production containers since it's designed for security, resource efficiency and is a lot smaller than other Linux distributions (eg. Ubuntu 16.04 is around 100MB while Alpine's image is around 4MB because it only ships with the most essential production tools). Use this to minimise your image sizes.
 - Merge multiple Dockerfile commands into one. Remember that individual Dockerfile commands correspond to an [[software-engineering/technologies/Docker#Docker Layers|intermediary image]] that is built and cached.
     ```dockerfile
     # Have the following single command:
@@ -256,10 +287,19 @@ The goal is to produce lightweight images.
     RUN apk update
     RUN apk add curl
     ```
-- 
+- Start the Dockerfile with steps that are least likely to change in the future. This is because changes to the intermediary images built earlier will invalidate later images. 
+    ```dockerfile
+    # Do this:
+    RUN ["yarn", "install"]
+    RUN apk add vim         
+    
+    # Rather than
+    RUN apk add vim
+    RUN ["yarn", "install"]
+    ```
 
 ## .dockerignore
-When you run `docker build`, the Docker CLI also sends the build context, which is the set of files located at the specified PATH or Git repo URL, over to the Docker daemon. Before that, the CLI checks if a `.dockerignore` is present and ensures that any files declared in there will not be sent to the Docker daemon. It's purpose is similar to `.gitignore`
+When you run `docker build`, the Docker CLI also sends the *build context*, which is the set of files located at the specified path or Git repo URL, over to the Docker daemon. Before that, the CLI checks if a `.dockerignore` is present and ensures that any files declared in there will not be sent to the Docker daemon. It's purpose is similar to `.gitignore`
 
 - `COPY` or `ADD` will also ignore the files in `.dockerignore`
 - The syntax is very similar to `.gitignore`. File globbing is also supported
@@ -329,7 +369,7 @@ docker run
 ```
 
 ## Multi-Stage Builds
-Dockerfiles can actually have multiple `FROM` statements. This just means you can create images which derive from multiple bases.
+Dockerfiles can actually have multiple `FROM` statements. Every `FROM` statement marks the beginning of a new *build stage*. This just means you can create images which derive from multiple bases.
 - Stages are built in the order they appear in the Dockerfile.
 - You can copy some output of one layer to the next, across stages. All unneeded *artifacts* produced from an earlier stage won't be saved in the final image.
     - It's common to run a build in an early stage, then only copy the build results to the next stage (eg. running `npm build` in 1 stage, then transferring the build files to a directory for [[software-engineering/technologies/NGINX|NGINX]] to serve in the next stage).
