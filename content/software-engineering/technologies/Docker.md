@@ -63,11 +63,11 @@ The `docker` CLI needs to talk to the Docker daemon, so make sure that is runnin
 # ╠════ Fundamental Commands ════╣
 # Note: having a .dockerignore file will let you exclude large and unnecessary files from being sent to the daemon
 
-docker build <path>           # Creating images, where <path> tells Docker where to find the Dockerfile to use
+docker build <path>           # Creating images, where <path> tells Docker where to find the Dockerfile to use.
     -t <tag>                  # Assign a human-readable name (tag) to the image we're going to create
     -f <file>                 # Path of the Dockerfile. Without this flag, docker build will use look for a file named exactly Dockerfile in the cwd
 
-docker run <image>            # Running a command in a new container
+docker run <image>            # Running a command in a new container. MAKE SURE THE IMAGE NAME COMES LAST IF YOU USE ARGUMENTS!
     -d                        # Run in detached mode, as a background process
     -p 8080:80                # Exposes a container port by mapping the host's port 8080 to the container's 80, for instance. 
                               # -p 8080:80 says "forward any traffic coming to my port 8080 to the container's port 80"
@@ -112,7 +112,7 @@ docker pull <image>   # Downloads an image from Docker Hub (which is the default
 Some command snippets for things I want to do frequently in my workflow.
 ```bash
 # ╠════ Frequent Operations ════╣
-docker exec -it <containerId> bash      # Starts up a Bash shell in your container.
+docker exec -it <containerId> bash      # Starts up a Bash shell in your container. Use `sh` if Bash isn't available.
 
 docker kill $(docker ps -q)             # Stopping all containers.
 docker rm $(docker ps -a -q)            # Removing all containers.
