@@ -47,7 +47,7 @@ TODO.
 
 Every *pod* gets assigned an internal IP address like `192.*.*.*`.
 
-You can group the replicas of a service and put them behind a [[software-engineering/concepts/devops/Load Balancer|load balancer]], for example, to expose a single cluster IP address that all other services use to talk to it.
+You can group the replicas of a service and put them behind a [[software-engineering/concepts/architecture/Load Balancer|load balancer]], for example, to expose a single cluster IP address that all other services use to talk to it.
 
 There's even a DNS service that maps symbolic names to those IP addresses.
 
