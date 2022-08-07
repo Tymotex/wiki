@@ -23,6 +23,23 @@ When you *Dockerise* an app, you get portability. That's the main reason people 
 - ***Container orchestration*** — the automated running of multiple containers across multiple machines, including their deployment, scaling, load balancing, etc.
     - You can always run multiple containers manually, but tools like [[software-engineering/technologies/Kubernetes|Kubernetes]] can automate a lot of it for you.
 
+**Setting Up Docker**
+Just install Docker on your system, then enable and start the service. On Arch Linux the setup looks like this:
+```bash
+sudo pacman -S docker
+sudo systemctl enable docker
+sudo systemctl start docker
+docker info   # Confirms whether the Docker daemon is running.
+
+# If you get a 'permission denied' error as a non-root user, then you need to add
+# $USER to the `docker` group.
+sudo groupadd docker
+sudo usermod -aG docker $USER   # Add the current user to the docker group.
+newgrp docker                   # Log in to the docker group.
+docker info                     
+# Might need to reboot if the above steps are insufficient.
+```
+
 ## Docker Architecture
 Docker follows a client-server architecture where you have a Docker client that sends requests to a Docker daemon using a REST API. Both the client and daemon may run on the same host or on different machines and communicate over the network.
 - **Docker daemon**
@@ -34,51 +51,63 @@ Docker registries store *images*. [[software-engineering/technologies/Docker#Doc
 
 ![[software-engineering/technologies/assets/docker-architecture.png|700]]
 
-## Docker CLI
+## Using the Docker CLI
+The `docker` CLI needs to talk to the Docker daemon, so make sure that is running on the system first. Usually, the workflow goes like this:
+1. [[software-engineering/technologies/Docker#Dockerfile|Write a Dockerfile]] for the app first.
+2. Make an *image* from the Dockerfile using `docker build`.
+3. Run the image to spawn a *container* process on the system using `docker run`.
+4. If manually managing the container, then use `docker stop`, `docker start`, `docker rm`, etc.
 ```bash
-# ===== Fundamental Commands =====
-docker build <path>         # Creating images, where <path> tells Docker where to find the Dockerfile to use
-  -t <tag>                  # Assign a human-readable name (tag) to the image we're going to create
-	-f <file>                 # Path of the Dockerfile. Without this flag, docker build will use look for a file named exactly Dockerfile in the cwd
-
+# ╠════ Fundamental Commands ════╣
 # Note: having a .dockerignore file will let you exclude large and unnecessary files from being sent to the daemon
- 
-docker run <image>          # Running a command in a new container
-	-d                        # Run in detached mode, as a background process
-  -p 8080:80                # Exposes a container port by mapping the host's port 8080 to the container's 80, for instance. 
-													  # -p 8080:80 says "forward any traffic coming to my port 8080 to the container's port 80"
-	--name <containerId>      # Giving an ID to the container. Useful when looking at `docker ps` output. If no name is specified, a random one will be generated
-	-v <volName>:<path>       # Use the given volume <volName> and mount it to <path>
-	-w <path>                 # Sets the working directory (which is necessary if you're going to run commands that depend on being on a certain path)
-	--network <networkName>
-	--networkalias=<name>	
-	-e key=val                # Set an environment variable
-	--env-file <file>         # Use a .env file for setting environment variables
 
-# Note: to get rid of a container, it must first be stopped with `docker stop <containerId>` and then removed with `docker rm <containerId>`
-#       Container IDs can be found in `docker ps` output
+docker build <path>           # Creating images, where <path> tells Docker where to find the Dockerfile to use
+    -t <tag>                  # Assign a human-readable name (tag) to the image we're going to create
+    -f <file>                 # Path of the Dockerfile. Without this flag, docker build will use look for a file named exactly Dockerfile in the cwd
+
+docker run <image>            # Running a command in a new container
+    -d                        # Run in detached mode, as a background process
+    -p 8080:80                # Exposes a container port by mapping the host's port 8080 to the container's 80, for instance. 
+                              # -p 8080:80 says "forward any traffic coming to my port 8080 to the container's port 80"
+    --name <containerId>      # Giving an ID to the container. Useful when looking at `docker ps` output. If no name is specified, a random one will be generated
+    -v <volName>:<path>       # Use the given volume <volName> and mount it to <path>
+    -w <path>                 # Sets the working directory (which is necessary if you're going to run commands that depend on being on a certain path)
+    --network <networkName>
+    --networkalias=<name>	
+    -e key=val                # Set an environment variable
+    --env-file <file>         # Use a .env file for setting environment variables
+
 
 docker stop <containerId>   # Stopping a running container. It'll no longer appear in `docker ps`
 docker start <containerId>  # Starting a stopped container
 docker rm <containerId>     # Removing a container
+                            # Note: to get rid of a container, it must first be stopped with `docker stop <containerId>` and then removed with `docker rm <containerId>`
+                            #       Container IDs can be found in `docker ps` output
 docker tag <src> <dest>     # Create an alias to another image (like a symbolic link). This is useful for `docker push <image>`
 
 docker images         # `ls` for images
 docker ps             # `ps` for container processes
-	-a                  # Shows all running and stopped containers
+    -a                # Shows all running and stopped containers
 docker logs           # Shows container's output log
-	-f                  # 'follow' the output rather than just printing the output once
+    -f                # 'follow' the output rather than just printing the output once
 
-docker exec <containerId> <command>       # Runs a command in the given container
-  docker exec -it <containerId> bash      # Starts up a terminal in your container
+docker exec <containerId> <command>         # Runs a command in the given container
+    docker exec -it <containerId> bash      # Starts up a terminal in your container
+```
 
+### DockerHub
+Many container runtime systems have a big public repo of container images, called a registry. In Docker's case, we have [DockerHub](https://hub.docker.com/). There you'll find images for containers that run, for example, [PostgreSQL](https://hub.docker.com/_/postgres/), [NGINX](https://hub.docker.com/_/nginx), [Node.js](https://hub.docker.com/_/node), [Ubuntu](https://hub.docker.com/_/ubuntu/), etc.
 
-# ===== Docker Hub Operations ====== 
+To push/pull images to a repo under your DockerHub account, use the commands:
+```bash
 docker push <image>   # Pushes an image to Docker Hub (you must have logged in earlier with `docker login -u <username>`
 docker pull <image>   # Downloads an image from Docker Hub (which is the default registry)
+```
 
-
-# ===== Frequent Operations =====
+### Frequent Operations
+Some command snippets for things I want to do frequently in my workflow.
+```bash
+# ╠════ Frequent Operations ════╣
 docker kill $(docker ps -q)       # Stopping all containers
 docker rm $(docker ps -a -q)      # Removing all containers
 docker rmi $(docker images -q)    # Removing all images  
@@ -96,8 +125,12 @@ Docker images consist of read-only *layers*, each of which corresponds to a Dock
 	- Image layers exist to reuse work and save space.
 - You can reduce several layers into one with the squash flag `--squash` in [`docker build`](https://docs.docker.com/engine/reference/commandline/build/).
 - When you run an image to spawn a container, you are adding a writable layer on top of all the underlying read-only layers, called the *container layer*. All changes such as newly created files are written to this writable container layer.
-        ![[software-engineering/technologies/assets/Pasted image 20220805162553.png|400]]
+	![[software-engineering/technologies/assets/docker-layers.png|400]]
 ### [Dockerfile Commands](https://docs.docker.com/engine/reference/builder/)
+1. Choose a base image to start with (eg. [Node](https://hub.docker.com/_/node), [Alpine](https://hub.docker.com/_/alpine)) and specify it with `FROM`.
+2. 
+    > Note: the [Alpine Linux](https://alpinelinux.org/about/) distribution is a popular choice for deploying production containers since it's designed for security, resource efficiency and is a lot smaller than other Linux distributions (eg. Ubuntu 16.04 is around 100MB while Alpine's image is around 4MB because it only ships with the most essential production tools). Use this to minimise your image sizes.
+
 ```dockerfile
 # Dockerfiles must begin with a **FROM** instruction. It specifies what *base image* to start building on top of.
 FROM <baseImage>
@@ -155,10 +188,10 @@ WORKDIR <path>
 ```
 
 **[Example](https://www.youtube.com/watch?v=iqqDU2crIEQ&ab_channel=Docker) Dockerfile**
-```docker
+```dockerfile
 # You usually start from a base image with `FROM`
-# This is using *node* as a **base image** with the **tag** *12.16.3* (the latest LTS version)
-FROM node:12.16.3         
+# This is using `node` as a base image with the tag, 12.16.3, which is the target version.
+FROM node:12.16.3
 
 # Creating a directory. All subsequent commands will use this as the working directory
 WORKDIR /code
@@ -216,9 +249,6 @@ Dockerfile
 ```
 
 After adding this, you'll notice that `docker build` is *way faster* because node_modules isn't being sent to the Docker daemon.
-
-## DockerHub
-Many container runtime systems have a big public repo of container images, called a registry. In Docker's case, we have DockerHub. There you'll find images for containers that run, for example, [PostgreSQL](https://hub.docker.com/_/postgres/), [NGINX](https://hub.docker.com/_/nginx), [Node.js](https://hub.docker.com/_/node), [Ubuntu](https://hub.docker.com/_/ubuntu/), etc.
 
 ## Volumes (Shared Filesystems)
 *A problem*: containers can do file manipulation, however any created or updated files are lost when that container process is killed. When a containerised backend server writes to a database, for example, then all the objects in that database are gone after the container process terminates.
