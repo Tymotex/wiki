@@ -12,6 +12,7 @@ NGINX is a production-grade web server that sits between the external web and yo
 ## Directives
 Nginx configuration files contain a custom language consisting of *directives*. See the [list of all directives](https://nginx.org/en/docs/dirindex.html). Directives can reference *variables*. See the [list of all variables](https://nginx.org/en/docs/varindex.html).
 
+
 - `/etc/nginx/nginx.conf`
 
 ### LetsEncrypt Sysadmin
