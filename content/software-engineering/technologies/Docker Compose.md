@@ -58,13 +58,13 @@ version: "3.7"
 
 # The list of containers we want to run
 services:
-	app:    # You can pick any name for the service. This will later become the **[*network alias*](https://docs.docker.com/engine/reference/commandline/network_connect/#create-a-network-alias-for-a-container)**
+	app:    # You can pick any name for the service. This will later become the network alias. See https://docs.docker.com/engine/reference/commandline/network_connect/#create-a-network-alias-for-a-container.
 		image: node:12-alpine                        # Base image
 		command: sh -c "yarn install && yarn dev"    # Command to run on startup. Note that the `-c` tells `sh` to run the given string
 		ports:
 			- 3000:3000
 		working_dir: /app
-		volumes:                     # Volume mapping
+		volumes:                       # Volume mapping
 			- ./:/app
 		environment:
 			MYSQL_HOST: mysql          # This should be the same as the **network alias** of the database server

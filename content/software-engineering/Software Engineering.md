@@ -2,9 +2,8 @@
 title: Software Engineering
 description: Software engineering wiki.
 ---
-*Software engineering* is the set of theory and practices around how to write, reason about, and maintain software.
 
-Below is a list of notes written in my exploration of software technologies and computer science concepts.
+*Software engineering* is the set of theory and practices around how to write, reason about, and maintain software. Below is a list of notes written in my exploration of software technologies and concepts.
 
 ### Programming Languges
 - [[software-engineering/programming-languages/TypeScript|TypeScript]]
@@ -18,6 +17,7 @@ Below is a list of notes written in my exploration of software technologies and 
 - [[software-engineering/technologies/Docker Compose|Docker Compose]]
 - [[software-engineering/technologies/Tailwind|Tailwind]]
 - [[software-engineering/technologies/NGINX|NGINX]]
+- [[software-engineering/technologies/PostgreSQL|PostgreSQL]]
 
 ### Software Engineering
 - [[software-engineering/software-engineering/Requirements Engineering|Requirements]]
