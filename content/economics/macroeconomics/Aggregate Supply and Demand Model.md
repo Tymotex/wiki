@@ -36,7 +36,7 @@ $$
 	\notag\\
 \end{align}
 $$
-Supposing $A_0 = k\big(C_{0}- cT_{0}+ I_{0}+ G_{0}+ X_{0} - r_0(\alpha + \beta)\big)$, we now have an equation representing the aggregate demand curve:
+Supposing $A_{0} = k \underbrace{\big(C_{0}- cT_{0}+ I_{0}+ G_{0}+ X_{0} - r_0(\alpha + \beta)\big)}_{\text{Exogenous variables}}$, we now have an equation representing the aggregate demand curve:
 $$\colorbox{#FFFFBF}{$ Y_\text{equilibrium} = A_0-k\gamma(\alpha +\beta)\pi$},$$
 which relates the real GDP to the inflation rate. Although the AD curve links the real GDP and inflation, it does not determine them. That's where we need the aggregate supply curve.
 
