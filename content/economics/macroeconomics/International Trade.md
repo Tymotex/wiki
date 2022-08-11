@@ -4,7 +4,7 @@ description: International Trade
 ---
 
 ### Balance of Payments
-The *balance of payments* is a recod of transactions between residents and foreigners. It consists of the *current account* and the *capital and financial account*
+The *balance of payments* is a record of transactions between residents and foreigners. It consists of the *current account* and the *capital and financial account*
 - **Current account**: $\text{Curr. Account = }NX + \text{Primary income}+\text{Transfers}$.
 	- Goods and services trade: $NX=X-M$.
 	- Factor income flows, called *net primary income*: $\text{Payments to us} - \text{Payments to other countries' residents}$.
