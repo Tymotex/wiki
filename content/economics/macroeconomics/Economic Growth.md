@@ -22,7 +22,6 @@ A small difference in $g$ across a long span of time will result in enormous dif
 ## Purchase Power Parity
 The **Purchase Power Parity** exchange rate uses a standard basket of goods and sevices to assess economi productivity and living standards across different countries.
 
-
 ## Aggregate Production Function
 An aggregate production function is a function of variables such as aggregate physical capital stock, aggregate labour quantity used, general level of factor productivity, etc. 
 
@@ -39,3 +38,14 @@ Marginal product of capital: $MPK = \frac{\delta Y}{\delta L} = \alpha\frac{Y}{K
 
 **Capital Per Worker**
 The average worker productivity is given by $\frac{Y}{L}=A(\frac{K}{L})^\alpha$. Since $0 < \alpha < 1$, increases in $\frac{K}{L}$ result in diminishing increases in worker productivity.
+
+**Growth of Productivity**
+The change in aggregate production is given by
+$$
+    \Delta Y = \Delta A + \alpha \Delta K + (1 - \alpha) \Delta L,
+$$
+which can be rearranged to get the growth in productivity, $\Delta A$,
+$$
+    \Delta A = \Delta Y - \alpha \Delta K - (1 - \alpha) \Delta L.
+$$
+
