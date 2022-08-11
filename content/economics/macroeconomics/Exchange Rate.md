@@ -7,7 +7,7 @@ The exchange rate is the pricing of one country's currency relative to other cur
 
 *Bilateral nominal exchange rate* is rate at which two countries can exchange their currencies. In Australia, we express the exchange rate towards every other foreign currency like $e=\frac{\text{Foreign Currency}}{AUD}$. A higher $e$ means that $\$1 \text{ AUD}$ buys more of that foreign currency.
 
-*Bilateral real exchange rate* measures the price of domestic goods & services relative to the price of the same foreign goods & services. It's useful to use a price index like the CPI to compare the prices of goods and services broadly in different economies.
+*Bilateral real exchange rate* measures the price of *domestic* goods & services relative to the price of the same *foreign* goods & services. It's useful to use a price index like the CPI to compare the prices of goods and services broadly in different economies.
 The real exchange rate, $\frac{e\times P_\text{home}}{P_\text{foreign}}$, gives some measure of *international competitiveness*. If a country's goods & services become less expensive, that is $P_\text{home}$ becomes lower, then it'll tend to have higher net exports.
 
 ## Models of Nominal Exchange Rate
