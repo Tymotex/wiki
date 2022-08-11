@@ -21,3 +21,5 @@ An *economy* is simply the sum of all transactions that make it up. *Economic gr
 - [[economics/macroeconomics/Aggregate Supply and Demand Model|Aggregate supply and demand model]]
 - [[economics/macroeconomics/International Trade|International trade]]
 - [[economics/macroeconomics/Exchange Rate|Exchange rate]]
+- [[economics/macroeconomics/Economic Growth|Economic growth]]
+
