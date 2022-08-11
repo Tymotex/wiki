@@ -32,3 +32,7 @@ $$
 $$
 where $A$ is 'factor productivity', $K$ is physical capital, $L$ is labour input, and $\alpha$
 
+A notable property of this function is that if you were to double capital $K$ and labour $L$, the production output doubles. This property is called *constant returns to scale*.
+
+Marginal product of labour: $MPL = \frac{\delta Y}{\delta L} = (1-\alpha)\frac{Y}{L}$
+Marginal product of capital: $MPK = \frac{\delta Y}{\delta L} = \alpha\frac{Y}{K}$
