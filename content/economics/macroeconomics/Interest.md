@@ -21,4 +21,4 @@ Interestingly, the [Islamic banking](https://en.wikipedia.org/wiki/Islamic_banki
 If you're a lender and want to earn a real interest rate of 5%, for example, and you're expecting the inflation rate to be 2%, then you should set the nominal interest rate to be 7%.
 
 ## Fisher Effect
-The **Fisher Effect** asserts that nominal interest rate will increase 1:1 with inflation, ie. that each 1% rise in inflation will have a corresponding 1% rise in nominal interest rate.
+The **Fisher Effect** asserts that nominal interest rate will increase 1:1 with inflation, ie. that every 1% rise in inflation will have a corresponding 1% rise in nominal interest rate.
