@@ -43,7 +43,29 @@ Using this element, we define the coordinate system:
 ### \<g\>
 `<g>` groups together other basic shapes.
 
-### \<circle\>, \<rect\>, \<line\>
+### \<rect\>
+- `x` and `y` set the coordinate of where the top left corner of the rectangle sits.
+- `width` and `height` set the dimensions.
+- `rx` and `ry` set the horizontal and vertical border radii.
+
+### \<circle\>, \<ellipse\>
+- `cx`, `cy` set the center coordinates.
+- `r` sets the radius
+- `rx`, `ry` set the x and y radius for an ellipse.
+
+### \<line\>
+Lines are defined based on a starting coordinate $(x_{1}, y_1)$ and ending coordinate $(x_{2},y_2)$.
+
+**Attributes**:
+- `x1`, `y1`
+- `x2`, `y2`
+
+### \<path\>
+Path elements can draw any shape, including the default ones like rect, circle, line, etc.
+
+### \<polygon\>
+Polygons are all n-sided shapes. You define them by simply specifying a list of points.
+- `points` — a list of coordinate points. A list of coordinates $(0, 1), (2, 5), (3, 2)$ looks like `<polygon points="0, 1 2, 5 3, 2"`.
 
 ### \<text\>
 
