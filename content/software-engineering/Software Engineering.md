@@ -38,3 +38,5 @@ description: Software engineering wiki.
 	- [[software-engineering/concepts/architecture/Monolith|Monoliths]]
 - **Operating systems**
 	- [[software-engineering/concepts/operating-systems/User Space and Kernel Space|Userland & Kernel Space]]
+- **Graphics**
+    - [[software-engineering/concepts/graphics/SVGs|SVGs]]
