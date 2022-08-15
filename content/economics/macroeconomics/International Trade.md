@@ -18,11 +18,8 @@ It should be the case (in accounting) that $\text{Current Account} + \text{Cap. 
 ### Savings and Investment in Open Economies
 See [[economics/macroeconomics/Savings and Investments|savings and investments]].
 
-The savings of other countries can be invested into domestic capital.
-
-Consider a *small open economy* that is small enough that its trade activity does not affect a global real world interest rate $r^w$.
+The savings of other countries can be invested into domestic capital. Consider a *small open economy* that is small enough that its trade activity does not affect a global real world interest rate $r^w$.
 
 ![[economics/macroeconomics/assets/small-open-economy-savings-vs-investment.png|400]]
 
-TODO.
-
+TODO: remove this section.

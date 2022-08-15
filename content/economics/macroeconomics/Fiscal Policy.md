@@ -53,9 +53,8 @@ This shift is achieved by cutting taxes $T_0$ and/or increasing $G_0$. Likewise,
 ### Automatic Fiscal Stabiliser
 An **automatic fiscal stabiliser** is a tax or government transfer payments system that helps dampen _business cycle_ fluctuations. Eg. marginal tax rate systems and welfare payments are examples of automatic stabilisers.
 
-Consider the case where all exogenous variables except $I_0$ are constant, so: $\Delta Y=\frac{1}{1-c(1-t)}(\Delta I_0)$. Here, the amplitude of each [[economics/macroeconomics/Business Cycle|business cycle]] can be controlled by tweaking the marginal tax rate $t$ and therefore the multiplier.
+Consider the case where all exogenous variables except $I_0$ are constant in a closed 3-sector economy, so: $\Delta Y=\frac{1}{1-c(1-t)}(\Delta I_0)$. Here, the amplitude of each [[economics/macroeconomics/Business Cycle|business cycle]] can be controlled by tweaking the marginal tax rate $t$ and therefore the multiplier.
 
 ![[economics/macroeconomics/assets/automatic-fiscal-stabiliser.png|400]]
 
 **Discretionary fiscal policies** are ones undertaken explicitly by the government to counter fluctuations in the business cycle.
-

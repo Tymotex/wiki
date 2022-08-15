@@ -64,7 +64,6 @@ $$
 	\Delta d_t &= \frac{(r-g)d_{t-1}}{1+g} - pbb_t.
 \end{align}
 $$
-
 -   $g$ is the real growth rate of GDP.
 -   $r$ is the real interest rate.
 -   $PBB=\tilde{T_t}-G_t - TR_t$ is the *primary budget balance*, consisting of taxes $\tilde{T_t}$, government bond interest payments $G_t$, and transfer payments $TR_t$.

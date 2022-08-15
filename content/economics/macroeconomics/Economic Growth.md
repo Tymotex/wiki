@@ -48,4 +48,3 @@ which can be rearranged to get the growth in productivity, $\Delta A$,
 $$
     \Delta A = \Delta Y - \alpha \Delta K - (1 - \alpha) \Delta L.
 $$
-

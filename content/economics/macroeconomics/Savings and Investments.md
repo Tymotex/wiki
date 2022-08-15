@@ -4,9 +4,9 @@ description: Savings and Investments
 ---
 
 ## Investment
-An **investment**, in macroeconomics, is the act of purchasing new capital goods, ie. as an input to bolster productivity.
+An **investment**, in macroeconomics, is the act of purchasing new capital goods to bolster productivity.
 - **Private investment** — any investment made by households/businesses. Eg. buying equipment, software, computers, buildings (new dwelling), etc.
-- **Public investment** — any investment made by the government.
+- **Public investment** — any investment made by the government such as infrastructure.
 
 **Capital stock** — encompasses everything in an economy that enables businesses to generate future sales such as buildings, bridges, literally everything like that.
 - *Accumulation of capital stock*: $K_1 = I_1 + \underbrace{ K_0(1-\delta)}_{\text{Depreciation}}$. The stock at the end of a period is equal to the stock at the start of the period, plus any more investments made over that period, minus the depreciation of the stock at the start.

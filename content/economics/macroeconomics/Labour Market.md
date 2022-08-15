@@ -74,18 +74,10 @@ The labour market can be modelled with the following supply and demand curves:
 - Shifts in the aggregate labour supply curve can happen due to immigration, birth rate changes, retirement age changes, and any number of other things that influence the general willingness for the population to participate in the labour market.
 - At equilibrium, everyone who is willing to work for the market real wage *will* be employed.
 - Factors such as minimum wage laws, labour unions, taxes keep us away from market equilibrium real wage.
-
 	![[economics/macroeconomics/assets/minimum-wage-on-labour-market.png|300]]
-	
 	Here, $L^s-L^d$ is the number of people who *would be willing* to work but cannot find employment.
 - A higher minimum wage will increase unemployment rates, *theoretically*.
 
 	![[economics/macroeconomics/assets/labour-tax.png|300]]
 	
 	Adding taxes on labour will pull the labour supply curve left since fewer people will be willing to work for a lower net wage.
-
-
-
-
-
-
