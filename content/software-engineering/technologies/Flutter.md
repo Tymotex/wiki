@@ -7,9 +7,6 @@ Flutter is a framework for building frontends that work natively on Android, iOS
 
 Flutter ships with a comprehensive widget library and Google maintains many of its plugins.
 
-
-
-
 Flutter has its own rendering engine built with C++ and [Skia](https://skia.org/) which is credited with being highly performant (substantially better rendering performance than [React Native](https://reactnative.dev/)). This means your Dart code renders custom UI elements to the screen, not native elements like React Native would.
 
 Flutter's UI component hierarchy is similar to [[software-engineering/technologies/React|React's]]. In Flutter, we call UI components *widgets*.
@@ -17,6 +14,12 @@ Flutter's UI component hierarchy is similar to [[software-engineering/technologi
 
 ## Flutter Architecture
 TODO. https://www.google.com/search?q=flutter+architecture&oq=flutter+architecture&aqs=chrome..69i57.1890j0j9&sourceid=chrome&ie=UTF-8
+
+## Flutter CLI
+```bash
+flutter doctor    # Sanity checks the Flutter installation.
+flutter devices   # List all connected devices.
+```
 
 ## Flare
 TODO: https://www.youtube.com/watch?v=hwBUU9CP4qI&ab_channel=Fireship
