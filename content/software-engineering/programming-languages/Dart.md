@@ -16,6 +16,16 @@ JIT compilation.
 
 AOT compilation.
 
+## Core
+
+`final`
+Floored division: `5 ~/ 2 == 2`
+
+```
+
+```
+
+Any identifier whose name starts with `_` becomes privately scoped to the file it's in. No other file in the project can access that identifier.
 
  
 ## Dart Libraries
