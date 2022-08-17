@@ -15,7 +15,6 @@ Flutter has its own rendering engine built with C++ and [Skia](https://skia.org/
 Flutter's UI component hierarchy is similar to [[software-engineering/technologies/React|React's]]. In Flutter, we call UI components *widgets*.
 
 
-
 ## Flutter Architecture
 TODO. https://www.google.com/search?q=flutter+architecture&oq=flutter+architecture&aqs=chrome..69i57.1890j0j9&sourceid=chrome&ie=UTF-8
 

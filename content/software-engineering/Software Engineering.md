@@ -18,6 +18,7 @@ description: Software engineering wiki.
 - [[software-engineering/technologies/Tailwind|Tailwind]]
 - [[software-engineering/technologies/NGINX|NGINX]]
 - [[software-engineering/technologies/PostgreSQL|PostgreSQL]]
+- [[software-engineering/technologies/Flutter|Flutter]]
 
 ### Software Engineering
 - [[software-engineering/software-engineering/Requirements Engineering|Requirements]]
