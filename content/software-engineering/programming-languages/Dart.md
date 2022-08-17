@@ -18,15 +18,24 @@ AOT compilation.
 
 ## Core
 
+Questions
+- ' vs "
+- When invoking functions, you can set named parameters like `color: Colors.red`
+- Callbacks: `(params) { ... }` and `(params) => ...`?
+
+
 `final`
 Floored division: `5 ~/ 2 == 2`
 
-```
+Ternary operator: `() ? () : ()`.
 
-```
 
 Any identifier whose name starts with `_` becomes privately scoped to the file it's in. No other file in the project can access that identifier.
 
+
+Set: `<Type>{}`
+
+Array: `<Type>[]`
  
 ## Dart Libraries
 TODO core libraries: https://dart.dev/guides/libraries/library-tour

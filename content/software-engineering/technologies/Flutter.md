@@ -14,6 +14,11 @@ Flutter has its own rendering engine built with C++ and [Skia](https://skia.org/
 ## Core
 Flutter's UI component hierarchy is similar to [[software-engineering/technologies/React|React's]]. In Flutter, we call UI components *widgets*. Every widget has a `build` method that declares how the widget is displayed and what it's composed of (this is similar to the `render` method in React components).
 
+**TODO**:
+- `Colors` class
+- `Icon` class
+- `BuildContext`. Every widget's `build` method takes in a BuildContext. Things like `Navigator`, `MediaQuery`, `ListView.builder` all need it.
+
 ### Stateful Widgets
 Stateless widgets are immutable.
 Stateful widgets maintain state over time and is create through extending `StatefulWidget` which creates an instance of `State`.
@@ -32,6 +37,24 @@ class _MyWidgetState extends State<MyWidget> {
   }
 }
 ```
+
+**TODO**:
+- `setState`
+
+### Routing
+
+**TODO**:
+- `Navigator` contains a stack of routes. Pushing to this stack changes the route. Popping navigates back.
+
+
+## Widgets Reference
+
+`ListView`
+`Scaffold`
+`AppBar`
+`IconButton`
+
+
 
 ## Flutter Architecture
 TODO. https://www.google.com/search?q=flutter+architecture&oq=flutter+architecture&aqs=chrome..69i57.1890j0j9&sourceid=chrome&ie=UTF-8
