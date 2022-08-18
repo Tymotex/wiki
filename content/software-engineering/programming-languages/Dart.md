@@ -18,11 +18,12 @@ AOT compilation.
 
 ## Core
 
-Questions
+**Questions**
 - ' vs "
 - When invoking functions, you can set named parameters like `color: Colors.red`
 - Callbacks: `(params) { ... }` and `(params) => ...`?
-
+- `const`
+---
 
 `final`
 Floored division: `5 ~/ 2 == 2`

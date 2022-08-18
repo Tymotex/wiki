@@ -18,6 +18,7 @@ Flutter's UI component hierarchy is similar to [[software-engineering/technologi
 - `Colors` class
 - `Icon` class
 - `BuildContext`. Every widget's `build` method takes in a BuildContext. Things like `Navigator`, `MediaQuery`, `ListView.builder` all need it.
+- `ThemeData`
 
 ### Stateful Widgets
 Stateless widgets are immutable.
@@ -45,6 +46,8 @@ class _MyWidgetState extends State<MyWidget> {
 
 **TODO**:
 - `Navigator` contains a stack of routes. Pushing to this stack changes the route. Popping navigates back.
+
+### Theming
 
 
 ## Widgets Reference
