@@ -19,6 +19,7 @@ description: Software engineering wiki.
 - [[software-engineering/technologies/NGINX|NGINX]]
 - [[software-engineering/technologies/PostgreSQL|PostgreSQL]]
 - [[software-engineering/technologies/Flutter|Flutter]]
+- [[software-engineering/technologies/Firebase|Firebase]]
 
 ### Software Engineering
 - [[software-engineering/software-engineering/Requirements Engineering|Requirements]]

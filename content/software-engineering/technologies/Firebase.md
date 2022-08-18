@@ -8,20 +8,22 @@ Firebase is a set of services that help you start and scale your apps. It consis
 - [Firebase Auth](https://firebase.google.com/products/auth) for setting up end-to-end user authentication without writing and maintaining the backend for it yourself.
 - [Firebase DB](https://firebase.google.com/products/realtime-database), a realtime database (described as a giant JSON tree that bidirectionally communicates with clients, meaning updates can be pushed to connected clients).
 - [Cloud Firestore](https://firebase.google.com/docs/firestore), a NoSQL database.
-- Firebase Hosting for deploying web apps and static content to a CDN.
+- [Firebase Hosting](https://firebase.google.com/docs/hosting) for deploying web apps and static content to a CDN.
+- [Cloud Storage](https://firebase.google.com/docs/storage) for storing and serving user-uploaded content like photos and videos.
 - [Cloud Functions](https://firebase.google.com/docs/functions) for running backend code in response to events without having to maintain your own servers or cloud VMs.
 - [Firebase Remote Config](https://firebase.google.com/docs/remote-config).
 ... and a few more. They all have 'client-first' SDKs for JavaScript, Android, iOS, Flutter, Unity, etc. which means you can directly interact with Firebase products from your frontend without a backend.
 
-tl;dr setup for the web:
+tl;dr setup steps for the web:
 ```javascript
-// 1. Create a Firebase project, then register your web app. 
-//    at console.firebase.google.com.
+// 1. Create a Firebase project, then register your web app at:
+//    console.firebase.google.com.
 
 // 2. In your project, get the JavaScript Firebase SDK
 yarn add firebase
 
-// 3. In your project, initialise firebase
+// 3. In your project, initialise firebase and the services you
+//    intend to use. Grab all credentials from the Firebase console.
 
     import { initializeApp } from "firebase/app";
     import { getAuth } from "firebase/auth";
@@ -60,3 +62,20 @@ All data is stored as JSON, in fact a Firebase DB instance is described as just 
 ```
 
 When users lose network connection, the changes they'd otherwise push to the database are persisted locally in a cache, and then when they reconnect, those changes are automatically merged with the database.
+
+## Firebase CLI
+The Firebase CLI is for deploying and managing projects from the terminal.
+```bash
+# Setup:
+yarn global add firebase-tools
+firebase --version
+```
+
+Some useful commands:
+```bash
+firebase init    # Creates `firebase.json` in the current directory and proceeds with
+                 # a guided setup of your services.
+firebase use     # View project aliases.
+firebase serve   # Locally host the project so you can test it out before deploying to production.
+```
+
