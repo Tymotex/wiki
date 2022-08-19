@@ -80,7 +80,7 @@ const getUserName = () => getAuth().currentUser.displayName;
 ```
 
 ## Firebase Realtime Database
-Firebase DB is a [[software-engineering/concepts/databases/NoSQL|NoSQL]] *realtime* database, credited with low latencies. Being a 'realtime' database just means that any updates from one client can be pushed to subscribed clients within milliseconds. Firebase DB is a great choice compared to 'normal' databases like Cloud Firestore or PostgreSQL if you have a simple data model, small amount of data, and expect low-latency access. For more heavyweight use cases, pick Cloud Firestore.
+Firebase DB is a [[software-engineering/concepts/databases/NoSQL|NoSQL]] *realtime* database, credited with low latencies. Being a 'realtime' database just means that any updates from one client can be pushed to subscribed clients within milliseconds. In other words, it's like a pubsub system for quickly syncing and notifying clients with small bits of data. Firebase DB is a great choice compared to 'normal' databases like Cloud Firestore or PostgreSQL if you have a simple data model, small amount of data, and expect low-latency access. For more heavyweight use cases and longer term data storage, pick Cloud Firestore instead.
 
 All data is stored as JSON, in fact a Firebase DB instance is described as just ["a cloud-hosted JSON tree"](https://firebase.google.com/docs/database/web/structure-data). It looks like this, for example:
 ```json
@@ -98,6 +98,9 @@ All data is stored as JSON, in fact a Firebase DB instance is described as just 
 
 When users lose network connection, the changes they'd otherwise push to the database are persisted locally in a cache, and then when they reconnect, those changes are automatically merged with the database.
 
+### Defining the Data Model
+
+
 ## Firebase CLI
 The Firebase CLI is for deploying and managing projects from the terminal.
 ```bash
@@ -112,6 +115,6 @@ firebase init    # Creates `firebase.json` in the current directory and proceeds
                  # a guided setup of your services.
 firebase use     # View project aliases.
 firebase serve   # Locally host the project so you can test it out before deploying to production.
-firebase deploy  # 
+firebase deploy  # Deploy resources to your Firebase project. Eg. use this to set configuration and security rules.
 ```
 
