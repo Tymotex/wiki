@@ -4,13 +4,15 @@ description: Firebase
 ---
 
 ![[software-engineering/technologies/assets/firebase-wallpaper.webp|750]]
-Firebase is a [[software-engineering/concepts/cloud/BaaS|BaaS]] platform which gives you set of services that help you start and scale your apps. It consists of an array of products such as:
+Firebase is a [[software-engineering/concepts/cloud/BaaS|BaaS]] platform which gives you set of services that help you start and scale your apps. It shares the same underlying infrastructure as [[software-engineering/technologies/Google Cloud|Google Cloud]] and is placed on the same bill.
+
+Firebase consists of the following array of products:
 - [Firebase Auth](https://firebase.google.com/products/auth) for setting up end-to-end user authentication without writing and maintaining the backend for it yourself.
 - [Firebase DB](https://firebase.google.com/products/realtime-database), a realtime database (described as a giant JSON tree that bidirectionally communicates with clients, meaning updates can be pushed to connected clients).
 - [Cloud Firestore](https://firebase.google.com/docs/firestore), a NoSQL database.
 - [Firebase Hosting](https://firebase.google.com/docs/hosting) for deploying web apps and static content to a CDN.
-- [Cloud Storage](https://firebase.google.com/docs/storage) for storing files/blobs.
-- [Cloud Functions](https://firebase.google.com/docs/functions) for running backend code in response to events without having to maintain your own servers or cloud VMs.
+- [Cloud Storage for Firebase](https://firebase.google.com/docs/storage) for storing files/blobs.
+- [Cloud Functions for Firebase](https://firebase.google.com/docs/functions) for running backend code in response to events without having to maintain your own servers or cloud VMs. It's essentially a thin wrapper around [[software-engineering/technologies/Google Cloud#Cloud Functions|Google Cloud Functions]] (see [StackOverflow](https://stackoverflow.com/questions/42854865/what-is-the-difference-between-cloud-functions-and-firebase-functions)).
 - [Firebase Remote Config](https://firebase.google.com/docs/remote-config).
 ... and a few more. They all have 'client-first' SDKs for JavaScript, Android, iOS, Flutter, Unity, etc. which means you can directly interact with Firebase products from your frontend without a backend.
 
@@ -47,6 +49,7 @@ yarn add firebase
 ```
 
 ## Firebase Auth
+Firebase Auth provides a bunch of services for implementing user registration, sign in, and sign out for your app in just a few lines of code. It also becomes painless to set 
 
 ### Snippets
 Some code snippets to demonstrate Google sign-in, sign-out and grabbing Google profile information (sourced from the [official Codelab](https://firebase.google.com/codelabs/firebase-web)):
