@@ -9,7 +9,7 @@ Firebase is a [[software-engineering/concepts/cloud/BaaS|BaaS]] platform which g
 - [Firebase DB](https://firebase.google.com/products/realtime-database), a realtime database (described as a giant JSON tree that bidirectionally communicates with clients, meaning updates can be pushed to connected clients).
 - [Cloud Firestore](https://firebase.google.com/docs/firestore), a NoSQL database.
 - [Firebase Hosting](https://firebase.google.com/docs/hosting) for deploying web apps and static content to a CDN.
-- [Cloud Storage](https://firebase.google.com/docs/storage) for storing and serving user-uploaded content like photos and videos.
+- [Cloud Storage](https://firebase.google.com/docs/storage) for storing files/blobs.
 - [Cloud Functions](https://firebase.google.com/docs/functions) for running backend code in response to events without having to maintain your own servers or cloud VMs.
 - [Firebase Remote Config](https://firebase.google.com/docs/remote-config).
 ... and a few more. They all have 'client-first' SDKs for JavaScript, Android, iOS, Flutter, Unity, etc. which means you can directly interact with Firebase products from your frontend without a backend.
