@@ -98,9 +98,6 @@ All data is stored as JSON, in fact a Firebase DB instance is described as just 
 
 When users lose network connection, the changes they'd otherwise push to the database are persisted locally in a cache, and then when they reconnect, those changes are automatically merged with the database.
 
-## Cloud Firestore
-Cloud Firestore is a [[software-engineering/concepts/databases/NoSQL|NoSQL]] database
-
 ## Firebase CLI
 The Firebase CLI is for deploying and managing projects from the terminal.
 ```bash
@@ -115,5 +112,6 @@ firebase init    # Creates `firebase.json` in the current directory and proceeds
                  # a guided setup of your services.
 firebase use     # View project aliases.
 firebase serve   # Locally host the project so you can test it out before deploying to production.
+firebase deploy  # 
 ```
 
