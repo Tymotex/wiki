@@ -4,7 +4,7 @@ description: Firebase
 ---
 
 ![[software-engineering/technologies/assets/firebase-wallpaper.webp|750]]
-Firebase is a set of services that help you start and scale your apps. It consists of an array of products such as:
+Firebase is a [[software-engineering/concepts/cloud/BaaS|BaaS]] platform which gives you set of services that help you start and scale your apps. It consists of an array of products such as:
 - [Firebase Auth](https://firebase.google.com/products/auth) for setting up end-to-end user authentication without writing and maintaining the backend for it yourself.
 - [Firebase DB](https://firebase.google.com/products/realtime-database), a realtime database (described as a giant JSON tree that bidirectionally communicates with clients, meaning updates can be pushed to connected clients).
 - [Cloud Firestore](https://firebase.google.com/docs/firestore), a NoSQL database.
@@ -14,8 +14,7 @@ Firebase is a set of services that help you start and scale your apps. It consis
 - [Firebase Remote Config](https://firebase.google.com/docs/remote-config).
 ... and a few more. They all have 'client-first' SDKs for JavaScript, Android, iOS, Flutter, Unity, etc. which means you can directly interact with Firebase products from your frontend without a backend.
 
-#### Pros and Cons
-
+The main concern of adopting Firebase is [vendor lock-in](https://en.wikipedia.org/wiki/Vendor_lock-in). Don't worry too much about it though.
 
 #### Web Quick Setup
 ```javascript
