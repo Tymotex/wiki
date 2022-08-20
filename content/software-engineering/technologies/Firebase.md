@@ -49,7 +49,7 @@ yarn add firebase
 ```
 
 ## Firebase Auth
-Firebase Auth provides a bunch of services for implementing user registration, sign in, and sign out for your app in just a few lines of code. It also becomes painless to set 
+Firebase Auth provides a bunch of services for implementing user registration, sign in, and sign out for your app in just a few lines of code. It also becomes painless to set up multiple auth providers like Google, Facebook, GitHub, etc.
 
 ### Snippets
 Some code snippets to demonstrate Google sign-in, sign-out and grabbing Google profile information (sourced from the [official Codelab](https://firebase.google.com/codelabs/firebase-web)):
@@ -100,9 +100,6 @@ All data is stored as JSON, in fact a Firebase DB instance is described as just 
 ```
 
 When users lose network connection, the changes they'd otherwise push to the database are persisted locally in a cache, and then when they reconnect, those changes are automatically merged with the database.
-
-### Defining the Data Model
-
 
 ## Firebase CLI
 The Firebase CLI is for deploying and managing projects from the terminal.
