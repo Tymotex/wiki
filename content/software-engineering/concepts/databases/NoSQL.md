@@ -44,9 +44,9 @@ When you fetch a document or part of a document, *you fetch everything inside it
   }
 }
 ```
-To improve this model, see [[software-engineering/concepts/databases/NoSQL#Denormalisation|denormalisation]].
+If you fetched `Andrew`, you'd also fetch all his blogs regardless of whether you needed them to render your UI or not. To improve this model, see [[software-engineering/concepts/databases/NoSQL#Normalisation vs. Denormalisation|normalisation/denormalisation]].
 
-### Denormalisation
+### Normalisation vs. Denormalisation
 See [[software-engineering/concepts/databases/Normalisation|normalisation]]. *Denormalisation* is duplicating data to simplify queries. It's encouraged by [Firebase as a best practice](https://www.youtube.com/watch?v=vKqXSZLLnHA&ab_channel=Firebase) when you want to improve read performance.
 
 When you want to avoid nesting deeply, aim to **flatten** your data structures by extracting out nested JSON sub-structures in your document schema to separate collections, then linking them together through IDs or other fields. Doing this means that those two collections can be fetched independently, which improves read performance and query simplicity.
@@ -56,7 +56,7 @@ When you want to avoid nesting deeply, aim to **flatten** your data structures b
     "Andrew": {
       "email": "..."
       "blogs": [
-        "Why I love C",
+        "Why I love C",           // References
         "Why I hate JavaScript",
         // ...
       ]
@@ -74,6 +74,6 @@ When you flatten data structures however, you inevitably increase *data duplicat
 
 Generally, when denormalising, you are **improving read performance at the cost of write performance** because it takes extra work to propagate updates to maintain [[software-engineering/concepts/databases/ACID|database consistency]] and correct stale data. The act of propagating updates to maintain consistency is called '*multi-path updates*' which helps to correct stale data/references or remove *orphaned references* (also called *dangling references*) which are references to deleted documents still held by other documents.
 
-When deciding whether to nest or not to nest, you must think about your business requirements:
+You must balance your usage of both normalisation and denormalisation. When deciding whether to nest or not to nest, you must think about your business requirements:
 - In displaying your UI, would flattening your document schema minimise frequent over-fetching of data? Or would nesting make more sense because the data is tightly coupled together and therefore should be fetched in one query?
 - How often users will need to perform a certain read query? If the answer is *very frequently*, then prefer denormalising.
