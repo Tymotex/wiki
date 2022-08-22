@@ -3,7 +3,7 @@ title: NoSQL
 description: NoSQL
 ---
 
-> In this set of notes, we only consider *document-oriented* databases such as MongoDB and Firebase Realtime DB. There are also other types of NoSQL databases such as graph databases (like [Neo4j](https://neo4j.com/)) and simple key-value stores like [Redis](https://redis.io/) or [Memcached](https://memcached.org/).
+> In this set of notes, we only consider *document-oriented* databases such as MongoDB and [[software-engineering/technologies/Firebase|Firebase]]. There are also other types of NoSQL databases such as graph databases (like [Neo4j](https://neo4j.com/)) and simple key-value stores like [Redis](https://redis.io/) or [Memcached](https://memcached.org/).
 
 *NoSQL* ("**n**ot **o**nly SQL") databases are those that ditch the idea of defining data using relational theory involving tables, rows and columns and linking them together.
 
@@ -25,23 +25,55 @@ Things to think about:
 
 
 
-Best practices (sourced from [official Firebase docs](https://firebase.google.com/docs/database/web/structure-data), [this article](https://proandroiddev.com/working-with-firestore-building-a-simple-database-model-79a5ce2692cb)).
 
 ### Don't Nest Deeply
+*Don't nest deeply* is a usual best practice for designing document schemas.
 
-- **Don't nest too deeply**. When you fetch a part of the JSON, you also fetch all of its children. In the case of managed databases like Firebase realtime db, the permissions applied to the parent also apply to the children.
-    ```json
-    ```
-    
-    
-    To avoid nesting deeply, aim to **flatten** your data structures (also called *normalising*). Extract out nested sub-JSON structures so that they can fetched independently.
+When you fetch a document or part of a document, *you fetch everything inside it*. In the case of managed databases like Firebase realtime db, the permissions applied to a document or a part of it also apply to the children. When your data actually belongs together all or most of the time, it's okay and encouraged to nest them to avoid having to do multiple queries. When this is not the case, you overfetch data. In fact, managed DBs might enforce a limit on document size (1MiB for Firebase).
+```json
+{
+  "users": {
+    "Andrew": {
+      "email": "..."
+      "blogs": {
+        "Why I love C": {...},
+        "Why I hate JavaScript": {...},
+        // ... and so on. This could be a huge list of blogs and all their contents!
+      }
+    }
+  }
+}
+```
+To improve this model, see [[software-engineering/concepts/databases/NoSQL#Denormalisation|denormalisation]].
 
-When you flatten data structures however, you increase *data redundancy* where the same data appears in multiple locations in the database.
+### Denormalisation
+See [[software-engineering/concepts/databases/Normalisation|normalisation]]. *Denormalisation* is duplicating data to simplify queries. It's encouraged by [Firebase as a best practice](https://www.youtube.com/watch?v=vKqXSZLLnHA&ab_channel=Firebase) when you want to improve read performance.
 
-TODO: when you have redundancy, how do you ensure changes are propagated??
+When you want to avoid nesting deeply, aim to **flatten** your data structures by extracting out nested JSON sub-structures in your document schema to separate collections, then linking them together through IDs or other fields. Doing this means that those two collections can be fetched independently, which improves read performance and query simplicity.
+```json
+{
+  "users": {
+    "Andrew": {
+      "email": "..."
+      "blogs": [
+        "Why I love C",
+        "Why I hate JavaScript",
+        // ...
+      ]
+    }
+  },
+  "blogs": {
+      "Why I love C": {...},
+      "Why I hate JavaScript": {...},
+      // ...
+  }
+}
+```
 
+When you flatten data structures however, you inevitably increase *data duplication* or *redundancy* where the same data appears in multiple locations in the database. This is very common and often unavoidable in non-relational databases. 
 
-When deciding whether to nest or not to nest, think about:
-- 
+Generally, when denormalising, you are **improving read performance at the cost of write performance** because it takes extra work to propagate updates to maintain [[software-engineering/concepts/databases/ACID|database consistency]] and correct stale data. The act of propagating updates to maintain consistency is called '*multi-path updates*' which helps to correct stale data/references or remove *orphaned references* (also called *dangling references*) which are references to deleted documents still held by other documents.
 
-- How often users will need to access a collection's documents. If the answer is *very frequently*, then optimise for data access speed at the cost of greater redundancy.
+When deciding whether to nest or not to nest, you must think about your business requirements:
+- In displaying your UI, would flattening your document schema minimise frequent over-fetching of data? Or would nesting make more sense because the data is tightly coupled together and therefore should be fetched in one query?
+- How often users will need to perform a certain read query? If the answer is *very frequently*, then prefer denormalising.
