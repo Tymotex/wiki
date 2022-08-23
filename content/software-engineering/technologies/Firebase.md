@@ -101,6 +101,35 @@ All data is stored as JSON, in fact a Firebase DB instance is described as just 
 
 When users lose network connection, the changes they'd otherwise push to the database are persisted locally in a cache, and then when they reconnect, those changes are automatically merged with the database.
 
+### Usage
+[[software-engineering/technologies/Firebase#Web Quick Setup|Initialise the Firebase SDK]], create a Firebase database instance through the web console, then specify the `databaseURL` field in the initialisation config object.
+
+```javascript
+import { getDatabase, set, ref } from 'firebase/database';
+
+const writeData = () => {
+    const db = getDatabase();   // Get a database handle (ie. a reference to it).
+    const dbPath = ref();
+    set()
+};
+
+```
+
+### Local Realtime DB Emulator
+Since you likely don't want to read/write data to a production database server while you're developing, you should use the local emulator for the realtime db, provided by Firebase. You'd also want to use this to integration or e2e tests.
+
+```bash
+# Start the local emulator suite, which includes the DB emulator.
+firebase emulators:start
+```
+
+Then in your client-side code, connect to it if you're locally hosting your website:
+```javascript
+import { connectDatabaseEmulator } from 'firebase/database';
+
+if (location.hostname === "localhost") connectDatabaseEmulator(db, "localhost", 9000);
+```
+
 ## Firebase CLI
 The Firebase CLI is for deploying and managing projects from the terminal.
 ```bash
