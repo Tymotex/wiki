@@ -15,17 +15,6 @@ The main two reasons are *flexibility* and *easier scaling*:
 ## Data Modeling
 Although non-relational databases don't have tables, rows and columns, and are often chosen in anticipation of changes to the data model, you still need to have a concrete idea of what the data model/schemas for your application look like. 
 
-One good reason for this is because there is a [[software-engineering/concepts/databases/NoSQL#Don't Nest Deeply|tradeoff between data access speed and data redundancy]]. 
-
-
-Things to think about:
-1. Selecting a primary key.
-2. What fields should be indexed.
-
-
-
-
-
 ### Don't Nest Deeply
 *Don't nest deeply* is a usual best practice for designing document schemas.
 
@@ -47,7 +36,7 @@ When you fetch a document or part of a document, *you fetch everything inside it
 If you fetched `Andrew`, you'd also fetch all his blogs regardless of whether you needed them to render your UI or not. To improve this model, see [[software-engineering/concepts/databases/NoSQL#Normalisation vs. Denormalisation|normalisation/denormalisation]].
 
 ### Normalisation vs. Denormalisation
-See [[software-engineering/concepts/databases/Normalisation|normalisation]]. *Denormalisation* is duplicating data to simplify queries. It's encouraged by [Firebase as a best practice](https://www.youtube.com/watch?v=vKqXSZLLnHA&ab_channel=Firebase) when you want to improve read performance.
+See [[software-engineering/concepts/databases/Normalisation|normalisation]]. *Denormalisation* is duplicating data to simplify queries. It's encouraged by [Firebase](https://www.youtube.com/watch?v=vKqXSZLLnHA&ab_channel=Firebase) when you want to improve read performance.
 
 When you want to avoid nesting deeply, aim to **flatten** your data structures by extracting out nested JSON sub-structures in your document schema to separate collections, then linking them together through IDs or other fields. Doing this means that those two collections can be fetched independently, which improves read performance and query simplicity.
 ```json
@@ -55,8 +44,9 @@ When you want to avoid nesting deeply, aim to **flatten** your data structures b
   "users": {
     "Andrew": {
       "email": "..."
-      "blogs": [
-        "Why I love C",           // References
+      // References to data elsewhere.
+      "blogs": [          
+        "Why I love C",
         "Why I hate JavaScript",
         // ...
       ]
