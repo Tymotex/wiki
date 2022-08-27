@@ -130,6 +130,29 @@ import { connectDatabaseEmulator } from 'firebase/database';
 if (location.hostname === "localhost") connectDatabaseEmulator(db, "localhost", 9000);
 ```
 
+### Security Rules 
+Security rules let you set the conditions that have to be passed to allow read or write access to a certain node in the database. You can also set [data validation rules](https://firebase.google.com/docs/reference/security/database) that enforce simple checks such as making sure that a field is a string with a certain length. They're specified in a file called `database.rules.json` by default. Applying the rules in `database.rules.json` is done with `firebase deploy --only database`.
+
+**Example `database.rules.json`:**
+```json
+{
+  "rules": {
+    // Allow any read/write attempt:
+    ".read": true,
+    ".write": true,
+    "users": {
+      // '$user' is a wildcard for all keys under 'users'. The value is accessible through references to `$user`.
+      // You can give it any name you want.
+      "$user": {   
+        "name": {
+          ".validate": "newData.isString() && newData.val().length > 0 && newData.val().length <= 255"
+        },
+      }
+    }
+  }
+}
+```
+
 ## Firebase CLI
 The Firebase CLI is for deploying and managing projects from the terminal.
 ```bash
