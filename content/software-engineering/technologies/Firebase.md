@@ -105,14 +105,27 @@ When users lose network connection, the changes they'd otherwise push to the dat
 [[software-engineering/technologies/Firebase#Web Quick Setup|Initialise the Firebase SDK]], create a Firebase database instance through the web console, then specify the `databaseURL` field in the initialisation config object.
 
 ```javascript
-import { getDatabase, set, ref } from 'firebase/database';
+import { getDatabase, push, ref, onValue } from 'firebase/database';
 
-const writeData = () => {
-    const db = getDatabase();   // Get a database handle (ie. a reference to it).
-    const dbPath = ref();
-    set()
+const addUser = async () => {
+    // Get a database handle (ie. a reference to it).
+    const db = getDatabase();   
+    const dbPath = ref(db, `users`);
+
+    // Write a new user object to `users`.
+    const reference = await push(dbPath, { name: "Andrew" });
+    return reference.key;
 };
 
+const watchUsers = async () => {
+    const usersRef = ref(getDatabase(), `users`);
+
+    // Whenever the remote list of users changes, do something.
+    onValue(usersRef, (snapshot) => {
+        const currUsers = snapshot.val();
+        // ... do something with the users.
+    });
+}:
 ```
 
 ### Local Realtime DB Emulator
