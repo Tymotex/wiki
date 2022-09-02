@@ -1,9 +1,7 @@
 ---
-title: Real Estate vs. Stocks
-description: Real Estate vs. Stocks
+title: Real Estate
+description: Real Estate
 ---
-
-
 
 Sources:
 - https://www.choosi.com.au/life-insurance/articles/investing-property-or-shares
@@ -26,7 +24,10 @@ Real estate investment mostly does not require special domain knowledge.
 
 - Property is illiquid.
 - Costs associated with buying, holding and selling a property:
-    - Stamp duty
+    - **Stamp duty** — a one-off tax payment associated with your purchase of a property. It's a function of location, property type and property value.
+        - Concessions/Exemptions may exist as incentives for first home buyers. 
+        - It's also called *transfer duty* in states other than NSW.
+        - You must pay the stamp duty shortly after the property's purchase.
     - Conveyancing fees
     - Legal fees
     - Real estate agent fees
@@ -34,7 +35,7 @@ Real estate investment mostly does not require special domain knowledge.
     - Pest and building reports
     - Insurance
     - Landlord insurance
-    - Body corporate fees
+    - **Body corporate** — 
     - Land tax
     - Repairs and maintenance 
     - TODO: strata?
@@ -57,12 +58,9 @@ Picking an investment property:
 
 Your property is exempt from capital gains tax if you're an Australian resident and you've lived in the home for the whole period of owning it and has not been used for business activity.
 
+**House buying process**:
+1. Contact a bank or mortgage broker to acquire a *pre-approval*. How much you can borrow is a function of your income, job history, credit rating, etc.
+2. Inspect the home for damage, broken things, pests, etc. Consider paying for a thorough pest and building inspection.
+3. Get a conveyancer to review the contract.
 
-**My current thoughts/analysis**:
 
-- Our family is investing almost entirely on property.
-- I am fine with losing 100% of the money I invest, but do not feel capable of losing 100% of the money I invest *and* being deep in debt.
-    - I am more risk-tolerant now than probably at any other time in my life. I also have confidence that I can have regular income. I probably shouldn't be scared of this?
-- I don't want to invest time into learning the property market or property flipping and don't believe I can 'game' it like everyone else. I have the same perspective in picking stocks. I know this is less applicable to property because you have greater control over the value of your property.
-    - I'm not sure how 'active' I have to be. Instead of just routing the money into an index fund, I'd have to be actively handling maintenance and dealing with issues constantly as they arise.
-- Is it dumb to invest in both property and shares simultaneously? 
