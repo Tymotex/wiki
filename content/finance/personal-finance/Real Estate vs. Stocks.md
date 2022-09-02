@@ -18,7 +18,7 @@ Property is usually less volatile and less risky.
 Rental income can cover most or all of the mortgage, however you cannot rely on it because there may be times where your property is vacant.
 
 *Positive gearing* is where you take a loan to invest, but the income from the investment exceeds your loan's repayments, ie. you're getting a positive net income despite the loan repayments. *Negative gearing* is when you take a loan to invest, but the income from that investment is still lower than the loan repayment. 
-- For *positively geared investments*, you have to pay tax on your rental income. For *negatively geared investments*, you can claim a tax deduction on the loss.
+- For *positively geared investments*, you have to pay tax on your rental income. For *negatively geared investments*, you can claim a tax deduction on the loss, which is better enjoyed by high income earners. 
 
 Property expenses are tax deductible. This includes interest on your mortgage.
 
@@ -41,6 +41,7 @@ Real estate investment mostly does not require special domain knowledge.
     - Capital gains tax, if the property has increased in value
 - Settlement periods can span weeks or months.
 - You can borrow huge amounts of money to acquire a property and therefore can take advantage of higher *leverage*, which is an investment strategy involving borrowing money to increase potential returns. It's sometimes 'unfair' to compare % capital growth between shares and property if you don't account for the 'cheap' leverage you can get through acquiring a property through a mortgage.
+    - You can also borrow money to invest in shares, just not as much. Doing this is called 'investing on margin', and you are subject to *margin calls* where the lender can request back their money if the value of the securities you invest in fall below a threshold.
 
 - You must have a secure enough income stream to meet mortgage repayments.
 - You must be able to respond to increases in mortgage repayments from interest rate hikes.
@@ -64,4 +65,4 @@ Your property is exempt from capital gains tax if you're an Australian resident 
     - I am more risk-tolerant now than probably at any other time in my life. I also have confidence that I can have regular income. I probably shouldn't be scared of this?
 - I don't want to invest time into learning the property market or property flipping and don't believe I can 'game' it like everyone else. I have the same perspective in picking stocks. I know this is less applicable to property because you have greater control over the value of your property.
     - I'm not sure how 'active' I have to be. Instead of just routing the money into an index fund, I'd have to be actively handling maintenance and dealing with issues constantly as they arise.
-- 
+- Is it dumb to invest in both property and shares simultaneously? 
