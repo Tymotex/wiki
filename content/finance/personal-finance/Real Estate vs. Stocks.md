@@ -55,3 +55,13 @@ Picking an investment property:
     - Bathrooms.
 
 Your property is exempt from capital gains tax if you're an Australian resident and you've lived in the home for the whole period of owning it and has not been used for business activity.
+
+
+**My current thoughts/analysis**:
+
+- Our family is investing almost entirely on property.
+- I am fine with losing 100% of the money I invest, but do not feel capable of losing 100% of the money I invest *and* being deep in debt.
+    - I am more risk-tolerant now than probably at any other time in my life. I also have confidence that I can have regular income. I probably shouldn't be scared of this?
+- I don't want to invest time into learning the property market or property flipping and don't believe I can 'game' it like everyone else. I have the same perspective in picking stocks. I know this is less applicable to property because you have greater control over the value of your property.
+    - I'm not sure how 'active' I have to be. Instead of just routing the money into an index fund, I'd have to be actively handling maintenance and dealing with issues constantly as they arise.
+- 
