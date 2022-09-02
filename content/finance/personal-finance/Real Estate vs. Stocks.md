@@ -8,7 +8,7 @@ description: Real Estate vs. Stocks
 Sources:
 - https://www.choosi.com.au/life-insurance/articles/investing-property-or-shares
 - https://moneysmart.gov.au/property-investment
-- 
+- https://www.aussiefirebug.com/property-vs-shares/
 
 Low interest rates and government incentives make real estate investment more attractive.
 
@@ -40,7 +40,7 @@ Real estate investment mostly does not require special domain knowledge.
     - TODO: strata?
     - Capital gains tax, if the property has increased in value
 - Settlement periods can span weeks or months.
-
+- You can borrow huge amounts of money to acquire a property and therefore can take advantage of higher *leverage*, which is an investment strategy involving borrowing money to increase potential returns. It's sometimes 'unfair' to compare % capital growth between shares and property if you don't account for the 'cheap' leverage you can get through acquiring a property through a mortgage.
 
 - You must have a secure enough income stream to meet mortgage repayments.
 - You must be able to respond to increases in mortgage repayments from interest rate hikes.
@@ -53,6 +53,5 @@ Picking an investment property:
     - Distance to shopping centres and transport.
     - Garage.
     - Bathrooms.
-    
 
 Your property is exempt from capital gains tax if you're an Australian resident and you've lived in the home for the whole period of owning it and has not been used for business activity.
