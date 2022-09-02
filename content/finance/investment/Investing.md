@@ -12,6 +12,16 @@ An *investment* is the purchase of an asset or commodity with the expectation of
 
 > The main difference between a *trader* and an *investor* is how long they hold the asset. Traders focus on capitalising on short-term trends.
 
+
+### Defensive vs. Growth Investments
+Investments are generally divided into two types: *defensive* and *growth*. Defensive investments are lower risk and tend to protect your wealth rather than grow it. Growth investments are riskier and tend to grow your wealth rather than preserve it. Usually, bonds are considered defensive assets while stocks are considered growth assets.
+
+Prefer defensive investments if you need to meet shorter-term financial goals, such as saving for a home deposit in 2 years, or to reduce the volatility of your portfolio [(source)](https://moneysmart.gov.au/how-to-invest/choose-your-investments).
+
+### Tax
+Any income you get from your investments in the form of savings interest, dividends, rental income, capital gains (from property, shares, crypto), etc. is taxed at your [marginal tax rate](https://moneysmart.gov.au/income-tax/income-tax-calculator). Investment income must be included in your [[finance/personal-finance/Tax Return|tax return]]. Costs involved with buying, holding and selling an investment asset is tax deductible. Even the interest accrued on a loan you take to invest in something is also tax deductible. If you pay management fees to a mutual fund or pay for investment advice, those are also tax deductible.
+
+
 ## Investing in the Stock Market
 See [[finance/investment/Stock Market|stock market]].
 
@@ -22,6 +32,12 @@ See [[finance/investment/Stock Market|stock market]].
 > - Investopedia articles
 > - [New Money](https://www.youtube.com/c/AussieWealthCreation).
 > - ... and advice from investing pioneers such as Warren Buffett, Charlie Munger, etc.
+
+### Buying, Holding and Selling Shares
+
+
+Track your transactions and that market value of the shares at the time you obtain them because you can claim [[finance/investment/Investing#Tax|tax deductions]] on them.
+
 
 ### Active vs. Passive Investing
 *Active* management involves monitoring the performance of an investment portfolio and making decisions about whether to buy, sell or hold and asset. It aims to 'beat the market' by adopting certain investing strategies and does not support the [[finance/investment/Efficient Market Hypothesis|efficient market hypothesis]] which implies it's not possible to 'beat the market' over the long run.
