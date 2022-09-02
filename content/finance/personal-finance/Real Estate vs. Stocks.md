@@ -53,3 +53,6 @@ Picking an investment property:
     - Distance to shopping centres and transport.
     - Garage.
     - Bathrooms.
+    
+
+Your property is exempt from capital gains tax if you're an Australian resident and you've lived in the home for the whole period of owning it and has not been used for business activity.
