@@ -11,22 +11,29 @@ description: Law
 
 ---
 
-Law is a set of rules used to get society to conform to certain behaviours. They're enforced by governments and exist primarily to ensure society works effectively.
+*Law* is a set of rules used to get society to conform to certain behaviours. They're enforced by governments and exist primarily to ensure society works effectively.
 
 Laws exist to ensure the
 
 Law is classified into two scopes: *public law* and *criminal law*.
 
 - *Legal system* — the set of laws in a country or place and how they're made and enforced.
-- *Legislature* — a group of people with the authority to make new laws.
+- *Legislation* — a law or set of laws, or the process making of new laws.
+- *Legislature* — a group of people with the authority to make new laws. 
+- *Legislative* — having the authority to make new laws.
 - *Statutes* — 
 - *Decrees* — 
 - *Tribunal* — 
-- *Jurisdiction* — 
+- *Jurisdiction* — the authority, or entity with the authority, to interpret and apply the law.
 - *(Court) Litigation*
 - *Judge*
-- *Constitution*
+- *Judicial* 
+- *Judiciary* — branch of government that judges when laws have been violated based on evidence presented in court cases.
+- *Constitution* — a set of rules. The *Constitution of Australia* is a document     that came into force on the first day of 1901.
+- *Federation* — a group of self-governing states with a central government.
+- *Commonwealth* — a political union of 56 countries, most of which are former British Empire territories.
 - *Referendum*
+- *Common Law* — 
 - *Allegation*
 - *Acquittal*
 - *(Arrest) Warrant*
@@ -39,7 +46,7 @@ Law is classified into two scopes: *public law* and *criminal law*.
 - *Felony*
 - *Jury*
     - *Jury pool*
-- *Parliament*
+- *Parliament* — 
 - *Hearsay*
 - *Impeachment*
 - *Jurisprudence*
@@ -56,5 +63,10 @@ Law is classified into two scopes: *public law* and *criminal law*.
 - *Testimony*
     - *Testify*
 - *Verdict*
+- *High Court*
 
-## How Laws Are Made
+## Australian Legal System
+
+
+
+### How Laws Are Made
