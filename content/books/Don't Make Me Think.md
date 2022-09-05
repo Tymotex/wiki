@@ -23,8 +23,22 @@ Design decisions exist on a spectrum from *obvious* to *requiring thought*. Alwa
 Always make clickable things *obviously clickable*.
 
 ## Web Users Are Brain-Dead By Default
-> Design for scanning, not for reading.
+> Design for **scanning**, not for reading.
 
 People execute a very surface-level auto-pilot search algorithm for what they need from your website. Unless their purpose is to actually read your web content (like reading the words of a blog post), they will only notice the most visually obvious parts of the page that signal some useful purpose to them, almost always clicking the first they encounter.
 ![[books/assets/user-scanning-webpages.png|400]]
 
+### Web Conventions
+Prefer taking advantage of web conventions. Eg. the brand name and icon should usually exist on the top left of a navbar.
+> Innovate when you *know* you have a better idea, but take advantage of conventions when you don't.
+
+### Visual Hierarchy
+> A good visual hierarchy saves us work by preprocessing the page for us, organising and prioritising its contents in a way that we can grasp almost instantly.
+
+### Visual Noise
+Ruthlessly strip or de-emphasise the unimportant UI elements and text. 
+
+### Format Text
+- Generously use informative heading text (h1, h2, h3, ...). This allows scanning for the part of the web page most interesting to the user.
+- Keep paragraphs very short.
+- Generously use bulleted lists.
