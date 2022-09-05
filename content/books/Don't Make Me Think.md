@@ -20,9 +20,11 @@ In English, usability is whether:
 ## Law #1 — Don't Make Me Think
 Design decisions exist on a spectrum from *obvious* to *requiring thought*. Always prefer designs on the *obvious* side (a useful rule when disputing design conflicts with someone else).
 ![[books/assets/obvious-spectrum.png]]
-- Always make clickable things *obviously clickable*.
+Always make clickable things *obviously clickable*.
 
+## Web Users Are Brain-Dead By Default
+> Design for scanning, not for reading.
 
-
-People skim pages for something clickable, most of the time.
+People execute a very surface-level auto-pilot search algorithm for what they need from your website. Unless their purpose is to actually read your web content (like reading the words of a blog post), they will only notice the most visually obvious parts of the page that signal some useful purpose to them, almost always clicking the first they encounter.
+![[books/assets/user-scanning-webpages.png|400]]
 
