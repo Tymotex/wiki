@@ -2,6 +2,9 @@
 title: Rust
 description: Rust
 ---
+
+TODO: continue at chapter 3 in The Rust Programming Language book: https://doc.rust-lang.org/book/ch03-00-common-programming-concepts.html.
+
 ![[software-engineering/programming-languages/assets/rust-wallpaper.png|800]]
 > "Rust's greatest ambition is to eliminate the trade-offs that programmers have accepted for decades by providing safety *and* productivity, speed *and* ergonomics." — *The Rust Programming Language*
 
