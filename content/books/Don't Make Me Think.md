@@ -73,3 +73,15 @@ Breadcrumbs are concise navigators that don't contribute much visual noise to a 
 1. Place it at the top.
 2. Use the right chevron › to separate parts of it.
 3. Highlight the last breadcrumb.
+
+## Homepage
+Homepages must make clear *what the site is*. They are responsible for creating the first impression and generating traffic towards other subpages.
+
+Yes, it's unlikely that a large amount of traffic begins from the homepage (instead, it'll be from direct links to subpages from Google search results, for example), but often people will navigate to the homepage if they find the content on the subpages interesting. You still need to get the homepage right.
+
+Things to have:
+- The primary navigation at the top, including the site ID, utility buttons and navigation buttons.
+- A tagline, typically sitting right under or next to the site ID. Know the difference between a [tagline and a motto](https://chevronediting.com.au/tagline-motto-slogan-difference) however.
+- A welcome blurb.
+- A learn more link to a page with the finer details.
+- An embedded demo video of the product or business.
