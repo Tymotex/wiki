@@ -58,11 +58,18 @@ Navigation serves two critical purposes:
 1. It tells you where you currently are.
 2. It tells you what's here.
 
+### Primary Navigation
 The web convention for navigation is to have something that looks like this at the top of every content page and to highlight on the navigator which page you're currently on:
 ![[books/assets/standard-site-header.png|500]]
 - Always have a logo and/or distinguished typeface for the site ID. It should always take you home.
 - Always keep the utility buttons minimal. Only show the most frequently used. The rest should be stowed away in the footer or in a different menu.
 
-*All pages must have a name*, just as all streets have names and all intersections have street signs.
+### All Pages Must Have Names
+*All pages must have a name*, just as all streets have names and all intersections have street signs. It must be present on the document and given emphasis, and not just only present in the tab's name or highlighted in the navigation UI.
 ![[books/assets/page-name-examples.png|600]]
 
+### Breadcrumbs
+Breadcrumbs are concise navigators that don't contribute much visual noise to a page. Here are some best practices:
+1. Place it at the top.
+2. Use the right chevron › to separate parts of it.
+3. Highlight the last breadcrumb.
