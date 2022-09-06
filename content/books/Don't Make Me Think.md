@@ -77,11 +77,33 @@ Breadcrumbs are concise navigators that don't contribute much visual noise to a 
 ## Homepage
 Homepages must make clear *what the site is*. They are responsible for creating the first impression and generating traffic towards other subpages.
 
-Yes, it's unlikely that a large amount of traffic begins from the homepage (instead, it'll be from direct links to subpages from Google search results, for example), but often people will navigate to the homepage if they find the content on the subpages interesting. You still need to get the homepage right.
+**Note**: yes, it's unlikely that a large amount of traffic begins from the homepage (instead, it'll be from direct links to subpages from Google search results, for example), but often people will navigate to the homepage if they find the content on the subpages interesting. You still need to get the homepage right.
 
-Things to have:
+**Things to have**:
 - The primary navigation at the top, including the site ID, utility buttons and navigation buttons.
 - A tagline, typically sitting right under or next to the site ID. Know the difference between a [tagline and a motto](https://chevronediting.com.au/tagline-motto-slogan-difference) however.
 - A welcome blurb.
 - A learn more link to a page with the finer details.
 - An embedded demo video of the product or business.
+
+Don't crowd the homepage with too many leads, especially promotions.
+> "Any shared resource will inevitably be destroyed by overuse." (see the [Tragedy of the Commons](https://en.wikipedia.org/wiki/Tragedy_of_the_commons))
+
+## Usability Testing
+Usability tests involve getting users individually to try out the website/app/product, seeing how they feel about it and if it solves their problems, and noting what problems they run into.
+
+> After you've worked on a site for even a few weeks, you can't see it freshly anymore... The only way to find out if it really works is to watch other people try to use it.
+
+> Testing one user early in the project is better than testing 50 near the end.
+
+> Every web development team should spend **one morning a month** doing usability testing.
+
+For each of those usability testing sessions, just get 3 people to use your website. Give them tasks to do, observe, then take notes. The goal is to get actionable insights, not conduct a scientific experiment that would require a large sample size.
+- Those 3 people need not be from your target audience. They will still run into usability problems.
+
+### Design Disputes
+Everyone has their own concept of what UI is pleasant to use and what UI is not. 
+> "All web users are unique. And all web use is basically idiosyncratic."
+
+The only antidote to resolving design disputes about what UI to use and how it should be designed is to build out a crude version and give it to users for testing.
+
