@@ -38,6 +38,9 @@ Prefer taking advantage of web conventions. Eg. the brand name and icon should u
 ### Visual Noise
 Ruthlessly strip or de-emphasise the unimportant UI elements and text. 
 
+**Krug's Third Law of Usability**:
+> Get rid of half the words on each page, then get rid of half of what's left.
+
 ### Format Text
 - Generously use informative heading text (h1, h2, h3, ...). This allows scanning for the part of the web page most interesting to the user.
 - Keep paragraphs very short.
