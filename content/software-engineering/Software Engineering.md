@@ -8,6 +8,7 @@ description: Software engineering wiki.
 ### Programming Languges
 - [[software-engineering/programming-languages/TypeScript|TypeScript]]
 - [[software-engineering/programming-languages/Go|Go]]
+- [[software-engineering/programming-languages/Rust|Rust]]
 
 ### Technologies
 - [[software-engineering/technologies/Cypress|Cypress]]
