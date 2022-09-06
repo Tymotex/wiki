@@ -28,6 +28,13 @@ Always make clickable things *obviously clickable*.
 People execute a very surface-level auto-pilot search algorithm for what they need from your website. Unless their purpose is to actually read your web content (like reading the words of a blog post), they will only notice the most visually obvious parts of the page that signal some useful purpose to them, almost always clicking the first they encounter.
 ![[books/assets/user-scanning-webpages.png|400]]
 
+People usually perform a depth-first search through your site, not a breadth-first search!
+> "... several studies have shown that the back button is second only to clicking on links as the most used feature on the web." ([source](https://blog.httpwatch.com/2007/10/03/60-of-web-users-cant-be-wrong-dont-break-the-back-button))
+
+Alternatively, people may immediately look for a search box and enter a query there.
+
+People will always prefer to 'muddle through' any product in general, and only resort to reading instructions as a last resort.
+
 ### Web Conventions
 Prefer taking advantage of web conventions. Eg. the brand name and icon should usually exist on the top left of a navbar.
 > Innovate when you *know* you have a better idea, but take advantage of conventions when you don't.
@@ -45,3 +52,17 @@ Ruthlessly strip or de-emphasise the unimportant UI elements and text.
 - Generously use informative heading text (h1, h2, h3, ...). This allows scanning for the part of the web page most interesting to the user.
 - Keep paragraphs very short.
 - Generously use bulleted lists.
+
+## Navigation
+Navigation serves two critical purposes: 
+1. It tells you where you currently are.
+2. It tells you what's here.
+
+The web convention for navigation is to have something that looks like this at the top of every content page and to highlight on the navigator which page you're currently on:
+![[books/assets/standard-site-header.png|500]]
+- Always have a logo and/or distinguished typeface for the site ID. It should always take you home.
+- Always keep the utility buttons minimal. Only show the most frequently used. The rest should be stowed away in the footer or in a different menu.
+
+*All pages must have a name*, just as all streets have names and all intersections have street signs.
+![[books/assets/page-name-examples.png|600]]
+
