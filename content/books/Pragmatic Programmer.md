@@ -86,5 +86,43 @@ When fixing bugs, *always start by reproducing it*. Write a test that executes t
 - **Rubber ducking**:
 	Explain the bug to someone else. It's effective because it forces you to explicitly state your assumptions and consequently begin to question them, which often leads to the bug source. A rubber duck is traditionally used. 
 
+### Assertions
+
+
+### Design by Contract
+
+
+### Finite State Machines
+
+### Observer Pattern
+
+### Publish/Subscribe
+Publish/subscribe (pubsub) is a generalisation of the observer pattern.
+
+### Transforming
+It's helpful to think of programming problems as data transformation problems. Consider what pipeline of transforms is necessary to get from the input to the expected output.
+
+Some languages let you use a pipeline operator like `|>` to write something like
+`"hello world" |> capitaliseTitle() |> print()`, which is equivalent to `print(capitaliseTitle("hello world"))`. The outcome is the same, but the pipelining approach is often a very different way of thinking that suits a lot of programming problems and leads to flatter and cleaner code.
+
+The programming language doesn't need to support a pipelined operator for you to think and express code in this manner.
+
+### Inheritance Tax
+Inheritance couples a child to its parent and all its ancestors. Even worse, any object calling methods on the child is *also* coupled to its parent and all its ancestors. There's also the multiple inheritance problem... and the lack of support for it in languages like Java and the confusing semantics of it in C++.
+
+Another problem is that when you inherit from a class, you are probably unnecessarily inheriting a bloated set of methods and properties. This does have some performance impacts, causing the object to take longer to initialise and more memory to store ([source](https://stackoverflow.com/questions/54362591/does-inheritance-can-affect-performances-of-an-application)).
+
+In general, always prefer these 3 alternatives instead of inheritance.
+1. Interfaces.
+2. Delegation.
+3. Mixins and traits.
+
+### Managing Configuration
+If your app needs some configuration values (like IP addresses, credentials, etc.) that might change after deployment to production, you should keep them behind an external service that serves them.
+
+It should not be the case that you have to restart your application for changes to configuration to take effect, especially if your app must be highly available.
+
+Consider *Configuration as a Service*.
+
 ## Refactoring
 
