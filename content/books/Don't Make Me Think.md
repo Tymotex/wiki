@@ -98,8 +98,10 @@ Usability tests involve getting users individually to try out the website/app/pr
 
 > Every web development team should spend **one morning a month** doing usability testing.
 
-For each of those usability testing sessions, just get 3 people to use your website. Give them tasks to do, observe, then take notes. The goal is to get actionable insights, not conduct a scientific experiment that would require a large sample size.
+For each of those usability testing sessions, just get 3 people to use your website. Give them a list of tasks to do using your website, observe them, then take notes. The goal is to get actionable insights, not conduct a scientific experiment that would require a large sample size.
 - Those 3 people need not be from your target audience. They will still run into usability problems.
+- [There are strategies for finding users](https://www.nngroup.com/reports/how-to-recruit-participants-usability-studies/). The simple way is to ask your friends and acquaintances, or post an ad somewhere. Offer a decent stipend.
+    - You can use unmoderated remote testing like [UserTesting](https://www.usertesting.com/).
 
 ### Design Disputes
 Everyone has their own concept of what UI is pleasant to use and what UI is not. 
