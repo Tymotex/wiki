@@ -114,3 +114,17 @@ The only antidote to resolving design disputes about what UI to use and how it s
 An *affordance* is a set of visual cues in an element that imply the usage of that element.
 ![[books/assets/affordance.png|500]]
 
+## Goodwill
+In addition to designing sites that don't make you think, you should strive to make design decisions that are 'kind' to your user.
+
+Some examples not-so-kind practices:
+- Making you sign up *after* doing something time-consuming. Eg. if you've used some online video editor, you might have been prompted to make an account after you've made your *edits*. Sometimes they may even charge you to download your edited video.
+- Forcing you to supply personal details when signing up.
+- Incessant popups.
+
+Some examples of kind practices:
+- Show all important information upfront, like fees, rather than hiding them away further along some process and exploiting the user's feeling of sunk cost.
+- Providing *real* FAQs.
+- Preventing common errors. My personal favourite is Gmail's warning popup that you might have forgotten to make an attachment.
+    ![[books/assets/gmail-attachment-warning.png|450]]
+- 
