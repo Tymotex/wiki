@@ -12,12 +12,13 @@ I've personally found this to be very true. Thinking about how to arrange user i
 Usability is defined to be a function of the following parameters:
 - Useful — does it fulfil an important requirement?
 - Learnable — do you have to think to know how to use it?
+- Delightful
 - Desirable — is it pleasing?
 
 In English, usability is whether:
 > A person of average ability and experience can figure out how to use the thing to accomplish something without it being more trouble than it's worth.
 
-## Law #1 — Don't Make Me Think
+## Don't Make Me Think
 Design decisions exist on a spectrum from *obvious* to *requiring thought*. Always prefer designs on the *obvious* side (a useful rule when disputing design conflicts with someone else).
 ![[books/assets/obvious-spectrum.png]]
 Always make clickable things *obviously clickable*.
@@ -108,4 +109,8 @@ Everyone has their own concept of what UI is pleasant to use and what UI is not.
 > "All web users are unique. And all web use is basically idiosyncratic."
 
 The only antidote to resolving design disputes about what UI to use and how it should be designed is to build out a crude version and give it to users for testing.
+
+## Affordances
+An *affordance* is a set of visual cues in an element that imply the usage of that element.
+![[books/assets/affordance.png|500]]
 
