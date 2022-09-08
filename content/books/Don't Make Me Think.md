@@ -121,10 +121,12 @@ Some examples not-so-kind practices:
 - Making you sign up *after* doing something time-consuming. Eg. if you've used some online video editor, you might have been prompted to make an account after you've made your *edits*. Sometimes they may even charge you to download your edited video.
 - Forcing you to supply personal details when signing up.
 - Incessant popups.
+- Hiding, de-emphasising or prefilling a button or input that they don't want you to click/change. Eg. automatically checking the 'subscribe me to all marketing emails' button.
 
 Some examples of kind practices:
 - Show all important information upfront, like fees, rather than hiding them away further along some process and exploiting the user's feeling of sunk cost.
 - Providing *real* FAQs.
 - Preventing common errors. My personal favourite is Gmail's warning popup that you might have forgotten to make an attachment.
     ![[books/assets/gmail-attachment-warning.png|450]]
-- 
+
+
