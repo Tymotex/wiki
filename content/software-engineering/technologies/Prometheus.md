@@ -13,8 +13,6 @@ description: Prometheus
 
 It's a popular choice for monitoring [[software-engineering/technologies/Kubernetes|Kubernetes]] clusters, Linux servers, 
 
-Prometheus pulls data from services
-
 Use cases:
 - Traffic.
 - Errors.
@@ -25,6 +23,8 @@ Popular programming languages have a Prometheus client library that lets you tra
 
 
 ## Architecture
+
+Prometheus uses an HTTP pull model where a Prometheus server sends an HTTP request to a dedicated endpoint exposed by target services to pull metrics from them.
 
 Prometheus has its own custom database for storing real-time metrics.
 
