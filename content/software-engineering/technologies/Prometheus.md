@@ -24,6 +24,12 @@ Popular programming languages have a Prometheus client library that lets you tra
 
 ## Architecture
 
+### Exporters
+An **exporter** is what lets you map metrics collected from a system into Prometheus data. It also starts a web server exposing the path `/metrics` that can be scraped.
+
+There are 100+ exporters ([official docs](https://prometheus.io/docs/instrumenting/exporters/)).
+
+
 Prometheus uses an HTTP pull model where a Prometheus server sends an HTTP request to a dedicated endpoint exposed by target services to pull metrics from them.
 
 Prometheus has its own custom database for storing real-time metrics.
