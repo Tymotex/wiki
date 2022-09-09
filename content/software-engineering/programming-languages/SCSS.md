@@ -6,6 +6,9 @@ description: SCSS
 *SCSS* (Sassy CSS) is a superset of [[software-engineering/programming-languages/CSS|CSS]] with more quality of life language features such as:
 - Variables.
 - Nested rules.
+- Mixins.
+- Modules.
+- Partials.
 
 SCSS is transpiled into CSS that the browser can interpret by a preprocessor.
 
