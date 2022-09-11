@@ -48,8 +48,10 @@ Do your absolute best to not leave bad designs and poor code unfixed. Have patie
 
 > Just tell yourself, "No broken windows."
 
+When you find a problem. Fix it right now.
+
 ### ETC
-Good designs are *easier to change* (*ETC*) than bad design. Generally, prefer to adopt an approach that is easier to change.
+Good designs are *easier to change* (*ETC*) than bad design. Generally, prefer to adopt an approach that is easier to change. As a general (and oversimplified but still useful) rule, the quality of a design is measured by the ease with which you can make changes to that design.
 
 This implies that you should always prefer decoupled and cohesive modules over tight coupling.
 
@@ -68,6 +70,11 @@ Two parts of a software system are said to be *orthogonal* if changes in one do 
 For example, the user interface should usually be orthogonal to the database schemas.
 
 The primary purpose of [[books/Pragmatic Programmer#Refactoring|refactoring]] is to improve orthogonality between parts of the software and improve readability.
+
+### Tracer Bullets
+
+![[tracer-bullet-development.png|550]]
+([source](https://www.freecodecamp.org/news/lessons-learned-from-the-pragmatic-programmer-and-the-clean-coder/))
 
 ### Prototyping
 Prototyping is a standard way to try out the feasibility of an idea and prove a concept without significant investment in time and resources. What you produce is meant to be discarded.
@@ -129,4 +136,76 @@ It should not be the case that you have to restart your application for changes 
 Consider *Configuration as a Service*.
 
 ## Refactoring
+Refactoring is the 
+> "disciplined technique for restructuring an existing body of code, altering its internal structure without changing its external behaviour." — Martin Fowler.
 
+> Time pressure is often used as an excuse for not refactoring. But this excuse just doesn't hold up: *fail to refactor now, and there'll be a far greater time investment to fix the problem down the road*, when there are more dependencies to reckon with.
+
+> Manage the pain: if it hurts now, it's going to hurt more later... Don't live with broken windows.
+
+Always have a test suite to provide insurance that your refactoring efforts don't break the original design's correctness. In other words, have confidence you don't cause regression bugs.
+
+## Testing
+An underrated reason to write tests is because it forces you be a client of your code rather than a consumer.
+> A test is the first user of your code.
+
+When you're a client of the code, you're **forced to understand the specifications for the code you intend to write** rather than 'working it out as you go along'. It's a common mistake to start coding a function without a clear understanding of its inputs and outputs, and what the [happy path](https://en.wikipedia.org/wiki/Happy_path) is and what the error cases are.
+
+> Making your stuff testable also reduces its coupling.
+
+A fortunate consequence of writing unit tests is that it helps you decouple the thing you're testing from the rest of the system. For example, if you're testing a function that needs to talk with the database, then you would need to pass in a mock database interface from the unit test. This helps with decoupling that function because it might otherwise directly consume a global database handle.
+```c++
+void do_something() {
+	global_db.get_thing();
+}
+
+void do_something(Database db) {
+	db.get_thing();
+}
+```
+
+> All software you write *will* be tested—if not by you and your team, then by the eventual users—so you might as well plan on testing it thoroughly.
+
+> You really only have a few choices:
+	- Test first (TDD)
+	- Test during
+	- Test never (which is what people mean when they say "test later")
+
+Testing *is* programming. It's not something to be thrown over the wall to dedicated 'testers'.
+
+### TDD
+Being a TDD zealot and blindly following its steps rigorously all the time might seem like good practice, however it can lead you to endlessly polish the easy problems and build out features from the bottom-up rather than focusing on the end-to-end. Always remember the bigger picture of what you need to get done in the long term.
+
+### Ad-Hoc Testing
+Ad-hod testing is when you test the system in an improvisational way (by essentially just stumbling around observing for errors). It's a good way for generating more unit tests that you didn't think of.
+
+### Property-Based Testing
+TODO.
+
+Property-based testing is about verifying invariants. It's complementary to your regular suite of unit tests.
+
+## Security
+1. Minimise attack surface area.
+	- Never trust user inputted data. Always sanitise it before usage and storage.
+	- Less code is easier to secure. Prefer less code.
+2. Principle of Least Privilege. If a task requires a certain authorisation level, then grant the minimum set of permissions possible and revoke it as soon as possible.
+1. Set secure default values. Let the user decide how they trade off convenience for security.
+2. Encrypt sensitive data. Never store personally identifiable information in plaintext. In the event of a breach, the encrypted values are useless to the attacker.
+3. Maintain security updates. When you need a security update, your system is vulnerable to a *known* exploit.
+
+## Naming
+Think *"what is my motivation for creating this?"*
+```java
+public void deductPercent(double amount);
+
+// ... what is my motivation for creating this? Oh, it's to apply a discount.
+
+public void applyDiscount(Percentage amount);
+```
+
+## Agile
+The *Pragmatic Programmer* authors, Andy and Dave, were part of the group of software developers who got together to write the [Agile manifesto](https://agilemanifesto.org/) (another member of that group was Robert C. Martin, the author of *Clean Code*).  
+
+> "Agile is not a noun"
+
+Agile mandates nothing about what processes you follow. It's literally just a set of guiding values.
