@@ -5,7 +5,7 @@ description: Software engineering wiki.
 
 *Software engineering* is the set of theory and practices around making computers do what you want it to do. Below is a list of notes written in my exploration of software technologies and concepts.
 
-### Programming Languges
+### Programming Languages
 - [[software-engineering/programming-languages/TypeScript|TypeScript]]
 - [[software-engineering/programming-languages/Go|Go]]
 - [[software-engineering/programming-languages/Rust|Rust]]
@@ -21,6 +21,7 @@ description: Software engineering wiki.
 - [[software-engineering/technologies/PostgreSQL|PostgreSQL]]
 - [[software-engineering/technologies/Flutter|Flutter]]
 - [[software-engineering/technologies/Firebase|Firebase]]
+- [[software-engineering/technologies/Figma|Figma]]
 
 ### Software Engineering
 - [[software-engineering/software-engineering/Requirements Engineering|Requirements]]
