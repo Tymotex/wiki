@@ -22,7 +22,9 @@ This is related to the [Halo effect](https://en.wikipedia.org/wiki/Halo_effect).
 ## Gestalt Principles
 [Gestalt theory](https://en.wikipedia.org/wiki/Gestalt_psychology) asserts that the human brain always seeks to group components and identify structures and patterns. Some useful practical principles from Gestalt theory:
 - *Similarity*. Group similar things together and the user will perceive them as similar without thought.
-- *Proximity*. Similar things are put closer together.
+- *Proximity*. Similar things are put closer together. Your UI should arrange things similar in purpose in close proximity and keep them far from things different in purpose.
+![[software-engineering/concepts/full-stack-dev/assets/gestalt-proximity-similarity.png|250]]
+(*[source](https://jackwestin.com/resources/mcat-content/perception/gestalt-principles)*)
 
 ## Spacing
 **Negative spacing** is a useful weapon against visual noise. It helps the read scan for what they need. Consider using:
