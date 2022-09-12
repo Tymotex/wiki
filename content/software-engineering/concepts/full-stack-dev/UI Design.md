@@ -5,7 +5,19 @@ description: UI Design
 
 See https://tymz.notion.site/UI-UX-7fb9a728bfc946fcbe92ff640b371a2d.
 
-**Always prototype designs before you code**. Never design from your code. Use a tool like Figma, Photoshop, Illustrator, or just pen and paper.
+---
+## Note for Developers
+Design is not fundamentally about making things pretty. The prettiness of a thing you design is often a side effect of making it usable, accessible, learnable and delightful to use. This makes design problems *engineering problems*.
+> "Most people make the mistake of thinking design is what it looks like, people think it's this veneer — that the designers are handed this box and told, 'Make it look good!' That's not what we think design is. It's not just what it looks like and feels like. **Design is how it works**." — *Steve Jobs*.
+
+**Always prototype designs before you code**. Never design from your code. Use a tool like [[software-engineering/technologies/Figma|Figma]], Photoshop, Illustrator, or just pen and paper.
+
+## Aesthetic-Usability Effect
+The *aesthetic-usability effect* is a phenomenon where humans perceive more aesthetic designs as more intuitive/easier to use than those considered to be less aesthetically pleasing (even if it is *not* easier to use).
+
+This is a well-studied phenomenon, not just a claim about human behaviour. If you focus on designing a product focusing heavily on usability, it will inevitably be seen as aesthetic. Conversely, if you polish your visuals, it will be seen as more usable and users will be more tolerant of poor usability.
+
+This is related to the [Halo effect](https://en.wikipedia.org/wiki/Halo_effect).
 
 ## Spacing
 **Negative spacing** is a useful weapon against visual noise. It helps the read scan for what they need. Consider using:
