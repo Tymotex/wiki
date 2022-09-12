@@ -19,6 +19,11 @@ This is a well-studied phenomenon, not just a claim about human behaviour. If yo
 
 This is related to the [Halo effect](https://en.wikipedia.org/wiki/Halo_effect).
 
+## Gestalt Principles
+[Gestalt theory](https://en.wikipedia.org/wiki/Gestalt_psychology) asserts that the human brain always seeks to group components and identify structures and patterns. Some useful practical principles from Gestalt theory:
+- *Similarity*. Group similar things together and the user will perceive them as similar without thought.
+- *Proximity*. Similar things are put closer together.
+
 ## Spacing
 **Negative spacing** is a useful weapon against visual noise. It helps the read scan for what they need. Consider using:
 - Larger padding and margin.
@@ -30,3 +35,9 @@ This is related to the [Halo effect](https://en.wikipedia.org/wiki/Halo_effect).
 **Font pairing** is a common practice where you pick two (or more) fonts that contrast with each other. For some reason, this looks better:
 ![[software-engineering/concepts/full-stack-dev/assets/font-pairing.png|500]]
 Use generators online or [handpicked font pairings](https://www.fontpair.co/) rather than sticking to one font.
+
+## Colour
+Figma recommends to use black, white, one primary colour, one secondary and tones of each. Note that:
+- Tint — the addition of white to a colour.
+- Shade — the addition of black to a colour.
+- Tone — the addition of grey to a colour (ie. tinting and shading).

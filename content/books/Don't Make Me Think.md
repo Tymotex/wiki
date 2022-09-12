@@ -40,7 +40,12 @@ People will always prefer to 'muddle through' any product in general, and only r
 Prefer taking advantage of web conventions. Eg. the brand name and icon should usually exist on the top left of a navbar.
 > Innovate when you *know* you have a better idea, but take advantage of conventions when you don't.
 
+Facebook, for example, popularised the usage of the hamburger icon. Leverage this convention to tuck away seldom used features behind the menu.
+![[books/assets/hamburger-menu-icon.png|100]]
+
 ### Visual Hierarchy
+*Visual hierarchy* is the arrangement and styling of elements on a webpage according to their importance. You use this to control the order of elements in which the user's eyes scan through on the webpage.
+
 > A good visual hierarchy saves us work by preprocessing the page for us, organising and prioritising its contents in a way that we can grasp almost instantly.
 
 ### Visual Noise
