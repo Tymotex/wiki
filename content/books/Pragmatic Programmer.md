@@ -60,12 +60,16 @@ This implies that you should always prefer decoupled and cohesive modules over t
 
 > Some instances of code duplication are not violations of DRY. If tweaking one thing does not mean tweaking another, then those things are separate pieces of *knowledge*, generally.
 
+For example, two different CSS rules have `float: left;` doesn't necessarily count as a violation of DRY.
+
+Blindly striving towards DRY can lead to forced abstractions and over-engineered code that's harder to maintain.
+
 ### Orthogonality
 Two parts of a software system are said to be *orthogonal* if changes in one do not affect the other. Always strive to make unrelated parts of a system orthogonal. Ie. decouple and isolate things as much as you can.
 
 For example, the user interface should usually be orthogonal to the database schemas.
 
-The primary purpose of [[Pragmatic Programmer#Refactoring|refactoring]] is to improve orthogonality between parts of the software and improve readability.
+The primary purpose of [[books/Pragmatic Programmer#Refactoring|refactoring]] is to improve orthogonality between parts of the software and improve readability.
 
 ### Tracer Bullets
 

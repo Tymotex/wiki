@@ -18,7 +18,3 @@ Welcome to my personal developer wiki. Learning is incredibly chaotic — this i
 
 ### Engineering
 - [[software-engineering/Software Engineering|Software Engineering]]
-
-### Economics & Finance
-- [[economics/Macroeconomics|Macroeconomics]]
-- [[finance/Finance|Finance]]

@@ -25,4 +25,6 @@ Given that I'm not living independently, I can allocate:
 - The remainder goes into **investment**. I designed this plan with the aim to maximise the amount I put here.
 
 **Financial Goals**:
-My aim is simply to invest aggressively in my early-mid 20s to build up money. I don't have a particular target amount I want to reach or a certain date to achieve it by. I am currently thinking of cutting down on risk investments to save for a home deposit in my late 20s or early 30s.
+My aim is simply to invest aggressively in my early-mid 20s to build up money. I don't have a particular target amount I want to reach or a certain date to achieve it by. I am currently thinking of cutting down on risky investments to save for a home deposit in my late 20s or early 30s.
+
+TODO: I need to consider *how much is enough*. I should have a target date for achieving an amount of money I deem sufficient for financial independence (see the 4% rule).
