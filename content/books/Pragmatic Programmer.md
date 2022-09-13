@@ -73,7 +73,7 @@ The primary purpose of [[books/Pragmatic Programmer#Refactoring|refactoring]] is
 
 ### Tracer Bullets
 
-![[tracer-bullet-development.png|550]]
+![[books/assets/tracer-bullet-development.png|550]]
 ([source](https://www.freecodecamp.org/news/lessons-learned-from-the-pragmatic-programmer-and-the-clean-coder/))
 
 ### Prototyping
