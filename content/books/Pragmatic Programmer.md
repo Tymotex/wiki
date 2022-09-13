@@ -85,6 +85,8 @@ Things that are great candidates for prototyping are:
 - UI. Draw it on Figma or sketch something very low fideltiy on paper.
 - Algorithms. Write it out in quick-to-write scripting language.
 
+When considering the adoption of new technologies or frameworks, a prototype is an excellent way to test their feasibility before committing to them.
+
 ### Debugging
 > Embrace the fact that debugging is **problem solving**, and attack it as such.
 
@@ -173,6 +175,10 @@ void do_something(Database db) {
 
 Testing *is* programming. It's not something to be thrown over the wall to dedicated 'testers'.
 
+It is not surprising for well managed projects to have more testing code than production code. 
+
+**Caveat about coverage**: high coverage is correlated with robust software, however achieving high coverage should not give you confidence in your software's correctness. A *true* measure of coverage is not the percentage of lines you hit, it's the percentage of all possible program states you hit (which is mostly impossible to cover in practice).
+
 ### TDD
 Being a TDD zealot and blindly following its steps rigorously all the time might seem like good practice, however it can lead you to endlessly polish the easy problems and build out features from the bottom-up rather than focusing on the end-to-end. Always remember the bigger picture of what you need to get done in the long term.
 
@@ -209,3 +215,28 @@ The *Pragmatic Programmer* authors, Andy and Dave, were part of the group of sof
 > "Agile is not a noun"
 
 Agile mandates nothing about what processes you follow. It's literally just a set of guiding values.
+
+Don't blindly follow Scrum/Lean/XP, etc. Take what you find works best for your team from each methodology and adapt them to complement your idiosyncrasies.
+
+## Requirements
+Clients never actually know what they want.
+> Our job is to help people understand what they want.
+
+> Requirements are learned in a feedback loop.
+
+Giant requirements documents aren't really necessary or practical. Instead, you should write *user stories*, which are terse specifications that capture business value. When specified in user stories, you can track the progress of a project by moving cards across columns, which seems to work well in practice.
+
+## Puzzles
+Just take a break from the problem and you'll find that you'll come up with new insights over the break.
+> "To put it plainly, people who were distracted did better on a complex problem-solving task than people who put in conscious effort." — *Psychology Today* ([source](https://www.psychologytoday.com/au/blog/your-brain-work/201209/stop-trying-solve-problems))
+
+## Collaboration
+Conway's Law states that:
+> Organisations which design systems are constrained to produce designs which are copies of the communication structures of these organisations.
+
+## Automation
+Never rely on manual procedures. Eg. people should never have to:
+- Run more than 1 command to create a build.
+- Run more than a few commands to set up the project for development.
+- Run more than 1 command (or 1 click) to run tests.
+- Deploy to production manually.
