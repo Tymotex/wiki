@@ -69,11 +69,11 @@ Two parts of a software system are said to be *orthogonal* if changes in one do 
 
 For example, the user interface should usually be orthogonal to the database schemas.
 
-The primary purpose of [[books/Pragmatic Programmer#Refactoring|refactoring]] is to improve orthogonality between parts of the software and improve readability.
+The primary purpose of [[Reading/Pragmatic Programmer#Refactoring|refactoring]] is to improve orthogonality between parts of the software and improve readability.
 
 ### Tracer Bullets
 
-![[books/assets/tracer-bullet-development.png|550]]
+![[Reading/assets/tracer-bullet-development.png|550]]
 ([source](https://www.freecodecamp.org/news/lessons-learned-from-the-pragmatic-programmer-and-the-clean-coder/))
 
 ### Prototyping

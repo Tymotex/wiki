@@ -20,14 +20,14 @@ In English, usability is whether:
 
 ## Don't Make Me Think
 Design decisions exist on a spectrum from *obvious* to *requiring thought*. Always prefer designs on the *obvious* side (a useful rule when disputing design conflicts with someone else).
-![[books/assets/obvious-spectrum.png]]
+![[Reading/assets/obvious-spectrum.png]]
 Always make clickable things *obviously clickable*.
 
 ## Web Users Are Brain-Dead By Default
 > Design for **scanning**, not for reading.
 
 People execute a very surface-level auto-pilot search algorithm for what they need from your website. Unless their purpose is to actually read your web content (like reading the words of a blog post), they will only notice the most visually obvious parts of the page that signal some useful purpose to them, almost always clicking the first they encounter.
-![[books/assets/user-scanning-webpages.png|400]]
+![[Reading/assets/user-scanning-webpages.png|400]]
 
 People usually perform a depth-first search through your site, not a breadth-first search!
 > "... several studies have shown that the back button is second only to clicking on links as the most used feature on the web." ([source](https://blog.httpwatch.com/2007/10/03/60-of-web-users-cant-be-wrong-dont-break-the-back-button))
@@ -41,7 +41,7 @@ Prefer taking advantage of web conventions. Eg. the brand name and icon should u
 > Innovate when you *know* you have a better idea, but take advantage of conventions when you don't.
 
 Facebook, for example, popularised the usage of the hamburger icon. Leverage this convention to tuck away seldom used features behind the menu.
-![[books/assets/hamburger-menu-icon.png|100]]
+![[Reading/assets/hamburger-menu-icon.png|100]]
 
 ### Visual Hierarchy
 *Visual hierarchy* is the arrangement and styling of elements on a webpage according to their importance. You use this to control the order of elements in which the user's eyes scan through on the webpage.
@@ -66,13 +66,13 @@ Navigation serves two critical purposes:
 
 ### Primary Navigation
 The web convention for navigation is to have something that looks like this at the top of every content page and to highlight on the navigator which page you're currently on:
-![[books/assets/standard-site-header.png|500]]
+![[Reading/assets/standard-site-header.png|500]]
 - Always have a logo and/or distinguished typeface for the site ID. It should always take you home.
 - Always keep the utility buttons minimal. Only show the most frequently used. The rest should be stowed away in the footer or in a different menu.
 
 ### All Pages Must Have Names
 *All pages must have a name*, just as all streets have names and all intersections have street signs. It must be present on the document and given emphasis, and not just only present in the tab's name or highlighted in the navigation UI.
-![[books/assets/page-name-examples.png|600]]
+![[Reading/assets/page-name-examples.png|600]]
 
 ### Breadcrumbs
 Breadcrumbs are concise navigators that don't contribute much visual noise to a page. Here are some best practices:
@@ -117,7 +117,7 @@ The only antidote to resolving design disputes about what UI to use and how it s
 
 ## Affordances
 An *affordance* is a set of visual cues in an element that imply the usage of that element.
-![[books/assets/affordance.png|500]]
+![[Reading/assets/affordance.png|500]]
 
 ## Goodwill
 In addition to designing sites that don't make you think, you should strive to make design decisions that are 'kind' to your user.
@@ -132,6 +132,6 @@ Some examples of kind practices:
 - Show all important information upfront, like fees, rather than hiding them away further along some process and exploiting the user's feeling of sunk cost.
 - Providing *real* FAQs.
 - Preventing common errors. My personal favourite is Gmail's warning popup that you might have forgotten to make an attachment.
-    ![[books/assets/gmail-attachment-warning.png|450]]
+    ![[Reading/assets/gmail-attachment-warning.png|450]]
 
 

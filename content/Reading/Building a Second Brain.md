@@ -49,10 +49,10 @@ A way to counteract writer's block is to start from a point of abundance rather 
 > Professional creatives constantly draw on outside sources of inspiration - their own experiences and observations, lessons gleaned from successes and failures alike, and the ideas of others.
 
 ### Divergent and Convergent Thinking 
-![Divergent vs. convergent thinking|250](books/assets/divergent-convergent-thinking.png)
+![Divergent vs. convergent thinking|250](Reading/assets/divergent-convergent-thinking.png)
 ([source](https://www.wrike.com/blog/convergent-thinking-vs-divergent-thinking/))
 
-When undertaking creative problem-solving, you'll go through cycles of divergence (the research and chaotic generation of a lot of ideas) and convergence (the pruning/distillation/selection of the choices to create the final product). The *capture* and *organise* part of [[books/Building a Second Brain#CODE|CODE]] is divergence, while *distillation* and *express* is convergence.
+When undertaking creative problem-solving, you'll go through cycles of divergence (the research and chaotic generation of a lot of ideas) and convergence (the pruning/distillation/selection of the choices to create the final product). The *capture* and *organise* part of [[Reading/Building a Second Brain#CODE|CODE]] is divergence, while *distillation* and *express* is convergence.
 
 As a software engineer, this really aligns with the value of *prototyping*. You have a problem to solve but you often find value in tinkering with a very open mind to produce a barebones mock of the solution. When it comes time to converge, you enter a hyperfocused state of deep work, ruthlessly ignoring further ideas and distractions to get the project implemented and shipped.
 

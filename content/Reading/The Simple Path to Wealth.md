@@ -1,6 +1,6 @@
 ---
-title: Simple Path to Wealth
-description: Simple Path to Wealth
+title: The Simple Path to Wealth
+description: The Simple Path to Wealth
 ---
 
 

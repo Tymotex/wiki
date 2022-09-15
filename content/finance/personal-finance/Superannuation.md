@@ -30,4 +30,4 @@ As advised by [moneysmart](https://moneysmart.gov.au/how-super-works/choosing-a-
 Just use the government's [YourSuper comparison tool](https://www.ato.gov.au/YourSuper-Comparison-Tool/) to pick out a super. Alternatively, you can use non-government comparison tools like [Canstar](https://www.canstar.com.au/superannuation/), but remember that they're a business and may run promotions for certain institutions.
 
 ### Salary Sacrifice
-An Australia-specific term for an arrangement between you and your employer where you trade a portion of your salary for some benefit from the employer, provided at no greater cost to them. Eg. [[books/Barefoot Investor|Barefoot Investor]] recommends arranging a salary sacrifice to increase the employer’s super contributions to 15%.
+An Australia-specific term for an arrangement between you and your employer where you trade a portion of your salary for some benefit from the employer, provided at no greater cost to them. Eg. [[Reading/Barefoot Investor|Barefoot Investor]] recommends arranging a salary sacrifice to increase the employer’s super contributions to 15%.
