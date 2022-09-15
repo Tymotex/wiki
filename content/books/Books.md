@@ -21,3 +21,8 @@ Never Split the Difference by Chris Voss.
 
 Deep Work by Cal Newport.
 
+Ikigai by Francesc Miralles and Hector Garcia.
+
+Man's Search For Meaning by Viktor E. Frankl.
+
+

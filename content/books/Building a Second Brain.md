@@ -3,23 +3,29 @@ title: Building a Second Brain
 ---
 
 ## Summary
+Your 'second brain' is a lifelong system serving as a knowledge repository, a place to manage the projects that are important in your life, and a place to steward your personal growth.
+
 💎 Note-taking is an investment into an asset that serves your future self. The distillation of an idea is what makes an insight useful to your future self.
+
+*Finished first reading on 15th September, 2022*.
 
 ## Reflection
 Organising is easily the most difficult part of personal knowledge management for me. I find that I simply never return to notes after writing them, so unfortunately I'm never capitalising on my hard work. I've always organised things hierarchically and have endlessly wrestled with the question of where to put this new thought I had or this inspiring tidbit I read from an article or blog post.
 
 ---
-
+## Information Overload and Mismanagement
 > We consume more books, podcasts, articles, and videos than we could possibly absorb. What do we really have to show for all the knowledge we've gained? How many of the great ideas we've had or encountered have faded from our minds before we even had a chance to put them into practice?
 
-> A report from he International Data Corporation found that **26 percent** of a typical knowledge worker's day is spent looking for and consolidating information spread across a variety of systems.
+Even after more than 3 years studying computer science rigorously, I have little to show for it. I've taken notes, but I rarely ever view them more than once. I never captured and organised my notes in a way that sought to serve my future self. Similarly, I've consumed a number of self-help books, hundreds of hours of podcasts and insightful YouTube videos. If put on the spot, I would not be able to explain for more than a few minutes all the value I've derived from this information.
 
-> Think of [your second brain] as the combination of a study notebook, a personal journal, and a sketchbook for new ideas.
+> A report from the International Data Corporation found that **26 percent** of a typical knowledge worker's day is spent looking for and consolidating information spread across a variety of systems.
 
-Your second brain is a lifelong repository of your knowledge and growth.
+I found this statistic to be believable based on my experiences in internships and personal life. Every time I sat down to work on a project, whether personal or for work, I had to load all the context of the project into my working memory first, much like how running a process on a computer requires the program's instructions and data to be loaded onto RAM before running. Consolidating information in one place in a system you can trust will help to reduce the time taken to load the instructions and data into your biological brain.
+
+The significant overhead of looking for information and transitioning into the focused state of mind required to execute on your best work is something discussed thoroughly in Cal Newport's book, 'Deep Work'. A second brain is one helpful strategy for reducing the friction associated with starting and resuming work on mid-term and long-term projects.
 
 ## Creativity
-
+One thing this book has taught me is that creativity is not some nebulous, innate quality of a person. Instead, it is a principled, disciplined, long-term process 
 > In its most practical form, creativity is about connecting ideas together, especially ideas that don't seem to be connected.
 
 > Innovation and impact don't happen by accident or chance. Creativity depends on a *creative process*.

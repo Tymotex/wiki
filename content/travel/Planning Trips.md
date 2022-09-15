@@ -20,7 +20,6 @@ There are 4 major airlines: Qantas, Virgin, Jetstar and Tigerair.
 - Safety standards are the same across all 4.
     - As of 2022, none of them have caused fatalities in recent years ([source](https://www.choice.com.au/travel/on-holidays/airlines/articles/australian-domestic-airlines-compared)).
     - Qantas owns Jetstar and Virgin owns Tigerair. The safety standards are apparently equivalent.
-    
 ## Accommodation
 
 ## Reducing Costs
