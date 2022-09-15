@@ -12,7 +12,15 @@
 
 
 ## Packing List
+**Unconditional items**:
+- Moisturiser.
 
+**Conditional items**:
+- Sunscreen.
+- Mosquito repellent.
 
 ## Attractions
+
+
+## Scuba Diving
 
