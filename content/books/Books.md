@@ -25,4 +25,5 @@ Ikigai by Francesc Miralles and Hector Garcia.
 
 Man's Search For Meaning by Viktor E. Frankl.
 
+[[books/Building a Second Brain|Building a Second Brain]] 
 
