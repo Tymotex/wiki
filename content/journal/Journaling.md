@@ -1,0 +1,1 @@
+> "Translating emotional events into words leads to profound social, psychological, and neural changes." ([source](https://www.researchgate.net/publication/285526611_Sharing_One's_Story_On_the_Benefits_of_Writing_or_Talking_About_Emotional_Experience))
