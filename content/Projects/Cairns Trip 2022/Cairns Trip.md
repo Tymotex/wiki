@@ -1,4 +1,6 @@
 
+See [[Projects/Cairns Trip 2022/Planning Trips|Planning Trips]].
+
 ## Research checklist
 - Airbnb vs. hotel
 - Optimising trip cost

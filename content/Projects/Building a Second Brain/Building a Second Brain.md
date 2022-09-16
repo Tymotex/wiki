@@ -12,4 +12,4 @@
 		- What did you learn?
 		- What did you do well?
 		- What could you have done better?
-
+- Want to go through each book in my reading list and at least write a few sentences for each, explaining the main takeaways.

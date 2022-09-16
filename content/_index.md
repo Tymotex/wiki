@@ -17,4 +17,4 @@ Welcome to my personal developer wiki. Learning is incredibly chaotic — this i
 ---
 
 ### Engineering
-- [[software-engineering/Software Engineering|Software Engineering]]
+- [[Knowledge/Engineering/Software Engineering|Software Engineering]]
