@@ -13,10 +13,10 @@ TODO: this article is really worth re-reading: https://jamesclear.com/reading-co
 ---
 ## Software Engineering
 ### Pragmatic Programmer
-[[Areas/Reading/Pragmatic Programmer|Pragmatic Programmer]] by Andy Hunt and Dave Thomas.
+[[Reading/Pragmatic Programmer|Pragmatic Programmer]] by Andy Hunt and Dave Thomas.
 
 ### Don't Make Me Think
-[[Areas/Reading/Don't Make Me Think|Don't Make Me Think]] by Steve Krug.
+[[Reading/Don't Make Me Think|Don't Make Me Think]] by Steve Krug.
 
 ### Refactoring UI
 
@@ -34,19 +34,19 @@ TODO: this article is really worth re-reading: https://jamesclear.com/reading-co
 ---
 ## Self-Help, Skills & Philosophy
 ### Building a Second Brain
-[[Areas/Reading/Building a Second Brain|Building a Second Brain]] by Tiago Forte. This book presents a set of low-level tactics that helped me streamline my management of knowledge, tasks and goals.
+[[Reading/Building a Second Brain|Building a Second Brain]] by Tiago Forte. This book presents a set of low-level tactics that helped me streamline my management of knowledge, tasks and goals.
 - You should make a digital personal knowledge management system that is production-focused where insights you capture and distil are readily discoverable and exploitable.
 - Attention and time are your most valuable assets. A second brain prepares you to focus and execute, knowing all your research is done and can be leveraged at a whim.
 - Start *producing* things in addition to consuming things.
 
 ### Millionaire Fastlane
-[[Areas/Reading/Millionaire Fastlane|Millionaire Fastlane]] by MJ DeMarco.
+[[Reading/Millionaire Fastlane|Millionaire Fastlane]] by MJ DeMarco.
 
 ### Never Split the Difference
-[[Areas/Reading/Never Split the Difference|Never Split the Difference]] by Chris Voss.
+[[Reading/Never Split the Difference|Never Split the Difference]] by Chris Voss.
 
 ### Deep Work
-[[Areas/Reading/Deep Work|Deep Work]] by Cal Newport.
+[[Reading/Deep Work|Deep Work]] by Cal Newport.
 
 ### Ikigai
 Ikigai by Francesc Miralles and Hector Garcia. 'Ikigai' means 'reason for being'.
@@ -55,19 +55,19 @@ Ikigai by Francesc Miralles and Hector Garcia. 'Ikigai' means 'reason for being'
 - Be a good friend and well integrated in your community.
 
 ### The Male Advantage
-[[Areas/Reading/The Male Advantage|The Male Advantage]] by Kris Sturmey.
+[[Reading/The Male Advantage|The Male Advantage]] by Kris Sturmey.
 
 ### A Simple Path to Wealth
-[[Areas/Reading/The Simple Path to Wealth|The Simple Path to Wealth]] by J. L. Collins.
+[[Reading/The Simple Path to Wealth|The Simple Path to Wealth]] by J. L. Collins.
 
 ### Barefoot Investor
-[[Areas/Reading/Barefoot Investor|Barefoot Investor]] by Scott Pape.
+[[Reading/Barefoot Investor|Barefoot Investor]] by Scott Pape.
 
 ### How to Not Die Alone
-[[Areas/Reading/How to Not Die Alone|How to Not Die Alone]] by Logan Ury.
+[[Reading/How to Not Die Alone|How to Not Die Alone]] by Logan Ury.
 
 ### The Defining Decade
-[[Areas/Reading/The Defining Decade|The Defining Decade]] by Meg Jay.
+[[Reading/The Defining Decade|The Defining Decade]] by Meg Jay.
 
 ### So Good They Can't Ignore You
 
@@ -88,7 +88,7 @@ Ikigai by Francesc Miralles and Hector Garcia. 'Ikigai' means 'reason for being'
 ---
 ## Biographies
 ### Man's Search For Meaning
-[[Areas/Reading/Man's Search For Meaning|Man's Search For Meaning]] by Viktor E. Frankl.
+[[Reading/Man's Search For Meaning|Man's Search For Meaning]] by Viktor E. Frankl.
 
 ---
 

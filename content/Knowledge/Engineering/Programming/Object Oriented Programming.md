@@ -13,7 +13,7 @@ TODO.
 TODO.
 
 ### Encapsulation
-Encapsulation is about *hiding the implementation details* of a class as much as possible. Doing so will tend to minimise [[Areas/Reading/Clean Code|coupling]].
+Encapsulation is about *hiding the implementation details* of a class as much as possible. Doing so will tend to minimise [[Reading/Clean Code|coupling]].
 
 **Access modifiers**
 Access modifiers are used to explicitly apply different levels of visibility to the members of a class. OO programming languages will usually give you the following 3 access modifiers.
