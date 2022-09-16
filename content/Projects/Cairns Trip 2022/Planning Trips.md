@@ -6,8 +6,8 @@ description: Planning Trips
 - Is there a best time to visit the destination?
 
 ## Packing List
-**Unconditional items**:
 - Moisturiser.
+- Sleeping eye mask.
 
 **Conditional items**:
 - Sunscreen.
