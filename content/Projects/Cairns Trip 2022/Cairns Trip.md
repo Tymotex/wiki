@@ -23,15 +23,14 @@ See [[Projects/Cairns Trip 2022/Planning Trips|Planning Trips]].
     - **Consider**: Aquarium + Skyrail + Kuranda visit at $500 https://www.cairnsaquarium.com.au/tours-activities/aquarium-skyrail-kuranda-rail/
 - Day 2 (Saturday) reef:
     - Great Barrier Reef Cruise (including snorkelling and diving) https://greatbarrierreeftourscairns.com.au/tours/great-barrier-reef-snorkelling-tour/
-    - Lady Musgrave: https://ladymusgraveexperience.com.au/bookings/
+    - $220 for snorkelling. https://www.tripadvisor.com.au/AttractionProductReview-g255069-d11465161-Passions_of_Paradise_Great_Barrier_Reef_Snorkel_and_Dive_Cruise_from_Cairns_by_Lux.html
+    - $215 for snorkelling and scuba. https://www.tripadvisor.com.au/AttractionProductReview-g255069-d11448699-Great_Barrier_Reef_Snorkeling_and_Diving_Cruise_from_Cairns-Cairns_Cairns_Region_Q.html
+    - ~$90 for full-day trip. https://www.tripadvisor.com.au/AttractionProductReview-g255069-d11452301-Fitzroy_Island_Day_Trip_from_Cairns-Cairns_Cairns_Region_Queensland.html
+    - $250 each, full-day. Departure from Port Douglas. https://www.wavelength.com.au/tours
 - Day 3 (Sunday) Kuranda
 - Day 4 (Monday) reef
 - Day 5 (Tuesday)
 - Day 6 (Wednesday) departure
-
-Reef walking
-
-Lady Musgrave
 
 ## Food
 
@@ -39,6 +38,7 @@ Lady Musgrave
 **Unconditional items**:
 - Moisturiser.
 - Sea sickness pills.
+- Reef shoes (at least for Fitzroy Island)
 
 **Conditional items**:
 - Sunscreen.
