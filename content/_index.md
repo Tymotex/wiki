@@ -20,11 +20,12 @@ Welcome to my personal developer wiki. Learning is incredibly chaotic — this i
 *Software engineering* is the set of theory and practices around making computers do what you want it to do. Below is a list of notes written in my exploration of software technologies and concepts.
 
 ## Programming Languages
+- [[Knowledge/Engineering/Languages/C++|C++]]
+    - [[Knowledge/Engineering/Languages/C++ Cheatsheet|C++ cheatsheet]]
 - [[Knowledge/Engineering/Languages/TypeScript|TypeScript]]
 - [[Knowledge/Engineering/Languages/Go|Go]]
 - [[Knowledge/Engineering/Languages/Rust|Rust]] 
-- [[Knowledge/Engineering/Languages/C++|C++]]
-    - [[Knowledge/Engineering/Languages/C++ Cheatsheet|C++ cheatsheet]]
+- [[Knowledge/Engineering/Languages/Python|Python]]
 
 ## Technologies
 - [[Knowledge/Engineering/Technologies/Cypress|Cypress]]
