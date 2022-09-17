@@ -1,0 +1,394 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=description content="![[Knowledge/Engineering/Technologies/assets/docker-wallpaper.png|800]]
+Docker is a [[Knowledge/Engineering/DevOps/Containers|containerisation]] tool, or container runtime, that packages up an app&rsquo;s source code and dependencies into portable containers that can be run in many different environments."><title>Docker</title><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" type=image/png href=https://wiki.timz.dev//icon.png><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap" rel=stylesheet><link href=https://wiki.timz.dev/styles.f0166864fd6bb1603db547f1f970f84b.min.css rel=stylesheet><link href=https://wiki.timz.dev/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css rel=stylesheet id=theme-link><script src=https://wiki.timz.dev/js/darkmode.773d76aedcd615c64f644f542d60cb1b.min.js></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script src=https://wiki.timz.dev/js/popover.688c5dcb89a57776d7f1cbeaf6f7c44b.min.js></script>
+<script src=https://wiki.timz.dev/js/code-title.b35124ad8db0ba37162b886afb711cbc.min.js></script>
+<script src=https://wiki.timz.dev/js/clipboard.de8d8b2221fe27323078cbd76188e364.min.js></script>
+<script>const BASE_URL="https://wiki.timz.dev/",fetchData=Promise.all([fetch("https://wiki.timz.dev/indices/linkIndex.958ee3a9da852e239713a0f8884aa618.min.json").then(e=>e.json()).then(e=>({index:e.index,links:e.links})),fetch("https://wiki.timz.dev/indices/contentIndex.af9f709db878ffc312375f93b32e0ffe.min.json").then(e=>e.json())]).then(([{index:e,links:t},n])=>({index:e,links:t,content:n})),render=()=>{const n=new URL(BASE_URL),s=n.pathname,o=window.location.pathname,i=s==o;addCopyButtons();const e=document.getElementById("graph-container");if(!e)return requestAnimationFrame(render);e.textContent="";const t=i&&!0;drawGraph("https://wiki.timz.dev",t,[{"/software-engineering":"#4388cc"},{"/economics":"#98c379"},{"/finance":"#FFD700"}],t?{centerForce:1,depth:-1,enableDrag:!0,enableLegend:!0,enableZoom:!0,fontSize:.4,linkDistance:1,opacityScale:3,repelForce:.2,scale:1.4}:{centerForce:1,depth:2,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.6,linkDistance:1,opacityScale:3,repelForce:1,scale:3}),initPopover("https://wiki.timz.dev",!0,!0)},init=(e=document)=>{addCopyButtons(),addTitleToCodeBlocks(),renderMathInElement(e.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],throwOnError:!1})}</script><script>window.Million={navigate:e=>window.location.href=e,prefetch:()=>{}},window.addEventListener("DOMContentLoaded",()=>{init(),render()})</script></head><script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-XYFD95KB4J",{anonymize_ip:!1})}</script><body><div id=search-container><div id=search-space><input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something..."><div id=results-container></div></div></div><script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://wiki.timz.dev/js/search.cf33b507388f3dfd5513a2afcda7af41.min.js></script>
+<script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script><div id=graph-container></div><style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style><script src=https://wiki.timz.dev/js/graph.0ac96ed5ea296a8b1ac03a6eba11878c.js></script><div class=singlePage><header><h1 id=page-title><a href=https://wiki.timz.dev/>🌱 Tim's Dev Wiki</a></h1><svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg><div class=spacer></div><div class=darkmode><input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg></label><label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg></label></div></header><article><h1>Docker</h1><p class=meta>Last updated September 16, 2022.
+<a href=https://github.com/Tymotex/wiki/tree/hugo/content/Knowledge/Engineering/Technologies/Docker.md rel=noopener>Edit Source</a></p><ul class=tags></ul><aside class=mainTOC><details open><summary>Table of Contents</summary><nav id=TableOfContents><ol><li><a href=#docker-architecture>Docker Architecture</a></li><li><a href=#using-the-docker-cli>Using the Docker CLI</a><ol><li><a href=#dockerhub>DockerHub</a></li><li><a href=#frequent-operations>Frequent Operations</a></li></ol></li><li><a href=#dockerfile>Dockerfile</a><ol><li><a href=#docker-layers>Docker Layers</a></li><li><a href=#dockerfile-commandshttpsdocsdockercomenginereferencebuilder><a href=https://docs.docker.com/engine/reference/builder/>Dockerfile Commands</a></a></li><li><a href=#parser-directives>Parser Directives</a></li><li><a href=#variables>Variables</a></li><li><a href=#dockerfile-optimisation--best-practices>Dockerfile Optimisation & Best Practices</a></li></ol></li><li><a href=#dockerignore>.dockerignore</a></li><li><a href=#volumes-shared-filesystems>Volumes (Shared Filesystems)</a><ol><li><a href=#named-volumes>Named Volumes</a></li><li><a href=#bind-mounts>Bind Mounts</a></li></ol></li><li><a href=#multiple-containers>Multiple Containers</a><ol><li><a href=#why-use-multiple-containers>Why Use Multiple Containers?</a></li><li><a href=#container-networking>Container Networking</a></li></ol></li><li><a href=#multi-stage-builds>Multi-Stage Builds</a><ol><li><a href=#example>Example</a></li></ol></li><li><a href=#faq>FAQ</a><ol><li><a href=#you-can-run-an-operating-system-in-a-container>You can run an operating system in a container??</a></li><li><a href=#under-the-hood>Under the hood</a></li></ol></li></ol></nav></details></aside><p><img src=/Knowledge/Engineering/Technologies/assets/docker-wallpaper.png width=800></p><p>Docker is a <a href=/Knowledge/Engineering/DevOps/Containers rel=noopener class=internal-link data-src=/Knowledge/Engineering/DevOps/Containers>containerisation</a> tool, or <em>container runtime</em>, that packages up an app&rsquo;s source code and dependencies into portable containers that can be run in many different environments. Since a Docker container packages <em>all</em> the app&rsquo;s dependencies, just distributing the <strong>Docker image</strong> for that container is sufficient for anyone to run the app anywhere without needing to install anything else. You define everything an app needs inside a manifest file, called a <em>Dockerfile</em>. There are alternative container runtimes like
+<a href=https://www.redhat.com/en/topics/containers/what-is-rkt rel=noopener>Rocket</a> or
+<a href=https://linuxcontainers.org/lxd/ rel=noopener>LXD</a>.</p><p>When you <em>Dockerise</em> an app, you get portability. That&rsquo;s the main reason people use it. This means you can have a lot of confidence that the app will work on anything that has a <em>Docker daemon</em> running on it, whether it&rsquo;s your laptop, your co-worker&rsquo;s laptop, a VM in a data center, a computer in your office, and so on (with some caveats like not being able to run Windows containers on Linux hosts). Docker is especially great for deploying <a href=/Knowledge/Engineering/Architecture/Microservice rel=noopener class=internal-link data-src=/Knowledge/Engineering/Architecture/Microservice>microservices-based</a> applications.</p><p><strong>Terms:</strong></p><ul><li><em><strong>Image</strong></em> — a read-only <em><strong>file</strong></em> containing the source code, libs, dependencies and tools for an application. Images are sometimes called <em>snapshots</em> because they capture an application and their environment at some point in development. Images are templates for creating <em>containers</em></li><li><em><strong>Containers</strong></em> — a running instance of an image that is a runtime environment for an application. You can think of creating a container as just adding a writable layer on top of an image (which is read-only).<ul><li>Containers just <em>processes</em>, they have a PID, a parent process, can be killed, etc.</li><li>A virtual machine virtualises the hardware to run multiple OS instances. A container virtualises an OS to run multiple workloads and multiple containers can share the same OS kernel, making them lightweight</li><li>Containers are isolated environments meaning that they have their own filesystem, network, CPU and memory limits, etc.</li><li>You can think of a Docker image as a class and a Docker container as an instance of that class</li></ul></li><li><em><strong>Dockerfile</strong></em> — a file that contains step-by-step instructions for building an image that gets sent to the <em>Docker engine</em>. Dockerfiles document the exact environment as a snapshot. The dockerfile is the starting point — a dockerfile&rsquo;s commands are executed, creating an image, then a container is built from that image.
+<img src=/Knowledge/Engineering/Technologies/assets/dockerfile-to-docker-image.png width=340></li><li><em><strong>Tags</strong></em> — mutable named references to images. They should generally be human-readable<ul><li>Eg. the Debian image has a tag called &lsquo;buster&rsquo;, a name for Debian 10. You would pull this specific image with <code>docker pull debian:buster</code></li></ul></li><li><em><strong>Container orchestration</strong></em> — the automated running of multiple containers across multiple machines, including their deployment, scaling, load balancing, etc.<ul><li>You can always run multiple containers manually, but tools like <a href=/Knowledge/Engineering/Technologies/Kubernetes rel=noopener class=internal-link data-src=/Knowledge/Engineering/Technologies/Kubernetes>Kubernetes</a> can automate a lot of it for you.</li></ul></li></ul><p><strong>Setting Up Docker</strong>
+Just install Docker on your system, then enable and start the service. On Arch Linux the setup looks like this:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>sudo pacman -S docker
+</span></span><span class=line><span class=cl>sudo systemctl <span class=nb>enable</span> docker
+</span></span><span class=line><span class=cl>sudo systemctl start docker
+</span></span><span class=line><span class=cl>docker info   <span class=c1># Confirms whether the Docker daemon is running.</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># If you get a &#39;permission denied&#39; error as a non-root user, then you need to add</span>
+</span></span><span class=line><span class=cl><span class=c1># $USER to the `docker` group.</span>
+</span></span><span class=line><span class=cl>sudo groupadd docker
+</span></span><span class=line><span class=cl>sudo usermod -aG docker <span class=nv>$USER</span>   <span class=c1># Add the current user to the docker group.</span>
+</span></span><span class=line><span class=cl>newgrp docker                   <span class=c1># Log in to the docker group.</span>
+</span></span><span class=line><span class=cl>docker info                     
+</span></span><span class=line><span class=cl><span class=c1># Might need to reboot if the above steps are insufficient.</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#docker-architecture><h2 id=docker-architecture><span class=hanchor arialabel=Anchor># </span>Docker Architecture</h2></a><p>Docker follows a client-server architecture where you have a Docker client that sends requests to a Docker daemon using a REST API. Both the client and daemon may run on the same host or on different machines and communicate over the network.</p><ul><li><strong>Docker daemon</strong>
+A background process listening for API requests. It manages images, containers, and more</li><li><strong>Docker client</strong>
+Issues commands to the Docker daemon. This can be through the <a href=/Knowledge/Engineering/Technologies/Docker#docker-cli rel=noopener class=internal-link data-src=/Knowledge/Engineering/Technologies/Docker>CLI</a>, through Docker Desktop, <a href=/Knowledge/Engineering/Technologies/Docker-Compose rel=noopener class=internal-link data-src=/Knowledge/Engineering/Technologies/Docker-Compose>Docker Compose</a>, etc.</li><li><strong>Docker registries</strong>
+Docker registries store <em>images</em>. <a href=/Knowledge/Engineering/Technologies/Docker#dockerhub rel=noopener class=internal-link data-src=/Knowledge/Engineering/Technologies/Docker>Docker Hub</a> is the default public registry that images can be pushed to and pulled from (but there exists other registries like GitHub Container Registry and Amazon ECR which has great integrations with ECS for deploying containers)</li></ul><p><img src=/Knowledge/Engineering/Technologies/assets/docker-architecture.png width=700></p><a href=#using-the-docker-cli><h2 id=using-the-docker-cli><span class=hanchor arialabel=Anchor># </span>Using the Docker CLI</h2></a><p>The <code>docker</code> CLI needs to talk to the Docker daemon, so make sure that is running on the system first. Usually, the workflow goes like this:</p><ol><li><a href=/Knowledge/Engineering/Technologies/Docker#dockerfile rel=noopener class=internal-link data-src=/Knowledge/Engineering/Technologies/Docker>Write a Dockerfile</a> for the app first.</li><li>Make an <em>image</em> from the Dockerfile using <code>docker build</code>. All images that have been built or pulled exist as files somewhere under <code>/var/lib/docker/</code> on Linux. They take up quite a lot of space ☹️ (hundreds of MBs or a few GBs).<ul><li>If you&rsquo;re aiming to push the built image to DockerHub, for example, then you should tag the image with a name like <code>&lt;username>/&lt;image_name></code> using <code>docker build -t &lt;username>/&lt;image_name></code>.</li><li>When you make a new image, the previous image will become a dangling image, ie. one that is not referenced. These will stick around in your filesystem and suck up space unless you
+<a href=https://stackoverflow.com/questions/32723111/how-to-remove-old-and-unused-docker-images rel=noopener>remove them</a>.</li></ul></li><li>Run the image to spawn a <em>container</em> process on the system using <code>docker run</code>.</li><li>If manually managing the container, then use <code>docker ps</code> to see all the containers that are currently running and use <code>docker stop</code>, <code>docker start</code>, <code>docker rm</code>, etc. to manage them.</li></ol><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># ╠════ Fundamental Commands ════╣</span>
+</span></span><span class=line><span class=cl><span class=c1># Note: having a .dockerignore file will let you exclude large and unnecessary files from being sent to the daemon</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>docker build &lt;path&gt;           <span class=c1># Creating images, where &lt;path&gt; tells Docker where to find the Dockerfile to use.</span>
+</span></span><span class=line><span class=cl>    -t &lt;tag&gt;                  <span class=c1># Assign a human-readable name (tag) to the image we&#39;re going to create</span>
+</span></span><span class=line><span class=cl>    -f &lt;file&gt;                 <span class=c1># Path of the Dockerfile. Without this flag, docker build will use look for a file named exactly Dockerfile in the cwd</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>docker run &lt;image&gt;            <span class=c1># Running a command in a new container. MAKE SURE THE IMAGE NAME COMES LAST IF YOU USE ARGUMENTS!</span>
+</span></span><span class=line><span class=cl>    -d                        <span class=c1># Run in detached mode, as a background process</span>
+</span></span><span class=line><span class=cl>    -p 8080:80                <span class=c1># Exposes a container port by mapping the host&#39;s port 8080 to the container&#39;s 80, for instance. </span>
+</span></span><span class=line><span class=cl>                              <span class=c1># -p 8080:80 says &#34;forward any traffic coming to my port 8080 to the container&#39;s port 80&#34;</span>
+</span></span><span class=line><span class=cl>    --name &lt;containerId&gt;      <span class=c1># Giving an ID to the container. Useful when looking at `docker ps` output. If no name is specified, a random one will be generated</span>
+</span></span><span class=line><span class=cl>    -v &lt;volName&gt;:&lt;path&gt;       <span class=c1># Use the given volume &lt;volName&gt; and mount it to &lt;path&gt;</span>
+</span></span><span class=line><span class=cl>    -w &lt;path&gt;                 <span class=c1># Sets the working directory (which is necessary if you&#39;re going to run commands that depend on being on a certain path)</span>
+</span></span><span class=line><span class=cl>    --network &lt;networkName&gt;
+</span></span><span class=line><span class=cl>    --networkalias<span class=o>=</span>&lt;name&gt;	
+</span></span><span class=line><span class=cl>    -e <span class=nv>key</span><span class=o>=</span>val                <span class=c1># Set an environment variable</span>
+</span></span><span class=line><span class=cl>    --env-file &lt;file&gt;         <span class=c1># Use a .env file for setting environment variables</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>docker stop &lt;containerId&gt;   <span class=c1># Stopping a running container. It&#39;ll no longer appear in `docker ps`</span>
+</span></span><span class=line><span class=cl>docker start &lt;containerId&gt;  <span class=c1># Starting a stopped container</span>
+</span></span><span class=line><span class=cl>docker rm &lt;containerId&gt;     <span class=c1># Removing a container</span>
+</span></span><span class=line><span class=cl>                            <span class=c1># Note: to get rid of a container, it must first be stopped with `docker stop &lt;containerId&gt;` and then removed with `docker rm &lt;containerId&gt;`</span>
+</span></span><span class=line><span class=cl>                            <span class=c1>#       Container IDs can be found in `docker ps` output</span>
+</span></span><span class=line><span class=cl>docker tag &lt;src&gt; &lt;dest&gt;     <span class=c1># Create an alias to another image (like a symbolic link). This is useful for `docker push &lt;image&gt;`</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>docker images                  <span class=c1># `ls` for images</span>
+</span></span><span class=line><span class=cl>    -a                         <span class=c1># Shows intermediary images for each intermediary layer in the build.</span>
+</span></span><span class=line><span class=cl>    --filter <span class=s2>&#34;dangling=true&#34;</span>   <span class=c1># Shows all images that aren&#39;t referenced by any other image.</span>
+</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl>docker ps                      <span class=c1># `ps` for container processes</span>
+</span></span><span class=line><span class=cl>    -a                         <span class=c1># Shows all running and stopped containers</span>
+</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl>docker logs                    <span class=c1># Shows container&#39;s output log</span>
+</span></span><span class=line><span class=cl>    -f                         <span class=c1># &#39;follow&#39; the output rather than just printing the output once</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>docker <span class=nb>exec</span> &lt;containerId&gt; &lt;command&gt;     <span class=c1># Runs a command in the given container</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#dockerhub><h3 id=dockerhub><span class=hanchor arialabel=Anchor># </span>DockerHub</h3></a><p>Many container runtime systems have a big public repo of container images, called a registry. In Docker&rsquo;s case, we have
+<a href=https://hub.docker.com/ rel=noopener>DockerHub</a>. There you&rsquo;ll find images for containers that run, for example,
+<a href=https://hub.docker.com/_/postgres/ rel=noopener>PostgreSQL</a>,
+<a href=https://hub.docker.com/_/nginx rel=noopener>NGINX</a>,
+<a href=https://hub.docker.com/_/node rel=noopener>Node.js</a>,
+<a href=https://hub.docker.com/_/ubuntu/ rel=noopener>Ubuntu</a>, etc.</p><p>To push/pull images to a repo under your DockerHub account, use the commands:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>docker push &lt;image&gt;   <span class=c1># Pushes an image to Docker Hub (you must have logged in earlier with `docker login -u &lt;username&gt;`</span>
+</span></span><span class=line><span class=cl>docker pull &lt;image&gt;   <span class=c1># Downloads an image from Docker Hub (which is the default registry)</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#frequent-operations><h3 id=frequent-operations><span class=hanchor arialabel=Anchor># </span>Frequent Operations</h3></a><p>Some command snippets for things I want to do frequently in my workflow.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># ╠════ Frequent Operations ════╣</span>
+</span></span><span class=line><span class=cl>docker <span class=nb>exec</span> -it &lt;containerId&gt; bash      <span class=c1># Starts up a Bash shell in your container. Use `sh` if Bash isn&#39;t available.</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>docker <span class=nb>kill</span> <span class=k>$(</span>docker ps -q<span class=k>)</span>             <span class=c1># Stopping all containers.</span>
+</span></span><span class=line><span class=cl>docker rm <span class=k>$(</span>docker ps -a -q<span class=k>)</span>            <span class=c1># Removing all containers.</span>
+</span></span><span class=line><span class=cl>docker rmi <span class=k>$(</span>docker images -q<span class=k>)</span>          <span class=c1># Removing all images.</span>
+</span></span><span class=line><span class=cl>docker rmi -f <span class=k>$(</span>docker images -f <span class=s2>&#34;dangling=true&#34;</span> -q<span class=k>)</span>   <span class=c1># Remove all dangling images (images that aren&#39;t referenced by any other).</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#dockerfile><h2 id=dockerfile><span class=hanchor arialabel=Anchor># </span>Dockerfile</h2></a><p>A Dockerfile is a file that contains a list of sequential commands that can be executed (with <code>docker build</code>) along with the <em><strong>build context</strong></em> to create new Docker images. There are lots of
+<a href=https://docs.docker.com/develop/develop-images/dockerfile_best-practices/ rel=noopener>best practices</a> for building images efficiently. Building good images and orchestrating them are complex topics by themselves and require effort and experience.</p><a href=#docker-layers><h3 id=docker-layers><span class=hanchor arialabel=Anchor># </span>Docker Layers</h3></a><p>Docker images consist of read-only <em>layers</em>, each of which corresponds to <code>RUN</code>, <code>COPY</code> and <code>ADD</code> Dockerfile instruction. Each layer stores the set of changes to the filesystem and metadata from the previous layer. Layers exist to be cached and therefore optimise build times. At each instruction in a Dockerfile, the daemon will check its build cache to see if it can skip the current instruction.</p><ul><li><em>An image is basically a diff</em>. It just stores what changes from the image it is based on. Every image always has a base image that it derives from.<ul><li>An image <em>is</em> a layer. You could use them interchangeably, mostly.</li><li>Each layer is a complete image in itself. When you see output like <code>Step 1/4 : ___</code> while building an image, each of the steps correspond to the building of an <em>intermediary image</em>. Every intermediary image has an ID associated with it that you can spawn containers from.</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>Step 4/7 : ENV <span class=nv>PORT</span><span class=o>=</span><span class=m>5678</span>
+</span></span><span class=line><span class=cl> ---&gt; Running in 967bbecf48fa   <span class=c1># The ID of the container that this intermediary image is being built in (I think).</span>
+</span></span><span class=line><span class=cl>Removing intermediate container 967bbecf48fa
+</span></span><span class=line><span class=cl> ---&gt; f8d66c96b15a              <span class=c1># This is the ID of the intermediary image</span>
+</span></span></code></pre></td></tr></table></div></div>See all intermediary images with <code>docker images -a</code> .<ul><li>Image layers exist to reuse work and save space.</li></ul></li><li>You can reduce several layers into one with the squash flag <code>--squash</code> in
+<a href=https://docs.docker.com/engine/reference/commandline/build/ rel=noopener><code>docker build</code></a>.</li><li>When you run an image to spawn a container (with <code>docker run</code>), you are adding a <em>read-writable layer on top of all the underlying read-only layers</em>, called the <em>container layer</em>. All changes such as newly created files are written to this writable container layer.
+<img src=/Knowledge/Engineering/Technologies/assets/docker-layers.png width=400></li></ul><h3 id=dockerfile-commandshttpsdocsdockercomenginereferencebuilder><a href=https://docs.docker.com/engine/reference/builder/ rel=noopener>Dockerfile Commands</a></h3><p>Generally, writing a simple Dockerfile goes like this:</p><ol><li>Choose a base image to start with (eg.
+<a href=https://hub.docker.com/_/node rel=noopener>Node</a>,
+<a href=https://hub.docker.com/_/alpine rel=noopener>Alpine</a>) and specify it with <code>FROM</code>. You must specify a base image. There&rsquo;s no one &lsquo;correct&rsquo; choice, you&rsquo;re free to experiment with different images (eg. using Debian instead of Alpine).<ul><li>Ideally, the base image should be well-maintained, slim, and up to date.</li></ul></li><li>Determine the (ideally) minimal set of steps necessary to get your app running after bootstrapping from the base image, then map each of those steps to a Dockerfile instruction. This is kind of a try-and-fail process.</li></ol><a href=#from><h4 id=from><span class=hanchor arialabel=Anchor># </span>From</h4></a><p>Dockerfiles must begin with a <code>FROM</code> instruction. It specifies what base image to start building on top of. You can also specify a tag, otherwise it defaults to the tag with the name: &rsquo;latest&rsquo;.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dockerfile data-lang=dockerfile><span class=line><span class=cl><span class=k>FROM</span><span class=s> &lt;baseImage&gt;[:tag]</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=c># In multi-stage builds, you can use AS to give a name to a build and then be able to have one stage </span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=c># reference another.</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>FROM</span><span class=s> &lt;baseImage&gt; AS &lt;stageName&gt;	</span><span class=err>
+</span></span></span></code></pre></td></tr></table></div></div><a href=#workdir><h4 id=workdir><span class=hanchor arialabel=Anchor># </span>Workdir</h4></a><p>Sets what the current working directory is within the container&rsquo;s filesystem. Creates the folder if it doesn&rsquo;t exist. You might want to use this before subsequent <code>RUN</code>, <code>CMD</code>, <code>ENTRYPOINT</code>, <code>COPY</code>/<code>ADD</code> instructions.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dockerfile data-lang=dockerfile><span class=line><span class=cl><span class=k>WORKDIR</span><span class=s> &lt;path&gt;</span><span class=err>
+</span></span></span></code></pre></td></tr></table></div></div><p>As recommended by the
+<a href=https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#workdir rel=noopener>official docs</a>, prefer <code>WORKDIR</code> over <code>RUN mkdir -p ...</code>.</p><a href=#run><h4 id=run><span class=hanchor arialabel=Anchor># </span>Run</h4></a><p>Runs a shell command. It uses <code>/bin/sh</code> as the default shell in Linux.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dockerfile data-lang=dockerfile><span class=line><span class=cl><span class=k>RUN</span> <span class=o>[</span><span class=s2>&#34;command&#34;</span>, <span class=s2>&#34;arg1&#34;</span>, <span class=s2>&#34;arg2&#34;</span>, ...<span class=o>]</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=c># Or:</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>RUN</span> <span class=nb>command</span> arg1 arg2 ...<span class=err>
+</span></span></span></code></pre></td></tr></table></div></div><a href=#cmd><h4 id=cmd><span class=hanchor arialabel=Anchor># </span>Cmd</h4></a><p>Like <code>RUN</code>, but it runs a default shell command to start up the application. Unlike <code>RUN</code>, it DOES NOT execute anything when the image is being built!</p><ul><li>There can only exist 1 <code>CMD</code> in a Dockerfile. If multiple exist, only the last one is used.</li><li>The <code>CMD</code> can be overwritten by <code>docker run</code> if is specifies a command. If you want to guarantee a startup command is always run, then use <code>ENTRYPOINT</code>.</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dockerfile data-lang=dockerfile><span class=line><span class=cl><span class=k>CMD</span> <span class=p>[</span><span class=s2>&#34;command&#34;</span><span class=p>,</span> <span class=s2>&#34;arg1&#34;</span><span class=p>,</span> <span class=s2>&#34;arg2&#34;</span><span class=p>,</span> <span class=err>...</span><span class=p>]</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>CMD</span> <span class=nb>command</span> arg1 arg2 ...<span class=err>
+</span></span></span></code></pre></td></tr></table></div></div><a href=#copy><h4 id=copy><span class=hanchor arialabel=Anchor># </span>Copy</h4></a><p>Copies local files (<code>&lt;src></code>) to the container filesystem (<code>&lt;dest></code>). It&rsquo;s recommended to use <code>COPY</code> instead of <code>ADD</code>.</p><ul><li><code>&lt;dest></code> is either absolute or relative to <code>WORKDIR</code>.</li><li>Dockerfile supports file globbing like in bash.</li><li>If <code>&lt;src></code> is a URL, then the file at that URL will be download to the container&rsquo;s <code>&lt;dest></code>.</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dockerfile data-lang=dockerfile><span class=line><span class=cl><span class=k>COPY</span> &lt;src&gt; &lt;dest&gt;<span class=err>
+</span></span></span><span class=line><span class=cl><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=c># For multi-stage builds, you use **--from** to source files from a previous stage in the build</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>COPY</span> --from<span class=o>=</span>&lt;stageName&gt; &lt;src&gt; &lt;dest&gt;<span class=err>
+</span></span></span></code></pre></td></tr></table></div></div><a href=#add><h4 id=add><span class=hanchor arialabel=Anchor># </span>Add</h4></a><p>Almost identical to <code>COPY</code>, but the main difference is that it supports URL sources and other things, making it a bit more unpredictable.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dockerfile data-lang=dockerfile><span class=line><span class=cl><span class=k>ADD</span> &lt;src&gt; &lt;dest&gt;<span class=err>
+</span></span></span></code></pre></td></tr></table></div></div><a href=#env><h4 id=env><span class=hanchor arialabel=Anchor># </span>Env</h4></a><p>Set an environment variable in the container. You can reference this variable in subsequent Dockerfile instructions.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dockerfile data-lang=dockerfile><span class=line><span class=cl><span class=k>ENV</span> <span class=nv>key</span><span class=o>=</span><span class=s2>&#34;value&#34;</span><span class=err>
+</span></span></span></code></pre></td></tr></table></div></div><a href=#entrypoint><h4 id=entrypoint><span class=hanchor arialabel=Anchor># </span>Entrypoint</h4></a><p>Like <code>CMD</code>, but the command is always run, whereas <code>CMD</code>&rsquo;s command doesn&rsquo;t get run if the user supplies their own command. <code>ENTRYPOINT</code> is preferred over <code>CMD</code> when you need a command to always be executed instead of just being the default.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dockerfile data-lang=dockerfile><span class=line><span class=cl><span class=k>ENTRYPOINT</span> <span class=p>[</span><span class=s2>&#34;command&#34;</span><span class=p>,</span> <span class=s2>&#34;arg1&#34;</span><span class=p>,</span> <span class=s2>&#34;arg2&#34;</span><span class=p>,</span> <span class=err>...</span><span class=p>]</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=c># Or:</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>ENTRYPOINT</span> <span class=nb>command</span> arg1 arg2 ...   <span class=err>
+</span></span></span></code></pre></td></tr></table></div></div><a href=#volume><h4 id=volume><span class=hanchor arialabel=Anchor># </span>Volume</h4></a><p>(Not completely sure) Creates a new empty directory at <code>/var/lib/docker/volumes</code> on the host machine (assuming you&rsquo;re using Linux). The <code>&lt;path></code> is the container filesystem path whose contents should be linked to the volume directory created on host.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dockerfile data-lang=dockerfile><span class=line><span class=cl><span class=k>VOLUME</span><span class=s> &lt;path&gt;</span><span class=err>
+</span></span></span></code></pre></td></tr></table></div></div><a href=#label><h4 id=label><span class=hanchor arialabel=Anchor># </span>Label</h4></a><p>Adds a key-value pair custom metadata field to the image that are viewable with <code>docker inspect</code>. Third party tools around Docker may make use of Labels in your Dockerfiles to organise/manage them.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dockerfile data-lang=dockerfile><span class=line><span class=cl><span class=k>LABEL</span> <span class=nv>maintainer</span><span class=o>=</span><span class=s2>&#34;admin@timz.dev&#34;</span><span class=err>
+</span></span></span></code></pre></td></tr></table></div></div><a href=#expose><h4 id=expose><span class=hanchor arialabel=Anchor># </span>Expose</h4></a><p>Defines which port to listen on at runtime. Uses TCP by default.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dockerfile data-lang=dockerfile><span class=line><span class=cl><span class=k>EXPOSE</span><span class=s> &lt;port&gt;</span><span class=err>
+</span></span></span></code></pre></td></tr></table></div></div><a href=#example-dockerfile><h4 id=example-dockerfile><span class=hanchor arialabel=Anchor># </span><strong>Example Dockerfile</strong></h4></a><p>This is an example Dockerfile for a simple Express server, to be used in a development environment. Sourced from
+<a href="https://www.youtube.com/watch?v=iqqDU2crIEQ&ab_channel=Docker" rel=noopener>official Docker YouTube</a>.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dockerfile data-lang=dockerfile><span class=line><span class=cl><span class=c># You usually start from a base image with `FROM`</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=c># This is using `node` as a base image with the tag, 12.16.3, which is the target version.</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>FROM</span><span class=s> node:12.16.3</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=c># Creating a directory. All subsequent commands will use this as the working directory</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>WORKDIR</span><span class=s> /code</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=c># Setting up an environment variable </span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>ENV</span> PORT <span class=m>80</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>COPY</span> package.json /code/package.json<span class=err>
+</span></span></span><span class=line><span class=cl><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=c># Installs all dependencies in package.json</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>RUN</span> npm install<span class=err>
+</span></span></span><span class=line><span class=cl><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>COPY</span> . /code<span class=err>
+</span></span></span><span class=line><span class=cl><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=c># The default command to be run when the container is started.</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=c># This would run `node src/server.js`</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>CMD</span> <span class=p>[</span> <span class=s2>&#34;node&#34;</span><span class=p>,</span> <span class=s2>&#34;src/server.js&#34;</span> <span class=p>]</span><span class=err>
+</span></span></span></code></pre></td></tr></table></div></div><a href=#parser-directives><h3 id=parser-directives><span class=hanchor arialabel=Anchor># </span>Parser Directives</h3></a><p>Parser directives are special comments with the form <code># directive=val</code></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dockerfile data-lang=dockerfile><span class=line><span class=cl><span class=c># This defines the location of the Dockerfile syntax that should be used to build the image</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=c># Note: this has no effect unless you are using the [BuildKit](https://docs.docker.com/develop/develop-images/build_enhancements/) backend</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=c># syntax=docker/dockerfile:1</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=c># Tells Docker what characters should be used to escape characters. It defaults to be \</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=c># escape=`</span><span class=err>
+</span></span></span></code></pre></td></tr></table></div></div><a href=#variables><h3 id=variables><span class=hanchor arialabel=Anchor># </span>Variables</h3></a><p>Environment variables defined with <code>ENV</code> can be used in other commands. It&rsquo;s similar to how <code>bash</code> variables work</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dockerfile data-lang=dockerfile><span class=line><span class=cl><span class=k>FROM</span><span class=s> ___</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>ENV</span> <span class=nv>MY_DIR</span><span class=o>=</span>/home/tim/Projects<span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>WORKDIR</span><span class=s> ${MY_DIR}</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>ADD</span> . <span class=nv>$MY_DIR</span><span class=err>
+</span></span></span></code></pre></td></tr></table></div></div><a href=#dockerfile-optimisation--best-practices><h3 id=dockerfile-optimisation--best-practices><span class=hanchor arialabel=Anchor># </span>Dockerfile Optimisation & Best Practices</h3></a><p>The goal is to produce lightweight images.</p><ul><li>Add unnecessary files to <code>.dockerignore</code>. This prevents sending unnecessary data to the Docker daemon when you run <code>docker build</code>. A good thing to ignore is the <code>node_modules</code> directory.</li><li>Pick a lightweight base image. Eg. prefer choosing smaller Linux distributions like Alpine over Ubuntu.<blockquote><p>Note: the
+<a href=https://alpinelinux.org/about/ rel=noopener>Alpine Linux</a> distribution is a popular choice for deploying production containers since it&rsquo;s designed for security, resource efficiency and is a lot smaller than other Linux distributions (eg. Ubuntu 16.04 is around 100MB while Alpine&rsquo;s image is around 4MB because it only ships with the most essential production tools). Use this to minimise your image sizes. There are also
+<a href=https://pythonspeed.com/articles/alpine-docker-python/ rel=noopener>good reasons <em>not</em> to use Alpine</a>, especially for Python apps where you might end up with slower builds, larger images, and a brittle environment!</p></blockquote></li><li>Merge multiple Dockerfile commands into one. Remember that individual Dockerfile commands correspond to an <a href=/Knowledge/Engineering/Technologies/Docker#docker-layers rel=noopener class=internal-link data-src=/Knowledge/Engineering/Technologies/Docker>intermediary image</a> that is built and cached.<div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dockerfile data-lang=dockerfile><span class=line><span class=cl><span class=c># Have the following single command:</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>RUN</span> apk update <span class=o>&amp;&amp;</span> apk add curl<span class=err>
+</span></span></span><span class=line><span class=cl><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=c># Instead of multiple commands:</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>RUN</span> apk update<span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>RUN</span> apk add curl<span class=err>
+</span></span></span></code></pre></td></tr></table></div></div></li><li>Start the Dockerfile with steps that are least likely to change in the future. This is because changes to the intermediary images built earlier will invalidate later images.<div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dockerfile data-lang=dockerfile><span class=line><span class=cl><span class=c># Do this:</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>RUN</span> <span class=o>[</span><span class=s2>&#34;yarn&#34;</span>, <span class=s2>&#34;install&#34;</span><span class=o>]</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>RUN</span> apk add vim         <span class=err>
+</span></span></span><span class=line><span class=cl><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=c># Rather than</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>RUN</span> apk add vim<span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>RUN</span> <span class=o>[</span><span class=s2>&#34;yarn&#34;</span>, <span class=s2>&#34;install&#34;</span><span class=o>]</span><span class=err>
+</span></span></span></code></pre></td></tr></table></div></div></li></ul><a href=#dockerignore><h2 id=dockerignore><span class=hanchor arialabel=Anchor># </span>.dockerignore</h2></a><p>When you run <code>docker build</code>, the Docker CLI also sends the <em>build context</em>, which is the set of files located at the specified path or Git repo URL, over to the Docker daemon. Before that, the CLI checks if a <code>.dockerignore</code> is present and ensures that any files declared in there will not be sent to the Docker daemon. It&rsquo;s purpose is similar to <code>.gitignore</code></p><ul><li><code>COPY</code> or <code>ADD</code> will also ignore the files in <code>.dockerignore</code></li><li>The syntax is very similar to <code>.gitignore</code>. File globbing is also supported</li></ul><p>A typical <code>.dockerignore</code> for a React project might looks like this, for example:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-docker data-lang=docker><span class=line><span class=cl>node_modules<span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span>Dockerfile<span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span>.git<span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span>.gitignore<span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span>.dockerignore<span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span>.env*<span class=err>
+</span></span></span></code></pre></td></tr></table></div></div><p>After adding this, you&rsquo;ll notice that <code>docker build</code> is <em>way faster</em> because node_modules isn&rsquo;t being sent to the Docker daemon.</p><a href=#volumes-shared-filesystems><h2 id=volumes-shared-filesystems><span class=hanchor arialabel=Anchor># </span>Volumes (Shared Filesystems)</h2></a><p><em>A problem</em>: containers can do file manipulation, however any created or updated files are lost when that container process is killed. When a containerised backend server writes to a database, for example, then all the objects in that database are gone after the container process terminates.</p><p>With
+<a href=https://docs.docker.com/storage/volumes/ rel=noopener>volumes</a>, you can connect paths of a container&rsquo;s filesystem to paths of the host machine so that files created or updated in that path are also shared with the host. This lets containers persist their filesystem changes.</p><a href=#named-volumes><h3 id=named-volumes><span class=hanchor arialabel=Anchor># </span>Named Volumes</h3></a><p>Docker lets you manage <em>named volumes</em>. It hides away the physical location of where the volume is stored so you, as the programmer, just need to work with the name of the volume.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>docker volume create &lt;volumeName&gt;     <span class=c1># Creates a new named volume</span>
+</span></span><span class=line><span class=cl>docker volume inspect &lt;volumeName&gt;    <span class=c1># Shows info about the volume such as where its mount point (actual path) is</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#bind-mounts><h3 id=bind-mounts><span class=hanchor arialabel=Anchor># </span>Bind Mounts</h3></a><p>Unlike <em>named volumes</em>, bind mounts let you control exactly where the <em>mount point</em> (the <em>path</em> to the directory of the shared files) is between the host and container.
+It can be used where named volumes are used, but being able to set where the mount point is lets us mount our host&rsquo;s source code into the container to set up <em>hot reloading</em></p><ul><li><p>In
+<a href=https://docs.docker.com/get-started/06_bind_mounts/ rel=noopener>this example</a> which uses
+<a href=https://www.npmjs.com/package/nodemon rel=noopener>nodemon</a> to watch for code changes, you <em>bind mount</em> the directory that you are currently developing in and the container&rsquo;s working directory so that edits made to the code from the host&rsquo;s side also affect the code being run in the container&rsquo;s side.</p><p>By bind mounting your project&rsquo;s directory and the directory where the container is running your app, you are basically syncing the files you&rsquo;re editing and the files that are in &lsquo;production&rsquo; on the container.</p><p>Bind mounting is done by passing in a few extra options to your usual <code>docker run</code> command:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>docker run -dp 3000:3000 <span class=se>\
+</span></span></span><span class=line><span class=cl><span class=se></span>	 -w /app **-v <span class=s2>&#34;</span><span class=k>$(</span><span class=nb>pwd</span><span class=k>)</span><span class=s2>:/app&#34;</span>** <span class=se>\ </span>              <span class=c1># Setting the container&#39;s cwd to /app and then bind mounting the host side&#39;s (your side&#39;s) dev directory to the container side&#39;s</span>
+</span></span><span class=line><span class=cl>	 node:12-alpine <span class=se>\
+</span></span></span><span class=line><span class=cl><span class=se></span>	 sh -c <span class=s2>&#34;yarn install &amp;&amp; yarn run dev&#34;</span>     <span class=c1># Running a command to kick off the **nodemon** (which is what `yarn run dev` does) after the container starts up</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback></code></pre></td></tr></table></div></div></li><li><p>Differences between <em>bind mounts</em> and <em>named volumes</em>:
+<img src=/Knowledge/Engineering/Technologies/assets/bind-mounts-vs-named-volumes.png width=400></p></li></ul><a href=#multiple-containers><h2 id=multiple-containers><span class=hanchor arialabel=Anchor># </span>Multiple Containers</h2></a><a href=#why-use-multiple-containers><h3 id=why-use-multiple-containers><span class=hanchor arialabel=Anchor># </span>Why Use Multiple Containers?</h3></a><p>Although it&rsquo;s possible to run multiple processes in a single container, in general each container should focus on one thing. If you have a container that runs both a backend server <em>and</em> a database server like MySQL, then it&rsquo;s generally considered better practice to run both in separate containers because:</p><ul><li>API servers, database servers and other components scale differently. Keeping them in separate containers lets you scale each component independently of each other. Eg. you might have a low-traffic but data-intensive app which might mean needing twice as many database containers than backend server containers.</li><li>You can rollout a new version to your web server without affecting the database.</li><li>For production, it doesn&rsquo;t make sense to ship the database server with the app.</li><li>Each container is less complex.</li></ul><a href=#container-networking><h3 id=container-networking><span class=hanchor arialabel=Anchor># </span>Container Networking</h3></a><p>Containers are isolated processes that have no awareness of other containers running on the same machine. How are they able to talk to each other?</p><ul><li>Containers are able to communicate iff they are connected to the same network.</li><li>Containers can be connected to non-Docker workloads.</li><li>Under the hood,
+<a href=https://docs.docker.com/network/iptables/ rel=noopener>Docker manipulates <code>iptables</code></a> rules on Linux to create network isolation.</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>docker network create &lt;networkName&gt;       <span class=c1># Creates a new isolated network.</span>
+</span></span><span class=line><span class=cl>docker network ls                         <span class=c1># List all networks being managed by Docker</span>
+</span></span><span class=line><span class=cl>docker run
+</span></span><span class=line><span class=cl>	--network &lt;networkName&gt;    <span class=c1># Connects a container to the isolated network</span>
+</span></span><span class=line><span class=cl>	--network-alias &lt;name&gt;     <span class=c1># Gives the container a name that can be used by other containers on the same network to communicate with</span>
+</span></span><span class=line><span class=cl>                               <span class=c1># The alias to IP mapping is managed by Docker, so you only ever have to work with aliases</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#multi-stage-builds><h2 id=multi-stage-builds><span class=hanchor arialabel=Anchor># </span>Multi-Stage Builds</h2></a><p>Dockerfiles can actually have multiple <code>FROM</code> statements. Every <code>FROM</code> statement marks the beginning of a new <em>build stage</em>. This just means you can create images which derive from multiple bases.</p><ul><li>Stages are built in the order they appear in the Dockerfile.</li><li>You can copy some output of one layer to the next, across stages. All unneeded <em>artifacts</em> produced from an earlier stage won&rsquo;t be saved in the final image.<ul><li>It&rsquo;s common to run a build in an early stage, then only copy the build results to the next stage (eg. running <code>npm build</code> in 1 stage, then transferring the build files to a directory for <a href=/Knowledge/Engineering/Technologies/NGINX rel=noopener class=internal-link data-src=/Knowledge/Engineering/Technologies/NGINX>NGINX</a> to serve in the next stage).</li></ul></li></ul><a href=#example><h3 id=example><span class=hanchor arialabel=Anchor># </span>Example</h3></a><p>Suppose you are trying to deploy a React project with NGINX to serve the files resulting from <code>npm build</code>.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dockerfile data-lang=dockerfile><span class=line><span class=cl><span class=c># ===== Stage 1 =====</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=c># Naming the stage so that it can be referenced by later stages.</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>FROM</span><span class=s> node:14.18.1 AS build </span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>WORKDIR</span><span class=s> /app</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>COPY</span> package.json .<span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>RUN</span> yarn install<span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>COPY</span> . .<span class=err>
+</span></span></span><span class=line><span class=cl><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=c># Creating the production-ready files to be served by NGINX in stage 2.</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>RUN</span> <span class=o>[</span><span class=s2>&#34;yarn&#34;</span>, <span class=s2>&#34;build&#34;</span><span class=o>]</span>      <span class=err>
+</span></span></span><span class=line><span class=cl><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=c># ===== Stage 2 =====</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>FROM</span><span class=s> nginx</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=c># From Stage 1, copy the build files into the default directory that NGINX serves files from.</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>COPY</span> --from<span class=o>=</span>build /app/build /usr/share/nginx/html<span class=err>
+</span></span></span></code></pre></td></tr></table></div></div><p><strong>How was this Dockerfile made?</strong>
+Suppose we&rsquo;re working on a React project. Here would be a simple Dockerfile to start with:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-dockerfile data-lang=dockerfile><span class=line><span class=cl><span class=k>FROM</span><span class=s> node:14.18.1</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>WORKDIR</span><span class=s> /app</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>COPY</span> package.json .<span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>RUN</span> yarn install<span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>COPY</span> . .<span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>EXPOSE</span><span class=s> 3000</span><span class=err>
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=k>CMD</span> <span class=p>[</span><span class=s2>&#34;yarn&#34;</span><span class=p>,</span> <span class=s2>&#34;start&#34;</span><span class=p>]</span><span class=err>
+</span></span></span></code></pre></td></tr></table></div></div><p>When you run <code>yarn start</code>, a dev server is spun up which listens to traffic on port 3000 and serves your app. This is not a production-grade server and should not be used in deployment.
+<img src=/Knowledge/Engineering/Technologies/assets/docker-react-container-example.png width=250>
+For production, we&rsquo;d actually want to run <code>yarn build</code> to get a bunch of optimised, production-ready files, and then get NGINX to serve them:
+<img src=/Knowledge/Engineering/Technologies/assets/docker-react-container-for-prod-example.png width=250>
+We can write a production Dockerfile for the React app by using a first stage that builds the files, and a second stage that spins up an NGINX server to serve those files:
+<img src=/Knowledge/Engineering/Technologies/assets/multi-stage-docker-build-example.png width=400></p><a href=#faq><h2 id=faq><span class=hanchor arialabel=Anchor># </span>FAQ</h2></a><a href=#you-can-run-an-operating-system-in-a-container><h3 id=you-can-run-an-operating-system-in-a-container><span class=hanchor arialabel=Anchor># </span>You can run an operating system in a container??</h3></a><p>Most Docker examples you see will involve using a base container image containing a Linux distribution like the
+<a href=https://hub.docker.com/_/ubuntu/ rel=noopener>official DockerHub image for Ubuntu</a>.</p><p>Docker containers do not contain a complete OS like a virtual machine, it just has a snapshot of the filesystem of a &lsquo;donor&rsquo; OS. This idea is powerful enough that you can run a Linux distribution&rsquo;s entire application layer inside a container, eg. the package manager (<code>apt</code>, <code>pacman</code>, etc.), spawning a shell, etc.</p><p>Not every container &lsquo;has&rsquo; an operating system. You won&rsquo;t be able to launch a shell in a container that doesn&rsquo;t have one.</p><a href=#under-the-hood><h3 id=under-the-hood><span class=hanchor arialabel=Anchor># </span>Under the hood</h3></a><p>TODO.</p></article><hr><div class=page-end><div class=backlinks-container><h3>Backlinks</h3><ul class=backlinks><li><a href=/ data-ctx=Docker data-src=/ class=internal-link>Tim's Dev Wiki</a></li><li><a href=/.trash/Devops/Containers/ data-ctx=Docker data-src=/.trash/Devops/Containers class=internal-link>Containers</a></li><li><a href=/Knowledge/Engineering/DevOps/Containers/ data-ctx=Docker data-src=/Knowledge/Engineering/DevOps/Containers class=internal-link>Containers</a></li><li><a href=/Knowledge/Engineering/Technologies/Docker-Compose/ data-ctx=Docker data-src=/Knowledge/Engineering/Technologies/Docker-Compose class=internal-link>Docker Compose</a></li><li><a href=/Knowledge/Engineering/Technologies/Kubernetes/ data-ctx=Docker data-src=/Knowledge/Engineering/Technologies/Kubernetes class=internal-link>Kubernetes</a></li></ul></div></div><div id=contact_buttons><footer><ul><li><a href=/>Home</a></li><li><a href=https://github.com/Tymotex/wiki>Github</a></li><li><a href=https://www.linkedin.com/in/timz-seng>LinkedIn</a></li></ul><p>Tim Zhang © 2022</p></footer></div></div></body></html>
