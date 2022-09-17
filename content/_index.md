@@ -16,7 +16,7 @@ Welcome to my personal developer wiki. Learning is incredibly chaotic — this i
 
 ---
 
-### Engineering
+# Software Engineering
 *Software engineering* is the set of theory and practices around making computers do what you want it to do. Below is a list of notes written in my exploration of software technologies and concepts.
 
 ## Programming Languages
@@ -47,7 +47,7 @@ Welcome to my personal developer wiki. Learning is incredibly chaotic — this i
 	- [[Knowledge/Engineering/DevOps/Virtual Machines|Virtual machines]]
 	- [[Knowledge/Engineering/DevOps/Containers|Containers]]
 	- [[Knowledge/Engineering/DevOps/Hypervisor|Hypervisors]]
-- **Fullstack engineering**
+- **Fullstack**
 	- [[Knowledge/Engineering/Full-Stack/State Management|State management]]
 - **Architecture**
 	- [[Knowledge/Engineering/Architecture/Microservice|Microservices]]
