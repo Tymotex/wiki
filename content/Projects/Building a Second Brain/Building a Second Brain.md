@@ -20,3 +20,10 @@ title: Building a Second Brain
 		- What could you have done better?
 - Automate the creation of new weekly task boards.
     - Could keep this rolling. Eg. could write a script that automatically pushes forward tasks from previous day to the current day. Automatically archive previous days. Have columns for the next 6 days after today. 
+    
+
+
+## Features
+- Mobile Git synchronisation with [Termux](https://termux.dev/en/) and [Termux:Widget](https://wiki.termux.com/wiki/Termux:Widget).
+    - [Inspired from this blog post](https://werzum.github.io/tech/2022/02/13/Obsidian-Mobile-Sync.html). I wrote a simple shell script that can be executed manually in one press through Termux:Widget. All the shell script does it run git commands to pull and then push whatever changes I make through Obsidian.
+    - The Git syncing could be accomplished through [Tasker,](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&hl=en_AU&gl=US) I believe.
