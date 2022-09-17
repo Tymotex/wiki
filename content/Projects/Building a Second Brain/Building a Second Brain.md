@@ -1,3 +1,6 @@
+---
+title: Building a Second Brain
+---
 
 - Version control: Need to make the private content exist in a private repository.
 - Want to go through each book in my reading list and at least write a few sentences for each, explaining the main takeaways.

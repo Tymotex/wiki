@@ -1,3 +1,6 @@
+---
+title: Competitive Programming
+---
 
 - Grind through Codeforces to get good quickly
 - Finish C++ textbook.
