@@ -4,6 +4,7 @@ Ideas for what to do.
 - Open source contribution to a React library/project.
 - Python personal finance tracking.
 - Writing first blog and publishing on Medium.
+- Submit portfolio to bestfolio.
 
 ## Hobbies
 - Buy 4 angelfish, 2 pearl gourami, and a few more.

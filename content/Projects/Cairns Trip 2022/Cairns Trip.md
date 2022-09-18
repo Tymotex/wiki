@@ -1,36 +1,42 @@
 
 See [[Projects/Cairns Trip 2022/Planning Trips|Planning Trips]].
 
-## Research checklist
-- Airbnb vs. hotel
-- Optimising trip cost
-- Picking airline tickets
-- Best places to visit in Cairns
-- Requirements for scuba diving
-- Cheapest time for travel
-- Look for people's travel checklists
-
 ## Accommodation
-[This Airbnb studio](https://www.airbnb.com.au/rooms/54151823?adults=3&location=Cairns%2C%20Queensland&check_in=2022-10-21&check_out=2022-10-26&federated_search_id=8c776150-214c-415b-a3af-cdc2e25dff0f&source_impression_id=p3_1663312081_bQ%2F1XIHXA2EENLBP) for $531.43.
-
-[Reef Palms](https://www.booking.com/hotel/au/reef-palms.en-gb.html?aid=356980&label=gog235jc-1FCAMoD0IGY2Fpcm5zSDNYA2gPiAEBmAEJuAEZyAEM2AEB6AEB-AEMiAIBqAIDuALKmJCZBsACAdICJDMwMzY5MzkzLTY3YWMtNGNjMy1iYzg2LTJiMzkwOWU5M2VmYtgCBuACAQ&sid=650b067686648c20ce8198bbd2218209&atlas_src=hp_iw_btn&checkin=2022-10-21&checkout=2022-10-26&dist=0&group_adults=3&group_children=0&no_rooms=1&sb_price_type=total&srepoch=1663307756&srpvid=32eb28ac4ecc01d6&type=total&req_children=0&req_adults=3&hp_refreshed_with_new_dates=1&activeTab=main#map_closed).
 
 ## Itinerary
 - Green Island
     - According to reviews, the snorkelling experience sucks because all the surrounded coral in shallow waters have been destroyed by tourists.
 - Day 1 (Friday) arrival on late morning:
+    - Check in at 
+[Reef Palms](https://www.booking.com/hotel/au/reef-palms.en-gb.html?aid=356980&label=gog235jc-1FCAMoD0IGY2Fpcm5zSDNYA2gPiAEBmAEJuAEZyAEM2AEB6AEB-AEMiAIBqAIDuALKmJCZBsACAdICJDMwMzY5MzkzLTY3YWMtNGNjMy1iYzg2LTJiMzkwOWU5M2VmYtgCBuACAQ&sid=650b067686648c20ce8198bbd2218209&atlas_src=hp_iw_btn&checkin=2022-10-21&checkout=2022-10-26&dist=0&group_adults=3&group_children=0&no_rooms=1&sb_price_type=total&srepoch=1663307756&srpvid=32eb28ac4ecc01d6&type=total&req_children=0&req_adults=3&hp_refreshed_with_new_dates=1&activeTab=main#map_closed).
     - Cairns Aquarium [all-day general admission](https://www.cairnsaquarium.com.au/general-admission/) at $150.
-    - **Consider**: Aquarium + Skyrail + Kuranda visit at $500 https://www.cairnsaquarium.com.au/tours-activities/aquarium-skyrail-kuranda-rail/
-- Day 2 (Saturday) reef:
-    - Great Barrier Reef Cruise (including snorkelling and diving) https://greatbarrierreeftourscairns.com.au/tours/great-barrier-reef-snorkelling-tour/
-    - $220 for snorkelling. https://www.tripadvisor.com.au/AttractionProductReview-g255069-d11465161-Passions_of_Paradise_Great_Barrier_Reef_Snorkel_and_Dive_Cruise_from_Cairns_by_Lux.html
-    - $215 for snorkelling and scuba. https://www.tripadvisor.com.au/AttractionProductReview-g255069-d11448699-Great_Barrier_Reef_Snorkeling_and_Diving_Cruise_from_Cairns-Cairns_Cairns_Region_Q.html
-    - $250 each, full-day. Departure from Port Douglas. https://www.wavelength.com.au/tours
-- Day 3 (Sunday) Kuranda
-- Day 4 (Monday) Fitzroy Island
-    - ~$90 for full-day trip. https://www.tripadvisor.com.au/AttractionProductReview-g255069-d11452301-Fitzroy_Island_Day_Trip_from_Cairns-Cairns_Cairns_Region_Queensland.html
-- Day 5 (Tuesday) reef
-- Day 6 (Wednesday) departure
+    - Night Markets from 4:30PM onwards.
+    - Cairns Esplanade Lagoon walk.
+- Day 2 (Saturday) Great Barrier Reef.
+    - $220 per person. [Full-day snorkel and cruise (Passions of Paradise)](https://www.tripadvisor.com.au/AttractionProductReview-g255069-d11465161-Passions_of_Paradise_Great_Barrier_Reef_Snorkel_and_Dive_Cruise_from_Cairns_by_Lux.html).
+        - $80 camera hire.
+        - Basic snorkelling/diving training, snorkelling/diving at first site, buffet lunch, snorkelling/diving at second site.
+    - $215 per person. [Snorkelling and scuba (Down Under)](https://www.tripadvisor.com.au/AttractionProductReview-g255069-d11448699-Great_Barrier_Reef_Snorkeling_and_Diving_Cruise_from_Cairns-Cairns_Cairns_Region_Q.html). 
+        - Snorkelling and diving at 2 dive sites (Saxon or Norman Reef, and North Hastings Reef). Lunch and refreshments.
+- Day 3 (Sunday) Kuranda.
+    - $90 per person. Skyrail cableway (round-trip, full-day).
+    - $20 per person. Butterfly sanctuary.
+    - $20 per person. Birdworld.
+    - $20 per person. Riverboat tours.
+    - $20 per person. Koala Gardens.
+    - [Kuranda hikes and lookouts](https://www.kuranda.org/see-do/walking-tracks-trails).
+        - Barron Falls.
+- Day 4 (Monday) Fitzroy Island.
+    - ~$50 for full-day trip. [Main website for booking](https://www.tripadvisor.com.au/AttractionProductReview-g255069-d11452301-Fitzroy_Island_Day_Trip_from_Cairns-Cairns_Cairns_Region_Queensland.html).
+        - Turtle rehabilitation centre.
+        - Glass bottom boat tour.
+        - Snorkelling.
+        - Paddle board.
+        - Hike to summit.
+- Day 5 (Tuesday) flexible day.
+    - Either Daintree or another trip to the Great Barrier Reef.
+- Day 6 (Wednesday) departure.
+    - Cairns botanic garden.
 
 ## Food
 
@@ -43,16 +49,3 @@ See [[Projects/Cairns Trip 2022/Planning Trips|Planning Trips]].
 **Conditional items**:
 - Sunscreen.
 - Mosquito repellent.
-
-## Attractions
-- Skyrail Rainforest Cableway
-- Great Barrier Reef.
-- Fitzroy Island.
-- Kuranda.
-    - Butterfly Sanctuary.
-- Cairns Aquarium.
-- Cairns Botanic Gardens.
-- Cairns Esplanade coastal pavement walk.
-
-## Scuba Diving
-
