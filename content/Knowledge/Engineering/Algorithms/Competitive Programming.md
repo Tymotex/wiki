@@ -2,6 +2,7 @@
 title: Competitive Programming
 ---
 
+
 - Grind through Codeforces to get good quickly
 - Finish C++ textbook.
 - Read the CS4128 tips page.
@@ -20,3 +21,6 @@ Sub max n into time complexity expression and if it evaluates to less than 10 mi
 
 ## Tips
 - Use a brute force algorithm to generated expected outputs to compare against your solution.
+
+## Questions
+- Do you generally start implementing the solution when you're very confident your solution is correct? Or do you jump into implementation earlier and then figure it out as you go?
