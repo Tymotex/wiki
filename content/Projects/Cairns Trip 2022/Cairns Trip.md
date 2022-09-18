@@ -6,8 +6,9 @@ See [[Projects/Cairns Trip 2022/Planning Trips|Planning Trips]].
 
 ## Itinerary
 ### Day 1
+- Uber from Cairns Airport to Reef Palms.
 - Check in at [Reef Palms](https://www.booking.com/hotel/au/reef-palms.en-gb.html?aid=356980&label=gog235jc-1FCAMoD0IGY2Fpcm5zSDNYA2gPiAEBmAEJuAEZyAEM2AEB6AEB-AEMiAIBqAIDuALKmJCZBsACAdICJDMwMzY5MzkzLTY3YWMtNGNjMy1iYzg2LTJiMzkwOWU5M2VmYtgCBuACAQ&sid=650b067686648c20ce8198bbd2218209&atlas_src=hp_iw_btn&checkin=2022-10-21&checkout=2022-10-26&dist=0&group_adults=3&group_children=0&no_rooms=1&sb_price_type=total&srepoch=1663307756&srpvid=32eb28ac4ecc01d6&type=total&req_children=0&req_adults=3&hp_refreshed_with_new_dates=1&activeTab=main#map_closed).
-- Rusty's Market.j
+- Rusty's Market.
 - Cairns Aquarium [all-day general admission](https://www.cairnsaquarium.com.au/general-admission/) at $150.
 - Night Markets from 4:30PM onwards.
 - Cairns Esplanade Lagoon walk.
@@ -20,6 +21,7 @@ See [[Projects/Cairns Trip 2022/Planning Trips|Planning Trips]].
     - Snorkelling and diving at 2 dive sites (Saxon or Norman Reef, and North Hastings Reef). Lunch and refreshments.
 
 ### Day 3 (Kuranda)
+- Bus from Reef Palms to Smithfield Terminal, and back.
 - $90 per person. Skyrail cableway (round-trip, full-day).
 - $20 per person. Butterfly sanctuary.
 - $20 per person. Birdworld.
