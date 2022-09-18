@@ -5,14 +5,6 @@ description: Planning Trips
 
 - Is there a best time to visit the destination?
 
-## Packing List
-- Moisturiser.
-- Sleeping eye mask.
-
-**Conditional items**:
-- Sunscreen.
-- Mosquito repellent.
-
 ## Airlines
 There are 4 major airlines: Qantas, Virgin, Jetstar and Tigerair. 
 - Qantas and Virgin cost more than Jetstar and Tigerair.
@@ -32,3 +24,32 @@ Prices are determined by the supply and demand model. Pick a time when people ar
 ## Travel Agencies
 Travel agencies handle a lot of the complexity with trip planning. DIY travel planning is usually considerably cheaper.
 
+## Packing List
+> You generally need less than you think. Err on the side of underpacking.
+- Passport (and other documents, depending on destination).
+- Emergency contacts list.
+- $n+1$ days of clothes.
+- **Toiletries**:
+    - Toothbrush, floss, toothpaste.
+    - Body wash, shampoo (if not provided by accommodation).
+    - Moisturiser.
+    - Sanitiser.
+    - Tissues.
+- **Electronics**:
+    - Laptop.
+    - Chargers.
+    - Headphones/earphones.
+    - eReader.
+- Sleeping eye mask.
+- Pen and notepad.
+- Small umbrellas.
+
+**Conditional items**:
+- Sunscreen.
+    - Note: there are special 'reef-safe sunscreens'.
+- Swimwear.
+- Sea sickness pills.
+- Towels.
+- Mosquito repellent.
+- Plug adaptors.
+- Power bank.
