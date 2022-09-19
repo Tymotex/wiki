@@ -8,21 +8,31 @@ kanban-plugin: basic
 
 - [ ] **Open source contribution** to a React library/project. Maybe contribute to `obsidian-kanban`?
 - [ ] **Python personal finance tracking.**
-- [ ] **Writing first blog** and publishing on Medium.
+- [ ] [[_/Writing first blog  and publishing on Medium.]]
 - [ ] Set up **Prometheus and Grafana** for timz.dev or another project.
 - [ ] Submit portfolio to bestfolio.
 - [ ] **Learn Kubernetes** [the hard way](https://github.com/kelseyhightower/kubernetes-the-hard-way)
 - [ ] Attend a programming meetup or other meetup on **meetup.com.**
 - [ ] Try out [Gource](https://www.youtube.com/watch?v=DDhPBtzRuLY&ab_channel=MikeM%C3%B8llerNielsen)
 - [ ] Refine all your course notes and make them appear in search results.
+- [ ] Read a **concurrency** textbook.
+- [ ] Read a **software architecture** book.
+- [ ] Read a **distributed systems** textbook.
+- [ ] Attend 1 **conference.**
+- [ ] Read 1 **academic paper** (eg. Claude Shannon's information theory paper).
+- [ ] Make a plan for learning AI, long-term.
 
 
 ## Self-Improvement
 
 - [ ] **Invest** $1000 in an index fund.
 - [ ] **Approach women and have dates.** Do it infrequently enough that it doesn't derail you. You *must* practice.
+- [ ] Join Toastmasters.
 - [ ] Find and join a **hobby group.**
 - [ ] Read a book on **writing.**
+- [ ] Schedule weekly and monthly reviews of your life.
+- [ ] Pick out the most useful articles from **moneysmart.gov.au** and read them.
+- [ ] Consolidate your Super accounts.
 
 
 ## Hobbies

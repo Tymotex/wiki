@@ -2,7 +2,7 @@
 title: Cairns Trip
 ---
 
-See [[Projects/Cairns Trip 2022/Planning Trips|Planning Trips]].
+See [[Areas/Planning Trips|Planning Trips]].
 
 ## Itinerary
 ### Day 1
@@ -46,7 +46,7 @@ Either Daintree or another trip to the Great Barrier Reef.
 
 
 ## Packing List
-See [[Projects/Cairns Trip 2022/Planning Trips#Packing List|Packing List]].
+See [[Areas/Planning Trips#Packing List|Packing List]].
 - Sea sickness pills.
 - Thongs (important for Fitzroy Island).
 - Reef-safe sunscreen (buy at Cairns). 

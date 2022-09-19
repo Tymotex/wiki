@@ -20,8 +20,6 @@ title: Building a Second Brain
 		- What could you have done better?
 - Automate the creation of new weekly task boards.
     - Could keep this rolling. Eg. could write a script that automatically pushes forward tasks from previous day to the current day. Automatically archive previous days. Have columns for the next 6 days after today. 
-    
-
 
 ## Features
 - Mobile Git synchronisation with [Termux](https://termux.dev/en/) and [Termux:Widget](https://wiki.termux.com/wiki/Termux:Widget).
