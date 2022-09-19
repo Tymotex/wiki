@@ -16,11 +16,18 @@ See [[Knowledge/Engineering/Languages/Python Data Science|Python for Data Scienc
 ### Dunder Methods
 TODO.
 
+### Context Manager
+`with`
+
+TODO: see https://www.pythoncheatsheet.org/cheatsheet/context-manager.
 
 ## Virtual Environments
+> 
 
+To prevent bloating the base Python installation with project dependencies and improve portability, use virtual environments.
 ```bash
-python3 -m venv ./venv    # Create a virtual environment 
+pip install virtualenv
+python -m venv ./venv    # Create a virtual environment 
 ```
 
 ## Import and Export
@@ -113,16 +120,7 @@ print(greeting)
 Python 3.5 supplies the [`typing`](https://docs.python.org/3/library/typing.html) built-in module brings in a lot of advanced static typing utilities such as those seen in TypeScript. 
 
 ## Standard Built-In Modules
-The most useful [standard built-in modules](https://docs.python.org/3/py-modindex.html)  from my experience are:
-- os
-- re
-- sys
-- time
-- datetime
-- collections
-- typing
-- random
-- math
+See [standard built-in modules](https://docs.python.org/3/py-modindex.html).
 
 ### File Manipulation
 Python has built-in top-level functions for file manipulation:
@@ -147,12 +145,60 @@ with open(filename, "w") as my_file:
 os.getcwd()
 os.path.exists(path)
 os.path.isdir(path)
-os.path.join(...path_fragments)   # Forms a complete path in a cross-OS way (since Windows uses backslash separators).
+os.path.join(*path_fragments)   # Forms a complete path in a cross-OS way (since Windows uses backslash separators).
 os.makedirs(path)                 # Like `mkdir -p`, which creates all non-existent directories along the path.
 ```
 
 ### Regex
 See [[Knowledge/Engineering/Languages/Regex|regex]].
 
-### Dates
+> Use raw strings `r"..."` when specifying regex patterns to avoid being confused about what characters are being escaped.
 
+```python
+regex = re.compile(r"...")
+match = regex.search(haystack)  # `re.Match` object contains info about the search. If no match was found, then `match == None`.
+
+# Equivalent to the above, but you can't reuse the compiled regex.
+result = re.match(r"...", haystack)
+```
+
+**Capture Groups**:
+```python
+match = re.match(r"(\w+) (\w+)", "Linus Torvalds")
+
+match[0]        # The original string, "Linus Torvalds".
+match.group(0)  #   Equivalent to above.
+
+match[1]        # First capture group, "Linus".
+match.group(1)  #   Equivalent to above.
+
+match[2]        # Second capture group, "Torvalds".
+match.group(2)  #   Equivalent to above.
+```
+
+### Dates
+Use [`datetime`](https://docs.python.org/3/library/datetime.html) to work with dates. Use [`time`](https://docs.python.org/3/library/time.html) for lower-level operations involving time.
+
+**Convert between strings and dates**:
+```python
+from datetime import datetime
+
+# strptime: str → datetime
+date_str = "2022-09-20"
+date_obj = datetime.strptime(date_str, "%Y-%m-%d")
+
+# strftime: datetime → str
+date_obj = datetime.now()
+date_str = date_obj.strftime("%Y-%m-%d")
+```
+
+**Date arithmetic and comparison**:
+Use `timedelta` to add/subtract time from a date. You can directly use comparison operators on `datetime` objects.
+```python
+from datetime import datetime, timedelta
+
+today = datetime.now()
+yesterday = today - timedelta(days=1)
+
+assert(yesterday < today)
+```
