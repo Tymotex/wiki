@@ -1,5 +1,5 @@
 import typer
-from tasks_formatter import Board
+from tasks_formatter.board import Board
 from colorama import (
     init as init_colours,
     deinit as deinit_colours,

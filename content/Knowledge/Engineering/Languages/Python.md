@@ -26,12 +26,56 @@ Basic python installation
 - **Packages** — directories containing `__init__.py`. A package *contains* one or multiple modules or further nested packages.
 
 ```python
-import mod
+import foo
 ```
 This does the following:
-- Searches for the `mod` module in the paths in `sys.path`.
-- Creates a [module object](https://github.com/python/cpython/blob/3.9/Objects/moduleobject.c).
-- Assigns it to the `mod` variable.
+- Searches for the `foo` module in the paths in `sys.path`.
+- Creates a [module object](https://github.com/python/cpython/blob/3.9/Objects/moduleobject.c) and assigns it to the `foo` variable.
+
+```python
+import foo.bar
+```
+This does the following:
+- Searches for the `foo` package in the paths in `sys.path`, and then finds the `bar` module in that package.
+- Creates a module object and assigns it to the `foo` variable. 
+
+```python
+from foo import bar, baz
+```
+This does the following:
+- Searches for `foo` in the paths in `sys.path`.
+- Creates a module object and assigns it to the `foo` variable. 
+- Declares and initialises variables `bar = foo.bar` and `baz = foo.baz`.
+    - **Note**: if the exported binding `foo.bar` doesn't exist, then Python attempts to interpret `bar` as a submodule, so it tries `import foo.bar` as a fallback.
+- Deletes the `foo` variable.
+
+### Relative Imports
+> Relative imports are generally discouraged since they're less readable, less understood, and easy to break.
+
+All relative imports are done with `from _ import _`. The `import _` statement is always absolute.
+```python
+from . import foo     # From the current package, import `foo`.
+from .bar import baz  # From the `bar` module in the current package, import `baz`.
+```
+- `.` is the *current package*, which is what `__package__` is set to.
+- `..` is the parent package.
+
+**Having trouble?**
+Some crucial details to note:
+- Python files are loaded as either a *module* or a *top-level script*. When you do `python app.py`, you are loading `app.py` as a top-level script.
+- Top-level scripts have `__name__` set to `__main__`. There is only ever 1 top-level script.
+- Modules have `__name__` set to a dot-separated string of their package path.
+- The `__name__` is used to determine where the current file is in a package, **not the filesystem structure** like in other languages. If `__name__` is `__main__`, then you'll get the `no known parent package` error.
+
+### `__init__.py`
+The presence of this file (even if empty) indicates that the containing folder is a **package**, not a regular directory. This rule was dropped for subpackages, however, [to improve developer experience](https://mail.python.org/pipermail/python-dev/2006-April/064400.html).
+
+Whatever you import inside `__init__.py` becomes accessible directly under the package name for consumers. Eg. in the example below, consumers can just do `from foo import baz`. This works a bit similarly to the `index.js` file exporting variables in JavaScript.
+```python
+# foo/__init__.py
+from foo.bar import baz
+```
+
 
 
 - You can wrap imports in parentheses.
