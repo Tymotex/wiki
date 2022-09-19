@@ -3,8 +3,15 @@ title: Python
 description: Python
 ---
 
+![[Knowledge/Engineering/Languages/assets/python-wallpaper.png|700]]
 
+Python is a [[Knowledge/Engineering/Programming/Type System#Dynamic Typing|dynamically-typed]] high-level programming language whose design philosophy centres around readability and terseness. It's used frequently for data science and machine learning, backend development, scripts and CLIs.
 
+> Code is sometimes described as *pythonic*, which just means it exploits Python's language features and design to produce something very readable and elegant.
+
+See [[Knowledge/Engineering/Languages/Python Data Science|Python for Data Science]].
+
+---
 
 ### Dunder Methods
 TODO.
@@ -105,4 +112,47 @@ print(greeting)
 ### typing Module
 Python 3.5 supplies the [`typing`](https://docs.python.org/3/library/typing.html) built-in module brings in a lot of advanced static typing utilities such as those seen in TypeScript. 
 
----
+## Standard Built-In Modules
+The most useful [standard built-in modules](https://docs.python.org/3/py-modindex.html)  from my experience are:
+- os
+- re
+- sys
+- time
+- datetime
+- collections
+- typing
+- random
+- math
+
+### File Manipulation
+Python has built-in top-level functions for file manipulation:
+```python
+# Reading.
+my_file = open(filename, "r")
+lines: List[str] = my_file.readlines()
+my_file.close()
+
+# Alternatively, using `with`:
+with open(filename, "r") as my_file:
+    lines: List[str] = my_file.readlines()
+
+# Writing.
+with open(filename, "w") as my_file:
+    my_file.write("Hi.")
+```
+
+### OS
+[`os`](https://docs.python.org/3/library/os.html) provides a bunch of useful functions for working with the filesystem.
+```python
+os.getcwd()
+os.path.exists(path)
+os.path.isdir(path)
+os.path.join(...path_fragments)   # Forms a complete path in a cross-OS way (since Windows uses backslash separators).
+os.makedirs(path)                 # Like `mkdir -p`, which creates all non-existent directories along the path.
+```
+
+### Regex
+See [[Knowledge/Engineering/Languages/Regex|regex]].
+
+### Dates
+
