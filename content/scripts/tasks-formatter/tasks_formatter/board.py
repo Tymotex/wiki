@@ -1,5 +1,3 @@
-from .util import hi
-
 class Board:
     def __init__(self, filename):
         self.board_file = open(filename, "r")
