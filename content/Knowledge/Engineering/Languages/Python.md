@@ -16,11 +16,6 @@ TODO.
 python3 -m venv ./venv    # Create a virtual environment 
 ```
 
-
-Basic python installation
-```
-```
-
 ## Import and Export
 - **Modules** — any Python file.
 - **Packages** — directories containing `__init__.py`. A package *contains* one or multiple modules or further nested packages.
@@ -28,21 +23,18 @@ Basic python installation
 ```python
 import foo
 ```
-This does the following:
 - Searches for the `foo` module in the paths in `sys.path`.
 - Creates a [module object](https://github.com/python/cpython/blob/3.9/Objects/moduleobject.c) and assigns it to the `foo` variable.
 
 ```python
 import foo.bar
 ```
-This does the following:
 - Searches for the `foo` package in the paths in `sys.path`, and then finds the `bar` module in that package.
 - Creates a module object and assigns it to the `foo` variable. 
 
 ```python
 from foo import bar, baz
 ```
-This does the following:
 - Searches for `foo` in the paths in `sys.path`.
 - Creates a module object and assigns it to the `foo` variable. 
 - Declares and initialises variables `bar = foo.bar` and `baz = foo.baz`.

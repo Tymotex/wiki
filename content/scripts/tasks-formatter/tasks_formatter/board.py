@@ -1,19 +1,32 @@
+from io import TextIOWrapper
+import os
+from colorama import Fore, Style
+
 class Board:
-    def __init__(self, filename):
-        self.board_file = open(filename, "r")
+    def __init__(self, task_file_path):
+        self.create_task_file_if_not_exist(task_file_path)
+
+        self.task_file_path = task_file_path
         self.frontmatter = {}
         self.tasks = []
         self.archived_tasks = []
         self.board_settings = {}
+
         self._extract_board_data()
 
-    def create_task_file_if_not_exist(self):
+    def create_task_file_if_not_exist(self, task_file_path: str):
         """
         Creates a new task file with the source code necessary for a kanban
         board to be rendered by `obsidian-kanban`.
         """
-        pass
-
+        directory_path, filename = task_file_path.rsplit(os.sep, 1)
+        if not os.path.exists(directory_path):
+            print(Fore.CYAN + f" → Creating directory: {directory_path}" + Style.RESET_ALL)
+            os.makedirs(directory_path)
+        if not os.path.exists(task_file_path):
+            print(Fore.CYAN + f" → Creating task file: {filename}" + Style.RESET_ALL)
+            open(task_file_path, "a").close()
+    
     def _extract_board_data(self):
         """
         Reads the board file, stepping through each line and extracting out all
@@ -38,13 +51,11 @@ class Board:
             %%
         6. End of file.
         """
-        pass
+        with open(self.task_file_path, "r") as task_file:
+            for line in task_file:
+                print(line)
 
-    def _normalise_task_file(self):
-        # Strip all newlines.
-        pass
-
-    def _extract_frontmatter(self):
+    def _extract_frontmatter(self, task_file: TextIOWrapper):
         pass
 
     def _extract_columns(self):
