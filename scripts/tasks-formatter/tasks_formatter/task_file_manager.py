@@ -50,6 +50,12 @@ class TaskFileManager:
         self._tasks.sort(key=lambda task: task[0])
         return []
 
+    def append_tasks(self, tasks: List[Tuple[str, List[str]]]):
+        """
+        Sorts tasks by date and appends the given tasks.
+        """
+        pass
+
     def _create_task_file_if_not_exist(self, task_file_path: str):
         """
         Creates a new task file with the source code necessary for a kanban
