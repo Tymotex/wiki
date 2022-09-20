@@ -14,6 +14,8 @@ The **[ISO C++ standard](https://isocpp.org/std/%20the-standard)** defines:
 - Core language features — data types, loops, etc.
 - Standard library components — `vector`, `map`, `string`, etc.
 
+Also see [[Knowledge/Engineering/Languages/C++ Standard Library|C++ standard library]].
+
 ## Core
 ### Variable Initialisation
 There are many ways to initialise a variable with a value.
@@ -37,13 +39,16 @@ There are many ways to initialise a variable with a value.
     ```
 - `explicit` constructors are *not invokable* with copy initialisation.
 
-### auto
+### Auto
 When specifying the data type of something as `auto`, C++ automatically infers the type.
 - Use `auto` for concision, especially when long generic types are involved.
 - It's fine to use [[Knowledge/Engineering/Languages/C++#Variables|copy initialisation]] if you use `auto` since type narrowing won't be a problem. E.g. `auto x = 1`.
 - Always assume that `auto`, by itself, will make a copy of the RHS. Use `auto&` if copying is undesirable (such as when copying large vectors).
 
-### const
+### Const
+The `const` qualifier makes it impossible to assign a new value to a variable after it's initialised.
+
+
 - `const` and `constexpr`— immutable variables. Declaring and initialising a `const` variable will make the compiler guarantee that its value is never modified, ever.
     ```cpp
     const int i = 1;      
@@ -54,16 +59,26 @@ When specifying the data type of something as `auto`, C++ automatically infers t
     constexpr int x = 8; 
     constexpr int x = cube(2);    // Error, *unless cube is defined as a [**constexpr function**](https://www.ibm.com/docs/es/xl-c-and-cpp-aix/16.1?topic=functions-constexpr-c11)*
     ```
-    You can have `const` before or after the data type:
-    ```cpp
-    const int *         ==    int const *
-    const int * const   ==    int const * const
-    ```
-    If this is hard to read, see the [[Knowledge/Engineering/Languages/C++#Clockwise Spiral Rule|clockwise-spiral rule]].
 
-### constexpr
+#### Const Pointers
+```cpp
+const int *p;               // A pointer to an immutable int.
+const int * const q = ...;  // An immutable pointer to an immutable int. It must be initialised with a memory address.
+int * const r = ...;        // An immutable pointer to an int. It must be initisalised with a memory address.
+```
+If this is hard to read, see the [[Knowledge/Engineering/Languages/C++#Clockwise Spiral Rule|clockwise-spiral rule]].
 
-### static
+#### Const References
+> Prefer typing function parameters as const references. This gives the caller confidence that what they pass in is not modified in any way.
+
+#### Constexpr
+
+
+#### Const Methods
+
+The `const` qualifier *must* be placed after the parameter list.
+
+### Static
 - `static` variables. In functions, static variables let you share a value across all calls to that function.
     ```cpp
     void foo() {
@@ -76,72 +91,79 @@ When specifying the data type of something as `auto`, C++ automatically infers t
         ![Program memory map|300](Knowledge/Engineering/Languages/assets/program-memory-map.png)
 
 ### Clockwise-Spiral Rule
-[Clockwise-Spiral Rule](http://c-faq.com/decl/spiral.anderson.html) — for reading variable declarations. This rules lets any C programmer understand what any variable declaration is saying.
-1. Start at the variable name
-2. Follow a clockwise spiral to build up a sentence
+[Clockwise-Spiral Rule](http://c-faq.com/decl/spiral.anderson.html) is a trick for reading variable types.
+1. Start at the variable name.
+2. Follow an outwards clockwise spiral from that variable name to build up a sentence.
 
-Example:
-![Untitled|300](Knowledge/Engineering/Languages/assets/Untitled%203.png)
-
-Starting at `fp`:
-1. `fp` is a pointer 
-2. `fp` is a pointer to a function (that takes in an int and a float pointer)
-3. `fp` is a pointer to a function (that takes in an int and a float pointer) that returns a pointer
-4. `fp` is a pointer to a function (that takes in an int and a float pointer) that returns a pointer to a char
+**Example**:
+![clockwise-spiral rule example|400](Knowledge/Engineering/Languages/assets/clockwise-spiral.png)
+Starting at the name `fp`:
+1. `fp` is a pointer.
+2. `fp` is a pointer to a function (that takes in an `int` and a `float` pointer).
+3. `fp` is a pointer to a function (that takes in an `int` and a `float` pointer) that returns a pointer.
+4. `fp` is a pointer to a function (that takes in an `int` and a `float` pointer) that returns a pointer to a char.
 
 More examples:
 ```cpp
-int *myVar                  // **pointer** to an **int**
-int const *myVar            // **pointer** to a **const** **int**
-int * const myVar           // **const** **pointer** to an int 
-int const * const myVar     // **const pointer** to a **const int**
+int *myVar;                     // pointer to an int.
+int const *myVar;               // pointer to a const int.
+int * const myVar = ...;        // const pointer to an int.
+int const * const myVar = ...;  // const pointer to a const int.
 ```
 
-## Loops
-- Standard `for` loop: `for (init; condition; update) { ... }`.
-- Range-based `for` loop (basically C++’s equivalent to `foreach` or *for-in* loops seen in other languages): `for (auto elem : collection)`.
-- Standard `while` loop: `while (condition) { ... }`
-
-## Conditional
-`if` statement with a variable declaration in its condition (`if (init; condition)`).
-
-In a condition, assigning a truthy value to a variable will evaluate to `true`. 
+## If-Statements
+In C++, you can declare variables inside `if` statements and follow it up with a condition: `if (init; condition) { ... }`.
 ```cpp
 vector<int> vec = { 1, 2, 3 };
 
-// Declaring a variable and using the value the assignment evaluates to as the condition
 if (int size = vec.size()) {
     cout << "Vector size is not 0" << endl;
 }
-
-// You can use a declared variable immediately in a condition afterwards
 if (int size = vec.size(); n > 2) {
-        cout << "Vector size is > 2" << endl;
+    cout << "Vector size is > 2" << endl;
 }
 ```
-- Variables declared inside the if-statement's condition expression are scoped only to the if-statement
 
-`switch`-`case` statements.
-Switch-case statements test a value against a set of constants, called *cases*.
-Its syntax is the same as in most other C-like languages.
+## IO
+`<<` — the **'put to'** operator. In `arg1 << arg2`, the `<<` operator takes the second argument and writes it into the first.
 ```cpp
-switch (value) {
-        case '__':
-                ...
-                break;
-        default:
-                ...
-}
+cout << "Meaning of life: " << 42 << "\n";
 ```
 
-# Standard Library
+`>>` — the **'get from'** operator. In `arg1 >> arg2`, the `>>` operator gets a value from `arg1` and assigns it to `arg2`.
+```cpp
+int a, b;
+cin >> a >> b;
+```
 
+`std::endl` is a newline that flushes the output buffer, which means it is less performant than `"\n"`.
+```cpp
+cout << "Hello" << endl;             // Adds a "\n" and flushes the output buffer.
+cout << "Hello" << "\n";             // Adds a "\n".
+cout << "Hello" << "\n" << flush;    // Adds a "\n" and flushes the output buffer.
+```
 
+See [[Knowledge/Engineering/Languages/C++ Standard Library#IO|C++ Standard Library IO]] for more complex IO operations.
+
+## Arrays
+The many ways of initialising arrays:
+```cpp
+int arr[4];                    // [?, ?, ?, ?] – array is full of garbage values, often zeroes.
+int arr[4] = {  };             // [0, 0, 0, 0] – all elements set to 0.
+int arr[4] = { 1, 2, 3, 4 };   // [1, 2, 3, 4].
+int arr[4] = { 1 };            // [1, 0, 0, 0] – the rest of array is zeroed.
+
+int arr[] = { 1, 2, 3, 4 };    // Array size can be omitted if it can be inferred from RHS.
+int arr[] { 1, 2, 3, 4 };      // You can use uniform initialisation instead of copy initialisation.
+```
+The size of the array must be able to be determined during compile-time.
+
+## Standard Library
+See [[Knowledge/Engineering/Languages/C++ Standard Library|C++ Standard Library]].
 
 ---
 # Old Notes
 
-# C++ Core Language:
 ### Others:
 - `new` operator — for instantiating classes and creating arrays.
     The `new` operator denotes a request for memory allocation on the heap. If the request can be granted, then it'll evaluate to the memory address of the newly allocated memory and then the constructor will be called.
@@ -196,89 +218,7 @@ switch (value) {
         }
     };
     ```
-    
 - `::` *scope resolution operator* — for unambiguously referencing a name [TODO]
-
-## I/O [TODO]
-
-- `<<` — the **'put to'** operator
-    
-    `arg1 << arg2` — the `<<` operator takes the second argument and writes it into the first.
-    
-    - `std::cout << "Hello world\n"` — the string literal is written to stdout
-    
-    Multiple insertions can be chained. This is useful for mixing literals/variables of different types.
-    
-    ```cpp
-    cout << "I am " << "Tim" << " Zhang\n";
-    cout << "My birth year is " << 2001 << "\n";
-    ```
-    
-- `>>` — the **'get from'** operator
-    
-    The data type of the RHS determines what value from the input stream will be accepted.
-    
-    ```cpp
-    int main() {
-    		int x;
-    		cin << x;
-    		cout << x << endl;
-    }
-    ```
-    
-- `endl` from $\texttt{std::endl}$
-    
-    ```cpp
-    cout << "Hello" << endl;             // Adds a "\n" and flushes the output buffer
-    cout << "Hello" << "\n";             // Adds a "\n"
-    cout << "Hello" << "\n" << flush;    // Adds a "\n" and flushes the output buffer
-    ```
-    
-    - `endl` performs significantly worse than `"\n"` due to the constant flushing of the output buffer
-
----
-
-- Printing to a specific number of decimal points
-    
-    ```cpp
-    #include <iostream>
-    #include <iomanip>
-    #include <cmath>
-    
-    using namespace std;
-    
-    int main() {
-        cout << setprecision(6) << fixed;
-        cout << M_PI << endl;
-    }
-    
-    Outputs: 3.141593   
-    ```
-    
-    `std::fixed` sets the default formatting for stdout
-    
-    `std::setprecision` sets the precision to be expected in a given i/o stream
-    
-
-## Arrays
-
-**Initialising Arrays:**
-
-```cpp
-int arr[4];                    // **[?, ?, ?, ?]** – array is full of garbage values, often 0 but you can't trust that
-int arr[4] = {  };             // **[0, 0, 0, 0]** – all elements set to **0**
-int arr[4] = { 1, 2, 3, 4 };   // **[1, 2, 3, 4]** – all elements are explicitly set
-int arr[4] = { 1 };            // **[1, 0, 0, 0]** – the rest of array is set to **0**s
-
-int arr[] = { 1, 2, 3, 4 };    // Array size can be omitted if it can be inferred from RHS
-
-int arr[] { 1, 2, 3, 4 };      // You can use **universal initialisation** instead of **copy initialisation**
-```
-
-- The size of the array must be able to be determined during compile-time
-- Reading uninitialised values of an array is *undefined behaviour*, meaning that the C++ standard doesn't say anything about what you value you'll find there. It'll often just be 0s, but it can also be wildly random numbers
-
----
 
 ## Pointers and References
 
