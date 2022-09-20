@@ -26,7 +26,7 @@ class TaskManager:
 
         # Write new states to files.
         self._tasks_buffer.commit_changes()
-        self._archived_tasks_buffer.commit_changes()
+        self._archived_tasks_buffer.commit_changes(reverse=True)
 
     def _archive_past_task_dates(self):
         """

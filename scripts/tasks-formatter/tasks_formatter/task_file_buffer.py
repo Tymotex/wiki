@@ -119,7 +119,7 @@ class TaskFileBuffer:
             curr_date += one_day
         self.insert_task_columns(new_task_columns)
 
-    def commit_changes(self):
+    def commit_changes(self, reverse: bool = False):
         """
         Writes the state of the task file buffer instance into the task file.
         """
@@ -131,6 +131,7 @@ class TaskFileBuffer:
             # Note: obsidian-kanban uses (n) to determine how many cards should
             #       go into a column. Here, we chose (6) because that's the
             #       number that the Ivy Lee method uses.
+            tasks = self._tasks if not reverse else reversed(self._tasks)
             for date, tasks in self._tasks:
                 column_name = f"## {date.strftime('%A')} {date.strftime('%Y-%m-%d')} (6)\n\n"
                 task_file.write(column_name)
