@@ -2,24 +2,20 @@ from asyncio import Task
 from datetime import datetime
 from io import TextIOWrapper
 import os
-from pprint import pprint
 import re
-from tabnanny import check
 from typing import List, Tuple, Union
 from colorama import Fore, Style
-
-class TaskFileException(Exception):
-    pass
+from tasks_formatter.exceptions import TaskFileException
 
 class TaskFileManager:
     level2_heading_regex = re.compile(r"^## (.*)$")
-    checkbox_regex = re.compile(r"^-\s*\[(\s+|\S+)\] (.*)$")
+    checkbox_regex = re.compile(r"^-\s*\[(\s*|\S+)\] (.*)$")
     
     # Every column should have a date in the universal ISO format,
     # eg. 2022-09-20.
     column_name_date_regex = re.compile(r"(\d{4}-\d{2}-\d{2})")
 
-    def __init__(self, task_file_path: str):
+    def __init__(self, task_file_path: str) -> None:
         self._create_task_file_if_not_exist(task_file_path)
 
         self._task_file_path: str = task_file_path
@@ -42,21 +38,32 @@ class TaskFileManager:
     def archived_tasks(self):
         return self._archived_tasks
 
-    def remove_tasks_up_to_date(self, date: datetime) -> List[Tuple[str, List[str]]]:
+    def remove_tasks_up_to_date(self, date: datetime) -> List[Tuple[datetime, List[str]]]:
         """
         Sorts and slices out a list of tasks in `self._tasks` up to, but not
         including, the given date.
         """
+        # Sort by date before slicing.
         self._tasks.sort(key=lambda task: task[0])
-        return []
 
-    def append_tasks(self, tasks: List[Tuple[str, List[str]]]):
-        """
-        Sorts tasks by date and appends the given tasks.
-        """
-        pass
+        date_index = self._search_for_task_date(0, len(self._tasks) - 1, date)
+        return self._tasks[0 : date_index]
 
-    def _create_task_file_if_not_exist(self, task_file_path: str):
+    def insert_task_columns(self, task_columns: List[Tuple[datetime, List[str]]]) -> None:
+        """
+        Adds the given tasks and sorts them by date.
+        """
+        for date, tasks in task_columns:
+            # Check all tasks in this column are valid.
+            for task in tasks:
+                if not TaskFileManager.checkbox_regex.search(task):
+                    raise TaskFileException(f"Attempted to insert invalid task: '{task}'")
+        self._tasks.extend(task_columns)
+
+        # Sort by date.
+        self._tasks.sort(key=lambda task: task[0])
+
+    def _create_task_file_if_not_exist(self, task_file_path: str) -> None:
         """
         Creates a new task file with the source code necessary for a kanban
         board to be rendered by `obsidian-kanban`.
@@ -69,7 +76,7 @@ class TaskFileManager:
             print(Fore.CYAN + f" → Creating task file: {filename}" + Style.RESET_ALL)
             open(task_file_path, "a").close()
     
-    def _extract_board_data(self):
+    def _extract_board_data(self) -> None:
         """
         Reads the board file, stepping through each line and extracting out all
         the data such as the frontmatter, current tasks, etc.
@@ -236,3 +243,19 @@ class TaskFileManager:
                 self._board_settings = board_settings
                 return i + 1
         raise TaskFileException("Expected ending of settings comment block, delimited by '%%'.")
+
+    def _search_for_task_date(self, low: int, high: int, target: datetime):
+        """
+        Binary searches for the given target date in the tasks. If it's found
+        return its index, otherwise, return the index where we expect to find
+        it, if it were to exist.
+        """
+        while low <= high:
+            mid = low + (high - low)//2
+            if self._tasks[mid][0] == target:
+                return mid
+            elif self._tasks[mid][0] < target:
+                low = mid + 1
+            else:
+                high = mid - 1
+        return low

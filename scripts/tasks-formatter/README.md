@@ -17,6 +17,17 @@ directory.
 The script should also be run on system or app startup so that the tasks are
 automatically formatted.
 
+## Setup
+```sh
+pip install -r requirements.txt
+```
+
+### Testing
+Execute all unit tests by running:
+```sh
+pytest
+```
+
 ## Implementation Requirements
 - All dates earlier than today's date should be moved to the archive file.
 - All previous incomplete tasks from the prior day should be moved to today's 
