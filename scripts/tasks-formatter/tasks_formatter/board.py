@@ -13,13 +13,17 @@ class TaskFileException(Exception):
 class BoardManager:
     level2_heading_regex = re.compile(r"^## (\w+)")
     checkbox_regex = re.compile(r"^-\s*\[(\s+|\S+)\] (.*)$")
+    
+    # Every column should have a date in the universal ISO format,
+    # eg. 2022-09-20.
+    column_name_date_regex = re.compile(r"(\d{4}-\d{2}-\d{2})")
 
     def __init__(self, task_file_path: str):
         self._create_task_file_if_not_exist(task_file_path)
 
         self._task_file_path: str = task_file_path
         self._frontmatter: str = ""
-        self._tasks: List[Tuple[str, List[str]]] = []
+        self._tasks: List[Tuple[datetime, List[str]]] = []
         self._archived_tasks: List[str] = []
         self._board_settings: str = ""
 
@@ -42,6 +46,7 @@ class BoardManager:
         Sorts and slices out a list of tasks in `self._tasks` up to, but not
         including, the given date.
         """
+        self._tasks.sort(key=lambda task: task[0])
         return []
 
     def _create_task_file_if_not_exist(self, task_file_path: str):
@@ -133,7 +138,10 @@ class BoardManager:
 
         Extracts the columns and their tasks and saves it to `self.tasks`.
         """
-        curr_column: Union[Tuple[str, List[str]], None] = None
+        if starting_line >= len(lines):
+            raise TaskFileException("Tasks section is missing.")
+
+        curr_column: Union[Tuple[datetime, List[str]], None] = None
         for i in range(starting_line, len(lines)):
             curr_line = lines[i]
             # Stop when a Markdown horizontal rule is encountered.
@@ -146,9 +154,12 @@ class BoardManager:
                 # extracting tasks from the new column.
                 if curr_column:
                     self._tasks.append(curr_column)
-
                 column_name = match.group(1)
-                curr_column = (column_name, [])
+                match = BoardManager.column_name_date_regex.search(column_name)
+                if not match:
+                    raise TaskFileException("Column '{column_name}' is missing a date of format: YYYY-MM-DD.")
+                date_str = match.group(1)
+                curr_column = (datetime.strptime(date_str, "%Y-%m-%d"), [])
             else:
                 match = BoardManager.checkbox_regex.search(curr_line)
                 if match:
@@ -170,6 +181,9 @@ class BoardManager:
 
         Extracts the archived tasks and saves it to `self.archived_tasks`.
         """
+        if starting_line >= len(lines):
+            raise TaskFileException("Archived tasks section is missing.")
+
         match = BoardManager.level2_heading_regex.search(lines[starting_line])
         if not match or match.group(1) != "Archive":
             raise TaskFileException("Expected the level 2 heading with text 'Archive'.")
@@ -198,12 +212,16 @@ class BoardManager:
 
         Extracts the board settings and saves it to `self.board_settings`.
         """
+        if starting_line >= len(lines):
+            raise TaskFileException("Tasks settings section is missing.")
 
+        board_settings = "%%"
         for i in range(starting_line, len(lines)):
             curr_line = lines[i]
-
+            board_settings += curr_line
             # Stop when '%%' is encountered, which signals the end of the
             # settings comment block.
             if curr_line == "%%":
+                self._board_settings = board_settings
                 return i + 1
         raise TaskFileException("Expected ending of settings comment block, delimited by '%%'.")
