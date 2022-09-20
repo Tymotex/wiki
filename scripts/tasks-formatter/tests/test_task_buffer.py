@@ -191,4 +191,53 @@ def test_search_for_task_date():
     index = task_file_buffer._search_for_task_date(0, 6, datetime(year=2022, month=9, day=29))
     assert(index == 7)
 
+def test_shift_incomplete_tasks_to_date():
+    test_file_path = get_task_file_path("valid_1.md")
+    task_file_buffer = TaskFileBuffer(test_file_path)
+
+    date = datetime.strptime("2022-09-21", "%Y-%m-%d")
+    task_file_buffer.shift_incomplete_tasks_to_date(date)
+
+    assert(task_file_buffer.tasks == [
+        (datetime(year=2022, month=9, day=19), [
+            "- [x] [[_/(1 hour)  Set up git sync with mobile.]]"
+        ]),
+        (datetime(year=2022, month=9, day=20), []),
+        (datetime(year=2022, month=9, day=21), [
+            "- [ ] Go to CSESoc event.",
+            "- [ ] **(1 hour)** Figma prototype.",
+            "- [ ] 🏆 **Purpose today**: get chores done",
+            "- [ ] **(2 hours)** Refine and review C++ notes #critical",
+            "- [ ] Go to CPMSoc event.",
+        ]),
+        (datetime(year=2022, month=9, day=22), [
+            "- [x] Install Linux VM on laptop, then VSCode with settings synced.",
+        ]),
+        (datetime(year=2022, month=9, day=23), []),
+        (datetime(year=2022, month=9, day=24), []),
+        (datetime(year=2022, month=9, day=25), [])
+    ])
+
+    date = datetime.strptime("2022-09-25", "%Y-%m-%d")
+    task_file_buffer.shift_incomplete_tasks_to_date(date)
+    assert(task_file_buffer.tasks == [
+        (datetime(year=2022, month=9, day=19), [
+            "- [x] [[_/(1 hour)  Set up git sync with mobile.]]"
+        ]),
+        (datetime(year=2022, month=9, day=20), []),
+        (datetime(year=2022, month=9, day=21), []),
+        (datetime(year=2022, month=9, day=22), [
+            "- [x] Install Linux VM on laptop, then VSCode with settings synced.",
+        ]),
+        (datetime(year=2022, month=9, day=23), []),
+        (datetime(year=2022, month=9, day=24), []),
+        (datetime(year=2022, month=9, day=25), [
+            "- [ ] Go to CSESoc event.",
+            "- [ ] **(1 hour)** Figma prototype.",
+            "- [ ] 🏆 **Purpose today**: get chores done",
+            "- [ ] **(2 hours)** Refine and review C++ notes #critical",
+            "- [ ] Go to CPMSoc event.",
+        ])
+    ])
+
 # TODO: exception throwing tests.

@@ -2,6 +2,7 @@ from asyncio import Task
 from datetime import datetime
 from io import TextIOWrapper
 import os
+from pprint import pprint
 import re
 from typing import List, Tuple, Union
 from colorama import Fore, Style
@@ -47,7 +48,10 @@ class TaskFileBuffer:
         self._tasks.sort(key=lambda task: task[0])
 
         date_index = self._search_for_task_date(0, len(self._tasks) - 1, date)
-        return self._tasks[0 : date_index]
+        removed_tasks = self._tasks[0 : date_index]
+
+        self._tasks = self._tasks[date_index :]
+        return removed_tasks
 
     def insert_task_columns(self, task_columns: List[Tuple[datetime, List[str]]]) -> None:
         """
@@ -63,14 +67,45 @@ class TaskFileBuffer:
         # Sort by date.
         self._tasks.sort(key=lambda task: task[0])
 
-    def shift_incomplete_tasks_to_today(self):
+    def shift_incomplete_tasks_to_date(self, date: datetime) -> None:
         """
         Moves all incomplete non-archived tasks before today to today's task
         column.
         """
-        # for each_task_column_before_today:
-        #   collect them
-        # append to today's task column.
+        # Sort by date before slicing.
+        self._tasks.sort(key=lambda task: task[0])
+
+        date_index = self._search_for_task_date(0, len(self._tasks) - 1, date)
+
+        incomplete_tasks_from_prev_days: List[str] = []
+        for _, tasks in self._tasks[0 : date_index]:
+            # Note: need to create a new list of tasks to not invalidate tasks
+            #       we remove as we iterate.
+            for task in list(tasks):
+                match = TaskFileBuffer.checkbox_regex.search(task) 
+                if not match:
+                    raise TaskFileException(f"Invalid task: {task}")
+                checked = not match.group(1).isspace()
+                # Record the incomplete tasks and take them off the task column
+                # of previous days.
+                if not checked:
+                    incomplete_tasks_from_prev_days.append(task)
+                    tasks.remove(task)
+
+        if self._tasks[date_index][0] != date:
+            # Add today into the task file. Note: this is unexpected, today's
+            # task column should exist.
+            self.insert_task_columns([(date, incomplete_tasks_from_prev_days)])
+            pprint(self._tasks)
+        else:
+            # Insert all incomplete tasks to today's column.
+            self._tasks[date_index][1].extend(incomplete_tasks_from_prev_days)
+            pprint(self._tasks)
+
+    def add_columns_up_to_date(date: datetime) -> None:
+        """
+        Inserts empty columns up to and including the given date.
+        """
 
     def _create_task_file_if_not_exist(self, task_file_path: str) -> None:
         """
