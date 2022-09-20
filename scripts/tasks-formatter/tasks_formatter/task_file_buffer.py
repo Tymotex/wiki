@@ -7,7 +7,7 @@ from typing import List, Tuple, Union
 from colorama import Fore, Style
 from tasks_formatter.exceptions import TaskFileException
 
-class TaskFileManager:
+class TaskFileBuffer:
     level2_heading_regex = re.compile(r"^## (.*)$")
     checkbox_regex = re.compile(r"^-\s*\[(\s*|\S+)\] (.*)$")
     
@@ -56,12 +56,21 @@ class TaskFileManager:
         for date, tasks in task_columns:
             # Check all tasks in this column are valid.
             for task in tasks:
-                if not TaskFileManager.checkbox_regex.search(task):
+                if not TaskFileBuffer.checkbox_regex.search(task):
                     raise TaskFileException(f"Attempted to insert invalid task: '{task}'")
         self._tasks.extend(task_columns)
 
         # Sort by date.
         self._tasks.sort(key=lambda task: task[0])
+
+    def shift_incomplete_tasks_to_today(self):
+        """
+        Moves all incomplete non-archived tasks before today to today's task
+        column.
+        """
+        # for each_task_column_before_today:
+        #   collect them
+        # append to today's task column.
 
     def _create_task_file_if_not_exist(self, task_file_path: str) -> None:
         """
@@ -166,20 +175,20 @@ class TaskFileManager:
                     self._tasks.append(curr_column)
                 return i + 1
 
-            match = TaskFileManager.level2_heading_regex.search(curr_line)
+            match = TaskFileBuffer.level2_heading_regex.search(curr_line)
             if match:
                 # Commit the last column of tasks before extracting tasks from
                 # the new column.
                 if curr_column:
                     self._tasks.append(curr_column)
                 column_name = match.group(1)
-                match = TaskFileManager.column_name_date_regex.search(column_name)
+                match = TaskFileBuffer.column_name_date_regex.search(column_name)
                 if not match:
                     raise TaskFileException("Column '{column_name}' is missing a date of format: YYYY-MM-DD.")
                 date_str = match.group(1)
                 curr_column = (datetime.strptime(date_str, "%Y-%m-%d"), [])
             else:
-                match = TaskFileManager.checkbox_regex.search(curr_line)
+                match = TaskFileBuffer.checkbox_regex.search(curr_line)
                 if match:
                     if not curr_column:
                         raise TaskFileException(f"Line '{curr_line}' doesn't belong to any column.")
@@ -202,7 +211,7 @@ class TaskFileManager:
         if starting_line >= len(lines):
             return starting_line
 
-        match = TaskFileManager.level2_heading_regex.search(lines[starting_line])
+        match = TaskFileBuffer.level2_heading_regex.search(lines[starting_line])
         if not match or match.group(1) != "Archive":
             raise TaskFileException(f"Expected the level 2 heading with text 'Archive' but got '{lines[starting_line]}'")
 
@@ -214,7 +223,7 @@ class TaskFileManager:
             if curr_line.startswith("%%"):
                 return i + 1
 
-            match = TaskFileManager.checkbox_regex.search(curr_line)
+            match = TaskFileBuffer.checkbox_regex.search(curr_line)
             if not match:
                 raise TaskFileException(f"Line '{curr_line}' should be a Markdown checkbox.")
 
