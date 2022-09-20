@@ -9,8 +9,6 @@ Python is a [[Knowledge/Engineering/Programming/Type System#Dynamic Typing|dynam
 
 > Code is sometimes described as *pythonic*, which just means it exploits Python's language features and design to produce something very readable and elegant.
 
-See [[Knowledge/Engineering/Languages/Python Data Science|Python for Data Science]].
-
 ---
 
 ### Dunder Methods
