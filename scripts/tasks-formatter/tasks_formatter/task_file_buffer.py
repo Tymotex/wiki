@@ -1,12 +1,14 @@
-from asyncio import Task
-from datetime import datetime
-from io import TextIOWrapper
 import os
-from pprint import pprint
 import re
-from typing import List, Tuple, Union
+from asyncio import Task
+from datetime import datetime, timedelta
+from io import TextIOWrapper
+from typing import List, Set, Tuple, Union
+
 from colorama import Fore, Style
+
 from tasks_formatter.exceptions import TaskFileException
+
 
 class TaskFileBuffer:
     level2_heading_regex = re.compile(r"^## (.*)$")
@@ -17,13 +19,11 @@ class TaskFileBuffer:
     column_name_date_regex = re.compile(r"(\d{4}-\d{2}-\d{2})")
 
     def __init__(self, task_file_path: str) -> None:
-        self._create_task_file_if_not_exist(task_file_path)
-
         self._task_file_path: str = task_file_path
         self._frontmatter: str = ""
         self._tasks: List[Tuple[datetime, List[str]]] = []
         self._archived_tasks: List[str] = []
-        self._board_settings: str = ""
+        self._task_settings: str = ""
 
         self._extract_board_data()
 
@@ -92,33 +92,58 @@ class TaskFileBuffer:
                     incomplete_tasks_from_prev_days.append(task)
                     tasks.remove(task)
 
-        if self._tasks[date_index][0] != date:
+        if len(self._tasks) == 0 or self._tasks[date_index][0] != date:
             # Add today into the task file. Note: this is unexpected, today's
             # task column should exist.
             self.insert_task_columns([(date, incomplete_tasks_from_prev_days)])
-            pprint(self._tasks)
         else:
             # Insert all incomplete tasks to today's column.
             self._tasks[date_index][1].extend(incomplete_tasks_from_prev_days)
-            pprint(self._tasks)
 
-    def add_columns_up_to_date(date: datetime) -> None:
+    def add_columns_up_to_date(self, start_date: datetime, end_date: datetime) -> None:
         """
-        Inserts empty columns up to and including the given date.
+        Inserts empty columns for each date up to and including the given date.
+        If a date's column already exists, then don't do anything to that
+        column.
         """
+        new_task_columns: List[Tuple[datetime, List[str]]] = []
+        
+        # All the dates we have so far in the task buffer.
+        task_dates: Set[datetime] = { date for date, _ in self._tasks }
 
-    def _create_task_file_if_not_exist(self, task_file_path: str) -> None:
+        one_day = timedelta(days=1)
+        curr_date = start_date
+        while curr_date <= end_date:
+            if curr_date not in task_dates:
+                new_task_columns.append((curr_date, []))
+            curr_date += one_day
+        self.insert_task_columns(new_task_columns)
+
+    def commit_changes(self):
         """
-        Creates a new task file with the source code necessary for a kanban
-        board to be rendered by `obsidian-kanban`.
+        Writes the state of the task file buffer instance into the task file.
         """
-        directory_path, filename = task_file_path.rsplit(os.sep, 1)
-        if not os.path.exists(directory_path):
-            print(Fore.CYAN + f" → Creating directory: {directory_path}" + Style.RESET_ALL)
-            os.makedirs(directory_path)
-        if not os.path.exists(task_file_path):
-            print(Fore.CYAN + f" → Creating task file: {filename}" + Style.RESET_ALL)
-            open(task_file_path, "a").close()
+        with open(self._task_file_path, "w") as task_file:
+            # Write in the frontmatter.
+            task_file.write(self._frontmatter + "\n\n")
+
+            # Write in the tasks.
+            # Note: obsidian-kanban uses (n) to determine how many cards should
+            #       go into a column. Here, we chose (6) because that's the
+            #       number that the Ivy Lee method uses.
+            for date, tasks in self._tasks:
+                column_name = f"## {date.strftime('%A')} {date.strftime('%Y-%m-%d')} (6)\n\n"
+                task_file.write(column_name)
+                task_file.writelines("\n".join(tasks) + "\n\n")
+
+            # Write in the archived tasks.
+            task_file.write("***\n\n")
+            column_name = "## Archive\n\n"
+            task_file.write(column_name)
+            task_file.writelines("\n".join(self._archived_tasks) + "\n\n")
+
+            # Write in the board settings.
+            task_file.write(self._task_settings)
     
     def _extract_board_data(self) -> None:
         """
@@ -144,15 +169,14 @@ class TaskFileBuffer:
             %%
         6. End of file.
         """
-        task_file = open(self._task_file_path, "r")
-
-        # Get all non-empty lines of the file and sequentially identify and
-        # extract the data of each relevant section of the task file.
-        lines: List[str] = [line.strip() for line in task_file.readlines() if bool(re.match(r"\S+", line))]
-        resume_line_index = self._extract_frontmatter(lines)
-        resume_line_index = self._extract_columns(lines, resume_line_index)
-        resume_line_index = self._extract_archive(lines, resume_line_index)
-        self._extract_board_settings(lines, resume_line_index)
+        with open(self._task_file_path, "r") as task_file:
+            # Get all non-empty lines of the file and sequentially identify and
+            # extract the data of each relevant section of the task file.
+            lines: List[str] = [line.strip() for line in task_file.readlines() if bool(re.match(r"\S+", line))]
+            resume_line_index = self._extract_frontmatter(lines)
+            resume_line_index = self._extract_columns(lines, resume_line_index)
+            resume_line_index = self._extract_archive(lines, resume_line_index)
+            self._extract_board_settings(lines, resume_line_index)
 
     def _extract_frontmatter(self, lines, starting_line: int = 0) -> int: 
         """
@@ -277,14 +301,14 @@ class TaskFileBuffer:
         if starting_line >= len(lines):
             return starting_line
 
-        board_settings = "%%"
+        board_settings = "%% kanban:settings\n"
         for i in range(starting_line, len(lines)):
             curr_line = lines[i]
-            board_settings += curr_line
+            board_settings += curr_line + "\n"
             # Stop when '%%' is encountered, which signals the end of the
             # settings comment block.
             if curr_line == "%%":
-                self._board_settings = board_settings
+                self._task_settings = board_settings
                 return i + 1
         raise TaskFileException("Expected ending of settings comment block, delimited by '%%'.")
 

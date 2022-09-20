@@ -1,6 +1,5 @@
 from datetime import datetime
 import os
-from pprint import pprint
 from tasks_formatter.task_file_buffer import TaskFileBuffer
 
 TEST_TASK_FILE_DIRECTORY = os.path.join(os.path.dirname(__file__), "task_files")
