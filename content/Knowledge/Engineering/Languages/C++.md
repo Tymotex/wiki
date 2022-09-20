@@ -4,107 +4,44 @@ title: C++
 
 > TODO: This file is a mess. Clean up.
 
-C++ is a [[Knowledge/Engineering/Programming/Type System#Static Typing|statically-typed]], low-level programming language that supports [[Knowledge/Engineering/Programming/Object Oriented Programming|object-oriented programming]]. It's used a lot in any software system that requires resource efficiency such as operating systems, game engines, databases, compilers, etc.
+![[Knowledge/Engineering/Languages/assets/cpp-wallpaper.png|800]]
 
-Fundamental operations in C++ map directly to hardware operations. C/C++'s high performance is attributed to how closely it's constructs and operations match the hardware 
-- Eg. adding two integers will result in an integer add machine instruction being executed
-- Eg. assignment is a simple machine copy instruction, eg. `int x = 2;`
-    
+C++ is a [[Knowledge/Engineering/Programming/Type System#Static Typing|statically-typed]], low-level programming language that supports [[Knowledge/Engineering/Programming/Object Oriented Programming|object-oriented programming]]. It's frequently used in any software system that requires resource efficiency such as operating systems, game engines, databases, compilers, etc.
+
+C/C++'s high performance is attributed to how closely it's constructs and operations match the hardware.
+
 The **[ISO C++ standard](https://isocpp.org/std/%20the-standard)** defines:
-- Core language features — data types like `char`, `int`, loops, etc.
-- Standard library components — `vector`, `map`, `string`, I/O operations like `<<`
-
-Compilation and execution
-```bash
-# 1.
-g++ file.cpp && ./a.out
-
-# 2.
-g++ -o executableName file.cpp
-```
+- Core language features — data types, loops, etc.
+- Standard library components — `vector`, `map`, `string`, etc.
 
 ## Core
-### Variables
-- Variable declaration and initialisation
-    ```csharp
-    int a, b, c;           // Declaring multiple variables at once
-    int a, b = 2;  
-    a = b = c = 0;         // Assigning multiple variables to one value
-    ```
-    There are a few more ways to initialise variables in C++ (which are also used in instantiating new objects, see Instantiating Objects).
-    - Assignment (called *copy initialisation*): using `=` is called copy initialisation
-    - *Braces-initialisation* (called *list initialisation*): using `{ }`
-    - *Parentheses-initialisation* (called *direct initialisation*): using `( )`
+### Variable Initialisation
+There are many ways to initialise a variable with a value.
+1. **Copy initialisation**: using `=`. It implicitly calls a constructor.
+2. **List initialisation**, also called **uniform initialisation**: using `{ }`.
+3. **Direct initialisation**: using `( )`. Think of the parentheses as being used to *directly* invoke a specific constructor.
     ```cpp
-    int b(1);
-    int a{1};
-    int c = 1;
-    int d = {1};
-    ```
-- { } — *uniform initialisation* or *list initialisation*
-    ```cpp
-    int i = {1};    // Similar to `**int i = 1**`
-    int i {1};
-    ```
-    *List initialisation* does not allow *narrowing*. Try to use list initialisation `{ }` more often.
-    ```cpp
-    int i = 1000000000000;     // Implicitly overflows
-    int i {1000000000000};     // Error: **narrowing conversion of '1000000000000'** from 'long int' to 'int'
-    
-    ****int i = 7.8;   // Gets floored to 7
-    int i {7.8};   // Error: **narrowing conversion** from 'double' to 'int'
-    ```
-- ( ) — *direct initialisation*
-    ```cpp
-    int a(3);      // Similar to `**int a = 3**`
+    int b(1);     // Direct initialisation.
+    int a{1};     // List initialisation.
+    int c = 1;    // Copy initialisation.
+    int d = {1};  // Copy/List initialisation.
     ```
 
-### Data Types
-```cpp
-// **Primitive types**
-int       // 4 bytes
-char      // 1 byte
-bool      // 1 byte
-float     // 4 bytes
-double    // 8 bytes 
-```
-- `short` and `long` — data type ranges
+> Prefer uniform initialisation over copy initialisation.
+
+#### Details
+- *List initialisation* does not allow *narrowing*. Try to use list initialisation `{ }` more often.
     ```cpp
-    short int  // 2 byte int (with range
-    long int   // 8 byte int (with range 2^63 
-    
-    // The following are exactly equivalent:
-    short == short int
-    long == long int
-    
-    short short == short short int
-    long long == long long int
+    int i = 7.8;  // Gets floored to 7
+    int i{7.8};   // Error: narrowing conversion from 'double' to 'int'
     ```
+- `explicit` constructors are *not invokable* with copy initialisation.
 
 ### auto
-`auto` — static type inference
-```cpp
-// The static type for **x** is inferred based on what the type of the value on the RHS is
-auto x = true;   // → bool
-auto y {123};    // → int
-```
-- The point of `auto` is avoid redundancy in writing long data type names. It's really useful when generics are involved
-- It's fine to use copy initialisation with `=`, like `auto x = 1`
-    - With `auto`, there is no issue such as type narrowing.
-- You should think of `auto` as a type specifier just like `int` or `float`.
-You can use the same qualifiers like `const`, `&`, `*`, `static`, etc. along with `auto`. 
-This is really important in situations like this:
-```cpp
-int x  = 42;
-int& y = x;
-auto z = y;    // **z** is an **int**, not an **int&** 
-
-// It should have been this:
-auto& z = y;
-```
-- Always assume that auto by itself will make a copy (which is to be avoided if you’re copying over large objects like strings and vectors)
-- Always use qualifiers like `const`, `&`, `*` unless a copy is desired
-- Prefer `const auto&` over `auto&`
+When specifying the data type of something as `auto`, C++ automatically infers the type.
+- Use `auto` for concision, especially when long generic types are involved.
+- It's fine to use [[Knowledge/Engineering/Languages/C++#Variables|copy initialisation]] if you use `auto` since type narrowing won't be a problem. E.g. `auto x = 1`.
+- Always assume that `auto`, by itself, will make a copy of the RHS. Use `auto&` if copying is undesirable (such as when copying large vectors).
 
 ### const
 - `const` and `constexpr`— immutable variables. Declaring and initialising a `const` variable will make the compiler guarantee that its value is never modified, ever.
