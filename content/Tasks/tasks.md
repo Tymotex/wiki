@@ -4,16 +4,11 @@ kanban-plugin: basic
 
 ## Tuesday 2022-09-20 (6)
 
-- [ ] 🏆 **Purpose today**:
 - [ ] Write tomorrow's purpose
-- [ ] **[1 hour]** Go through Never Split the Difference and finalise notes.
 - [ ] Ask mum if she wants to try tutoring this year.
 - [ ] **[2 hours]** Refine and review C++ notes #critical
 - [ ] **[1 hour]** A Tour of C++
-- [ ] [[_/Meeting with dad]]
-- [ ] Write email thanking Josh Comeau
 - [ ] CSS skim through definitive guide and take down most important notes.
-- [ ] Write tomorrow's purpose
 - [ ] Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.
 - [x] **(5 hours)** Continue implementing `tasks-formatter`.<br><br>Add all classes and method stubs so that you can use PyTest.<br><br>Need a `remove_up_to_date` method that returns all tasks up to but not including a target date.
 
@@ -21,8 +16,9 @@ kanban-plugin: basic
 
 - [ ] 🏆 **Purpose today**:
 - [ ] Write tomorrow's purpose
-- [ ] Go to CPMSoc weekly social
-- [ ] **[1 hour]** Go through The Male Advantage and finalise notes.
+- [ ] **[1 hour]** Go through Never Split the Difference and finalise notes.
+- [ ] [[_/Meeting with dad]]
+- [ ] Write email thanking Josh Comeau
 - [ ] **(1 hour)** Math website Figma prototype.
 
 ## Thursday 2022-09-22 (6)
@@ -30,13 +26,14 @@ kanban-plugin: basic
 - [ ] 🏆 **Purpose today**:
 - [ ] Write tomorrow's purpose
 - [ ] Install Linux VM on laptop, then VSCode with settings synced.
-- [ ] **[1 hour]** Go through How to Not Die Alone and finalise notes.
+- [ ] **[1 hour]** Go through The Male Advantage and finalise notes.
 
 ## Friday 2022-09-23 (6)
 
 - [ ] 🏆 **Purpose today**:
 - [ ] Write tomorrow's purpose
 - [ ] [[_/WebAssembly Rust Snake tutorial]]
+- [ ] **[1 hour]** Go through How to Not Die Alone and finalise notes.
 
 ## Saturday 2022-09-24 (6)
 
