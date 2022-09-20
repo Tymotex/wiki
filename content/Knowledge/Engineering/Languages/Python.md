@@ -22,12 +22,16 @@ TODO.
 TODO: see https://www.pythoncheatsheet.org/cheatsheet/context-manager.
 
 ## Virtual Environments
-> 
+> Always use a virtual environment. [source](https://csguide.cs.princeton.edu/software/virtualenv)
 
-To prevent bloating the base Python installation with project dependencies and improve portability, use virtual environments.
+To prevent bloating the base Python installation with project dependencies and have reproducible/portable setups, use virtual environments.
 ```bash
 pip install virtualenv
-python -m venv ./venv    # Create a virtual environment 
+python -m venv ./venv     # Create a virtual environment in the new folder called `venv`.
+source venv/bin/activate  # Use the virtual environment's Python installation.
+deactivate                # Deactivate the current virtual environment.
+
+pip freeze > requirements.txt   # Dumps all the current dependencies into `requirements.txt`.
 ```
 
 ## Import and Export
@@ -48,6 +52,10 @@ import foo.bar
 
 ```python
 from foo import bar, baz
+from a import (            # Syntax for splitting a long from-import statement into multiple lines.
+    b,
+    c
+)
 ```
 - Searches for `foo` in the paths in `sys.path`.
 - Creates a module object and assigns it to the `foo` variable. 
@@ -82,16 +90,6 @@ Whatever you import inside `__init__.py` becomes accessible directly under the p
 from foo.bar import baz
 ```
 
-
-
-- You can wrap imports in parentheses.
-    ```python
-    from foo import (
-        bar,
-        baz
-    )
-    ```
-
 ## Classes
 
 Take notes from here: https://stackoverflow.com/questions/9056957/correct-way-to-define-class-variables-in-python
@@ -100,6 +98,23 @@ To make a member private, prefix its name with an underscore `_`. This doesn't a
 - **Name mangling** ensures that subclasses don't unknowingly override a private function with the same name.
 
 TODO: `@classmethod` decorator. See https://stackoverflow.com/questions/54264073/what-is-the-use-and-when-to-use-classmethod-in-python
+
+#### Getter and Setter
+```python
+class Foo:
+    def __init__(self):
+        self._foo = ""
+
+    @property
+    def foo(self):
+        """ Getter. """
+        return self._foo
+
+    @foo.setter
+    def foo(self, new_foo):
+        """ Setter. """
+        self._foo = new_foo
+```
 
 ## Type System
 Python is [[Knowledge/Engineering/Programming/Type System#Dynamic Typing|dynamically-typed]] and [will always stay that way](https://peps.python.org/pep-0484/#non-goals), however you can still opt to add static types wherever you find it useful, like how you might mix JavaScript and TypeScript code. Static typing is massively helpful in large projects as opposed to one-off scripts.

@@ -1,25 +1,50 @@
+from asyncio import Task
+from datetime import datetime
 from io import TextIOWrapper
 import os
 import re
-from typing import List, Tuple
+from tabnanny import check
+from typing import List, Tuple, Union
 from colorama import Fore, Style
 
 class TaskFileException(Exception):
     pass
 
-class Board:
-    def __init__(self, task_file_path: str):
-        self.create_task_file_if_not_exist(task_file_path)
+class BoardManager:
+    level2_heading_regex = re.compile(r"^## (\w+)")
+    checkbox_regex = re.compile(r"^-\s*\[(\s+|\S+)\] (.*)$")
 
-        self.task_file_path: str = task_file_path
-        self.frontmatter: str = ""
-        self.tasks: List[Tuple[str, List[str]]] = []
-        self.archived_tasks: List[str] = []
-        self.board_settings: str = ""
+    def __init__(self, task_file_path: str):
+        self._create_task_file_if_not_exist(task_file_path)
+
+        self._task_file_path: str = task_file_path
+        self._frontmatter: str = ""
+        self._tasks: List[Tuple[str, List[str]]] = []
+        self._archived_tasks: List[str] = []
+        self._board_settings: str = ""
 
         self._extract_board_data()
 
-    def create_task_file_if_not_exist(self, task_file_path: str):
+    @property
+    def frontmatter(self):
+        return self._frontmatter
+
+    @property
+    def tasks(self):
+        return self._tasks
+
+    @property
+    def archived_tasks(self):
+        return self._archived_tasks
+
+    def remove_tasks_up_to_date(self, date: datetime) -> List[Tuple[str, List[str]]]:
+        """
+        Sorts and slices out a list of tasks in `self._tasks` up to, but not
+        including, the given date.
+        """
+        return []
+
+    def _create_task_file_if_not_exist(self, task_file_path: str):
         """
         Creates a new task file with the source code necessary for a kanban
         board to be rendered by `obsidian-kanban`.
@@ -56,18 +81,15 @@ class Board:
             %%
         6. End of file.
         """
-        try:
-            task_file = open(self.task_file_path, "r")
+        task_file = open(self._task_file_path, "r")
 
-            # Get all non-empty lines of the file and sequentially identify and
-            # extract the data of each relevant section of the task file.
-            lines: List[str] = [line for line in task_file.readlines() if bool(re.match(r"\S+", line))]
-            resume_line_index = self._extract_frontmatter(lines)
-            resume_line_index = self._extract_columns(lines, resume_line_index)
-            resume_line_index = self._extract_archive(lines, resume_line_index)
-            self._extract_archive(lines, resume_line_index)
-        finally:
-            task_file.close()
+        # Get all non-empty lines of the file and sequentially identify and
+        # extract the data of each relevant section of the task file.
+        lines: List[str] = [line for line in task_file.readlines() if bool(re.match(r"\S+", line))]
+        resume_line_index = self._extract_frontmatter(lines)
+        resume_line_index = self._extract_columns(lines, resume_line_index)
+        resume_line_index = self._extract_archive(lines, resume_line_index)
+        self._extract_archive(lines, resume_line_index)
 
     def _extract_frontmatter(self, lines, starting_line: int = 0) -> int: 
         """
@@ -97,7 +119,7 @@ class Board:
             if curr_line == "---":
                 if not has_kanban_field:
                     raise TaskFileException("No 'kanban-plugin' field specified.") 
-                self.frontmatter = "\n".join(lines[starting_line : i + 1])
+                self._frontmatter = "\n".join(lines[starting_line : i + 1])
                 return i + 1
         
         raise TaskFileException("No ending YAML frontmatter delimiter encountered.")
@@ -111,8 +133,32 @@ class Board:
 
         Extracts the columns and their tasks and saves it to `self.tasks`.
         """
+        curr_column: Union[Tuple[str, List[str]], None] = None
+        for i in range(starting_line, len(lines)):
+            curr_line = lines[i]
+            # Stop when a Markdown horizontal rule is encountered.
+            if curr_line == "---" or curr_line == "___" or curr_line == "***":
+                return i + 1
 
-        return 1
+            match = BoardManager.level2_heading_regex.search(curr_line)
+            if match:
+                # Commit the last column of tasks into `self.tasks` before
+                # extracting tasks from the new column.
+                if curr_column:
+                    self._tasks.append(curr_column)
+
+                column_name = match.group(1)
+                curr_column = (column_name, [])
+            else:
+                match = BoardManager.checkbox_regex.search(curr_line)
+                if match:
+                    if not curr_column:
+                        raise TaskFileException(f"Line '{curr_line}' doesn't belong to any column.")
+                    curr_column[1].append(curr_line)
+                else:
+                    raise TaskFileException(f"Line '{curr_line}' is neither a level-2 heading nor a Markdown checkbox.")
+
+        raise TaskFileException("No ending Markdown divider encountered.")
 
     def _extract_archive(self, lines: List[str], starting_line: int) -> int:
         """
@@ -124,8 +170,24 @@ class Board:
 
         Extracts the archived tasks and saves it to `self.archived_tasks`.
         """
+        match = BoardManager.level2_heading_regex.search(lines[starting_line])
+        if not match or match.group(1) != "Archive":
+            raise TaskFileException("Expected the level 2 heading with text 'Archive'.")
 
-        return 1
+        for i in range(starting_line + 1, len(lines)):
+            curr_line = lines[i]
+
+            # Stop when '%%' is encountered, which signals the start of the
+            # settings comment block.
+            if curr_line == "%%":
+                return i + 1
+
+            match = BoardManager.checkbox_regex.search(curr_line)
+            if not match:
+                raise TaskFileException(f"Line '{curr_line}' should be a Markdown checkbox.")
+
+            self._archived_tasks.append(curr_line) 
+        raise TaskFileException("Expected settings comment block, delimited by '%%'.")
 
     def _extract_board_settings(self, lines: List[str], starting_line: int) -> int:
         """
@@ -137,4 +199,11 @@ class Board:
         Extracts the board settings and saves it to `self.board_settings`.
         """
 
-        return 1
+        for i in range(starting_line, len(lines)):
+            curr_line = lines[i]
+
+            # Stop when '%%' is encountered, which signals the end of the
+            # settings comment block.
+            if curr_line == "%%":
+                return i + 1
+        raise TaskFileException("Expected ending of settings comment block, delimited by '%%'.")
