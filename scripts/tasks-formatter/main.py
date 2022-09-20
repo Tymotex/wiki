@@ -1,5 +1,5 @@
 import typer
-from tasks_formatter.board import BoardManager
+from tasks_formatter.task_file_manager import TaskFileManager
 from colorama import (
     init as init_colours,
     deinit as deinit_colours,

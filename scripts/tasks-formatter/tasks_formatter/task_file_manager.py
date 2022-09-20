@@ -2,6 +2,7 @@ from asyncio import Task
 from datetime import datetime
 from io import TextIOWrapper
 import os
+from pprint import pprint
 import re
 from tabnanny import check
 from typing import List, Tuple, Union
@@ -10,8 +11,8 @@ from colorama import Fore, Style
 class TaskFileException(Exception):
     pass
 
-class BoardManager:
-    level2_heading_regex = re.compile(r"^## (\w+)")
+class TaskFileManager:
+    level2_heading_regex = re.compile(r"^## (.*)$")
     checkbox_regex = re.compile(r"^-\s*\[(\s+|\S+)\] (.*)$")
     
     # Every column should have a date in the universal ISO format,
@@ -90,11 +91,11 @@ class BoardManager:
 
         # Get all non-empty lines of the file and sequentially identify and
         # extract the data of each relevant section of the task file.
-        lines: List[str] = [line for line in task_file.readlines() if bool(re.match(r"\S+", line))]
+        lines: List[str] = [line.strip() for line in task_file.readlines() if bool(re.match(r"\S+", line))]
         resume_line_index = self._extract_frontmatter(lines)
         resume_line_index = self._extract_columns(lines, resume_line_index)
         resume_line_index = self._extract_archive(lines, resume_line_index)
-        self._extract_archive(lines, resume_line_index)
+        self._extract_board_settings(lines, resume_line_index)
 
     def _extract_frontmatter(self, lines, starting_line: int = 0) -> int: 
         """
@@ -111,21 +112,21 @@ class BoardManager:
         has_kanban_field = False
         for i in range(starting_line + 1, len(lines)):
             curr_line = lines[i]
-            
-            # The field must follow a valid format.
-            if not bool(re.match(r"^\w: .+$", curr_line)):
-                raise TaskFileException(f"Invalid frontmatter field: '{curr_line}'")
-            if bool(re.match(r"^kanban-plugin: .*$", curr_line)):
-                if has_kanban_field:
-                    raise TaskFileException("Frontmatter field 'kanban-plugin' appeared more than once.")
-                has_kanban_field = True
-            
+
             # End of frontmatter.
             if curr_line == "---":
                 if not has_kanban_field:
                     raise TaskFileException("No 'kanban-plugin' field specified.") 
                 self._frontmatter = "\n".join(lines[starting_line : i + 1])
                 return i + 1
+            
+            # The field must follow a valid format.
+            if not bool(re.match(r"^[-a-zA-Z0-9]+: .+$", curr_line)):
+                raise TaskFileException(f"Invalid frontmatter field: '{curr_line}'")
+            if bool(re.match(r"^kanban-plugin: .*$", curr_line)):
+                if has_kanban_field:
+                    raise TaskFileException("Frontmatter field 'kanban-plugin' appeared more than once.")
+                has_kanban_field = True   
         
         raise TaskFileException("No ending YAML frontmatter delimiter encountered.")
 
@@ -139,29 +140,33 @@ class BoardManager:
         Extracts the columns and their tasks and saves it to `self.tasks`.
         """
         if starting_line >= len(lines):
-            raise TaskFileException("Tasks section is missing.")
+            return starting_line
 
         curr_column: Union[Tuple[datetime, List[str]], None] = None
         for i in range(starting_line, len(lines)):
             curr_line = lines[i]
+
             # Stop when a Markdown horizontal rule is encountered.
             if curr_line == "---" or curr_line == "___" or curr_line == "***":
+                # Commit the final task column.
+                if curr_column:
+                    self._tasks.append(curr_column)
                 return i + 1
 
-            match = BoardManager.level2_heading_regex.search(curr_line)
+            match = TaskFileManager.level2_heading_regex.search(curr_line)
             if match:
-                # Commit the last column of tasks into `self.tasks` before
-                # extracting tasks from the new column.
+                # Commit the last column of tasks before extracting tasks from
+                # the new column.
                 if curr_column:
                     self._tasks.append(curr_column)
                 column_name = match.group(1)
-                match = BoardManager.column_name_date_regex.search(column_name)
+                match = TaskFileManager.column_name_date_regex.search(column_name)
                 if not match:
                     raise TaskFileException("Column '{column_name}' is missing a date of format: YYYY-MM-DD.")
                 date_str = match.group(1)
                 curr_column = (datetime.strptime(date_str, "%Y-%m-%d"), [])
             else:
-                match = BoardManager.checkbox_regex.search(curr_line)
+                match = TaskFileManager.checkbox_regex.search(curr_line)
                 if match:
                     if not curr_column:
                         raise TaskFileException(f"Line '{curr_line}' doesn't belong to any column.")
@@ -182,21 +187,21 @@ class BoardManager:
         Extracts the archived tasks and saves it to `self.archived_tasks`.
         """
         if starting_line >= len(lines):
-            raise TaskFileException("Archived tasks section is missing.")
+            return starting_line
 
-        match = BoardManager.level2_heading_regex.search(lines[starting_line])
+        match = TaskFileManager.level2_heading_regex.search(lines[starting_line])
         if not match or match.group(1) != "Archive":
-            raise TaskFileException("Expected the level 2 heading with text 'Archive'.")
+            raise TaskFileException(f"Expected the level 2 heading with text 'Archive' but got '{lines[starting_line]}'")
 
         for i in range(starting_line + 1, len(lines)):
             curr_line = lines[i]
 
             # Stop when '%%' is encountered, which signals the start of the
             # settings comment block.
-            if curr_line == "%%":
+            if curr_line.startswith("%%"):
                 return i + 1
 
-            match = BoardManager.checkbox_regex.search(curr_line)
+            match = TaskFileManager.checkbox_regex.search(curr_line)
             if not match:
                 raise TaskFileException(f"Line '{curr_line}' should be a Markdown checkbox.")
 
@@ -213,7 +218,7 @@ class BoardManager:
         Extracts the board settings and saves it to `self.board_settings`.
         """
         if starting_line >= len(lines):
-            raise TaskFileException("Tasks settings section is missing.")
+            return starting_line
 
         board_settings = "%%"
         for i in range(starting_line, len(lines)):
