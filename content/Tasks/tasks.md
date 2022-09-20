@@ -4,22 +4,22 @@ kanban-plugin: basic
 
 ## Tuesday 2022-09-20 (6)
 
-- [ ] Write tomorrow's purpose
 - [ ] Ask mum if she wants to try tutoring this year.
-- [ ] **[2 hours]** Refine and review C++ notes #critical
-- [ ] **[1 hour]** A Tour of C++
-- [ ] CSS skim through definitive guide and take down most important notes.
-- [ ] Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.
 - [x] **(5 hours)** Continue implementing `tasks-formatter`.<br><br>Add all classes and method stubs so that you can use PyTest.<br><br>Need a `remove_up_to_date` method that returns all tasks up to but not including a target date.
+- [x] Write tomorrow's purpose
 
 ## Wednesday 2022-09-21 (6)
 
-- [ ] 🏆 **Purpose today**:
+- [ ] 🏆 **Purpose today**: Learning C++ by refining notes and reading.
+- [ ] **[2 hours]** Refine and review C++ notes #critical
+- [ ] **[1 hour]** A Tour of C++
+- [ ] **(2 hours)** [[_/Meeting with dad]]
 - [ ] Write tomorrow's purpose
 - [ ] **[1 hour]** Go through Never Split the Difference and finalise notes.
-- [ ] [[_/Meeting with dad]]
 - [ ] Write email thanking Josh Comeau
+- [ ] CSS skim through definitive guide and take down most important notes.
 - [ ] **(1 hour)** Math website Figma prototype.
+- [ ] **(2 hours)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.
 
 ## Thursday 2022-09-22 (6)
 
