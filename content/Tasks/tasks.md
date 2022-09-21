@@ -8,7 +8,6 @@ kanban-plugin: basic
 
 - [ ] 🏆 **Purpose today**: Learning C++ by refining notes and reading.
 - [ ] Drop Graphics #critical
-- [ ] **(30 mins)** Set up Kindle for mum. Try Man's Search for Meaning.
 - [ ] **(2 hours)** [[_/Meeting with dad]]
 - [ ] Write tomorrow's purpose
 - [ ] **[1 hour]** Go through Never Split the Difference and finalise notes.
@@ -18,6 +17,7 @@ kanban-plugin: basic
 - [ ] **(2 hours)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.
 - [ ] See how to make a feature request on GitHub and ask for Vim keybindings on Obsidian Kanban.
 - [ ] Ask mum if she wants to try tutoring this year.
+- [x] **(30 mins)** Set up Kindle for mum. Try Man's Search for Meaning.
 - [x] **(3 hours)** Refine and review C++ notes #critical
 - [x] Ensure wiki notes are privated. #critical
 
