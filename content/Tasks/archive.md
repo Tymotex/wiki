@@ -15,6 +15,13 @@ kanban-plugin: basic
 - [x] **(5 hours)** Continue implementing `tasks-formatter`.<br><br>Add all classes and method stubs so that you can use PyTest.<br><br>Need a `remove_up_to_date` method that returns all tasks up to but not including a target date.
 - [x] Write tomorrow's purpose
 
+## Wednesday 2022-09-21 (6)
+
+- [x] Drop Graphics #critical
+- [x] **(3 hours)** Refine and review C++ notes #critical
+- [x] **(1 hour)** **Open source contribution** to a React library/project. Maybe contribute to `obsidian-kanban` by implementing an enhancement?
+- [x] Ensure wiki notes are privated. #critical
+
 ***
 
 ## Archive

@@ -6,7 +6,6 @@ kanban-plugin: basic
 
 ## Programming & Career
 
-- [ ] **Open source contribution** to a React library/project. Maybe contribute to `obsidian-kanban` by implementing an enhancement?
 - [ ] **Python personal finance tracking.**
 - [ ] [[_/Writing first blog  and publishing on Medium.]]
 - [ ] Set up **Prometheus and Grafana** for timz.dev or another project.
@@ -21,6 +20,7 @@ kanban-plugin: basic
 - [ ] Attend 1 **conference.**
 - [ ] Read 1 **academic paper** (eg. Claude Shannon's information theory paper).
 - [ ] Make a plan for learning AI, long-term.
+- [ ] Open an issue/PR for `obsidian-kanban` for better keyboard accessibility (and power user agility).
 
 
 ## Self-Improvement
