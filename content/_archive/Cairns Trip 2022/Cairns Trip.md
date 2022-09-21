@@ -1,5 +1,6 @@
 ---
 title: Cairns Trip
+draft: true
 ---
 
 See [[Areas/Planning Trips|Planning Trips]].

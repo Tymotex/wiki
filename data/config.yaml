@@ -14,6 +14,8 @@ GitHubLink: https://github.com/Tymotex/wiki/tree/hugo/content
 description: Tim Zhang's developer wiki.
 page_title: "🌱 Tim's Dev Wiki"
 links:
+  - link_name: timz.dev
+    link: https://timz.dev
   - link_name: Github
     link: https://github.com/Tymotex/wiki
   - link_name: LinkedIn

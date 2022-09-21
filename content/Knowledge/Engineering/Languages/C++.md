@@ -417,7 +417,7 @@ See [[Knowledge/Engineering/Languages/C++ Standard Library|C++ Standard Library]
     
     You can prefix a function or method signature with the inline keyword. This makes it so the compiler places a copy of the code in that function at each point where the function is called at compile time, meaning that the code is basically copied into the calling function.
     
-    - Doing this offers a marginal performance improvement because you avoid allocating a new stack frame that’s usually associated with making a function call
+    - Doing this offers a marginal performance improvement because you avoid allocating a new [[Knowledge/Engineering/Operating Systems/Stack Frame|stack frame]] that’s usually associated with making a function call
         - This performance improvement is done at the cost of a marginally bigger executable size
         - [Why not make everything inline?](https://softwareengineering.stackexchange.com/questions/254688/why-dont-compilers-inline-everything)
     - You should mainly consider using inline on functions that are very small but called several times in a program

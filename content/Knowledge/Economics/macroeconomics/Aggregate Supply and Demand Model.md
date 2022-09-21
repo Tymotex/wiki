@@ -57,7 +57,7 @@ In the [[Knowledge/Economics/macroeconomics/Income-Expenditure Model|income-expe
 	
 	*Inflation shocks* are when there are changes to the inflation rate. Events that might cause inflation shocks include changes in commodity prices and foreign exchange rates. Factoring in inflation shocks, we'd have $\pi_\text{actual} = \pi_\text{prev}+\epsilon$, where $\epsilon$ is the size of the inflation shock. Note that inflation shocks, although temporary in nature, cause permanent effects to the inflation rate since the adaptive expectations hypothesis asserts that the next period's inflation rate retains the previous period's inflation rate.
 2. <mark style="background: #ADCCFFA6;">Shifts in the aggregate demand curve which impact the business' production costs.</mark> 
-3. <mark style="background: #ADCCFFA6;">Size of the [[economics/macroeconomics/Output Gap|output gap]] is.</mark> 
+3. <mark style="background: #ADCCFFA6;">Size of the output gap.</mark> 
 	
 	When there exists a short-run expansionary output gap like below for example, businesses will initially ramp up production levels to meet increased demand, but over time they'll experience increased production costs and inflate their prices. When all businesses behave this way, then in aggregate, it'll cause inflation to increase and close the output gap.
 	

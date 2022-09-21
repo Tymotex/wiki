@@ -44,7 +44,7 @@ A surprising result from equation $(1)$ is that you can increase government expe
 $$
 	\frac{\Delta Y_\text{equilibrium}}{\Delta G_0} = \frac{1-c}{1-c(1-t)}.
 $$
-This means that fiscal policies can help with closing *contractionary [[economics/macroeconomics/Output Gap|output gaps]]*. For instance, you could achieve the following shift in the $PAE$ curve.
+This means that fiscal policies can help with closing *contractionary output gap*. For instance, you could achieve the following shift in the $PAE$ curve.
 
 ![[Knowledge/Economics/macroeconomics/assets/fiscal-policy-eliminates-output-gap.png|400]]
 

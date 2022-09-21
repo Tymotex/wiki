@@ -23,7 +23,7 @@ globalGraph:
   enableLegend: true
   enableDrag: true
   enableZoom: true
-  depth: -1 # set to -1 to show full graph
+  depth: 3 # set to -1 to show full graph
   scale: 1.4
   repelForce: 0.2
   centerForce: 1
@@ -34,6 +34,8 @@ globalGraph:
 ### For all graphs ###
 
 paths:
-  - /software-engineering: "#4388cc"
-  - /economics: "#98c379"
-  - /finance: "#FFD700"
+  - /Knowledge/Engineering: "#4388cc"
+  - /Knowledge/Investing: "#98c379"
+  - /Knowledge/Personal-Finance: "#98c379"
+  - /Knowledge/Finance: "#FFD700"
+  - /Knowledge/Economics: "#FFD700"
