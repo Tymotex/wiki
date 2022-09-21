@@ -62,12 +62,15 @@ Remember the reasons why you're refusing to be a wanker.
 ---
 
 ## Relapses
+### 22nd Sep
+I didn't even try... I just got annoyed at the thoughts and gave up. It was distracting me from studying, I reasoned, and then I just gave up.
+
+### 20th Sep
+I relapsed again to an image of Taarie. I'm ashamed of myself. I just got so worked up and really wanted to take the easy way out and escape the feeling of bottled-up horniness. I still don't have a good system for dealing with these feelings.
+
 ### 15th Sep
 I just woke up groggy and being obsessive over the idea of translucent panties... Yup. I dragged myself up to go do bench press but the whole time I could not stop thinking about it. I finally caved in after around 1 full hour of ridiculous horny energy and made a promise with myself that I could pick exactly one picture and use that to satisfy my needs. This means no real porn, but allowing for masturbation and orgasm. I don't know how reasonable this is since I made this promise while horny as hell.
 
 Even after caving in, I still felt hopelessly horny. After getting into my day however, I felt completely free of horny thoughts and could focus on my work.
 
 I'll consider all relapses to be when I masturbate and orgasm to anything other than that one picture I have. I'll do this for 1 month.
-
-### 20th Sep
-I relapsed again to an image of Taarie. I'm ashamed of myself. I just got so worked up and really wanted to take the easy way out and escape the feeling of bottled-up horniness. I still don't have a good system for dealing with these feelings.

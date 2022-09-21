@@ -4,37 +4,37 @@ kanban-plugin: basic
 
 ## Thursday 2022-09-22 (6)
 
-- [ ] 🏆 **Purpose today**:
+- [ ] 🏆 **Purpose today**: try prometheus and grafana, skim CSS, then read Think Like a Programmer
+- [ ] **(2 hours)** Set up **Prometheus and Grafana** for timz.dev or another project.
+- [ ] **(2 hours)** CSS skim through definitive guide and take down most important notes.
+- [ ] **(2 hours)** Read Think Like a Programmer.
+- [ ] **(1 hour)** [[_/Meeting with dad]]
 - [ ] Write tomorrow's purpose
-- [ ] Install Linux VM on laptop, then VSCode with settings synced.
-- [ ] **[1 hour]** Go through The Male Advantage and finalise notes.
-- [ ] 🏆 **Purpose today**: Learning C++ by refining notes and reading.
-- [ ] **(15 mins)** Set up Kindle for mum. Try Man's Search for Meaning.
-- [ ] **(2 hours)** [[_/Meeting with dad]]
-- [ ] Write tomorrow's purpose
-- [ ] **[1 hour]** Go through Never Split the Difference and finalise notes.
 - [ ] Write email thanking Josh Comeau
-- [ ] CSS skim through definitive guide and take down most important notes.
 - [ ] **(1 hour)** Math website Figma prototype.
+- [ ] **(1 hour)** Install Linux VM on laptop, then VSCode with settings synced.
 - [ ] **(2 hours)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.
 - [ ] Ask mum if she wants to try tutoring this year.
+- [x] **(15 mins)** Set up Kindle for mum. Try Man's Search for Meaning.
 
 ## Friday 2022-09-23 (6)
 
 - [ ] 🏆 **Purpose today**:
 - [ ] Write tomorrow's purpose
 - [ ] [[_/WebAssembly Rust Snake tutorial]]
-- [ ] **[1 hour]** Go through How to Not Die Alone and finalise notes.
+- [ ] **[1 hour]** Go through Never Split the Difference and finalise notes.
 
 ## Saturday 2022-09-24 (6)
 
 - [ ] 🏆 **Purpose today**:
+- [ ] **[1 hour]** Go through How to Not Die Alone and finalise notes.
 - [ ] Write tomorrow's purpose
 
 ## Sunday 2022-09-25 (6)
 
 - [ ] 🏆 **Purpose today**:
 - [ ] Write tomorrow's purpose
+- [ ] **[1 hour]** Go through The Male Advantage and finalise notes.
 
 ## Monday 2022-09-26 (6)
 

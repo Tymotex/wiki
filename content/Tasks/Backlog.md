@@ -8,11 +8,10 @@ kanban-plugin: basic
 
 - [ ] **Python personal finance tracking.**
 - [ ] [[_/Writing first blog  and publishing on Medium.]]
-- [ ] Set up **Prometheus and Grafana** for timz.dev or another project.
-- [ ] Submit portfolio to bestfolio.
 - [ ] **Learn Kubernetes** [the hard way](https://github.com/kelseyhightower/kubernetes-the-hard-way)
 - [ ] Attend a programming meetup or other meetup on **meetup.com.**
 - [ ] Try out [Gource](https://www.youtube.com/watch?v=DDhPBtzRuLY&ab_channel=MikeM%C3%B8llerNielsen)
+- [ ] Submit portfolio to bestfolio.
 - [ ] Refine all your course notes and make them appear in search results.
 - [ ] Read a **concurrency** textbook.
 - [ ] Read a **software architecture** book.
