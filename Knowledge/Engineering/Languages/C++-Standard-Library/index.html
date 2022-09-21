@@ -1,0 +1,769 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=description content="This section contains notes about some of the most useful things in the std namespace. C++ Standard Library headers
+IO   Printing to a specific number of decimal points"><title>C++ Standard Library</title><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" type=image/png href=https://wiki.timz.dev//icon.png><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap" rel=stylesheet><link href=https://wiki.timz.dev/styles.f0166864fd6bb1603db547f1f970f84b.min.css rel=stylesheet><link href=https://wiki.timz.dev/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css rel=stylesheet id=theme-link><script src=https://wiki.timz.dev/js/darkmode.773d76aedcd615c64f644f542d60cb1b.min.js></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script src=https://wiki.timz.dev/js/popover.688c5dcb89a57776d7f1cbeaf6f7c44b.min.js></script>
+<script src=https://wiki.timz.dev/js/code-title.b35124ad8db0ba37162b886afb711cbc.min.js></script>
+<script src=https://wiki.timz.dev/js/clipboard.de8d8b2221fe27323078cbd76188e364.min.js></script>
+<script>const BASE_URL="https://wiki.timz.dev/",fetchData=Promise.all([fetch("https://wiki.timz.dev/indices/linkIndex.53ac7c755332d952a19e45261c496c00.min.json").then(e=>e.json()).then(e=>({index:e.index,links:e.links})),fetch("https://wiki.timz.dev/indices/contentIndex.d3d3953818f67f3934a21a577b267808.min.json").then(e=>e.json())]).then(([{index:e,links:t},n])=>({index:e,links:t,content:n})),render=()=>{const n=new URL(BASE_URL),s=n.pathname,o=window.location.pathname,i=s==o;addCopyButtons();const e=document.getElementById("graph-container");if(!e)return requestAnimationFrame(render);e.textContent="";const t=i&&!0;drawGraph("https://wiki.timz.dev",t,[{"/Knowledge/Engineering":"#4388cc"},{"/Knowledge/Investing":"#98c379"},{"/Knowledge/Personal-Finance":"#98c379"},{"/Knowledge/Finance":"#FFD700"},{"/Knowledge/Economics":"#FFD700"}],t?{centerForce:1,depth:3,enableDrag:!0,enableLegend:!0,enableZoom:!0,fontSize:.4,linkDistance:1,opacityScale:3,repelForce:.2,scale:1.4}:{centerForce:1,depth:2,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.6,linkDistance:1,opacityScale:3,repelForce:1,scale:3}),initPopover("https://wiki.timz.dev",!0,!0)},init=(e=document)=>{addCopyButtons(),addTitleToCodeBlocks(),renderMathInElement(e.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],throwOnError:!1})}</script><script>window.Million={navigate:e=>window.location.href=e,prefetch:()=>{}},window.addEventListener("DOMContentLoaded",()=>{init(),render()})</script></head><script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-XYFD95KB4J",{anonymize_ip:!1})}</script><body><div id=search-container><div id=search-space><input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something..."><div id=results-container></div></div></div><script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://wiki.timz.dev/js/search.cf33b507388f3dfd5513a2afcda7af41.min.js></script>
+<script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script><div id=graph-container></div><style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style><script src=https://wiki.timz.dev/js/graph.0ac96ed5ea296a8b1ac03a6eba11878c.js></script><div class=singlePage><header><h1 id=page-title><a href=https://wiki.timz.dev/>🌱 Tim's Dev Wiki</a></h1><svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg><div class=spacer></div><div class=darkmode><input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg></label><label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg></label></div></header><article><h1>C++ Standard Library</h1><p class=meta>Last updated September 21, 2022.
+<a href=https://github.com/Tymotex/wiki/tree/hugo/content/Knowledge/Engineering/Languages/C++%20Standard%20Library.md rel=noopener>Edit Source</a></p><ul class=tags></ul><aside class=mainTOC><details open><summary>Table of Contents</summary><nav id=TableOfContents><ol><li><a href=#io>IO</a></li><li><a href=#strings-todo>Strings [TODO]</a></li><li><a href=#ctype-todo>CType [TODO]</a></li><li><a href=#io-stream>I/O Stream</a><ol><li><a href=#ostream><strong><code>ostream</code></strong></a></li><li><a href=#iomanip-todo><code>iomanip</code> [TODO]</a></li><li><a href=#istream><code>istream</code></a></li></ol></li><li><a href=#file-manipulation-fstream>File Manipulation (<code>fstream</code>)</a></li><li><a href=#string-streams-sstream>String Streams (<code>sstream</code>)</a></li><li><a href=#filesystem>Filesystem</a></li><li><a href=#smart-pointers-todo>Smart Pointers [TODO]</a></li><li><a href=#tuple>Tuple</a></li><li><a href=#multithreading>Multithreading</a><ol><li><a href=#thread-stdthread>Thread (<code>std::thread</code>)</a></li><li><a href=#futures-stdfuture-todo>Futures (<code>std::future</code>) [TODO]</a></li><li><a href=#async-stdasync-todo>Async (<code>std::async</code>) [TODO]</a></li><li><a href=#mutex-stdmutex>Mutex (<code>std::mutex</code>)</a></li></ol></li><li><a href=#regex>Regex</a></li><li><a href=#chrono-todo>Chrono [TODO]</a></li></ol><ol><li><a href=#vector>Vector:</a></li><li><a href=#set>Set:</a><ol><li><a href=#set-1><code>set</code></a></li><li><a href=#unordered_set><code>unordered_set</code></a></li></ol></li><li><a href=#map>Map:</a><ol><li><a href=#map-1><code>map</code></a></li><li><a href=#unordered_map><code>unordered_map</code></a></li></ol></li><li><a href=#strings>Strings:</a></li><li><a href=#arrays>Arrays:</a><ol><li><a href=#matrices>Matrices:</a></li></ol></li><li><a href=#priority-queue>Priority Queue:</a></li><li><a href=#stack--queue>Stack & Queue:</a><ol><li><a href=#stdstack>std::stack:</a></li><li><a href=#stdqueue>std::queue:</a></li><li><a href=#stddeque>std::deque:</a></li><li><a href=#smart-pointers-todo-1>Smart Pointers [TODO]</a></li></ol></li></ol></nav></details></aside><p>This section contains notes about some of the most useful things in the <code>std</code> namespace.
+<a href=https://en.cppreference.com/w/cpp/header rel=noopener>C++ Standard Library headers</a></p><a href=#io><h2 id=io><span class=hanchor arialabel=Anchor># </span>IO</h2></a><ul><li><p>Printing to a specific number of decimal points</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;iostream&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;iomanip&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;cmath&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=k>using</span> <span class=k>namespace</span> <span class=n>std</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=nf>main</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>cout</span> <span class=o>&lt;&lt;</span> <span class=n>setprecision</span><span class=p>(</span><span class=mi>6</span><span class=p>)</span> <span class=o>&lt;&lt;</span> <span class=n>fixed</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>cout</span> <span class=o>&lt;&lt;</span> <span class=n>M_PI</span> <span class=o>&lt;&lt;</span> <span class=n>endl</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nl>Outputs</span><span class=p>:</span> <span class=mf>3.141593</span>   
+</span></span></code></pre></td></tr></table></div></div><p><code>std::fixed</code> sets the default formatting for stdout</p><p><code>std::setprecision</code> sets the precision to be expected in a given i/o stream</p></li></ul><a href=#strings-todo><h2 id=strings-todo><span class=hanchor arialabel=Anchor># </span>Strings [TODO]</h2></a><ul><li><p>String formatting with <code>**std::stringstream**</code> from <code>&lt;sstream></code></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=n>std</span><span class=o>::</span><span class=n>stringstream</span> <span class=n>fmt</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=n>fmt</span> <span class=o>&lt;&lt;</span> <span class=s>&#34;hello &#34;</span> <span class=o>&lt;&lt;</span> <span class=mi>10</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=n>std</span><span class=o>::</span><span class=n>string</span> <span class=n>formatted_str</span> <span class=o>&lt;&lt;</span> <span class=n>fmt</span><span class=p>.</span><span class=n>str</span><span class=p>();</span>
+</span></span></code></pre></td></tr></table></div></div></li></ul><p>str.find_first_of</p><p>std::string::npos</p><p>std::string_view vs std::string</p><ul><li>You can do <code>constexpr std::string_view s = "…"</code>, but not <code>constexpr std::string s = "…"</code></li></ul><a href=#ctype-todo><h2 id=ctype-todo><span class=hanchor arialabel=Anchor># </span>CType [TODO]</h2></a><p>isspace</p><a href=#io-stream><h2 id=io-stream><span class=hanchor arialabel=Anchor># </span>I/O Stream</h2></a><p>In computer science, a stream is an abstraction that represents a sequence of data that arrives over time (much like a conveyor belt delivering items). In C++, this stream abstraction is how we work with reading/writing characters coming from an input stream (eg. user input on the terminal or a file in read mode) or being written to an output stream (eg. the terminal or a file in write mode).</p><p><img src=https://wiki.timz.dev//Knowledge/Engineering/Languages/assets/Untitled%206.png width=auto alt=Untitled></p><a href=#ostream><h3 id=ostream><span class=hanchor arialabel=Anchor># </span><strong><code>ostream</code></strong></h3></a><p>An <code>ostream</code> serialises typed values as bytes and dumps them somewhere.</p><ul><li>The ‘put to’ operator <code>&lt;&lt;</code> is used on objects of type <code>ostream</code>.</li><li><code>std::cout</code> and <code>std::err</code> are both objects of type <code>ostream</code>.</li></ul><p><img src=https://wiki.timz.dev//Knowledge/Engineering/Languages/assets/Untitled%207.png width=auto alt=Untitled></p><hr><ul><li><p>You can chain the put-to operator <code>&lt;&lt;</code> because the result of an expression like <code>cout &lt;&lt; “Hello”</code> is itself an <code>ostream</code>.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=n>cout</span> <span class=o>&lt;&lt;</span> <span class=s>&#34;Hello, &#34;</span> <span class=o>&lt;&lt;</span> <span class=s>&#34;world.</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>;</span>
+</span></span></code></pre></td></tr></table></div></div></li><li><p>You can overload the &#171; operator for your own classes. Example</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=k>class</span> <span class=nc>Person</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl><span class=k>public</span><span class=o>:</span>
+</span></span><span class=line><span class=cl>    <span class=n>Person</span><span class=p>(</span><span class=n>std</span><span class=o>::</span><span class=n>string</span> <span class=n>name</span><span class=p>,</span> <span class=kt>int</span> <span class=n>age</span><span class=p>)</span> <span class=o>:</span> <span class=n>name_</span><span class=p>(</span><span class=n>name</span><span class=p>),</span> <span class=n>age_</span><span class=p>(</span><span class=n>age</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>std</span><span class=o>::</span><span class=n>string</span> <span class=n>Serialise</span><span class=p>()</span> <span class=k>const</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=s>&#34;(name: &#34;</span> <span class=o>+</span> <span class=n>name_</span> <span class=o>+</span> <span class=s>&#34;)&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>private</span><span class=o>:</span>
+</span></span><span class=line><span class=cl>    <span class=n>std</span><span class=o>::</span><span class=n>string</span> <span class=n>name_</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=kt>int</span> <span class=n>age_</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>ostream</span><span class=o>&amp;</span> <span class=k>operator</span><span class=o>&lt;&lt;</span><span class=p>(</span><span class=n>ostream</span><span class=o>&amp;</span> <span class=n>os</span><span class=p>,</span> <span class=k>const</span> <span class=n>Person</span><span class=o>&amp;</span> <span class=n>person</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>os</span> <span class=o>&lt;&lt;</span> <span class=n>person</span><span class=p>.</span><span class=n>Serialise</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>os</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=nf>main</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>Person</span> <span class=n>person</span><span class=p>(</span><span class=s>&#34;Andrew&#34;</span><span class=p>,</span> <span class=mi>42</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=n>std</span><span class=o>::</span><span class=n>cout</span> <span class=o>&lt;&lt;</span> <span class=n>person</span> <span class=o>&lt;&lt;</span> <span class=n>std</span><span class=o>::</span><span class=n>endl</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=mi>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div></li></ul><a href=#iomanip-todo><h3 id=iomanip-todo><span class=hanchor arialabel=Anchor># </span><code>iomanip</code> [TODO]</h3></a><a href=#istream><h3 id=istream><span class=hanchor arialabel=Anchor># </span><code>istream</code></h3></a><p>An <code>istream</code> takes in bytes and converts it to typed values.</p><ul><li>The ‘get from’ operator <code>>></code> is used as an input operator</li><li><code>std::cin</code> is the standard input stream</li></ul><p><img src=https://wiki.timz.dev//Knowledge/Engineering/Languages/assets/Untitled%208.png width=auto alt=Untitled></p><hr><ul><li><p><strong>Formatted extraction:</strong>
+The type of the RHS of the ‘get from’ operator determines what input is accepted</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=kt>int</span> <span class=n>i</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=n>cin</span> <span class=o>&gt;&gt;</span> <span class=n>i</span><span class=p>;</span>    <span class=c1>// Expects an integer value to be supplied
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kt>double</span> <span class=n>j</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=n>cin</span> <span class=o>&gt;&gt;</span> <span class=n>j</span><span class=p>;</span>    <span class=c1>// Expects a floating point value to be supplied
+</span></span></span></code></pre></td></tr></table></div></div><ul><li><p>You can chain the get-from operator <code>>></code> just like for put-to <code>&lt;&lt;</code>.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=n>cin</span> <span class=o>&gt;&gt;</span> <span class=n>i</span> <span class=o>&gt;&gt;</span> <span class=n>j</span><span class=p>;</span>   <span class=c1>// Expects an integer, and then a double
+</span></span></span></code></pre></td></tr></table></div></div></li><li><p>The user input can be space-separated, new-line-separated or tab-separated integers. There can be any number of &rsquo; &lsquo;, &lsquo;\n&rsquo;, &lsquo;\t&rsquo; characters between the integers</p></li><li><p>If what the user types in cannot be casted to the expected type, nothing happens. The program continues execution and the variable ends up being uninitialised</p></li></ul></li><li><p><strong>Unformatted line extraction with</strong> <code>**std::getline**</code>
+When you want to read an entire line up to and not including the newline character, you should use <code>getline</code> rather than directly read from <code>cin</code> (which always considers space characters &rsquo; &lsquo;, &lsquo;\n&rsquo;, &lsquo;\t&rsquo; to be terminating)</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=n>string</span> <span class=n>msg</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=n>std</span><span class=o>::</span><span class=n>cin</span> <span class=o>&gt;&gt;</span> <span class=n>msg</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// If the user types: **hello world**, then msg will only be &#34;**hello**&#34;.
+</span></span></span><span class=line><span class=cl><span class=c1>// If you want to capture the entire line instead, use ***getline***
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>std</span><span class=o>::**</span><span class=n>getline</span><span class=o>**</span><span class=p>(</span><span class=n>cin</span><span class=p>,</span> <span class=n>msg</span><span class=p>);</span>
+</span></span></code></pre></td></tr></table></div></div></li><li><p>Common pitfall: when you do formatted execution followed by unformatted extraction, you’ll skip over the unformatted extraction.
+This is fixed with <code>std::cin.ignore()</code></p><p><a href=https://stackoverflow.com/questions/21567291/why-does-stdgetline-skip-input-after-a-formatted-extraction rel=noopener>Source</a></p><p>Suppose you have:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=n>std</span><span class=o>::</span><span class=n>cin</span> <span class=o>&gt;&gt;</span> <span class=n>age</span><span class=p>;</span>                     <span class=c1>// You type: 10
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>std</span><span class=o>::</span><span class=n>getline</span><span class=p>(</span><span class=n>std</span><span class=o>::</span><span class=n>cin</span><span class=p>,</span> <span class=n>name</span><span class=p>);</span>        <span class=c1>// You type: Andrew
+</span></span></span></code></pre></td></tr></table></div></div><p>You are actually typing “10\n” for the first input prompt. The “\n” unfortunately remains in the buffer when we get to the next <code>getline</code> call, which terminates immediately upon seeing the newline, thereby skipping input extract.</p><p>To solve this, you need to call <code>std::cin.ignore()</code> to skip over the newline.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>std::cin &gt;&gt; age;
+</span></span><span class=line><span class=cl>std::cin.ignore();
+</span></span><span class=line><span class=cl>std::getline(std::cin, name);
+</span></span></code></pre></td></tr></table></div></div></li></ul><a href=#file-manipulation-fstream><h2 id=file-manipulation-fstream><span class=hanchor arialabel=Anchor># </span>File Manipulation (<code>fstream</code>)</h2></a><p>The <code>fstream.h</code> header defines <code>ifstream</code>, which you use to open a file in read mode, <code>ofstream</code>, which you use to open a file in write mode, and <code>fstream</code> which you can use to create, read and write to files.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=c1>// ═════ Opening a file for reading ═════
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>ifstream</span> <span class=nf>test_file</span><span class=p>(</span><span class=s>&#34;test.txt&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=n>string</span> <span class=n>line</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=k>while</span> <span class=p>(</span><span class=n>std</span><span class=o>::</span><span class=n>getline</span><span class=p>(</span><span class=n>test_file</span><span class=p>,</span> <span class=n>line</span><span class=p>))</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>cout</span> <span class=o>&lt;&lt;</span> <span class=s>&#34;Read line: &#34;</span> <span class=o>&lt;&lt;</span> <span class=n>line</span> <span class=o>&lt;&lt;</span> <span class=n>endl</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=n>test_file</span><span class=p>.</span><span class=n>close</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// ═════ Opening a file for writing (truncating) ═════
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>ofstream</span> <span class=nf>test_file</span><span class=p>(</span><span class=s>&#34;out.test.txt&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=n>string</span> <span class=n>line</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=n>test_file</span> <span class=o>&lt;&lt;</span> <span class=s>&#34;Hello world</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=n>test_file</span><span class=p>.</span><span class=n>close</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// ═════ Opening a file for writing (appending) ═════
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>ofstream</span> <span class=nf>test_file</span><span class=p>(</span><span class=s>&#34;out.test.txt&#34;</span><span class=p>,</span> <span class=n>ios</span><span class=o>::</span><span class=n>app</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=n>string</span> <span class=n>line</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=n>test_file</span> <span class=o>&lt;&lt;</span> <span class=s>&#34;Hello world</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=n>test_file</span><span class=p>.</span><span class=n>close</span><span class=p>();</span>
+</span></span></code></pre></td></tr></table></div></div><aside>ℹ️ Note that `ofstream` is a subclass of `ostream` and `ifstream` is a subclass of `istream`, meaning that you get to use `<<` to write and `>>` to read and work with them in the same way that you work with `cout` and `cin`.</aside><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=c1>// ifstream member methods:
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>in</span><span class=p>.</span><span class=n>eof</span><span class=p>();</span>      <span class=c1>// Returns true if EOF has been reached.
+</span></span></span></code></pre></td></tr></table></div></div><a href=#string-streams-sstream><h2 id=string-streams-sstream><span class=hanchor arialabel=Anchor># </span>String Streams (<code>sstream</code>)</h2></a><p>String streams let you treat instances of <code>std::string</code> as stream objects, letting you work with them in the same way that you’d work with <code>cin</code>, <code>cout</code> of file streams.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=c1>// You can use `**istringstream**` anywhere you use `**istream**`. You can use this to feed strings to something that expects input.
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>std</span><span class=o>::</span><span class=n>istringstream</span> <span class=n>str_in</span><span class=p>(</span><span class=s>&#34;42 12 24&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=n>a</span><span class=p>,</span> <span class=n>b</span><span class=p>,</span> <span class=n>c</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=n>str_in</span> <span class=o>&gt;&gt;</span> <span class=n>a</span> <span class=o>&gt;&gt;</span> <span class=n>b</span> <span class=o>&gt;&gt;</span> <span class=n>c</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// Similarly, `**ostringstream**` can substitute for `**ostream**` instances. You can use this to capture output into a string.
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>std</span><span class=o>::</span><span class=n>ostringstream</span> <span class=n>str_out</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=n>str_out</span> <span class=o>&lt;&lt;</span> <span class=s>&#34;Hello world&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=n>std</span><span class=o>::</span><span class=n>string</span> <span class=n>extracted</span> <span class=o>=</span> <span class=n>str_out</span><span class=p>.</span><span class=o>**</span><span class=n>str</span><span class=o>**</span><span class=p>();</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#filesystem><h2 id=filesystem><span class=hanchor arialabel=Anchor># </span>Filesystem</h2></a><p>C++17 gives us the <code>std::filesystem</code> API which finally lets us basically do <code>ls</code> on directories and traverse the filesystem, create symbolic links, get file stats, etc.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=c1>// Loops through all files in the given directory.
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=k>for</span> <span class=p>(</span><span class=k>const</span> <span class=n>std</span><span class=o>::</span><span class=n>filesystem</span><span class=o>::</span><span class=n>directory_entry</span><span class=o>&amp;</span> <span class=nl>each_file</span> <span class=p>:</span> <span class=n>std</span><span class=o>::</span><span class=n>filesystem</span><span class=o>::</span><span class=n>directory_iterator</span><span class=p>(</span><span class=s>&#34;/usr/bin&#34;</span><span class=p>))</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>cout</span> <span class=o>&lt;&lt;</span> <span class=n>each_file</span><span class=p>.</span><span class=n>path</span><span class=p>()</span> <span class=o>&lt;&lt;</span> <span class=n>endl</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#smart-pointers-todo><h2 id=smart-pointers-todo><span class=hanchor arialabel=Anchor># </span>Smart Pointers [TODO]</h2></a><a href=#tuple><h2 id=tuple><span class=hanchor arialabel=Anchor># </span>Tuple</h2></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=c1>// Construct tuples with `std::make_tuple`   
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=o>**</span><span class=n>std</span><span class=o>::</span><span class=n>tuple</span><span class=o>&lt;</span><span class=n>string</span><span class=p>,</span> <span class=kt>int</span><span class=o>&gt;**</span> <span class=n>person</span><span class=p>(</span><span class=s>&#34;Andrew&#34;</span><span class=p>,</span> <span class=mi>42</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// Access tuple values with `std::get`. Tuples don&#39;t work with the subscript operator [] unfortunately. Reason: https://stackoverflow.com/questions/32606464/why-can-we-not-access-elements-of-a-tuple-by-index.
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>cout</span> <span class=o>&lt;&lt;</span> <span class=o>**</span><span class=n>std</span><span class=o>::</span><span class=n>get</span><span class=o>&lt;</span><span class=mi>0</span><span class=o>&gt;**</span><span class=p>(</span><span class=n>person</span><span class=p>)</span> <span class=o>&lt;&lt;</span> <span class=n>endl</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=n>cout</span> <span class=o>&lt;&lt;</span> <span class=o>**</span><span class=n>std</span><span class=o>::</span><span class=n>get</span><span class=o>&lt;</span><span class=mi>1</span><span class=o>&gt;**</span><span class=p>(</span><span class=n>person</span><span class=p>)</span> <span class=o>&lt;&lt;</span> <span class=n>endl</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// You can also construct tuples with `std::make_tuple`. This is better
+</span></span></span><span class=line><span class=cl><span class=c1>// when you want to pass a tuple r-value to a function because `make_tuple`
+</span></span></span><span class=line><span class=cl><span class=c1>// can infer types. See: https://stackoverflow.com/questions/34180636/what-is-the-reason-for-stdmake-tuple
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>std</span><span class=o>::</span><span class=n>tuple</span><span class=o>&lt;</span><span class=n>string</span><span class=p>,</span> <span class=kt>int</span><span class=o>&gt;</span> <span class=n>person</span> <span class=o>=</span> <span class=o>**</span><span class=n>std</span><span class=o>::</span><span class=n>make_tuple</span><span class=o>**</span><span class=p>(</span><span class=s>&#34;Andrew&#34;</span><span class=p>,</span> <span class=mi>42</span><span class=p>);</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#multithreading><h2 id=multithreading><span class=hanchor arialabel=Anchor># </span>Multithreading</h2></a><a href=#thread-stdthread><h3 id=thread-stdthread><span class=hanchor arialabel=Anchor># </span>Thread (<code>std::thread</code>)</h3></a><aside>ℹ️ On Linux, you have to compile with the flag `-pthread` to link the POSIX thread library: `g++ -pthread -o term term.c`</aside><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=kt>void</span> <span class=nf>func</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>		<span class=p>...</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=nf>main</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>		<span class=c1>// When you construct a thread, it starts running the given function in a separate thread immediately.
+</span></span></span><span class=line><span class=cl><span class=c1></span>		<span class=n>std</span><span class=o>::</span><span class=kr>thread</span> <span class=n>my_worker</span><span class=p>(</span><span class=n>func</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>		<span class=n>my_worker</span><span class=p>.</span><span class=n>join</span><span class=p>();</span>      <span class=c1>// A synchronous statement that blocks the current thread until `my_worker` has terminated.
+</span></span></span><span class=line><span class=cl><span class=c1></span>		<span class=k>return</span> <span class=mi>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><ul><li><p>Simple full example</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;iostream&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;thread&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=k>using</span> <span class=k>namespace</span> <span class=n>std</span><span class=o>::</span><span class=n>literals</span><span class=o>::</span><span class=n>chrono_literals</span><span class=p>;</span>   <span class=c1>// Allows you to use time literals like `1s`, `1500ms`, etc.
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=k>static</span> <span class=kt>bool</span> <span class=n>finished</span> <span class=o>=</span> <span class=nb>false</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>void</span> <span class=nf>DoWork</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>while</span> <span class=p>(</span><span class=o>!</span><span class=n>finished</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>std</span><span class=o>::</span><span class=n>cout</span> <span class=o>&lt;&lt;</span> <span class=s>&#34;Working...</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>        <span class=n>std</span><span class=o>::</span><span class=n>this_thread</span><span class=o>::</span><span class=n>sleep_for</span><span class=p>(</span><span class=mi>1000</span><span class=n>ms</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=nf>main</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>std</span><span class=o>::</span><span class=kr>thread</span> <span class=n>worker</span><span class=p>(</span><span class=n>DoWork</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>std</span><span class=o>::</span><span class=n>cin</span><span class=p>.</span><span class=n>get</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>    <span class=n>std</span><span class=o>::</span><span class=n>cout</span> <span class=o>&lt;&lt;</span> <span class=s>&#34;Interrupted!</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>finished</span> <span class=o>=</span> <span class=nb>true</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>worker</span><span class=p>.</span><span class=n>join</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>    <span class=n>std</span><span class=o>::</span><span class=n>cout</span> <span class=o>&lt;&lt;</span> <span class=s>&#34;Worker thread has finished execution.</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=mi>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div></li></ul><a href=#futures-stdfuture-todo><h3 id=futures-stdfuture-todo><span class=hanchor arialabel=Anchor># </span>Futures (<code>std::future</code>) [TODO]</h3></a><a href=#async-stdasync-todo><h3 id=async-stdasync-todo><span class=hanchor arialabel=Anchor># </span>Async (<code>std::async</code>) [TODO]</h3></a><a href=#mutex-stdmutex><h3 id=mutex-stdmutex><span class=hanchor arialabel=Anchor># </span>Mutex (<code>std::mutex</code>)</h3></a><p><code>std::mutex</code> is a very simple lockable object used to synchronise access to a resource shared by parallel threads.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=n>lock</span><span class=p>()</span>
+</span></span><span class=line><span class=cl><span class=n>unlock</span><span class=p>()</span>
+</span></span></code></pre></td></tr></table></div></div><ul><li><p>Race condition example and how to solve it with mutexes</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;iostream&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;thread&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=o>**</span><span class=k>static</span> <span class=kt>int</span> <span class=n>count</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span><span class=o>**</span>    <span class=c1>// This is a shared resource that parallel threads will try to read/write to
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kt>void</span> <span class=o>**</span><span class=n>IncrementCount</span><span class=o>**</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>while</span> <span class=p>(</span><span class=n>count</span> <span class=o>&lt;</span> <span class=mi>100</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>std</span><span class=o>::</span><span class=n>cout</span> <span class=o>&lt;&lt;</span> <span class=s>&#34;Thread with ID &#34;</span> <span class=o>&lt;&lt;</span> <span class=n>std</span><span class=o>::</span><span class=n>this_thread</span><span class=o>::</span><span class=n>get_id</span><span class=p>()</span> 
+</span></span><span class=line><span class=cl>                  <span class=o>&lt;&lt;</span> <span class=s>&#34; sees count as &#34;</span> <span class=o>&lt;&lt;</span> <span class=n>count</span> <span class=o>&lt;&lt;</span> <span class=s>&#34;</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>        <span class=n>count</span><span class=o>++</span><span class=p>;</span> 
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=nf>main</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=o>**</span><span class=n>std</span><span class=o>::</span><span class=kr>thread</span> <span class=n>t1</span><span class=p>(</span><span class=n>IncrementCount</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=n>std</span><span class=o>::</span><span class=kr>thread</span> <span class=n>t2</span><span class=p>(</span><span class=n>IncrementCount</span><span class=p>);</span><span class=o>**</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=o>**</span><span class=n>t1</span><span class=p>.</span><span class=n>join</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>    <span class=n>t2</span><span class=p>.</span><span class=n>join</span><span class=p>();</span><span class=o>**</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=mi>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>The following is the output of running the program. You can see the lines being printed are also jumbled because <code>cout</code> is also a ‘resource’ being accessed by both threads. We need to lock access to <code>count</code> and <code>cout</code>.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=n>Thread</span> <span class=n>with</span> <span class=n>ID</span> <span class=mi>140123004860160</span> <span class=n>sees</span> <span class=n>count</span> <span class=n>as</span> <span class=mi>82</span>
+</span></span><span class=line><span class=cl><span class=n>Thread</span> <span class=n>with</span> <span class=n>ID</span> <span class=mi>140123004860160</span> <span class=n>sees</span> <span class=n>count</span> <span class=n>as</span> <span class=mi>83</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>Thread</span> <span class=n>with</span> <span class=n>ID</span> <span class=mi>140123013252864</span> <span class=n>sees</span> <span class=n>count</span> <span class=n>as</span> <span class=mi>85</span>
+</span></span><span class=line><span class=cl><span class=n>Thread</span> <span class=n>with</span> <span class=n>ID</span> <span class=n>Thread</span> <span class=n>with</span> <span class=n>ID</span> <span class=mi>140123004860160</span> <span class=n>sees</span> <span class=n>count</span> <span class=n>as</span> <span class=mi>14012301325286486</span> <span class=n>sees</span> <span class=n>count</span> <span class=n>as</span> 
+</span></span><span class=line><span class=cl><span class=n>Thread</span> <span class=n>with</span> <span class=n>ID</span> <span class=mi>140123004860160</span> <span class=n>sees</span> <span class=n>count</span> <span class=n>as</span> <span class=mi>87</span>
+</span></span><span class=line><span class=cl><span class=n>Thread</span> <span class=n>with</span> <span class=n>ID</span> <span class=mi>140123004860160</span> <span class=n>sees</span> <span class=n>count</span> <span class=n>as</span> <span class=mi>88</span>
+</span></span><span class=line><span class=cl><span class=mi>86</span><span class=n>Thread</span> <span class=n>with</span> <span class=n>ID</span> 
+</span></span><span class=line><span class=cl><span class=n>Thread</span> <span class=n>with</span> <span class=n>ID</span> <span class=mi>140123013252864</span> <span class=n>sees</span> <span class=n>count</span> <span class=n>as</span> <span class=mi>90</span>
+</span></span><span class=line><span class=cl><span class=n>Thread</span> <span class=n>with</span> <span class=n>ID</span> <span class=mi>140123013252864</span> <span class=n>sees</span> <span class=n>count</span> <span class=n>as</span> <span class=mi>91</span>
+</span></span></code></pre></td></tr></table></div></div><p><strong>Solution:</strong></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;iostream&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;thread&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;mutex&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=k>static</span> <span class=kt>int</span> <span class=n>count</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=o>**</span><span class=n>std</span><span class=o>::</span><span class=n>mutex</span> <span class=n>count_mutex</span><span class=p>;</span><span class=o>**</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>void</span> <span class=nf>IncrementCount</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>while</span> <span class=p>(</span><span class=n>count</span> <span class=o>&lt;</span> <span class=mi>100</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=o>**</span><span class=n>count_mutex</span><span class=p>.</span><span class=n>lock</span><span class=p>()</span><span class=o>**</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>        <span class=n>std</span><span class=o>::</span><span class=n>cout</span> <span class=o>&lt;&lt;</span> <span class=s>&#34;Thread with ID &#34;</span> <span class=o>&lt;&lt;</span> <span class=n>std</span><span class=o>::</span><span class=n>this_thread</span><span class=o>::</span><span class=n>get_id</span><span class=p>()</span> 
+</span></span><span class=line><span class=cl>                  <span class=o>&lt;&lt;</span> <span class=s>&#34; sees count as &#34;</span> <span class=o>&lt;&lt;</span> <span class=n>count</span> <span class=o>&lt;&lt;</span> <span class=s>&#34;</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>        <span class=n>count</span><span class=o>++</span><span class=p>;</span> 
+</span></span><span class=line><span class=cl>        <span class=o>**</span><span class=n>count_mutex</span><span class=p>.</span><span class=n>unlock</span><span class=p>()</span><span class=o>**</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=nf>main</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>std</span><span class=o>::</span><span class=kr>thread</span> <span class=n>t1</span><span class=p>(</span><span class=n>IncrementCount</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=n>std</span><span class=o>::</span><span class=kr>thread</span> <span class=n>t2</span><span class=p>(</span><span class=n>IncrementCount</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>t1</span><span class=p>.</span><span class=n>join</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>    <span class=n>t2</span><span class=p>.</span><span class=n>join</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=mi>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=n>Thread</span> <span class=n>with</span> <span class=n>ID</span> <span class=mi>140367027558144</span> <span class=n>sees</span> <span class=n>count</span> <span class=n>as</span> <span class=mi>82</span>
+</span></span><span class=line><span class=cl><span class=n>Thread</span> <span class=n>with</span> <span class=n>ID</span> <span class=mi>140367027558144</span> <span class=n>sees</span> <span class=n>count</span> <span class=n>as</span> <span class=mi>83</span>
+</span></span><span class=line><span class=cl><span class=n>Thread</span> <span class=n>with</span> <span class=n>ID</span> <span class=mi>140367027558144</span> <span class=n>sees</span> <span class=n>count</span> <span class=n>as</span> <span class=mi>84</span>
+</span></span><span class=line><span class=cl><span class=n>Thread</span> <span class=n>with</span> <span class=n>ID</span> <span class=mi>140367027558144</span> <span class=n>sees</span> <span class=n>count</span> <span class=n>as</span> <span class=mi>85</span>
+</span></span><span class=line><span class=cl><span class=n>Thread</span> <span class=n>with</span> <span class=n>ID</span> <span class=mi>140367027558144</span> <span class=n>sees</span> <span class=n>count</span> <span class=n>as</span> <span class=mi>86</span>
+</span></span><span class=line><span class=cl><span class=n>Thread</span> <span class=n>with</span> <span class=n>ID</span> <span class=mi>140367027558144</span> <span class=n>sees</span> <span class=n>count</span> <span class=n>as</span> <span class=mi>87</span>
+</span></span><span class=line><span class=cl><span class=n>Thread</span> <span class=n>with</span> <span class=n>ID</span> <span class=mi>140367027558144</span> <span class=n>sees</span> <span class=n>count</span> <span class=n>as</span> <span class=mi>88</span>
+</span></span><span class=line><span class=cl><span class=n>Thread</span> <span class=n>with</span> <span class=n>ID</span> <span class=mi>140367027558144</span> <span class=n>sees</span> <span class=n>count</span> <span class=n>as</span> <span class=mi>89</span>
+</span></span><span class=line><span class=cl><span class=n>Thread</span> <span class=n>with</span> <span class=n>ID</span> <span class=mi>140367027558144</span> <span class=n>sees</span> <span class=n>count</span> <span class=n>as</span> <span class=mi>90</span>
+</span></span><span class=line><span class=cl><span class=n>Thread</span> <span class=n>with</span> <span class=n>ID</span> <span class=mi>140367027558144</span> <span class=n>sees</span> <span class=n>count</span> <span class=n>as</span> <span class=mi>91</span>
+</span></span></code></pre></td></tr></table></div></div></li></ul><a href=#regex><h2 id=regex><span class=hanchor arialabel=Anchor># </span>Regex</h2></a><p>Note: using raw string literals, $\texttt{R"(&mldr;)"}$, makes writing regex patterns easier because you won’t be confused about backslashes escaping things that you didn’t mean to escape.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;regex&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=o>**</span><span class=n>std</span><span class=o>::</span><span class=n>regex</span><span class=o>**</span> <span class=n>pattern</span><span class=p>(</span><span class=n>R</span><span class=s>&#34;()&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=o>**</span><span class=n>std</span><span class=o>::</span><span class=n>smatch</span><span class=o>**</span> <span class=n>matches</span><span class=p>;</span>        <span class=c1>// A container for storing std::string matches (capture groups). There are also other containers like std::cmatch for storing string literal matches. 
+</span></span></span><span class=line><span class=cl><span class=c1></span>														<span class=c1>// These are all instances of std::match_results and can be indexed with the subscript operator [].
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=c1>// **═════ Functions ═════**
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=o>**</span><span class=n>std</span><span class=o>::</span><span class=n>regex_match</span><span class=o>**</span><span class=p>(</span><span class=n>haystack</span><span class=p>,</span> <span class=n>pattern</span><span class=p>);</span>            <span class=c1>// Returns true if matched.
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=o>**</span><span class=n>std</span><span class=o>::</span><span class=n>regex_search</span><span class=o>**</span><span class=p>(</span><span class=n>haystack</span><span class=p>,</span> <span class=n>matches</span><span class=p>,</span> <span class=n>pattern</span><span class=p>);</span>  <span class=c1>// Returns true if matched. Populates the std::smatch object with capture group matches that you can extract.
+</span></span></span><span class=line><span class=cl><span class=c1></span>		<span class=n>matches</span><span class=p>[</span><span class=n>i</span><span class=p>]</span>                                  <span class=c1>// Accesses the i-th match. Note: matches[1] accesses the first match, matches[2] accesses the second match, and so on.
+</span></span></span></code></pre></td></tr></table></div></div><a href=#chrono-todo><h2 id=chrono-todo><span class=hanchor arialabel=Anchor># </span>Chrono [TODO]</h2></a><a href=#c-data-structures--algorithms><h1 id=c-data-structures--algorithms><span class=hanchor arialabel=Anchor># </span>C++ Data Structures & Algorithms:</h1></a><p>This is a summary of the highly efficient general-purpose data structures and algorithms provided by the standard library. Refer to this section for interview preparation and learning competitive programming with C++.</p><a href=#vector><h2 id=vector><span class=hanchor arialabel=Anchor># </span>Vector:</h2></a><p>&lsquo;Vector&rsquo; is a misleading name. It should be called &lsquo;
+<a href=https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html rel=noopener>ArrayList</a>&rsquo; or &lsquo;DynamicArray&rsquo;. It is implemented with an array under the hood.</p><ul><li>To resize the underlying array, a larger memory block is allocated and all items in the original array are copied over to the new larger one. This is an $O(n)$ operation</li><li>Vectors consume more memory than arrays, but offers methods for runtime resizing</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;vector&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=c1>// ***Initialisation***
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>vector</span><span class=o>&lt;</span><span class=kt>int</span><span class=o>&gt;</span> <span class=n>a</span> <span class=o>=</span> <span class=p>{</span> <span class=mi>1</span><span class=p>,</span> <span class=mi>2</span><span class=p>,</span> <span class=mi>3</span> <span class=p>};</span>    
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// ***Main methods***
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>a</span><span class=p>.</span><span class=o>**</span><span class=n>insert</span><span class=o>**</span><span class=p>(</span><span class=n>posIter</span><span class=p>,</span> <span class=n>b</span><span class=p>)</span>           <span class=c1>// **O(1)** - Inserts **b** at **posIter**   
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>a</span><span class=p>.</span><span class=o>**</span><span class=n>insert</span><span class=o>**</span><span class=p>(</span><span class=n>posIter</span><span class=p>,</span> <span class=n>it1</span><span class=p>,</span> <span class=n>it2</span><span class=p>)</span>    <span class=c1>//        Inserts elements from **it1** to **it2** at **posIter**
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=n>a</span><span class=p>.</span><span class=o>**</span><span class=n>erase</span><span class=o>**</span><span class=p>(</span><span class=n>posIter</span><span class=p>)</span>               <span class=c1>// Deletes item at **posIter**
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>a</span><span class=p>.</span><span class=o>**</span><span class=n>erase</span><span class=o>**</span><span class=p>(</span><span class=n>startIter</span><span class=p>,</span> <span class=n>endIter</span><span class=p>)</span>    <span class=c1>// Deletes all elements in range from inclusive **startIter** to exclusive **endIter**
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=n>a</span><span class=p>.</span><span class=o>**</span><span class=n>push_back</span><span class=o>**</span><span class=p>(</span><span class=n>b</span><span class=p>)</span>                 <span class=c1>// **O(1)** - Append
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>a</span><span class=p>.</span><span class=o>**</span><span class=n>pop_back</span><span class=o>**</span><span class=p>()</span>                   <span class=c1>// **O(1)** - Pop from end
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=n>a</span><span class=p>.</span><span class=o>**</span><span class=n>front</span><span class=o>**</span><span class=p>()</span>                      <span class=c1>// **O(1)** - Peek front
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>a</span><span class=p>.</span><span class=o>**</span><span class=n>back</span><span class=o>**</span><span class=p>()</span>                       <span class=c1>// **O(1)** - Peek back
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=n>a</span><span class=o>**</span><span class=p>[</span><span class=o>**</span><span class=n>i</span><span class=o>**</span><span class=p>]</span><span class=o>**</span>                           <span class=c1>// **O(1)** - Access item at an index (the same way you would for arrays)
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>a</span><span class=p>.</span><span class=o>**</span><span class=n>at</span><span class=o>**</span><span class=p>(</span><span class=n>i</span><span class=p>)</span>                        <span class=c1>//        Alternative to []. It throws an exception for out of bounds access
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=c1>// ***Iterators***
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>a</span><span class=p>.</span><span class=o>**</span><span class=n>begin</span><span class=o>**</span><span class=p>()</span>               <span class=c1>// Iterator starting from first element (index 0)
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>a</span><span class=p>.</span><span class=o>**</span><span class=n>end</span><span class=o>**</span><span class=p>()</span>                 <span class=c1>// Iterator starting from last element
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=n>a</span><span class=p>.</span><span class=o>**</span><span class=n>rbegin</span><span class=o>**</span><span class=p>()</span>              <span class=c1>// Reversed
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>a</span><span class=p>.</span><span class=o>**</span><span class=n>rend</span><span class=o>**</span><span class=p>()</span>                
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>a</span><span class=p>.</span><span class=o>**</span><span class=n>cbegin</span><span class=o>**</span><span class=p>()</span>              <span class=c1>// Read-only iterator
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>a</span><span class=p>.</span><span class=o>**</span><span class=n>cend</span><span class=o>**</span><span class=p>()</span>                
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// ***Properties***
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>a</span><span class=p>.</span><span class=o>**</span><span class=n>size</span><span class=o>**</span><span class=p>()</span>
+</span></span><span class=line><span class=cl><span class=n>a</span><span class=p>.</span><span class=o>**</span><span class=n>empty</span><span class=o>**</span><span class=p>()</span>
+</span></span><span class=line><span class=cl><span class=n>a</span><span class=p>.</span><span class=o>**</span><span class=n>max_size</span><span class=o>**</span><span class=p>()</span>
+</span></span><span class=line><span class=cl><span class=n>a</span><span class=p>.</span><span class=o>**</span><span class=n>capacity</span><span class=o>**</span><span class=p>()</span>
+</span></span></code></pre></td></tr></table></div></div><ul><li><p>Slicing and splicing</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// ***Slicing***
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=k>template</span><span class=o>&lt;</span><span class=k>typename</span> <span class=n>T</span><span class=o>&gt;</span>
+</span></span><span class=line><span class=cl><span class=n>vector</span><span class=o>&lt;</span><span class=n>T</span><span class=o>&gt;</span> <span class=o>**</span><span class=n>slice</span><span class=o>**</span><span class=p>(</span><span class=n>vector</span><span class=o>&lt;</span><span class=n>T</span><span class=o>&gt;</span> <span class=n>vec</span><span class=p>,</span> <span class=kt>int</span> <span class=n>start</span><span class=p>,</span> <span class=kt>int</span> <span class=n>end</span><span class=p>)</span> <span class=p>{</span>     
+</span></span><span class=line><span class=cl>		<span class=c1>// Returns a new vector from inclusive start to exclusive end
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=k>auto</span> <span class=n>first</span> <span class=o>=</span> <span class=n>vec</span><span class=p>.</span><span class=n>cbegin</span><span class=p>()</span> <span class=o>+</span> <span class=n>start</span><span class=p>;</span> 
+</span></span><span class=line><span class=cl>    <span class=k>auto</span> <span class=n>last</span> <span class=o>=</span> <span class=n>vec</span><span class=p>.</span><span class=n>cbegin</span><span class=p>()</span> <span class=o>+</span> <span class=n>end</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>vector</span><span class=o>&lt;</span><span class=n>T</span><span class=o>&gt;</span> <span class=n>sliced</span><span class=p>(</span><span class=n>first</span><span class=p>,</span> <span class=n>last</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>sliced</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// ***Splicing***
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>vector</span><span class=o>&lt;</span><span class=kt>int</span><span class=o>&gt;</span> <span class=n>a</span> <span class=o>=</span> <span class=p>{</span> <span class=mi>1</span><span class=p>,</span> <span class=mi>2</span><span class=p>,</span> <span class=mi>3</span><span class=p>};</span>
+</span></span><span class=line><span class=cl><span class=n>vector</span><span class=o>&lt;</span><span class=kt>int</span><span class=o>&gt;</span> <span class=n>b</span> <span class=o>=</span> <span class=p>{</span> <span class=mi>4</span><span class=p>,</span> <span class=mi>5</span> <span class=p>};</span>
+</span></span><span class=line><span class=cl><span class=n>a</span><span class=p>.</span><span class=n>insert</span><span class=p>(</span><span class=n>a</span><span class=p>.</span><span class=n>begin</span><span class=p>()</span> <span class=o>+</span> <span class=mi>1</span><span class=p>,</span> <span class=n>b</span><span class=p>.</span><span class=n>begin</span><span class=p>(),</span> <span class=n>b</span><span class=p>.</span><span class=n>end</span><span class=p>());</span>     <span class=c1>// a is now { 1, **4**, **5**, 2, 3 }
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>a</span><span class=p>.</span><span class=n>erase</span><span class=p>(</span><span class=n>a</span><span class=p>.</span><span class=n>begin</span><span class=p>()</span> <span class=o>+</span> <span class=mi>2</span><span class=p>,</span> <span class=n>a</span><span class=p>.</span><span class=n>begin</span><span class=p>()</span> <span class=o>+</span> <span class=mi>3</span><span class=p>);</span>           <span class=c1>// a is now { 1, 4, 2, 3 } 
+</span></span></span></code></pre></td></tr></table></div></div></li></ul><a href=#set><h2 id=set><span class=hanchor arialabel=Anchor># </span>Set:</h2></a><a href=#set-1><h3 id=set-1><span class=hanchor arialabel=Anchor># </span><code>set</code></h3></a><p>Stores elements in <em><strong>sorted order</strong></em> without duplicates. For most use cases, you probably want to use <code>unordered_set</code> instead, which has more favourable time complexities.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=o>**</span><span class=n>set</span><span class=o>&lt;</span><span class=n>T</span><span class=o>&gt;</span> <span class=n>s</span><span class=o>**</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>s</span><span class=p>.</span><span class=o>**</span><span class=n>insert</span><span class=o>**</span><span class=p>(</span><span class=n>T</span> <span class=n>elem</span><span class=p>)</span>      <span class=c1>// **O(logn)** - Inserts element
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>s</span><span class=p>.</span><span class=o>**</span><span class=n>find</span><span class=o>**</span><span class=p>(</span><span class=n>T</span> <span class=n>elem</span><span class=p>)</span>        <span class=c1>// **O(logn)** - Gets an element
+</span></span></span><span class=line><span class=cl><span class=c1></span>                      <span class=c1>//           Returns an iterator which points to the value if it was found, otherwise it points to **s.end()** 
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>s</span><span class=p>.</span><span class=o>**</span><span class=n>size</span><span class=o>**</span><span class=p>()</span>              <span class=c1>// **O(1)**    - Cardinality
+</span></span></span></code></pre></td></tr></table></div></div><ul><li>The underlying implementation uses a balanced tree</li></ul><a href=#unordered_set><h3 id=unordered_set><span class=hanchor arialabel=Anchor># </span><code>unordered_set</code></h3></a><p>Same</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=n>unordered_set</span><span class=o>&lt;</span><span class=n>T</span><span class=o>&gt;</span> <span class=n>s</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// **CRUD:**
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>s</span><span class=p>.</span><span class=n>insert</span><span class=p>(</span><span class=n>T</span> <span class=n>elem</span><span class=p>)</span>      <span class=c1>// O(1) 
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>s</span><span class=p>.</span><span class=n>find</span><span class=p>(</span><span class=n>T</span> <span class=n>elem</span><span class=p>)</span>        <span class=c1>// O(1)
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>s</span><span class=p>.</span><span class=n>erase</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// **Properties:**
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>s</span><span class=p>.</span><span class=n>size</span><span class=p>()</span>              <span class=c1>// O(1)
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>s</span><span class=p>.</span><span class=n>empty</span><span class=p>()</span>
+</span></span></code></pre></td></tr></table></div></div><ul><li>Uses a hash table as the underlying data structure</li></ul><a href=#map><h2 id=map><span class=hanchor arialabel=Anchor># </span>Map:</h2></a><a href=#map-1><h3 id=map-1><span class=hanchor arialabel=Anchor># </span><code>map</code></h3></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=n>map</span><span class=o>&lt;</span><span class=n>string</span><span class=p>,</span> <span class=kt>int</span><span class=o>&gt;</span> <span class=n>m</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// ***Main operations***
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>m</span><span class=p>.</span><span class=n>insert</span><span class=p>(</span><span class=n>pair</span><span class=p>)</span>      <span class=c1>// Takes in **std::pair&lt;keyT, valT&gt;**
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>m</span><span class=p>[</span><span class=n>key</span><span class=p>]</span> <span class=o>=</span> <span class=n>val</span>        <span class=c1>// More straightforward way to add key-value pairs
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>m</span><span class=p>.</span><span class=n>erase</span><span class=p>(</span><span class=n>key</span><span class=p>)</span>        <span class=c1>// Deletes key-value pair by key. Doesn&#39;t fail if the key doesn&#39;t exist
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=c1>// ***Iterators***
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>m</span><span class=p>.</span><span class=n>begin</span><span class=p>()</span>
+</span></span><span class=line><span class=cl><span class=n>m</span><span class=p>.</span><span class=n>end</span><span class=p>()</span>
+</span></span><span class=line><span class=cl><span class=c1>// ... and all the other ones available to classes like **std::vector**
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=c1>// ***Properties***
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>m</span><span class=p>.</span><span class=n>size</span><span class=p>()</span>
+</span></span><span class=line><span class=cl><span class=n>m</span><span class=p>.</span><span class=n>max_size</span><span class=p>()</span>
+</span></span><span class=line><span class=cl><span class=n>m</span><span class=p>.</span><span class=n>empty</span><span class=p>()</span>
+</span></span></code></pre></td></tr></table></div></div><ul><li><p>Usage example</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=c1>// ***Adding key-value pairs***
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>map</span><span class=o>&lt;</span><span class=n>string</span><span class=p>,</span> <span class=kt>int</span><span class=o>&gt;</span> <span class=n>frequencies</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=n>frequencies</span><span class=p>[</span><span class=s>&#34;Hello&#34;</span><span class=p>]</span> <span class=o>=</span> <span class=mi>4</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=n>frequencies</span><span class=p>[</span><span class=s>&#34;World&#34;</span><span class=p>]</span> <span class=o>=</span> <span class=mi>3</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=n>val</span> <span class=o>=</span> <span class=n>frequencies</span><span class=p>[</span><span class=s>&#34;World&#34;</span><span class=p>];</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// ***Iterating through key-value pairs***
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=k>for</span> <span class=p>(</span><span class=k>auto</span> <span class=n>it</span> <span class=o>=</span> <span class=n>frequencies</span><span class=p>.</span><span class=n>begin</span><span class=p>();</span> <span class=n>it</span> <span class=o>!=</span> <span class=n>frequencies</span><span class=p>.</span><span class=n>end</span><span class=p>();</span> <span class=o>++</span><span class=n>it</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>cout</span> <span class=o>&lt;&lt;</span> <span class=n>it</span><span class=o>-&gt;</span><span class=n>first</span> <span class=o>&lt;&lt;</span> <span class=s>&#34; : &#34;</span> <span class=o>&lt;&lt;</span> <span class=n>it</span><span class=o>-&gt;</span><span class=n>second</span> <span class=o>&lt;&lt;</span> <span class=n>endl</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div></li></ul><hr><ul><li>There are
+<a href=https://stackoverflow.com/questions/17172080/insert-vs-emplace-vs-operator-in-c-map rel=noopener>multiple ways</a> to insert key-value pairs into a map, eg. <code>insert()</code>, <code>[ ]</code> operator, <code>emplace()</code>, etc.</li></ul><a href=#unordered_map><h3 id=unordered_map><span class=hanchor arialabel=Anchor># </span><code>unordered_map</code></h3></a><p>The interface is very similar to <code>std::map</code>, however it offers a few more lower-level methods like <code>bucket_count()</code>, <code>load_factor()</code>, etc.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp></code></pre></td></tr></table></div></div><a href=#strings><h2 id=strings><span class=hanchor arialabel=Anchor># </span>Strings:</h2></a><p>The set of methods available to the <code>std::string</code> class is similar to the methods available to <code>std::vector</code>, plus a few more special string manipulation methods and operator support like <code>+</code>, <code>&lt;&lt;</code>, <code>>></code>.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// ***Main operations***
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>s1</span> <span class=o>+</span> <span class=n>s2</span>              <span class=c1>// Concatentation
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>s1</span><span class=p>.</span><span class=n>append</span><span class=p>(</span><span class=n>s2</span><span class=p>)</span>        <span class=c1>// Alternative to + operator
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=c1>// TODO: https://www.cplusplus.com/reference/string/string/compare/
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>s1</span><span class=p>.</span><span class=n>compare</span><span class=p>(</span><span class=n>s2</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=n>s1</span><span class=p>.</span><span class=n>compare</span><span class=p>(</span><span class=n>s2</span><span class=p>,</span> <span class=n>pos</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>s</span><span class=p>.</span><span class=n>substr</span><span class=p>(</span><span class=n>startPos</span><span class=p>,</span> <span class=n>runLen</span><span class=p>)</span>   <span class=c1>// Returns the substring from inclusive **startPos** onwards for **runLen** characters
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=c1>//TODO: more string ops https://www.cplusplus.com/reference/string/string/
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>s</span><span class=p>.</span><span class=n>find</span>
+</span></span><span class=line><span class=cl><span class=n>s</span><span class=p>.</span><span class=n>find_first_of</span>
+</span></span><span class=line><span class=cl><span class=n>s</span><span class=p>.</span><span class=n>find_first_not_of</span>
+</span></span><span class=line><span class=cl><span class=n>s</span><span class=p>.</span><span class=n>find_last_of</span>
+</span></span><span class=line><span class=cl><span class=n>s</span><span class=p>.</span><span class=n>find_last_not_of</span>
+</span></span><span class=line><span class=cl><span class=o>&gt;</span>
+</span></span><span class=line><span class=cl><span class=c1>// ***Others***
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>s</span><span class=p>.</span><span class=n>copy</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>char</span> <span class=n>c</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=n>std</span><span class=o>::</span><span class=n>isdigit</span><span class=p>(</span><span class=n>c</span><span class=p>)</span>    <span class=c1>// Returns true if the string consists of a valid digit.
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>std</span><span class=o>::</span><span class=n>isalnum</span><span class=p>(</span><span class=n>c</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=n>std</span><span class=o>::</span><span class=n>isspace</span><span class=p>(</span><span class=n>c</span><span class=p>)</span>
+</span></span></code></pre></td></tr></table></div></div><p><strong>Raw Strings:</strong></p><p>There are raw string literals just like in Python where everything inside the string is treated as raw characters, not special characters. This means you won’t have to escape any special characters with backslash and they’ll all lose their meaning. This is especially useful when defining strings containing regex patterns which contain a bunch of backslashes.</p><p>The format for defining a raw string literal is: $\texttt{R"(&mldr;)"}$.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=n>std</span><span class=o>::</span><span class=n>string</span> <span class=n>my_raw_str</span> <span class=o>=</span> <span class=n>R</span><span class=s>&#34;(my raw string)&#34;</span><span class=p>;</span>   <span class=c1>// → &#34;my raw string&#34;
+</span></span></span></code></pre></td></tr></table></div></div><a href=#arrays><h2 id=arrays><span class=hanchor arialabel=Anchor># </span>Arrays:</h2></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=c1>// ***Initialisation***
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kt>int</span> <span class=n>nums</span><span class=p>[</span><span class=mi>3</span><span class=p>];</span>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=n>nums</span><span class=p>[</span><span class=mi>3</span><span class=p>]</span> <span class=o>=</span> <span class=p>{</span> <span class=mi>1</span><span class=p>,</span> <span class=mi>2</span><span class=p>,</span> <span class=mi>3</span> <span class=p>};</span>     <span class=c1>// [1, 2, 3]
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kt>int</span> <span class=n>nums</span><span class=p>[]</span>  <span class=o>=</span> <span class=p>{</span> <span class=mi>1</span><span class=p>,</span> <span class=mi>2</span><span class=p>,</span> <span class=mi>3</span> <span class=p>};</span>     <span class=c1>// [1, 2, 3]
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kt>int</span> <span class=n>nums</span><span class=p>[</span><span class=mi>3</span><span class=p>]</span> <span class=o>=</span> <span class=p>{</span> <span class=mi>1</span> <span class=p>};</span>           <span class=c1>// [1, 0, 0]
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kt>int</span> <span class=n>nums</span><span class=p>[</span><span class=mi>3</span><span class=p>]</span> <span class=o>=</span> <span class=p>{</span>  <span class=p>};</span>            <span class=c1>// [0, 0, 0]
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=c1>// TODO: ***Utility functions***
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>std</span><span class=o>::</span><span class=n>fill_n</span><span class=p>(</span><span class=n>nums</span><span class=p>,</span> <span class=mi>3</span><span class=p>,</span> <span class=o>-</span><span class=mi>1</span><span class=p>);</span>
+</span></span></code></pre></td></tr></table></div></div><ul><li>To get the size of an array, you’d need to do $\texttt{sizeof(arr) / sizeof(arr[0])}$. It is almost always recommended to use <code>std::vector</code> over regular arrays
+<a href=https://stackoverflow.com/questions/2037736/how-to-find-the-size-of-an-int rel=noopener>*</a>.</li></ul><a href=#matrices><h3 id=matrices><span class=hanchor arialabel=Anchor># </span>Matrices:</h3></a><a href=#priority-queue><h2 id=priority-queue><span class=hanchor arialabel=Anchor># </span>Priority Queue:</h2></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;**priority_queue**&gt;</span><span class=cp>
+</span></span></span></code></pre></td></tr></table></div></div><a href=#stack--queue><h2 id=stack--queue><span class=hanchor arialabel=Anchor># </span>Stack & Queue:</h2></a><a href=#stdstack><h3 id=stdstack><span class=hanchor arialabel=Anchor># </span>std::stack:</h3></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;**stack**&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=n>stack</span><span class=o>&lt;</span><span class=kt>int</span><span class=o>&gt;</span> <span class=n>s</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// ***Main methods***
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>s</span><span class=p>.</span><span class=o>**</span><span class=n>push</span><span class=o>**</span><span class=p>(</span><span class=n>item</span><span class=p>);</span>      
+</span></span><span class=line><span class=cl><span class=n>s</span><span class=p>.</span><span class=o>**</span><span class=n>top</span><span class=o>**</span><span class=p>()</span>          <span class=c1>// Reads the top element
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>s</span><span class=p>.</span><span class=o>**</span><span class=n>pop</span><span class=o>**</span><span class=p>()</span>          <span class=c1>// Removes the top element. *Doesn&#39;t actually return anything*
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>s</span><span class=p>.</span><span class=o>**</span><span class=n>empty</span><span class=o>**</span><span class=p>()</span>
+</span></span><span class=line><span class=cl><span class=n>s</span><span class=p>.</span><span class=o>**</span><span class=n>size</span><span class=o>**</span><span class=p>()</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#stdqueue><h3 id=stdqueue><span class=hanchor arialabel=Anchor># </span>std::queue:</h3></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;**queue**&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=n>queue</span><span class=o>&lt;</span><span class=kt>int</span><span class=o>&gt;</span> <span class=n>q</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// ***Main methods***
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>q</span><span class=p>.</span><span class=o>**</span><span class=n>push</span><span class=o>**</span><span class=p>()</span>   
+</span></span><span class=line><span class=cl><span class=n>q</span><span class=p>.</span><span class=o>**</span><span class=n>front</span><span class=o>**</span><span class=p>()</span>          <span class=c1>// Reads the next element
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>q</span><span class=p>.</span><span class=o>**</span><span class=n>back</span><span class=o>**</span><span class=p>()</span>           <span class=c1>// Reads the last element
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>q</span><span class=p>.</span><span class=o>**</span><span class=n>pop</span><span class=o>**</span><span class=p>()</span>            <span class=c1>// Removes the top element. Doesn&#39;t actually return anything
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>q</span><span class=p>.</span><span class=o>**</span><span class=n>empty</span><span class=o>**</span><span class=p>()</span>
+</span></span><span class=line><span class=cl><span class=n>q</span><span class=p>.</span><span class=o>**</span><span class=n>size</span><span class=o>**</span><span class=p>()</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#stddeque><h3 id=stddeque><span class=hanchor arialabel=Anchor># </span>std::deque:</h3></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;**deque**&gt;</span><span class=cp>
+</span></span></span></code></pre></td></tr></table></div></div><a href=#smart-pointers-todo-1><h3 id=smart-pointers-todo-1><span class=hanchor arialabel=Anchor># </span>Smart Pointers [TODO]</h3></a><p>Smart pointers — wraps a naked pointer. Preferred over naked pointers, mainly because it handles the deletion of objects that would cause a memory leak otherwise.
+- Smart pointers are &lsquo;smart&rsquo; because they enforce ownership semantics.
+- Objects owned by a <code>unique_ptr</code> will have <code>delete</code> invoked on them when the <code>unique_ptr</code> goes out of scope
+- Smart pointers are preferred in C++ just because they offer better memory management
+Naked pointers, also called <em>dumb pointers</em>, are regular C-style pointers.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=kt>int</span><span class=o>*</span> <span class=n>p</span><span class=p>;</span>   <span class=c1>// A naked pointer
+</span></span></span></code></pre></td></tr></table></div></div><ul><li>Use <code>#include &lt;memory></code></li><li>Makes it so that you never have to call <code>new</code> or <code>delete</code> in your code</li><li>C++ code should prefer smart pointers (most commonly <code>std::unique_ptr</code>) instead of raw pointers when dynamically allocating objects. The <code>delete</code> operator is used on the allocated object in <code>std::unique_ptr</code>’s destructor</li><li><code>std::unique_ptr</code> — the simplest smart pointer. When it goes out of scope, the object gets deleted. They’re called unique because they cannot be copied — because if you were to have two pointers to the same memory address, then if delete is called on one pointer, then the other pointer would be pointing to invalid memory.<ul><li>If you only have one reference to an object and you want it to be freed once out of scope, then use unique_ptr</li><li>There’s also stuff like <code>std::make_unique</code> that is apparently a
+<a href=https://stackoverflow.com/questions/37514509/advantages-of-using-stdmake-unique-over-new-operator rel=noopener>replacement for the new operator when initialiser std::unique_ptr?</a><ul><li>It is recommended to use the &lsquo;make_unique/make_shared&rsquo; function <strong>to create smart pointers</strong></li></ul></li></ul></li><li><code>std::shared_ptr</code><ul><li>Unlike <code>std::unique_ptr</code>, shared_ptr lets you have multiple references to the same object. You can assign a <code>std::shared_ptr</code> to another variable that is type <code>std::shared_ptr</code></li><li>Uses reference counting. When you assign std::shared_ptr to a variable of type std::shared_ptr, it’ll increment the count</li><li>You <strong>have to</strong> use <code>std::make_shared</code> to instantiate shared_ptr. It is important to do this because shared_ptr needs to manage bookkeeping around the counting of references. If you were to use new, then you’ve created a separate instance that won’t be counted as a reference.</li></ul></li><li><code>std::weak_ptr</code><ul><li>When you assign <code>std::shared_ptr</code> to a variable of type <code>std::weak_ptr</code>, it won’t increment the underlying references count managed by the shared_ptr.</li></ul></li><li><a href="https://www.internalpointers.com/post/move-smart-pointers-and-out-functions-modern-c#:~:text=Return-smart-pointers-from-functions" rel=noopener>Return smart pointers by value</a></li></ul></article><hr><div class=page-end><div class=backlinks-container><h3>Backlinks</h3><ul class=backlinks><li><a href=/Knowledge/Engineering/Languages/C++/ data-ctx="C++ Standard Library" data-src=/Knowledge/Engineering/Languages/C++ class=internal-link>C++</a></li></ul></div></div><div id=contact_buttons><footer><ul><li><a href=/>Home</a></li><li><a href=https://timz.dev>timz.dev</a></li><li><a href=https://github.com/Tymotex/wiki>Github</a></li><li><a href=https://www.linkedin.com/in/timz-seng>LinkedIn</a></li></ul><p>Tim Zhang © 2022</p></footer></div></div></body></html>
