@@ -1,7 +1,5 @@
 ---
-
 kanban-plugin: basic
-
 ---
 
 ## Wednesday 2022-09-21 (6)
@@ -21,14 +19,12 @@ kanban-plugin: basic
 - [x] **(3 hours)** Refine and review C++ notes #critical
 - [x] Ensure wiki notes are privated. #critical
 
-
 ## Thursday 2022-09-22 (6)
 
 - [ ] 🏆 **Purpose today**:
 - [ ] Write tomorrow's purpose
 - [ ] Install Linux VM on laptop, then VSCode with settings synced.
 - [ ] **[1 hour]** Go through The Male Advantage and finalise notes.
-
 
 ## Friday 2022-09-23 (6)
 
@@ -37,18 +33,15 @@ kanban-plugin: basic
 - [ ] [[_/WebAssembly Rust Snake tutorial]]
 - [ ] **[1 hour]** Go through How to Not Die Alone and finalise notes.
 
-
 ## Saturday 2022-09-24 (6)
 
 - [ ] 🏆 **Purpose today**:
 - [ ] Write tomorrow's purpose
 
-
 ## Sunday 2022-09-25 (6)
 
 - [ ] 🏆 **Purpose today**:
 - [ ] Write tomorrow's purpose
-
 
 ## Monday 2022-09-26 (6)
 
