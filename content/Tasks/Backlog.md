@@ -21,6 +21,7 @@ kanban-plugin: basic
 - [ ] Attend 1 **conference.**
 - [ ] Read 1 **academic paper** (eg. Claude Shannon's information theory paper).
 - [ ] Make a plan for learning AI, long-term.
+- [ ] Obsidian plugin idea: notion-like gallery.
 
 
 ## Self-Improvement
