@@ -1,11 +1,14 @@
 ---
+
 kanban-plugin: basic
+
 ---
 
 ## Thursday 2022-09-22 (6)
 
 - [ ] 🏆 **Purpose today**: try prometheus and grafana, skim CSS, then read Think Like a Programmer
 - [ ] **(2 hours)** Set up **Prometheus and Grafana** for timz.dev or another project.
+- [ ] Remove link to YouTube in timz.dev
 - [ ] **(2 hours)** CSS skim through definitive guide and take down most important notes.
 - [ ] **(2 hours)** Read Think Like a Programmer.
 - [ ] **(1 hour)** [[_/Meeting with dad]]
@@ -17,6 +20,7 @@ kanban-plugin: basic
 - [ ] Ask mum if she wants to try tutoring this year.
 - [x] **(15 mins)** Set up Kindle for mum. Try Man's Search for Meaning.
 
+
 ## Friday 2022-09-23 (6)
 
 - [ ] 🏆 **Purpose today**:
@@ -24,17 +28,20 @@ kanban-plugin: basic
 - [ ] [[_/WebAssembly Rust Snake tutorial]]
 - [ ] **[1 hour]** Go through Never Split the Difference and finalise notes.
 
+
 ## Saturday 2022-09-24 (6)
 
 - [ ] 🏆 **Purpose today**:
 - [ ] **[1 hour]** Go through How to Not Die Alone and finalise notes.
 - [ ] Write tomorrow's purpose
 
+
 ## Sunday 2022-09-25 (6)
 
 - [ ] 🏆 **Purpose today**:
 - [ ] Write tomorrow's purpose
 - [ ] **[1 hour]** Go through The Male Advantage and finalise notes.
+
 
 ## Monday 2022-09-26 (6)
 
