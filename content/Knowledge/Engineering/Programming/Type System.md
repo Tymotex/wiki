@@ -7,7 +7,7 @@ A *type system* is a set of rules defined by a programming language specificatio
 
 ### Why Type Systems Exist
 Type systems exist for one reason: to help you write less buggy code in a more self-documenting way.
-- Giving variables, values, functions, etc. a *type* restricts the set of things you can do with them which helps us by minimising the chance of creating situations where the program tries to add the integer `3` to an instance of `Cat`. 
+- Giving variables, values, functions, etc. a *type* restricts the set of things you can do with them which helps us by minimising the chance of creating situations where the program tries to add the integer `3` to an instance of `C[]()at`. 
 - It forces users of an interface to always supply an expected value.
 
 ### Static Typing

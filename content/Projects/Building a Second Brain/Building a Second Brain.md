@@ -41,6 +41,8 @@ I aimed to set keybindings that closely match how I have it in other programs li
     - `ctrl + shift + p` — open command palette.
 - Notion-like shortcuts:
     - `ctrl + \`  — toggle right sidebar.
+    - `ctrl + shift + l` — toggles light/dark theme.
+        - *Note*: Obsidian doesn't support toggling, so the workaround is to use `ctrl + shift + alt +l` for light mode.
 - Browser-like shortcuts:
     - `ctrl + w` — close the current window.
     - `ctrl + shift + t` — reopen the closed file.
