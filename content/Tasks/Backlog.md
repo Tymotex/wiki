@@ -6,7 +6,7 @@ kanban-plugin: basic
 
 ## Programming & Career
 
-- [ ] **Open source contribution** to a React library/project. Maybe contribute to `obsidian-kanban`?
+- [ ] **Open source contribution** to a React library/project. Maybe contribute to `obsidian-kanban` by implementing an enhancement?
 - [ ] **Python personal finance tracking.**
 - [ ] [[_/Writing first blog  and publishing on Medium.]]
 - [ ] Set up **Prometheus and Grafana** for timz.dev or another project.
