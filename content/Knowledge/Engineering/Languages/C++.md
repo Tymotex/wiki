@@ -16,8 +16,8 @@ The **[ISO C++ standard](https://isocpp.org/std/%20the-standard)** defines:
 
 Also see [[Knowledge/Engineering/Languages/C++ Standard Library|C++ standard library]].
 
-## Core
-### Variable Initialisation
+# Core
+## Variable Initialisation
 There are many ways to initialise a variable with a value.
 1. **Copy initialisation**: using `=`. It implicitly calls a constructor.
 2. **List initialisation**, also called **uniform initialisation**: using `{ }`.
@@ -31,7 +31,7 @@ There are many ways to initialise a variable with a value.
 
 > Prefer uniform initialisation over copy initialisation.
 
-#### Details
+### Details
 - *List initialisation* does not allow *narrowing*. Try to use list initialisation `{ }` more often.
     ```cpp
     int i = 7.8;  // Gets floored to 7
@@ -39,15 +39,18 @@ There are many ways to initialise a variable with a value.
     ```
 - `explicit` constructors are *not invokable* with copy initialisation.
 
-### Auto
+## References
+
+## Auto
 When specifying the data type of something as `auto`, C++ automatically infers the type.
 - Use `auto` for concision, especially when long generic types are involved.
 - It's fine to use [[Knowledge/Engineering/Languages/C++#Variables|copy initialisation]] if you use `auto` since type narrowing won't be a problem. E.g. `auto x = 1`.
 - Always assume that `auto`, by itself, will make a copy of the RHS. Use `auto&` if copying is undesirable (such as when copying large vectors).
 
-### Const
-The `const` qualifier makes it impossible to assign a new value to a variable after it's initialised.
+## Const
+The `const` qualifier makes it 'impossible' to assign a new value to a variable after it's initialised. There is 0 negative performance impact of enforcing `const` since it's all done at compile-time. Using const can actually allow the compiler to make optimisations.
 
+> Prefer making things const by default. See [const correctness](https://isocpp.org/wiki/faq/const-correctness) for a pitch on why.
 
 - `const` and `constexpr`— immutable variables. Declaring and initialising a `const` variable will make the compiler guarantee that its value is never modified, ever.
     ```cpp
@@ -60,7 +63,7 @@ The `const` qualifier makes it impossible to assign a new value to a variable af
     constexpr int x = cube(2);    // Error, *unless cube is defined as a [**constexpr function**](https://www.ibm.com/docs/es/xl-c-and-cpp-aix/16.1?topic=functions-constexpr-c11)*
     ```
 
-#### Const Pointers
+### Const Pointers
 ```cpp
 const int *p;               // A pointer to an immutable int.
 const int * const q = ...;  // An immutable pointer to an immutable int. It must be initialised with a memory address.
@@ -68,29 +71,45 @@ int * const r = ...;        // An immutable pointer to an int. It must be initis
 ```
 If this is hard to read, see the [[Knowledge/Engineering/Languages/C++#Clockwise Spiral Rule|clockwise-spiral rule]].
 
-#### Const References
+### Const References
+Typing a variable as a const reference makes it a read-only alias. It's especially helpful for function parameters.
 > Prefer typing function parameters as const references. This gives the caller confidence that what they pass in is not modified in any way.
 
-#### Constexpr
+If you don't want a function to modify a caller's argument, you have these options:
+```cpp
+void foo1(const std::string& s);   // Preferred approach.
+void foo2(const std::string* s);   // A pointer to a const also works.
+void foo3(std::string s);          // Since pass-by-value is the default, `s` is an independent copy of what the caller passed in.
 
+// If you want a parameter to be modifiable:
+void bar1(std::string& s);         // This might modify the caller's string directly.
+void bar1(std::string* s);         // So can this.
+```
 
-#### Const Methods
+You can't have 100% certainty that what you pass as a const reference is unchanged. See [this example from isocpp](https://isocpp.org/wiki/faq/const-correctness#return-const-ref-from-const-memfn):
 
-The `const` qualifier *must* be placed after the parameter list.
+### Constexpr
+The `constexpr` type specifier is like `const`, except the RHS value must be able to be determined at compile-time. 
+```cpp
+const int a = some_val;
+constexpr int b = 42;
+```
 
-### Static
-- `static` variables. In functions, static variables let you share a value across all calls to that function.
-    ```cpp
-    void foo() {
-    		static int a = 42;    // All calls to **foo** will see **a = 42**.
-        ...                   // If **a** changes, then all calls to **foo** will see that change too
-    }
-    ```
-    - Static variables are **generally considered bad** because they represent global state and are therefore much more difficult to reason about[*](https://stackoverflow.com/questions/7026507/why-are-static-variables-considered-evil#:~:text=Static%20variables%20are%20generally%20considered,assumptions%20of%20object%2Doriented%20programming.)
-    - The static variables are stored in **the data segment of the memory**. The data segment is a part of the virtual address space of a program
-        ![Program memory map|300](Knowledge/Engineering/Languages/assets/program-memory-map.png)
+### Const Methods
+Const methods can only read `this` and never mutate anything about it. To specify a const method, the `const` qualifier *must* be placed after the parameter list.
+```cpp
+class Foo {
+public:
+    void inspect() const;
+};
+```
 
-### Clockwise-Spiral Rule
+> What about making methods **return const values**, eg. `const Foo bar();`? [It's *mostly* pointless](https://stackoverflow.com/questions/8716330/purpose-of-returning-by-const-value). However, it is *not* pointless if you're returning a pointer or reference to something that is const.
+
+### Constexpr Functions
+Constexpr functions are those than *can* be executed at compile-time, meaning all its state and behaviour is determinable at compile-time.
+
+## Clockwise-Spiral Rule
 [Clockwise-Spiral Rule](http://c-faq.com/decl/spiral.anderson.html) is a trick for reading variable types.
 1. Start at the variable name.
 2. Follow an outwards clockwise spiral from that variable name to build up a sentence.
@@ -110,6 +129,18 @@ int const *myVar;               // pointer to a const int.
 int * const myVar = ...;        // const pointer to an int.
 int const * const myVar = ...;  // const pointer to a const int.
 ```
+
+## Static
+- `static` variables. In functions, static variables let you share a value across all calls to that function.
+    ```cpp
+    void foo() {
+    		static int a = 42;    // All calls to **foo** will see **a = 42**.
+        ...                   // If **a** changes, then all calls to **foo** will see that change too
+    }
+    ```
+    - Static variables are **generally considered bad** because they represent global state and are therefore much more difficult to reason about[*](https://stackoverflow.com/questions/7026507/why-are-static-variables-considered-evil#:~:text=Static%20variables%20are%20generally%20considered,assumptions%20of%20object%2Doriented%20programming.)
+    - The static variables are stored in **the data segment of the memory**. The data segment is a part of the virtual address space of a program
+        ![Program memory map|300](Knowledge/Engineering/Languages/assets/program-memory-map.png)
 
 ## If-Statements
 In C++, you can declare variables inside `if` statements and follow it up with a condition: `if (init; condition) { ... }`.
@@ -221,105 +252,42 @@ See [[Knowledge/Engineering/Languages/C++ Standard Library|C++ Standard Library]
 - `::` *scope resolution operator* — for unambiguously referencing a name [TODO]
 
 ## Pointers and References
+Pointers and references are really the same thing under the hood, however they have different semantics to the programmer. You can consider references as syntactic sugar for pointers whose main purpose is to help you write cleaner code, compared to if you were to use pointers for the same use case.
 
-Pointers and references are really the same thing under the hood, however they have different semantics to the programmer. 
+>  Unlike other languages, in C++, arguments ***are always passed by value [by default](https://www.learncpp.com/cpp-tutorial/passing-arguments-by-value)*** *unless the function signature explicitly says it takes in a pointer or reference*. This means functions will **entirely copy** all the objects you pass in, unless you pass in a pointer/reference.
 
-You can consider references as syntactic sugar for pointers whose main purpose is to help you write cleaner code (compared to if you were to use pointers for the same use case).
-
-<aside>
-ℹ️ Unlike other languages, in C++, arguments ***are always passed by value [by default](https://www.learncpp.com/cpp-tutorial/passing-arguments-by-value)*** *unless the function signature explicitly says it takes in a pointer or reference*. This means functions will **entirely copy** all the objects you pass in, unless you pass in a pointer/reference.
-
-</aside>
-
-**Important Note:**
-
-<aside>
-⚠️ `*` and `&` have different meanings depending on whether they appear in a type declaration (LHS) or whether they appear in an expression that is to be evaluated (RHS).
-
-</aside>
+>  `*` and `&` have different meanings depending on whether they appear in a type declaration (LHS) or whether they appear in an expression that is to be evaluated (RHS).
 
 In a *type* *declaration*:
-
 - `*` defines a pointer type
-    
     ```cpp
     int* arr;
     ```
-    
 - `&` defines a ***reference variable***
-    
     ```cpp
     int i = 1;
     int& ref = i;
     ```
-    
 
 In an *expression*:
-
 - **Dereference operator:** `*` is a unary operator that dereferences an address to get the contents at that address
     - Consider `*p`.
     Read this as “the **variable** stored at the address stored in `p`”
 - **Address-of operator:** `&` is a unary operator that gets the address of a variable.
     - `&` expects an *lvalue.*
-        
         ```cpp
         int i = 1;
         &i    // → Eg. 0x7FFEF2BA1884
         &&i   // → Illegal operation. &(0x7FFEF2BA1884) doesn't make sense.
         ```
-        
 
 ### Pointers
-
 Pointers are just memory addresses, often to the contents of an object allocated on the heap.
 
-- Pointer arithmetic [TODO]
-    
-    Using ++ on a pointer will advance it to the next element
-    
-- `const` pointers
-    
-    `const` pointers are variables that can hold 1 memory address and then can never be changed again.
-    
-    ---
-    
-    The following is *not* a const pointer. It is a pointer to something that *is const*.
-    
-    ```cpp
-    const int value = 42;
-    const int anotherValue = 24;  // A pointer to an int constant. 
-    
-    const int *p = &value;        
-    p = &anotherValue;            // You can assign myVar to an **address to any other const int**, 
-    
-    *p = 10;                      // but you cannot change the value you point to.
-    ```
-    
-    ---
-    
-    The following *is a const* pointer.
-    
-    ```cpp
-    int value = 42;
-    int anotherValue = 24;
-    
-    int* const p = &value;       // p cannot be reassigned to any other memory address 
-    p = &anotherValue            // Fails
-    
-    *p = 10;                     // This is fine because p points to an int, not a constant int
-    ```
-    
-    If you have trouble understanding when a pointer is const or not, see the *clockwise spiral rule*.
-    
-- `nullptr`
-    
-    C++ requires that `NULL` is a constant that has value `0`. Unlike in C, `NULL` cannot be defined as `(void *)`
-    
+- `nullptr`. C++ requires that `NULL` is a constant that has value `0`. Unlike in C, `NULL` cannot be defined as `(void *)`
     - `nullptr` therefore exists to distinguish between 0 and an *actual null* for pointer types. People would otherwise mistakenly use `NULL` and not realise it is just 0
 - Pointers vs. references (illustrated)
-    
     **Pointers:**
-    
     ```cpp
     int x = 2;
     int y = 3;
@@ -327,11 +295,9 @@ Pointers are just memory addresses, often to the contents of an object allocated
     int* q = &y;
     p = q;          // p now contains the memory address to y
     ```
-    
-    ![Untitled](Knowledge/Engineering/Languages/assets/Untitled%204.png)
+    ![illustration of pointers|590](Knowledge/Engineering/Languages/assets/pointers-illustrated.png)
     
     **References:**
-    
     ```cpp
     int x = 2;
     int y = 3;
@@ -339,8 +305,7 @@ Pointers are just memory addresses, often to the contents of an object allocated
     int& r2 = y;
     r = r2;            // Remember, you can think of references as aliases. This assignment is basically just `x = y`
     ```
-    
-    ![Untitled](Knowledge/Engineering/Languages/assets/Untitled%205.png)
+    ![illustration of references|600](Knowledge/Engineering/Languages/assets/Untitled%205.png)
     
 - Arrays of elements vs. pointers [TODO]
     
@@ -361,21 +326,15 @@ Pointers are just memory addresses, often to the contents of an object allocated
 - [Stroustrup prefers](https://stackoverflow.com/questions/6990726/correct-way-of-declaring-pointer-variables-in-c-c/6990753) the pointer declaration style `int* p` in C++ and `int *p` in C
 
 ### References
-
 You can think of a reference variable as an alias for another variable. They don’t occupy any memory themselves, once your program is compiled and running.
-
 - References are useful as function parameters to avoid copying the entire argument
-    
     ```cpp
     void sort(vector<int>& sequence);    // Inplace sort
     ```
-    
 - Const references are useful for when you don't want to modify an argument and **just want to read its contents**. It prevents the need to make a copy of that argument for the function's scope. This is really common practice:
-    
     ```cpp
     void getAverage(const vector<int>& sequence);
     ```
-    
 - References must be initialised and can’t be reassigned afterwards
 
 ## Functions
