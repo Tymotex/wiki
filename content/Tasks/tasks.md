@@ -1,5 +1,7 @@
 ---
+
 kanban-plugin: basic
+
 ---
 
 ## Thursday 2022-09-22 (6)
@@ -8,13 +10,14 @@ kanban-plugin: basic
 - [ ] **(1 hour)** [[_/Meeting with dad]]
 - [ ] **(1 hour)** Math website Figma prototype.
 - [ ] Write tomorrow's purpose
-- [ ] Write email thanking Josh Comeau
+- [ ] [[_/Write email thanking Josh Comeau]]
 - [ ] Ask mum if she wants to try tutoring this year.
 - [ ] **(2 hours)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.
 - [x] **(2 hours)** Read Think Like a Programmer.
 - [x] Remove link to YouTube in timz.dev
 - [x] **(2 hours)** Set up **Prometheus and Grafana** for timz.dev or another project.
 - [x] **(15 mins)** Set up Kindle for mum. Try Man's Search for Meaning.
+
 
 ## Friday 2022-09-23 (6)
 
@@ -23,6 +26,7 @@ kanban-plugin: basic
 - [ ] **[1 hour]** Go through Never Split the Difference and finalise notes.
 - [ ] **(2 hours)** CSS skim through definitive guide and take down most important notes.
 
+
 ## Saturday 2022-09-24 (6)
 
 - [ ] 🏆 **Purpose today**:
@@ -30,11 +34,13 @@ kanban-plugin: basic
 - [ ] Write tomorrow's purpose
 - [ ] **(1 hour)** Install Linux VM on laptop, then VSCode with settings synced.
 
+
 ## Sunday 2022-09-25 (6)
 
 - [ ] 🏆 **Purpose today**:
 - [ ] Write tomorrow's purpose
 - [ ] **[1 hour]** Go through The Male Advantage and finalise notes.
+
 
 ## Monday 2022-09-26 (6)
 
