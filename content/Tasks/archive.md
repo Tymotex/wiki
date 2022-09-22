@@ -28,6 +28,14 @@ kanban-plugin: basic
 - [x] **(3 hours)** Refine and review C++ notes #critical
 - [x] Ensure wiki notes are privated. #critical
 
+## Thursday 2022-09-22 (6)
+
+- [x] **(1 hour)** [[_/Meeting with dad]]
+- [x] **(2 hours)** Read Think Like a Programmer.
+- [x] Remove link to YouTube in timz.dev
+- [x] **(2 hours)** Set up **Prometheus and Grafana** for timz.dev or another project.
+- [x] **(15 mins)** Set up Kindle for mum. Try Man's Search for Meaning.
+
 ***
 
 ## Archive
