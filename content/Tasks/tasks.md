@@ -6,7 +6,10 @@ kanban-plugin: basic
 
 ## Friday 2022-09-23 (6)
 
-- [ ] 🏆 **Purpose today**: try Python personal finance.
+- [ ] 🏆 **Purpose today**: personal finance.
+- [ ] [[_/(30 mins) Consolidate super accounts.]]
+- [ ] **(3 hours)** Research how to manage personal finances.
+- [ ] (20 mins) What insurance should I get as a software engineer?
 - [ ] **(1 hour)** Plan mum tutoring... What do? Do something this year but what
 - [ ] [[_/(1 hour) Find textbook example and have meeting with dad to discuss tutoring requirements]]
 - [ ] [[_/Write email thanking Josh Comeau]]

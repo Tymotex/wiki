@@ -3,14 +3,14 @@ title: Superannuation
 description: Superannuation
 ---
 
-*Superannuation* is a government policy that forces your employer to skim ~10% (the [Super Guarantee rate](https://www.australiansuper.com/superannuation/superannuation-articles/2019/11/superannuation-guarantee-what-you-need-to-know)) off your salary and deposits it to your super fund. It was implemented by the Australian government to force individuals to save for retirement. It’s basically the Australian version of the US’ 401k. Generally, the superannuation contributions are subject to a much more lenient tax rate (~15%).
+*Superannuation* is a government policy that forces your employer to skim ~10% (the [Super Guarantee rate](https://www.australiansuper.com/superannuation/superannuation-articles/2019/11/superannuation-guarantee-what-you-need-to-know)) off your salary and deposits it to your super fund. It was implemented by the Australian government to force individuals to save for retirement. It’s basically the Australian version of the US’ 401k. Generally, the superannuation contributions are subject to a much more lenient tax rate (~15%) than your marginal tax rate (which can be 40%).
 
 You can access the money in your superannuation account after you reach the ‘preservation age’, which is when you’re age 55-60, however this varies. There are no (legal) ways to access your super account, barring some exceptional circumstances (on compassionate grounds, home deposits, etc.).
 
 ### Super Funds
-*Super funds* are financial institutions that manage your superannuation money and will invest it for you. Examples of super funds include UniSuper, SunSuper, Cbus Super, etc. 
+*Super funds* are financial institutions that **manage your superannuation money and will invest it for you**. Examples of super funds include UniSuper, SunSuper, Cbus Super, etc. 
 
-Super funds usually give you a choice of different investment options that differ in risk/returns (‘growth’, ‘balanced’, ‘conservative’, ‘ethical’, etc.). By default, the ‘balanced’ investment option will be chosen for you which spreads your money out across shares and cash, typically 70% in shares or property and 30% in fixed interest. Some super funds may allow you more granular control over which asset classes your money is dumped into. UniSuper, for example, lets you dump however much you want into international shares, Australian shares, property, cash, etc.
+Super funds usually give you a **choice of different investment options** that differ in risk/returns (‘growth’, ‘balanced’, ‘conservative’, ‘ethical’, etc.). By default, the ‘balanced’ investment option will be chosen for you which spreads your money out across shares and cash, typically 70% in shares or property and 30% in fixed interest. Some super funds may allow you more granular control over which asset classes your money is dumped into. UniSuper, for example, lets you dump however much you want into international shares, Australian shares, property, cash, etc.
 
 #### Retail Super Funds & Industry Super Funds
 There are *retail super funds* and *industry super funds*. They differ in what they do with profits.
