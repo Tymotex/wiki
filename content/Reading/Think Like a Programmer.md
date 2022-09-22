@@ -27,6 +27,9 @@ A good first step is to *restate the problem* and its constraints formally. When
 If you're trying to use a new API or library, it's helpful to make a very small separate program to experiment with it before you integrate it into the main project. Ie. prototyping is very helpful.
 
 
+
+---
+
 - Fox, goose, corn problem.
     - Restating the problem helps to identify all the real constraints and therefore more choices that are available for you to exploit.
 - Sliding tiles problem.
