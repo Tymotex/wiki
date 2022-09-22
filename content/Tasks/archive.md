@@ -36,6 +36,16 @@ kanban-plugin: basic
 - [x] **(2 hours)** Set up **Prometheus and Grafana** for timz.dev or another project.
 - [x] **(15 mins)** Set up Kindle for mum. Try Man's Search for Meaning.
 
+## Thursday 2022-09-22 (6)
+
+- [x] **(1 hour)** [[_/Meeting with dad]]
+- [x] Write tomorrow's purpose
+- [x] Ask mum if she wants to try tutoring this year.
+- [x] **(2 hours)** Read Think Like a Programmer.
+- [x] Remove link to YouTube in timz.dev
+- [x] **(2 hours)** Set up **Prometheus and Grafana** for timz.dev or another project.
+- [x] **(15 mins)** Set up Kindle for mum. Try Man's Search for Meaning.
+
 ***
 
 ## Archive

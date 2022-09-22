@@ -1,20 +1,18 @@
 ---
-
 kanban-plugin: basic
-
 ---
 
 ## Friday 2022-09-23 (6)
 
-- [ ] 🏆 **Purpose today**:
+- [ ] 🏆 **Purpose today**: skim CSS and grind out konflux
 - [ ] Write tomorrow's purpose
 - [ ] **[1 hour]** Go through Never Split the Difference and finalise notes.
 - [ ] [[_/(1 hour) Find textbook example and have meeting with dad to discuss tutoring requirements]]
-- [ ] Write tomorrow's purpose
+- [ ] Plan mum tutoring... What do? Do something this year but what
+- [ ] 🏆 **Purpose today**: try prometheus and grafana, skim CSS, then read Think Like a Programmer
+- [ ] **(1 hour)** Math website Figma prototype.
 - [ ] [[_/Write email thanking Josh Comeau]]
-- [x] Ask mum if she wants to try tutoring this year.
 - [ ] **(2 hours)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.
-
 
 ## Saturday 2022-09-24 (6)
 
@@ -25,13 +23,11 @@ kanban-plugin: basic
 - [ ] Write tomorrow's purpose
 - [ ] **(1 hour)** Install Linux VM on laptop, then VSCode with settings synced.
 
-
 ## Sunday 2022-09-25 (6)
 
 - [ ] 🏆 **Purpose today**:
 - [ ] Write tomorrow's purpose
 - [ ] **[1 hour]** Go through The Male Advantage and finalise notes.
-
 
 ## Monday 2022-09-26 (6)
 
