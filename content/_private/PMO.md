@@ -64,6 +64,7 @@ Remember the reasons why you're refusing to be a wanker.
 ## Relapses
 ### 22nd Sep
 I didn't even try... I just got annoyed at the thoughts and gave up. It was distracting me from studying, I reasoned, and then I just gave up.
+I felt so lethargic and unproductive throughout the day. It doesn't work - **I traded momentary distraction for constant distraction with the shame that I felt**. I feel so hollow, as if an essential part of me was taken out.
 
 ### 20th Sep
 I relapsed again to an image of Taarie. I'm ashamed of myself. I just got so worked up and really wanted to take the easy way out and escape the feeling of bottled-up horniness. I still don't have a good system for dealing with these feelings.
