@@ -1,38 +1,31 @@
 ---
+
 kanban-plugin: basic
+
 ---
 
 ## Thursday 2022-09-22 (6)
 
 - [ ] 🏆 **Purpose today**: try prometheus and grafana, skim CSS, then read Think Like a Programmer
-- [ ] **(2 hours)** Read Think Like a Programmer.
 - [ ] **(1 hour)** [[_/Meeting with dad]]
 - [ ] **(1 hour)** Math website Figma prototype.
 - [ ] Write tomorrow's purpose
 - [ ] Write email thanking Josh Comeau
 - [ ] Ask mum if she wants to try tutoring this year.
 - [ ] **(2 hours)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.
+- [x] **(2 hours)** Read Think Like a Programmer.
 - [x] Remove link to YouTube in timz.dev
 - [x] **(2 hours)** Set up **Prometheus and Grafana** for timz.dev or another project.
 - [x] **(15 mins)** Set up Kindle for mum. Try Man's Search for Meaning.
-- [ ] 🏆 **Purpose today**: Learning C++ by refining notes and reading.
-- [ ] **(2 hours)** [[_/Meeting with dad]]
-- [ ] Write tomorrow's purpose
-- [ ] **[1 hour]** Go through Never Split the Difference and finalise notes.
-- [ ] Write email thanking Josh Comeau
-- [ ] CSS skim through definitive guide and take down most important notes.
-- [ ] **(1 hour)** Math website Figma prototype.
-- [ ] **(2 hours)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.
-- [ ] See how to make a feature request on GitHub and ask for Vim keybindings on Obsidian Kanban.
-- [ ] Ask mum if she wants to try tutoring this year.
+
 
 ## Friday 2022-09-23 (6)
 
 - [ ] 🏆 **Purpose today**:
 - [ ] Write tomorrow's purpose
-- [ ] [[_/WebAssembly Rust Snake tutorial]]
 - [ ] **[1 hour]** Go through Never Split the Difference and finalise notes.
 - [ ] **(2 hours)** CSS skim through definitive guide and take down most important notes.
+
 
 ## Saturday 2022-09-24 (6)
 
@@ -41,11 +34,13 @@ kanban-plugin: basic
 - [ ] Write tomorrow's purpose
 - [ ] **(1 hour)** Install Linux VM on laptop, then VSCode with settings synced.
 
+
 ## Sunday 2022-09-25 (6)
 
 - [ ] 🏆 **Purpose today**:
 - [ ] Write tomorrow's purpose
 - [ ] **[1 hour]** Go through The Male Advantage and finalise notes.
+
 
 ## Monday 2022-09-26 (6)
 

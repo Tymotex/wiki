@@ -21,6 +21,8 @@ kanban-plugin: basic
 - [ ] Make a plan for learning AI, long-term.
 - [ ] Open an issue/PR for `obsidian-kanban` for better keyboard accessibility (and power user agility).
 - [ ] Obsidian plugin idea: notion-like gallery.
+- [ ] [[_/WebAssembly Rust Snake tutorial]]
+
 
 ## Self-Improvement
 
