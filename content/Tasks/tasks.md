@@ -11,8 +11,8 @@ kanban-plugin: basic
 - [ ] **(1 hour)** Math website Figma prototype.
 - [ ] Write tomorrow's purpose
 - [ ] [[_/Write email thanking Josh Comeau]]
-- [ ] Ask mum if she wants to try tutoring this year.
 - [ ] **(2 hours)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.
+- [x] Ask mum if she wants to try tutoring this year.
 - [x] **(2 hours)** Read Think Like a Programmer.
 - [x] Remove link to YouTube in timz.dev
 - [x] **(2 hours)** Set up **Prometheus and Grafana** for timz.dev or another project.
@@ -26,6 +26,7 @@ kanban-plugin: basic
 - [ ] **[1 hour]** Go through Never Split the Difference and finalise notes.
 - [ ] **(2 hours)** CSS skim through definitive guide and take down most important notes.
 - [ ] [[_/(1 hour) Find textbook example and have meeting with dad to discuss tutoring requirements]]
+- [ ] Plan mum tutoring... What do? Do something this year but what
 
 
 ## Saturday 2022-09-24 (6)
