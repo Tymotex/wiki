@@ -1,36 +1,40 @@
 ---
+
 kanban-plugin: basic
+
 ---
 
 ## Friday 2022-09-23 (6)
 
-- [ ] 🏆 **Purpose today**: skim CSS and grind out konflux
-- [ ] Write tomorrow's purpose
-- [ ] **[1 hour]** Go through Never Split the Difference and finalise notes.
+- [ ] 🏆 **Purpose today**: try Python personal finance.
+- [ ] **(1 hour)** Plan mum tutoring... What do? Do something this year but what
 - [ ] [[_/(1 hour) Find textbook example and have meeting with dad to discuss tutoring requirements]]
-- [ ] Plan mum tutoring... What do? Do something this year but what
-- [ ] 🏆 **Purpose today**: try prometheus and grafana, skim CSS, then read Think Like a Programmer
-- [ ] **(1 hour)** Math website Figma prototype.
 - [ ] [[_/Write email thanking Josh Comeau]]
+- [ ] **(1 hour)** Math website Figma prototype.
 - [ ] **(2 hours)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.
+- [x] Write tomorrow's purpose
+
 
 ## Saturday 2022-09-24 (6)
 
-- [ ] 🏆 **Purpose today**:
+- [ ] 🏆 **Purpose today**: skim CSS and grind out konflux
 - [ ] **(2 hours)** CSS skim through definitive guide and take down most important notes.
 - [ ] **(1 hour)** Math website Figma prototype.
-- [ ] **[1 hour]** Go through How to Not Die Alone and finalise notes.
+- [ ] **[1 hour]** Go through Never Split the Difference and finalise notes.
 - [ ] Write tomorrow's purpose
 - [ ] **(1 hour)** Install Linux VM on laptop, then VSCode with settings synced.
+
 
 ## Sunday 2022-09-25 (6)
 
 - [ ] 🏆 **Purpose today**:
 - [ ] Write tomorrow's purpose
-- [ ] **[1 hour]** Go through The Male Advantage and finalise notes.
+- [ ] **[1 hour]** Go through How to Not Die Alone and finalise notes.
+
 
 ## Monday 2022-09-26 (6)
 
+- [ ] **[1 hour]** Go through The Male Advantage and finalise notes.
 
 
 ## Tuesday 2022-09-27 (6)
