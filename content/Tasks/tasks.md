@@ -9,9 +9,9 @@ kanban-plugin: basic
 - [ ] 🏆 **Purpose today**: try prometheus and grafana, skim CSS, then read Think Like a Programmer
 - [x] **(1 hour)** [[_/Meeting with dad]]
 - [ ] **(1 hour)** Math website Figma prototype.
-- [ ] Write tomorrow's purpose
 - [ ] [[_/Write email thanking Josh Comeau]]
 - [ ] **(2 hours)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.
+- [x] Write tomorrow's purpose
 - [x] Ask mum if she wants to try tutoring this year.
 - [x] **(2 hours)** Read Think Like a Programmer.
 - [x] Remove link to YouTube in timz.dev
@@ -21,7 +21,7 @@ kanban-plugin: basic
 
 ## Friday 2022-09-23 (6)
 
-- [ ] 🏆 **Purpose today**:
+- [ ] 🏆 **Purpose today**: skim CSS and grind out konflux
 - [ ] Write tomorrow's purpose
 - [ ] **[1 hour]** Go through Never Split the Difference and finalise notes.
 - [ ] **(2 hours)** CSS skim through definitive guide and take down most important notes.
