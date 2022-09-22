@@ -15,6 +15,16 @@ kanban-plugin: basic
 - [x] Remove link to YouTube in timz.dev
 - [x] **(2 hours)** Set up **Prometheus and Grafana** for timz.dev or another project.
 - [x] **(15 mins)** Set up Kindle for mum. Try Man's Search for Meaning.
+- [ ] 🏆 **Purpose today**: Learning C++ by refining notes and reading.
+- [ ] **(2 hours)** [[_/Meeting with dad]]
+- [ ] Write tomorrow's purpose
+- [ ] **[1 hour]** Go through Never Split the Difference and finalise notes.
+- [ ] Write email thanking Josh Comeau
+- [ ] CSS skim through definitive guide and take down most important notes.
+- [ ] **(1 hour)** Math website Figma prototype.
+- [ ] **(2 hours)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.
+- [ ] See how to make a feature request on GitHub and ask for Vim keybindings on Obsidian Kanban.
+- [ ] Ask mum if she wants to try tutoring this year.
 
 ## Friday 2022-09-23 (6)
 

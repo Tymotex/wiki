@@ -20,7 +20,7 @@ kanban-plugin: basic
 - [ ] Read 1 **academic paper** (eg. Claude Shannon's information theory paper).
 - [ ] Make a plan for learning AI, long-term.
 - [ ] Open an issue/PR for `obsidian-kanban` for better keyboard accessibility (and power user agility).
-
+- [ ] Obsidian plugin idea: notion-like gallery.
 
 ## Self-Improvement
 

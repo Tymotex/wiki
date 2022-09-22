@@ -22,6 +22,12 @@ kanban-plugin: basic
 - [x] **(1 hour)** **Open source contribution** to a React library/project. Maybe contribute to `obsidian-kanban` by implementing an enhancement?
 - [x] Ensure wiki notes are privated. #critical
 
+## Wednesday 2022-09-21 (6)
+
+- [x] **(30 mins)** Set up Kindle for mum. Try Man's Search for Meaning.
+- [x] **(3 hours)** Refine and review C++ notes #critical
+- [x] Ensure wiki notes are privated. #critical
+
 ***
 
 ## Archive
