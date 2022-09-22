@@ -31,6 +31,12 @@ TODO: this article is really worth re-reading: https://jamesclear.com/reading-co
 
 ### Learning React
 
+### Think Like a Programmer
+[[Reading/Think Like a Programmer|Think Like a Programmer]] by Anton Spraul. I didn't complete this book since it wasn't introducing many new perspectives to problem-solving. Regardless, the takeaways from this book were helpful in validating what I learned through experience to be helpful in solving problems:
+- Always start by articulating the problem in your own words, and write *precisely what the constraints are*.
+- *Always have a plan* with intermediate goals.
+- Stay alert for *analogies*, i.e. common patterns between the current problem and past problems.
+
 ---
 ## Self-Help, Skills & Philosophy
 ### Building a Second Brain
@@ -52,13 +58,13 @@ TODO: this article is really worth re-reading: https://jamesclear.com/reading-co
 Ikigai by Francesc Miralles and Hector Garcia. 'Ikigai' means 'reason for being'.
 - To live a meaningful work life, do: what you are *good* at, what you *love*, what the *world needs*, what you can be *paid* for. 
 - Don't retire.
-- Be a good friend and well integrated in your community.
+- Be a good friend and be well integrated in your community.
 
 ### The Male Advantage
 [[Reading/The Male Advantage|The Male Advantage]] by Kris Sturmey.
 
-### A Simple Path to Wealth
-[[Reading/The Simple Path to Wealth|The Simple Path to Wealth]] by J. L. Collins.
+### The Simple Path to Wealth
+[[Reading/The Simple Path to Wealth|The Simple Path to Wealth]] by J. L. Collins
 
 ### Barefoot Investor
 [[Reading/Barefoot Investor|Barefoot Investor]] by Scott Pape.
