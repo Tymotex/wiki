@@ -7,7 +7,7 @@ kanban-plugin: basic
 ## Thursday 2022-09-22 (6)
 
 - [ ] 🏆 **Purpose today**: try prometheus and grafana, skim CSS, then read Think Like a Programmer
-- [ ] **(1 hour)** [[_/Meeting with dad]]
+- [x] **(1 hour)** [[_/Meeting with dad]]
 - [ ] **(1 hour)** Math website Figma prototype.
 - [ ] Write tomorrow's purpose
 - [ ] [[_/Write email thanking Josh Comeau]]
@@ -25,6 +25,7 @@ kanban-plugin: basic
 - [ ] Write tomorrow's purpose
 - [ ] **[1 hour]** Go through Never Split the Difference and finalise notes.
 - [ ] **(2 hours)** CSS skim through definitive guide and take down most important notes.
+- [ ] [[_/(1 hour) Find textbook example and have meeting with dad to discuss tutoring requirements]]
 
 
 ## Saturday 2022-09-24 (6)
