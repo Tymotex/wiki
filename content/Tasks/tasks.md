@@ -19,6 +19,7 @@ kanban-plugin: basic
 - [ ] (10 mins) Write a simple sync script that can be run by hotkey on the laptop and desktop.
 - [ ] Shutdown sync script
 - [ ] (20 mins) Set up daily task lane template file.
+- [x] **(1.5 hours)** Man's Search for Meaning
 
 
 ## Saturday 2022-09-24 (6)
@@ -29,6 +30,7 @@ kanban-plugin: basic
 - [ ] **[1 hour]** Go through Never Split the Difference and finalise notes.
 - [ ] Write tomorrow's purpose
 - [ ] **(1 hour)** Install Linux VM on laptop, then VSCode with settings synced.
+- [ ] **(2 hours)** Finish Man's Search For Meaning
 
 
 ## Sunday 2022-09-25 (6)
