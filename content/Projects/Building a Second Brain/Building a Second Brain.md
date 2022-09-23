@@ -21,7 +21,8 @@ title: Building a Second Brain
 ## Features
 - Mobile Git synchronisation with [Termux](https://termux.dev/en/) and [Termux:Widget](https://wiki.termux.com/wiki/Termux:Widget).
     - [Inspired from this blog post](https://werzum.github.io/tech/2022/02/13/Obsidian-Mobile-Sync.html). I wrote a simple shell script that can be executed manually in one press through Termux:Widget. All the shell script does it run git commands to pull and then push whatever changes I make through Obsidian.
-    - The Git syncing could be accomplished through [Tasker,](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&hl=en_AU&gl=US) I believe.
+    - The Git syncing could be accomplished through [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&hl=en_AU&gl=US) as well, I believe.
+    - Using a service managed by `systemctl` which automatically runs a git commands to sync to remote on system shutdown.
 - Python CLI that formats the task board when Obsidian starts up. It can also be invoked with a custom hotkey, `ctrl + alt + f`, made possible by `obsidian-shellcommands`.
     - Moves all incomplete tasks from previous days into today's task lane. This eliminates you having to manually drag cards over to today.
     - Creates the next $n$ days' task lanes and populates them with default tasks. For example, you can schedule a morning routine task for every day or a weekly review task for every Sunday, etc.
