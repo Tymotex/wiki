@@ -10,6 +10,7 @@ title: Math Website
 ## Requirements
 Deadline for MVP: October
 ### MVP
+- [ ] 
 
 ### Stretch Goals
 - [ ] Plan the requirements for interactive problem elements. These would be an important distinguisher.
