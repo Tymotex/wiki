@@ -1,0 +1,2 @@
+- [ ] Nuke Earth.
+- [ ] Invent a new virus.

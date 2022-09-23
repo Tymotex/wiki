@@ -7,8 +7,9 @@ from typing import List, Set, Tuple, Union
 
 from colorama import Fore, Style
 
-from tasks_formatter.exceptions import TaskFileException
+from tasks_formatter.exceptions import TaskFileException, TemplateFileException
 
+TEMPLATES_DIRECTORY = os.path.join(os.path.dirname(__file__), "templates")
 
 class TaskFileBuffer:
     level2_heading_regex = re.compile(r"^## (.*)$")
@@ -115,7 +116,7 @@ class TaskFileBuffer:
         curr_date = start_date
         while curr_date <= end_date:
             if curr_date not in task_dates:
-                new_task_columns.append((curr_date, []))
+                new_task_columns.append((curr_date, self._get_default_tasks(curr_date)))
             curr_date += one_day
         self.insert_task_columns(new_task_columns)
 
@@ -133,7 +134,7 @@ class TaskFileBuffer:
             #       number that the Ivy Lee method uses.
             tasks = self._tasks if not reverse else reversed(self._tasks)
             for date, tasks in self._tasks:
-                column_name = f"## {date.strftime('%A')} {date.strftime('%Y-%m-%d')} (6)\n\n"
+                column_name = f"## **{date.strftime('%A')}** *{date.strftime('%Y-%m-%d')}* (6)\n\n"
                 task_file.write(column_name)
                 task_file.writelines("\n".join(tasks) + "\n\n")
 
@@ -328,3 +329,57 @@ class TaskFileBuffer:
             else:
                 high = mid - 1
         return low
+
+    def _get_tasks_from_templates(self, *template_filenames: str) -> List[str]:
+        """
+        Reads the lines from the given template file, expecting them as
+        markdown checkboxes, and returns them as a list of tasks.
+        The main use case for this is to allow a default set of tasks to be
+        added to each day's lane.
+        """
+        tasks: List[str] = []
+        for template_filename in template_filenames:
+            template_file_path = os.path.join(TEMPLATES_DIRECTORY, template_filename)
+            if not os.path.exists(template_file_path):
+                raise TemplateFileException(f"Template file at path '{template_file_path}' does not exist.")
+            with open(template_file_path, "r") as template_file:
+                template_tasks = [line.strip() for line in template_file.readlines() if line and not line.isspace()]
+                for task in template_tasks:
+                    print(task)
+                    if not TaskFileBuffer.checkbox_regex.search(task):
+                        raise TemplateFileException(f"Invalid task in template file: '{task}'")
+                    tasks.append(task)
+        return tasks
+
+    def _get_default_tasks(self, date: datetime) -> List[str]:
+        """
+        Returns a list of default tasks that should be scheduled on the date.
+        For example, each day might have a morning routine task.
+        - For all days, schedule a basic set of daily default tasks sourced from
+          `templates/daily.md`.
+        - If the date is a Sunday, then schedule a set of weekly tasks sourced
+          from `templates/weekly.md`.
+        - If the date is the last day of the month, then schedule a set of
+          monthly tasks sourced from `templates/monthly.md`.
+        
+        Note: This could have been implemented in a much less rigid way, but
+              I wanted to just get this done ASAP.
+        """
+        # List of template files whose tasks we want to schedule for the day.
+        template_files: List[str] = []
+
+        # Always schedule daily tasks.
+        template_files.append("daily.md")
+
+        # On Sundays, schedule weekly tasks.
+        if date.weekday() == 6:
+            template_files.append("weekly.md")
+
+        # On last day of the month, schedule monthly tasks.
+        todays_month = date.month
+        tomorrows_month = (date + timedelta(days=1)).month
+        is_last_day_of_month = tomorrows_month != todays_month
+        if is_last_day_of_month:
+            template_files.append("monthly.md")
+    
+        return self._get_tasks_from_templates(*template_files)
