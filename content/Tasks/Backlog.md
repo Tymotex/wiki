@@ -46,6 +46,7 @@ kanban-plugin: basic
 
 ## Home Improvement
 
+- [ ] Get a clothes rack so you can neatly manage your clothes that aren't fresh but clean.
 - [ ] More African violets.
 
 

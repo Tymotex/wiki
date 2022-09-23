@@ -6,9 +6,8 @@ kanban-plugin: basic
 
 ## Friday 2022-09-23 (6)
 
-- [ ] 🏆 **Purpose today**: personal finance.
+- [x] 🏆 **Purpose today**: personal finance.
 - [ ] **(3 hours)** Research how to manage personal finances.
-- [ ] (20 mins) What insurance should I get as a software engineer?
 - [ ] **(1 hour)** Plan mum tutoring... What do? Do something this year but what
 - [ ] [[_/(1 hour) Find textbook example and have meeting with dad to discuss tutoring requirements]]
 - [ ] **(1 hour)** Math website Figma prototype.
@@ -16,8 +15,10 @@ kanban-plugin: basic
 - [ ] Send Teng superdoneright
 - [x] Write tomorrow's purpose
 - [x] [[_/(30 mins) Consolidate super accounts.]]
-- [ ] Move a chair into bedroom for reading
+- [x] Move a chair into bedroom for reading
+- [ ] (10 mins) Write a simple sync script that can be run by hotkey on the laptop and desktop.
 - [ ] Shutdown sync script
+- [ ] (20 mins) Set up daily task lane template file.
 
 
 ## Saturday 2022-09-24 (6)
