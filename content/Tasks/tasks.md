@@ -6,14 +6,14 @@ kanban-plugin: basic
 
 ## **Friday** *2022-09-23* (6)
 
-- [ ] **(2 hours)** Consolidate CSS notes. Skim through CSS definitive guide and take down most important notes.
-- [ ] **(1 hour)** Plan mum tutoring... What do? Do something this year but what
 - [ ] [[_/(1 hour) Find textbook example and have meeting with dad to discuss tutoring requirements]]
+- [ ] **(1 hour)** Plan mum tutoring... What do? Do something this year but what
 - [ ] **(1 hour)** Math website Figma prototype.
+- [ ] **(2 hours)** Consolidate CSS notes. Skim through CSS definitive guide and take down most important notes.
 - [ ] **(2 hours)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.
-- [ ] Send Teng superdoneright
-- [ ] (10 mins) Write a simple sync script that can be run by hotkey on the laptop and desktop.
-- [ ] Shutdown sync script
+- [x] Send Teng superdoneright
+- [x] Shutdown sync script
+- [x] **(10 mins)** Write a simple sync script that can be run by hotkey on the laptop and desktop.
 - [x] Write tomorrow's purpose
 - [x] [[_/(30 mins) Consolidate super accounts.]]
 - [x] Move a chair into bedroom for reading
