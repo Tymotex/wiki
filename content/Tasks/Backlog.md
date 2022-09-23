@@ -6,7 +6,6 @@ kanban-plugin: basic
 
 ## Programming & Career
 
-- [ ] **Python personal finance tracking.**
 - [ ] [[_/Writing first blog  and publishing on Medium.]]
 - [ ] **Learn Kubernetes** [the hard way](https://github.com/kelseyhightower/kubernetes-the-hard-way)
 - [ ] Attend a programming meetup or other meetup on **meetup.com.**
@@ -24,6 +23,7 @@ kanban-plugin: basic
 - [ ] [[_/WebAssembly Rust Snake tutorial]]
 - [ ] [[_/Write email thanking Josh Comeau]]
 - [ ] Open an issue/PR for `obsidian-kanban` for better keyboard accessibility (and power user agility).
+- [ ] **Python personal finance tracking.**
 
 
 ## Self-Improvement

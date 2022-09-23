@@ -5,22 +5,20 @@ kanban-plugin: basic
 ## Friday 2022-09-23 (6)
 
 - [ ] 🏆 **Purpose today**: personal finance.
-- [ ] **(3 hours)** Research how to manage personal finances.
-- [ ] (20 mins) What insurance should I get as a software engineer?
+- [ ] **(2 hours)** Consolidate CSS notes. Skim through CSS definitive guide and take down most important notes.
 - [ ] **(1 hour)** Plan mum tutoring... What do? Do something this year but what
 - [ ] [[_/(1 hour) Find textbook example and have meeting with dad to discuss tutoring requirements]]
 - [ ] **(1 hour)** Math website Figma prototype.
 - [ ] **(2 hours)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.
 - [ ] Send Teng superdoneright
+- [x] **(3 hours)** Research how to manage personal finances.
 - [x] Write tomorrow's purpose
 - [x] [[_/(30 mins) Consolidate super accounts.]]
 
 ## Saturday 2022-09-24 (6)
 
 - [ ] 🏆 **Purpose today**: skim CSS and grind out konflux
-- [ ] **(2 hours)** CSS skim through definitive guide and take down most important notes.
-- [ ] **(1 hour)** Math website Figma prototype.
-- [ ] **[1 hour]** Go through Never Split the Difference and finalise notes.
+- [ ] **(1 hour)** Go through Never Split the Difference and finalise notes.
 - [ ] Write tomorrow's purpose
 - [ ] **(1 hour)** Install Linux VM on laptop, then VSCode with settings synced.
 
