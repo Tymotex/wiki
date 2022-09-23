@@ -46,6 +46,20 @@ kanban-plugin: basic
 - [x] **(2 hours)** Set up **Prometheus and Grafana** for timz.dev or another project.
 - [x] **(15 mins)** Set up Kindle for mum. Try Man's Search for Meaning.
 
+## **Friday** *2022-09-23* (6)
+
+- [x] [[_/(20 mins) Find textbook example and have meeting with dad to discuss tutoring requirements]]
+- [x] Send Teng superdoneright
+- [x] Shutdown sync script
+- [x] **(10 mins)** Write a simple sync script that can be run by hotkey on the laptop and desktop.
+- [x] Write tomorrow's purpose
+- [x] [[_/(30 mins) Consolidate super accounts.]]
+- [x] Move a chair into bedroom for reading
+- [x] **(1 hour)** Set up daily task lane template file and schedule a weekly/monthly review (monthly review happens on the final day of each month).
+- [x] **(3 hours)** Research how to manage personal finances.
+- [x] 🏆 **Purpose today**: personal finance.
+- [x] **(1.5 hours)** Man's Search for Meaning
+
 ***
 
 ## Archive
