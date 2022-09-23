@@ -7,11 +7,11 @@ description: Go
 
 Go is a [[Knowledge/Engineering/Programming/Programming Paradigm|statically-typed]] *compiled* language inspired by [[Knowledge/Engineering/Languages/C|C]] in design, but aims to provide memory safety, ease of usage, and the high performance of close-to-metal languages like [[Knowledge/Engineering/Languages/C++|C++]] and [[Knowledge/Engineering/Languages/Rust|Rust]], which Go is often compared to. The main overarching difference is that Go makes language design decisions that favour ease of usage over speed.
 
-Notably, Go is credited for improving the developer experience in writing [[Knowledge/Engineering/Programming/Concurrency|concurrent]] code with concurrency constructs built into the language. It's also credited with very fast compilation/build times, which is one reason why Go is prevalent in [[software-engineering/DevOps|DevOps]].
+Notably, Go is credited for improving the developer experience in writing [[Knowledge/Engineering/Programming/Concurrency|concurrent]] code with concurrency constructs built into the language. It's also credited with very fast compilation/build times, which is one reason why Go is prevalent in DevOps.
 
 Go is general-purpose, but it's typically used for building:
 - Backend servers in combination with a framework like [Gin](https://gin-gonic.com/).
-- Complex scripts and CLIs, especially as an [[Knowledge/Engineering/Site Reliability Engineering|SRE]]. For one-off scripts, [[Knowledge/Engineering/Languages/Python|Python]] is quicker to write, but for long-lived scripts used frequently, Go might be better.
+- Complex scripts and CLIs. For one-off scripts, [[Knowledge/Engineering/Languages/Python|Python]] is quicker to write, but for long-lived scripts used frequently, Go might be better.
 - Data-intensive algorithms.
 
 ---

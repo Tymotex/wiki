@@ -6,7 +6,12 @@ relativeURLs = false
 disablePathToLower = true
 ignoreFiles = [
     "/content/templates/*",
-    "/content/private/*"
+    "/content/private/*",
+    "/content/_private/*",
+    "/content/_archive/*",
+    "/content/Tasks/*",
+    "/content/Areas/*",
+    "/content/Journal/*",
 ]
 summaryLength = 20
 paginate = 10

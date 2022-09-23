@@ -1,10 +1,4 @@
-_/*
-_archive/*
-_private
-Journal/*
-Projects/*
-Areas/*
-
+.trash
 .DS_Store
 public
 resources

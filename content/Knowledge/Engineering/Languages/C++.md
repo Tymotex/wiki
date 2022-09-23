@@ -2,111 +2,112 @@
 title: C++
 ---
 
-> TODO: This file is a mess. Clean up.
+![[Knowledge/Engineering/Languages/assets/cpp-wallpaper.png|800]]
 
-C++ is a [[Knowledge/Engineering/Programming/Type System#Static Typing|statically-typed]], low-level programming language that supports [[Knowledge/Engineering/Programming/Object Oriented Programming|object-oriented programming]]. It's used a lot in any software system that requires resource efficiency such as operating systems, game engines, databases, compilers, etc.
+C++ is a [[Knowledge/Engineering/Programming/Type System#Static Typing|statically-typed]], low-level programming language that supports [[Knowledge/Engineering/Programming/Object Oriented Programming|object-oriented programming]]. It's frequently used in any software system that requires resource efficiency such as operating systems, game engines, databases, compilers, etc.
 
-Fundamental operations in C++ map directly to hardware operations. C/C++'s high performance is attributed to how closely it's constructs and operations match the hardware 
-- Eg. adding two integers will result in an integer add machine instruction being executed
-- Eg. assignment is a simple machine copy instruction, eg. `int x = 2;`
-    
+C/C++'s high performance is attributed to how closely it's constructs and operations match the hardware.
+
 The **[ISO C++ standard](https://isocpp.org/std/%20the-standard)** defines:
-- Core language features — data types like `char`, `int`, loops, etc.
-- Standard library components — `vector`, `map`, `string`, I/O operations like `<<`
+- Core language features — data types, loops, etc.
+- Standard library components — `vector`, `map`, `string`, etc.
 
-Compilation and execution
-```bash
-# 1.
-g++ file.cpp && ./a.out
+Also see [[Knowledge/Engineering/Languages/C++ Standard Library|C++ standard library]].
 
-# 2.
-g++ -o executableName file.cpp
-```
-
-## Core
-### Variables
-- Variable declaration and initialisation
-    ```csharp
-    int a, b, c;           // Declaring multiple variables at once
-    int a, b = 2;  
-    a = b = c = 0;         // Assigning multiple variables to one value
-    ```
-    There are a few more ways to initialise variables in C++ (which are also used in instantiating new objects, see Instantiating Objects).
-    - Assignment (called *copy initialisation*): using `=` is called copy initialisation
-    - *Braces-initialisation* (called *list initialisation*): using `{ }`
-    - *Parentheses-initialisation* (called *direct initialisation*): using `( )`
+# Core
+## Variable Initialisation
+There are many ways to initialise a variable with a value.
+1. **Copy initialisation**: using `=`. It implicitly calls a constructor.
+2. **List initialisation**, also called **uniform initialisation**: using `{ }`.
+3. **Direct initialisation**: using `( )`. Think of the parentheses as being used to *directly* invoke a specific constructor.
     ```cpp
-    int b(1);
-    int a{1};
-    int c = 1;
-    int d = {1};
-    ```
-- { } — *uniform initialisation* or *list initialisation*
-    ```cpp
-    int i = {1};    // Similar to `**int i = 1**`
-    int i {1};
-    ```
-    *List initialisation* does not allow *narrowing*. Try to use list initialisation `{ }` more often.
-    ```cpp
-    int i = 1000000000000;     // Implicitly overflows
-    int i {1000000000000};     // Error: **narrowing conversion of '1000000000000'** from 'long int' to 'int'
-    
-    ****int i = 7.8;   // Gets floored to 7
-    int i {7.8};   // Error: **narrowing conversion** from 'double' to 'int'
-    ```
-- ( ) — *direct initialisation*
-    ```cpp
-    int a(3);      // Similar to `**int a = 3**`
+    int b(1);     // Direct initialisation.
+    int a{1};     // List initialisation.
+    int c = 1;    // Copy initialisation.
+    int d = {1};  // Copy/List initialisation.
     ```
 
-### Data Types
+> Prefer uniform initialisation over copy initialisation.
+
+### Details
+- *List initialisation* does not allow *narrowing*. Try to use list initialisation `{ }` more often.
+    ```cpp
+    int i = 7.8;  // Gets floored to 7
+    int i{7.8};   // Error: narrowing conversion from 'double' to 'int'
+    ```
+- `explicit` constructors are *not invokable* with copy initialisation.
+
+## Pointers and References
+Pointers and references are really the same thing under the hood, however they have different semantics to the programmer. You can consider references as syntactic sugar for pointers whose main purpose is to help you write cleaner code, compared to if you were to use pointers for the same use case.
+
+>  Unlike other languages, in C++, arguments ***are always passed by value [by default](https://www.learncpp.com/cpp-tutorial/passing-arguments-by-value)*** *unless the function signature explicitly says it takes in a pointer or reference*. This means functions will **entirely copy** all the objects you pass in, unless you pass in a pointer/reference.
+
+>  `*` and `&` have different meanings depending on whether they appear in a type declaration (LHS) or whether they appear in an expression that is to be evaluated (RHS).
+
+In a *type* *declaration*:
+- `*` defines a **pointer type**. `int* arr;`
+- `&` defines a **reference variable**.
+    ```cpp
+    int i = 1;
+    int& ref = i;
+    ```
+
+In an *expression*:
+- `*` is the unary **dereference** **operator** that dereferences an address to evaluate to the contents at that address.
+- `&` is the unary **address-of operator** that evaluates to the address of a variable. `&` always expects an [[Knowledge/Engineering/Languages/C++#L-Values and R-Values|lvalue]].
+    ```cpp
+    int i = 1;
+    &i         // → Eg. 0x7FFEF2BA1884
+    &&i        // → Illegal operation. &(0x7FFEF2BA1884) doesn't make sense.
+    ```
+
+### Pointers
+Pointers are just memory addresses, often to the contents of an object allocated on the heap.
 ```cpp
-// **Primitive types**
-int       // 4 bytes
-char      // 1 byte
-bool      // 1 byte
-float     // 4 bytes
-double    // 8 bytes 
+int x = 2;
+int y = 3;
+int* p = &x;
+int* q = &y;
+p = q;          // p now contains the memory address of y.
 ```
-- `short` and `long` — data type ranges
+![illustration of pointers|590](Knowledge/Engineering/Languages/assets/pointers-illustrated.png)
+
+- `nullptr`. C++ requires that `NULL` is a constant that has value `0`. Unlike in C, `NULL` cannot be defined as `(void *)`
+    - `nullptr` therefore exists to distinguish between 0 and an *actual null* for pointer types. People would otherwise mistakenly use `NULL` and not realise it is just 0
+- **Note**: [Stroustrup prefers](https://stackoverflow.com/questions/6990726/correct-way-of-declaring-pointer-variables-in-c-c/6990753) the pointer declaration style `int* p` in C++ and `int *p` in C.
+
+### References
+You can think of a reference variable as an alias for another variable. They don’t occupy any memory themselves, once your program is compiled and running.
+```cpp
+int x = 2;
+int y = 3;
+int& r = x;
+int& r2 = y;
+r = r2;      // Remember, you can think of references as aliases. This assignment is basically just `x = y`
+```
+![illustration of references|600](Knowledge/Engineering/Languages/assets/references-illustrated.png)
+
+- References are useful as function parameters to avoid copying the entire argument
     ```cpp
-    short int  // 2 byte int (with range
-    long int   // 8 byte int (with range 2^63 
-    
-    // The following are exactly equivalent:
-    short == short int
-    long == long int
-    
-    short short == short short int
-    long long == long long int
+    void sort(vector<int>& sequence);    // Inplace sort
     ```
+- Const references are useful for when you don't want to modify an argument and **just want to read its contents**. It prevents the need to make a copy of that argument for the function's scope. This is really common practice:
+    ```cpp
+    void getAverage(const vector<int>& sequence);
+    ```
+- References must be initialised and can’t be reassigned afterwards
 
-### auto
-`auto` — static type inference
-```cpp
-// The static type for **x** is inferred based on what the type of the value on the RHS is
-auto x = true;   // → bool
-auto y {123};    // → int
-```
-- The point of `auto` is avoid redundancy in writing long data type names. It's really useful when generics are involved
-- It's fine to use copy initialisation with `=`, like `auto x = 1`
-    - With `auto`, there is no issue such as type narrowing.
-- You should think of `auto` as a type specifier just like `int` or `float`.
-You can use the same qualifiers like `const`, `&`, `*`, `static`, etc. along with `auto`. 
-This is really important in situations like this:
-```cpp
-int x  = 42;
-int& y = x;
-auto z = y;    // **z** is an **int**, not an **int&** 
+## Auto
+When specifying the data type of something as `auto`, C++ automatically infers the type.
+- Use `auto` for concision, especially when long generic types are involved.
+- It's fine to use [[Knowledge/Engineering/Languages/C++#Variables|copy initialisation]] if you use `auto` since type narrowing won't be a problem. E.g. `auto x = 1`.
+- Always assume that `auto`, by itself, will make a copy of the RHS. Use `auto&` if copying is undesirable (such as when copying large vectors).
 
-// It should have been this:
-auto& z = y;
-```
-- Always assume that auto by itself will make a copy (which is to be avoided if you’re copying over large objects like strings and vectors)
-- Always use qualifiers like `const`, `&`, `*` unless a copy is desired
-- Prefer `const auto&` over `auto&`
+## Const
+The `const` qualifier makes it 'impossible' to assign a new value to a variable after it's initialised. There is 0 negative performance impact of enforcing `const` since it's all done at compile-time. Using const can actually allow the compiler to make optimisations.
 
-### const
+> Prefer making things const by default. See [const correctness](https://isocpp.org/wiki/faq/const-correctness) for a pitch on why.
+
 - `const` and `constexpr`— immutable variables. Declaring and initialising a `const` variable will make the compiler guarantee that its value is never modified, ever.
     ```cpp
     const int i = 1;      
@@ -117,94 +118,190 @@ auto& z = y;
     constexpr int x = 8; 
     constexpr int x = cube(2);    // Error, *unless cube is defined as a [**constexpr function**](https://www.ibm.com/docs/es/xl-c-and-cpp-aix/16.1?topic=functions-constexpr-c11)*
     ```
-    You can have `const` before or after the data type:
-    ```cpp
-    const int *         ==    int const *
-    const int * const   ==    int const * const
-    ```
-    If this is hard to read, see the [[Knowledge/Engineering/Languages/C++#Clockwise Spiral Rule|clockwise-spiral rule]].
 
-### constexpr
+### Const Pointers
+```cpp
+const int *p;               // A pointer to an immutable int.
+const int * const q = ...;  // An immutable pointer to an immutable int. It must be initialised with a memory address.
+int * const r = ...;        // An immutable pointer to an int. It must be initisalised with a memory address.
+```
+If this is hard to read, see the [[Knowledge/Engineering/Languages/C++#Clockwise Spiral Rule|clockwise-spiral rule]].
 
-### static
-- `static` variables. In functions, static variables let you share a value across all calls to that function.
-    ```cpp
-    void foo() {
-    		static int a = 42;    // All calls to **foo** will see **a = 42**.
-        ...                   // If **a** changes, then all calls to **foo** will see that change too
-    }
-    ```
-    - Static variables are **generally considered bad** because they represent global state and are therefore much more difficult to reason about[*](https://stackoverflow.com/questions/7026507/why-are-static-variables-considered-evil#:~:text=Static%20variables%20are%20generally%20considered,assumptions%20of%20object%2Doriented%20programming.)
-    - The static variables are stored in **the data segment of the memory**. The data segment is a part of the virtual address space of a program
-        ![Program memory map|300](Knowledge/Engineering/Languages/assets/program-memory-map.png)
+### Const References
+Typing a variable as a const reference makes it a read-only alias. It's especially helpful for function parameters.
+> Prefer typing function parameters as const references. This gives the caller confidence that what they pass in is not modified in any way.
 
-### Clockwise-Spiral Rule
-[Clockwise-Spiral Rule](http://c-faq.com/decl/spiral.anderson.html) — for reading variable declarations. This rules lets any C programmer understand what any variable declaration is saying.
-1. Start at the variable name
-2. Follow a clockwise spiral to build up a sentence
+If you don't want a function to modify a caller's argument, you have these options:
+```cpp
+void foo1(const std::string& s);   // Preferred approach.
+void foo2(const std::string* s);   // A pointer to a const also works.
+void foo3(std::string s);          // Since pass-by-value is the default, `s` is an independent copy of what the caller passed in.
 
-Example:
-![Untitled|300](Knowledge/Engineering/Languages/assets/Untitled%203.png)
+// If you want a parameter to be modifiable:
+void bar1(std::string& s);         // This might modify the caller's string directly.
+void bar1(std::string* s);         // So can this.
+```
 
-Starting at `fp`:
-1. `fp` is a pointer 
-2. `fp` is a pointer to a function (that takes in an int and a float pointer)
-3. `fp` is a pointer to a function (that takes in an int and a float pointer) that returns a pointer
-4. `fp` is a pointer to a function (that takes in an int and a float pointer) that returns a pointer to a char
+You can't have 100% certainty that what you pass as a const reference is unchanged. See [this example from isocpp](https://isocpp.org/wiki/faq/const-correctness#return-const-ref-from-const-memfn):
+
+### Constexpr
+The `constexpr` type specifier is like `const`, except the RHS value must be able to be determined at compile-time. 
+```cpp
+const int a = some_val;
+constexpr int b = 42;
+```
+
+### Const Methods
+Const methods can only read `this` and never mutate anything about it. To specify a const method, the `const` qualifier *must* be placed after the parameter list.
+```cpp
+class Foo {
+public:
+    void inspect() const;
+};
+```
+
+> What about making methods **return const values**, eg. `const Foo bar();`? [It's *mostly* pointless](https://stackoverflow.com/questions/8716330/purpose-of-returning-by-const-value). However, it is *not* pointless if you're returning a pointer or reference to something that is const.
+
+### Constexpr Functions
+Constexpr functions are those than *can* be executed at compile-time, meaning all its state and behaviour is determinable at compile-time.
+
+## Clockwise-Spiral Rule
+[Clockwise-Spiral Rule](http://c-faq.com/decl/spiral.anderson.html) is a trick for reading variable types.
+1. Start at the variable name.
+2. Follow an outwards clockwise spiral from that variable name to build up a sentence.
+
+**Example**:
+![clockwise-spiral rule example|400](Knowledge/Engineering/Languages/assets/clockwise-spiral.png)
+Starting at the name `fp`:
+1. `fp` is a pointer.
+2. `fp` is a pointer to a function (that takes in an `int` and a `float` pointer).
+3. `fp` is a pointer to a function (that takes in an `int` and a `float` pointer) that returns a pointer.
+4. `fp` is a pointer to a function (that takes in an `int` and a `float` pointer) that returns a pointer to a char.
 
 More examples:
 ```cpp
-int *myVar                  // **pointer** to an **int**
-int const *myVar            // **pointer** to a **const** **int**
-int * const myVar           // **const** **pointer** to an int 
-int const * const myVar     // **const pointer** to a **const int**
+int *myVar;                     // pointer to an int.
+int const *myVar;               // pointer to a const int.
+int * const myVar = ...;        // const pointer to an int.
+int const * const myVar = ...;  // const pointer to a const int.
 ```
 
-## Loops
-- Standard `for` loop: `for (init; condition; update) { ... }`.
-- Range-based `for` loop (basically C++’s equivalent to `foreach` or *for-in* loops seen in other languages): `for (auto elem : collection)`.
-- Standard `while` loop: `while (condition) { ... }`
+## Static
+### Static Variables
+Inside functions, static variables let you share a value across all calls to that function.
+```cpp
+void foo() {
+    static int a = 42;    // All calls to **foo** will see **a = 42**.
+    ...                   // If **a** changes, then all calls to **foo** will see that change too
+}
+```
+> Static function variables are **generally considered bad** because they represent global state and are therefore much more difficult to reason about[\*](https://stackoverflow.com/questions/7026507/why-are-static-variables-considered-evil#:~:text=Static%20variables%20are%20generally%20considered,assumptions%20of%20object%2Doriented%20programming.).
 
-## Conditional
-`if` statement with a variable declaration in its condition (`if (init; condition)`).
-
-In a condition, assigning a truthy value to a variable will evaluate to `true`. 
+## If-Statements
+In C++, you can declare variables inside `if` statements and follow it up with a condition: `if (init; condition) { ... }`.
 ```cpp
 vector<int> vec = { 1, 2, 3 };
 
-// Declaring a variable and using the value the assignment evaluates to as the condition
 if (int size = vec.size()) {
     cout << "Vector size is not 0" << endl;
 }
-
-// You can use a declared variable immediately in a condition afterwards
 if (int size = vec.size(); n > 2) {
-        cout << "Vector size is > 2" << endl;
+    cout << "Vector size is > 2" << endl;
 }
 ```
-- Variables declared inside the if-statement's condition expression are scoped only to the if-statement
 
-`switch`-`case` statements.
-Switch-case statements test a value against a set of constants, called *cases*.
-Its syntax is the same as in most other C-like languages.
+## IO
+`<<` — the **'put to'** operator. In `arg1 << arg2`, the `<<` operator takes the second argument and writes it into the first.
 ```cpp
-switch (value) {
-        case '__':
-                ...
-                break;
-        default:
-                ...
+cout << "Meaning of life: " << 42 << "\n";
+```
+
+`>>` — the **'get from'** operator. In `arg1 >> arg2`, the `>>` operator gets a value from `arg1` and assigns it to `arg2`.
+```cpp
+int a, b;
+cin >> a >> b;
+```
+
+`std::endl` is a newline that flushes the output buffer, which means it is less performant than `"\n"`.
+```cpp
+cout << "Hello" << endl;             // Adds a "\n" and flushes the output buffer.
+cout << "Hello" << "\n";             // Adds a "\n".
+cout << "Hello" << "\n" << flush;    // Adds a "\n" and flushes the output buffer.
+```
+
+See [[Knowledge/Engineering/Languages/C++ Standard Library#IO|C++ Standard Library IO]] for more complex IO operations.
+
+## Arrays
+The many ways of initialising arrays:
+```cpp
+int arr[4];                    // [?, ?, ?, ?] – array is full of garbage values, often zeroes.
+int arr[4] = {  };             // [0, 0, 0, 0] – all elements set to 0.
+int arr[4] = { 1, 2, 3, 4 };   // [1, 2, 3, 4].
+int arr[4] = { 1 };            // [1, 0, 0, 0] – the rest of array is zeroed.
+
+int arr[] = { 1, 2, 3, 4 };    // Array size can be omitted if it can be inferred from RHS.
+int arr[] { 1, 2, 3, 4 };      // You can use uniform initialisation instead of copy initialisation.
+```
+The size of the array must be able to be determined during compile-time.
+
+## L-Values and R-Values
+An **lvalue** is a memory location that identifies an object. **Variables are lvalues**.
+> In C: an *lvalue* is an expression that can appear on the LHS ***or*** RHS of an assignment.
+
+An **rvalue** is a value stored at some memory address. Rvalues are different from lvalues in that **they cannot have a value assigned to it**, which means it can’t ever be on the LHS part of an assignment. **Literals are typically rvalues**.
+> In C: an *rvalue* is an expression that can only appear on the RHS of an assignment.
+```cpp
+int i = 10;    // i is an lvalue, 10 is an rvalue.
+int j = i * 2  // i * 2 is an rvalue.
+2 = i;         // error: expression must be a modifiable lvalue.
+```
+
+- Rvalues are important because they **enable move semantics** in C++. There are many instances in C++ code where it’s not necessary to copy a value or object from one place to another. E.g. when passing arguments into a function or when saving the returned value on the caller’s side. Implementing move semantics, where appropriate, is great for performance because it prevents expensive copies.
+
+### L-value and R-value References
+An **lvalue reference** uses a single ampersand `&`, eg. `string& s = "..."`
+- Const lvalue reference types (eg. `const string& s`) as a function parameter allow the caller to **pass both an l-value or r-value, equivalently**.
+
+An **rvalue reference** uses double ampersand `&&`, eg. `string&& s`. You’d use this to receive rvalues in functions, like literals and temporary objects. Doing this means you can avoid unnecessarily copying a value that is a ‘throwaway’ on the caller’s side.
+- You can define a *move constructor* and *move assignment operator* that take in an rvalue reference instead of a const lvalue reference. It’ll behave the same way, but it won’t guarantee the source to be unchanged.
+
+```cpp
+// Takes in an l-value reference which forces the caller to pass in variables.
+void **GreetLvalue**(string &name) {    
+  cout << name << endl;
+}
+
+// Takes in an r-value reference which forces the caller to pass in literals 
+// or temporary objects.
+void **GreetRvalue**(string &&name) {   
+  cout << name << endl;             
+}
+
+// Const references let the caller pass both lvalues and rvalues alike
+void **Greet**(const string &name) {    
+  cout << name << endl;             // Note: `const string &` will create a temporary variable behind the
+}                                   // scenes and then assign it to `name`. This is why you can pass both
+                                    // lvalues and rvalues to a const l-value reference like this.
+int main() {
+  string myName = "Tim";
+  GreetLvalue(myName);     // ✓
+  GreetLvalue("Andrew");   // Error: cannot bind **non-const lvalue reference**
+
+  GreetRvalue(myName);     // Error: cannot bind **rvalue reference**
+  GreetRvalue("Andrew");   // ✓
+
+  Greet(myName);           // ✓
+  Greet("Andrew");         // ✓
 }
 ```
 
-# Standard Library
-
-
+## Standard Library
+See [[Knowledge/Engineering/Languages/C++ Standard Library|C++ Standard Library]].
 
 ---
 # Old Notes
 
-# C++ Core Language:
+> TODO: This is a huge mess that I'll slowly clean up...
 ### Others:
 - `new` operator — for instantiating classes and creating arrays.
     The `new` operator denotes a request for memory allocation on the heap. If the request can be granted, then it'll evaluate to the memory address of the newly allocated memory and then the constructor will be called.
@@ -259,247 +356,8 @@ switch (value) {
         }
     };
     ```
-    
 - `::` *scope resolution operator* — for unambiguously referencing a name [TODO]
 
-## I/O [TODO]
-
-- `<<` — the **'put to'** operator
-    
-    `arg1 << arg2` — the `<<` operator takes the second argument and writes it into the first.
-    
-    - `std::cout << "Hello world\n"` — the string literal is written to stdout
-    
-    Multiple insertions can be chained. This is useful for mixing literals/variables of different types.
-    
-    ```cpp
-    cout << "I am " << "Tim" << " Zhang\n";
-    cout << "My birth year is " << 2001 << "\n";
-    ```
-    
-- `>>` — the **'get from'** operator
-    
-    The data type of the RHS determines what value from the input stream will be accepted.
-    
-    ```cpp
-    int main() {
-    		int x;
-    		cin << x;
-    		cout << x << endl;
-    }
-    ```
-    
-- `endl` from $\texttt{std::endl}$
-    
-    ```cpp
-    cout << "Hello" << endl;             // Adds a "\n" and flushes the output buffer
-    cout << "Hello" << "\n";             // Adds a "\n"
-    cout << "Hello" << "\n" << flush;    // Adds a "\n" and flushes the output buffer
-    ```
-    
-    - `endl` performs significantly worse than `"\n"` due to the constant flushing of the output buffer
-
----
-
-- Printing to a specific number of decimal points
-    
-    ```cpp
-    #include <iostream>
-    #include <iomanip>
-    #include <cmath>
-    
-    using namespace std;
-    
-    int main() {
-        cout << setprecision(6) << fixed;
-        cout << M_PI << endl;
-    }
-    
-    Outputs: 3.141593   
-    ```
-    
-    `std::fixed` sets the default formatting for stdout
-    
-    `std::setprecision` sets the precision to be expected in a given i/o stream
-    
-
-## Arrays
-
-**Initialising Arrays:**
-
-```cpp
-int arr[4];                    // **[?, ?, ?, ?]** – array is full of garbage values, often 0 but you can't trust that
-int arr[4] = {  };             // **[0, 0, 0, 0]** – all elements set to **0**
-int arr[4] = { 1, 2, 3, 4 };   // **[1, 2, 3, 4]** – all elements are explicitly set
-int arr[4] = { 1 };            // **[1, 0, 0, 0]** – the rest of array is set to **0**s
-
-int arr[] = { 1, 2, 3, 4 };    // Array size can be omitted if it can be inferred from RHS
-
-int arr[] { 1, 2, 3, 4 };      // You can use **universal initialisation** instead of **copy initialisation**
-```
-
-- The size of the array must be able to be determined during compile-time
-- Reading uninitialised values of an array is *undefined behaviour*, meaning that the C++ standard doesn't say anything about what you value you'll find there. It'll often just be 0s, but it can also be wildly random numbers
-
----
-
-## Pointers and References
-
-Pointers and references are really the same thing under the hood, however they have different semantics to the programmer. 
-
-You can consider references as syntactic sugar for pointers whose main purpose is to help you write cleaner code (compared to if you were to use pointers for the same use case).
-
-<aside>
-ℹ️ Unlike other languages, in C++, arguments ***are always passed by value [by default](https://www.learncpp.com/cpp-tutorial/passing-arguments-by-value)*** *unless the function signature explicitly says it takes in a pointer or reference*. This means functions will **entirely copy** all the objects you pass in, unless you pass in a pointer/reference.
-
-</aside>
-
-**Important Note:**
-
-<aside>
-⚠️ `*` and `&` have different meanings depending on whether they appear in a type declaration (LHS) or whether they appear in an expression that is to be evaluated (RHS).
-
-</aside>
-
-In a *type* *declaration*:
-
-- `*` defines a pointer type
-    
-    ```cpp
-    int* arr;
-    ```
-    
-- `&` defines a ***reference variable***
-    
-    ```cpp
-    int i = 1;
-    int& ref = i;
-    ```
-    
-
-In an *expression*:
-
-- **Dereference operator:** `*` is a unary operator that dereferences an address to get the contents at that address
-    - Consider `*p`.
-    Read this as “the **variable** stored at the address stored in `p`”
-- **Address-of operator:** `&` is a unary operator that gets the address of a variable.
-    - `&` expects an *lvalue.*
-        
-        ```cpp
-        int i = 1;
-        &i    // → Eg. 0x7FFEF2BA1884
-        &&i   // → Illegal operation. &(0x7FFEF2BA1884) doesn't make sense.
-        ```
-        
-
-### Pointers
-
-Pointers are just memory addresses, often to the contents of an object allocated on the heap.
-
-- Pointer arithmetic [TODO]
-    
-    Using ++ on a pointer will advance it to the next element
-    
-- `const` pointers
-    
-    `const` pointers are variables that can hold 1 memory address and then can never be changed again.
-    
-    ---
-    
-    The following is *not* a const pointer. It is a pointer to something that *is const*.
-    
-    ```cpp
-    const int value = 42;
-    const int anotherValue = 24;  // A pointer to an int constant. 
-    
-    const int *p = &value;        
-    p = &anotherValue;            // You can assign myVar to an **address to any other const int**, 
-    
-    *p = 10;                      // but you cannot change the value you point to.
-    ```
-    
-    ---
-    
-    The following *is a const* pointer.
-    
-    ```cpp
-    int value = 42;
-    int anotherValue = 24;
-    
-    int* const p = &value;       // p cannot be reassigned to any other memory address 
-    p = &anotherValue            // Fails
-    
-    *p = 10;                     // This is fine because p points to an int, not a constant int
-    ```
-    
-    If you have trouble understanding when a pointer is const or not, see the *clockwise spiral rule*.
-    
-- `nullptr`
-    
-    C++ requires that `NULL` is a constant that has value `0`. Unlike in C, `NULL` cannot be defined as `(void *)`
-    
-    - `nullptr` therefore exists to distinguish between 0 and an *actual null* for pointer types. People would otherwise mistakenly use `NULL` and not realise it is just 0
-- Pointers vs. references (illustrated)
-    
-    **Pointers:**
-    
-    ```cpp
-    int x = 2;
-    int y = 3;
-    int* p = &x;
-    int* q = &y;
-    p = q;          // p now contains the memory address to y
-    ```
-    
-    ![Untitled](Knowledge/Engineering/Languages/assets/Untitled%204.png)
-    
-    **References:**
-    
-    ```cpp
-    int x = 2;
-    int y = 3;
-    int& r = x;
-    int& r2 = y;
-    r = r2;            // Remember, you can think of references as aliases. This assignment is basically just `x = y`
-    ```
-    
-    ![Untitled](Knowledge/Engineering/Languages/assets/Untitled%205.png)
-    
-- Arrays of elements vs. pointers [TODO]
-    
-    Remember, arrays are basically just pointers to the first element.
-    
-    ```cpp
-    int myarray [20];
-    int *mypointer;
-    
-    mypointer = myarray;     // This is valid
-    myarray = mypointer;     // This is **invalid**. The main difference between arrays and pointers is that
-                             // variables declared as arrays can't be assigned to anything whereas pointers can   
-    ```
-    
-
----
-
-- [Stroustrup prefers](https://stackoverflow.com/questions/6990726/correct-way-of-declaring-pointer-variables-in-c-c/6990753) the pointer declaration style `int* p` in C++ and `int *p` in C
-
-### References
-
-You can think of a reference variable as an alias for another variable. They don’t occupy any memory themselves, once your program is compiled and running.
-
-- References are useful as function parameters to avoid copying the entire argument
-    
-    ```cpp
-    void sort(vector<int>& sequence);    // Inplace sort
-    ```
-    
-- Const references are useful for when you don't want to modify an argument and **just want to read its contents**. It prevents the need to make a copy of that argument for the function's scope. This is really common practice:
-    
-    ```cpp
-    void getAverage(const vector<int>& sequence);
-    ```
-    
-- References must be initialised and can’t be reassigned afterwards
 
 ## Functions
 
@@ -559,7 +417,7 @@ You can think of a reference variable as an alias for another variable. They don
     
     You can prefix a function or method signature with the inline keyword. This makes it so the compiler places a copy of the code in that function at each point where the function is called at compile time, meaning that the code is basically copied into the calling function.
     
-    - Doing this offers a marginal performance improvement because you avoid allocating a new stack frame that’s usually associated with making a function call
+    - Doing this offers a marginal performance improvement because you avoid allocating a new [[Knowledge/Engineering/Operating Systems/Stack Frame|stack frame]] that’s usually associated with making a function call
         - This performance improvement is done at the cost of a marginally bigger executable size
         - [Why not make everything inline?](https://softwareengineering.stackexchange.com/questions/254688/why-dont-compilers-inline-everything)
     - You should mainly consider using inline on functions that are very small but called several times in a program
@@ -1142,726 +1000,7 @@ int main() {
 
 This looks like a C++20 feature, which isn't really out yet (at least not stably in Nov 2021).
 
-# C++ Standard Libraries:
 
-This section contains notes about some of the most useful things in the `std` namespace.
-
-[C++ Standard Library headers](https://en.cppreference.com/w/cpp/header)
-
-## Strings [TODO]
-
-- String formatting with `**std::stringstream**` from `<sstream>`
-    
-    ```cpp
-    std::stringstream fmt;
-    fmt << "hello " << 10;
-    std::string formatted_str << fmt.str();
-    ```
-    
-
-str.find_first_of
-
-std::string::npos
-
-std::string_view vs std::string
-
-- You can do `constexpr std::string_view s = "…"`, but not `constexpr std::string s = "…"`
-
-## CType [TODO]
-
-isspace
-
-## I/O Stream
-
-In computer science, a stream is an abstraction that represents a sequence of data that arrives over time (much like a conveyor belt delivering items). In C++, this stream abstraction is how we work with reading/writing characters coming from an input stream (eg. user input on the terminal or a file in read mode) or being written to an output stream (eg. the terminal or a file in write mode).
-
-![Untitled](Knowledge/Engineering/Languages/assets/Untitled%206.png)
-
-### **`ostream`**
-
-An `ostream` serialises typed values as bytes and dumps them somewhere. 
-
-- The ‘put to’ operator `<<` is used on objects of type `ostream`.
-- `std::cout` and `std::err` are both objects of type `ostream`.
-
-![Untitled](Knowledge/Engineering/Languages/assets/Untitled%207.png)
-
----
-
-- You can chain the put-to operator `<<` because the result of an expression like `cout << “Hello”` is itself an `ostream`.
-    
-    ```cpp
-    cout << "Hello, " << "world.\n";
-    ```
-    
-- You can overload the << operator for your own classes. Example
-    
-    ```cpp
-    class Person {
-    public:
-        Person(std::string name, int age) : name_(name), age_(age) {
-        }
-    
-        std::string Serialise() const {
-            return "(name: " + name_ + ")";
-        }
-    
-    private:
-        std::string name_;
-        int age_;
-    };
-    
-    ostream& operator<<(ostream& os, const Person& person) {
-        os << person.Serialise();
-        return os;
-    }
-    
-    int main() {
-        Person person("Andrew", 42);
-        std::cout << person << std::endl;
-        return 0;
-    }
-    ```
-    
-
-### `iomanip` [TODO]
-
-### `istream`
-
-An `istream` takes in bytes and converts it to typed values.
-
-- The ‘get from’ operator `>>` is used as an input operator
-- `std::cin` is the standard input stream
-
-![Untitled](Knowledge/Engineering/Languages/assets/Untitled%208.png)
-
----
-
-- **Formatted extraction:**
-The type of the RHS of the ‘get from’ operator determines what input is accepted
-    
-    ```cpp
-    int i;
-    cin >> i;    // Expects an integer value to be supplied
-    
-    double j;
-    cin >> j;    // Expects a floating point value to be supplied
-    ```
-    
-    - You can chain the get-from operator `>>` just like for put-to `<<`.
-        
-        ```cpp
-        cin >> i >> j;   // Expects an integer, and then a double
-        ```
-        
-    - The user input can be space-separated, new-line-separated or tab-separated integers. There can be any number of ' ', '\n', '\t' characters between the integers
-    - If what the user types in cannot be casted to the expected type, nothing happens. The program continues execution and the variable ends up being uninitialised
-- **Unformatted line extraction with** `**std::getline**`
-When you want to read an entire line up to and not including the newline character, you should use `getline` rather than directly read from `cin` (which always considers space characters ' ', '\n', '\t' to be terminating)
-    
-    ```cpp
-    string msg;
-    std::cin >> msg;
-    
-    // If the user types: **hello world**, then msg will only be "**hello**".
-    // If you want to capture the entire line instead, use ***getline***
-    std::**getline**(cin, msg);
-    ```
-    
-- Common pitfall: when you do formatted execution followed by unformatted extraction, you’ll skip over the unformatted extraction. 
-This is fixed with `std::cin.ignore()`
-    
-    [Source](https://stackoverflow.com/questions/21567291/why-does-stdgetline-skip-input-after-a-formatted-extraction)
-    
-    Suppose you have:
-    
-    ```cpp
-    std::cin >> age;                     // You type: 10
-    std::getline(std::cin, name);        // You type: Andrew
-    ```
-    
-    You are actually typing “10\n” for the first input prompt. The “\n” unfortunately remains in the buffer when we get to the next `getline` call, which terminates immediately upon seeing the newline, thereby skipping input extract.
-    
-    To solve this, you need to call `std::cin.ignore()` to skip over the newline.
-    
-    ```
-    std::cin >> age;
-    std::cin.ignore();
-    std::getline(std::cin, name);
-    ```
-    
-
-## File Manipulation (`fstream`)
-
-The `fstream.h` header defines `ifstream`, which you use to open a file in read mode, `ofstream`, which you use to open a file in write mode, and `fstream` which you can use to create, read and write to files. 
-
-```cpp
-// ═════ Opening a file for reading ═════
-ifstream test_file("test.txt");
-string line;
-while (std::getline(test_file, line)) {
-    cout << "Read line: " << line << endl;
-}
-test_file.close();
-
-// ═════ Opening a file for writing (truncating) ═════
-ofstream test_file("out.test.txt");
-string line;
-test_file << "Hello world\n";
-test_file.close();
-
-// ═════ Opening a file for writing (appending) ═════
-ofstream test_file("out.test.txt", ios::app);
-string line;
-test_file << "Hello world\n";
-test_file.close();
-```
-
-<aside>
-ℹ️ Note that `ofstream` is a subclass of `ostream` and `ifstream` is a subclass of `istream`, meaning that you get to use `<<` to write and `>>` to read and work with them in the same way that you work with `cout` and `cin`.
-
-</aside>
-
-```cpp
-// ifstream member methods:
-in.eof();      // Returns true if EOF has been reached.
-```
-
-## String Streams (`sstream`)
-
-String streams let you treat instances of `std::string` as stream objects, letting you work with them in the same way that you’d work with `cin`, `cout` of file streams.
-
-```cpp
-// You can use `**istringstream**` anywhere you use `**istream**`. You can use this to feed strings to something that expects input.
-std::istringstream str_in("42 12 24");
-int a, b, c;
-str_in >> a >> b >> c;
-
-// Similarly, `**ostringstream**` can substitute for `**ostream**` instances. You can use this to capture output into a string.
-std::ostringstream str_out;
-str_out << "Hello world";
-std::string extracted = str_out.**str**();
-```
-
-## Filesystem
-
-C++17 gives us the `std::filesystem` API which finally lets us basically do `ls` on directories and traverse the filesystem, create symbolic links, get file stats, etc.
-
-```cpp
-// Loops through all files in the given directory.
-for (const std::filesystem::directory_entry& each_file : std::filesystem::directory_iterator("/usr/bin")) {
-    cout << each_file.path() << endl;
-}
-```
-
-## Smart Pointers [TODO]
-
-## Tuple
-
-```cpp
-// Construct tuples with `std::make_tuple`   
-**std::tuple<string, int>** person("Andrew", 42);
-
-// Access tuple values with `std::get`. Tuples don't work with the subscript operator [] unfortunately. Reason: https://stackoverflow.com/questions/32606464/why-can-we-not-access-elements-of-a-tuple-by-index.
-cout << **std::get<0>**(person) << endl;
-cout << **std::get<1>**(person) << endl;
-
-// You can also construct tuples with `std::make_tuple`. This is better
-// when you want to pass a tuple r-value to a function because `make_tuple`
-// can infer types. See: https://stackoverflow.com/questions/34180636/what-is-the-reason-for-stdmake-tuple
-std::tuple<string, int> person = **std::make_tuple**("Andrew", 42);
-```
-
-## Multithreading
-
-### Thread (`std::thread`)
-
-<aside>
-ℹ️ On Linux, you have to compile with the flag `-pthread` to link the POSIX thread library: `g++ -pthread -o term term.c`
-
-</aside>
-
-```cpp
-void func() {
-		...
-}
-
-int main() {
-		// When you construct a thread, it starts running the given function in a separate thread immediately.
-		std::thread my_worker(func);
-
-		my_worker.join();      // A synchronous statement that blocks the current thread until `my_worker` has terminated.
-		return 0;
-}
-```
-
-- Simple full example
-    
-    ```cpp
-    #include <iostream>
-    #include <thread>
-    
-    using namespace std::literals::chrono_literals;   // Allows you to use time literals like `1s`, `1500ms`, etc.
-    
-    static bool finished = false;
-    
-    void DoWork() {
-        while (!finished) {
-            std::cout << "Working...\n";
-            std::this_thread::sleep_for(1000ms);
-        }
-    }
-    
-    int main() {
-        std::thread worker(DoWork);
-    
-        std::cin.get();
-        std::cout << "Interrupted!\n";
-        finished = true;
-    
-        worker.join();
-        std::cout << "Worker thread has finished execution.\n";
-        return 0;
-    }
-    ```
-    
-
-### Futures (`std::future`) [TODO]
-
-### Async (`std::async`) [TODO]
-
-### Mutex (`std::mutex`)
-
-`std::mutex` is a very simple lockable object used to synchronise access to a resource shared by parallel threads.
-
-```cpp
-lock()
-unlock()
-```
-
-- Race condition example and how to solve it with mutexes
-    
-    ```cpp
-    #include <iostream>
-    #include <thread>
-    
-    **static int count = 0;**    // This is a shared resource that parallel threads will try to read/write to
-    
-    void **IncrementCount**() {
-        while (count < 100) {
-            std::cout << "Thread with ID " << std::this_thread::get_id() 
-                      << " sees count as " << count << "\n";
-            count++; 
-        }
-        return;
-    }
-    
-    int main() {
-        **std::thread t1(IncrementCount);
-        std::thread t2(IncrementCount);**
-    
-        **t1.join();
-        t2.join();**
-        return 0;
-    }
-    ```
-    
-    The following is the output of running the program. You can see the lines being printed are also jumbled because `cout` is also a ‘resource’ being accessed by both threads. We need to lock access to `count` and `cout`.
-    
-    ```cpp
-    Thread with ID 140123004860160 sees count as 82
-    Thread with ID 140123004860160 sees count as 83
-    
-    Thread with ID 140123013252864 sees count as 85
-    Thread with ID Thread with ID 140123004860160 sees count as 14012301325286486 sees count as 
-    Thread with ID 140123004860160 sees count as 87
-    Thread with ID 140123004860160 sees count as 88
-    86Thread with ID 
-    Thread with ID 140123013252864 sees count as 90
-    Thread with ID 140123013252864 sees count as 91
-    ```
-    
-    **Solution:**
-    
-    ```cpp
-    #include <iostream>
-    #include <thread>
-    #include <mutex>
-    
-    static int count = 0;
-    **std::mutex count_mutex;**
-    
-    void IncrementCount() {
-        while (count < 100) {
-            **count_mutex.lock()**;
-            std::cout << "Thread with ID " << std::this_thread::get_id() 
-                      << " sees count as " << count << "\n";
-            count++; 
-            **count_mutex.unlock()**;
-        }
-        return;
-    }
-    
-    int main() {
-        std::thread t1(IncrementCount);
-        std::thread t2(IncrementCount);
-    
-        t1.join();
-        t2.join();
-        return 0;
-    }
-    ```
-    
-    ```cpp
-    Thread with ID 140367027558144 sees count as 82
-    Thread with ID 140367027558144 sees count as 83
-    Thread with ID 140367027558144 sees count as 84
-    Thread with ID 140367027558144 sees count as 85
-    Thread with ID 140367027558144 sees count as 86
-    Thread with ID 140367027558144 sees count as 87
-    Thread with ID 140367027558144 sees count as 88
-    Thread with ID 140367027558144 sees count as 89
-    Thread with ID 140367027558144 sees count as 90
-    Thread with ID 140367027558144 sees count as 91
-    ```
-    
-
-## Regex
-
-Note: using raw string literals, $\texttt{R"(...)"}$, makes writing regex patterns easier because you won’t be confused about backslashes escaping things that you didn’t mean to escape.
-
-```cpp
-#include <regex>
-
-**std::regex** pattern(R"()");
-**std::smatch** matches;        // A container for storing std::string matches (capture groups). There are also other containers like std::cmatch for storing string literal matches. 
-														// These are all instances of std::match_results and can be indexed with the subscript operator [].
-
-// **═════ Functions ═════**
-**std::regex_match**(haystack, pattern);            // Returns true if matched.
-
-**std::regex_search**(haystack, matches, pattern);  // Returns true if matched. Populates the std::smatch object with capture group matches that you can extract.
-		matches[i]                                  // Accesses the i-th match. Note: matches[1] accesses the first match, matches[2] accesses the second match, and so on.
-```
-
-## Chrono [TODO]
-
-# C++ Data Structures & Algorithms:
-
-This is a summary of the highly efficient general-purpose data structures and algorithms provided by the standard library. Refer to this section for interview preparation and learning competitive programming with C++.  
-
-## Vector:
-
-'Vector' is a misleading name. It should be called '[ArrayList](https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html)' or 'DynamicArray'. It is implemented with an array under the hood.
-
-- To resize the underlying array, a larger memory block is allocated and all items in the original array are copied over to the new larger one. This is an $O(n)$ operation
-- Vectors consume more memory than arrays, but offers methods for runtime resizing
-
-```cpp
-#include <vector>
-
-// ***Initialisation***
-vector<int> a = { 1, 2, 3 };    
-
-// ***Main methods***
-a.**insert**(posIter, b)           // **O(1)** - Inserts **b** at **posIter**   
-a.**insert**(posIter, it1, it2)    //        Inserts elements from **it1** to **it2** at **posIter**
-
-a.**erase**(posIter)               // Deletes item at **posIter**
-a.**erase**(startIter, endIter)    // Deletes all elements in range from inclusive **startIter** to exclusive **endIter**
-
-a.**push_back**(b)                 // **O(1)** - Append
-a.**pop_back**()                   // **O(1)** - Pop from end
-
-a.**front**()                      // **O(1)** - Peek front
-a.**back**()                       // **O(1)** - Peek back
-
-a**[**i**]**                           // **O(1)** - Access item at an index (the same way you would for arrays)
-a.**at**(i)                        //        Alternative to []. It throws an exception for out of bounds access
-
-// ***Iterators***
-a.**begin**()               // Iterator starting from first element (index 0)
-a.**end**()                 // Iterator starting from last element
-
-a.**rbegin**()              // Reversed
-a.**rend**()                
-
-a.**cbegin**()              // Read-only iterator
-a.**cend**()                
-
-// ***Properties***
-a.**size**()
-a.**empty**()
-a.**max_size**()
-a.**capacity**()
-
-```
-
-- Slicing and splicing
-    
-    ```cpp
-    
-    // ***Slicing***
-    template<typename T>
-    vector<T> **slice**(vector<T> vec, int start, int end) {     
-    		// Returns a new vector from inclusive start to exclusive end
-        auto first = vec.cbegin() + start; 
-        auto last = vec.cbegin() + end;
-        vector<T> sliced(first, last);
-        return sliced;
-    }
-    
-    // ***Splicing***
-    vector<int> a = { 1, 2, 3};
-    vector<int> b = { 4, 5 };
-    a.insert(a.begin() + 1, b.begin(), b.end());     // a is now { 1, **4**, **5**, 2, 3 }
-    a.erase(a.begin() + 2, a.begin() + 3);           // a is now { 1, 4, 2, 3 } 
-    ```
-    
-
-## Set:
-
-### `set`
-
-Stores elements in ***sorted order*** without duplicates. For most use cases, you probably want to use `unordered_set` instead, which has more favourable time complexities.
-
-```cpp
-**set<T> s**;
-
-s.**insert**(T elem)      // **O(logn)** - Inserts element
-s.**find**(T elem)        // **O(logn)** - Gets an element
-                      //           Returns an iterator which points to the value if it was found, otherwise it points to **s.end()** 
-s.**size**()              // **O(1)**    - Cardinality
-```
-
-- The underlying implementation uses a balanced tree
-
-### `unordered_set`
-
-Same 
-
-```cpp
-unordered_set<T> s;
-
-// **CRUD:**
-s.insert(T elem)      // O(1) 
-s.find(T elem)        // O(1)
-s.erase()
-
-// **Properties:**
-s.size()              // O(1)
-s.empty()
-```
-
-- Uses a hash table as the underlying data structure
-
-## Map:
-
-### `map`
-
-```cpp
-map<string, int> m;
-
-// ***Main operations***
-m.insert(pair)      // Takes in **std::pair<keyT, valT>**
-m[key] = val        // More straightforward way to add key-value pairs
-m.erase(key)        // Deletes key-value pair by key. Doesn't fail if the key doesn't exist
-
-// ***Iterators***
-m.begin()
-m.end()
-// ... and all the other ones available to classes like **std::vector**
-
-// ***Properties***
-m.size()
-m.max_size()
-m.empty()
-```
-
-- Usage example
-    
-    ```cpp
-    // ***Adding key-value pairs***
-    map<string, int> frequencies;
-    frequencies["Hello"] = 4;
-    frequencies["World"] = 3;
-    int val = frequencies["World"];
-    
-    // ***Iterating through key-value pairs***
-    for (auto it = frequencies.begin(); it != frequencies.end(); ++it) {
-        cout << it->first << " : " << it->second << endl;
-    }
-    ```
-    
-
----
-
-- There are [multiple ways](https://stackoverflow.com/questions/17172080/insert-vs-emplace-vs-operator-in-c-map) to insert key-value pairs into a map, eg. `insert()`, `[ ]` operator, `emplace()`, etc.
-
-### `unordered_map`
-
-The interface is very similar to `std::map`, however it offers a few more lower-level methods like `bucket_count()`, `load_factor()`, etc.
-
-```cpp
-
-```
-
-## Strings:
-
-The set of methods available to the `std::string` class is similar to the methods available to `std::vector`, plus a few more special string manipulation methods and operator support like `+`, `<<`, `>>`. 
-
-```cpp
-
-// ***Main operations***
-s1 + s2              // Concatentation
-s1.append(s2)        // Alternative to + operator
-
-// TODO: https://www.cplusplus.com/reference/string/string/compare/
-s1.compare(s2)
-s1.compare(s2, pos
-
-s.substr(startPos, runLen)   // Returns the substring from inclusive **startPos** onwards for **runLen** characters
-
-//TODO: more string ops https://www.cplusplus.com/reference/string/string/
-s.find
-s.find_first_of
-s.find_first_not_of
-s.find_last_of
-s.find_last_not_of
->
-// ***Others***
-s.copy()
-
-char c;
-std::isdigit(c)    // Returns true if the string consists of a valid digit.
-std::isalnum(c)
-std::isspace(c)
-```
-
-**Raw Strings:**
-
-There are raw string literals just like in Python where everything inside the string is treated as raw characters, not special characters. This means you won’t have to escape any special characters with backslash and they’ll all lose their meaning. This is especially useful when defining strings containing regex patterns which contain a bunch of backslashes.
-
-The format for defining a raw string literal is: $\texttt{R"(...)"}$. 
-
-```cpp
-std::string my_raw_str = R"(my raw string)";   // → "my raw string"
-```
-
-### LeetCode Encountered Things: [temporary]
-
-A collection of string operations and functions that I found helpful in LeetCoding.
-
-- You can iterate through strings with the range-based for loop:
-    
-    ```cpp
-    std::string message = "Hello, world";
-    for (char& c : message) {
-    	  ...
-    }
-    ```
-    
-- Functions
-    
-    ```cpp
-    islower(char c)
-    isupper(char c)
-    ```
-    
-
-## Arrays:
-
-```cpp
-// ***Initialisation***
-int nums[3];
-int nums[3] = { 1, 2, 3 };     // [1, 2, 3]
-int nums[]  = { 1, 2, 3 };     // [1, 2, 3]
-int nums[3] = { 1 };           // [1, 0, 0]
-int nums[3] = {  };            // [0, 0, 0]
-
-// TODO: ***Utility functions***
-std::fill_n(nums, 3, -1);
-
-```
-
-- To get the size of an array, you’d need to do $\texttt{sizeof(arr) / sizeof(arr[0])}$. It is almost always recommended to use `std::vector` over regular arrays[*](https://stackoverflow.com/questions/2037736/how-to-find-the-size-of-an-int).
-
-### Matrices:
-
-## Priority Queue:
-
-```cpp
-#include <**priority_queue**>
-
-```
-
-## Stack & Queue:
-
-### std::stack:
-
-```cpp
-#include <**stack**>
-
-stack<int> s;
-
-// ***Main methods***
-s.**push**(item);      
-s.**top**()          // Reads the top element
-s.**pop**()          // Removes the top element. *Doesn't actually return anything*
-s.**empty**()
-s.**size**()
-```
-
-### std::queue:
-
-```cpp
-#include <**queue**>
-
-queue<int> q;
-
-// ***Main methods***
-q.**push**()   
-q.**front**()          // Reads the next element
-q.**back**()           // Reads the last element
-q.**pop**()            // Removes the top element. Doesn't actually return anything
-q.**empty**()
-q.**size**()
-```
-
-### std::deque:
-
-```cpp
-#include <**deque**>
-
-```
-
-
-### Smart Pointers [TODO]
-
-Smart pointers — wraps a naked pointer. Preferred over naked pointers, mainly because it handles the deletion of objects that would cause a memory leak otherwise.
-    - Smart pointers are 'smart' because they enforce ownership semantics.
-        - Objects owned by a `unique_ptr` will have `delete` invoked on them when the `unique_ptr` goes out of scope
-        - Smart pointers are preferred in C++ just because they offer better memory management
-Naked pointers, also called *dumb pointers*, are regular C-style pointers.
-        
-```cpp
-int* p;   // A naked pointer
-```
-
-- Use `#include <memory>`
-- Makes it so that you never have to call `new` or `delete` in your code
-- C++ code should prefer smart pointers (most commonly `std::unique_ptr`) instead of raw pointers when dynamically allocating objects. The `delete` operator is used on the allocated object in `std::unique_ptr`’s destructor
-- `std::unique_ptr` — the simplest smart pointer. When it goes out of scope, the object gets deleted. They’re called unique because they cannot be copied — because if you were to have two pointers to the same memory address, then if delete is called on one pointer, then the other pointer would be pointing to invalid memory.
-    - If you only have one reference to an object and you want it to be freed once out of scope, then use unique_ptr
-    - There’s also stuff like `std::make_unique` that is apparently a [replacement for the new operator when initialiser std::unique_ptr?](https://stackoverflow.com/questions/37514509/advantages-of-using-stdmake-unique-over-new-operator)
-        - It is recommended to use the 'make_unique/make_shared' function **to create smart pointers**
-- `std::shared_ptr`
-    - Unlike `std::unique_ptr`, shared_ptr lets you have multiple references to the same object. You can assign a `std::shared_ptr` to another variable that is type `std::shared_ptr`
-    - Uses reference counting. When you assign std::shared_ptr to a variable of type std::shared_ptr, it’ll increment the count
-    - You **have to** use `std::make_shared` to instantiate shared_ptr. It is important to do this because shared_ptr needs to manage bookkeeping around the counting of references. If you were to use new, then you’ve created a separate instance that won’t be counted as a reference.
-- `std::weak_ptr`
-    - When you assign `std::shared_ptr` to a variable of type `std::weak_ptr`, it won’t increment the underlying references count managed by the shared_ptr.
-- [Return smart pointers by value](https://www.internalpointers.com/post/move-smart-pointers-and-out-functions-modern-c#:~:text=Return%20smart%20pointers%20from%20functions)
 
 ### Using [TODO]
 `using` keyword — what are all the uses of it?
@@ -2318,63 +1457,6 @@ C++ supports separate compilation to decouple parts of a project and minimise co
     ```
     
 
-### L-Values and R-Values:
-
-*Lvalues*, or locator values, are memory locations that identifies an object. Lvalues are typically just variables.
-
-*Rvalues* are values stored at some memory address. They’re different from lvalues in that they cannot have a value assigned to it, which means it can’t even be the LHS part of an assignment.
-
-```cpp
-int i = 10;    // i is an lvalue, 10 is an rvalue
-2 = i;         // **Error**: **expression must be a modifiable lvalue**
-```
-
-- Rvalues are important because they **enable move semantics** in C++.
-    - There are many instances in C++ code where it’s not necessary to copy a value or object from one place to another. Eg. when passing arguments into a function or saving the returned value on the caller’s side.
-    Implementing move semantics, where appropriate, is great for performance
-- **Lvalue references:**
-An lvalue reference uses a single ampersand `&`, eg. `string&`
-- **Rvalue references:**
-An rvalue reference uses double ampersand `&&`, eg. `string&&`.
-    
-    You’d use it to receive rvalues in functions, like literals and temporary objects. Doing this means you can avoid unnecessarily copying a value that is a ‘throwaway’ on the caller’s side.
-    
-    - You can define a *move constructor* and *move assignment operator* that take in an rvalue reference instead of the default const l-value reference.
-        - It’ll behave the same way, but it won’t guarantee the source to be unchanged
-
----
-
-**Practical Notes:**
-
-- Const l-value reference types as a function parameter let the caller pass both an l-value or r-value equivalently
-- Example showing l-value, r-value and const l-value references
-    
-    ```cpp
-    void **GreetLvalue**(string &name) {    // Takes in an l-value reference which forces the caller to pass in variables.
-      cout << name << endl;
-    }
-    
-    void **GreetRvalue**(string &&name) {   // Takes in an r-value reference which forces the caller to pass in literals 
-      cout << name << endl;             // or temporary objects.
-    }
-    
-    void **Greet**(const string &name) {    // Const references let the caller pass both lvalues and rvalues alike
-      cout << name << endl;             // **Note**: `**const string &**` will create a temporary variable behind the
-    }                                   // scenes and then assign it to `name`. This is why you can pass both
-    																		// lvalues and rvalues to a **const l-value reference** like this.
-    int main() {
-      string myName = "Tim";
-      GreetLvalue(myName);     // ✓
-      GreetLvalue("Andrew");   // Error: cannot bind **non-const lvalue reference**
-    
-      GreetRvalue(myName);     // Error: cannot bind **rvalue reference**
-      GreetRvalue("Andrew");   // ✓
-    
-      Greet(myName);           // ✓
-      Greet("Andrew");         // ✓
-    }
-    ```
-    
 
 ### Curly Braces in C++:
 

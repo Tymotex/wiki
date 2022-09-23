@@ -537,7 +537,7 @@ console.log(csStudent.discipline);  // → undefined
 ```
 
 ## Functions
-**Typing Function Delcarations**
+**Typing Function Declarations**
 To type a function declaration, you just assign types for each parameter it takes in and then specify the return type by postfixing the parameter list with a colon and a type.
 ```typescript
 // Typing function parameters and return values.
