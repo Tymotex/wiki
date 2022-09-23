@@ -6,10 +6,6 @@ kanban-plugin: basic
 
 ## **Friday** *2022-09-23* (6)
 
-- [ ] **(1 hour)** Plan mum tutoring... What do? Do something this year but what
-- [ ] **(1 hour)** Math website Figma prototype.
-- [ ] **(2 hours)** Consolidate CSS notes. Skim through CSS definitive guide and take down most important notes.
-- [ ] **(2 hours)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.
 - [x] [[_/(20 mins) Find textbook example and have meeting with dad to discuss tutoring requirements]]
 - [x] Send Teng superdoneright
 - [x] Shutdown sync script
@@ -26,11 +22,14 @@ kanban-plugin: basic
 ## **Saturday** *2022-09-24* (6)
 
 - [ ] 🏆 **Purpose today**: skim CSS and grind out konflux
-- [ ] **(1 hour)** Go through Never Split the Difference and finalise notes.
-- [ ] Write tomorrow's purpose
-- [ ] **(1 hour)** Install Linux VM on laptop, then VSCode with settings synced.
+- [ ] **(2 hours)** Consolidate CSS notes. Skim through CSS definitive guide and take down most important notes.
+- [ ] **(2 hours)** Konflux table styling.
 - [ ] **(2 hours)** Finish Man's Search For Meaning
 - [ ] **(30 mins)** Figure out and implement a standard structure for all projects.
+- [ ] **(1 hour)** Math website Figma prototype.
+- [ ] **(2 hours)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.
+- [ ] **(1 hour)** Go through Never Split the Difference and finalise notes.
+- [ ] **(20 mins)** Plan mum tutoring... What do? Do something this year but what
 
 
 ## **Sunday** *2022-09-25* (6)
@@ -39,12 +38,14 @@ kanban-plugin: basic
 - [ ] #### **(10 mins)** Weekly Review.
 - [ ] Write tomorrow's purpose
 - [ ] **[1 hour]** Go through How to Not Die Alone and finalise notes.
+- [ ] **(1 hour)** Install Linux VM on laptop, then VSCode with settings synced.
 
 
 ## **Monday** *2022-09-26* (6)
 
 - [ ] ### **🏆 Purpose**:
 - [ ] **[1 hour]** Go through The Male Advantage and finalise notes.
+- [ ] Book all Cairns experiences.
 
 
 ## **Tuesday** *2022-09-27* (6)
