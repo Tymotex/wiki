@@ -1,7 +1,5 @@
 ---
-
 kanban-plugin: basic
-
 ---
 
 ## Friday 2022-09-23 (6)
@@ -17,7 +15,6 @@ kanban-plugin: basic
 - [x] Write tomorrow's purpose
 - [x] [[_/(30 mins) Consolidate super accounts.]]
 
-
 ## Saturday 2022-09-24 (6)
 
 - [ ] 🏆 **Purpose today**: skim CSS and grind out konflux
@@ -27,18 +24,15 @@ kanban-plugin: basic
 - [ ] Write tomorrow's purpose
 - [ ] **(1 hour)** Install Linux VM on laptop, then VSCode with settings synced.
 
-
 ## Sunday 2022-09-25 (6)
 
 - [ ] 🏆 **Purpose today**:
 - [ ] Write tomorrow's purpose
 - [ ] **[1 hour]** Go through How to Not Die Alone and finalise notes.
 
-
 ## Monday 2022-09-26 (6)
 
 - [ ] **[1 hour]** Go through The Male Advantage and finalise notes.
-
 
 ## Tuesday 2022-09-27 (6)
 
