@@ -1,7 +1,5 @@
 ---
-
 kanban-plugin: basic
-
 ---
 
 ## **Friday** *2022-09-23* (6)
@@ -22,7 +20,6 @@ kanban-plugin: basic
 - [x] 🏆 **Purpose today**: personal finance.
 - [x] **(1.5 hours)** Man's Search for Meaning
 
-
 ## **Saturday** *2022-09-24* (6)
 
 - [ ] 🏆 **Purpose today**: skim CSS and grind out konflux
@@ -31,7 +28,6 @@ kanban-plugin: basic
 - [ ] **(1 hour)** Install Linux VM on laptop, then VSCode with settings synced.
 - [ ] **(2 hours)** Finish Man's Search For Meaning
 
-
 ## **Sunday** *2022-09-25* (6)
 
 - [ ] ### 🏆 **Purpose today**: konflux
@@ -39,151 +35,122 @@ kanban-plugin: basic
 - [ ] Write tomorrow's purpose
 - [ ] **[1 hour]** Go through How to Not Die Alone and finalise notes.
 
-
 ## **Monday** *2022-09-26* (6)
 
 - [ ] **[1 hour]** Go through The Male Advantage and finalise notes.
-
 
 ## **Tuesday** *2022-09-27* (6)
 
 - [ ] ### **🏆 Purpose**:
 
-
 ## **Wednesday** *2022-09-28* (6)
 
 - [ ] ### **🏆 Purpose**:
 
-
 ## **Thursday** *2022-09-29* (6)
 
 - [ ] ### **🏆 Purpose**:
-
 
 ## **Friday** *2022-09-30* (6)
 
 - [ ] ### **🏆 Purpose**:
 - [ ] ### **(10 mins)** Monthly Review.
 
-
 ## **Saturday** *2022-10-01* (6)
 
 - [ ] ### **🏆 Purpose**:
-
 
 ## **Sunday** *2022-10-02* (6)
 
 - [ ] ### **🏆 Purpose**:
 - [ ] #### **(10 mins)** Weekly Review.
 
-
 ## **Monday** *2022-10-03* (6)
 
 - [ ] ### **🏆 Purpose**:
-
 
 ## **Tuesday** *2022-10-04* (6)
 
 - [ ] ### **🏆 Purpose**:
 
-
 ## **Wednesday** *2022-10-05* (6)
 
 - [ ] ### **🏆 Purpose**:
-
 
 ## **Thursday** *2022-10-06* (6)
 
 - [ ] ### **🏆 Purpose**:
 
-
 ## **Friday** *2022-10-07* (6)
 
 - [ ] ### **🏆 Purpose**:
 
-
 ## **Saturday** *2022-10-08* (6)
 
 - [ ] ### **🏆 Purpose**:
-
 
 ## **Sunday** *2022-10-09* (6)
 
 - [ ] ### **🏆 Purpose**:
 - [ ] #### **(10 mins)** Weekly Review.
 
-
 ## **Monday** *2022-10-10* (6)
 
 - [ ] ### **🏆 Purpose**:
-
 
 ## **Tuesday** *2022-10-11* (6)
 
 - [ ] ### **🏆 Purpose**:
 
-
 ## **Wednesday** *2022-10-12* (6)
 
 - [ ] ### **🏆 Purpose**:
-
 
 ## **Thursday** *2022-10-13* (6)
 
 - [ ] ### **🏆 Purpose**:
 
-
 ## **Friday** *2022-10-14* (6)
 
 - [ ] ### **🏆 Purpose**:
 
-
 ## **Saturday** *2022-10-15* (6)
 
 - [ ] ### **🏆 Purpose**:
-
 
 ## **Sunday** *2022-10-16* (6)
 
 - [ ] ### **🏆 Purpose**:
 - [ ] #### **(10 mins)** Weekly Review.
 
-
 ## **Monday** *2022-10-17* (6)
 
 - [ ] ### **🏆 Purpose**:
-
 
 ## **Tuesday** *2022-10-18* (6)
 
 - [ ] ### **🏆 Purpose**:
 
-
 ## **Wednesday** *2022-10-19* (6)
 
 - [ ] ### **🏆 Purpose**:
-
 
 ## **Thursday** *2022-10-20* (6)
 
 - [ ] ### **🏆 Purpose**:
 
-
 ## **Friday** *2022-10-21* (6)
 
 - [ ] ### **🏆 Purpose**:
-
 
 ## **Saturday** *2022-10-22* (6)
 
 - [ ] ### **🏆 Purpose**:
 
-
 ## **Sunday** *2022-10-23* (6)
 
 - [ ] ### **🏆 Purpose**:
 - [ ] #### **(10 mins)** Weekly Review.
-
 
 ***
 
