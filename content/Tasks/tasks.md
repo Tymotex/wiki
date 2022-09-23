@@ -16,6 +16,8 @@ kanban-plugin: basic
 - [ ] Send Teng superdoneright
 - [x] Write tomorrow's purpose
 - [x] [[_/(30 mins) Consolidate super accounts.]]
+- [ ] Move a chair into bedroom for reading
+- [ ] Shutdown sync script
 
 
 ## Saturday 2022-09-24 (6)
