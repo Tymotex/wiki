@@ -17,17 +17,20 @@ title: Building a Second Brain
 		- What did you learn?
 		- What did you do well?
 		- What could you have done better?
-- Automate the creation of new weekly task boards.
-    - Could keep this rolling. Eg. could write a script that automatically pushes forward tasks from previous day to the current day. Automatically archive previous days. Have columns for the next 6 days after today. 
 
 ## Features
 - Mobile Git synchronisation with [Termux](https://termux.dev/en/) and [Termux:Widget](https://wiki.termux.com/wiki/Termux:Widget).
     - [Inspired from this blog post](https://werzum.github.io/tech/2022/02/13/Obsidian-Mobile-Sync.html). I wrote a simple shell script that can be executed manually in one press through Termux:Widget. All the shell script does it run git commands to pull and then push whatever changes I make through Obsidian.
     - The Git syncing could be accomplished through [Tasker,](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&hl=en_AU&gl=US) I believe.
-    
+- Python CLI that formats the task board when Obsidian starts up. It can also be invoked with a custom hotkey, `ctrl + alt + f`, made possible by `obsidian-shellcommands`.
+    - Moves all incomplete tasks from previous days into today's task lane. This eliminates you having to manually drag cards over to today.
+    - Creates the next $n$ days' task lanes and populates them with default tasks. For example, you can schedule a morning routine task for every day or a weekly review task for every Sunday, etc.
+    - You only ever have to view and manage 1 task board. The script helps to keep the task board cycling onwards through the days infinitely.
+
 ## Workflow
 - Vim keybindings option in Obsidian and `obsidian-vimrc-support`.
 - `obsidian-kanban`  -> for managing daily tasks.
+    - TODO: elaborate.
 - `obsidian-dictionary` -> allows me to quickly look up the definition of a highlighted word via the context menu (which I bring up with `ctrl + r`).
 
 ## Shortcuts
@@ -51,3 +54,4 @@ I aimed to set keybindings that closely match how I have it in other programs li
     - `ctrl + h/l` — focus on the left/right pane.
 - `ctrl + r` — bring up context menu.
 - `ctrl + j` — open daily note ('j' for 'journal').
+- `ctrl + alt + f` — runs my custom Python CLI which formats my tasks.

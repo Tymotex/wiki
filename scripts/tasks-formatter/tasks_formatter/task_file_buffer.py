@@ -345,7 +345,6 @@ class TaskFileBuffer:
             with open(template_file_path, "r") as template_file:
                 template_tasks = [line.strip() for line in template_file.readlines() if line and not line.isspace()]
                 for task in template_tasks:
-                    print(task)
                     if not TaskFileBuffer.checkbox_regex.search(task):
                         raise TemplateFileException(f"Invalid task in template file: '{task}'")
                     tasks.append(task)
