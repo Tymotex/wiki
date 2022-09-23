@@ -7,6 +7,12 @@ description: Superannuation
 
 You can access the money in your superannuation account after you reach the ‘preservation age’, which is when you’re age 55-60, however this varies. There are no (legal) ways to access your super account, barring some exceptional circumstances (on compassionate grounds, home deposits, etc.).
 
+> An excellent read: [superdoneright](https://superdoneright.com/). 
+> - $\frac{2}{3}$ of people have never switched super funds/investment options and therefore stay in underperforming, high fee funds resulting in hundreds of thousands of dollars lost. Most people consider it too much of a hassle.
+> - Passive investing options offer better returns over many years *and* much lower fees.
+> - $40\%$ of super accounts are not consolidated, meaning that one person is needlessly paying huge fees to multiple super funds.
+> - Always ditch retail funds. Their fees are too high.
+
 ### Super Funds
 *Super funds* are financial institutions that **manage your superannuation money and will invest it for you**. Examples of super funds include UniSuper, SunSuper, Cbus Super, etc. 
 
@@ -27,7 +33,9 @@ As advised by [moneysmart](https://moneysmart.gov.au/how-super-works/choosing-a-
 - Fees. They’re usually deducted from your balance each month and can either be a percentage or fixed amount.
 - [[Knowledge/Personal Finance/Insurance|Insurance]]. Super funds usually give some insurance coverage to members by default. They include: life insurance, income protection and/or disability insurance. A premium will be deducted from your super for having this coverage.
 
-Just use the government's [YourSuper comparison tool](https://www.ato.gov.au/YourSuper-Comparison-Tool/) to pick out a super. Alternatively, you can use non-government comparison tools like [Canstar](https://www.canstar.com.au/superannuation/), but remember that they're a business and may run promotions for certain institutions.
+Consider using the government's [YourSuper comparison tool](https://www.ato.gov.au/YourSuper-Comparison-Tool/) to pick out a super. Alternatively, you can use non-government comparison tools like [Canstar](https://www.canstar.com.au/superannuation/), but remember that they're a business and may run promotions for certain institutions.
+
+> Just pick a **low-cost international index fund investment option**. Switch to a different super fund if that option doesn't exist. Which super fund you pick matters less than which investment option you pick.
 
 ### Salary Sacrifice
 An Australia-specific term for an arrangement between you and your employer where you trade a portion of your salary for some benefit from the employer, provided at no greater cost to them. Eg. [[Reading/Barefoot Investor|Barefoot Investor]] recommends arranging a salary sacrifice to increase the employer’s super contributions to 15%.

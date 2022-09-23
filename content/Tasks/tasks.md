@@ -16,6 +16,7 @@ kanban-plugin: basic
 - [ ] **(1 hour)** Math website Figma prototype.
 - [ ] **(2 hours)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.
 - [x] Write tomorrow's purpose
+- [ ] Send Teng superdoneright
 
 
 ## Saturday 2022-09-24 (6)

@@ -22,6 +22,7 @@ kanban-plugin: basic
 - [ ] Open an issue/PR for `obsidian-kanban` for better keyboard accessibility (and power user agility).
 - [ ] Obsidian plugin idea: notion-like gallery.
 - [ ] [[_/WebAssembly Rust Snake tutorial]]
+- [ ] Vanguard will open a super fund in 2022.
 
 
 ## Self-Improvement
