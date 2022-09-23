@@ -19,10 +19,11 @@ kanban-plugin: basic
 - [ ] Attend 1 **conference.**
 - [ ] Read 1 **academic paper** (eg. Claude Shannon's information theory paper).
 - [ ] Make a plan for learning AI, long-term.
-- [ ] Open an issue/PR for `obsidian-kanban` for better keyboard accessibility (and power user agility).
 - [ ] Obsidian plugin idea: notion-like gallery.
-- [ ] [[_/WebAssembly Rust Snake tutorial]]
 - [ ] Vanguard will open a super fund in 2022.
+- [ ] [[_/WebAssembly Rust Snake tutorial]]
+- [ ] [[_/Write email thanking Josh Comeau]]
+- [ ] Open an issue/PR for `obsidian-kanban` for better keyboard accessibility (and power user agility).
 
 
 ## Self-Improvement
@@ -34,7 +35,6 @@ kanban-plugin: basic
 - [ ] Read a book on **writing.**
 - [ ] Schedule weekly and monthly reviews of your life.
 - [ ] Pick out the most useful articles from **moneysmart.gov.au** and read them.
-- [ ] Consolidate your Super accounts.
 
 
 ## Hobbies

@@ -7,16 +7,15 @@ kanban-plugin: basic
 ## Friday 2022-09-23 (6)
 
 - [ ] 🏆 **Purpose today**: personal finance.
-- [ ] [[_/(30 mins) Consolidate super accounts.]]
 - [ ] **(3 hours)** Research how to manage personal finances.
 - [ ] (20 mins) What insurance should I get as a software engineer?
 - [ ] **(1 hour)** Plan mum tutoring... What do? Do something this year but what
 - [ ] [[_/(1 hour) Find textbook example and have meeting with dad to discuss tutoring requirements]]
-- [ ] [[_/Write email thanking Josh Comeau]]
 - [ ] **(1 hour)** Math website Figma prototype.
 - [ ] **(2 hours)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.
-- [x] Write tomorrow's purpose
 - [ ] Send Teng superdoneright
+- [x] Write tomorrow's purpose
+- [x] [[_/(30 mins) Consolidate super accounts.]]
 
 
 ## Saturday 2022-09-24 (6)
