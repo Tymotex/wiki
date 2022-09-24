@@ -5,7 +5,7 @@ description: CSS
 
 ![[Knowledge/Engineering/Languages/assets/css-wallpaper.png|800]]
 
-*CSS* (Cascading Style Sheets) is a declarative language for describing document styling. Also see [[Knowledge/Engineering/Languages/SCSS|SCSS]].
+*CSS* (Cascading Style Sheets) is a declarative language for describing document styling. Also see [[Knowledge/Engineering/Languages/CSS Cookbook|CSS Cookbook]] and [[Knowledge/Engineering/Languages/SCSS|SCSS]].
 
 ## Core
 CSS files are just a sequence of **rule sets** which consists of a **[[Knowledge/Engineering/Languages/CSS#Selectors|selector]]** and a **declaration block**:
@@ -35,10 +35,9 @@ A *selector* is a string that targets the HTML element you want to apply some st
 When you apply `div { color: green; }`, all children also implicitly have the rule `color: green;` set.
 
 ### Box Model
-Pretty much every element follows the box model below.
+Every element follows the box model below.
 ![[Knowledge/Engineering/Languages/assets/css-box-model.png|600]]
-- `height` and `width` affect only the inner content box. 
-    - To change this, set `box-sizing: `
+> `height` and `width` affect **only the inner content box**, so the actual dimensions of the element will take up more space if you have padding, border and margin. To change this, set `box-sizing: border-box` to use the [alternative CSS box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#the_alternative_css_box_model).
 
 #### Display
 Boxes are either block-level or inline-level. You change this by setting:
@@ -49,17 +48,36 @@ display: inline-block;  /* Lets you set the width, height and padding/margins. *
 ```
 > When you do `display: flex` or `display: grid`, you're changing the *[inner display type](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#inner_display_type)*, meaning that the children will behave according to the [[Knowledge/Engineering/Languages/CSS#Flexbox|Flexbox]] or [[Knowledge/Engineering/Languages/CSS#Grid|Grid]] specification.
 
-Also, when you do `display: inline-flex`, you are *making the container *
+Also, when you do `display: inline-flex`, you are *making the container display inline rather than block, not the children*.
 
 ### At-Rules
-
-
-### Functions
-
+*At-rules* are special instructions.
+| Name      | Example                                                                                                               | Description                                                                                                |
+| --------- | --------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| import    | `@import "path"` or `@import url(...)`                                                                                | Brings in another stylesheet.                                                                              |
+| font-face | `@font-face { font-family: "My Font"; src: url(...) format('truetype'); }`                                            | Defines a custom font.                                                                                     |
+| media     | `@media screen and (min-width: 300px) { ... }`                                                                        | Executes a [[Knowledge/Engineering/Languages/CSS#Media Query\|media query]] to conditionally apply styles. |
+| keyframes | `@keyframes myAnim { from {...} to {...} }`. See [docs](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes). | Defines `myAnim` which you can attach to an element by doing `animation: myAnim 1s infinite;` for example.      | 
+[There are way more at-rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule).
 
 ### Pseudo-Class
+Pseudo-classes represent special states of an element that you can select for using `selector:pseudo-class`. See all of
 
 ### Pseudo-Element
+
+### Position
+
+### Media Query
+Media queries let you conditionally apply styles based on the user's screen size ([among other things](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)). This, [[Knowledge/Engineering/Languages/CSS#Flexbox|Flexbox]] and [[Knowledge/Engineering/Languages/CSS#Grid|Grid]] are the main tools for implementing [responsive web designs](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design). 
+```css
+/* If screen width >= 400px, apply style rules within. */
+@media screen and (min-width: 400px) { ... }
+@media (width <= 400px) { ... }                /* Alternative syntax. */
+
+/* Clamped dimensions. */
+@media screen and (min-width: 100px) and (max-width: 400px) { ... }
+@media (100px <= width <= 400px) { ... }       /* Alternative syntax. */
+```
 
 ## Flexbox
 
