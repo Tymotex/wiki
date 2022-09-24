@@ -8,13 +8,15 @@ kanban-plugin: basic
 
 - [ ] ### **🏆 Purpose**: Grid, Konflux.
 - [ ] #### **(10 mins)** Weekly Review.
-- [ ] **(2 hours)** Try Grid prototypes of the timetable. Write the specs for the timetable and try implement it with flexbox and grid separately.
+- [ ] **(30 mins)** Try [this](https://www.youtube.com/watch?v=68O6eOGAGqA&ab_channel=AngelaDelise) responsive CSS grid.
+- [ ] **(1 hour)** Try Grid prototypes of the timetable. Write the specs for the timetable and try implement it with flexbox and grid separately.
 - [ ] **(2 hours)** Konflux table styling.
 - [ ] **(30 mins)** Figure out and implement a standard structure for all projects.
 - [ ] **(1 hour)** Math website Figma prototype.
 - [ ] **(2 hours)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.
 - [ ] **(1 hour)** Go through Never Split the Difference and finalise notes.
 - [ ] **(20 mins)** [[Plan mum tutoring]].
+- [x] **(1 hour)** Finish learning CSS grid.
 - [x] (10 mins) Try [Obsidian Full Calendar plugin](https://github.com/davish/obsidian-full-calendar).
 
 

@@ -198,6 +198,13 @@ grid-row-end: m
 grid-area: row1 / col1 / row2 / col2;   /* Shorthand for the above 4 properties, spanning an area on the grid. */
 ```
 
+![[Knowledge/Engineering/Languages/assets/css-grid.png|1200]]
+([graphics sourced from css-tricks](https://css-tricks.com/snippets/css/complete-guide-grid/))
+
+> Just remember:
+> - 'justify' is for horizontal/x-axis, 'align' is for vertical/y-axis.
+> - 'content' is for container, 'items' is for items.
+
 ## CSS Code Style
 Some simple guidelines for writing maintainable CSS code. See [MaintainableCSS](https://maintainablecss.com/).
 - Prefer semantic class names.
