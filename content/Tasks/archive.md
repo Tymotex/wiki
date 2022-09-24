@@ -60,6 +60,13 @@ kanban-plugin: basic
 - [x] 🏆 **Purpose today**: personal finance.
 - [x] **(1.5 hours)** Man's Search for Meaning
 
+## **Saturday** *2022-09-24* (6)
+
+- [x] **(2 hours)** Read Man's Search For Meaning
+- [x] 🏆 **Purpose today**: skim CSS and grind out konflux
+- [x] **(45 mins)** Finish Grid Garden and take notes.
+- [x] **(4 hours)** Consolidate CSS notes.
+
 ***
 
 ## Archive
