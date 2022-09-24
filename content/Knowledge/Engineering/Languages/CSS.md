@@ -141,13 +141,49 @@ column-gap: 10px;
 ## Grid
 To make a **grid container**, do `display: grid` and set the number of rows and columns with `grid-template-rows` and `grid-template-columns`.
 ```css
-/* Rows/cols of the grid. */
+/* 🛠️ Rows/cols of the grid. */
 grid-template-columns: 100px 100px 100px;      /* Defines 3 columns. */
 grid-template-rows:    25% 40rem 123px 10vw;   /* Defines 4 rows. You can mix units. */
                        repeat(20%, 5);         /* Expands to 20% 20% 20% 20% 20%. */
                        100px 1fr 4fr;          /* The `fr` unit takes a fraction of the available space. */
+                       minmax(100px, auto) minmax(50px, auto); 
+                                               /* ^ `minmax` sets the min-height of the row while allowing
+                                                    larger elements to take up the space they need (auto). */
 
 grid-template: rows / cols;                    /* Shorthand for the above 2 properties. */
+
+grid-auto-columns: ...;     /* Specifies size of auto-generated columns. */
+grid-auto-rows: ...;        /* Specifies size of auto-generated rows. */
+
+/* 🤏 Gap sizes. */
+/* Just like Flexbox's `row-gap` and `column-gap`. */
+grid-row-gap: 10px;
+grid-column-gap: 10px;
+
+/* 📏 Alignment. */
+/* Just like Flexbox, Grid has `justify-content`, `align-items`, `align-content`.
+   Grid additionally has `justify-items` that Flexbox ignores. */
+justify-content: start;          /* Behaves analogously to Flexbox. Aligns along x-axis. */
+                 end;
+                 center;
+                 space-around;
+                 space-between;
+                 stretch;
+align-content:   start;          /* Behaves analogously to Flexbox. Like `justify-content`, */
+                 end;            /* but along the y-axis.                                   */
+                 center;
+                 space-around;
+                 space-between;
+                 stretch;
+align-items:     stretch;        /* Behaves analogously to Flexbox. Aligns along y-axis. */
+                 start;
+                 end;
+                 center;
+                 baseline;
+justify-items:   start;          /* Like `align-items`, but aligns along the x-axis. */
+                 end;
+                 center;
+                 stretch;
 ```
 
 Any direct child element of the grid container is a **grid item** and can be positioned on the grid using the following properties:
