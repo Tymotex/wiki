@@ -80,6 +80,16 @@ Pseudo-elements are some specific parts of an element. They're selectable with `
 | `::first-letter`        |             | 
 
 ### Position
+```css
+position: static;    /* Default val. Properties: `top`, `left`, `right`, `bottom` have no meaning. */
+          relative;  /* Like static, but the positioning properties do have meaning. */
+          absolute;  /* Takes this element out of the normal document flow. 
+                        It's positioned relative to the nearest `relative` ancestor. */
+          fixed;     /* Like absolute, but relative to the viewport. */
+          sticky;    /* Like relative and fixed. When scrolling past a sticky element,
+                        it 'becomes' fixed, otherwise it stays as relative.
+                        It 'sticks' around on the viewport after you've scrolled past it. */
+```
 
 ### Media Query
 Media queries let you conditionally apply styles based on the user's screen size ([among other things](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)). This, [[Knowledge/Engineering/Languages/CSS#Flexbox|Flexbox]] and [[Knowledge/Engineering/Languages/CSS#Grid|Grid]] are the main tools for implementing [responsive web designs](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design). 

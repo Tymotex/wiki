@@ -7,10 +7,10 @@ kanban-plugin: basic
 ## **Saturday** *2022-09-24* (6)
 
 - [ ] 🏆 **Purpose today**: skim CSS and grind out konflux
-- [ ] **(3.5 hours)** Consolidate CSS notes.
+- [x] **(4 hours)** Consolidate CSS notes.
 - [x] **(45 mins)** Finish Grid Garden and take notes.
-- [ ] **(2 hours)** Konflux table styling.
 - [ ] **(2 hours)** Finish Man's Search For Meaning
+- [ ] **(2 hours)** Konflux table styling.
 - [ ] **(30 mins)** Figure out and implement a standard structure for all projects.
 - [ ] **(1 hour)** Math website Figma prototype.
 - [ ] **(2 hours)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.
