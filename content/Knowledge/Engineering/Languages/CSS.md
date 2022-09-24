@@ -61,9 +61,23 @@ Also, when you do `display: inline-flex`, you are *making the container display 
 [There are way more at-rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule).
 
 ### Pseudo-Class
-Pseudo-classes represent special states of an element that you can select for using `selector:pseudo-class`. See all of
+Pseudo-classes represent special states of an element that you can select for using `selector:pseudo-class`. [See all of them on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes).
+| Pseudo-class selector | Description                                                            |
+| --------------------- | ---------------------------------------------------------------------- |
+| `:hover`              | When `mouseover` on an element. |
+| `:active`             | When `mousedown`-ed on an element.                                                                        |
+| `:focus`             | After an element is clicked on, or when focused on by tab.                                                                       |
+| `:first-child`        | The first element in a group of siblings. Eg. `li:first-child` selects the first `li`.                                                                       |
+| `:last-child`         | Like `first-child` but selecting the last.                                                                       |
+| `:nth-child`          | Given a linear function of `n`, selects every `f(n)` element for `n = 0, 1, ...`. Eg. `li:nth-child(2n+3`) selects 3rd, 5th, etc.                                                                        |
 
 ### Pseudo-Element
+Pseudo-elements are some specific parts of an element. They're selectable with `::pseudo-element`. [See all of them on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements).
+| Pseudo-element selector | Description |
+| ----------------------- | ----------- |
+| `::before`              |             |
+| `::after`               |             |
+| `::first-letter`        |             | 
 
 ### Position
 
