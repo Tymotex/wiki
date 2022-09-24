@@ -38,7 +38,26 @@ A collection of tricks and common things to achieve with [[Knowledge/Engineering
     transform: translateY(-50%);
     ```
 
-## Responsive
+## Images
 - [Fluid images](https://unstoppablerobotninja.com/entry/fluid-images/) to prevent images from ever overflowing: `img { max-width: 100%; }`. 
+- To make background images fit neatly into cards:
+    ```css
+    aspect-ratio: 16/9;
+    background-image: ...;
+    background-size: cover;
+    background-position: center;
+    ```
+- To make `<img>` keep its aspect ratio despite its dimensions:
+    ```css
+    width: 100px;
+    height: 100px;
+    object-fit: cover;      /* Image is clipped along its width. */
+                contain;    /* Image changes its dimension to fully fit inside the dimensions. */
+    ```
 
-
+## Misc
+- You can combine different units in a `calc` expression, for example: `height: calc(100vh - 100px)`.
+```css
+display: grid
+grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))
+```

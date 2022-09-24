@@ -93,10 +93,50 @@ Media queries let you conditionally apply styles based on the user's screen size
 @media (100px <= width <= 400px) { ... }       /* Alternative syntax. */
 ```
 
-## Flexbox
+**Note**: a big part of responsive design is just making elements shrink in width when the viewport shrinks in width. You can accomplish this with media queries, however it's cleaner to just something like this:
+```css
+width: clamp(200px, 50%, 600px);
+                    ^ preferred
+```
+Here, an element will default to a preferred width of `50%` but will fall back to 200px if the viewport is too small.
 
+## Flexbox
+Flexbox is a layout model for getting things neatly arranged on a row or column. For layout in 2-dimension, use [[Knowledge/Engineering/Languages/CSS#Grid|Grid]].
+![[Knowledge/Engineering/Languages/assets/flexbox-model.png|450]]
+To make a flex container, give it `display: flex`. 
+```css
+flex-direction: row | row-reverse | column | column-reverse;
+flex-wrap: nowrap | wrap;
+justify-content: flex-start      /* Push items to left. */
+                 flex-end        /* Push items to right. */
+                 center          /* Push items to middle. */
+                 space-between   /* Spread out with max distance between. */
+                 space-around    /* Spread out with max distance around. */
+align-items: flex-start          /* Anchor items to top of row. */
+             flex-end            /* Anchor items to bottom of row. */
+             center              /* Anchor items along a central line. */
+             baseline            /* Anchor items along the text baseline. */
+             stretch             /* Make items occupy full height. */
+align-content: flex-start        /* Anchor to top. */ 
+               flex-end          /* Anchor to bottom. */
+               center            /* Anchor to middle. */
+               space-between     /* Spread out rows with max distance between. */
+               space-around      /* Spread out rows with max distance around. */
+row-gap: 10px;
+column-gap: 10px;
+```
+![[Knowledge/Engineering/Languages/assets/flexbox-properties.png|1000]]
+([images sourced from css-tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/))
 
 ## Grid
+To make a grid container, do `display: grid`. By default, this creates a one-column grid.
+
+```css
+grid-template-columns: 100px 100px 100px;   /* Defines 3 columns */
+
+grid-column-start: n;    /* Pushes the item to the n-th column (starting from n = 1, not n = 0) */
+grid-column-end: m;     
+```
 
 
 ## CSS Code Style
