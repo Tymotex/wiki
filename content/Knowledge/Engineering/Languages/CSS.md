@@ -129,15 +129,28 @@ column-gap: 10px;
 ([images sourced from css-tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/))
 
 ## Grid
-To make a grid container, do `display: grid`. By default, this creates a one-column grid.
-
+To make a **grid container**, do `display: grid` and set the number of rows and columns with `grid-template-rows` and `grid-template-columns`.
 ```css
-grid-template-columns: 100px 100px 100px;   /* Defines 3 columns */
+/* Rows/cols of the grid. */
+grid-template-columns: 100px 100px 100px;      /* Defines 3 columns. */
+grid-template-rows:    25% 40rem 123px 10vw;   /* Defines 4 rows. You can mix units. */
+                       repeat(20%, 5);         /* Expands to 20% 20% 20% 20% 20%. */
+                       100px 1fr 4fr;          /* The `fr` unit takes a fraction of the available space. */
 
-grid-column-start: n;    /* Pushes the item to the n-th column (starting from n = 1, not n = 0) */
-grid-column-end: m;     
+grid-template: rows / cols;                    /* Shorthand for the above 2 properties. */
 ```
 
+Any direct child element of the grid container is a **grid item** and can be positioned on the grid using the following properties:
+```css
+/* Positioning in the grid. */
+grid-column-start: n;    /* Pushes the item to the n-th column (starting from n = 1, not n = 0) */
+grid-column-end: m;     
+grid-row-start: n;
+grid-row-end: m
+              span l;    /* Instead of specifying the start/end with an index, you can specify how many cells are spanned. */
+
+grid-area: row1 / col1 / row2 / col2;   /* Shorthand for the above 4 properties, spanning an area on the grid. */
+```
 
 ## CSS Code Style
 Some simple guidelines for writing maintainable CSS code. See [MaintainableCSS](https://maintainablecss.com/).

@@ -7,8 +7,8 @@ kanban-plugin: basic
 ## **Saturday** *2022-09-24* (6)
 
 - [ ] 🏆 **Purpose today**: skim CSS and grind out konflux
-- [ ] **(3 hours)** Consolidate CSS notes.
-- [ ] **(45 mins)** Finish Grid Garden and take notes.
+- [ ] **(3.5 hours)** Consolidate CSS notes.
+- [x] **(45 mins)** Finish Grid Garden and take notes.
 - [ ] **(2 hours)** Konflux table styling.
 - [ ] **(2 hours)** Finish Man's Search For Meaning
 - [ ] **(30 mins)** Figure out and implement a standard structure for all projects.
