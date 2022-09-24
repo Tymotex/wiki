@@ -6,6 +6,7 @@ kanban-plugin: basic
 
 ## **Saturday** *2022-09-24* (6)
 
+- [ ] **(2 hours)** Try Grid prototypes of the timetable. Write the specs for the timetable and try implement it with flexbox and grid separately.
 - [ ] **(2 hours)** Konflux table styling.
 - [ ] **(30 mins)** Figure out and implement a standard structure for all projects.
 - [ ] **(1 hour)** Math website Figma prototype.
