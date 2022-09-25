@@ -4,6 +4,7 @@ title: Building a Second Brain
 
 ## Tasks
 - [ ] Complete my weekly review and monthly review templates.
+- [ ] Write a script that the template invokes to generate a set of journal prompts.
 
 ## Features
 - Mobile Git synchronisation with [Termux](https://termux.dev/en/) and [Termux:Widget](https://wiki.termux.com/wiki/Termux:Widget).
