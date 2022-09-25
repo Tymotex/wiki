@@ -7,7 +7,9 @@ kanban-plugin: basic
 ## **Monday** *2022-09-26* (6)
 
 - [ ] ### 🏆 **Purpose today**: Konflux, personal finance
-- [ ] (1 hour) Implement Figma prototype Konflux.
+- [ ] **(1 hour)** Collect design inspiration for top nav, sidenav, forms, call to action.
+- [ ] **(1 hour)** Implement Figma prototype Konflux.
+- [ ] **(1 hour)** Read Rich Dad Poor Dad with laptop to take notes.
 - [ ] **(2 hours)** Find a good spreadsheet template and build your own. Use it for a while (maybe review it every weekly review?)
 - [ ] **(30 mins)** Figure out and implement a standard structure for all projects. Go through each and write down next steps and requirements.
 - [ ] **(1 hour)** Go through Never Split the Difference and finalise notes.

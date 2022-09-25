@@ -5,6 +5,8 @@ description: UI Design
 
 See https://tymz.notion.site/UI-UX-7fb9a728bfc946fcbe92ff640b371a2d.
 
+See [[Knowledge/Engineering/Full-Stack/UI Inspiration|UI inspiration]].
+
 ---
 ## Note for Developers
 Design is not fundamentally about making things pretty. The prettiness of a thing you design is often a side effect of making it usable, accessible, learnable and delightful to use. This makes design problems *engineering problems*.
