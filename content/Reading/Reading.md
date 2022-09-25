@@ -11,6 +11,11 @@ TODO: this is a cool idea: https://jamesclear.com/book-summaries. Do 3 sentence 
 TODO: this article is really worth re-reading: https://jamesclear.com/reading-comprehension-strategies. 
 
 ---
+**My favourite books**:
+- Man's Search for Meaning by Viktor Frankl.
+- Deep Work by Cal Newport.
+
+---
 ## Software Engineering
 ### Pragmatic Programmer
 [[Reading/Pragmatic Programmer|Pragmatic Programmer]] by Andy Hunt and Dave Thomas.
@@ -80,8 +85,6 @@ Ikigai by Francesc Miralles and Hector Garcia. 'Ikigai' means 'reason for being'
 ### Atomic Habits
 
 ### How to Win Friends and Influence People
-
-### 5/3/1
 
 ### Extreme Ownership
 

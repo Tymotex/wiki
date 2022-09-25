@@ -38,6 +38,7 @@ kanban-plugin: basic
 - [ ] 🏆 **Purpose today**:
 - [ ] Write tomorrow's purpose
 - [ ] **[1 hour]** Go through How to Not Die Alone and finalise notes.
+- [ ] **(30 mins)** Write down what your life's meaning encompasses.
 
 
 ## Monday 2022-09-26 (6)

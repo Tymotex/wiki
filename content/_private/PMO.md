@@ -1,3 +1,11 @@
+---
+title: PMO
+---
+
+> "He who has a *why* to live for can bear with almost any *how*" — Nietzsche.
+
+Any relapses I make are fundamentally issues with life's meaning. Being in an existential vacuum eventuates in sexual compensation.
+
 ## Things triggering PMO
 - Lying in bed for too long.
     - **Alteration**: always get up to turn off your alarm. It's unlikely you'll crawl back to bed. For naps
