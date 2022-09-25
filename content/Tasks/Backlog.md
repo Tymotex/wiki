@@ -7,6 +7,7 @@ kanban-plugin: basic
 ## Programming & Career
 
 - [ ] [[_/Writing first blog  and publishing on Medium.]]
+- [ ] Get started with your procedural generation project.
 - [ ] **Learn Kubernetes** [the hard way](https://github.com/kelseyhightower/kubernetes-the-hard-way)
 - [ ] Attend a programming meetup or other meetup on **meetup.com.**
 - [ ] Try out [Gource](https://www.youtube.com/watch?v=DDhPBtzRuLY&ab_channel=MikeM%C3%B8llerNielsen)

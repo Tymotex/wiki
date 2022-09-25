@@ -2,26 +2,14 @@
 title: Building a Second Brain
 ---
 
-- Go through each book in my reading list and at least write a few sentences for each, explaining the main takeaways.
-
-## Automation Ideas
-- Automate the initialisation of a new project with a Python/Rust/Go/Ruby script.
-	- Use Tiago's preflight checklist:
-		- Reminder: projects should always have an MVP definition, starting time and deadline. They're a big investment of time and energy and should be clearly aligned with your values.
-		- What do you want to learn?
-		- What challenges can you foresee?
-		- What (further) research needs to be done?
-		- What is the MVP? (For non-output based products, what is the success criteria?)
-		- What are the stretch goals?
-	- Use Tiago's postmortem checklist:
-		- What did you learn?
-		- What did you do well?
-		- What could you have done better?
+## Tasks
+- [ ] Complete my weekly review and monthly review templates.
 
 ## Features
 - Mobile Git synchronisation with [Termux](https://termux.dev/en/) and [Termux:Widget](https://wiki.termux.com/wiki/Termux:Widget).
     - [Inspired from this blog post](https://werzum.github.io/tech/2022/02/13/Obsidian-Mobile-Sync.html). I wrote a simple shell script that can be executed manually in one press through Termux:Widget. All the shell script does it run git commands to pull and then push whatever changes I make through Obsidian.
-    - The Git syncing could be accomplished through [Tasker,](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&hl=en_AU&gl=US) I believe.
+    - The Git syncing could be accomplished through [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&hl=en_AU&gl=US) as well, I believe.
+    - Using a service managed by `systemctl` which automatically runs a git commands to sync to remote on system shutdown.
 - Python CLI that formats the task board when Obsidian starts up. It can also be invoked with a custom hotkey, `ctrl + alt + f`, made possible by `obsidian-shellcommands`.
     - Moves all incomplete tasks from previous days into today's task lane. This eliminates you having to manually drag cards over to today.
     - Creates the next $n$ days' task lanes and populates them with default tasks. For example, you can schedule a morning routine task for every day or a weekly review task for every Sunday, etc.

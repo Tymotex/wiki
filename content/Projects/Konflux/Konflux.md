@@ -2,6 +2,12 @@
 title: Konflux
 ---
 
+## Tasks
+- [ ] Refactor TimetableGrid.tsx and write comments in that file and the SCSS file.
+- [ ] Fix `justify-content` and overflow issue. Just use JavaScript to detect when the overflow happens and then toggle on `justify-content: flex-start;`.
+- [ ] 
+
+
 1. Learn Dart and Flutter!
     1. ~~Set up Flutter and get the hello world app working on physical Android.~~
     2. ~~Complete the **Build your first flutter app** 2 codelabs. Take notes as you go.~~
@@ -27,6 +33,7 @@ Challenges:
     - It’s important to get it right the first time, else you’ll move stuff around unnecessarily and waste time.
     - Should’ve ran through a complete user flow in my prototype and critiqued it before I built it out. I wasted time iterating on it as I developed the code instead of iterating on it through Figma.
 - Wasted so much fucking time on working with the data models… I need to figure out the data flow properly.
+- Getting the dual timetables to be centered on the page and to wrap when the viewport shrinks. This required nesting flexbox layers and grid layers.
 
 ---
 
