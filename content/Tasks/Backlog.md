@@ -24,6 +24,7 @@ kanban-plugin: basic
 - [ ] [[_/WebAssembly Rust Snake tutorial]]
 - [ ] [[_/Write email thanking Josh Comeau]]
 - [ ] Open an issue/PR for `obsidian-kanban` for better keyboard accessibility (and power user agility).
+- [ ] Get Australian citizenship
 - [ ] **Python personal finance tracking.**
 
 
@@ -36,6 +37,7 @@ kanban-plugin: basic
 - [ ] Read a book on **writing.**
 - [ ] Schedule weekly and monthly reviews of your life.
 - [ ] Pick out the most useful articles from **moneysmart.gov.au** and read them.
+- [ ] Find some big goal for mum and dad. Maybe the next cruise? Perhaps time it for the end of 2023?<br><br>(Inspired by Man's Search for Meaning)
 
 
 ## Hobbies

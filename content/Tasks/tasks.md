@@ -3,7 +3,7 @@ kanban-plugin: basic
 ---
 
 ## **Monday** *2022-09-26* (6)
-
+- [ ] Make a weekly diet plan and give it to mum
 - [ ] ### 🏆 **Purpose today**: personal finance
 - [ ] Book all Cairns experiences.
 - [ ] **(2 hours)** Find a good spreadsheet template and build your own. Use it for a while (maybe review it every weekly review?)
@@ -21,6 +21,7 @@ kanban-plugin: basic
 
 - [ ] ### **🏆 Purpose**: personal finance
 - [ ] **[1 hour]** Go through How to Not Die Alone and finalise notes.
+- [ ] **(30 mins)** Write down what your life's meaning encompasses.
 
 ## **Thursday** *2022-09-29* (6)
 
