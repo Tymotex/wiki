@@ -21,6 +21,7 @@ def main(tasks_file_path: str, archived_tasks_file_path: str, num_future_dates: 
     task_manager = TaskManager(archived_tasks_file_path, tasks_file_path)
 
     task_manager.format(num_future_dates)
+    print(Fore.GREEN + f" → Done formatting. ✨" + Style.RESET_ALL) 
 
 if __name__ == "__main__":
     try:

@@ -24,7 +24,7 @@ class TaskManager:
         last_column_date = self._date_today + timedelta(days=num_future_dates)
         self._tasks_buffer.add_columns_up_to_date(self._date_today, last_column_date)
 
-        # Write new states to files.
+        # Write the new states to files.
         self._tasks_buffer.commit_changes()
         self._archived_tasks_buffer.commit_changes(reverse=True)
 
