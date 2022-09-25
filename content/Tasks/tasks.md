@@ -25,7 +25,7 @@ kanban-plugin: basic
 
 ## **Saturday** *2022-09-24* (6)
 
-- [ ] 🏆 **Purpose today**: skim CSS and grind out konflux
+- [x] 🏆 **Purpose today**: skim CSS and grind out konflux
 - [ ] **(1 hour)** Go through Never Split the Difference and finalise notes.
 - [ ] Write tomorrow's purpose
 - [ ] **(1 hour)** Install Linux VM on laptop, then VSCode with settings synced.
@@ -43,6 +43,7 @@ kanban-plugin: basic
 ## **Monday** *2022-09-26* (6)
 
 - [ ] **[1 hour]** Go through The Male Advantage and finalise notes.
+- [ ] Make a weekly diet plan and give it to mum.
 
 
 ## **Tuesday** *2022-09-27* (6)
