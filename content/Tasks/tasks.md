@@ -2,26 +2,16 @@
 kanban-plugin: basic
 ---
 
-## **Sunday** *2022-09-25* (6)
-
-- [x] ### **🏆 Purpose**: Grid, Konflux.
-- [ ] **(30 mins)** Style the Konflux timetables according to responsive rules.
-- [ ] **(30 mins)** Figure out and implement a standard structure for all projects. Go through each and write down next steps and requirements.
-- [ ] **(1 hour)** Go through Never Split the Difference and finalise notes.
-- [ ] **(1 hour)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.<br><br>Add an old notes disclaimer at the top of each notes page.<br><br>Be ruthless and only keep the most important notes. Archive the rest.
-- [ ] **(1 hour)** Math website Figma prototype.
-- [ ] **(20 mins)** [[Plan mum tutoring]].
-- [x] **(40 mins)** Try Grid prototypes of the timetable. Write the specs for the timetable and try implement it with flexbox and grid separately.
-- [x] #### **(10 mins)** Weekly Review.
-- [x] **(30 mins)** Try [this](https://www.youtube.com/watch?v=68O6eOGAGqA&ab_channel=AngelaDelise) responsive CSS grid.
-- [x] **(1 hour)** Finish learning CSS grid.
-- [x] (10 mins) Try [Obsidian Full Calendar plugin](https://github.com/davish/obsidian-full-calendar).
-
 ## **Monday** *2022-09-26* (6)
 
 - [ ] ### 🏆 **Purpose today**: personal finance
 - [ ] Book all Cairns experiences.
 - [ ] **(2 hours)** Find a good spreadsheet template and build your own. Use it for a while (maybe review it every weekly review?)
+- [ ] **(30 mins)** Figure out and implement a standard structure for all projects. Go through each and write down next steps and requirements.
+- [ ] **(1 hour)** Go through Never Split the Difference and finalise notes.
+- [ ] **(1 hour)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.<br><br>Add an old notes disclaimer at the top of each notes page.<br><br>Be ruthless and only keep the most important notes. Archive the rest.
+- [ ] **(1 hour)** Math website Figma prototype.
+- [ ] **(20 mins)** [[Plan mum tutoring]].
 
 ## **Tuesday** *2022-09-27* (6)
 
@@ -144,6 +134,10 @@ kanban-plugin: basic
 - [ ] ### **🏆 Purpose**:
 
 ## **Tuesday** *2022-10-25* (6)
+
+- [ ] ### **🏆 Purpose**:
+
+## **Wednesday** *2022-10-26* (6)
 
 - [ ] ### **🏆 Purpose**:
 

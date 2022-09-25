@@ -67,6 +67,16 @@ kanban-plugin: basic
 - [x] **(45 mins)** Finish Grid Garden and take notes.
 - [x] **(4 hours)** Consolidate CSS notes.
 
+## **Sunday** *2022-09-25* (6)
+
+- [x] ### **🏆 Purpose**: Grid, Konflux.
+- [x] **(1 hour)** Style the Konflux timetables according to responsive rules.
+- [x] **(40 mins)** Try Grid prototypes of the timetable. Write the specs for the timetable and try implement it with flexbox and grid separately.
+- [x] #### **(10 mins)** Weekly Review.
+- [x] **(30 mins)** Try [this](https://www.youtube.com/watch?v=68O6eOGAGqA&ab_channel=AngelaDelise) responsive CSS grid.
+- [x] **(1 hour)** Finish learning CSS grid.
+- [x] (10 mins) Try [Obsidian Full Calendar plugin](https://github.com/davish/obsidian-full-calendar).
+
 ***
 
 ## Archive
