@@ -3,6 +3,7 @@ kanban-plugin: basic
 ---
 
 ## **Monday** *2022-09-26* (6)
+
 - [ ] Make a weekly diet plan and give it to mum
 - [ ] ### 🏆 **Purpose today**: personal finance
 - [ ] Book all Cairns experiences.
