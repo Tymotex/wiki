@@ -15,8 +15,14 @@ title: Personal Finance Automation
     - Do it when there's no API available.
 - [ ] Can I pull bank account and transactions CSV data from ING? Can I do it every 24 hours or at least on system startup or something?
 - [ ] Can I scrape the account balance from UniSuper?
+- [ ] Set this system up for your parents as well. Ideally, they should be able to look at it and understand.
 
 **Note**: first, I should try manually tracking personal finances and then seek to automate the pain points.
+
+## Goals
+I want to feel in control of my finances. This might be among the greatest sources of stress in my life if left uncontrolled.
+
+I want to be extremely aggressive with saving. I want almost all of my spending to be allocated towards things that appreciate (investments) or things that help me become more productive or genuinely happier (capital).
 
 ## Requirements
 - Automatic categorisation.
