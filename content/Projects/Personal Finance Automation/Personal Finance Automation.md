@@ -3,6 +3,7 @@ title: Personal Finance Automation
 ---
 ## Next Steps
 - [ ] Find a good spreadsheet template and build your own. Use it for a while.
+- [ ] What is a trust?
 
 ## Questions
 - [x] Should I track on a spreadsheet or app?

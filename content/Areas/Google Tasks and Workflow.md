@@ -7,6 +7,7 @@ title: Google Tasks and Workflow
 - [ ] Finish the Site Reliability Engineering textbook.
 - [ ] After saving up money, buy a messenger bag.
 - [ ] Make a list of things to do after work.
+- [ ] Get a credit card to build credit history and access rewards and set up automatic payments.
 
 ## Workflow Checklist
 - Use a tiled window manager such as i3.

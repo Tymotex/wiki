@@ -72,6 +72,7 @@ Remember the reasons why you're refusing to be a wanker.
 ## Relapses
 ### 26th Sep
 I was fine until I opened my laptop and searched up "Can't stop thinking about sex" and clicked into a Quora post from a girl about it. That drove me mad with lust and then I relapsed.
+**I am so fucking disgusted with what I did****. I can't keep doing this. Life is so meaningless**.
 
 ### 22nd Sep
 I didn't even try... I just got annoyed at the thoughts and gave up. It was distracting me from studying, I reasoned, and then I just gave up.

@@ -84,6 +84,7 @@ kanban-plugin: basic
 - [x] **(2.5 hours)** Read Rich Dad Poor Dad with laptop to take notes.
 - [x] **(1 hour)** Collect design inspiration for top nav, sidenav, forms, call to action.
 - [x] **(30 mins)** Fix Konflux bug
+- [x] **(1.5 hours)** Get to page 100 in Rich Dad Poor Dad
 
 ***
 
