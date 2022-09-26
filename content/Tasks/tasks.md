@@ -24,7 +24,7 @@ kanban-plugin: basic
 ## **Tuesday** *2022-09-27* (6)
 
 - [ ] ### **🏆 Purpose**: konflux
-- [ ] Meeting with dad to discuss requirements for the quiz.
+- [ ] Meeting with dad to discuss requirements for the quiz. Show dad Khan academy quiz.
 
 
 ## **Wednesday** *2022-09-28* (6)

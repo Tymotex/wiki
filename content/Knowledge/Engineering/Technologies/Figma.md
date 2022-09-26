@@ -45,22 +45,21 @@ ctrl + alt + k     # Creates a component that contains all highlighted elements
 ### **Layers**
 All your design elements appear in the layers panel and will be nested within other elements such as *frames*. Each design element has a symbol that tells you what type of element it is:
 - ***Frames** —* usually the top-level container for everything else
-    ![[Knowledge/Engineering/Technologies/assets/frame.svg]]
+    ![[Knowledge/Engineering/Technologies/assets/frame.svg|40]]
 - **[*Groups*](https://www.figma.com/best-practices/groups-versus-frames/)** —  a container for multiple elements, letting them be moved and resized uniformly and organise your layers
-    ![[Knowledge/Engineering/Technologies/assets/group.svg]]
+    ![[Knowledge/Engineering/Technologies/assets/group.svg|40]]
 - ***Components*** — reusable design elements in your *assets*
-    ![[Knowledge/Engineering/Technologies/assets/instance.svg]]
-
+    ![[Knowledge/Engineering/Technologies/assets/instance.svg|40]]
 - ***Instance*** — instantiations of components
-    ![[Knowledge/Engineering/Technologies/assets/component.svg]]
+    ![[Knowledge/Engineering/Technologies/assets/component.svg|40]]
 - **Text**
-    ![[Knowledge/Engineering/Technologies/assets/text.svg]]
+    ![[Knowledge/Engineering/Technologies/assets/text.svg|40]]
 - **Shape**
-    ![[Knowledge/Engineering/Technologies/assets/shape.svg]]
+    ![[Knowledge/Engineering/Technologies/assets/shape.svg|40]]
 - **Image**
-    ![[Knowledge/Engineering/Technologies/assets/image.svg]]
+    ![[Knowledge/Engineering/Technologies/assets/image.svg|40]]
 - **GIF**
-    ![[Knowledge/Engineering/Technologies/assets/gif.svg]]
+    ![[Knowledge/Engineering/Technologies/assets/gif.svg|40]]
 You can have multiple *[pages](https://help.figma.com/hc/en-us/articles/360038511293)* in a single Figma file. Each page has its own canvas.
 
 ## Right Panel
