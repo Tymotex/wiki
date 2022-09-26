@@ -14,9 +14,6 @@ kanban-plugin: basic
 - [ ] Make a weekly diet plan and give it to mum
 - [ ] **(1 hour)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.<br><br>Add an old notes disclaimer at the top of each notes page.<br><br>Be ruthless and only keep the most important notes. Archive the rest.
 - [ ] **(20 mins)** [[Plan mum tutoring]].
-<<<<<<< HEAD
-- [ ] **(1.5 hours)** Get to page 100 in Rich Dad Poor Dad
-=======
 - [x] ### 🏆 **Purpose today**: Konflux, personal finance
 - [x] **(2 hours)** Math website Figma prototype and pick brand. Try illustrator.
 - [x] **(2.5 hours)** Read Rich Dad Poor Dad with laptop to take notes.
@@ -28,16 +25,13 @@ kanban-plugin: basic
 ## **Tuesday** *2022-09-27* (6)
 
 - [ ] ### **🏆 Purpose**: konflux
-<<<<<<< HEAD
 - [ ] Write a page for your principles.
 - [ ] I feel so lacking in concrete long-term goals that I care deeply about (that are achievable in 1-2 years, for example.)<br><br>Wtf even are my goals for this year??<br><br>Building financial intelligence should be a big focus for the remainder of your time.
 - [ ] Buy an underwater phone pouch.
 - [ ] **(2 hours)** Read more about law, filling in your definitions. Specifically learn more about tax law.<br><br>Consider making a project out of this.
 - [ ] Add to PMO: I am so fucking disgusted with what I did. I can't keep doing this. Life is so meaningless.
-=======
+- [ ] **(1.5 hours)** Get to page 100 in Rich Dad Poor Dad
 - [ ] Meeting with dad to discuss requirements for the quiz. Show dad Khan academy quiz.
->>>>>>> c4b1efb48a0da387640a569368e422b41b20449c
-
 
 ## **Wednesday** *2022-09-28* (6)
 
