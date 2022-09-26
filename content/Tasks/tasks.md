@@ -7,23 +7,24 @@ kanban-plugin: basic
 ## **Monday** *2022-09-26* (6)
 
 - [ ] ### 🏆 **Purpose today**: Konflux, personal finance
-- [ ] **(1 hour)** Collect design inspiration for top nav, sidenav, forms, call to action.
-- [ ] **(1 hour)** Implement Figma prototype Konflux.
+- [ ] **(2 hours)** Math website Figma prototype and pick brand. Try illustrator.
 - [ ] **(1 hour)** Read Rich Dad Poor Dad with laptop to take notes.
 - [ ] **(2 hours)** Find a good spreadsheet template and build your own. Use it for a while (maybe review it every weekly review?)
+- [ ] **(1 hour)** Implement Figma prototype Konflux.
 - [ ] **(30 mins)** Figure out and implement a standard structure for all projects. Go through each and write down next steps and requirements.
 - [ ] **(1 hour)** Go through Never Split the Difference and finalise notes.
 - [ ] Book all Cairns experiences.
 - [ ] Make a weekly diet plan and give it to mum
 - [ ] **(1 hour)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.<br><br>Add an old notes disclaimer at the top of each notes page.<br><br>Be ruthless and only keep the most important notes. Archive the rest.
-- [ ] **(1 hour)** Math website Figma prototype.
 - [ ] **(20 mins)** [[Plan mum tutoring]].
+- [x] **(1 hour)** Collect design inspiration for top nav, sidenav, forms, call to action.
 - [x] **(30 mins)** Fix Konflux bug
 
 
 ## **Tuesday** *2022-09-27* (6)
 
 - [ ] ### **🏆 Purpose**: konflux
+- [ ] Meeting with dad to discuss requirements for the quiz.
 
 
 ## **Wednesday** *2022-09-28* (6)
