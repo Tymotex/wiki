@@ -13,6 +13,5 @@ title: Weekly Review
     - [ ] Determine the purpose of each day.
 - [ ] Look at finances/. 
     - [ ] Add super balance.
-    - [ ] 
-    - What can you cut?
-    - What was unnecessary?
+    - [ ] Add investments balance.
+    - [ ] Determine what expenses can be cut.
