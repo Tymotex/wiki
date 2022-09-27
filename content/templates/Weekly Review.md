@@ -11,6 +11,8 @@ title: Weekly Review
 - [ ] Decide on priorities over next week. Which project will you focus on most?
     - [ ] Schedule tasks through the week.
     - [ ] Determine the purpose of each day.
+
+After starting work:
 - [ ] Look at finances/. 
     - [ ] Add super balance.
     - [ ] Add investments balance.
