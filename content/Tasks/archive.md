@@ -86,6 +86,13 @@ kanban-plugin: basic
 - [x] **(30 mins)** Fix Konflux bug
 - [x] **(1.5 hours)** Get to page 100 in Rich Dad Poor Dad
 
+## **Tuesday** *2022-09-27* (6)
+
+- [x] ### **🏆 Purpose**: personal finance and learn about law and read
+- [x] **(3 hours)** Find a good spreadsheet template and build your own. Use it for a while (maybe review it every weekly review?)
+- [x] **(2.5 hours)** Finish Rich Dad Poor Dad
+- [x] Write a page for your principles.
+
 ***
 
 ## Archive
