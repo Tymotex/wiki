@@ -3,8 +3,10 @@ title: Building a Second Brain
 ---
 
 ## Tasks
+- [ ] How do I stay on top of project deadlines? Idea: add a default card to each day that links to deadlines (maybe in the 'Purpose' card?).
 - [ ] Complete my weekly review and monthly review templates.
-- [ ] Write a script that the template invokes to generate a set of journal prompts.
+- [ ] Write a Python script that generates a set of journal prompts.
+- [ ] Make the task formatter increment a counter tag that shows how many times a task has been pushed along.
 
 ## Features
 - Mobile Git synchronisation with [Termux](https://termux.dev/en/) and [Termux:Widget](https://wiki.termux.com/wiki/Termux:Widget).
