@@ -64,3 +64,6 @@ Your property is exempt from capital gains tax if you're an Australian resident 
 3. Get a conveyancer to review the contract.
 
 
+---
+> "Job, walk or drive a certain area once a month for 10 minutes. I have found some of my best real estate investments doing this. I will jog a certain neighbourhood for a year and look for change." — Robert Kiyosaki, *Rich Dad Poor Dad*
+
