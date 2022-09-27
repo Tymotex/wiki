@@ -32,6 +32,7 @@ kanban-plugin: basic
 - [ ] ### **🏆 Purpose**: konflux
 - [ ] **(30 mins)** Write down what your life's meaning encompasses.
 - [ ] Write notes on the fundamentals of form for each of the 4 main powerlifting lifts.
+- [ ] Complete week 1 of [EdX](https://learning.edx.org/course/course-v1:BerkeleyX+Fin101x+3T2019/home).
 
 
 ## **Thursday** *2022-09-29* (6)

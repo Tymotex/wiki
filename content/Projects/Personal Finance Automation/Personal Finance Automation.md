@@ -1,8 +1,12 @@
 ---
 title: Personal Finance Automation
 ---
+
 ## Next Steps
-- [ ] Find a good spreadsheet template and build your own. Use it for a while.
+- [x] Find a good spreadsheet template and build your own. Use it for a while.
+- Spreadsheet tasks
+    - [ ] Add data validation dropdowns.
+    - [ ] Highlight spending transactions as red and income transactions as green.
 - [ ] What is a trust?
 
 ## Questions
@@ -14,8 +18,10 @@ title: Personal Finance Automation
         - Decoupling yourself from the tracking of expenses makes you less likely to be mindful about your spending.
 - [x] Screen scraping vs using an API?
     - Do it when there's no API available.
-- [ ] Can I pull bank account and transactions CSV data from ING? Can I do it every 24 hours or at least on system startup or something?
-- [ ] Can I scrape the account balance from UniSuper?
+- [x] Can I pull bank account and transactions CSV data from ING? Can I do it every 24 hours or at least on system startup or something?
+    - Doesn't seem possible with their APIs 🙁. Screen-scraping is an option but I'd have to get past the keypad auth.
+- [x] Can I scrape the account balance from UniSuper?
+    - Doubt it, but I can screen-scrape.
 - [ ] Set this system up for your parents as well. Ideally, they should be able to look at it and understand.
 
 **Note**: first, I should try manually tracking personal finances and then seek to automate the pain points.
@@ -37,3 +43,9 @@ I want to be extremely aggressive with saving. I want almost all of my spending 
 ## Resources
 - [Scraping data from your bank in Python](https://www.neilgrogan.com/bank-tx-py/)
 - [Excel dashboard](https://www.youtube.com/watch?v=MRtHNqafufg&ab_channel=MyOnlineTrainingHub).
+- [Celes Spreadsheet](https://docs.google.com/spreadsheets/d/1Jm0-n4TP98Vb5FkYKAZIqYOxO1rE9DJV7dWo_zFO31E/copy)
+
+---
+## Examples
+
+
