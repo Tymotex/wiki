@@ -10,6 +10,7 @@ kanban-plugin: basic
 - [ ] **(3 hours)** Find a good spreadsheet template and build your own. Use it for a while (maybe review it every weekly review?)
 - [ ] **(2 hours)** Finish Rich Dad Poor Dad
 - [ ] **(45 mins)**<br>I feel so lacking in concrete long-term goals that I care deeply about (that are achievable in 1-2 years, for example.)<br><br>Wtf even are my goals for this year??<br><br>Building financial intelligence should be a big focus for the remainder of your time.
+- [ ] Ask mum if I can read a credit report.
 - [ ] Book all Cairns experiences.
 - [ ] Write a page for your principles.
 - [ ] Buy an underwater phone pouch.
@@ -22,6 +23,8 @@ kanban-plugin: basic
 - [ ] **(45 mins)** Make a weekly diet plan and give it to mum.
 - [ ] **(20 mins)** [[Plan mum tutoring]].
 - [ ] **(1 hour)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.<br><br>Add an old notes disclaimer at the top of each notes page.<br><br>Be ruthless and only keep the most important notes. Archive the rest.
+- [ ] Try Mint. Just speedrun setting it up.
+- [ ] Find an investing resource to read/watch.
 
 
 ## **Wednesday** *2022-09-28* (6)

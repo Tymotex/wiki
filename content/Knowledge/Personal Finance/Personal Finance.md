@@ -17,11 +17,12 @@ description: Personal Finance
 
 1. Track your spending. Know exactly how much you spent on dining out, online orders, transport, etc.
     - Collect all receipts and exploit tax deductions when you file your [[Knowledge/Personal Finance/Tax Return|tax return]].
-2. Emergency funds. 
-3. Consolidate super accounts and minimise fees.
-4. Insurance.
+2. Set up an emergency fund lasting ~3 months that can provide a buffer for unexpected expenses..
+3. Consolidate super accounts and minimise management fees.
+4. Insurance: consider health, LTD, life, renter/homeowner, and car insurance.
 5. Save aggressively and invest.
 
-TODO: read https://www.investopedia.com/best-resources-for-improving-financial-literacy-5091689
-TODO: try Mint.
-TODO: find a complete Investopedia.
+---
+## Resources
+- Investopedia
+- Mr. Money Moustache.
