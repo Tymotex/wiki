@@ -3,7 +3,7 @@ title: Microservice
 description: Microservice
 ---
 
-*Microservice architecture* aims split off an application's set of functionalities into small, specialised [[Knowledge/Engineering/Cloud/SaaS|services]] that run inside [[Knowledge/Engineering/DevOps/Containers|containers]].
+*Microservice architecture* aims split off an application's set of functionalities into small, specialised [[Knowledge/Engineering/Cloud/SaaS|services]] that run inside [[Knowledge/Engineering/DevOps/Containers|containers]]. In this architecture, "*change is a first-class design consideration*" (from the 'Fundamentals of Software Architecture').
 
 Microservice architectures try to solve scaling challenges faced by [[Knowledge/Engineering/Architecture/Monolith|monolithic]] applications.
 - When some functionality in your monolithic app receives significantly more traffic than another, you can't really scale that functionality up independently. You'd have to deploy another instance of your whole monolithic app. In microservice architectures, when service $A$ is experiencing a lot of traffic, you simply spawn another instance of service $A$.

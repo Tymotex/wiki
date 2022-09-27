@@ -9,6 +9,7 @@ title: Google Tasks and Workflow
 - [ ] Make a list of things to do after work.
 - [ ] Get a credit card to build credit history and access rewards and set up automatic payments.
 - [ ] Find and visit a financial planner/adviser at least once. The purpose of this is to sanity-check that my investment decision-making is correct.
+- [ ] Start reading Code Complete.
 
 ## Workflow Checklist
 - Use a tiled window manager such as i3.
