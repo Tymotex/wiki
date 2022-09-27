@@ -11,30 +11,30 @@ kanban-plugin: basic
 - [x] **(2.5 hours)** Finish Rich Dad Poor Dad
 - [ ] Ask mum if I can read a credit report.
 - [ ] Book all Cairns experiences.
-- [ ] **(45 mins)**<br>I feel so lacking in concrete long-term goals that I care deeply about (that are achievable in 1-2 years, for example.)<br><br>Wtf even are my goals for this year??<br><br>I really **really** need deadlines. How can I enforce them?<br><br>Building financial intelligence should be a big focus for the remainder of your time.
-- [ ] Write a page for your principles.<br><br>I love my family and will do anything for them. I know that becoming the best version of myself is the most reliable way to make them and myself happy.<br><br>I am conscientious, orderly and disciplined.<br><br>I am stoic.<br><br>I want to be wealthy because I want to have the capacity to enjoy life to the fullest and minimise unnecessary suffering in my loved ones.<br><br>I am a lifelong learner.<br><br>I am deeply open-minded.<br><br>I am fearless.<br><br>I am physically strong.<br><br>I am not a lavish spender and will always prefer to not spend money on things that don't directly improve my life or capacity to learn and work.<br><br>I love challenge and suffering.<br><br>I am a giving person, even when I am the most deprived.<br><br>Who are my heroes? Who do I aspire to be like?
-- [ ] I feel so lacking in concrete long-term goals that I care deeply about (that are achievable in 1-2 years, for example.)<br><br>Wtf even are my goals for this year??<br><br>Building financial intelligence should be a big focus for the remainder of your time.<br><br>I need some fucking deadlines otherwise nothing will get done.<br><br>Investing:<br>Do a mock run through the full process of buying a house. Pretend as if you were a real buyer.<br><br>Actually buy stonks.<br><br>I think I could put my personal finance automation project on hold. I don't have income and I barely have expenses. I can probably go for the rest of this year without buying anything beyond transportation and going out with friends rarely.
+- [x] Write a page for your principles.
 - [ ] Buy an underwater phone pouch.
-- [ ] **(2 hours)** Read more about law, filling in your definitions. Specifically learn more about tax law.<br><br>Consider making a project out of this.
 - [ ] **(20 mins)** Start reading software architecture.
 - [ ] **(20 mins)** Meeting with dad to discuss requirements for the quiz. Show dad Khan academy quiz.
 - [ ] **(1 hour)** Implement Figma prototype Konflux.
 - [ ] **(30 mins)** Figure out and implement a standard structure for all projects. Go through each and write down next steps and requirements.
 - [ ] **(45 mins)** Make a weekly diet plan and give it to mum.
-- [ ] **(20 mins)** [[Plan mum tutoring]].
+- [ ] **(30 mins)** Plan mum tutoring. Research how to get started.
 - [ ] **(1 hour)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.<br><br>Add an old notes disclaimer at the top of each notes page.<br><br>Be ruthless and only keep the most important notes. Archive the rest.
-- [ ] Find an investing resource to read/watch.
+- [ ] Find an investing resource to read/watch. Maybe that Udemy course?
 
 
 ## **Wednesday** *2022-09-28* (6)
 
 - [ ] ### **🏆 Purpose**: Just get through all your todos. Don't worry about anything else.
+- [ ] **(45 mins)**<br>I feel so lacking in concrete long-term goals that I care deeply about (that are achievable in 1-2 years, for example.)<br><br>Wtf even are my goals for this year??<br><br>I really **really** need deadlines. How can I enforce them?<br><br>Building financial intelligence should be a big focus for the remainder of your time.<br><br>I feel so lacking in concrete long-term goals that I care deeply about (that are achievable in 1-2 years, for example.)<br><br>Wtf even are my goals for this year??<br><br>Building financial intelligence should be a big focus for the remainder of your time.<br><br>I need some fucking deadlines otherwise nothing will get done.<br><br>Investing:<br>Do a mock run through the full process of buying a house. Pretend as if you were a real buyer.<br><br>Actually buy stonks.<br><br>I think I could put my personal finance automation project on hold. I don't have income and I barely have expenses. I can probably go for the rest of this year without buying anything beyond transportation and going out with friends rarely.
 - [ ] **(30 mins)** Write down what your life's meaning encompasses.
+- [ ] **(2 hours)** Read more about law, filling in your definitions. Specifically learn more about tax law.<br><br>Consider making a project out of this.
 - [ ] **(40 mins)** Go through **Rich Dad Poor Dad** and finalise notes.
 - [ ] **(40 mins)** Go through **Deep Work** and finalise notes.
 - [ ] **(1 hour)** Go through **Never Split the Difference** and finalise notes.
-- [ ] Write notes on the fundamentals of form for each of the 4 main powerlifting lifts.
+- [ ] **(45 mins)**<br>Write notes on the fundamentals of form for each of the 4 main powerlifting lifts.
 - [ ] Complete week 1 of [EdX](https://learning.edx.org/course/course-v1:BerkeleyX+Fin101x+3T2019/home).
+- [ ] **(1.5 hours)** Finish Man's Search For Meaning
 
 
 ## **Thursday** *2022-09-29* (6)

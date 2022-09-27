@@ -3,6 +3,7 @@ title: Principles
 ---
 
 ## Principles
+Following these principles makes my life meaningful.
 1. I love my family and will do anything for them. I know that becoming the best version of myself is the most reliable way to make them and myself happy.
 2. I am conscientious, orderly and disciplined.
 3. I am stoic.
