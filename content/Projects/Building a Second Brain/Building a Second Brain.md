@@ -7,6 +7,7 @@ title: Building a Second Brain
 - [ ] Complete my weekly review and monthly review templates.
 - [ ] Write a Python script that generates a set of journal prompts.
 - [x] Make the task formatter increment a counter tag that shows how many times a task has been pushed along.
+- [ ] Write a Python script that prints statistics of the wiki to the index page. Eg. Number of pages, number of words, 
 
 **Ideas**:
 - Have a kanban board where each column is one of your projects, ordered from left-to-right in priority order. The tasks in each column follow the same format but are sorted by deadline.

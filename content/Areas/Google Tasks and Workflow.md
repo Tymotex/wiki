@@ -26,4 +26,5 @@ title: Google Tasks and Workflow
     - Set up the daily notes and the template you'll use to log your accomplishments each day.
 
 **Notes**:
-- Collect kudos and achievements in Obsidian as well.
+- You **must** document your and achievements well. Do this in Obsidian as well. Do this at least on a weekly basis. You'll need this for performance reviews and getting future roles
+- 
