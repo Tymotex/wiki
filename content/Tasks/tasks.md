@@ -12,6 +12,7 @@ kanban-plugin: basic
 - [x] Find an investing resource to read/watch. Maybe that Udemy course?
 - [x] **(30 mins)**<br>Find possible ways to get clients for mum.<br>#project
 - [ ] **(1 hour)**<br>List out everything in mum's portfolio<br>#project
+- [ ] **(30 mins)**<br>Apply to those 2 airtasker listings.<br>#project
 - [ ] Apply Eleuphrat.
 - [ ] **(1.5 hours)** Finish Man's Search For Meaning
 - [ ] **(40 mins)** Go through **Rich Dad Poor Dad** and finalise notes.
