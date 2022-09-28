@@ -36,7 +36,6 @@ kanban-plugin: basic
 
 ## [[Reading/Reading|Reading]]
 
-- [ ] **(1 hour)**<br>Nutrition deep-dive<br>#reading #recurring
 - [ ] **(45 mins)**<br>Read Spark<br>#reading #recurring
 - [ ] **(45 mins)**<br>Read On Writing Well.<br>#reading #recurring
 - [ ] **(45 mins)**<br>Read The Obstacle Is the Way.<br>#reading #recurring
@@ -46,10 +45,17 @@ kanban-plugin: basic
 - [ ] **(45 mins)**<br>Read The Selfish Gene.<br>#reading #recurring
 
 
+## Dieting
+
+- [ ] **(1 hour)**<br>Nutrition deep-dive<br>#reading #recurring
+- [ ] **(1 hour)**<br>What can I eat to bulk?<br>#project
+- [ ] **(15 mins)**<br>Find a new recipe to try.<br>#project #recurring
+
+
 
 
 %% kanban:settings
 ```
-{"kanban-plugin":"basic"}
+{"kanban-plugin":"basic","lane-width":320}
 ```
 %%
