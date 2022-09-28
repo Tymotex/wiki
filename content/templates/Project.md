@@ -7,7 +7,6 @@ title: {{title}}
 ## Tasks
 
 ## Requirements
-Complete by YYYY-MM-DD.
 ### MVP
 
 

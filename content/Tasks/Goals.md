@@ -2,13 +2,13 @@
 title: Goals
 ---
 
-# 2022
+# 2022 Oct → Dec
 I only have to focus on 4 things this year: career, investing, reading, and lifting. 
 
 ## Career
 - Finish Konflux and have it usable by the public.
 - Finish MVP for math website.
-- Write 1 blog post.
+- Write 1 blog post (probably on building a second brain).
 - Learn about procedural generation and start the app idea you had.
 - Get mum 1 client.
 - ~~Do a very short 1-2 week project on computer graphics.~~
