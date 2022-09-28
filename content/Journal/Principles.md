@@ -19,3 +19,12 @@ Following these principles makes my life meaningful.
 
 ## Heroes
 Who are my heroes? Who do I aspire to be like?
+
+Cal Newport
+
+David Goggins
+
+Elon Musk
+
+Lex Fridman
+
