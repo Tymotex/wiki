@@ -2,27 +2,6 @@
 kanban-plugin: basic
 ---
 
-## **Wednesday** *2022-09-28* (6)
-
-- [x] ### **🏆 Purpose**: Just get through all your todos. Don't worry about anything else.
-- [x] **(1 hour)** Start reading software architecture.
-- [x] **(15 mins)** Read this: https://martinfowler.com/ieeeSoftware/whoNeedsArchitect.pdf
-- [x] **(1.5 hours)** Sort out your goals and deadlines #critical
-- [x] Plan mum tutoring. Put tasks into [[Tasks/Projects]]
-- [x] Find an investing resource to read/watch. Maybe that Udemy course?
-- [x] **(30 mins)**<br>Find possible ways to get clients for mum.<br>#project
-- [ ] **(1.5 hours)** Finish Man's Search For Meaning
-- [ ] **(40 mins)** Go through **Rich Dad Poor Dad** and finalise notes.
-- [ ] **(2 hours)** Read more about law, filling in your definitions. Specifically learn more about tax law.<br><br>Consider making a project out of this.
-- [x] **(1 hour)**<br>Write notes on the fundamentals of form for each of the 4 main powerlifting lifts.
-- [ ] **(1.5 hours)**<br>Complete week 1 of [EdX](https://learning.edx.org/course/course-v1:BerkeleyX+Fin101x+3T2019/home).<br>#project
-- [ ] Ask mum if I can read a credit report.
-- [ ] **(1 hour)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.<br><br>Add an old notes disclaimer at the top of each notes page.<br><br>Be ruthless and only keep the most important notes. Archive the rest.
-- [ ] **(45 mins)**<br>Read Spark<br>#reading #recurring
-- [x] Apply Eleuphrat.
-- [x] Shuffle exercise playlist subset
-- [x] Watch high leverage career skills from youtube
-
 ## **Thursday** *2022-09-29* (6)
 
 - [ ] ### **🏆 Purpose**: konflux<br><br>Goals and deadlines.
@@ -36,6 +15,13 @@ kanban-plugin: basic
 - [ ] **(45 mins)** Make a weekly diet plan and give it to mum.
 - [ ] Watch [Ed Coan](https://www.youtube.com/watch?v=DsXj2fQ4uow&ab_channel=MarkBell-SuperTrainingGym).
 - [ ] **(1 hour)**<br>Write notes on the deadlift.
+- [ ] **(1.5 hours)** Finish Man's Search For Meaning
+- [ ] **(40 mins)** Go through **Rich Dad Poor Dad** and finalise notes.
+- [ ] **(2 hours)** Read more about law, filling in your definitions. Specifically learn more about tax law.<br><br>Consider making a project out of this.
+- [ ] **(1.5 hours)**<br>Complete week 1 of [EdX](https://learning.edx.org/course/course-v1:BerkeleyX+Fin101x+3T2019/home).<br>#project
+- [ ] Ask mum if I can read a credit report.
+- [ ] **(1 hour)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.<br><br>Add an old notes disclaimer at the top of each notes page.<br><br>Be ruthless and only keep the most important notes. Archive the rest.
+- [ ] **(45 mins)**<br>Read Spark<br>#reading #recurring
 
 ## **Friday** *2022-09-30* (6)
 
@@ -163,6 +149,10 @@ kanban-plugin: basic
 - [ ] ### **🏆 Purpose**:
 
 ## **Friday** *2022-10-28* (6)
+
+- [ ] ### **🏆 Purpose**:
+
+## **Saturday** *2022-10-29* (6)
 
 - [ ] ### **🏆 Purpose**:
 

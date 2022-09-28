@@ -93,6 +93,20 @@ kanban-plugin: basic
 - [x] **(2.5 hours)** Finish Rich Dad Poor Dad
 - [x] Write a page for your principles.
 
+## **Wednesday** *2022-09-28* (6)
+
+- [x] ### **🏆 Purpose**: Just get through all your todos. Don't worry about anything else.
+- [x] **(1 hour)** Start reading software architecture.
+- [x] **(15 mins)** Read this: https://martinfowler.com/ieeeSoftware/whoNeedsArchitect.pdf
+- [x] **(1.5 hours)** Sort out your goals and deadlines #critical
+- [x] Plan mum tutoring. Put tasks into [[Tasks/Projects]]
+- [x] Find an investing resource to read/watch. Maybe that Udemy course?
+- [x] **(30 mins)**<br>Find possible ways to get clients for mum.<br>#project
+- [x] **(1 hour)**<br>Write notes on the fundamentals of form for each of the 4 main powerlifting lifts.
+- [x] Apply Eleuphrat.
+- [x] Shuffle exercise playlist subset
+- [x] Watch high leverage career skills from youtube
+
 ***
 
 ## Archive
