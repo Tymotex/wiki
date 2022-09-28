@@ -27,13 +27,16 @@ The squat mainly targets the quadriceps, hip muscles, glutes, and targets to a l
     1. *(Second breath)* Breathe air into your diaphragm and brace your core as if you're about to take a punch to the gut.
     2. Look out to the horizon.
 5. **Descent**:
-    3. *(Optional)* Push your hips back *very slightly*, *just* before descent. This is called hip-first and is an alternative to creasing the hip and knees *simultaneously* to start the descent. *Never focus on bending on the knee first*.
-    1. *Go as low as you can*. At least get the hip crease below the knee.
+    1. *(Optional)* Push your hips back *very slightly*, *just* before descent. This is called hip-first and is an alternative to creasing the hip and knees *simultaneously* to start the descent. *Never focus on bending on the knee first*.
+    2. Drop down in a controlled manner (taking ~1 second), *going as low as you can*. At least get the hip crease below the knee.
     - Keep your elbows pushed back slightly, not directly below the bar.
     - Keep the weight distributed equally across your feet throughout the whole descent and ascent.
+    - Keep your chest outwards. A cue is to point your chest up.
 6. **Ascent**:
-    1. Never let your hips shoot up.
-7. Keep knees pointed in the same direction as toes are pointed throughout both descent and ascent.
+    1. Push the world away.
+    - Never let your hips shoot up.
+    - Never let your knees cave in. Always track your knees in the same direction as your toes.
+8. Keep knees pointed in the same direction as toes are pointed throughout both descent and ascent.
 
 ## Bench Press
 
