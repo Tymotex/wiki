@@ -1,5 +1,7 @@
 ---
+
 kanban-plugin: basic
+
 ---
 
 ## **Wednesday** *2022-09-28* (6)
@@ -10,7 +12,8 @@ kanban-plugin: basic
 - [x] **(1.5 hours)** Sort out your goals and deadlines #critical
 - [x] Plan mum tutoring. Put tasks into [[Tasks/Projects]]
 - [x] Find an investing resource to read/watch. Maybe that Udemy course?
-- [ ] **(30 mins)**<br>Find possible ways to get clients for mum.<br>#project
+- [x] **(30 mins)**<br>Find possible ways to get clients for mum.<br>#project
+- [ ] **(1 hour)**<br>List out everything in mum's portfolio<br>#project
 - [ ] Apply Eleuphrat.
 - [ ] **(1.5 hours)** Finish Man's Search For Meaning
 - [ ] **(40 mins)** Go through **Rich Dad Poor Dad** and finalise notes.
@@ -20,6 +23,7 @@ kanban-plugin: basic
 - [ ] Ask mum if I can read a credit report.
 - [ ] **(1 hour)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.<br><br>Add an old notes disclaimer at the top of each notes page.<br><br>Be ruthless and only keep the most important notes. Archive the rest.
 - [ ] **(45 mins)**<br>Read Spark<br>#reading #recurring
+
 
 ## **Thursday** *2022-09-29* (6)
 
@@ -33,6 +37,7 @@ kanban-plugin: basic
 - [ ] **(1 hour)**<br>Nutrition deep-dive<br>#reading #recurring
 - [ ] **(45 mins)** Make a weekly diet plan and give it to mum.
 
+
 ## **Friday** *2022-09-30* (6)
 
 - [ ] ### **🏆 Purpose**: konflux
@@ -41,10 +46,12 @@ kanban-plugin: basic
 - [ ] Apply Eleuphrat.
 - [ ] Go through each book in my reading list and at least write a few sentences for each, explaining the main takeaways.
 
+
 ## **Saturday** *2022-10-01* (6)
 
 - [ ] ### **🏆 Purpose**: graph visualiser
 - [ ] Apply Eleuphrat.
+
 
 ## **Sunday** *2022-10-02* (6)
 
@@ -52,113 +59,140 @@ kanban-plugin: basic
 - [ ] Apply Eleuphrat.
 - [ ] #### **(10 mins)** Weekly Review.
 
+
 ## **Monday** *2022-10-03* (6)
 
 - [ ] ### **🏆 Purpose**:
 - [ ] Apply Eleuphrat.
 
+
 ## **Tuesday** *2022-10-04* (6)
 
 - [ ] ### **🏆 Purpose**:
+
 
 ## **Wednesday** *2022-10-05* (6)
 
 - [ ] ### **🏆 Purpose**:
 
+
 ## **Thursday** *2022-10-06* (6)
 
 - [ ] ### **🏆 Purpose**:
+
 
 ## **Friday** *2022-10-07* (6)
 
 - [ ] ### **🏆 Purpose**:
 
+
 ## **Saturday** *2022-10-08* (6)
 
 - [ ] ### **🏆 Purpose**:
+
 
 ## **Sunday** *2022-10-09* (6)
 
 - [ ] ### **🏆 Purpose**:
 - [ ] #### **(10 mins)** Weekly Review.
 
+
 ## **Monday** *2022-10-10* (6)
 
 - [ ] ### **🏆 Purpose**:
+
 
 ## **Tuesday** *2022-10-11* (6)
 
 - [ ] ### **🏆 Purpose**:
 
+
 ## **Wednesday** *2022-10-12* (6)
 
 - [ ] ### **🏆 Purpose**:
+
 
 ## **Thursday** *2022-10-13* (6)
 
 - [ ] ### **🏆 Purpose**:
 
+
 ## **Friday** *2022-10-14* (6)
 
 - [ ] ### **🏆 Purpose**:
 
+
 ## **Saturday** *2022-10-15* (6)
 
 - [ ] ### **🏆 Purpose**:
+
 
 ## **Sunday** *2022-10-16* (6)
 
 - [ ] ### **🏆 Purpose**:
 - [ ] #### **(10 mins)** Weekly Review.
 
+
 ## **Monday** *2022-10-17* (6)
 
 - [ ] ### **🏆 Purpose**:
+
 
 ## **Tuesday** *2022-10-18* (6)
 
 - [ ] ### **🏆 Purpose**:
 
+
 ## **Wednesday** *2022-10-19* (6)
 
 - [ ] ### **🏆 Purpose**:
+
 
 ## **Thursday** *2022-10-20* (6)
 
 - [ ] ### **🏆 Purpose**:
 
+
 ## **Friday** *2022-10-21* (6)
 
 - [ ] ### **🏆 Purpose**:
 
+
 ## **Saturday** *2022-10-22* (6)
 
 - [ ] ### **🏆 Purpose**:
+
 
 ## **Sunday** *2022-10-23* (6)
 
 - [ ] ### **🏆 Purpose**:
 - [ ] #### **(10 mins)** Weekly Review.
 
+
 ## **Monday** *2022-10-24* (6)
 
 - [ ] ### **🏆 Purpose**:
+
 
 ## **Tuesday** *2022-10-25* (6)
 
 - [ ] ### **🏆 Purpose**:
 
+
 ## **Wednesday** *2022-10-26* (6)
 
 - [ ] ### **🏆 Purpose**:
+
 
 ## **Thursday** *2022-10-27* (6)
 
 - [ ] ### **🏆 Purpose**:
 
+
 ## **Friday** *2022-10-28* (6)
 
 - [ ] ### **🏆 Purpose**:
+
 
 ***
 

@@ -7,6 +7,8 @@ Mum has expressed willingness to try it out. Do it.
 ## Ideal Situation
 - Find 1 low commitment client to try out tutoring.
 - Low commitment.
+- Most prefer language school in a primary school.
+- Prefer 1-1 or 1-2 at home.
 
 ---
 
