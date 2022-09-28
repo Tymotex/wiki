@@ -11,9 +11,9 @@ kanban-plugin: basic
 - [ ] **(40 mins)** Go through **Deep Work** and finalise notes.
 - [ ] **(1 hour)** Go through **Never Split the Difference** and finalise notes.
 - [ ] **(1 hour)**<br>Nutrition deep-dive<br>#reading #recurring
+- [ ] **(15 mins)**<br>Make PMO prevention more meaningful. The thing is, it's all entirely preventable and easy.
 - [ ] **(45 mins)** Make a weekly diet plan and give it to mum.
-- [ ] Watch [Ed Coan](https://www.youtube.com/watch?v=DsXj2fQ4uow&ab_channel=MarkBell-SuperTrainingGym).
-- [ ] **(1 hour)**<br>Write notes on the deadlift.
+- [ ] **(20 mins)**<br>Watch [Ed Coan](https://www.youtube.com/watch?v=DsXj2fQ4uow&ab_channel=MarkBell-SuperTrainingGym).
 - [ ] **(1.5 hours)** Finish Man's Search For Meaning
 - [ ] **(40 mins)** Go through **Rich Dad Poor Dad** and finalise notes.
 - [ ] **(2 hours)** Read more about law, filling in your definitions. Specifically learn more about tax law.<br><br>Consider making a project out of this.
@@ -21,7 +21,7 @@ kanban-plugin: basic
 - [ ] Ask mum if I can read a credit report.
 - [ ] **(1 hour)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.<br><br>Add an old notes disclaimer at the top of each notes page.<br><br>Be ruthless and only keep the most important notes. Archive the rest.
 - [ ] **(45 mins)**<br>Read Spark<br>#reading #recurring
-- [ ] **(15 mins)**<br>Make PMO prevention more meaningful.
+- [x] **(1 hour)**<br>Write notes on the deadlift.
 
 
 ## **Friday** *2022-09-30* (6)

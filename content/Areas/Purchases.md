@@ -9,4 +9,6 @@ title: Purchases
 - Weighted dip belt.
 - Rubber weight plates.
 - Smaller weight plates (eg. 1kg).
+- Better, safer power rack for bench press, squatting and pressing.
+- Better barbell with sharper knurlings
 - Good pillow.
