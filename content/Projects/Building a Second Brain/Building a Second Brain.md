@@ -6,7 +6,19 @@ title: Building a Second Brain
 - [ ] How do I stay on top of project deadlines? Idea: add a default card to each day that links to deadlines (maybe in the 'Purpose' card?).
 - [ ] Complete my weekly review and monthly review templates.
 - [ ] Write a Python script that generates a set of journal prompts.
-- [ ] Make the task formatter increment a counter tag that shows how many times a task has been pushed along.
+- [x] Make the task formatter increment a counter tag that shows how many times a task has been pushed along.
+
+**Ideas**:
+- Have a kanban board where each column is one of your projects, ordered from left-to-right in priority order. The tasks in each column follow the same format but are sorted by deadline.
+    - In each weekly review I pick 1-2 projects to focus hard on. I pull cards from the project board into the task board.
+    - Every column should have a large bold deadline shown.
+    - Clicking on the board name links to the project page.
+    - All tasks have a #project tag.
+    - Some tasks might have a #recurring tag. Eg. If I want to finish a book, then there will be tasks to read x number of pages.
+- Clicking on the tasks board name links to the daily note.
+- Where do I track my goals? I feel that this is separate from my projects.
+
+---
 
 ## Features
 - Mobile Git synchronisation with [Termux](https://termux.dev/en/) and [Termux:Widget](https://wiki.termux.com/wiki/Termux:Widget).
@@ -23,6 +35,12 @@ title: Building a Second Brain
 - `obsidian-kanban`  -> for managing daily tasks.
     - TODO: elaborate.
 - `obsidian-dictionary` -> allows me to quickly look up the definition of a highlighted word via the context menu (which I bring up with `ctrl + r`).
+- Daily journal
+- Weekly reviews
+- Monthly reviews
+- Task and project board 
+- Backlog page
+- Goals page
 
 ## Shortcuts
 I aimed to set keybindings that closely match how I have it in other programs like browsers, code editors and Vim.

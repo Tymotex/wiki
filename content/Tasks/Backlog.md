@@ -38,6 +38,7 @@ kanban-plugin: basic
 - [ ] Schedule weekly and monthly reviews of your life.
 - [ ] Pick out the most useful articles from **moneysmart.gov.au** and read them.
 - [ ] Find some big goal for mum and dad. Maybe the next cruise? Perhaps time it for the end of 2023?<br><br>(Inspired by Man's Search for Meaning)
+- [ ] Plan 2023 first quarter in [[Tasks/Goals|Goals]].
 
 
 ## Hobbies

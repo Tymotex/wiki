@@ -9,8 +9,8 @@ title: Weekly Review
     - [ ] Clear your email inbox.
 - [ ] Filter your todos. Get rid of the ones that don't matter.
 - [ ] Decide on priorities over next week. Which project will you focus on most?
-    - [ ] Schedule tasks through the week.
-    - [ ] Determine the purpose of each day.
+    - [ ] Schedule tasks through the week. Move tasks from the projects board into the tasks board.
+    - [ ] Determine the purpose of each day, stating the project to be focused on and the main goal that day. Link to that project's page.
 
 After starting work:
 - [ ] Look at finances/. 
