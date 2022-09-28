@@ -19,9 +19,9 @@ Mum has expressed willingness to try it out. Do it.
     - Varsity Tutors.
 - Language schools.
 
-### Strategy
-1. Offer at least a 1st lesson for free.
-2. Offer 
-
-- Record a video introducing self and qualifications.
-- 
+### Ideas
+1. Freelance:
+    - Offer at least a 1st lesson for free.
+2. Employment:
+3. Starting a small language school in a primary school:
+4. Join friend in their tutoring school.
