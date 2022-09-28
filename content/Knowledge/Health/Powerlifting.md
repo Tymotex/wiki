@@ -42,7 +42,23 @@ The squat mainly targets the quadriceps, hip muscles, glutes, and targets to a l
 
 
 ## Deadlift
-
+### Technique
+> Lift barefoot or in deadlift shoes. Don't lift in running shoes.
+1. **Beginning stance**:
+    1. Put the middle of your feet directly under the barbell at <= shoulder-width with toes slightly pointed out.
+        - A narrow stance prevents knees from caving in and lets you grip so that your arms are closer to being perpendicular to the ground.
+    2. Grab the barbell without moving your shins.
+        - Your grip width should be roughly where your arms naturally hang.
+        - Choose one of these grip styles: double overhand standard, mixed grip, double hook grip.
+    3. Push knees forward until shins meet the barbell.
+    4. Push chest through, push shoulders down, engage your lats (by thinking about reaching your hands as far down as possible).
+    5. (Optional) Push your knees gently *into* the crease of your elbows.
+    6. Look slightly downwards.
+    - Your shoulders should be slightly past the barbell. Your shoulder blades (scapula) should be directly up from the barbell.
+    - Your arms should be close to vertical, ie. perpendicular to the ground.
+    - You should feel extremely tight just before you begin the lift.
+2. Right before you lift, pull the slack out of the barbell. You'll hear a click. Never jerk the barbell. 
+3. *Just stand up*, or *explode up*, or *push the world away*. Drag the barbell up along your shins, knees and thighs the whole way through.
 
 ## Overhead Press
 
