@@ -53,6 +53,8 @@ kanban-plugin: basic
 - [ ] **(1 hour)**<br>Nutrition deep-dive<br>#reading #recurring
 - [ ] **(1 hour)**<br>What can I eat to bulk?<br>#project
 - [ ] **(15 mins)**<br>Find a new recipe to try.<br>#project #recurring
+- [ ] **(1 hour)**<br>How to manage high cholesterol.<br>#health
+- [ ] **(1 hour)**<br>What is VO2 Max?<br>#health
 
 
 
