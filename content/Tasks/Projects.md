@@ -4,16 +4,16 @@ kanban-plugin: basic
 
 ---
 
+## [[Projects/Konflux/Konflux|Konflux]] (Deadline: **Sunday, 2nd Oct)**
+
+- [ ] **(2 hours)** <br>Implement Konflux Figma prototype.<br>#project
+
+
 ## [[Projects/Building a Second Brain/Building a Second Brain|Building a Second Brain]]
 
 - [ ] **(1 hour)**<br>Write a Python script that generates a set of journal prompts. Make it run on pressing `ctrl + j`.<br>#project #second-brain
 - [ ] **(1 hour)**<br>Make the task formatter increment a counter tag that shows how many times a task has been pushed along.<br>#project #second-brain
 - [ ] **(1 hour)**<br>Write a Python script that prints statistics of the wiki to the index page. Eg. Number of pages, number of words, etc. Make it run on Obsidian startup.<br>#project #second-brain
-
-
-## [[Projects/Konflux/Konflux|Konflux]]
-
-- [ ] **(2 hours)** <br>Implement Konflux Figma prototype.<br>#project
 
 
 ## [[Projects/Math Website/Math Website|Math Website]]

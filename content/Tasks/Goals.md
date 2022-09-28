@@ -53,3 +53,6 @@ Building financial intelligence.
 ## Career
 - Get to L4 at the end of 2023.
 - Get to L5 at the end of 2025.
+
+## Lifting
+- After hitting 1.5x bench, 2x squat, 2.2x deadlift, consider competing.

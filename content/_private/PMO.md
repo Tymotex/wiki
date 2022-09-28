@@ -4,6 +4,37 @@ title: PMO
 
 > "He who has a *why* to live for can bear with almost any *how*" — Nietzsche.
 
+**When horny**:
+- Just get started with work. You won't feel it once you're in flow. If you can't get in flow, just take a break and get out of your room.
+- Go to the yard and just look at the plants and sky.
+- Remember the meaning of this suffering: you do this so that you can be a better man for your current and future family. You do this so that women will want you. You do this so that you beat all your enemies who want to see you fail, and to beat all the other men in the predicament as you.
+
+---
+
+## Relapses
+### 29th Sep
+It happened again. I resisted hard and let it pass but then just decided to cave in. I really lack a 'why' for doing this. It can't be all about me, it has to be for someone else. I have to make this effort more meaningful and I'll get through anything.
+
+### 26th Sep
+I was fine until I opened my laptop and searched up "Can't stop thinking about sex" and clicked into a Quora post from a girl about it. That drove me mad with lust and then I relapsed.
+**I am so fucking disgusted with what I did***. *I can't keep doing this. Life is so meaningless*.
+
+### 22nd Sep
+I didn't even try... I just got annoyed at the thoughts and gave up. It was distracting me from studying, I reasoned, and then I just gave up.
+I felt so lethargic and unproductive throughout the day. It doesn't work - **I traded momentary distraction for constant distraction with the shame that I felt**. I feel so hollow, as if an essential part of me was taken out.
+
+### 20th Sep
+I relapsed again to an image of Taarie. I'm ashamed of myself. I just got so worked up and really wanted to take the easy way out and escape the feeling of bottled-up horniness. I still don't have a good system for dealing with these feelings.
+
+### 15th Sep
+I just woke up groggy and being obsessive over the idea of translucent panties... Yup. I dragged myself up to go do bench press but the whole time I could not stop thinking about it. I finally caved in after around 1 full hour of ridiculous horny energy and made a promise with myself that I could pick exactly one picture and use that to satisfy my needs. This means no real porn, but allowing for masturbation and orgasm. I don't know how reasonable this is since I made this promise while horny as hell.
+
+Even after caving in, I still felt hopelessly horny. After getting into my day however, I felt completely free of horny thoughts and could focus on my work.
+
+I'll consider all relapses to be when I masturbate and orgasm to anything other than that one picture I have. I'll do this for 1 month.
+
+---
+
 Any relapses I make are fundamentally issues with life's meaning. Being in an existential vacuum eventuates in sexual compensation.
 
 ## Things triggering PMO
@@ -66,27 +97,3 @@ Remember the reasons why you're refusing to be a wanker.
 - Think of the hundreds of times you have followed the same line of thinking and felt fucking miserable for following through. **There are absolutely 0 good reasons** to masturbate. No exceptions.
 - You often think that life should be experienced to the fullest, meaning you should experience the pleasure of masturbation and having orgasms. **Do the opposite** to experience life to the fullest. You will only feel like an empty husk and everything else feels significantly less enjoyable. You will hate life if you masturbate and when the pleasure arrives, you realise that it was just a siren's call.
 - There are plenty of critiques against being anti-porn. It doesn't matter what people say. You know subjectively how much of a fucking loser it makes you feel like.
-
----
-
-## Relapses
-### 29th Sep
-It happened again. I resisted hard and let it pass but then just decided to cave in. I really lack a 'why' for doing this. It can't be all about me, it has to be for someone else. I have to make this effort more meaningful and I'll get through anything.
-
-### 26th Sep
-I was fine until I opened my laptop and searched up "Can't stop thinking about sex" and clicked into a Quora post from a girl about it. That drove me mad with lust and then I relapsed.
-**I am so fucking disgusted with what I did***. *I can't keep doing this. Life is so meaningless*.
-
-### 22nd Sep
-I didn't even try... I just got annoyed at the thoughts and gave up. It was distracting me from studying, I reasoned, and then I just gave up.
-I felt so lethargic and unproductive throughout the day. It doesn't work - **I traded momentary distraction for constant distraction with the shame that I felt**. I feel so hollow, as if an essential part of me was taken out.
-
-### 20th Sep
-I relapsed again to an image of Taarie. I'm ashamed of myself. I just got so worked up and really wanted to take the easy way out and escape the feeling of bottled-up horniness. I still don't have a good system for dealing with these feelings.
-
-### 15th Sep
-I just woke up groggy and being obsessive over the idea of translucent panties... Yup. I dragged myself up to go do bench press but the whole time I could not stop thinking about it. I finally caved in after around 1 full hour of ridiculous horny energy and made a promise with myself that I could pick exactly one picture and use that to satisfy my needs. This means no real porn, but allowing for masturbation and orgasm. I don't know how reasonable this is since I made this promise while horny as hell.
-
-Even after caving in, I still felt hopelessly horny. After getting into my day however, I felt completely free of horny thoughts and could focus on my work.
-
-I'll consider all relapses to be when I masturbate and orgasm to anything other than that one picture I have. I'll do this for 1 month.
