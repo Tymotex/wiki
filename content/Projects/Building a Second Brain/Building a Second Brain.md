@@ -2,14 +2,7 @@
 title: Building a Second Brain
 ---
 
-## Tasks
-- [ ] How do I stay on top of project deadlines? Idea: add a default card to each day that links to deadlines (maybe in the 'Purpose' card?).
-- [ ] Complete my weekly review and monthly review templates.
-- [ ] Write a Python script that generates a set of journal prompts.
-- [x] Make the task formatter increment a counter tag that shows how many times a task has been pushed along.
-- [ ] Write a Python script that prints statistics of the wiki to the index page. Eg. Number of pages, number of words, 
-
-**Ideas**:
+## Ideas
 - Have a kanban board where each column is one of your projects, ordered from left-to-right in priority order. The tasks in each column follow the same format but are sorted by deadline.
     - In each weekly review I pick 1-2 projects to focus hard on. I pull cards from the project board into the task board.
     - Every column should have a large bold deadline shown.

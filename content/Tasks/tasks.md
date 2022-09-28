@@ -13,9 +13,6 @@ kanban-plugin: basic
 - [x] Plan mum tutoring. Put tasks into [[Tasks/Projects]]
 - [x] Find an investing resource to read/watch. Maybe that Udemy course?
 - [x] **(30 mins)**<br>Find possible ways to get clients for mum.<br>#project
-- [ ] **(1 hour)**<br>List out everything in mum's portfolio<br>#project
-- [ ] **(30 mins)**<br>Apply to those 2 airtasker listings.<br>#project
-- [ ] Apply Eleuphrat.
 - [ ] **(1.5 hours)** Finish Man's Search For Meaning
 - [ ] **(40 mins)** Go through **Rich Dad Poor Dad** and finalise notes.
 - [ ] **(2 hours)** Read more about law, filling in your definitions. Specifically learn more about tax law.<br><br>Consider making a project out of this.
@@ -24,8 +21,9 @@ kanban-plugin: basic
 - [ ] Ask mum if I can read a credit report.
 - [ ] **(1 hour)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.<br><br>Add an old notes disclaimer at the top of each notes page.<br><br>Be ruthless and only keep the most important notes. Archive the rest.
 - [ ] **(45 mins)**<br>Read Spark<br>#reading #recurring
-- [ ] Shuffle exercise playlist subset
-- [ ] Watch high leverage career skills from youtube
+- [x] Apply Eleuphrat.
+- [x] Shuffle exercise playlist subset
+- [x] Watch high leverage career skills from youtube
 
 
 ## **Thursday** *2022-09-29* (6)

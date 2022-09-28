@@ -4,14 +4,11 @@ kanban-plugin: basic
 
 ---
 
-## [[Projects/Mum Tutoring/Mum Tutoring|Mum Tutoring]]
+## [[Projects/Building a Second Brain/Building a Second Brain|Building a Second Brain]]
 
-- [ ] Get in contact with at least 1 interested client.<br>#project
-
-
-## [[Projects/Math Website/Math Website|Math Website]]
-
-- [ ] **(20 mins)** <br>Meeting with dad to discuss requirements for the quiz. Show dad Khan academy quiz.<br>#project
+- [ ] **(1 hour)**<br>Write a Python script that generates a set of journal prompts. Make it run on pressing `ctrl + j`.<br>#project #second-brain
+- [ ] **(1 hour)**<br>Make the task formatter increment a counter tag that shows how many times a task has been pushed along.<br>#project #second-brain
+- [ ] **(1 hour)**<br>Write a Python script that prints statistics of the wiki to the index page. Eg. Number of pages, number of words, etc. Make it run on Obsidian startup.<br>#project #second-brain
 
 
 ## [[Projects/Konflux/Konflux|Konflux]]
@@ -19,8 +16,14 @@ kanban-plugin: basic
 - [ ] **(2 hours)** <br>Implement Konflux Figma prototype.<br>#project
 
 
-## [[Projects/Building a Second Brain/Building a Second Brain|Building a Second Brain]]
+## [[Projects/Math Website/Math Website|Math Website]]
 
+- [ ] **(20 mins)** <br>Meeting with dad to discuss requirements for the quiz. Show dad Khan academy quiz.<br>#project
+
+
+## [[Projects/Mum Tutoring/Mum Tutoring|Mum Tutoring]]
+
+- [ ] **(1 hour)**<br>Determine what the next steps would be to getting a language school started.<br>#project #mum
 
 
 ## [[Projects/Structs Graph Visualiser/Graph Visualiser MVP|Structs Graph MVP]]

@@ -26,5 +26,5 @@ title: Google Tasks and Workflow
     - Set up the daily notes and the template you'll use to log your accomplishments each day.
 
 **Notes**:
-- You **must** document your and achievements well. Do this in Obsidian as well. Do this at least on a weekly basis. You'll need this for performance reviews and getting future roles
-- 
+- You **must** document your and achievements well. Do this in Obsidian as well. You'll need this for performance reviews and getting future roles. This might be the highest reward:effort ratio things you can do, and all these documented achievements will serve you for the entirety of your career.
+    - Inspired from the channel 'A Life Engineered'. He suggest calling this a 'brag document' and adding new entries on-demand rather than on some daily/weekly basis.
