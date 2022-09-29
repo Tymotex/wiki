@@ -225,9 +225,9 @@ def test_shift_incomplete_tasks_to_date():
         (datetime(year=2022, month=9, day=21), [
             "- [ ] Go to CSESoc event.",
             "- [ ] **(1 hour)** Figma prototype.",
-            "- [ ] 🏆 **Purpose today**: get chores done",
-            "- [ ] **(2 hours)** Refine and review C++ notes #critical",
-            "- [ ] Go to CPMSoc event.",
+            "- [ ] ==2== 🏆 **Purpose today**: get chores done",
+            "- [ ] ==2== **(2 hours)** Refine and review C++ notes #critical",
+            "- [ ] ==1== Go to CPMSoc event.",
         ]),
         (datetime(year=2022, month=9, day=22), [
             "- [x] Install Linux VM on laptop, then VSCode with settings synced.",
@@ -251,11 +251,11 @@ def test_shift_incomplete_tasks_to_date():
         (datetime(year=2022, month=9, day=23), []),
         (datetime(year=2022, month=9, day=24), []),
         (datetime(year=2022, month=9, day=25), [
-            "- [ ] Go to CSESoc event.",
-            "- [ ] **(1 hour)** Figma prototype.",
-            "- [ ] 🏆 **Purpose today**: get chores done",
-            "- [ ] **(2 hours)** Refine and review C++ notes #critical",
-            "- [ ] Go to CPMSoc event.",
+            "- [ ] ==4== Go to CSESoc event.",
+            "- [ ] ==4== **(1 hour)** Figma prototype.",
+            "- [ ] ==6== 🏆 **Purpose today**: get chores done",
+            "- [ ] ==6== **(2 hours)** Refine and review C++ notes #critical",
+            "- [ ] ==5== Go to CPMSoc event.",
         ])
     ])
 

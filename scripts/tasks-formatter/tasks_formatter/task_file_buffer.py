@@ -1,4 +1,5 @@
 import os
+from pprint import pprint
 import re
 from asyncio import Task
 from datetime import datetime, timedelta
@@ -13,7 +14,17 @@ TEMPLATES_DIRECTORY = os.path.join(os.path.dirname(__file__), "templates")
 
 class TaskFileBuffer:
     level2_heading_regex = re.compile(r"^## (.*)$")
-    checkbox_regex = re.compile(r"^-\s*\[(\s*|\S+)\] (.*)$")
+
+    # Examples of what this regex pattern matches:
+    # 1. `- []`
+    # 2. `- [x] Hello world`
+    # 3. `- [ ] ==42== **(10 mins)** Start reading that book.`
+    # Capture groups match for whether the box is checked, the number of times
+    # the card has shifted forward, and the actual task description.
+    # Why track the number of times a card shifts forward? To discourage tasks 
+    # from constantly shifting forward... ie. identify and prevent
+    # procrastination.
+    checkbox_regex = re.compile(r"^-\s*\[(\s*|\S+)\] ?(==\d+==)?(.*)$")
     
     # Every column should have a date in the universal ISO format,
     # eg. 2022-09-20.
@@ -73,12 +84,16 @@ class TaskFileBuffer:
         Moves all incomplete non-archived tasks before today to today's task
         column.
         """
-        # Sort by date before slicing.
+        # Sort task columns by date before slicing.
         self._tasks.sort(key=lambda task: task[0])
 
         date_index = self._search_for_task_date(0, len(self._tasks) - 1, date)
 
+        # A list of incomplete tasks and the number of times they've been
+        # shifted forward. 
         incomplete_tasks_from_prev_days: List[str] = []
+
+        curr_date_index = 0
         for _, tasks in self._tasks[0 : date_index]:
             # Note: need to create a new list of tasks to not invalidate tasks
             #       we remove as we iterate.
@@ -87,15 +102,25 @@ class TaskFileBuffer:
                 if not match:
                     raise TaskFileException(f"Invalid task: {task}")
                 checked = not match.group(1).isspace()
+
                 # Record the incomplete tasks and take them off the task column
                 # of previous days.
                 if not checked:
-                    incomplete_tasks_from_prev_days.append(task)
+                    # Reconstruct the task so that we can etch the number of
+                    # times this card moved forward into the task string.
+                    # Note: the syntax ==Hi== is part of Obsidian's markdown
+                    #       which highlights the text 'Hi'.
+                    num_days_from_target_date = date_index - curr_date_index
+                    times_shifted = (int(match.group(2).strip("=")) if match.group(2) else 0) + num_days_from_target_date
+                    task_description = match.group(3)
+                    reconstructed_task = f"- [{'X' if checked else ' '}] =={times_shifted}== {task_description.strip()}"
+                    incomplete_tasks_from_prev_days.append(reconstructed_task)
                     tasks.remove(task)
+            curr_date_index += 1
 
         if len(self._tasks) == 0 or self._tasks[date_index][0] != date:
             # Add today into the task file. Note: this is unexpected, today's
-            # task column should exist.
+            # task column should already exist.
             self.insert_task_columns([(date, incomplete_tasks_from_prev_days)])
         else:
             # Insert all incomplete tasks to today's column.
@@ -134,7 +159,10 @@ class TaskFileBuffer:
             #       number that the Ivy Lee method uses.
             tasks = self._tasks if not reverse else reversed(self._tasks)
             for date, tasks in self._tasks:
-                column_name = f"## **{date.strftime('%A')}** *{date.strftime('%Y-%m-%d')}* (6)\n\n"
+                # Every column's name is clickable and links to that date's
+                # daily note.
+                universal_iso_date = date.strftime('%Y-%m-%d')
+                column_name = f"## **{date.strftime('%A')}** *[[Journal/{universal_iso_date}|{universal_iso_date}]]* (6)\n\n"
                 task_file.write(column_name)
                 task_file.writelines("\n".join(tasks) + "\n\n")
 
