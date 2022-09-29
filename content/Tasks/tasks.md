@@ -7,6 +7,7 @@ kanban-plugin: basic
 ## **Thursday** *2022-09-29* (6)
 
 - [ ] Vacuum
+- [ ] Consider using tkinter or whatever python GUI library is standard to enhance your basb scripts
 - [ ] ### **🏆 Purpose**: konflux<br><br>Goals and deadlines.
 - [ ] **[1 hour]** Go through How to Not Die Alone and finalise notes.
 - [ ] Apply Eleuphrat.
