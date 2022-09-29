@@ -2,6 +2,10 @@
 title: Man's Search For Meaning
 ---
 
+TODO: put into PMO: Giving into addiction is fundamentally about meaninglessness. Giving in means your *why* is not sufficiently strong.
+
+TODO: put into journal: I get so annoyed thinking about Simon. Why does he think that his problems are significant enough to go to a psychologist? What suffering has he endured? All of his problems are purely by his own construction. Life would be better and he would be so much more respectable if he were to work hard at something meaningful, be more open-minded, and find beauty in something beyond gaming and porn. **I must not be like this kind of person**. I mustn't ever be around people who I simply grow to resent. The same applies to a person like David. Reese I respect more because he has demonstrated initiative and some pursuit of meaning. He exercises and has goals to strive towards - and actually does so. That's commendable. Arthur is also someone I respect - he loves what he does, possibly on the same level as I do, and he loves challenge as well. He is ambitious and will work hard to pursue goals. 
+
 This book has really made me feel more capable in remaining stoic and sanguine in life, in spite of any tragedies I might face. I see a lot of meaning in my life — my family, my work, and the beauty of the natural world. 
 
 💎 Suffering is omnipresent and always expands to fill the conscious mind, no matter the magnitude.
@@ -67,4 +71,30 @@ In my experience, feeling stress and seeing my own momentum towards goals and pe
 
 > Existential frustration often eventuates in sexual compensation... sexual libido becomes rampant in the existential vacuum.
 
+Think: what is life asking of me, rather than what you are asking of life. 
+> The true meaning of life is to be discovered in the world rather than within man or his own psyche.
 
+> The more one forgets himself — by giving himself to a cause to serve or another person to love — the more human he is and the more he actualises himself.
+
+> Sex is justified, even sanctified, as soon as, but only as long as, it is a vehicle of love. Thus love is not understood as a mere side-effect of sex; rather, sex is a way of expressing the experience of that ultimate togetherness which is called love.
+
+Experiencing suffering is an opportunity to grow oneself and find meaning.
+> ... to transform a personal tragedy into a triumph, to turn one's predicament into a human achievement.
+
+> Once, an elderly general practitioner consulted me because of his severe depression. He could not overcome the loss of his wife who had died two years before and whom he had loved above all else. Now, how could I help him? What should I tell him? Well, I refined from telling him anything but instead confronted him with the question, "What would have happened, Doctor, if you had died first, and your wife would have had to survive you?" "Oh," he said "for her this would have been terrible; how she would have suffered!" Whereupon I replied, "You see, Doctor, such a suffering has been spared her, and it was you who have spared her this suffering — to be sure, at the price that now you have to survive and mourn her." He said no word but shook my hand and calmly left my office. **In some way, suffering ceases to be suffering at the moment it finds a meaning, such as the meaning of a sacrifice**.
+
+> **To suffer unnecessarily is masochistic rather than heroic**.
+
+> In accepting this challenge to suffer bravely, life has a meaning up to the last moment, and it retains this meaning literally to the end.
+
+**Paradoxical intention**: When experience stress or anxiety, resolve to experience it fully rather than trying to reduce it. Apply a sense of humour around this reversal of intention. "By this treatment, the wind is taken out of the sails of the anxiety."
+
+When dealing with the anticipatory anxiety around having a sleepless night, resolve instead to stay awake as long as possible.
+
+Frankl argues that your psyche cannot be predicted by biological, psychological and sociological preconditions. I interpreted this as more of a statement about the complexity of human nature rather than a statement about free will.
+> Man has both potentialities within himself; which one is actualised depends on decisions but not on conditions.
+
+
+>Being jobless was equated with being useless, and being useless was equated with having a meaningless life.
+
+> Researchers at the Yale University School of Medicine "have been impressed by the number ofprisoners of war of the Vietnam war who explicitly claimed that although their captivity was extraordinarily stressful — filled with torture, disease, malnutrition, and solitary confinement — they nevertheless... benefited from the captivity experience, seeing it as a growth experience."
