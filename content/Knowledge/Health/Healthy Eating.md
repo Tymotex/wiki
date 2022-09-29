@@ -1,6 +1,6 @@
 ---
-title: Meals
-description: Meals
+title: Healthy Eating
+description: Healthy Eating
 ---
 
 Prioritise foods high in protein, healthy fats, fibre, vitamins and minerals.
@@ -69,6 +69,7 @@ Each day I should aim to eat:
 ### Meats
 - Avoid processed meats (eg. bacon, sausages, salami).
 - Avoid fatty cuts of beef or pork.
+- Mince is not considered processed.
 
 ### Fats
 - Avoid butter and margarine.
