@@ -19,6 +19,7 @@ kanban-plugin: basic
 - [ ] Ask mum if I can read a credit report.
 - [ ] **(1 hour)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.<br><br>Add an old notes disclaimer at the top of each notes page.<br><br>Be ruthless and only keep the most important notes. Archive the rest.
 - [ ] **(45 mins)**<br>Read Spark<br>#reading #recurring
+- [ ] Put a reminder somewhere in your gym to time your workouts.
 - [x] Make PMO prevention more meaningful. The thing is, it's all entirely preventable and easy.
 - [x] Apply Eleuphrat.
 - [x] **(30 mins)**<br>Watch [Ed Coan](https://www.youtube.com/watch?v=DsXj2fQ4uow&ab_channel=MarkBell-SuperTrainingGym).

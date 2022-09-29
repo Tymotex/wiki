@@ -40,6 +40,8 @@ All carbohydrates must be reduced to glucose first before metabolism.
 
 ## Fats
 
+### Trans fat
+
 ## Vitamins
 
 ## Minerals
