@@ -107,6 +107,21 @@ kanban-plugin: basic
 - [x] Shuffle exercise playlist subset
 - [x] Watch high leverage career skills from youtube
 
+## **Thursday** *2022-09-29* (6)
+
+- [x] Consider using tkinter or whatever python GUI library is standard to enhance your basb scripts
+- [x] ### **🏆 Purpose**: get tasks done:<br><br>Goals and deadlines.
+- [x] **(1 hour)**<br>Nutrition deep-dive<br>#reading #recurring
+- [x] **(25 mins)** Find 3 recipes to try.
+- [x] Ask mum if I can read a credit report.
+- [x] **(2.5 hours)** Finish Man's Search For Meaning and finalise notes
+- [x] Put a reminder somewhere in your gym to time your workouts.
+- [x] Vacuum
+- [x] Make PMO prevention more meaningful. The thing is, it's all entirely preventable and easy.
+- [x] Apply Eleuphrat.
+- [x] **(30 mins)**<br>Watch [Ed Coan](https://www.youtube.com/watch?v=DsXj2fQ4uow&ab_channel=MarkBell-SuperTrainingGym).
+- [x] **(1 hour)**<br>Write notes on the deadlift.
+
 ***
 
 ## Archive
