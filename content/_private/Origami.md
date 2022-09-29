@@ -1,0 +1,28 @@
+---
+title: Origami
+---
+
+- [Pentagon rose](https://www.youtube.com/watch?v=8YMgbtX7FZ8) and [calyx](https://www.youtube.com/watch?v=tocRa6D_iWM&ab_channel=TadashiMori-OrigamiTutorials).
+- [Five intersecting tetrahedra](https://www.youtube.com/watch?v=aT2UHxA4uRY&ab_channel=OrigamiwithJoNakashima)
+- [Kusudama starsea](https://www.youtube.com/watch?v=u-71U6rs9Vg)
+- Kusudama flower
+- Tigra
+- Dahlia
+- Tulip
+- [Christmas Tree](https://www.youtube.com/watch?v=4kWS1q8zFFc&list=PL5jDTd07plNBkAhTmX7ZJjKJNEf-W579j&index=41&ab_channel=OrigamiwithJoNakashima)
+- Anything from this playlist:
+    - Excavated dodecahedron
+    - CLO kusudama
+    - Cookiecutter
+    - Clover Kusudama
+    - Sea Urchin Star
+    - Six pentagonal prisms
+    - Curler Icosidodecahedron
+    - Curler Rhombicuboctahedron
+    - Curler Cuboctahedron
+    - Stellated Octahedron
+    - Triambic icosahedron
+    - Omega star
+- Cactus
+    - [Inspiration](https://www.reddit.com/r/origami/comments/b52xvq/hello/) and [another](https://www.reddit.com/r/origami/comments/fjtoke/one_of_these_things/)
+- Succulents
