@@ -10,7 +10,7 @@ kanban-plugin: basic
 - [ ] ### **(10 mins)** Monthly Review.
 - [x] **(5 mins)**<br>Clicking on the tasks board name links to the daily note.<br><br>#second-brain
 - [x] **(30 mins)**<br>Make the task formatter increment a counter tag that shows how many times a task has been pushed along.<br>#project #second-brain
-- [ ] **(30 hour)**<br>Write a Python script that generates a set of journal prompts. Make it run on pressing `ctrl + j`.<br>#project #second-brain
+- [ ] **(30 hour)**<br>~~Write a Python script that generates a set of journal prompts. Make it run on pressing `ctrl + j`.~~<br>Instead, I'm generating a bunch of journal entries using the task formatter. This is more flexible.<br>#project #second-brain
 - [ ] **(30 mins)**<br>Write a Python script that prints statistics of the knowledge wiki to the index page. Eg. Number of pages, number of words, etc. Make it run on Obsidian startup.<br>#project #second-brain
 - [ ] **(2 hours)** <br>Implement Konflux Figma prototype.<br>#project #konflux
 - [ ] **(15 mins)**<br>Book all Cairns experiences.

@@ -11,6 +11,7 @@ kanban-plugin: basic
 ## [[Projects/Building a Second Brain/Building a Second Brain|Building a Second Brain]]
 
 - [ ] **(1 hour)**<br>Try a Tkinter hello world and see if the project would benefit from a GUI.<br>#second-brain
+- [ ] Idea: Add a quote to think about in the journal prompts file.
 
 
 ## [[Projects/Math Website/Math Website|Math Website]]
