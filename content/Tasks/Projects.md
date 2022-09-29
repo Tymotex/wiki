@@ -6,7 +6,6 @@ kanban-plugin: basic
 
 ## [[Projects/Konflux/Konflux|Konflux]] (Deadline: **Sunday, 2nd Oct)**
 
-- [ ] **(2 hours)** <br>Implement Konflux Figma prototype.<br>#project
 
 
 ## [[Projects/Building a Second Brain/Building a Second Brain|Building a Second Brain]]
@@ -14,6 +13,8 @@ kanban-plugin: basic
 - [ ] **(1 hour)**<br>Write a Python script that generates a set of journal prompts. Make it run on pressing `ctrl + j`.<br>#project #second-brain
 - [ ] **(1 hour)**<br>Make the task formatter increment a counter tag that shows how many times a task has been pushed along.<br>#project #second-brain
 - [ ] **(1 hour)**<br>Write a Python script that prints statistics of the wiki to the index page. Eg. Number of pages, number of words, etc. Make it run on Obsidian startup.<br>#project #second-brain
+- [ ] **(1 hour)**<br>Try a Tkinter hello world and see if the project would benefit from a GUI.<br>#second-brain
+- [ ] **(10 mins)**<br>Clicking on the tasks board name links to the daily note.<br>#second-brain
 
 
 ## [[Projects/Math Website/Math Website|Math Website]]
@@ -55,6 +56,19 @@ kanban-plugin: basic
 - [ ] **(15 mins)**<br>Find a new recipe to try.<br>#project #recurring
 - [ ] **(1 hour)**<br>How to manage high cholesterol.<br>#health
 - [ ] **(1 hour)**<br>What is VO2 Max?<br>#health
+
+
+## [[Areas/Google Tasks and Workflow|Google]]
+
+- [ ] **(1 hour)**<br>Read 'Software Engineering at Google' textbook.<br>#google #recurring
+- [ ] **(1 hour)**<br>Read 'Site Reliability Engineering' textbook.<br>#google #recurring
+- [ ] **(1 hour)**<br>Find and buy a messenger bag.<br>#google
+- [ ] **(1 hour)**<br>Find and buy some casual work clothes to be worn everyday without thought.<br>#google
+- [ ] **(1 hour)**<br>Find and visit a financial adviser at least once to sanity-check my investment decision-making and personal finance system.<br>#google
+- [ ] **(1 hour)**<br>Read reading Code Complete.<br>#google #recurring
+- [ ] **(1 hour)**<br>Reread How to Win Friends and Influence People.<br>#google #recurring
+- [ ] **(1 hour)**<br>Get a new mechanical keyboard and mouse to be used at google (or at home, if you move your current stuff to Google).<br>#google
+- [ ] **(1 hour)**<br>Read **The Magic of Thinking Big**<br>#google #recurring
 
 
 

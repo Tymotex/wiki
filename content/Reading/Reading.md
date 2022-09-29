@@ -43,6 +43,16 @@ TODO: this article is really worth re-reading: https://jamesclear.com/reading-co
 - Stay alert for *analogies*, i.e. common patterns between the current problem and past problems.
 
 ---
+## Biographies
+### Man's Search For Meaning
+[[Reading/Man's Search For Meaning|Man's Search For Meaning]] by Viktor E. Frankl. This book made me feel capable of having an unbreakable will in moments of extreme suffering and remaining stoic and sanguine independent of predicaments. The passages on Frankl describing his love for his wife made me cry hard.
+- It is always possible to be a *good man* in the most hellish of conditions, and to have the strength of character to give away your last ration despite suffering extreme starvation.
+- *Meaningful suffering* is integral to mental well-being.
+- Love is the ultimate goal to aspire to. Work and love present the most fundamental sources of strength to draw upon when your resolve is tested.
+
+> "He who has a *why* to live for can bear with almost any *how*" — Nietzsche.
+
+---
 ## Self-Help, Skills & Philosophy
 ### Building a Second Brain
 [[Reading/Building a Second Brain|Building a Second Brain]] by Tiago Forte. This book presents a set of low-level tactics that helped me streamline my management of knowledge, tasks and goals.
@@ -95,10 +105,6 @@ Ikigai by Francesc Miralles and Hector Garcia. 'Ikigai' means 'reason for being'
 ### Why We Sleep
 
 ---
-## Biographies
-### Man's Search For Meaning
-[[Reading/Man's Search For Meaning|Man's Search For Meaning]] by Viktor E. Frankl.
-
----
 
 ## Fiction
+### Crime and Punishment

@@ -16,7 +16,15 @@ Estimated spending: $250.
 	- Avoid Chinese food.
 - Cairns Esplanade Lagoon walk.
 
-### Day 2 (Great Barrier Reef)
+### Day 2 (Fitzroy Island)
+Estimated spending: $400.
+- ~$50 for full-day trip. [Main website for booking](https://www.tripadvisor.com.au/AttractionProductReview-g255069-d11452301-Fitzroy_Island_Day_Trip_from_Cairns-Cairns_Cairns_Region_Queensland.html).
+    - Turtle rehabilitation centre.
+    - Glass bottom boat tour.
+    - Snorkelling.
+    - Hike to summit.
+
+### Day 3 (Great Barrier Reef)
 Estimated spending: $700.
 - $220 per person. [Full-day snorkel and cruise (Passions of Paradise)](https://www.tripadvisor.com.au/AttractionProductReview-g255069-d11465161-Passions_of_Paradise_Great_Barrier_Reef_Snorkel_and_Dive_Cruise_from_Cairns_by_Lux.html).
     - $80 camera hire.
@@ -24,21 +32,13 @@ Estimated spending: $700.
 - $215 per person. [Snorkelling and scuba (Down Under)](https://www.tripadvisor.com.au/AttractionProductReview-g255069-d11448699-Great_Barrier_Reef_Snorkeling_and_Diving_Cruise_from_Cairns-Cairns_Cairns_Region_Q.html). 
     - Snorkelling and diving at 2 dive sites (Saxon or Norman Reef, and North Hastings Reef). Lunch and refreshments.
 
-### Day 3 (Kuranda)
+### Day 4 (Kuranda)
 Estimated spending: $530.
 - Bus from Reef Palms to Smithfield Terminal, and back.
 - $90 per person. Skyrail cableway (round-trip, full-day).
 - $60 per person. [Kuranda explorer](https://www.birdworldkuranda.com/packages) (Butterfly Sanctuary, Koala Garden, Riverboat cruise, Birdworld).
 - [Kuranda hikes and lookouts](https://www.kuranda.org/see-do/walking-tracks-trails).
     - Barron Falls.
-
-### Day 4 (Fitzroy Island)
-Estimated spending: $400.
-- ~$50 for full-day trip. [Main website for booking](https://www.tripadvisor.com.au/AttractionProductReview-g255069-d11452301-Fitzroy_Island_Day_Trip_from_Cairns-Cairns_Cairns_Region_Queensland.html).
-    - Turtle rehabilitation centre.
-    - Glass bottom boat tour.
-    - Snorkelling.
-    - Hike to summit.
 
 ### Day 5 (Flexible)
 Either Daintree or another trip to the Great Barrier Reef.
@@ -48,9 +48,6 @@ Either Daintree or another trip to the Great Barrier Reef.
 - Red Arrow Track.
 - Cairns Museum.
 - Cairns Art Gallery.
-
-## Food
-
 
 ## Packing List
 See [[Areas/Planning Trips#Packing List|Packing List]].

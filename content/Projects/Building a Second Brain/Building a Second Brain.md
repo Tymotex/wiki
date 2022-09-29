@@ -9,8 +9,6 @@ title: Building a Second Brain
     - Clicking on the board name links to the project page.
     - All tasks have a #project tag.
     - Some tasks might have a #recurring tag. Eg. If I want to finish a book, then there will be tasks to read x number of pages.
-- Clicking on the tasks board name links to the daily note.
-- Where do I track my goals? I feel that this is separate from my projects.
 
 ---
 
@@ -23,6 +21,7 @@ title: Building a Second Brain
     - Moves all incomplete tasks from previous days into today's task lane. This eliminates you having to manually drag cards over to today.
     - Creates the next $n$ days' task lanes and populates them with default tasks. For example, you can schedule a morning routine task for every day or a weekly review task for every Sunday, etc.
     - You only ever have to view and manage 1 task board. The script helps to keep the task board cycling onwards through the days infinitely.
+    - You can set default tasks to be applied on a daily, weekly or monthly basis. This is how I never forget to do weekly and monthly reviews, for example.
 
 ## Workflow
 - Vim keybindings option in Obsidian and `obsidian-vimrc-support`.

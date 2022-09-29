@@ -2,13 +2,19 @@
 title: Meals
 ---
 
-TODO: spinach meals, omelettes, bean meals, fish meals, tofu meals, chicken meals, potato/pumpkin meals, quinoa meals, broccoli/cauliflower meals.
+## Primary
+- Mince.
+    - Mince, onion, chilli powder and other spices
+- [Sautéed spinach](https://www.simplyrecipes.com/recipes/spinach/).
+    - 0.5kg spinach, 2 tbsp extra-virgin olive oil, 3 cloves garlic, salt
+- [Black bean salad](https://cookieandkate.com/black-bean-salad-recipe/).
+    - Black beans, corn, bell pepper, tomatoes, onion, coriander, jalapeno, lemon, extra-virgin olive oil, white wine vinegar, chilli powder, cumin, salt.
+- Roast vegetables
+    - Choose any of: broccoli, cauliflower, bell peppers, potatoes, Brussels sprouts, sweet potatoes, eggplant, mushrooms, asparagus, butternut squash, onion, carrot
+- [Pumpkin soup](https://www.youtube.com/watch?v=RPGBMkN-_Ys).
+- Cream of mushroom soup
 
-**Primary**:
-- Mince, seasoned with chilli and spice mixes, served with rice.
-- 
-
-**Supplementary**:
+## Supplementary
 - Sauerkraut.
-- Peanut butter sandwich with crushed berries and bananas instead of jam.
-
+- Peanut butter sandwich with crushed berries and/or banana coins instead of jam.
+- Pickled jalapenos.
