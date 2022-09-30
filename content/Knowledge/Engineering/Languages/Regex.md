@@ -31,4 +31,10 @@ Regex pattern matching is supported in most modern programming languages, howeve
 | `\s`            | Any whitespace character (space, tabs, newlines, etc.)       |
 | `\S`            | Anything *not* a whitespace.                                 |
 
+## Non-Greedy Matching
 Regex matching is typically *greedy*, meaning that `(Ha){3,5}` will match the longest string possible, which would be `HaHaHaHaHa` if that exists. Using `(Ha){3,5}?` will perform non-greedy matching, preferring to match `HaHaHa`.
+
+You can use non-greedy matching by appending a `?` qualifier. For example, `.*?` matches 0 or more of any character non-greedily.
+
+### Example
+Suppose we want to interpolate values into the string: `"Hi {{world_type}}. I am {{name}}."`. We'd might use the regex: `{{(.*)}}` and extract out the capture group. Since greedy matching is the default, this would extract the capture group: `world_type}}. I am {{name`. To fix this, use the regex `{{(.*?)}}`.

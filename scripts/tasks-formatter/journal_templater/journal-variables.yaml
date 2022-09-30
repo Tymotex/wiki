@@ -14,4 +14,5 @@ prompts:
   # My own prompts:
   - Was today a meaningful day? Are you any closer to your goals?
   - Are you satisfied with your conduct today? What can you do to be better tomorrow?
-# quotes:
+quotes:
+  - Hello World

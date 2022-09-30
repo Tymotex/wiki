@@ -150,6 +150,7 @@ with open(filename, "r") as my_file:
 # Writing.
 with open(filename, "w") as my_file:
     my_file.write("Hi.")
+    my_file.writelines(["Hello", "World"])
 ```
 
 ### OS
@@ -173,6 +174,8 @@ match = regex.search(haystack)  # `re.Match` object contains info about the sear
 
 # Equivalent to the above, but you can't reuse the compiled regex.
 result = re.match(r"...", haystack)
+
+
 ```
 
 **Capture Groups**:
@@ -202,7 +205,7 @@ date_obj = datetime.strptime(date_str, "%Y-%m-%d")
 
 # strftime: datetime → str
 date_obj = datetime.now()
-date_str = date_obj.strftime("%Y-%m-%d")
+date_str = date_obj.strftime("%Y-%m-%d")   # → YYYY-MM-DD
 ```
 
 **Date arithmetic and comparison**:
