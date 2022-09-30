@@ -138,6 +138,15 @@ kanban-plugin: basic
 
 
 
+## **Friday** *[[Journal/2022-09-30|2022-09-30]]* (6)
+
+- [x] ### **🏆 Purpose**: basb, konflux and read law
+- [x] ### **(10 mins)** Monthly Review.
+- [x] **(5 mins)**<br>Clicking on the tasks board name links to the daily note.<br><br>#second-brain
+- [x] **(30 mins)**<br>Make the task formatter increment a counter tag that shows how many times a task has been pushed along.<br>#project #second-brain
+- [x] **(2 hours)**<br>~~Write a Python script that generates a set of journal prompts. Make it run on pressing `ctrl + j`.~~<br>Instead, I'm generating a bunch of journal entries using the task formatter. This is more flexible.<br>#project #second-brain
+- [x] Make 1 small tetrahedra out of black paper.
+
 ***
 
 ## Archive
