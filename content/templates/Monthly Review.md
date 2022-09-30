@@ -8,4 +8,4 @@ The point of weekly reviews is mainly to ensure that the projects are keeping to
     - [ ] Are you happy with them?
     - [ ] Are you on track to completing them?
 - [ ] What are the 3 highest priority projects over next month?
-- [ ] What other projects should you bring to life or but in the ice box?
+- [ ] What other projects should you bring to life or put in the ice box?
