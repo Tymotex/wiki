@@ -13,6 +13,8 @@ Giving into addiction is fundamentally about meaninglessness. Giving in means yo
 - You are so fucking ashamed of yourself when you do it. You have never not regretted doing it and you fuck yourself over for literally the next several weeks before you regain momentum. A few seconds of pleasure is not worth it.
 - This is one of your last vices. You've already conquered so many other things and formed so many good habits. You **have** to beat this for the sake of your current and future family, it cannot go on forever, even if you decide to give up this time. You cannot simply live with it.
 
+Having a bad day is not an excuse. If you can't focus, you can't focus. Suck it for literally the entire day. It's 100% worth it and your conscious brain knows it.
+
 ---
 
 ## Relapses
