@@ -20,6 +20,9 @@ import re
 from typing import List
 import yaml
 
+class JournalException(Exception):
+    pass
+
 class JournalManager:
     def __init__(self, journal_directory_path: str, journal_template_file_path: str, journal_variables_file_path: str) -> None:
         # Assumes that the journal directory path is absolute.
@@ -94,8 +97,20 @@ class JournalManager:
         # line.
         re.compile(r"{{(.*?)}}")
         for line in lines:
-            # Pull a random value from the bank of prompts or quotes.
-            
-            ""
+            # Extract all variables referenced. 
+            variables = []
+
+            # Pull a random value from the bank of prompts or quotes and 
+            # populate that variable
+
+            # Interpolate those variables in.
+            # replace() or re.sub()
         return []
 
+    def _get_variable_value(self, variable: str):
+        if variable.lower() == "prompt":
+            pass
+        elif variable.lower() == "quote":
+            pass
+        else:
+            raise JournalException(f"Unknown variable type '{variable}'")
