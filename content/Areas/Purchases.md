@@ -2,6 +2,7 @@
 title: Purchases
 ---
 
+- Blackout curtains for better sleep.
 - Squat shoes.
 - Deadlift shoes/slippers.
 - SBD knee sleeves.
