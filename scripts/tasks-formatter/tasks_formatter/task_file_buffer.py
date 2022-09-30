@@ -116,6 +116,7 @@ class TaskFileBuffer:
                     reconstructed_task = f"- [{'X' if checked else ' '}] =={times_shifted}== {task_description.strip()}"
                     incomplete_tasks_from_prev_days.append(reconstructed_task)
                     tasks.remove(task)
+
             curr_date_index += 1
 
         if len(self._tasks) == 0 or self._tasks[date_index][0] != date:
