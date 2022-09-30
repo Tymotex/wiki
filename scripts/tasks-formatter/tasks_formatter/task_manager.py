@@ -13,7 +13,7 @@ class TaskManager:
         # midnight time.
         self._date_today = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
 
-    def format(self, num_future_dates: int):
+    def format(self, num_future_dates: int) -> None:
         """
         Shifts all incomplete tasks to today and archives task columns before
         today's date.
