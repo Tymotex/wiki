@@ -23,6 +23,9 @@ title: Origami
     - Stellated Octahedron
     - Triambic icosahedron
     - Omega star
+    - Would love to have a smol collection like this:
+      ![[_private/assets/modular-origami-shelf-inspiration.png|300]]
 - Cactus
     - [Inspiration](https://www.reddit.com/r/origami/comments/b52xvq/hello/) and [another](https://www.reddit.com/r/origami/comments/fjtoke/one_of_these_things/)
 - Succulents
+- Bonsai
