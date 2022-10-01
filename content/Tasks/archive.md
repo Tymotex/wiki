@@ -147,6 +147,14 @@ kanban-plugin: basic
 - [x] **(2 hours)**<br>~~Write a Python script that generates a set of journal prompts. Make it run on pressing `ctrl + j`.~~<br>Instead, I'm generating a bunch of journal entries using the task formatter. This is more flexible.<br>#project #second-brain
 - [x] Make 1 small tetrahedra out of black paper.
 
+## **Saturday** *[[Journal/2022-10-01|2022-10-01]]* (6)
+
+- [x] ### **🏆 Purpose**: konflux, and just get through tasks
+- [x] Apply Eleuphrat.
+- [x] Start a page for all your accomplishments. Write in your open source contributions.
+- [x] ==1== **(3 hours)** <br>Work on Konflux Figma prototype.<br>#project #konflux
+- [x] ==1== **(60 mins)**<br>Book all Cairns experiences.
+
 ***
 
 ## Archive
