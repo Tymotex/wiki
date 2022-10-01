@@ -6,6 +6,7 @@ kanban-plugin: basic
 
 ## [[Projects/Konflux/Konflux|Konflux]] (Deadline: **Sunday, 2nd Oct)**
 
+- [ ] **(30 mins)**<br>What is the purpose of the privacy policy? Do I need one? Write a new privacy policy page component if so.<br>#konflux
 
 
 ## [[Projects/Building a Second Brain/Building a Second Brain|Building a Second Brain]]
