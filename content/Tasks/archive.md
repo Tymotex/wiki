@@ -155,6 +155,12 @@ kanban-plugin: basic
 - [x] ==1== **(3 hours)** <br>Work on Konflux Figma prototype.<br>#project #konflux
 - [x] ==1== **(60 mins)**<br>Book all Cairns experiences.
 
+## **Sunday** *[[Journal/2022-10-02|2022-10-02]]* (6)
+
+- [x] ### **🏆 Purpose**: konflux
+- [x] ==1== **(3 hours)** <br>Work on Konflux Figma prototype.<br>#project #konflux
+- [x] **(50 mins)**<br>Write notes on perm steps and maintenance, and digital vs non-digital perm. Book session.
+
 ***
 
 ## Archive
