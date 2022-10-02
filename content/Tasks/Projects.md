@@ -20,12 +20,10 @@ kanban-plugin: basic
 
 ## [[Projects/Math Website/Math Website|Math Website]]
 
-- [ ] **(20 mins)** <br>Meeting with dad to discuss requirements for the quiz. Show dad Khan academy quiz.<br>#project
 
 
 ## [[Projects/Mum Tutoring/Mum Tutoring|Mum Tutoring]]
 
-- [ ] **(1 hour)**<br>Determine what the next steps would be to getting a language school started.<br>#project #mum
 
 
 ## [[Projects/Structs Graph Visualiser/Graph Visualiser MVP|Structs Graph MVP]]
@@ -35,8 +33,6 @@ kanban-plugin: basic
 ## Investing
 
 - [ ] **(2 hours)**<br>Investopedia stock market deep-dive<br>#project #recurring
-- [ ] **(2 hours)**<br>Write down the full list of steps to buying a house.<br>#project
-- [ ] **(2 hours)**<br>Watch [this](https://www.youtube.com/watch?v=cB1c2LB6_hg&ab_channel=CharlieChang) 1 hour video.
 
 
 ## [[Reading/Reading|Reading]]
