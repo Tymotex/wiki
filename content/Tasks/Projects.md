@@ -7,8 +7,10 @@ kanban-plugin: basic
 ## [[Projects/Konflux/Konflux|Konflux]] (Deadline: **Sunday, 2nd Oct)**
 
 - [ ] **(30 mins)**<br>What is the purpose of the privacy policy? Do I need one? Write a new privacy policy page component if so.<br>#konflux
-- [ ] Should I stay open-source but add a license or should I go closed-source?
-- [ ] Check out cronofy API
+- [ ] Should I stay open-source but add a license or should I go closed-source?<br>#konflux
+- [ ] Check out cronofy API<br>#konflux
+- [ ] Try Illustrator and use it re-make the logo. <br>#konflux
+- [ ] **(1 horu)**<br>Try [curvaceous background](https://www.youtube.com/watch?v=lPJVi797Uy0&ab_channel=Fireship).<br>#konflux
 
 
 ## [[Projects/Building a Second Brain/Building a Second Brain|Building a Second Brain]]

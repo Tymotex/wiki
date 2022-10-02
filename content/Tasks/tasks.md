@@ -13,6 +13,7 @@ kanban-plugin: basic
 - [x] ==3== **(10 mins)**<br>Buy an underwater phone pouch.
 - [ ] **(2 hours)**<br>Work on Konflux. Get all the styling complete.
 - [ ] Assess the feasibility of swimlanes. See the full discussion.
+- [ ] Complete HireRight while listening to music.
 - [ ] ==3== **(40 mins)**<br>Read Spark<br>#reading #recurring
 - [ ] ==3== **(40 mins)** Go through **Rich Dad Poor Dad** and finalise notes.
 - [ ] ==2== **(40 mins)** Go through **Deep Work** and finalise notes.
