@@ -8,7 +8,6 @@ kanban-plugin: basic
 
 - [x] ### **🏆 Purpose**: konflux
 - [x] ==1== **(3 hours)** <br>Work on Konflux Figma prototype.<br>#project #konflux
-- [ ] Apply Eleuphrat.
 - [ ] ==1== **(20 mins)**  Drop COMP4128. Need to apply for program leave. Do it online?
 - [ ] #### **(10 mins)** Weekly Review.
 - [ ] **(1 hour)** Go through **Never Split the Difference** and finalise notes.
@@ -23,13 +22,14 @@ kanban-plugin: basic
 - [ ] ==2== **(40 mins)**<br>Read Spark<br>#reading #recurring
 - [ ] ==2== **(40 mins)**<br>Read Spark<br>#reading #recurring
 - [ ] ==2== **(40 mins)**<br>Read Spark<br>#reading #recurring
-- [ ] **(25 mins)**<br>Write notes on perm steps and maintenance, and digital vs non-digital perm. Book session.
+- [x] **(50 mins)**<br>Write notes on perm steps and maintenance, and digital vs non-digital perm. Book session.
+- [ ] Apply Eleuphrat.
 
 
 ## **Monday** *[[Journal/2022-10-03|2022-10-03]]* (6)
 
 - [ ] ### **🏆 Purpose**:
-- [ ] Apply Eleuphrat.
+- [x] Apply Eleuphrat.
 - [ ] **(45 mins)** Make a weekly diet plan and give it to mum.
 - [ ] **[1 hour]** Go through How to Not Die Alone and finalise notes.
 
