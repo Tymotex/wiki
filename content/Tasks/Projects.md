@@ -8,6 +8,7 @@ kanban-plugin: basic
 
 - [ ] **(30 mins)**<br>What is the purpose of the privacy policy? Do I need one? Write a new privacy policy page component if so.<br>#konflux
 - [ ] Should I stay open-source but add a license or should I go closed-source?
+- [ ] Check out cronofy API
 
 
 ## [[Projects/Building a Second Brain/Building a Second Brain|Building a Second Brain]]
