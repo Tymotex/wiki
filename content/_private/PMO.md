@@ -9,11 +9,11 @@ Giving into addiction is fundamentally about meaninglessness. Giving in means yo
 **When horny**:
 - Just get started with work. You won't feel it once you're in flow. If you can't get in flow, just take a break and get out of your room.
 - Go to the yard and just look at the plants and sky.
-- Remember the meaning of this suffering: you do this so that you can be a better man for your current and future family. You do this so that women will want you. You do this so that you beat all your enemies who want to see you fail, and to beat all the other men in the predicament as you.
+- **Remember the meaning of this suffering: you do this so that you can be a better man for your current and future family. You do this so that women will want you. You do this so that you beat all your enemies who want to see you fail, and to beat all the other men in the same predicament as you.**
 - You are so fucking ashamed of yourself when you do it. You have never not regretted doing it and you fuck yourself over for literally the next several weeks before you regain momentum. A few seconds of pleasure is not worth it.
 - This is one of your last vices. You've already conquered so many other things and formed so many good habits. You **have** to beat this for the sake of your current and future family, it cannot go on forever, even if you decide to give up this time. You cannot simply live with it.
 
-Having a bad day is not an excuse. If you can't focus, you can't focus. Suck it for literally the entire day. It's 100% worth it and your conscious brain knows it.
+Having a bad day is not an excuse. If you can't focus, you can't focus. Just suffer the debuff for the day. It's 100% worth it and your conscious brain knows it.
 
 ---
 
