@@ -2,30 +2,31 @@
 title: Origami
 ---
 
-- [Pentagon rose](https://www.youtube.com/watch?v=8YMgbtX7FZ8) and [calyx](https://www.youtube.com/watch?v=tocRa6D_iWM&ab_channel=TadashiMori-OrigamiTutorials).
-- [Five intersecting tetrahedra](https://www.youtube.com/watch?v=aT2UHxA4uRY&ab_channel=OrigamiwithJoNakashima)
-- [Kusudama starsea](https://www.youtube.com/watch?v=u-71U6rs9Vg)
-- Kusudama flower
-- Tigra
-- Dahlia
-- Tulip
-- [Christmas Tree](https://www.youtube.com/watch?v=4kWS1q8zFFc&list=PL5jDTd07plNBkAhTmX7ZJjKJNEf-W579j&index=41&ab_channel=OrigamiwithJoNakashima)
-- Anything from this playlist:
-    - Excavated dodecahedron
-    - CLO kusudama
-    - Cookiecutter
-    - Clover Kusudama
-    - Sea Urchin Star
-    - Six pentagonal prisms
-    - Curler Icosidodecahedron
-    - Curler Rhombicuboctahedron
-    - Curler Cuboctahedron
-    - Stellated Octahedron
-    - Triambic icosahedron
-    - Omega star
-    - Would love to have a smol collection like this:
-      ![[_private/assets/modular-origami-shelf-inspiration.png|300]]
-- Cactus
+## Favourites
+- [x] [Pentagon rose](https://www.youtube.com/watch?v=8YMgbtX7FZ8) and [calyx](https://www.youtube.com/watch?v=tocRa6D_iWM&ab_channel=TadashiMori-OrigamiTutorials).
+- [x] [Five intersecting tetrahedra](https://www.youtube.com/watch?v=aT2UHxA4uRY&ab_channel=OrigamiwithJoNakashima)
+- [ ] [Kusudama starsea](https://www.youtube.com/watch?v=u-71U6rs9Vg)
+    - [x] Modular star
+- [x] Kusudama flower
+- [ ] Tigra
+- [ ] Dahlia
+- [ ] Tulip
+- [ ] [Christmas Tree](https://www.youtube.com/watch?v=4kWS1q8zFFc&list=PL5jDTd07plNBkAhTmX7ZJjKJNEf-W579j&index=41&ab_channel=OrigamiwithJoNakashima)
+- [ ] [Kusudama Paradigma](https://www.youtube.com/watch?v=ezabkkIq3ds&ab_channel=TadashiMori-OrigamiTutorials)
+- [ ] Anything from this playlist:
+    - [ ] Excavated dodecahedron
+    - [ ] CLO kusudama
+    - [ ] Cookiecutter
+    - [ ] Clover Kusudama
+    - [ ] Sea Urchin Star
+    - [ ] Six pentagonal prisms
+    - [x] Curler Icosidodecahedron
+    - [ ] Curler Rhombicuboctahedron
+    - [ ] Curler Cuboctahedron
+    - [ ] Stellated Octahedron
+    - [ ] Triambic icosahedron
+    - [ ] Omega star
+- [ ] [Cactus](https://www.youtube.com/watch?v=xXdIQGMCqBE&ab_channel=origamiaround)
     - [Inspiration](https://www.reddit.com/r/origami/comments/b52xvq/hello/) and [another](https://www.reddit.com/r/origami/comments/fjtoke/one_of_these_things/)
-- Succulents
+- [ ] [Succulents](https://www.youtube.com/watch?v=Op3b5pcDeEY&ab_channel=PaperKawaii-OrigamiTutorials)
 - Bonsai
