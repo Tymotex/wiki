@@ -31,6 +31,8 @@ Estimated spending: $450.
     - Hike to summit.
 
 ### Day 4 (Kuranda 23rd Sunday)
+> Get the Skyrail app.
+
 Estimated spending: $500.
 - Bus from Reef Palms to Smithfield Terminal, and back.
 - Skyrail cableway (round-trip, full-day).
@@ -38,7 +40,10 @@ Estimated spending: $500.
 - Butterfly sanctuary
 - [Kuranda hikes and lookouts](https://www.kuranda.org/see-do/walking-tracks-trails).
     - Barron Falls.
-![[_archive/Cairns Trip 2022/assets/Pasted image 20221001160129.png|300]]
+![[_archive/Cairns Trip 2022/assets/Pasted image 20221001160129.png|200]]
+![[_archive/Cairns Trip 2022/assets/Pasted image 20221003064745.png|250]]
+![[_archive/Cairns Trip 2022/assets/Pasted image 20221003064827.png|250]]
+
 
 ### Day 5 (Great Barrier Reef 24th Monday)
 Estimated spending: $850.
