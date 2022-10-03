@@ -40,14 +40,23 @@ The squat mainly targets the quadriceps, hip muscles, glutes, and targets to a l
     - Keep knees pointed in the same direction as toes are pointed throughout both descent and ascent.
 
 ## Bench Press
+![[Knowledge/Health/assets/bench-press.gif|200]]
+([source](https://tenor.com/view/bench-press-fitness-gif-18409378))
 
-1.  
-2.  
-3. 
+1.  Setup
     - Arching the lower back positions your chest higher, resulting in a shorter distance that the bar has to travel. It keeps your shoulders safe.
     - Cue: pull your shoulders back and down.
     - Your 3 points of contact (glutes, upper back and feet) should never lift off the bench/ground.
-4.  
+    - Position your feet wherever it's the case that supplying leg drive does not cause your butt to lift off the bench.
+    - Prefer a grip width such that when the bar is at your chest, your forearms are perpendicular to the barbell.
+2.  Unrack
+    - Pull the barbell **with your lats** until your arms are perpendicular to the ground. The motion should not involve pushing the bar upwards by much.
+    - Do not 'pop' the bar up to unrack it. This causes you to lose your upper body tightness.
+3. 
+4. Descent
+    - At the bottom, your elbows should form a 45° angle with your torso. This is sometimes referred to as 'tucking' your elbow.
+    - The bar path should curve very slightly outwards, following a diagonal descent to your chest.
+    - **Leg drive**: push with your quads up the bench, not towards the ceiling.
 5.  
 
 ## Deadlift
