@@ -161,6 +161,14 @@ kanban-plugin: basic
 - [x] ==1== **(3 hours)** <br>Work on Konflux Figma prototype.<br>#project #konflux
 - [x] **(50 mins)**<br>Write notes on perm steps and maintenance, and digital vs non-digital perm. Book session.
 
+## **Monday** *[[Journal/2022-10-03|2022-10-03]]* (6)
+
+- [x] Apply Eleuphrat.
+- [x] ==1== <br>#### **(10 mins)** Weekly Review.
+- [x] ==2== **(10 mins)**  Drop COMP4128. Need to apply for program leave. Do it online?
+- [x] ==3== **(10 mins)**<br>Buy an underwater phone pouch.
+- [x] **(4.5 hours)**<br>Work on Konflux. Get all the styling complete.
+
 ***
 
 ## Archive
