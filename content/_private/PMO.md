@@ -7,6 +7,7 @@ title: PMO
 Giving into addiction is fundamentally about meaninglessness. Giving in means your *why* is not sufficiently strong.
 
 **When horny**:
+- Start thinking about your dream girl, your future wife. Listen to Perfect by Ed Sheeran.
 - Just get started with work. You won't feel it once you're in flow. If you can't get in flow, just take a break and get out of your room.
 - Go to the yard and just look at the plants and sky.
 - **Remember the meaning of this suffering: you do this so that you can be a better man for your current and future family. You do this so that women will want you. You do this so that you beat all your enemies who want to see you fail, and to beat all the other men in the same predicament as you.**
