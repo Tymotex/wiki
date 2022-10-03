@@ -41,6 +41,15 @@ The squat mainly targets the quadriceps, hip muscles, glutes, and targets to a l
 
 ## Bench Press
 
+1.  
+2.  
+3. 
+    - Arching the lower back positions your chest higher, resulting in a shorter distance that the bar has to travel. It keeps your shoulders safe.
+    - Cue: pull your shoulders back and down.
+    - Your 3 points of contact (glutes, upper back and feet) should never lift off the bench/ground.
+4.  
+5.  
+
 ## Deadlift
 ![[Knowledge/Health/assets/deadlift.gif|400]]
 ([sourced from Men'sHealth](https://www.menshealth.com/uk/fitness/a748582/how-to-deadlift/))
