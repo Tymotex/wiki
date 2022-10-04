@@ -169,6 +169,14 @@ kanban-plugin: basic
 - [x] ==3== **(10 mins)**<br>Buy an underwater phone pouch.
 - [x] **(4.5 hours)**<br>Work on Konflux. Get all the styling complete.
 
+## **Tuesday** *[[Journal/2022-10-04|2022-10-04]]* (6)
+
+- [x] ### **🏆 Purpose**: konflux and read.
+- [x] **(4 hours)**<br>Work on Konflux (δ, ε, 3, 4, ζ, curves)
+- [x] Make booking over phone.
+- [x] Apply Eleuphrat.
+- [x] Ask mum to buy mince.
+
 ***
 
 ## Archive

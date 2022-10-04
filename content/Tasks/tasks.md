@@ -2,27 +2,6 @@
 kanban-plugin: basic
 ---
 
-## **Tuesday** *[[Journal/2022-10-04|2022-10-04]]* (6)
-
-- [x] ### **🏆 Purpose**: konflux and read.
-- [x] **(4 hours)**<br>Work on Konflux (δ, ε, 3, 4, ζ, curves)
-- [x] Make booking over phone.
-- [x] Apply Eleuphrat.
-- [x] Ask mum to buy mince.
-- [ ] ==3== **(2 hours)** Read more about law, filling in your definitions. Specifically learn more about tax law.<br><br>Consider making a project out of this.
-- [ ] ==4== **(1 hour)**<br>Write notes on the bench press.
-- [ ] **(20 mins)** <br>Meeting with dad to discuss requirements for the quiz. Show dad Khan academy quiz.<br>#project
-- [ ] ==1== Assess the feasibility of swimlanes. See the full discussion.
-- [ ] ==1== Complete HireRight while listening to music.
-- [ ] ==4== **(40 mins)**<br>Read Spark<br>#reading #recurring
-- [ ] ==4== **(40 mins)** Go through **Rich Dad Poor Dad** and finalise notes.
-- [ ] ==3== **(40 mins)** Go through **Deep Work** and finalise notes.
-- [ ] ==1== **(45 mins)** Make a weekly diet plan and give it to mum.
-- [ ] ==4== **(1.5 hours)**<br>Complete week 1 of [EdX](https://learning.edx.org/course/course-v1:BerkeleyX+Fin101x+3T2019/home).<br>#project
-- [ ] ==4== **(1 hour)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.<br><br>Add an old notes disclaimer at the top of each notes page.<br><br>Be ruthless and only keep the most important notes. Archive the rest.
-- [ ] ==4== **(40 mins)**<br>Read Spark<br>#reading #recurring
-- [ ] ==4== **(40 mins)**<br>Read Spark<br>#reading #recurring
-
 ## **Wednesday** *[[Journal/2022-10-05|2022-10-05]]* (6)
 
 - [ ] ### **🏆 Purpose**: investing and read.
@@ -31,6 +10,19 @@ kanban-plugin: basic
 - [ ] **(1 hour)**<br>Determine what the next steps would be to getting a language school started.<br>#project #mum
 - [ ] **(2 hours)**<br>Write down the full list of steps to buying a house.<br>#project
 - [ ] **(2 hours)**<br>Watch [this](https://www.youtube.com/watch?v=cB1c2LB6_hg&ab_channel=CharlieChang) 1 hour video.
+- [ ] ==4== **(2 hours)** Read more about law, filling in your definitions. Specifically learn more about tax law.<br><br>Consider making a project out of this.
+- [ ] ==5== **(1 hour)**<br>Write notes on the bench press.
+- [ ] ==1== **(20 mins)** <br>Meeting with dad to discuss requirements for the quiz. Show dad Khan academy quiz.<br>#project
+- [ ] ==2== Assess the feasibility of swimlanes. See the full discussion.
+- [ ] ==2== Complete HireRight while listening to music.
+- [ ] ==5== **(40 mins)**<br>Read Spark<br>#reading #recurring
+- [ ] ==5== **(40 mins)** Go through **Rich Dad Poor Dad** and finalise notes.
+- [ ] ==4== **(40 mins)** Go through **Deep Work** and finalise notes.
+- [ ] ==2== **(45 mins)** Make a weekly diet plan and give it to mum.
+- [ ] ==5== **(1.5 hours)**<br>Complete week 1 of [EdX](https://learning.edx.org/course/course-v1:BerkeleyX+Fin101x+3T2019/home).<br>#project
+- [ ] ==5== **(1 hour)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.<br><br>Add an old notes disclaimer at the top of each notes page.<br><br>Be ruthless and only keep the most important notes. Archive the rest.
+- [ ] ==5== **(40 mins)**<br>Read Spark<br>#reading #recurring
+- [ ] ==5== **(40 mins)**<br>Read Spark<br>#reading #recurring
 
 ## **Thursday** *[[Journal/2022-10-06|2022-10-06]]* (6)
 
@@ -156,6 +148,10 @@ kanban-plugin: basic
 - [ ] ### **🏆 Purpose**:
 
 ## **Thursday** *[[Journal/2022-11-03|2022-11-03]]* (6)
+
+- [ ] ### **🏆 Purpose**:
+
+## **Friday** *[[Journal/2022-11-04|2022-11-04]]* (6)
 
 - [ ] ### **🏆 Purpose**:
 
