@@ -13,3 +13,4 @@ title: Purchases
 - Better, safer power rack for bench press, squatting and pressing.
 - Better barbell with sharper knurlings
 - Good pillow.
+- Guitar finger picks that aren't clunky.
