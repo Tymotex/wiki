@@ -43,24 +43,28 @@ The squat mainly targets the quadriceps, hip muscles, glutes, and targets to a l
 ![[Knowledge/Health/assets/bench-press.gif|200]]
 ([source](https://tenor.com/view/bench-press-fitness-gif-18409378))
 
-1.  Setup
+1.  **Setup**:
     - Arching the lower back positions your chest higher, resulting in a shorter distance that the bar has to travel. It keeps your shoulders safe.
     - Cue: pull your shoulders back and down.
     - Your 3 points of contact (glutes, upper back and feet) should never lift off the bench/ground.
     - Position your feet wherever it's the case that supplying leg drive does not cause your butt to lift off the bench.
     - Prefer a grip width such that when the bar is at your chest, your forearms are perpendicular to the barbell.
-2.  Unrack
+    - The bar should be directly above your eyes.
+    - The rack should be at a height such that the bar is 2" up from the rack at full elbow extension.
+2.  **Unrack**:
     - Pull the barbell **with your lats** until your arms are perpendicular to the ground. The motion should not involve pushing the bar upwards by much.
     - Do not 'pop' the bar up to unrack it. This causes you to lose your upper body tightness.
-3. 
-4. Descent
+3. **Descent**:
     - At the bottom, your elbows should form a 45° angle with your torso. This is sometimes referred to as 'tucking' your elbow.
     - The bar path should curve very slightly outwards, following a diagonal descent to your chest.
+4. **Push**:
+    - Drive up and back.
     - **Leg drive**: push with your quads up the bench, not towards the ceiling.
-5.  
+
+> If you have trouble with locking out beyond midway, pause your bench press reps[\*](https://www.youtube.com/watch?v=63xsr5k9lS0&ab_channel=NickWright).
 
 ## Deadlift
-![[Knowledge/Health/assets/deadlift.gif|400]]
+![[Knowledge/Health/assets/deadlift.gif|300]]
 ([sourced from Men'sHealth](https://www.menshealth.com/uk/fitness/a748582/how-to-deadlift/))
 
 The deadlift mainly targets hamstrings, glutes, back and lats, and to a lesser extent forearms, traps, abdominals.
