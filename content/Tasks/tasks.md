@@ -7,7 +7,8 @@ kanban-plugin: basic
 ## **Wednesday** *[[Journal/2022-10-05|2022-10-05]]* (6)
 
 - [ ] ### **🏆 Purpose**: investing and read.
-- [ ] **(1 hour)**<br>Get throttling working and improve the mobile view of the timetable.<br>#konflux
+- [ ] **(2 hours)**<br>Get throttling working and improve the mobile view of the timetable.<br>#konflux
+- [ ] Confirm you'll go through with the perm...
 - [ ] Apply Eleuphrat.
 - [ ] Go through each book in my reading list and at least write a few sentences for each, explaining the main takeaways.
 - [ ] **(1 hour)**<br>Determine what the next steps would be to getting a language school started.<br>#project #mum
