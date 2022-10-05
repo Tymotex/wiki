@@ -1,7 +1,5 @@
 ---
-
 kanban-plugin: basic
-
 ---
 
 ## **Wednesday** *[[Journal/2022-10-05|2022-10-05]]* (6)
@@ -28,12 +26,10 @@ kanban-plugin: basic
 - [ ] ==5== **(40 mins)**<br>Read Spark<br>#reading #recurring
 - [ ] ==5== **(40 mins)**<br>Read Spark<br>#reading #recurring
 
-
 ## **Thursday** *[[Journal/2022-10-06|2022-10-06]]* (6)
 
 - [ ] ### **🏆 Purpose**: konflux and read.
 - [ ] ==1== **(1 hour)** Go through **Never Split the Difference** and finalise notes.
-
 
 ## **Friday** *[[Journal/2022-10-07|2022-10-07]]* (6)
 
@@ -43,152 +39,123 @@ kanban-plugin: basic
 - [ ] **(2 hours)**<br>Investopedia stock market deep-dive<br>#project #recurring
 - [ ] ==1== **(1 hour)**<br>Write notes on the overhead press.
 
-
 ## **Saturday** *[[Journal/2022-10-08|2022-10-08]]* (6)
 
 - [ ] ### **🏆 Purpose**: konflux and read.
 - [ ] **[1 hour]** Go through How to Not Die Alone and finalise notes.
-
 
 ## **Sunday** *[[Journal/2022-10-09|2022-10-09]]* (6)
 
 - [ ] ### **🏆 Purpose**: investing and read.
 - [ ] #### **(10 mins)** Weekly Review.
 
-
 ## **Monday** *[[Journal/2022-10-10|2022-10-10]]* (6)
 
 - [ ] ### **🏆 Purpose**:
-
 
 ## **Tuesday** *[[Journal/2022-10-11|2022-10-11]]* (6)
 
 - [ ] ### **🏆 Purpose**:
 
-
 ## **Wednesday** *[[Journal/2022-10-12|2022-10-12]]* (6)
 
 - [ ] ### **🏆 Purpose**:
-
 
 ## **Thursday** *[[Journal/2022-10-13|2022-10-13]]* (6)
 
 - [ ] ### **🏆 Purpose**:
 
-
 ## **Friday** *[[Journal/2022-10-14|2022-10-14]]* (6)
 
 - [ ] ### **🏆 Purpose**:
 
-
 ## **Saturday** *[[Journal/2022-10-15|2022-10-15]]* (6)
 
 - [ ] ### **🏆 Purpose**:
-
 
 ## **Sunday** *[[Journal/2022-10-16|2022-10-16]]* (6)
 
 - [ ] ### **🏆 Purpose**:
 - [ ] #### **(10 mins)** Weekly Review.
 
-
 ## **Monday** *[[Journal/2022-10-17|2022-10-17]]* (6)
 
 - [ ] ### **🏆 Purpose**:
-
 
 ## **Tuesday** *[[Journal/2022-10-18|2022-10-18]]* (6)
 
 - [ ] ### **🏆 Purpose**:
 
-
 ## **Wednesday** *[[Journal/2022-10-19|2022-10-19]]* (6)
 
 - [ ] ### **🏆 Purpose**:
-
 
 ## **Thursday** *[[Journal/2022-10-20|2022-10-20]]* (6)
 
 - [ ] ### **🏆 Purpose**:
 
-
 ## **Friday** *[[Journal/2022-10-21|2022-10-21]]* (6)
 
 - [ ] ### **🏆 Purpose**:
 
-
 ## **Saturday** *[[Journal/2022-10-22|2022-10-22]]* (6)
 
 - [ ] ### **🏆 Purpose**:
-
 
 ## **Sunday** *[[Journal/2022-10-23|2022-10-23]]* (6)
 
 - [ ] ### **🏆 Purpose**:
 - [ ] #### **(10 mins)** Weekly Review.
 
-
 ## **Monday** *[[Journal/2022-10-24|2022-10-24]]* (6)
 
 - [ ] ### **🏆 Purpose**:
-
 
 ## **Tuesday** *[[Journal/2022-10-25|2022-10-25]]* (6)
 
 - [ ] ### **🏆 Purpose**:
 
-
 ## **Wednesday** *[[Journal/2022-10-26|2022-10-26]]* (6)
 
 - [ ] ### **🏆 Purpose**:
-
 
 ## **Thursday** *[[Journal/2022-10-27|2022-10-27]]* (6)
 
 - [ ] ### **🏆 Purpose**:
 
-
 ## **Friday** *[[Journal/2022-10-28|2022-10-28]]* (6)
 
 - [ ] ### **🏆 Purpose**:
 
-
 ## **Saturday** *[[Journal/2022-10-29|2022-10-29]]* (6)
 
 - [ ] ### **🏆 Purpose**:
-
 
 ## **Sunday** *[[Journal/2022-10-30|2022-10-30]]* (6)
 
 - [ ] ### **🏆 Purpose**:
 - [ ] #### **(10 mins)** Weekly Review.
 
-
 ## **Monday** *[[Journal/2022-10-31|2022-10-31]]* (6)
 
 - [ ] ### **🏆 Purpose**:
 - [ ] ### **(10 mins)** Monthly Review.
 
-
 ## **Tuesday** *[[Journal/2022-11-01|2022-11-01]]* (6)
 
 - [ ] ### **🏆 Purpose**:
-
 
 ## **Wednesday** *[[Journal/2022-11-02|2022-11-02]]* (6)
 
 - [ ] ### **🏆 Purpose**:
 
-
 ## **Thursday** *[[Journal/2022-11-03|2022-11-03]]* (6)
 
 - [ ] ### **🏆 Purpose**:
 
-
 ## **Friday** *[[Journal/2022-11-04|2022-11-04]]* (6)
 
 - [ ] ### **🏆 Purpose**:
-
 
 ***
 
