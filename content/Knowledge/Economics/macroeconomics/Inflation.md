@@ -3,6 +3,8 @@ title: Inflation
 description: Inflation
 ---
 
+> "Like virginity, a stable price level seems capable of maintenance, but not of restoration" — Warren Buffett.
+
 Inflation describes a period where *prices in an economy are increasing*, or alternatively, the decline of the purchasing power of a country’s currency. Likewise, *deflation* describes a period where prices are falling. The *inflation rate* describes a value for how much the prices for goods and services have increased in an economy from one point of time to another.
 
 The [[Knowledge/Economics/macroeconomics/Central Bank|central bank]] measures inflation using a *price index*, which is a value that is representative of the aggregate price level. One standard and very commonly chosen price index central banks use to measure inflation is the [[Knowledge/Economics/macroeconomics/Inflation#Consumer Price Index|consumer price index (CPI)]]. Inflation is measured in terms of the CPI between the current year, $CPI$, and its previous year, $CPI_{-1}$:

@@ -28,7 +28,7 @@ The amount of **savings** is the difference between income and consumption.
     - Disposable income can be broken down as: $Y_\text{disp. income} = Y_\text{gross income} - \text{taxes}+\text{government transfers} + \text{government interest payments} - \text{business retained earnings}$.
         - *Government transfers* is the money you receive from the government directly ‘for free’ (eg. [youth allowance](https://www.servicesaustralia.gov.au/youth-allowance)).
         - *Government interest payments* is the interest the government pays you for holding _government [[Knowledge/Economics/macroeconomics/Bonds|bonds]]_.
-        - Business retained earnings is the profit that a business won’t pay out as dividends to [[Knowledge/Investing/Stocks|shareholders]].
+        - Business retained earnings is the profit that a business won’t pay out as [[Knowledge/Investing/Dividends|dividends]] to [[Knowledge/Investing/Stocks|shareholders]].
     - *Accumulation of wealth*: $W_1 = W_0 + \text{household savings} + \text{net capital gains}$. The change in wealth for a household is given by how much they saved and how much their assets have gained in value.
 -   **Business savings** — savings are in the form of *retained earnings*, ie. the profit that businesses don’t distribute to owners and shareholders as dividends.
 -   **Government savings** — $\text{public savings} = \text{taxes} - \text{gov. transfers} - \text{gov. interest payments}$ also called [[Knowledge/Economics/macroeconomics/Public Debt|government budget balance]]. 
