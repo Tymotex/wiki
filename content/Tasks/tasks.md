@@ -6,14 +6,14 @@ kanban-plugin: basic
 
 ## **Thursday** *[[Journal/2022-10-06|2022-10-06]]* (6)
 
-- [ ] ### **🏆 Purpose**: investing and read.
-- [ ] ==1== **(1 hour)** Go through **Never Split the Difference** and finalise notes.
+- [x] ### **🏆 Purpose**: investing and read.
+- [x] ==1== **(2 hours)**<br>Watch [this](https://www.youtube.com/watch?v=cB1c2LB6_hg&ab_channel=CharlieChang) 1 hour video.
+- [ ] ==1== **(2 hours)**<br>Write down the full list of steps to buying a house.<br>#project
+- [ ] ==5== **(2 hours)** Read more about law, filling in your definitions. Specifically learn more about tax law.<br><br>Consider making a project out of this.
 - [ ] ==1== Apply Eleuphrat.
+- [ ] ==1== **(1 hour)** Go through **Never Split the Difference** and finalise notes.
 - [ ] ==1== Go through each book in my reading list and at least write a few sentences for each, explaining the main takeaways.
 - [ ] ==1== **(1 hour)**<br>Determine what the next steps would be to getting a language school started.<br>#project #mum
-- [ ] ==1== **(2 hours)**<br>Write down the full list of steps to buying a house.<br>#project
-- [ ] ==1== **(2 hours)**<br>Watch [this](https://www.youtube.com/watch?v=cB1c2LB6_hg&ab_channel=CharlieChang) 1 hour video.
-- [ ] ==5== **(2 hours)** Read more about law, filling in your definitions. Specifically learn more about tax law.<br><br>Consider making a project out of this.
 - [ ] ==2== **(20 mins)** <br>Meeting with dad to discuss requirements for the quiz. Show dad Khan academy quiz.<br>#project
 - [ ] ==3== Assess the feasibility of swimlanes. See the full discussion.
 - [ ] ==3== Complete HireRight while listening to music.
@@ -25,6 +25,7 @@ kanban-plugin: basic
 - [ ] ==6== **(1 hour)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.<br><br>Add an old notes disclaimer at the top of each notes page.<br><br>Be ruthless and only keep the most important notes. Archive the rest.
 - [ ] ==6== **(40 mins)**<br>Read Spark<br>#reading #recurring
 - [ ] ==6== **(40 mins)**<br>Read Spark<br>#reading #recurring
+- [ ] Try Webull or another brokerage app.
 
 
 ## **Friday** *[[Journal/2022-10-07|2022-10-07]]* (6)

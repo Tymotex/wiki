@@ -13,18 +13,29 @@ An *investment* is the purchase of an asset or commodity with the expectation of
 > The main difference between a *trader* and an *investor* is how long they hold the asset. Traders focus on capitalising on short-term trends.
 
 ## Essentials
+- [[Knowledge/Investing/Portfolio|Portfolio]]
+- [[Knowledge/Investing/Diversification|Diversification]]
 - [[Knowledge/Investing/Defensive versus Growth Assets|Defensive vs. Growth Assets]]
 - [[Knowledge/Investing/Capital Gains Tax|Capital Gains Tax]]
+- [[Knowledge/Investing/Securities|Securities]]
 - [[Knowledge/Investing/Stocks|Stocks]]
 - [[Knowledge/Investing/Stock Exchange|Stock Exchange]]
 - [[Knowledge/Investing/Stock Market|Stock Market]]
 - [[Knowledge/Investing/Dividends|Dividends]]
 - [[Knowledge/Investing/Active versus Passive Investing|Active vs. Passive Investing]]
 - [[Knowledge/Investing/Value versus Growth Investing|Value vs. Growth Investing]]
+- [[Knowledge/Investing/Mutual Funds|Mutual Funds]]
+- [[Knowledge/Investing/Market Index|Market Index]]
 - [[Knowledge/Investing/Index Funds|Index Funds]]
 - [[Knowledge/Investing/Exchange Traded Funds|ETFs]]
 - [[Knowledge/Investing/Dollar Cost Averaging|Dollar Cost Averaging]]
 - [[Knowledge/Investing/Market Capitalisation|Market Capitalisation]]
+- [[Knowledge/Investing/Leverage|Leverage]]
+- [[Knowledge/Investing/IPO|IPO]]
+- [[Knowledge/Investing/Options|Options]] TODO
+- [[Knowledge/Personal Finance/Real Estate|Real Estate]]
+- [[Knowledge/Investing/Brokerage Apps|Brokerage Apps]] TODO
+- [[Knowledge/Investing/Stock Research|Stock Research]] TODO
 
 ## Stock Market
 ### Investing Strategies
