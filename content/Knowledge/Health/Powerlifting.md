@@ -104,6 +104,12 @@ The deadlift mainly targets hamstrings, glutes, back and lats, and to a lesser e
 ![[Knowledge/Health/assets/overhead-press.gif|300]]
 ([sourced from Men'sHealth](https://www.menshealth.com/uk/building-muscle/a748781/get-more-from-overhead-press/))
 
+1. Setup
+2. **Unrack**
+3. **Pre-push**:
+    - Keep your wrists directly above your elbows as much as possible.
+4. 
+
 ## Front Squat
 ![[Knowledge/Health/assets/front-squat.gif|300]]
 ([sourced from Men'sHealth](https://www.menshealth.com/uk/building-muscle/a755607/how-to-master-the-squat/))
