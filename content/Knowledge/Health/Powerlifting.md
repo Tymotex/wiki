@@ -44,19 +44,22 @@ The squat mainly targets the quadriceps, hip muscles, glutes, and targets to a l
 ([source](https://tenor.com/view/bench-press-fitness-gif-18409378))
 
 1.  **Setup**:
-    - Arching the lower back positions your chest higher, resulting in a shorter distance that the bar has to travel. It keeps your shoulders safe.
+    - Arch your lower back. This positions your chest higher, resulting in a shorter distance that the bar has to travel. It keeps your shoulders safe.
     - Cue: pull your shoulders back and down.
     - Your 3 points of contact (glutes, upper back and feet) should never lift off the bench/ground.
     - Position your feet wherever it's the case that supplying leg drive does not cause your butt to lift off the bench.
     - Prefer a grip width such that when the bar is at your chest, your forearms are perpendicular to the barbell.
-    - The bar should be directly above your eyes.
+    - The bar should be directly above your eyes before you unrack.
     - The rack should be at a height such that the bar is 2" up from the rack at full elbow extension.
 2.  **Unrack**:
-    - Pull the barbell **with your lats** until your arms are perpendicular to the ground. The motion should not involve pushing the bar upwards by much.
+    - Pull the barbell **with your lats** towards the starting position (until your arms are perpendicular to the ground). This side-to-side motion should not involve pushing the bar upwards by much.
     - Do not 'pop' the bar up to unrack it. This causes you to lose your upper body tightness.
 3. **Descent**:
+    - The barbell should tap (not bounce) around your lower pec or lower sternum. 
+        - At the bottom, your forearms should be close to vertical from a side view. This is where your barbell should meet your body.
     - At the bottom, your elbows should form a 45° angle with your torso. This is sometimes referred to as 'tucking' your elbow.
     - The bar path should curve very slightly outwards, following a diagonal descent to your chest.
+    - One cue is to imagine bending the barbell, or snapping the barbell in two with your hands. This is meant to engage your lats more.
 4. **Push**:
     - Drive up and back.
     - **Leg drive**: push with your quads up the bench, not towards the ceiling.
@@ -98,7 +101,9 @@ The deadlift mainly targets hamstrings, glutes, back and lats, and to a lesser e
     1. Stop the barbell entirely on the ground. Don't take advantage of the bounce to start the next rep.
 
 ## Overhead Press
+![[Knowledge/Health/assets/overhead-press.gif|300]]
+([sourced from Men'sHealth](https://www.menshealth.com/uk/building-muscle/a748781/get-more-from-overhead-press/))
 
 ## Front Squat
-![[Knowledge/Health/assets/front-squat.gif|400]]
+![[Knowledge/Health/assets/front-squat.gif|300]]
 ([sourced from Men'sHealth](https://www.menshealth.com/uk/building-muscle/a755607/how-to-master-the-squat/))
