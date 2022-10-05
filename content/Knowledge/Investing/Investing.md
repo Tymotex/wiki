@@ -24,6 +24,7 @@ An *investment* is the purchase of an asset or commodity with the expectation of
 - [[Knowledge/Investing/Index Funds|Index Funds]]
 - [[Knowledge/Investing/Exchange Traded Funds|ETFs]]
 - [[Knowledge/Investing/Dollar Cost Averaging|Dollar Cost Averaging]]
+- [[Knowledge/Investing/Market Capitalisation|Market Capitalisation]]
 
 ## Stock Market
 ### Investing Strategies

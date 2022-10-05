@@ -5,11 +5,11 @@ description: Stocks
 
 **Stocks** represent pieces of official ownership, called 'ownership equity', of a business. They are a type of [[Knowledge/Investing/Securities|security]] and are traded in the [[Knowledge/Investing/Stock Market|stock market]].
 - Your ownership is quantifiable as: $\frac{\text{Company X stocks that you have}}{\text{Total Company X stocks}} \times 100\%$.
+- Stocks are often categorised under industry sectors, for example: tech stocks, energy stocks, etc., and locations, for example: US stocks, Australian stocks, etc.
 
 **Shares** are the *smallest denomination* of a company's stock. They're *units of stocks*. Companies will usually have millions or billions of total shares, called 'outstanding shares'. You can also buy fractions of a single share, called *partial shares*.
 - Owning shares in a company makes you a **shareholder** of that company. Shareholders get to vote and sometimes get a portion of the business' profits, called [[Knowledge/Investing/Dividends|Dividends]]. If the company *becomes more profitable* between the time you bought the shares and the time you sell it, you'll have [[Knowledge/Investing/Investing#Capital Gains|capital gains]] on the shares.
 - Your ownership gives you voting power in meetings and elections within the company. Generally, 1 share held gives you 1 vote, however this is set by the company, who can also split off shares into different classes where one class' shares have a greater weighting than another in terms of voting power.
-- *Market capitalisation* (or just *market cap*) is the total value of a company's outstanding shares.
 
 ## Why do companies sell stocks?
 When companies choose to list themselves on a *stock exchange* like the Nasdaq, they're provided with [[Knowledge/Economics/macroeconomics/Liquidity|liquidity]] and a means to acquire money for capital investment. The tradeoff is that they're subject to greater expenses and tighter regulation.
