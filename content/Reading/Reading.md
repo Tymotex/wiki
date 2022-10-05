@@ -100,9 +100,19 @@ Ikigai by Francesc Miralles and Hector Garcia. 'Ikigai' means 'reason for being'
 
 ### Can't Hurt Me
 
+### Rich Dad Poor Dad
+[[Reading/Rich Dad Poor Dad|Rich Dad Poor Dad]] by Robert Kiyosaki. This book made me more ruthlessly pursue learning and affirms the idea that investing in your own knowledge offers the greatest returns.
+- Your knowledge is the greatest wealth vehicle, by far.
+- Sales, marketing and negotiation are skills you must learn.
+- Aim to aggressively acquire assets with each dollar you get and avoid liabilities as much as possible.
+
+> **The single most powerful asset we all have is our mind.** If it is trained well, it can create enormous wealth
+
 ---
 ## Science
 ### Why We Sleep
+### Spark
+[[Reading/Spark|Spark: The Revolutionary New Science of Exercise and the Brain]] by John Ratey.
 
 ---
 
