@@ -177,6 +177,14 @@ kanban-plugin: basic
 - [x] Apply Eleuphrat.
 - [x] Ask mum to buy mince.
 
+## **Wednesday** *[[Journal/2022-10-05|2022-10-05]]* (6)
+
+- [x] ### **🏆 Purpose**: Konflux
+- [x] **(3.5 hours)**<br>Get throttling working and improve the mobile view of the timetable.<br>#konflux
+- [x] Confirm you'll go through with the perm...
+- [x] ==1== **(30 mins)**<br>Write notes on the overhead press.
+- [x] ==5== **(45 mins)**<br>Write notes on the bench press.
+
 ***
 
 ## Archive
