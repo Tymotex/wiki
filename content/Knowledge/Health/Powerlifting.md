@@ -105,10 +105,32 @@ The deadlift mainly targets hamstrings, glutes, back and lats, and to a lesser e
 ([sourced from Men'sHealth](https://www.menshealth.com/uk/building-muscle/a748781/get-more-from-overhead-press/))
 
 1. Setup
+    - Use a grip width such that your forearms are parallel to each other and perpendicular to the bar.
+    - Use either standard or false grip. A false grip helps you keep the barbell closer to the heel of your hand, minimising wrist pain.
 2. **Unrack**
+    - 'Squat' the bar out of the rack, don't pick up the barbell.
+    - You can unrack from a split stance.
+    - You can do a 3-step walk-out like what you'd do for a squat, or take even just one economical step.
+    - Take a shoulder-width stance with toes pointed outwards slightly.
+        - Otherwise keep your heels in contact with each other for military presses.
+    - Your triceps should 'rest' on your lats. Think 'tight armpits'.
 3. **Pre-push**:
+    - Squeeze your glutes hard to ensure a neutral spine and prevent lower back pain.
+    - Brace your quads, lock your knees.
+    - Brace your core.
+    - Sink your hips forward slightly and push your head back slightly, all just before pressing the barbell. Get into a "hips→press" rhythm.
+    - Push out your chest up to the ceiling.
+    - The barbell need not rest on the collarbone if your forearms are too long.
     - Keep your wrists directly above your elbows as much as possible.
-4. 
+        - Although your elbows should protrude beyond your wrists slightly.
+          ![[Knowledge/Health/assets/ohp-forearms.png|150]]
+          ([sourced from Alan Thrall](https://www.youtube.com/watch?v=wJlKUo2-P4o&ab_channel=AlanThrall))
+4. **Push**:
+    - The barbell should travel directly up as straight as possible. This will involve dodging your chin out of the way of the barbell by tilting your head backward, then pushing your head through (like peeking your head out of a window) once the barbell is over your head.
+    - At the top position, the barbell should be directly above your: shoulders, hips, knees and mid-foot.
+    - Shrug at the top position. Cue: get the barbell as close to the ceiling as you possibly can.
+5. **Lower**:
+    - Lower the barbell down to the starting position (with your elbows protruding slightly in front of the barbell and the barbell stacked firmly on your heel of your hand).
 
 ## Front Squat
 ![[Knowledge/Health/assets/front-squat.gif|300]]
