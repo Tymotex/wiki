@@ -22,12 +22,10 @@ An *investment* is the purchase of an asset or commodity with the expectation of
 - [[Knowledge/Investing/Active versus Passive Investing|Active vs. Passive Investing]]
 - [[Knowledge/Investing/Value versus Growth Investing|Value vs. Growth Investing]]
 - [[Knowledge/Investing/Index Funds|Index Funds]]
+- [[Knowledge/Investing/Exchange Traded Funds|ETFs]]
 - [[Knowledge/Investing/Dollar Cost Averaging|Dollar Cost Averaging]]
 
 ## Stock Market
-
-Track your share purchases and the market value of the shares at the time you buy them because you can claim some [[Knowledge/Investing/Investing#Tax|tax deductions]] on them.
-
 ### Investing Strategies
 - Go 98% ETFs or index funds and 2% individual stocks. This gets you into the habit of researching stocks.
 - Avoid all emotional decision-making.
@@ -41,6 +39,5 @@ Track your share purchases and the market value of the shares at the time you bu
 
 ## Bond Market
 ### Stocks vs. Bonds
-Stocks represent ownership, bonds represent loans. Each have their own pros/cons, but in general: bonds are lower risk and have lower returns. When you're young and don't have strict target dates for financial goals, just go for stocks and allocate a greater percentage of your portfolio to bonds when you require more certainty about your investment returns.
-
+In general: bonds are lower risk but have lower returns than stocks. When you're young and don't have strict target dates for financial goals, just go for stocks and allocate a greater percentage of your portfolio to bonds when you require more certainty about your investment returns.
 
