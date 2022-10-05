@@ -17,9 +17,19 @@ See [[Knowledge/Personal Finance/Real Estate|real estate]].
 5. Finalise loan.
 6. Settlement.
 
-Consider hiring a *buyer's advocate*, an expert to help you evaluate the potential home and negotiate its price.
-
 ## Finding a house
 Expect the search to take months.
 
-A *buyer's advocate* can find houses fitting your criteria for you.
+Get a loan pre-approval before searching for a home so you know your price range.
+
+Consider hiring a *buyer's advocate*, an expert to help you evaluate the potential home and negotiate its price.
+
+### Criteria
+1. Suburb safety and community.
+2. Location.
+3. Vicinity to public transport.
+4. Vicinity to shops, schools and important services (such as hospitals).
+5. Whether there are development plans for this area.
+6. Rental yields and demand and vacancy rate.
+7. Number of bedrooms, bathrooms, parking spots.
+
