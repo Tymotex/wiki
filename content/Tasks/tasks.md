@@ -12,7 +12,7 @@ kanban-plugin: basic
 - [x] ==1== Apply Eleuphrat.
 - [x] [[_/Call UNSW and sort out course dropping.]]
 - [x] ==6== **(40 mins)** Go through **Rich Dad Poor Dad** and finalise notes.
-- [ ] ==6== **(40 mins)**<br>Read Spark<br>#reading #recurring
+- [x] ==6== **(40 mins)**<br>Read Spark<br>#reading #recurring
 - [ ] Add to purchases: hamstring glute machine.
 - [ ] ==5== **(40 mins)** Go through **Deep Work** and finalise notes.
 - [ ] ==5== **(2 hours)** Read more about law, filling in your definitions. Specifically learn more about tax law.<br><br>Consider making a project out of this.
@@ -24,8 +24,8 @@ kanban-plugin: basic
 - [ ] ==3== **(45 mins)** Make a weekly diet plan and give it to mum.
 - [ ] ==6== **(1.5 hours)**<br>Complete week 1 of [EdX](https://learning.edx.org/course/course-v1:BerkeleyX+Fin101x+3T2019/home).<br>#project
 - [ ] ==6== **(1 hour)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.<br><br>Add an old notes disclaimer at the top of each notes page.<br><br>Be ruthless and only keep the most important notes. Archive the rest.
-- [ ] ==6== **(40 mins)**<br>Read Spark<br>#reading #recurring
-- [ ] ==6== **(40 mins)**<br>Read Spark<br>#reading #recurring
+- [x] ==6== **(40 mins)**<br>Read Spark<br>#reading #recurring
+- [x] ==6== **(40 mins)**<br>Read Spark<br>#reading #recurring
 - [ ] Try Webull or another brokerage app.
 - [ ] Why does all those personal finance authors advise against seeing your home as an investment? Kiyosaki does this but then uses real estate to build his wealth.
 

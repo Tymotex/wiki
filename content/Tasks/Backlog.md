@@ -56,6 +56,7 @@ kanban-plugin: basic
 
 ## Fun
 
+- [ ] Ask Rishi to run
 - [ ] Join a 5km run with friends.
 - [ ] Watch a movie from [[_/Movie list|this list]].
 - [ ] Cafe study/reading session.
