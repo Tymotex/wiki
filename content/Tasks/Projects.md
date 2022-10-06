@@ -35,8 +35,13 @@ kanban-plugin: basic
 
 ## Investing
 
-- [ ] **(2 hours)**<br>Investopedia stock market deep-dive<br>#project #recurring
-- [ ] **(2 hours)**<br>Investopedia real estate investing deep-dive.<br>#project #recurring
+- [ ] **(2 hours)**<br>Investopedia stock market deep-dive<br>#investing  #recurring
+- [ ] **(2 hours)**<br>Investopedia real estate investing deep-dive.<br>#investing  #recurring
+- [ ] **(45 mins)**<br>Read: [The Future of Property Investing in Australia](https://www.goodreads.com/book/show/36096769-the-future-of-property-investing-in-australia).<br>#investing
+- [ ] **(45 mins)**<br>Start reading: [Australian Real Estate Investing Made Simple](https://www.amazon.com.au/Australian-Real-Estate-Investing-Simple-ebook/dp/B08DV5YFN5)<br>#investing
+- [ ] **(45 mins)**<br>Start reading: [Property Investing for Dummies](https://www.amazon.com.au/Property-Investing-Dummies-Bruce-Brammall-ebook/dp/B00B9UCJSQ#customerReviews)<br>#investing
+- [ ] **(45 mins)**<br>Find and start reading 1 book on cryptocurrency.<br>#investing
+- [ ] **(45 mins)**<br>Start reading: The Little Book of Common Sense Investing.<br>#investing
 
 
 ## [[Reading/Reading|Reading]]

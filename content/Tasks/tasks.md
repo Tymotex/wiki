@@ -8,16 +8,15 @@ kanban-plugin: basic
 
 - [x] ### **🏆 Purpose**: konflux and read.
 - [x] Apply Eleuphrat.
-- [ ] ==1== <br>**(15 mins)**<br>Figure out what my investing goals are for this year. What do I want to learn and when by?
+- [x] ==1== <br>**(15 mins)**<br>Figure out what my investing goals are for this year. What do I want to learn and when by?
 - [ ] **(1.5 hours)**<br>Fix bugs and make enhancements and refactor.<br>#konflux
 - [ ] **(1.5 hours)**<br>Get passwords working again and style the event sign-in.<br>#konflux
 - [ ] **(1.5 hours)**<br>Get Google Auth working and make it bypass regular sign-in.<br>#konflux
+- [ ] **(45 mins)**<br>Read Spark<br>#reading #recurring
 - [ ] ==6== **(40 mins)** Go through **Deep Work** and finalise notes.
-- [ ] ==2== **(1 hour)**<br>Determine what the next steps would be to getting a language school started.<br>#project #mum
 - [ ] ==3== **(20 mins)** <br>Meeting with dad to discuss requirements for the quiz. Show dad Khan academy quiz.<br>#project
 - [ ] ==4== Assess the feasibility of swimlanes. See the full discussion.
 - [ ] ==4== Complete HireRight while listening to music.
-- [ ] **(45 mins)**<br>Read Spark<br>#reading #recurring
 - [ ] ==7== **(1 hour)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.<br><br>Add an old notes disclaimer at the top of each notes page.<br><br>Be ruthless and only keep the most important notes. Archive the rest.
 - [x] **(45 mins)**<br>Read Spark<br>#reading #recurring
 - [ ] Vacuum
@@ -49,6 +48,7 @@ kanban-plugin: basic
 - [ ] ### **🏆 Purpose**:
 - [ ] ==1== Go through each book in my reading list and at least write a few sentences for each, explaining the main takeaways.
 - [ ] **[1 hour]** Go through How to Not Die Alone and finalise notes.
+- [ ] ==2== **(1 hour)**<br>Determine what the next steps would be to getting a language school started.<br>#project #mum
 
 
 ## **Tuesday** *[[Journal/2022-10-11|2022-10-11]]* (6)
