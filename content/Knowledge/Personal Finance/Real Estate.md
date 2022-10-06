@@ -3,6 +3,11 @@ title: Real Estate
 description: Real Estate
 ---
 
+
+
+
+
+# Property Versus Shares
 Sources:
 - https://www.choosi.com.au/life-insurance/articles/investing-property-or-shares
 - https://moneysmart.gov.au/property-investment

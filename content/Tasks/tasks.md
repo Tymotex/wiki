@@ -9,6 +9,9 @@ kanban-plugin: basic
 - [x] ### **🏆 Purpose**: investing and read.
 - [x] ==1== **(2 hours)**<br>Watch [this](https://www.youtube.com/watch?v=cB1c2LB6_hg&ab_channel=CharlieChang) 1 hour video.
 - [ ] ==1== **(2 hours)**<br>Write down the full list of steps to buying a house.<br>#project
+- [ ] ==6== **(40 mins)** Go through **Rich Dad Poor Dad** and finalise notes.
+- [ ] ==5== **(40 mins)** Go through **Deep Work** and finalise notes.
+- [ ] Identify more bulking foods.
 - [ ] ==5== **(2 hours)** Read more about law, filling in your definitions. Specifically learn more about tax law.<br><br>Consider making a project out of this.
 - [ ] ==1== Apply Eleuphrat.
 - [ ] ==1== **(1 hour)** Go through **Never Split the Difference** and finalise notes.
@@ -18,14 +21,13 @@ kanban-plugin: basic
 - [ ] ==3== Assess the feasibility of swimlanes. See the full discussion.
 - [ ] ==3== Complete HireRight while listening to music.
 - [ ] ==6== **(40 mins)**<br>Read Spark<br>#reading #recurring
-- [ ] ==6== **(40 mins)** Go through **Rich Dad Poor Dad** and finalise notes.
-- [ ] ==5== **(40 mins)** Go through **Deep Work** and finalise notes.
 - [ ] ==3== **(45 mins)** Make a weekly diet plan and give it to mum.
 - [ ] ==6== **(1.5 hours)**<br>Complete week 1 of [EdX](https://learning.edx.org/course/course-v1:BerkeleyX+Fin101x+3T2019/home).<br>#project
 - [ ] ==6== **(1 hour)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.<br><br>Add an old notes disclaimer at the top of each notes page.<br><br>Be ruthless and only keep the most important notes. Archive the rest.
 - [ ] ==6== **(40 mins)**<br>Read Spark<br>#reading #recurring
 - [ ] ==6== **(40 mins)**<br>Read Spark<br>#reading #recurring
 - [ ] Try Webull or another brokerage app.
+- [ ] Why does all those personal finance authors advise against seeing your home as an investment? Kiyosaki does this but then uses real estate to build his wealth.
 
 
 ## **Friday** *[[Journal/2022-10-07|2022-10-07]]* (6)
