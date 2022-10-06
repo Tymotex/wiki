@@ -13,6 +13,7 @@ kanban-plugin: basic
 - [x] [[_/Call UNSW and sort out course dropping.]]
 - [x] ==6== **(40 mins)** Go through **Rich Dad Poor Dad** and finalise notes.
 - [ ] ==6== **(40 mins)**<br>Read Spark<br>#reading #recurring
+- [ ] Add to purchases: hamstring glute machine.
 - [ ] ==5== **(40 mins)** Go through **Deep Work** and finalise notes.
 - [ ] ==5== **(2 hours)** Read more about law, filling in your definitions. Specifically learn more about tax law.<br><br>Consider making a project out of this.
 - [ ] Figure out what my investing goals are for this year. What do I want to learn and when by?
