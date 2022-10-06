@@ -9,10 +9,10 @@ kanban-plugin: basic
 - [x] ### **🏆 Purpose**: konflux and read.
 - [x] Apply Eleuphrat.
 - [x] ==1== <br>**(15 mins)**<br>Figure out what my investing goals are for this year. What do I want to learn and when by?
-- [ ] **(1.5 hours)**<br>Fix bugs and make enhancements and refactor.<br>#konflux
+- [x] **(1.5 hours)**<br>Fix bugs and make enhancements and refactor.<br>#konflux
 - [ ] Try Illustrator<br>#konflux
+- [ ] **(1.5 hours)**<br>Get the availability tooltips working.<br>#konflux
 - [ ] **(1.5 hours)**<br>Get passwords working again and style the event sign-in.<br>#konflux
-- [ ] **(1.5 hours)**<br>Get Google Auth working and make it bypass regular sign-in.<br>#konflux
 - [ ] **(45 mins)**<br>Read Spark<br>#reading #recurring
 - [ ] ==6== **(40 mins)** Go through **Deep Work** and finalise notes.
 - [ ] ==3== **(20 mins)** <br>Meeting with dad to discuss requirements for the quiz. Show dad Khan academy quiz.<br>#project
@@ -30,6 +30,7 @@ kanban-plugin: basic
 - [ ] ### **🏆 Purpose**: konflux and read.
 - [ ] **(45 mins)**<br>Read Spark<br>#reading #recurring
 - [ ] **(1 hour)** Go through The Male Advantage and finalise notes.
+- [ ] **(1.5 hours)**<br>Get Google Auth working and make it bypass regular sign-in.<br>#konflux
 
 
 ## **Sunday** *[[Journal/2022-10-09|2022-10-09]]* (6)
