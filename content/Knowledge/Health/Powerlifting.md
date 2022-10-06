@@ -100,6 +100,18 @@ The deadlift mainly targets hamstrings, glutes, back and lats, and to a lesser e
 4. **Repeating**: using deadstop over touch & go.
     1. Stop the barbell entirely on the ground. Don't take advantage of the bounce to start the next rep.
 
+### Weakness off the floor
+- Lack of tension throughout the body, which results in inefficient transfer of upward force onto the barbell.
+- Inability to push with the legs from the starting position. Your quads and lats should be stronger — consider doing high-bar squats and barbell rows (and its variants such as pendlay rows and kroc rows).
+
+**Variants**:
+- **Deficit deadlifts** with an elevation of 1.5-3cm. You can just stand on a single plate.
+- **Low pause deadlift** where you pause the lift for 3 counts when the bar is just 1-2 inches off the floor.
+    - *Stay over the bar*. You should not be leaning back or deviating from the normal deadlift form. The only difference should be the introduction of a pause.
+    - The barbell must be in contact with your shins.
+- **Halting deadlift** where you do a rep up to the knees, drop it, then follow up with a full rep.
+- **Snatch grip deadlift** where you grip the bar much wider, as if doing an Olympic snatch.
+
 ## Overhead Press
 ![[Knowledge/Health/assets/overhead-press.gif|300]]
 ([sourced from Men'sHealth](https://www.menshealth.com/uk/building-muscle/a748781/get-more-from-overhead-press/))

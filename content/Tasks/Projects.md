@@ -36,6 +36,7 @@ kanban-plugin: basic
 ## Investing
 
 - [ ] **(2 hours)**<br>Investopedia stock market deep-dive<br>#project #recurring
+- [ ] **(2 hours)**<br>Investopedia real estate investing deep-dive.<br>#project #recurring
 
 
 ## [[Reading/Reading|Reading]]
