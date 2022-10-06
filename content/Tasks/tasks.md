@@ -10,6 +10,7 @@ kanban-plugin: basic
 - [x] Apply Eleuphrat.
 - [x] ==1== <br>**(15 mins)**<br>Figure out what my investing goals are for this year. What do I want to learn and when by?
 - [ ] **(1.5 hours)**<br>Fix bugs and make enhancements and refactor.<br>#konflux
+- [ ] Try Illustrator<br>#konflux
 - [ ] **(1.5 hours)**<br>Get passwords working again and style the event sign-in.<br>#konflux
 - [ ] **(1.5 hours)**<br>Get Google Auth working and make it bypass regular sign-in.<br>#konflux
 - [ ] **(45 mins)**<br>Read Spark<br>#reading #recurring
