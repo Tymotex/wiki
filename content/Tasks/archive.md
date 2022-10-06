@@ -185,6 +185,18 @@ kanban-plugin: basic
 - [x] ==1== **(30 mins)**<br>Write notes on the overhead press.
 - [x] ==5== **(45 mins)**<br>Write notes on the bench press.
 
+## **Thursday** *[[Journal/2022-10-06|2022-10-06]]* (6)
+
+- [x] ### **🏆 Purpose**: investing and read.
+- [x] ==1== **(2 hours)**<br>Watch [this](https://www.youtube.com/watch?v=cB1c2LB6_hg&ab_channel=CharlieChang) 1 hour video.
+- [x] ==1== **(1 hours)**<br>Write down the full list of steps to buying a house.<br>#project
+- [x] ==1== Apply Eleuphrat.
+- [x] [[_/Call UNSW and sort out course dropping.]]
+- [x] ==6== **(40 mins)** Go through **Rich Dad Poor Dad** and finalise notes.
+- [x] ==6== **(40 mins)**<br>Read Spark<br>#reading #recurring
+- [x] ==6== **(40 mins)**<br>Read Spark<br>#reading #recurring
+- [x] ==6== **(40 mins)**<br>Read Spark<br>#reading #recurring
+
 ***
 
 ## Archive
