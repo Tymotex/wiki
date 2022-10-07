@@ -2,7 +2,8 @@
 title: UI Inspiration
 ---
 
-## Top Navbar
+## UI Elements
+### Top Navbar
 Things I like:
 - Lower contrast between navbar and the rest of the page.
 - When the navbar is seamlessly connected with the header/hero section.
@@ -14,7 +15,7 @@ Things I like:
 | ![[Knowledge/Engineering/Full-Stack/assets/zeus-ui.png]] ([source](https://dribbble.com/shots/18363665-Navigation-bar-with-menu-Zeus-Web-UI-Kit)) | ![[Knowledge/Engineering/Full-Stack/assets/Pasted image 20220926091247.png]] ([source](https://dribbble.com/shots/14478136-Plants-boutique-website-concept)) |
 | ![[Knowledge/Engineering/Full-Stack/assets/mailtrap.png]] ([source](https://dribbble.com/shots/6251320-Mailtrap-Landing-Top-Sections-Design-1st-version))                                                                                                                                                  |    ![[Knowledge/Engineering/Full-Stack/assets/visage.png]] ([source](https://speckyboy.com/wp-content/uploads/2014/04/fixed_navigation_menu_04.jpg))                                                                                                                                                          |
 
-## Side Nav
+### Side Nav
 Things I like:
 - Highlighting the currently active item in the sidebar.
 - Subtle SVG icon animation.
@@ -25,6 +26,9 @@ Things I like:
 | --- | --- |
 |![[Knowledge/Engineering/Full-Stack/assets/hr-dashboard-design.png\|200]] ([source](https://dribbble.com/shots/17350060-HR-Dashboard-design))     | ![[Knowledge/Engineering/Full-Stack/assets/dark-mode-sidebar-navigation.png\|600]] ([source](https://dribbble.com/shots/18369866-Dark-mode-sidebar-navigation-Untitled-UI))    |
 | ![[Knowledge/Engineering/Full-Stack/assets/light-sidenav.png\|200]] ([source](https://dribbble.com/shots/16252715-Sidebar-navigation/attachments/8118635?mode=media))     | ![[Knowledge/Engineering/Full-Stack/assets/dark-sidenav.png\|400]] ([source](https://dribbble.com/shots/15827363-Sidebar-Navigation-Dark))    |
+
+### Login
+
 
 ## Beautiful Websites
 - [Obsidian.md](https://obsidian.md/)
