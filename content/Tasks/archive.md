@@ -197,6 +197,18 @@ kanban-plugin: basic
 - [x] ==6== **(40 mins)**<br>Read Spark<br>#reading #recurring
 - [x] ==6== **(40 mins)**<br>Read Spark<br>#reading #recurring
 
+## **Friday** *[[Journal/2022-10-07|2022-10-07]]* (6)
+
+- [x] ### **🏆 Purpose**: konflux and read.
+- [x] Apply Eleuphrat.
+- [x] ==1== <br>**(15 mins)**<br>Figure out what my investing goals are for this year. What do I want to learn and when by?
+- [x] **(1.5 hours)**<br>Fix bugs and make enhancements and refactor.<br>#konflux
+- [x] **(1.5 hours)**<br>Get the availability tooltips working.<br>#konflux
+- [x] **(2 hours)**<br>Get passwords working again<br>#konflux
+- [x] **(45 mins)**<br>Read Spark<br>#reading #recurring
+- [x] Vacuum
+- [x] Try deficit, low pause and halting deadlifts.
+
 ***
 
 ## Archive
