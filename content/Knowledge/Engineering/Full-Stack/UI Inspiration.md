@@ -29,6 +29,21 @@ Things I like:
 
 ### Login
 
+|                                                                                                                                                                                                 |                                                                                                                                                                                            |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| ![[Knowledge/Engineering/Full-Stack/assets/mobile-login-1.png\|200]] ([source](https://dribbble.com/shots/15889044-Login-Register-Mobile-App))                                                  | ![[Knowledge/Engineering/Full-Stack/assets/mobile-login-2.png\|200]] ([source](https://dribbble.com/shots/15889044-Login-Register-Mobile-App))                                             |
+| ![[Knowledge/Engineering/Full-Stack/assets/stylish-login-page-1.png\|500]] ([source](https://dribbble.com/shots/16029811-AUTH-Login-Register-screen-for-Phylum/attachments/7872310?mode=media)) | ![[Knowledge/Engineering/Full-Stack/assets/stylish-login-page-2.png\|500]] ([source](https://dribbble.com/shots/16029811-AUTH-Login-Register-screen-for-Phylum/attachments/7872309?mode=media)) |
+| ![[Knowledge/Engineering/Full-Stack/assets/stylish-login-page-4.png\|500]] ([source](https://dribbble.com/shots/16753965-Login-Sign-up-Dark-Mode-AW-Universal-Page))                            | ![[Knowledge/Engineering/Full-Stack/assets/stylish-mobile-login-1.png\|200]] ([source](https://dribbble.com/shots/7861676-Sign-in-Sign-up-UI))                                                  |
+| ![[Knowledge/Engineering/Full-Stack/assets/stylish-login-page-5.png\|500]] ([source](https://dribbble.com/shots/16705889-Login-Sign-up-AW-Universal-Page))                                                                                                                                                                                               |  ![[Knowledge/Engineering/Full-Stack/assets/stylish-login-page-6.png\|500]] ([source](https://dribbble.com/shots/10009224-Daily-UI-001-Linked-Spaces-Sign-up))                                                                                                                                                                                           |
+
+### Modals
+
+|     |      |
+| --- | --- |
+| ![[Knowledge/Engineering/Full-Stack/assets/dark-modals.png\|500]] ([source](https://dribbble.com/shots/16838613-Dark-Light-UI-for-Cards-Components))     | ![[Knowledge/Engineering/Full-Stack/assets/light-modals.png\|500]] ([source](https://dribbble.com/shots/16838613-Dark-Light-UI-for-Cards-Components))    |
+|  ![[Knowledge/Engineering/Full-Stack/assets/modal-with-curves.png\|400]] ([source](https://dribbble.com/shots/7037565-Register-Illustration))     |  ![[Knowledge/Engineering/Full-Stack/assets/complex-modal-with-forms.png\|400]] ([source](https://dribbble.com/shots/15544255-Modals-collection))    |
+|  ![[Knowledge/Engineering/Full-Stack/assets/complex-modal-dark.png\|400]] ([source](https://dribbble.com/shots/15169672-VSX-Share-Modal))     |  ![[Knowledge/Engineering/Full-Stack/assets/stylish-simple-modal.png]] ([source](https://dribbble.com/shots/16083490-Pop-Up-Overlay))    |
+| ![[Knowledge/Engineering/Full-Stack/assets/stylish-simple-modal-cactus.png\|400]]  ([source](https://dribbble.com/shots/13878518-Daily-UI-016-Pop-up-Overlay))     |  ![[Knowledge/Engineering/Full-Stack/assets/bug-report-modal.png\|400]] ([source](https://dribbble.com/shots/13024008-Report-Problem-Modal-UI-Design/attachments/4625329?mode=media))    |
 
 ## Beautiful Websites
 - [Obsidian.md](https://obsidian.md/)

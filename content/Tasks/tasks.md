@@ -8,7 +8,8 @@ kanban-plugin: basic
 
 - [x] ### **🏆 Purpose**: konflux and read.
 - [x] **(1.15 hours)**<br>Read Spark<br>#reading #recurring
-- [ ] **(30 mins)**<br>Style the event sign in and modals.<br>#konflux
+- [x] **(1.5 hours)**<br>Style the event sign in and modals.<br>#konflux
+- [ ] **(1.5 hours)**<br>Style the event sign in and modals.<br>#konflux
 - [ ] **(1.5 hours)**<br>Get Google Auth working and make it bypass regular sign-in.<br>#konflux
 - [ ] **(1 hour)** Go through The Male Advantage and finalise notes.
 - [ ] ==7== **(40 mins)** Go through **Deep Work** and finalise notes.
