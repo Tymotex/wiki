@@ -7,8 +7,8 @@ kanban-plugin: basic
 - [x] ### **🏆 Purpose**: konflux and read.
 - [x] **(1.15 hours)**<br>Read Spark<br>#reading #recurring
 - [x] **(1.5 hours)**<br>Design the event sign in and modals.<br>#konflux
-- [ ] **(1.5 hours)**<br>Style the event sign in and modals.<br>#konflux
-- [ ] **(1.5 hours)**<br>Get Google Auth working and make it bypass regular sign-in.<br>#konflux
+- [x] **(1.5 hours)**<br>Style the event sign in and modals.<br>#konflux
+- [x] **(1 hour)**<br>Work on Konflux.<br>#konflux
 - [ ] **(1 hour)** Go through The Male Advantage and finalise notes.
 - [ ] ==7== **(40 mins)** Go through **Deep Work** and finalise notes.
 - [ ] ==4== **(20 mins)** <br>Meeting with dad to discuss requirements for the quiz. Show dad Khan academy quiz.<br>#project
@@ -23,6 +23,7 @@ kanban-plugin: basic
 - [ ] #### **(10 mins)** Weekly Review.
 - [ ] **(2 hours)**<br>Investopedia stock market deep-dive<br>#project #recurring
 - [ ] ==6== **(2 hours)** Read more about law, filling in your definitions. Specifically learn more about tax law.<br><br>Consider making a project out of this.
+- [ ] **(1.5 hours)**<br>Get Google Auth working and make it bypass regular sign-in.<br>#konflux
 - [ ] ==7== **(1.5 hours)**<br>Complete week 1 of [EdX](https://learning.edx.org/course/course-v1:BerkeleyX+Fin101x+3T2019/home).<br>#project
 - [ ] ==1== **(1 hour)** Go through **Never Split the Difference** and finalise notes.
 - [ ] ==1== Try Webull or another brokerage app.
