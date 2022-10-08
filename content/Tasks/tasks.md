@@ -2,138 +2,6 @@
 kanban-plugin: basic
 ---
 
-## **Saturday** *[[Journal/2022-09-10|2022-09-10]]* (6)
-
-
-
-## **Sunday** *[[Journal/2022-09-11|2022-09-11]]* (6)
-
-- [ ] ### **🏆 Purpose**:
-- [ ] #### **(10 mins)** Weekly Review.
-
-## **Monday** *[[Journal/2022-09-12|2022-09-12]]* (6)
-
-- [ ] ### **🏆 Purpose**:
-
-## **Tuesday** *[[Journal/2022-09-13|2022-09-13]]* (6)
-
-- [ ] ### **🏆 Purpose**:
-
-## **Wednesday** *[[Journal/2022-09-14|2022-09-14]]* (6)
-
-- [ ] ### **🏆 Purpose**:
-
-## **Thursday** *[[Journal/2022-09-15|2022-09-15]]* (6)
-
-- [ ] ### **🏆 Purpose**:
-
-## **Friday** *[[Journal/2022-09-16|2022-09-16]]* (6)
-
-- [ ] ### **🏆 Purpose**:
-
-## **Saturday** *[[Journal/2022-09-17|2022-09-17]]* (6)
-
-- [ ] ### **🏆 Purpose**:
-
-## **Sunday** *[[Journal/2022-09-18|2022-09-18]]* (6)
-
-- [ ] ### **🏆 Purpose**:
-- [ ] #### **(10 mins)** Weekly Review.
-
-## **Monday** *[[Journal/2022-09-19|2022-09-19]]* (6)
-
-- [ ] ### **🏆 Purpose**:
-
-## **Tuesday** *[[Journal/2022-09-20|2022-09-20]]* (6)
-
-- [ ] ### **🏆 Purpose**:
-
-## **Wednesday** *[[Journal/2022-09-21|2022-09-21]]* (6)
-
-- [ ] ### **🏆 Purpose**:
-
-## **Thursday** *[[Journal/2022-09-22|2022-09-22]]* (6)
-
-- [ ] ### **🏆 Purpose**:
-
-## **Friday** *[[Journal/2022-09-23|2022-09-23]]* (6)
-
-- [ ] ### **🏆 Purpose**:
-
-## **Saturday** *[[Journal/2022-09-24|2022-09-24]]* (6)
-
-- [ ] ### **🏆 Purpose**:
-
-## **Sunday** *[[Journal/2022-09-25|2022-09-25]]* (6)
-
-- [ ] ### **🏆 Purpose**:
-- [ ] #### **(10 mins)** Weekly Review.
-
-## **Monday** *[[Journal/2022-09-26|2022-09-26]]* (6)
-
-- [ ] ### **🏆 Purpose**:
-
-## **Tuesday** *[[Journal/2022-09-27|2022-09-27]]* (6)
-
-- [ ] ### **🏆 Purpose**:
-
-## **Wednesday** *[[Journal/2022-09-28|2022-09-28]]* (6)
-
-- [ ] ### **🏆 Purpose**:
-
-## **Thursday** *[[Journal/2022-09-29|2022-09-29]]* (6)
-
-- [ ] ### **🏆 Purpose**:
-
-## **Friday** *[[Journal/2022-09-30|2022-09-30]]* (6)
-
-- [ ] ### **🏆 Purpose**:
-- [ ] ### **(10 mins)** Monthly Review.
-
-## **Saturday** *[[Journal/2022-10-01|2022-10-01]]* (6)
-
-- [ ] ### **🏆 Purpose**:
-
-## **Sunday** *[[Journal/2022-10-02|2022-10-02]]* (6)
-
-- [ ] ### **🏆 Purpose**:
-- [ ] #### **(10 mins)** Weekly Review.
-
-## **Monday** *[[Journal/2022-10-03|2022-10-03]]* (6)
-
-- [ ] ### **🏆 Purpose**:
-
-## **Tuesday** *[[Journal/2022-10-04|2022-10-04]]* (6)
-
-- [ ] ### **🏆 Purpose**:
-
-## **Wednesday** *[[Journal/2022-10-05|2022-10-05]]* (6)
-
-- [ ] ### **🏆 Purpose**:
-
-## **Thursday** *[[Journal/2022-10-06|2022-10-06]]* (6)
-
-- [ ] ### **🏆 Purpose**:
-
-## **Friday** *[[Journal/2022-10-07|2022-10-07]]* (6)
-
-- [ ] ### **🏆 Purpose**:
-
-## **Saturday** *[[Journal/2022-10-08|2022-10-08]]* (6)
-
-- [x] ### **🏆 Purpose**: konflux and read.
-- [x] **(1.15 hours)**<br>Read Spark<br>#reading #recurring
-- [x] **(1.5 hours)**<br>Design the event sign in and modals.<br>#konflux
-- [x] **(1.5 hours)**<br>Style the event sign in and modals.<br>#konflux
-- [x] **(1 hour)**<br>Work on Konflux.<br>#konflux
-- [ ] **(1 hour)** Go through The Male Advantage and finalise notes.
-- [ ] ==7== **(40 mins)** Go through **Deep Work** and finalise notes.
-- [ ] ==4== **(20 mins)** <br>Meeting with dad to discuss requirements for the quiz. Show dad Khan academy quiz.<br>#project
-- [ ] ==5== Assess the feasibility of swimlanes. See the full discussion.
-- [ ] ==5== Complete HireRight while listening to music.
-- [ ] ==8== **(1 hour)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.<br><br>Add an old notes disclaimer at the top of each notes page.<br><br>Be ruthless and only keep the most important notes. Archive the rest.
-- [ ] ==1== Tell dad the lights are broken in the gym.
-
 ## **Sunday** *[[Journal/2022-10-09|2022-10-09]]* (6)
 
 - [ ] ### **🏆 Purpose**: investing and read.
@@ -146,6 +14,45 @@ kanban-plugin: basic
 - [ ] ==1== Try Webull or another brokerage app.
 - [ ] ==1== **(45 mins)**<br>Read Spark<br>#reading #recurring
 - [ ] ==1== Why does all those personal finance authors advise against seeing your home as an investment? Kiyosaki does this but then uses real estate to build his wealth.
+- [ ] ==28== ### **🏆 Purpose**:
+- [ ] ==28== #### **(10 mins)** Weekly Review.
+- [ ] ==27== ### **🏆 Purpose**:
+- [ ] ==26== ### **🏆 Purpose**:
+- [ ] ==25== ### **🏆 Purpose**:
+- [ ] ==24== ### **🏆 Purpose**:
+- [ ] ==23== ### **🏆 Purpose**:
+- [ ] ==22== ### **🏆 Purpose**:
+- [ ] ==21== ### **🏆 Purpose**:
+- [ ] ==21== #### **(10 mins)** Weekly Review.
+- [ ] ==20== ### **🏆 Purpose**:
+- [ ] ==19== ### **🏆 Purpose**:
+- [ ] ==18== ### **🏆 Purpose**:
+- [ ] ==17== ### **🏆 Purpose**:
+- [ ] ==16== ### **🏆 Purpose**:
+- [ ] ==15== ### **🏆 Purpose**:
+- [ ] ==14== ### **🏆 Purpose**:
+- [ ] ==14== #### **(10 mins)** Weekly Review.
+- [ ] ==13== ### **🏆 Purpose**:
+- [ ] ==12== ### **🏆 Purpose**:
+- [ ] ==11== ### **🏆 Purpose**:
+- [ ] ==10== ### **🏆 Purpose**:
+- [ ] ==9== ### **🏆 Purpose**:
+- [ ] ==9== ### **(10 mins)** Monthly Review.
+- [ ] ==8== ### **🏆 Purpose**:
+- [ ] ==7== ### **🏆 Purpose**:
+- [ ] ==7== #### **(10 mins)** Weekly Review.
+- [ ] ==6== ### **🏆 Purpose**:
+- [ ] ==5== ### **🏆 Purpose**:
+- [ ] ==4== ### **🏆 Purpose**:
+- [ ] ==3== ### **🏆 Purpose**:
+- [ ] ==2== ### **🏆 Purpose**:
+- [ ] ==1== **(1 hour)** Go through The Male Advantage and finalise notes.
+- [ ] ==8== **(40 mins)** Go through **Deep Work** and finalise notes.
+- [ ] ==5== **(20 mins)** <br>Meeting with dad to discuss requirements for the quiz. Show dad Khan academy quiz.<br>#project
+- [ ] ==6== Assess the feasibility of swimlanes. See the full discussion.
+- [ ] ==6== Complete HireRight while listening to music.
+- [ ] ==9== **(1 hour)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.<br><br>Add an old notes disclaimer at the top of each notes page.<br><br>Be ruthless and only keep the most important notes. Archive the rest.
+- [ ] ==2== Tell dad the lights are broken in the gym.
 
 ## **Monday** *[[Journal/2022-10-10|2022-10-10]]* (6)
 
@@ -271,6 +178,10 @@ kanban-plugin: basic
 - [ ] #### **(10 mins)** Weekly Review.
 
 ## **Monday** *[[Journal/2022-11-07|2022-11-07]]* (6)
+
+- [ ] ### **🏆 Purpose**:
+
+## **Tuesday** *[[Journal/2022-11-08|2022-11-08]]* (6)
 
 - [ ] ### **🏆 Purpose**:
 
