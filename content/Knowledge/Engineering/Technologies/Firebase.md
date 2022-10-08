@@ -132,6 +132,9 @@ const watchUsers = async () => {
 Since you likely don't want to read/write data to a production database server while you're developing, you should use the local emulator for the realtime db, provided by Firebase. You'd also want to use this to integration or e2e tests.
 
 ```bash
+# Run the init command to set up how the emulator runs, and what services should be emulated.
+firebase init emulators
+
 # Start the local emulator suite, which includes the DB emulator.
 firebase emulators:start
 ```
