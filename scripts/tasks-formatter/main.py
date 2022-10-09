@@ -25,6 +25,7 @@ def format_tasks(tasks_file_path: str, archived_tasks_file_path: str, num_future
 
 def generate_journal_entries(journal_directory_path: str, journal_template_file_path: str, journal_variables_file_path: str, num_future_dates: int) -> None:
     journal_manager = JournalManager(journal_directory_path, journal_template_file_path, journal_variables_file_path)
+    journal_manager.archive_old_entries(7)
     journal_manager.create_journal_entries(num_future_dates)
     print(Fore.GREEN + f" → Done generating journal entries. ✨" + Style.RESET_ALL) 
 

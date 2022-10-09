@@ -174,8 +174,6 @@ match = regex.search(haystack)  # `re.Match` object contains info about the sear
 
 # Equivalent to the above, but you can't reuse the compiled regex.
 result = re.match(r"...", haystack)
-
-
 ```
 
 **Capture Groups**:

@@ -4,6 +4,8 @@ title: PMO
 
 > "He who has a *why* to live for can bear with almost any *how*" — Nietzsche.
 
+> "There can be no happiness if the things we believe in are different from the things we do." — Freya Stark.
+
 Giving into addiction is fundamentally about meaninglessness. Giving in means your *why* is not sufficiently strong.
 
 **When horny**:
