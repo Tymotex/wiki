@@ -72,9 +72,8 @@ const isUserSignedIn = () => !!getAuth().currentUser;
 
 // Adding an event listener to when the auth state changes (ie. when the user
 // signs in and out). This can be used to affect the UI, like the top nav.
-const initFirebaseAuth = () => onAuthStateChanged(getAuth(), (user) => {
-    if (user) ...
-    else ...
+const listenToAuthChange = () => onAuthStateChanged(getAuth(), (user) => {
+    if (user) alert("Signed in");
 });
 
 // Retrieving things accessible in the user's Google profile like their name and display picture.
