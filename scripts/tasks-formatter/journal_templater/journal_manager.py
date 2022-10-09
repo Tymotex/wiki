@@ -126,17 +126,18 @@ class JournalManager:
         Moves all the older journal entries beyond a cutoff date that's 
         `archive_days_old` in the past into an archive folder in the same
         journal directory.
+        For example, if `archive_days_old == 7`, then all journal entries
+        older than 7 days are archived.
         """
         # Make the archive folder if it doesn't already exist.
         archive_dir_path = f"{self._journal_directory_path}{os.path.sep}archive"
         if not os.path.exists(archive_dir_path):
             os.makedirs(archive_dir_path)
 
-        iso_date_regex = re.compile(r"\d{4}-\d{2}-\d{2}")
+        iso_date_regex = re.compile(r"(\d{4}-\d{2}-\d{2})")
         cutoff_date = self._date_today - timedelta(days=archive_days_old)
 
-        for journal_file_path in glob.glob(f"{self._journal_directory_path}{os.path.sep}*.md"):
-            print(journal_file_path)
+        for journal_file_path in glob(f"{self._journal_directory_path}{os.path.sep}*.md"):
             date_match = iso_date_regex.search(journal_file_path)
             if not date_match:
                 continue
@@ -145,7 +146,7 @@ class JournalManager:
             
             # Move to the archive file when older than the cutoff.
             if date_obj < cutoff_date:
-                shutil.move(journal_file_path, f"{archive_dir_path}{os.path.sep}{journal_file_path}")
+                shutil.move(journal_file_path, f"{archive_dir_path}{os.path.sep}{os.path.basename(journal_file_path)}")
 
     def _get_template_lines(self) -> List[str]:
         """
