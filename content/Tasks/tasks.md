@@ -10,6 +10,7 @@ kanban-plugin: basic
 - [x] ==1== **(45 mins)**<br>Read Spark<br>#reading #recurring
 - [x] **(1.5 hours)**<br>Get Google Auth working and native auth.<br>#konflux
 - [ ] **(1.5 hours)**<br>Make auth bypass regular sign-in, add curvaceous styling., style avatar, clear errors.<br>#konflux
+- [ ] **(1.5 hours)**<br>Design and implement the events page.<br>#konflux
 - [ ] **(1.5 hours)**<br>Check out gCal API.<br>#konflux
 - [ ] #### **(10 mins)** Weekly Review.
 - [ ] **(2 hours)**<br>Investopedia stock market deep-dive<br>#project #recurring
