@@ -4,6 +4,7 @@ kanban-plugin: basic
 
 ---
 
+<<<<<<< HEAD
 ## **Friday** *[[Journal/2022-10-07|2022-10-07]]* (6)
 
 - [x] ### **🏆 Purpose**: konflux and read.
@@ -32,21 +33,36 @@ kanban-plugin: basic
 - [ ] **(1.5 hours)**<br>Get Google Auth working and make it bypass regular sign-in.<br>#konflux
 
 
+=======
+>>>>>>> 791781ff6767d16fd19637d76a017f8f1e71f5bd
 ## **Sunday** *[[Journal/2022-10-09|2022-10-09]]* (6)
 
-- [ ] ### **🏆 Purpose**: investing and read.
+- [x] ### **🏆 Purpose**: konflux, then personal finance, read.
+- [x] ==1== **(45 mins)**<br>Read Spark<br>#reading #recurring
+- [x] **(1.5 hours)**<br>Get Google Auth working and native auth.<br>#konflux
+- [ ] **(1.5 hours)**<br>Make auth bypass regular sign-in, add curvaceous styling., style avatar, clear errors.<br>#konflux
+- [ ] **(1.5 hours)**<br>Design and implement the events page.<br>#konflux
+- [ ] **(1.5 hours)**<br>Check out gCal API.<br>#konflux
 - [ ] #### **(10 mins)** Weekly Review.
 - [ ] **(2 hours)**<br>Investopedia stock market deep-dive<br>#project #recurring
 - [ ] ==6== **(2 hours)** Read more about law, filling in your definitions. Specifically learn more about tax law.<br><br>Consider making a project out of this.
 - [ ] ==7== **(1.5 hours)**<br>Complete week 1 of [EdX](https://learning.edx.org/course/course-v1:BerkeleyX+Fin101x+3T2019/home).<br>#project
 - [ ] ==1== **(1 hour)** Go through **Never Split the Difference** and finalise notes.
 - [ ] ==1== Try Webull or another brokerage app.
-- [ ] ==1== Why does all those personal finance authors advise against seeing your home as an investment? Kiyosaki does this but then uses real estate to build his wealth.
+- [ ] ==1== Why do all those personal finance authors advise against seeing your home as an investment? Kiyosaki does this but then uses real estate to build his wealth.
+- [ ] ==1== **(1 hour)** Go through The Male Advantage and finalise notes.
+- [ ] ==8== **(40 mins)** Go through **Deep Work** and finalise notes.
+- [ ] ==5== **(20 mins)** <br>Meeting with dad to discuss requirements for the quiz. Show dad Khan academy quiz.<br>#project
+- [ ] ==6== Assess the feasibility of swimlanes. See the full discussion.
+- [ ] ==6== Complete HireRight while listening to music.
+- [ ] ==9== **(1 hour)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.<br><br>Add an old notes disclaimer at the top of each notes page.<br><br>Be ruthless and only keep the most important notes. Archive the rest.
+- [ ] ==2== Tell dad the lights are broken in the gym.
 
 
 ## **Monday** *[[Journal/2022-10-10|2022-10-10]]* (6)
 
 - [ ] ### **🏆 Purpose**:
+- [ ] **(45 mins)**<br>Read Spark<br>#reading #recurring
 - [ ] ==1== Go through each book in my reading list and at least write a few sentences for each, explaining the main takeaways.
 - [ ] **[1 hour]** Go through How to Not Die Alone and finalise notes.
 - [ ] ==2== **(1 hour)**<br>Determine what the next steps would be to getting a language school started.<br>#project #mum
@@ -195,6 +211,14 @@ kanban-plugin: basic
 - [ ] #### **(10 mins)** Weekly Review.
 - [ ] Ask mum to schedule a blood test for me in December.
 
+
+## **Monday** *[[Journal/2022-11-07|2022-11-07]]* (6)
+
+- [ ] ### **🏆 Purpose**:
+
+## **Tuesday** *[[Journal/2022-11-08|2022-11-08]]* (6)
+
+- [ ] ### **🏆 Purpose**:
 
 ***
 

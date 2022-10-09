@@ -72,9 +72,8 @@ const isUserSignedIn = () => !!getAuth().currentUser;
 
 // Adding an event listener to when the auth state changes (ie. when the user
 // signs in and out). This can be used to affect the UI, like the top nav.
-const initFirebaseAuth = () => onAuthStateChanged(getAuth(), (user) => {
-    if (user) ...
-    else ...
+const listenToAuthChange = () => onAuthStateChanged(getAuth(), (user) => {
+    if (user) alert("Signed in");
 });
 
 // Retrieving things accessible in the user's Google profile like their name and display picture.
@@ -132,6 +131,9 @@ const watchUsers = async () => {
 Since you likely don't want to read/write data to a production database server while you're developing, you should use the local emulator for the realtime db, provided by Firebase. You'd also want to use this to integration or e2e tests.
 
 ```bash
+# Run the init command to set up how the emulator runs, and what services should be emulated.
+firebase init emulators
+
 # Start the local emulator suite, which includes the DB emulator.
 firebase emulators:start
 ```

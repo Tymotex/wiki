@@ -3,6 +3,9 @@ title: Purchases
 ---
 
 - Blackout curtains for better sleep.
+- Liquid chalk
+- Barbell maintenance items (nylon brush with firm bristles, wd-40, 3-in-1 multi-purpose oil)
+- Plate rack.
 - Squat shoes.
 - Deadlift shoes/slippers.
 - SBD knee sleeves.
