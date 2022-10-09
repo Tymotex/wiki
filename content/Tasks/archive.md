@@ -329,6 +329,13 @@ kanban-plugin: basic
 - [x] **(1.5 hours)**<br>Style the event sign in and modals.<br>#konflux
 - [x] **(1 hour)**<br>Work on Konflux.<br>#konflux
 
+## **Sunday** *[[Journal/2022-10-09|2022-10-09]]* (6)
+
+- [x] ### **🏆 Purpose**: konflux, then personal finance, read.
+- [x] ==1== **(45 mins)**<br>Read Spark<br>#reading #recurring
+- [x] **(1.5 hours)**<br>Get Google Auth working and native auth.<br>#konflux
+- [x] **(2 hours)**<br>Make auth bypass regular sign-in, add curvaceous styling., style avatar, clear errors.<br>#konflux
+
 ***
 
 ## Archive

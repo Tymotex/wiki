@@ -45,6 +45,10 @@ Things I like:
 |  ![[Knowledge/Engineering/Full-Stack/assets/complex-modal-dark.png\|400]] ([source](https://dribbble.com/shots/15169672-VSX-Share-Modal))     |  ![[Knowledge/Engineering/Full-Stack/assets/stylish-simple-modal.png]] ([source](https://dribbble.com/shots/16083490-Pop-Up-Overlay))    |
 | ![[Knowledge/Engineering/Full-Stack/assets/stylish-simple-modal-cactus.png\|400]]  ([source](https://dribbble.com/shots/13878518-Daily-UI-016-Pop-up-Overlay))     |  ![[Knowledge/Engineering/Full-Stack/assets/bug-report-modal.png\|400]] ([source](https://dribbble.com/shots/13024008-Report-Problem-Modal-UI-Design/attachments/4625329?mode=media))    |
 
+## Tools
+- [Shape Divider](https://www.shapedivider.app/) for curvy SVGs.
+- [Haikei](https://app.haikei.app/) for beautiful SVG wallpapers.
+
 ## Beautiful Websites
 - [Obsidian.md](https://obsidian.md/)
 - [Space Engine](https://spaceengine.org/)
