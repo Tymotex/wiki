@@ -64,4 +64,37 @@ They were divided into two groups, one undergoing vigorous aerobic exercise almo
 
 > Moving the body also triggers the release of gamma-aminobutyric acid (GABA), which is the brain's major inhibitory neuro-transmitter (and the primary target for most of our antianxiety medicines). Having normal levels of GABA is crucial to stopping, at the cellular level, the self-fulfilling prophecy of anxiety — it interrupts the obsessive feedback loop within the brain.
 
+> Living with panic means avoiding anything that might set off another frightening episode. You withdraw into an emotional fetal position, and the fear leads to a desperate need for control — whatever is necessary to maintaina a stable and safe environment. This manifests itself in various ways: passive-aggressiveness, which is one way of trying to control others; compulsiveness, to keep the fear triggers at bay; and overall inflexibility.
 
+> **ANP [(atrial natriuretic peptide)] is secreted by heart muscles when we exercise**... ANP has been shown in both animal and human studies to have a calming effect... In 2001 one of the first studies to verify the role of ANP in anxiety compared patients with panic disorder to those without. They were randomly assigned an injection of ANP or placebo, and then received a dose of an abdominal hormone called cholecystokinin tetrapeptide (CCK-4), which induces anxiety and panic. **ANP significantly reduced panic attacks in both groups while the placebo did not**.
+
+> In one study of patients with severe heart failure, those with the highest ANP levels had the lowest levels of anxiety... And we know that among panic disorder patients, those who have frequent attacks have a deficit of ANP in their bloodstreams.
+
+> In 2006... Strohle looked at twhether ANP was a critical element in the calming effect of aerobic exercise. For 10 healthy patients who agreed to have panic-inducing injections of CCK-4, walking for thirty minutes on a treadmill significantly increased concentrations of ANP while simultaneously lowering feelings of anxiety and panic.
+
+Fear is burned deeply into memory and is challenging to reverse, however cognitive behavioural therapy (CBT) is an effective way of suppressing it by progressively exposing patients to the source of the fear but reinforcing neutral/positive instead of negative associations with that fear.
+> When we experience the symptoms without the panic, the brain goes through a cognitive restructuring. We build connections in the prefrontal cortex that help calm the amygdala, which makes us feel safe, and then the brain records a memory of that feeling. When we add in exercise, we get the neurotransmitters and neurotrophic factors bolstering the circuits between the prefrontal cortex and the amygdala, providing further control and creating a positive snowball effect... Teaching the brain that we can survive is crucial to overcoming the anxiety.
+
+> If you begin to associate the physical symptoms of anxiety with something positive, something that you initiated and can control, teh fear memory fades in contrast to the fresh one taking shape. Think of it as a biological bait and switch — your ind is expecting a panic attack, but instead it ends up with a positive association with the symptoms.
+
+### Depression
+
+> Endorphins... dulled pain in the body and produced euphoria in the mind. **They are the elixir of heroism**, helping us ignore pain when we're physically overextended so we can finish the task at hand.
+
+> A massive Dutch study of 19288 twins and their families published in 2006 showed that **exercisers are less anxious, less depressed, less neurotic, and also more socially outgoing**.
+
+> A Finnish study of 3,403 people in 1999 showed that those who exercise at least two to three times a week **experience significantly less depression, anger, stress, and "cynical distrust"** than those who exercise less or not at all.
+
+> Aside from elevating endorphins, exercise regulates all of the neurotransmitters targeted by antidepressants.
+
+Exercise is said to immediately increase levels of norepinephrine, boost dopamine (which is "all about motivation and attention"), and boost serotonin which is critical to impulse control, self-esteem and counteracting cortisol.
+> Studies have shown that chronic **exercise increases dopamine storage in the brain and also triggers the production of enzymes that create dopamine receptors in the reward center of the brains**... If the demand is there, the dopamine genes get activated to produce more, and the overall effect is a more stable regulation of these pathways which are important to controlling addictions.
+
+> ... They randomly divided 156 patients into 3 groups: Zolofy, exercise, or a combination of the two. The exercise group was assigned to supervised walking or jogging, at 70-85% of their aerobic capacity, for 30 minutes three times a week. The results? All 3 groups showed a significant drop in depression, and about half of each group was completely out of the woods. Another 13% experienced fewer symptoms but didn't fully recover. Blumenthal concluded that **exercise was as effective as medication**... 6 months after the study, Blumenthal and his colleagues surveyed the patients to see how they were doing and found that exercise worked even better than medicine over the long term. About 30% of the exercise group remained depressed vs. 52% of those on medication and 55% for those in the combined treatment group [(the explanation for this unexpected result in the combined group is that "instead of incorporating the belief 'I was dedicated and worked hard with the exercise program; it wasn't easy, but I beat this depression,' patients might incorporate the belief 'I took an antidepressant and got better.'")].
+
+> In post-mortem studies of people with depression who died of suicide, their brains had significantly decreased levels of BDNF. Evn in healthy people, low BDNF levels have been correlated with personality traits that make them more vulnerable to depression, such as neuroticism and hostility.
+
+> [Exercise] doesn't simply raise serotonin or dopamine or norepinephrine. It adjusts all of them, to levels that, we can only presume, have been optimally programmed by evolution. The same goes for exercise's effect on BDNF, IGF-1, VEGF, and FGF-2, which provide the building material and oversight for the construction of new connections and neurons.
+
+### Attention
+> The attention circuits are jointly regulated by the neurotransmitters norepinephrine and dopamine, which are so similar on a molecular level that they can plug into each others' receptors. These are the chemicals targeted by ADHD medications.
