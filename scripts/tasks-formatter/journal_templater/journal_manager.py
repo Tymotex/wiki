@@ -135,7 +135,7 @@ class JournalManager:
         iso_date_regex = re.compile(r"\d{4}-\d{2}-\d{2}")
         cutoff_date = self._date_today - timedelta(days=archive_days_old)
 
-        for journal_file_path in glob.glob(f"{self._journal_directory_path}{os.path.sep}*.md"):
+        for journal_file_path in glob(f"{self._journal_directory_path}{os.path.sep}*.md"):
             print(journal_file_path)
             date_match = iso_date_regex.search(journal_file_path)
             if not date_match:
