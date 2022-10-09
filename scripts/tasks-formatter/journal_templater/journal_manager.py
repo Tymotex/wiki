@@ -1,5 +1,3 @@
-
-
 """
 1. Generate the journal files for up to num_future_dates.
     If YYYY-MM-DD already exists, skip.
