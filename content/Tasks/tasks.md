@@ -28,7 +28,6 @@ kanban-plugin: basic
 - [ ] ==2== Tell dad the lights are broken in the gym.
 
 
->>>>>>> origin/hugo
 ## **Monday** *[[Journal/2022-10-10|2022-10-10]]* (6)
 
 - [ ] ### **🏆 Purpose**:
