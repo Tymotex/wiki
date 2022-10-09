@@ -17,6 +17,11 @@ Giving into addiction is fundamentally about meaninglessness. Giving in means yo
 Having a bad day is not an excuse. If you can't focus, you can't focus. Just suffer the debuff for the day. It's 100% worth it and your conscious brain knows it.
 
 ---
+## Wins
+### 9th Oct
+I was feeling a little agitated after a nap today and really wanted to go for it. I got up, got out of my room, and started working, and now the feelings are completely gone. I am so happy for taking this path instead of caving in.
+
+---
 
 ## Relapses
 ### 29th Sep
