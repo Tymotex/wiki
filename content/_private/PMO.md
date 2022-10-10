@@ -6,8 +6,13 @@ title: PMO
 
 Giving into addiction is fundamentally about meaninglessness. Giving in means your *why* is not sufficiently strong.
 
+Just get through this one. Get past it and you'll be closer to freedom. You **have to** beat this eventually, there's no alternative.
+
+Just know that when you cave in, you are fucking your brain up. This is your most valuable possession and you are actively destroying it. 
+
 **When horny**:
 - Start thinking about your dream girl, your future wife. Listen to Perfect by Ed Sheeran.
+	- Think about Regina. If it weren't for your friends, you would have gone for her probably. You like her and you can do this for her.
 - Just get started with work. You won't feel it once you're in flow. If you can't get in flow, just take a break and get out of your room.
 - Go to the yard and just look at the plants and sky.
 - **Remember the meaning of this suffering: you do this so that you can be a better man for your current and future family. You do this so that women will want you. You do this so that you beat all your enemies who want to see you fail, and to beat all the other men in the same predicament as you.**
@@ -19,6 +24,13 @@ Having a bad day is not an excuse. If you can't focus, you can't focus. Just suf
 ---
 
 ## Relapses
+### 10th Oct
+I had so many would-be wet dreams and woke up in emergency mode. I got up and did my squat session but I still had crazy urges. I was winning until I thought about how distracting this would be for the day and just gave up. What the fuck. I need to have a stronger *why* for doing this. I need to do it for somebody.
+
+It takes just a few minutes before you realise how bad it feels to relapse. **STOP DOING IT. You're killing yourself. This is not who you are.**
+
+**Ironically, I PMOed so I could feel better during work, instead I lost the entire day to absent-mindedness and extreme feelings of guilt.**
+
 ### 29th Sep
 It happened again. I resisted hard and let it pass but then just decided to cave in. I really lack a 'why' for doing this. It can't be all about me, it has to be for someone else. I have to make this effort more meaningful and I'll get through anything.
 

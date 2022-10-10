@@ -98,3 +98,63 @@ Exercise is said to immediately increase levels of norepinephrine, boost dopamin
 
 ### Attention
 > The attention circuits are jointly regulated by the neurotransmitters norepinephrine and dopamine, which are so similar on a molecular level that they can plug into each others' receptors. These are the chemicals targeted by ADHD medications.
+
+### Addiction
+> The goals of exercise, the feeling of exervise, the challenge of exercise, the pleasure and the pain, the accomplishment, the physical well-being, the self-esteem. All that exercise us, you're now presenting to the addict as a very compelling option.
+
+> Animal studies show that drugs such as cocaine and amphetamine make the dendrites in the nucleus accumbens bloom, thus increasing their synaptic connections. The changes can remain months and maybe even years after the drugs are stopped, which is why it's so easy to rekapse. One way to look at addiction is that the brain has learned something too well. These adaptations lead toa  vicious cycle in which the basal ganglia goes on autopilot whenever you smell fried chicken, and the prefrontal cortex can't override your actions even though you may know better.
+
+> The routine and the physical activity gets the brain engaged and the mind moving in a direction other than toward the drug, reprogramming the basal ganglia to wire in an alternative reflexive behaviour.
+
+> One of the connections I see here is between learning and overall mental strength. If the brain is flexible, the mind is stronger, and this gets at a concept known as self-efficacy. It's difficult to measure, but it relates to **confidence in our ability to change ourselves**.
+
+> The researchers characterised self-regulation as a resource that can be depleted but also recharged like a muscle. **Essentially, the more you use this faculty, the stronger it gets**. **And exercise is by far the best form of self-regulation we have**.
+
+> Thirty minutes of vigorous aerobic exercise 5 days a week is the bare minimum if you want to root out an addiction.
+
+> Dopamine produced during exercise will plug into receptors and thus blunt the craving, and over time the activity will produce more D2 receptors and restore balance in the reward system.
+
+> When we look at addiction as a neurological malfunction rather than as a moral failure, it suddenly takes on the form of something that can be fixed.
+
+### Pregnancy
+> For the first time the ACOG recommended that sedentary women *begin* exercising when they become pregnant, largely to counter risks such as diabetes, high blood pressure, and preeclampsia that can develop during gestation and harm both mother and child.
+
+> Stress, anxiety, and depression can have a frighteningly powerful impact on a pregnancy, and, in the extreme, can result in miscarriage, low birth weight, birth defects, or death of the baby. Babies born to unhappy mothers are fussier, less responsive, harder to soothe, and have unpredictable sleep patterns. And in follow-up tests, these babies are more likely to be hyperactive and suffer cognitive impairments. In rodent models, pups born to mothers subjected to stress during pregnancy (by way of shocking their feet) are skittish, clumsy, and less adventurous.
+
+> One study showed that briskly walking 5 hours a week reduces the risk of gestational diabetes by 75%.
+
+> Most intriguing is a 2003 study showing that rat pups born of exercising moms had higher levels of BDNF immediately after birth, and also at 14 and 28 days. At the same time, they performed better than controls on learning tasks related to the hippocampus. Essentially, they learned better and faster than rats born of sedentary mothers.
+
+### Aging
+> If you're not busy living, your body will be busy dying.
+
+> The average 75-year-old suffers from 3 chronic medical conditions and takes 5 prescription medicines, according to the CDC... The leading killers are heart disease, cancer, and stroke; together they account for 64% of all deaths in this age group.
+
+> Starting at about age 40, we lose on average 5% of our overall brain volume per decade, up until about age 70, when any number of conditions can accelerate the process.
+
+> ... about 1500 from Finland originally surveyed in the early 1970s were contacted again 21 years later, when they were between 65 and 79 years old. Those who had exercised at least twice a week were **50% less likely to have dementia**.
+
+> As we age, insulin levels drop and glucose has a harder time getting into the cells to fuel them. Then glucose can skyrocket, which creates waste products in the cells, such as free radicals, and damages blood vessels, putting us at risk for stroke and Alzheimer's... **Exercise increases levels of insulin-like growth factor (IGF-1), which regulates insulin in the body and improves synaptic plasticity in the brain**.
+
+Exercise also quells hunger by changing the levels of the hormones regulating it.
+ > Exercise, naturally, counteracts obesity on two fronts: it burns calories, and it reduces appetite.
+ 
+
+A common observation across population studies:
+> **The most consistent risk factor for cancer is lack of activity**.
+
+> The road to successful aging really begins with desire, because without the desire to stay engaged and active and alive, people quickly fall into the death trap of being sedentary and solitary. **One of the problems of getting older is the lack of challenges, but with exercise we can continually improve and push ourselves**.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
