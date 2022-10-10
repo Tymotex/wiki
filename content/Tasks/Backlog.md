@@ -40,6 +40,8 @@ kanban-plugin: basic
 - [ ] Find some big goal for mum and dad. Maybe the next cruise? Perhaps time it for the end of 2023?<br><br>(Inspired by Man's Search for Meaning)
 - [ ] Plan 2023 first quarter in [[Tasks/Goals|Goals]].
 - [ ] [Read how to get mum and dad to exercise more](https://www.google.com/search?q=how+to+get+parents+to+exercise&rlz=1C1CHBF_en-GBAU1004AU1004&oq=how+to+get+parents+to+exercise&aqs=chrome..69i57.3576j0j7&sourceid=chrome&ie=UTF-8).
+- [ ] What are antioxidants?
+- [ ] Incorporate sprinting (interval training) into your running regimen.
 
 
 ## Hobbies
@@ -57,6 +59,7 @@ kanban-plugin: basic
 
 ## Fun
 
+- [ ] 
 - [ ] Ask Rishi to run
 - [ ] Join a 5km run with friends.
 - [ ] Watch a movie from [[_/Movie list|this list]].
