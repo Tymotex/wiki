@@ -31,6 +31,7 @@ kanban-plugin: basic
 
 ## [[Projects/Structs Graph Visualiser/Graph Visualiser MVP|Structs Graph MVP]]
 
+- [ ] Ask about homepage design. Perhaps use Haikei and draw out sexy SVGs.<br>#structs
 
 
 ## Investing

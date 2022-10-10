@@ -4,6 +4,8 @@ title: PMO
 
 > "He who has a *why* to live for can bear with almost any *how*" — Nietzsche.
 
+> "There can be no happiness if the things we believe in are different from the things we do." — Freya Stark.
+
 Giving into addiction is fundamentally about meaninglessness. Giving in means your *why* is not sufficiently strong.
 
 Just get through this one. Get past it and you'll be closer to freedom. You **have to** beat this eventually, there's no alternative.
@@ -20,6 +22,11 @@ Just know that when you cave in, you are fucking your brain up. This is your mos
 - This is one of your last vices. You've already conquered so many other things and formed so many good habits. You **have** to beat this for the sake of your current and future family, it cannot go on forever, even if you decide to give up this time. You cannot simply live with it.
 
 Having a bad day is not an excuse. If you can't focus, you can't focus. Just suffer the debuff for the day. It's 100% worth it and your conscious brain knows it.
+
+---
+## Wins
+### 9th Oct
+I was feeling a little agitated after a nap today and really wanted to go for it. I got up, got out of my room, and started working, and now the feelings are completely gone. I am so happy for taking this path instead of caving in.
 
 ---
 
