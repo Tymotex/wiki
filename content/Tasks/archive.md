@@ -342,6 +342,14 @@ kanban-plugin: basic
 - [x] ==1== **(45 mins)**<br>Read Spark<br>#reading #recurring
 - [x] **(1.5 hours)**<br>Get Google Auth working and native auth.<br>#konflux
 
+## **Monday** *[[Journal/2022-10-10|2022-10-10]]* (6)
+
+- [x] ### **🏆 Purpose**: investing and chores.
+- [x] **(45 mins)**<br>Read Spark<br>#reading #recurring
+- [x] ==1== <br>**(10 mins)** Weekly Review.
+- [x] **(30 mins)**<br>Make the journal script archive files older than 7 days, and make it also generate the weekly and monthly pages.<br>#second-brain
+- [x] ==7== <br>**(30 mins)**<br>Assess the feasibility of swimlanes. See the full discussion.
+
 ***
 
 ## Archive
