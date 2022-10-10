@@ -12,8 +12,16 @@ This book has convinced me to always fit aerobic exercise and weight training in
 
 💎 Exercise and social connection are the evolutionary antidote to the negative impacts of chronic stress, even *physically reversing* the damages of chronic stress.
 
-💎 Exercise re-balances your **neurotransmitters** and **hormones**, which include endorphins, serotonin, dopamine, norepinephrine, cortisol, GABA, ANP, etc. and increases levels of **growth factors** such as BDNF, IGF-2, HGH (at high intensity), etc. It makes you bullet-proof against depression and anxiety, and will leave you calmer, happier and primed to put forward your best self.
-- Endorphins are like natural morphine.
+💎 Exercise re-balances your **neurotransmitters** and **hormones**, which include endorphins, serotonin, dopamine, norepinephrine, GABA, ANP, etc. to optimal levels and increases levels of **growth factors** such as BDNF, IGF-2, HGH (at high intensity), etc. It makes you bullet-proof against depression and anxiety, and will leave you calmer, happier and primed to put forward your best self. At the right levels:
+- **Endorphins** are like natural morphine, reducing pain and lifting mood.
+- **Serotonin** is a mood stabiliser.
+- **Dopamine** drives you to seek reward, honing motivation and attention.
+- **Norepinephrine** increases alertness/arousal and attention. It's very chemically similar to dopamine, enough so that they can plug into each other's receptors.
+- **GABA** dampens hyperactivity, placating anxiety and stress.
+- **ANP** dampens anxiety.
+- **BDNF** is 'miracle-gro' for the learning brain, spurring growth of new neurons and synapses.
+- **IGF-2** regulates cell growth.
+- **HGH** drives and maintains tissue growth.
 
 💎 From anecdotes, regularly subjecting yourself to the discomfort of exercise teaches your brain that you can be in control in aroused states, and successfully pushing yourself is immensely rewarding and inspiring, single-handedly elevating self-esteem and making it feel good to be alive and to rise to life's challenges.
 
@@ -105,26 +113,25 @@ Fear is burned deeply into memory and is challenging to reverse once learned, ho
 > If you begin to associate the physical symptoms of anxiety with something positive, something that you initiated and can control, the fear memory fades in contrast to the fresh one taking shape. Think of it as a biological bait and switch — your mind is expecting a panic attack, but instead it ends up with a positive association with the symptoms.
 
 ### Depression
-
 > Endorphins... dulled pain in the body and produced euphoria in the mind. **They are the elixir of heroism**, helping us ignore pain when we're physically overextended so we can finish the task at hand.
 
+Exercise is a reliable way to maintain general happiness.
 > A massive Dutch study of 19288 twins and their families published in 2006 showed that **exercisers are less anxious, less depressed, less neurotic, and also more socially outgoing**.
 
 > A Finnish study of 3,403 people in 1999 showed that those who exercise at least two to three times a week **experience significantly less depression, anger, stress, and "cynical distrust"** than those who exercise less or not at all.
 
+Exercise is on par with antidepressants in effectiveness, but comes with many welcoming side effects instead of undesired side effects.
 > Aside from elevating endorphins, exercise regulates all of the neurotransmitters targeted by antidepressants.
+
+> ... They randomly divided 156 patients into 3 groups: Zoloft, exercise, or a combination of the two. The exercise group was assigned to supervised walking or jogging, at 70-85% of their aerobic capacity, for 30 minutes three times a week. The results? All 3 groups showed a significant drop in depression, and about half of each group was completely out of the woods. Another 13% experienced fewer symptoms but didn't fully recover. Blumenthal concluded that **exercise was as effective as medication**... 6 months after the study, Blumenthal and his colleagues surveyed the patients to see how they were doing and found that exercise worked even better than medicine over the long term. About 30% of the exercise group remained depressed vs. 52% of those on medication and 55% for those in the combined treatment group [(the explanation for this unexpected result in the combined group is that "instead of incorporating the belief 'I was dedicated and worked hard with the exercise program; it wasn't easy, but I beat this depression,' patients might incorporate the belief 'I took an antidepressant and got better.'")].
 
 Exercise is said to immediately increase levels of norepinephrine, boost dopamine (which is "all about motivation and attention"), and boost serotonin which is critical to impulse control, self-esteem and counteracting cortisol.
 > Studies have shown that chronic **exercise increases dopamine storage in the brain and also triggers the production of enzymes that create dopamine receptors in the reward center of the brains**... If the demand is there, the dopamine genes get activated to produce more, and the overall effect is a more stable regulation of these pathways which are important to controlling addictions.
 
-> ... They randomly divided 156 patients into 3 groups: Zolofy, exercise, or a combination of the two. The exercise group was assigned to supervised walking or jogging, at 70-85% of their aerobic capacity, for 30 minutes three times a week. The results? All 3 groups showed a significant drop in depression, and about half of each group was completely out of the woods. Another 13% experienced fewer symptoms but didn't fully recover. Blumenthal concluded that **exercise was as effective as medication**... 6 months after the study, Blumenthal and his colleagues surveyed the patients to see how they were doing and found that exercise worked even better than medicine over the long term. About 30% of the exercise group remained depressed vs. 52% of those on medication and 55% for those in the combined treatment group [(the explanation for this unexpected result in the combined group is that "instead of incorporating the belief 'I was dedicated and worked hard with the exercise program; it wasn't easy, but I beat this depression,' patients might incorporate the belief 'I took an antidepressant and got better.'")].
+Remember, exercise increases your level of BDNF, which has a strong correlation with depression.
+> In post-mortem studies of people with depression who died of suicide, their brains had significantly decreased levels of BDNF. Even in healthy people, low BDNF levels have been correlated with personality traits that make them more vulnerable to depression, such as neuroticism and hostility.
 
-> In post-mortem studies of people with depression who died of suicide, their brains had significantly decreased levels of BDNF. Evn in healthy people, low BDNF levels have been correlated with personality traits that make them more vulnerable to depression, such as neuroticism and hostility.
-
-> [Exercise] doesn't simply raise serotonin or dopamine or norepinephrine. It adjusts all of them, to levels that, we can only presume, have been optimally programmed by evolution. The same goes for exercise's effect on BDNF, IGF-1, VEGF, and FGF-2, which provide the building material and oversight for the construction of new connections and neurons.
-
-### Attention
-> The attention circuits are jointly regulated by the neurotransmitters norepinephrine and dopamine, which are so similar on a molecular level that they can plug into each others' receptors. These are the chemicals targeted by ADHD medications.
+> [Exercise] doesn't simply raise serotonin or dopamine or norepinephrine. **It adjusts all of them, to levels that, we can only presume, have been optimally programmed by evolution**. The same goes for exercise's effect on BDNF, IGF-1, VEGF, and FGF-2, which provide the building material and oversight for the construction of new connections and neurons.
 
 ### Addiction
 > The goals of exercise, the feeling of exervise, the challenge of exercise, the pleasure and the pain, the accomplishment, the physical well-being, the self-esteem. All that exercise us, you're now presenting to the addict as a very compelling option.
@@ -152,7 +159,7 @@ Exercise is said to immediately increase levels of norepinephrine, boost dopamin
 
 > Most intriguing is a 2003 study showing that rat pups born of exercising moms had higher levels of BDNF immediately after birth, and also at 14 and 28 days. At the same time, they performed better than controls on learning tasks related to the hippocampus. Essentially, they learned better and faster than rats born of sedentary mothers.
 
-### Aging
+### Ageing
 > If you're not busy living, your body will be busy dying.
 
 > The average 75-year-old suffers from 3 chronic medical conditions and takes 5 prescription medicines, according to the CDC... The leading killers are heart disease, cancer, and stroke; together they account for 64% of all deaths in this age group.
