@@ -50,6 +50,7 @@ kanban-plugin: basic
 - [ ] **(1.5 hours)**<br>Check out gCal API.<br>#konflux
 - [ ] **(15 mins)**<br>Find fish meals, tofu meals, chicken meals, quinoa meals to try. Write in [[Knowledge/Health/Meals|Meals]]
 - [ ] ==4== **(45 mins)** Make a weekly diet plan and give it to mum.
+- [ ] Find Chinese version of Annie Ernaux. Do it for mum.
 
 
 ## **Wednesday** *[[Journal/2022-10-12|2022-10-12]]* (6)
