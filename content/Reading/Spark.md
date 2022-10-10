@@ -2,15 +2,27 @@
 title: Spark
 ---
 
+> Exercise is the single most powerful tool you have to optimise your brain function.
+
+This book has done an incredible job convincing me to fit aerobic exercise and weight training into every day, unconditionally. I used to avoid it or rush it because I hated that I was spending time on something that didn't seem to matter, but I now know how stupid that is. Exercise, and knowledge of its profound benefits on health and mental acuity, will be one of the greatest weapons against life's tragedies and will drive me to output the best work I can and be the best friend, son and partner I can.
+
 💎 Stress (which broadly, is any threat to your body's equilibrium) and recovery is necessary for building robust cells (therefore neurons).
 
 💎 Exercise rebalances your neurotransmitters (serotonin, dopamine, norepinephrine, cortisol, and many, many others). It's a powerful antidote for the effects of emotional stress and mental ailments, even reversing the damages of chronic stress. It makes you bullet-proof against depression and anxiety.
 
 💎Exercise causes an increase in BDNF levels.
 
+💎 Exercise with a heart rate monitor and you'll have confidence you're exerting yourself sufficiently in your workouts. In aerobic exercises:
+- Low intensity: 55-65%
+- Moderate intensity: 65-75%
+- High intensity: 75-90%
+
+💎 Follow-up aerobic exercise with learning something challenging to capitalise your primed brain state.
+
+
  ---
 
-Aerobic exercise leads to *neurogenesis* (the creation of new neurons), and when followed up by environmental stimulation, the new neurons are used to form new circuits.
+Aerobic exercise leads to *neurogenesis* (the creation of new neurons from stem cell division), and when followed up by environmental stimulation, the new neurons are used to form new circuits.
 > Gym class provides the brain with the right tools to learn, and the stimulation in the kids' classes encourages those newly developing cells to plug into the network, where they become valuable members of the signalling community.
 
 > Learning and memory evolved in concert with the motor functions that allowed our ancestors to track down food, so as far as our brains are concerned, if we're not moving, there's no real need to learn anything.
@@ -98,3 +110,81 @@ Exercise is said to immediately increase levels of norepinephrine, boost dopamin
 
 ### Attention
 > The attention circuits are jointly regulated by the neurotransmitters norepinephrine and dopamine, which are so similar on a molecular level that they can plug into each others' receptors. These are the chemicals targeted by ADHD medications.
+
+### Addiction
+> The goals of exercise, the feeling of exervise, the challenge of exercise, the pleasure and the pain, the accomplishment, the physical well-being, the self-esteem. All that exercise us, you're now presenting to the addict as a very compelling option.
+
+> Animal studies show that drugs such as cocaine and amphetamine make the dendrites in the nucleus accumbens bloom, thus increasing their synaptic connections. The changes can remain months and maybe even years after the drugs are stopped, which is why it's so easy to rekapse. One way to look at addiction is that the brain has learned something too well. These adaptations lead toa  vicious cycle in which the basal ganglia goes on autopilot whenever you smell fried chicken, and the prefrontal cortex can't override your actions even though you may know better.
+
+> The routine and the physical activity gets the brain engaged and the mind moving in a direction other than toward the drug, reprogramming the basal ganglia to wire in an alternative reflexive behaviour.
+
+> One of the connections I see here is between learning and overall mental strength. If the brain is flexible, the mind is stronger, and this gets at a concept known as self-efficacy. It's difficult to measure, but it relates to **confidence in our ability to change ourselves**.
+
+> The researchers characterised self-regulation as a resource that can be depleted but also recharged like a muscle. **Essentially, the more you use this faculty, the stronger it gets**. **And exercise is by far the best form of self-regulation we have**.
+
+> Thirty minutes of vigorous aerobic exercise 5 days a week is the bare minimum if you want to root out an addiction.
+
+> Dopamine produced during exercise will plug into receptors and thus blunt the craving, and over time the activity will produce more D2 receptors and restore balance in the reward system.
+
+> When we look at addiction as a neurological malfunction rather than as a moral failure, it suddenly takes on the form of something that can be fixed.
+
+### Pregnancy
+> For the first time the ACOG recommended that sedentary women *begin* exercising when they become pregnant, largely to counter risks such as diabetes, high blood pressure, and preeclampsia that can develop during gestation and harm both mother and child.
+
+> Stress, anxiety, and depression can have a frighteningly powerful impact on a pregnancy, and, in the extreme, can result in miscarriage, low birth weight, birth defects, or death of the baby. Babies born to unhappy mothers are fussier, less responsive, harder to soothe, and have unpredictable sleep patterns. And in follow-up tests, these babies are more likely to be hyperactive and suffer cognitive impairments. In rodent models, pups born to mothers subjected to stress during pregnancy (by way of shocking their feet) are skittish, clumsy, and less adventurous.
+
+> One study showed that briskly walking 5 hours a week reduces the risk of gestational diabetes by 75%.
+
+> Most intriguing is a 2003 study showing that rat pups born of exercising moms had higher levels of BDNF immediately after birth, and also at 14 and 28 days. At the same time, they performed better than controls on learning tasks related to the hippocampus. Essentially, they learned better and faster than rats born of sedentary mothers.
+
+### Aging
+> If you're not busy living, your body will be busy dying.
+
+> The average 75-year-old suffers from 3 chronic medical conditions and takes 5 prescription medicines, according to the CDC... The leading killers are heart disease, cancer, and stroke; together they account for 64% of all deaths in this age group.
+
+> Starting at about age 40, we lose on average 5% of our overall brain volume per decade, up until about age 70, when any number of conditions can accelerate the process.
+
+> ... about 1500 from Finland originally surveyed in the early 1970s were contacted again 21 years later, when they were between 65 and 79 years old. Those who had exercised at least twice a week were **50% less likely to have dementia**.
+
+> As we age, insulin levels drop and glucose has a harder time getting into the cells to fuel them. Then glucose can skyrocket, which creates waste products in the cells, such as free radicals, and damages blood vessels, putting us at risk for stroke and Alzheimer's... **Exercise increases levels of insulin-like growth factor (IGF-1), which regulates insulin in the body and improves synaptic plasticity in the brain**.
+
+Exercise also quells hunger by changing the levels of the hormones regulating it.
+ > Exercise, naturally, counteracts obesity on two fronts: it burns calories, and it reduces appetite.
+ 
+
+A common observation across population studies:
+> **The most consistent risk factor for cancer is lack of activity**.
+
+> The road to successful aging really begins with desire, because without the desire to stay engaged and active and alive, people quickly fall into the death trap of being sedentary and solitary. **One of the problems of getting older is the lack of challenges, but with exercise we can continually improve and push ourselves**.
+
+> The one proven way to live longer is to consume fewer calories, at least if you're a lab rat. In experiments in which rodents eat 30% fewer calories, they live up to 40% longer than animals allowed to eat as much as they want.
+
+> Anything that keeps you in contact with other people helps you live better and longer — statistics show a tight inverse relationship between sociability and mortality.
+
+### Regimen
+> When people ask me how much exercise they should do for their brain, I tell them the best advice is to get fit and then continue challenging themselves.
+
+General recommendations from Dr. Ratey:
+- 4 days of aerobic exercise, aiming for 30+ mins each day at ~65% maximum heart rate.
+- 2 days of weight training to increase bone density and prevent muscle atrophy.
+- 2 days of complex motor movements (balance and flexibility) training by doing a sport such as yoga, pilates, martial arts, etc.
+
+The more you constantly learn, the longer you'll retain cognitive ability as you age, and the less likely you'll suffer from neurodegenerative diseases.
+
+> Today, of course, there's no need to forage and hunt to survive. Yet our genes are coded for this activity, and our brains are meant to direct it. Take that activity away, and **you're disrupting a delicate biological balance that has been fine-tuned over half a million years**.
+
+A more vigorous but 'optimal' general guideline is to do aerobic exercise 6 times a week for 45 mins to 1 hour each day at moderate intensity (65-75% max heart rate).
+
+At high intensity (75%+ of max heart), metabolism shifts from aerobic to anaerobic because your muscles are working at a rate that outpaces its receival of oxygen. At this point, you are burning creatine and glycogen stored in the muscle cells itself, which produces lactic acid, effecting the 'burn' that you feel. 
+At high intensities, your pituitary gland releases *human growth hormone* (HGH), which is vital to the development of cells in both the brain and body.
+> Psychologically, this is where you "confront the self"... By going beyond where you thought you could, straining and stressing and lingering in that pain for even just a minute or two, you sometimes transcend into a rarefied state of mind, in which you feel like you can conquer any challenge... The euphoric feeling is likely due to the mixture of extremely high levels of endorphins, ANP, endocannabinoids, and neurotransmitters pumping through your system at this intensity.
+
+> A recent study by neurologists at the University of Muenster, in Germany, reported that **interval training improves learning ability**. During the course of a 45 minute treadmill run, volunteers did two 3 minute sprints. Compared with subjects who stayed at low intensity the **sprinters had significantly higher increases in BDNF as well as norepinephrine**.
+
+You should have a strong aerobic base before incorporating interval training however. Dr. Ratey recommends at least 6 months of regular vigorous exercise regimen before adding interval training.
+
+Not a lot of research exists around the mental benefits of heavy weight training since it's hard to conduct such research on non-human subjects.
+> One factor clearly affected by strength training is HGH. A recent study looked at the hormone levels during weight training versus aerobic activity in well-trained men. Doing squats doubled HGH levels compared with running at high intensity for 30 minutes.
+
+> Statistics show that abut half of those who start up a new exercise routine drop out within 6 months to a year. Not surprisingly, one of the biggest reasons seems to be that **people often jump in at high intensity, which makes them feel bad physically and emotionally, and then they simply quit**.
+

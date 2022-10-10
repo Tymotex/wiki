@@ -39,6 +39,9 @@ Carbohydrates are subdivided into:
 All carbohydrates must be reduced to glucose first before metabolism.
 
 ## Fats
+- Avoid trans fat, animal fat and hydrogenated oils.
+- Omega-3 in fish is incredible.
+	> "One study showed that people who eat fish once a week slow the yearly rate of cognitive decline by 10%." — John Ratey in *Spark*.
 
 ### Trans fat
 
@@ -48,4 +51,4 @@ All carbohydrates must be reduced to glucose first before metabolism.
 
 ## Water
 
-## fibre
+## Fibre
