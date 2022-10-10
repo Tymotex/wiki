@@ -4,90 +4,105 @@ title: Spark
 
 > Exercise is the single most powerful tool you have to optimise your brain function.
 
-This book has done an incredible job convincing me to fit aerobic exercise and weight training into every day, unconditionally. I used to avoid it or rush it because I hated that I was spending time on something that didn't seem to matter, but I now know how stupid that is. Exercise, and knowledge of its profound benefits on health and mental acuity, will be one of the greatest weapons against life's tragedies and will drive me to output the best work I can and be the best friend, son and partner I can.
+This book has convinced me to always fit aerobic exercise and weight training into every day, unconditionally. Exercise, and the knowledge of its profound benefits on health and mental acuity, is now the greatest tool I use for combating stress, anxiety, depression while also augmenting my learning, memory and ability to think.
 
-💎 Stress (which broadly, is any threat to your body's equilibrium) and recovery is necessary for building robust cells (therefore neurons).
+💎 Aerobic exercise drives neurogenesis, the creation of new neurons, and studies have shown that people are substantially better at learning, memorisation and higher-level executive functions like creative thinking.
 
-💎 Exercise rebalances your neurotransmitters (serotonin, dopamine, norepinephrine, cortisol, and many, many others). It's a powerful antidote for the effects of emotional stress and mental ailments, even reversing the damages of chronic stress. It makes you bullet-proof against depression and anxiety.
+💎 Stress, which broadly is 'any threat to your body's equilibrium', and recovery is **necessary** for building robust cells (neurons, muscles, and so on). **Stress and recovery is a fundamental paradigm in biology, and is critical to mental and physical well-being**.
 
-💎Exercise causes an increase in BDNF levels.
+💎 Exercise and social connection are the evolutionary antidote to the negative impacts of chronic stress, even *physically reversing* the damages of chronic stress.
+
+💎 Exercise re-balances your **neurotransmitters** and **hormones**, which include endorphins, serotonin, dopamine, norepinephrine, cortisol, GABA, ANP, etc. and increases levels of **growth factors** such as BDNF, IGF-2, HGH (at high intensity), etc. It makes you bullet-proof against depression and anxiety, and will leave you calmer, happier and primed to put forward your best self.
+- Endorphins are like natural morphine.
+
+💎 From anecdotes, regularly subjecting yourself to the discomfort of exercise teaches your brain that you can be in control in aroused states, and successfully pushing yourself is immensely rewarding and inspiring, single-handedly elevating self-esteem and making it feel good to be alive and to rise to life's challenges.
 
 💎 Exercise with a heart rate monitor and you'll have confidence you're exerting yourself sufficiently in your workouts. In aerobic exercises:
 - Low intensity: 55-65%
 - Moderate intensity: 65-75%
 - High intensity: 75-90%
 
-💎 Follow-up aerobic exercise with learning something challenging to capitalise your primed brain state.
-
-
  ---
-
+ 
 Aerobic exercise leads to *neurogenesis* (the creation of new neurons from stem cell division), and when followed up by environmental stimulation, the new neurons are used to form new circuits.
 > Gym class provides the brain with the right tools to learn, and the stimulation in the kids' classes encourages those newly developing cells to plug into the network, where they become valuable members of the signalling community.
 
+Originally, the main function of the brain was to get us moving to survive.
 > Learning and memory evolved in concert with the motor functions that allowed our ancestors to track down food, so as far as our brains are concerned, if we're not moving, there's no real need to learn anything.
 
-Learning literally as you're exercising is ineffective because blood is directed away from your prefrontal cortex.
+Learning *literally as you're exercising* is ineffective because blood is directed away from your prefrontal cortex.
 > While working out on the treadmill for twenty minutes at a high intensity of 70 to 80 percent of their maximum heart rate, college students perform poorly on tests of complex learning.
 
 Exercise improves your cognitive flexibility, or in other words, your capacity to generate novel ideas.
 > A notable experiment in 2007 showed that cognitive flexibility improves after just one 35 minute treadmill session at 70 percent of maximum heart rate... So if you have an important afternoon brainstorming session scheduled, going for a short, intense run during lunchtime is a smart idea.
 
-> One small but scientifically sound study from Japan found that jogging thirty minutes just 2 or 3 times a week for twelve weeks improved executive function.
+> One small but scientifically sound study from Japan found that jogging 30 minutes just 2 or 3 times a week for 12 weeks improved executive function.
 
 You should seek to combine aerobic activity and exercises involving complex motor skills in your exercise routine. Good examples include skill-based sports such rock climbing or figure skating or Brazilian Jiu Jitsu.
 > Greenough worked on an experiment several years ago in which running rats were compared to others that were taught complex motor skills, such as walking across balance beams, unstable objects, and elastic rope ladders. After 2 weeks of training, the acrobatic rats had a 35 percent increase of BDNF in the cerebellum, whereas the running rats had none in that area.
 
 ### Stress
-> Stress and recovery. It's a fundamental paradigm of biology that has powerful and sometimes surprising results.
+This book taught me about how fundamental stress is to our health. Any form of challenge to the body and brain's equilibrium results in recovery towards a more resilient state.
+> **Stress and recovery. It's a fundamental paradigm of biology** that has powerful and sometimes surprising results.
 
-In the context of this book, stress is:
+> It's well known that the way to build muscles is to break them down and let them rest. The same paradigm applies to nerve cells, which have built-in repair and recovery mechanisms activated by mild stress.
+
+In the context of this book, *stress* is:
 > ... a threat to the body's equilibrium... In the brain, *anything that causes cellular activity* *is a form of stress*. For a neuron to fire, it requires energy, and the process of burning fuel creates wear and tear on the cell.
 
 > **Stress sparks brain growth**. Assuming that the stress is not too severe and that the neurons are given time to recover, the connections become stronger and our mental machinery works better. **Stress is not a matter of good and bad — it's a matter of necessity**.
 
 An interesting experiment done by the US Department of Energy analysed the mortality rate of identical workers, some of which were exposed to a small amount of radiation. Paradoxically, the group exposed to radiation had a lower mortality rate, suggesting that their cells became resilient to the stresses imposed by the low radiation dosage.
 
-> It seems that, like stress itself, cortisol isn't simply good or bad. A little bit helps wire in memories; too much suppresses them; and an overload can actually erode the connections between neurons and destroy memories.
+> It seems that, like stress itself, **cortisol isn't simply good or bad**. A little bit helps wire in memories; too much suppresses them; and an overload can actually erode the connections between neurons and destroy memories.
 
 > Two neurotransmitters put the brain on alert: **norepinephrine** arouses attention, then **dopamine** sharpens and focuses it.
 
+We are subjected to far less physical demands than was required of us before modernisation.
 > Even if we followed the most demanding governmental recommendations for exercise and logged thirty minutes of physical activity a day, we'd still be at less than half the energy expenditure for which our genes are encoded. Palaeolithic man had to walk five to ten miles on an average day, just to be able to eat.
 
+Exercise drives us to be more socially outgoing. When combined, exercise and social connection can reverse the effects of chronic stress. They're essential antidotes to many of the problems incurred by the stress of modern life.
 > Studies show that by adding physical activity to our lives, we become more socially active — it boosts our confidence and provides an opportunity to meet people.
 
 > If you exercise or even just socialise, you're tapping into the evolutionary antidote to stress.
 
-> It's well known that the way to build muscles is to break them down and let them rest. The same paradigm applies to nerve cells, which have built-in repair and recovery mechanisms activated by mild stress.
-
-> The paradox is that our wonderful ability to adapt and grow doesn't happen without stress — we can't have the good without a bit of the bad.
-
 > At every level, from the microcellular to the psychological, exercise not only wards off the ill effects of chronic stress; it can also reverse them. Studies show that if researchers exercise rats that have been chronically stressed, that activity makes the hippocampus grow back to its pre-shriveled state.
 
-> In 2004 researchers at Leeds metropolitan University in England found that **workers who used their company's gym were more productive and felt better able to handle their workloads**. Most of the 210 participants in the study took an aerobics class at lunchtime, for 45 minutes to an hour. They filled out questionnaires at the end of every workday about how well they interacted with colleagues, managed, their time, and met deadlines. Some 65% fared better in all three categories on days they exercised. **And they felt less fatigued in the afternoon**, despite expending energy at lunchtime.
+You must constantly subject yourself to stress in order to become better off. The alternative is to degenerate. When subjected to stress, it is sculpting your brain and body to be stronger for next time.
+> The paradox is that our wonderful ability to adapt and grow doesn't happen without stress — we can't have the good without a bit of the bad.
 
+Regular exercise will increase your 'immunity' to challenges in life. You'll be able to bear a greater burden the more you bear it.
+> In 2004 researchers at Leeds metropolitan University in England found that **workers who used their company's gym were more productive and felt better able to handle their workloads**. Most of the 210 participants in the study took an aerobics class at lunchtime, for 45 minutes to an hour. They filled out questionnaires at the end of every workday about how well they interacted with colleagues, managed, their time, and met deadlines. **Some 65% fared better in all three categories on days they exercised**. **And they felt less fatigued in the afternoon**, despite expending energy at lunchtime.
+
+An especially important point is to not drop exercise from your routine when life gets busier — you'd in fact need more of it to effectively combat the extra stress you're experiencing and turn what would be negative effects of chronic stress into the type of stress that leaves you stronger than before.
 > Just keep in mind that the more stress you have, the more your body needs to move to keep your brain running smoothly.
 
 ### Anxiety
+Exercise inoculates your brain and body against anxiety, increasing your panic threshold. Vigorous exercise and recovery teaches your brain that an aroused state is controllable. Anxiety is almost never a useful response in modern life, and is often the source of many failings, so anything that reduces anxiety it is extremely valuable. Exercise is on par with medication in effectiveness in doing so, but is very sustainable in the long-term and carries positive, not negative, side effects.
+
+A group of sedentary and anxious students were divided into two groups, one undergoing vigorous aerobic exercise almost everyday, and the other undergoing mild aerobic exercise almost everyday.
 > In 2004 a researcher named Joshua Broman-Fulks from the University of Southern Mississippi tested whether exercise would reduce anxiety sensitivity. He found 54 college students with generalised anxiety disorder who had elevated anxiety sensitivity scores and who exercises less than once a week. 
 
-They were divided into two groups, one undergoing vigorous aerobic exercise almost everyday, and the other undergoing mild aerobic exercise almost everyday.
-> Both regiments tended to reduce anxiety sensitivity, but rigorous exercise worked more quickly and effectively... The theory is that when we increase our heart rate and breathing in the context of exercise, we learn that these physical signs don't necessarily lead to an anxiety attack.
+> ... **Both regiments tended to reduce anxiety sensitivity, but rigorous exercise worked more quickly and effectively**... The theory is that when we increase our heart rate and breathing in the context of exercise, we learn that these physical signs don't necessarily lead to an anxiety attack.
 
-> Moving the body also triggers the release of gamma-aminobutyric acid (GABA), which is the brain's major inhibitory neuro-transmitter (and the primary target for most of our antianxiety medicines). Having normal levels of GABA is crucial to stopping, at the cellular level, the self-fulfilling prophecy of anxiety — it interrupts the obsessive feedback loop within the brain.
+GABA is a neurotransmitter that is critical to breaking the vicious cycle of self-reinforcing anxiety.
+> Moving the body also triggers the release of gamma-aminobutyric acid (GABA), which is the brain's major inhibitory neuro-transmitter (and the primary target for most of our anti-anxiety medicines). **Having normal levels of GABA is crucial to stopping, at the cellular level, the self-fulfilling prophecy of anxiety — it interrupts the obsessive feedback loop within the brain**.
 
-> Living with panic means avoiding anything that might set off another frightening episode. You withdraw into an emotional fetal position, and the fear leads to a desperate need for control — whatever is necessary to maintaina a stable and safe environment. This manifests itself in various ways: passive-aggressiveness, which is one way of trying to control others; compulsiveness, to keep the fear triggers at bay; and overall inflexibility.
+Anxiety causes your world to shrink, reducing the number of things you can do and preventing you from doing meaningful things. It also drives you towards vices, and to be a less kind and productive person. 
+> Living with panic means avoiding anything that might set off another frightening episode. You withdraw into an emotional fetal position, and the fear leads to a desperate need for control — whatever is necessary to maintain a stable and safe environment. This manifests itself in various ways: passive-aggressiveness, which is one way of trying to control others; compulsiveness, to keep the fear triggers at bay; and overall inflexibility.
 
+Exercise negates anxiety by causing the release of ANP which dulls the effects of panic.
 > **ANP [(atrial natriuretic peptide)] is secreted by heart muscles when we exercise**... ANP has been shown in both animal and human studies to have a calming effect... In 2001 one of the first studies to verify the role of ANP in anxiety compared patients with panic disorder to those without. They were randomly assigned an injection of ANP or placebo, and then received a dose of an abdominal hormone called cholecystokinin tetrapeptide (CCK-4), which induces anxiety and panic. **ANP significantly reduced panic attacks in both groups while the placebo did not**.
 
+Anxiety is directly related to levels of ANP in the bloodstream. Lower ANP, and you'll likely be subject to more intense states of panic. Increase ANP, and you'll safely ride out the storm.
 > In one study of patients with severe heart failure, those with the highest ANP levels had the lowest levels of anxiety... And we know that among panic disorder patients, those who have frequent attacks have a deficit of ANP in their bloodstreams.
 
-> In 2006... Strohle looked at twhether ANP was a critical element in the calming effect of aerobic exercise. For 10 healthy patients who agreed to have panic-inducing injections of CCK-4, walking for thirty minutes on a treadmill significantly increased concentrations of ANP while simultaneously lowering feelings of anxiety and panic.
+> In 2006... Ströhle looked at whether ANP was a critical element in the calming effect of aerobic exercise. For 10 healthy patients who agreed to have panic-inducing injections of CCK-4, walking for thirty minutes on a treadmill significantly increased concentrations of ANP while simultaneously lowering feelings of anxiety and panic.
 
-Fear is burned deeply into memory and is challenging to reverse, however cognitive behavioural therapy (CBT) is an effective way of suppressing it by progressively exposing patients to the source of the fear but reinforcing neutral/positive instead of negative associations with that fear.
-> When we experience the symptoms without the panic, the brain goes through a cognitive restructuring. We build connections in the prefrontal cortex that help calm the amygdala, which makes us feel safe, and then the brain records a memory of that feeling. When we add in exercise, we get the neurotransmitters and neurotrophic factors bolstering the circuits between the prefrontal cortex and the amygdala, providing further control and creating a positive snowball effect... Teaching the brain that we can survive is crucial to overcoming the anxiety.
+Fear is burned deeply into memory and is challenging to reverse once learned, however cognitive behavioural therapy (CBT) is an effective way of suppressing it by progressively exposing patients to the source of the fear but reinforcing neutral/positive instead of negative associations with that fear. Regular exercise not only physically dulls anxiety through ANP, GABA, and other neurotransmitters/hormones, it teaches you psychologically that an aroused state is completely under your control rather than something you're victim to.
+> **When we experience the symptoms without the panic, the brain goes through a cognitive restructuring**. We build connections in the prefrontal cortex that help calm the amygdala, which makes us feel safe, and then the brain records a memory of that feeling. When we add in exercise, we get the neurotransmitters and neurotrophic factors bolstering the circuits between the prefrontal cortex and the amygdala, providing further control and creating a positive snowball effect... Teaching the brain that we can survive is crucial to overcoming the anxiety.
 
-> If you begin to associate the physical symptoms of anxiety with something positive, something that you initiated and can control, teh fear memory fades in contrast to the fresh one taking shape. Think of it as a biological bait and switch — your ind is expecting a panic attack, but instead it ends up with a positive association with the symptoms.
+> If you begin to associate the physical symptoms of anxiety with something positive, something that you initiated and can control, the fear memory fades in contrast to the fresh one taking shape. Think of it as a biological bait and switch — your mind is expecting a panic attack, but instead it ends up with a positive association with the symptoms.
 
 ### Depression
 
