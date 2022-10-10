@@ -52,6 +52,8 @@ TODO: this article is really worth re-reading: https://jamesclear.com/reading-co
 
 > "He who has a *why* to live for can bear with almost any *how*" — Nietzsche.
 
+### Can't Hurt Me
+
 ---
 ## Self-Help, Skills & Philosophy
 ### Building a Second Brain
@@ -97,8 +99,6 @@ Ikigai by Francesc Miralles and Hector Garcia. 'Ikigai' means 'reason for being'
 ### How to Win Friends and Influence People
 
 ### Extreme Ownership
-
-### Can't Hurt Me
 
 ### Rich Dad Poor Dad
 [[Reading/Rich Dad Poor Dad|Rich Dad Poor Dad]] by Robert Kiyosaki. This book made me more ruthlessly pursue learning and affirms the idea that investing in your own knowledge offers the greatest returns.
