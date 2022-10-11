@@ -2,7 +2,6 @@
 kanban-plugin: basic
 ---
 
-
 ## **Monday** *[[Journal/2022-09-19|2022-09-19]]* (6)
 
 - [x] Ensure that task formatter readme is not visible.
@@ -315,6 +314,16 @@ kanban-plugin: basic
 - [x] ==1== <br>**(10 mins)** Weekly Review.
 - [x] **(30 mins)**<br>Make the journal script archive files older than 7 days, and make it also generate the weekly and monthly pages.<br>#second-brain
 - [x] ==7== <br>**(30 mins)**<br>Assess the feasibility of swimlanes. See the full discussion.
+
+## **Tuesday** *[[Journal/2022-10-11|2022-10-11]]* (6)
+
+- [x] ### **🏆 Purpose**: konflux
+- [x] Add books to Kobo
+- [x] **(1.5 hours)**<br>Finalise notes on Spark
+- [x] **(1 hour)**<br>Implement Global auth class.<br>#konflux
+- [x] **(3 hours)**<br>Read The Psychology of Money.<br>#reading
+- [x] **(10 mins)**<br>Actually finalise notes on Spark
+- [x] ==8== Assess the feasibility of swimlanes. See the full discussion.
 
 ***
 
