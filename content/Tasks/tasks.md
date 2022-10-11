@@ -9,7 +9,7 @@ kanban-plugin: basic
 - [x] ### **🏆 Purpose**: konflux and read
 - [ ] **(1.5 hours)**<br>Implement LocalAuthContext. Remember: **no broken windows.**<br><br>Make the rest work with this new refactor. Test out the user flows you wrote on paper.<br>#konflux
 - [ ] **(30 mins)**<br>Extract out the Event Name input to a separate component.<br>#konflux
-- [ ] **(30 mins)**<br>Extract out LoginModal and RegisterModal duplication into a reusable Modal component.<br>#konflux
+- [ ] **(30 mins)**<br>Extract out LoginModal and RegisterModal duplication into a reusable Modal component.<br><br>The modal form looks bad... style it better.<br>#konflux
 - [ ] **(1.5 hours)**<br>Design and implement the events page.<br><br>In index.tsx, replace the features list with events listing when globally authenticated.<br>#konflux
 - [ ] **(45 mins)**<br>Read The Psychology of Money.<br>#reading
 - [ ] **(45 mins)**<br>Read The Psychology of Money.<br>#reading
@@ -22,6 +22,7 @@ kanban-plugin: basic
 - [ ] ==9==<br>Complete HireRight while listening to music.
 - [ ] ==12==<br>**(1 hour)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.<br><br>Add an old notes disclaimer at the top of each notes page.<br><br>Be ruthless and only keep the most important notes. Archive the rest.
 - [ ] ==5==<br>Tell dad the lights are broken in the gym.
+- [ ] Set profile picture on facebook to Keith, the C++ mascot
 
 
 ## **Thursday** *[[Journal/2022-10-13|2022-10-13]]* (6)
