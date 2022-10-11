@@ -284,7 +284,7 @@ class TaskFileBuffer:
                         raise TaskFileException(f"Line '{curr_line}' doesn't belong to any column.")
                     curr_column[1].append(curr_line)
                 else:
-                    raise TaskFileException(f"Line '{curr_line}' is neither a level-2 heading nor a Markdown checkbox.")
+                    raise TaskFileException(f"In '{self._task_file_path}', line '{curr_line}' is neither a level-2 heading nor a Markdown checkbox.")
 
         raise TaskFileException("No ending Markdown divider encountered.")
 
