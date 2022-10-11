@@ -345,7 +345,10 @@ kanban-plugin: basic
 ## **Monday** *[[Journal/2022-10-10|2022-10-10]]* (6)
 
 - [x] ### **🏆 Purpose**: investing and chores.
+<<<<<<< HEAD
+=======
 - [x] Find seasickness pills to buy.
+>>>>>>> 010e2dfa41067a567a48f1c4336242d8829feda2
 - [x] **(45 mins)**<br>Read Spark<br>#reading #recurring
 - [x] ==1== <br>**(10 mins)** Weekly Review.
 - [x] **(30 mins)**<br>Make the journal script archive files older than 7 days, and make it also generate the weekly and monthly pages.<br>#second-brain

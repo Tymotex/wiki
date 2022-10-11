@@ -3,19 +3,29 @@ title: Real Estate
 description: Real Estate
 ---
 
+## Considerations
+
+Location is the greatest factor.
 
 
 
-
-# Property Versus Shares
+## Property Versus Shares
 Sources:
 - https://www.choosi.com.au/life-insurance/articles/investing-property-or-shares
 - https://moneysmart.gov.au/property-investment
 - https://www.aussiefirebug.com/property-vs-shares/
+- https://curvo.eu/article/i-want-to-invest-in-property-how-does-it-compare-to-passive-investing
+
+**TODO**: tidy this section up.
+
 
 Low interest rates and government incentives make real estate investment more attractive.
 
-Property is usually less volatile and less risky.
+The power of leverage creates notably higher annual returns.
+
+> Investing in properties is more subject to micro events such as changes in taxes. This is especially true in a country like Belgium that is known for its fiscal uncertainties.
+
+Investing in real estate is harder, riskier and more complicated than index funds.
 
 
 Rental income can cover most or all of the mortgage, however you cannot rely on it because there may be times where your property is vacant.

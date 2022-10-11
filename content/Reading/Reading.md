@@ -114,9 +114,13 @@ Ikigai by Francesc Miralles and Hector Garcia. 'Ikigai' means 'reason for being'
 ---
 ## Science
 ### Why We Sleep
+
+
 ### Spark
 [[Reading/Spark|Spark: The Revolutionary New Science of Exercise and the Brain]] by John Ratey.
-
+- Exercise is the most effective and accessible way to optimise the brain. It drives neurogenesis, improving learning, memory and executive functions.
+- Stress and recovery is a fundamental paradigm in biology. Stop thinking that stress is bad for you — it's essential towards coming back stronger, with the alternative being degeneration if you never subject yourself to stress.
+- Exercise tunes your neurotransmitter, hormones and growth factor to evolutionarily-optimal levels, rendering you bulletproof against stress, anxiety and depression, consistently leaving you ready to rise to life's challenges.
 
 ---
 
