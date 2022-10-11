@@ -108,6 +108,9 @@ Ikigai by Francesc Miralles and Hector Garcia. 'Ikigai' means 'reason for being'
 
 > **The single most powerful asset we all have is our mind.** If it is trained well, it can create enormous wealth
 
+### The Psychology of Money
+[[Reading/The Psychology of Money|The Psychology of Money]] by Morgan Housel.
+
 ---
 ## Science
 ### Why We Sleep

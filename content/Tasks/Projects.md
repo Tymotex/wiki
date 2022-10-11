@@ -47,7 +47,6 @@ kanban-plugin: basic
 
 ## [[Reading/Reading|Reading]]
 
-- [ ] **(45 mins)**<br>Read Spark<br>#reading #recurring
 - [ ] **(45 mins)**<br>Read On Writing Well.<br>#reading #recurring
 - [ ] **(45 mins)**<br>Read The Obstacle Is the Way.<br>#reading #recurring
 - [ ] **(45 mins)**<br>Read A Brief History of Time.<br>#reading #recurring

@@ -7,7 +7,7 @@ kanban-plugin: basic
 ## **Monday** *[[Journal/2022-10-10|2022-10-10]]* (6)
 
 - [ ] ### **🏆 Purpose**: investing and chores.
-- [x] **(45 mins)**<br>Read Spark<br>#reading #recurring
+- [x] **(3 hours)**<br>Read Spark<br>#reading #recurring
 - [x] ==1== <br>**(10 mins)** Weekly Review.
 - [x] **(30 mins)**<br>Make the journal script archive files older than 7 days, and make it also generate the weekly and monthly pages.<br>#second-brain
 - [ ] ==1== **(2 hours)**<br>Investopedia stock market deep-dive:<br>- How does buying stocks through an app work?<br>- How is ownership of stocks protected?<br>#project #recurring

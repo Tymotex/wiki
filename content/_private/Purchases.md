@@ -15,5 +15,6 @@ title: Purchases
 - Smaller weight plates (eg. 1kg).
 - Better, safer power rack for bench press, squatting and pressing.
 - Better barbell with sharper knurlings
+- Adjustable dumbbell set.
 - Good pillow.
 - Guitar finger picks that aren't clunky.
