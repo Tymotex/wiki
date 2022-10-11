@@ -9,7 +9,8 @@ kanban-plugin: basic
 - [x] ### **🏆 Purpose**: konflux
 - [x] Add books to Kobo
 - [x] **(1.5 hours)**<br>Finalise notes on Spark
-- [ ] **(1.5 hours)**<br>Refactor auth system. Remember: **no broken windows.**<br><br>In index.tsx, replace the features list with events listing when globally authenticated.<br>#konflux
+- [ ] **(10 mins)**<br>Actually finalise notes on Spark
+- [ ] **(1.5 hours)**<br>Refactor auth system. Remember: **no broken windows.**<br><br>Extract out LoginModal and RegisterModal duplication into a reusable Modal component.<br><br>In index.tsx, replace the features list with events listing when globally authenticated.<br>#konflux
 - [ ] **(1.5 hours)**<br>Design and implement the events page.<br>#konflux
 - [ ] **(1.5 hours)**<br>Check out gCal API.<br>#konflux
 - [ ] **(15 mins)**<br>Find fish meals, tofu meals, chicken meals, quinoa meals to try. Write in [[Knowledge/Health/Meals|Meals]]
@@ -32,6 +33,7 @@ kanban-plugin: basic
 - [ ] ### **🏆 Purpose**: konflux
 - [ ] **[1 hour]** Go through How to Not Die Alone and finalise notes.
 - [ ] ==2== **(1 hour)**<br>Determine what the next steps would be to getting a language school started.<br>#project #mum
+- [ ] **(30 mins)**<br>On Goodreads, put up a book review for Spark.
 
 
 ## **Thursday** *[[Journal/2022-10-13|2022-10-13]]* (6)
