@@ -2,41 +2,6 @@
 kanban-plugin: basic
 ---
 
-## **Saturday** *[[Journal/2022-09-10|2022-09-10]]* (6)
-
-
-
-## **Sunday** *[[Journal/2022-09-11|2022-09-11]]* (6)
-
-
-
-## **Monday** *[[Journal/2022-09-12|2022-09-12]]* (6)
-
-
-
-## **Tuesday** *[[Journal/2022-09-13|2022-09-13]]* (6)
-
-
-
-## **Wednesday** *[[Journal/2022-09-14|2022-09-14]]* (6)
-
-
-
-## **Thursday** *[[Journal/2022-09-15|2022-09-15]]* (6)
-
-
-
-## **Friday** *[[Journal/2022-09-16|2022-09-16]]* (6)
-
-
-
-## **Saturday** *[[Journal/2022-09-17|2022-09-17]]* (6)
-
-
-
-## **Sunday** *[[Journal/2022-09-18|2022-09-18]]* (6)
-
-
 
 ## **Monday** *[[Journal/2022-09-19|2022-09-19]]* (6)
 
@@ -345,10 +310,7 @@ kanban-plugin: basic
 ## **Monday** *[[Journal/2022-10-10|2022-10-10]]* (6)
 
 - [x] ### **🏆 Purpose**: investing and chores.
-<<<<<<< HEAD
-=======
 - [x] Find seasickness pills to buy.
->>>>>>> 010e2dfa41067a567a48f1c4336242d8829feda2
 - [x] **(45 mins)**<br>Read Spark<br>#reading #recurring
 - [x] ==1== <br>**(10 mins)** Weekly Review.
 - [x] **(30 mins)**<br>Make the journal script archive files older than 7 days, and make it also generate the weekly and monthly pages.<br>#second-brain
