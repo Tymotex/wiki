@@ -13,7 +13,7 @@ This book has convinced me to always fit aerobic exercise and weight training in
 💎 Exercise and social connection are the evolutionary antidote to the negative impacts of chronic stress, even *physically reversing* the damages of chronic stress.
 
 💎 Exercise re-balances your **neurotransmitters** and **hormones**, which include endorphins, serotonin, dopamine, norepinephrine, GABA, ANP, etc. to optimal levels and increases levels of **growth factors** such as BDNF, IGF-2, HGH (at high intensity), etc. It makes you bullet-proof against depression and anxiety, and will leave you calmer, happier and primed to put forward your best self. At the right levels:
-- **Endorphins** are like natural morphine, reducing pain and lifting mood.
+- **Endorphins** are like natural morphine, reducing pain and lifting mood. It's endorsed by the author as the 'elixir of heroism'.
 - **Serotonin** is a mood stabiliser.
 - **Dopamine** drives you to seek reward, honing motivation and attention.
 - **Norepinephrine** increases alertness/arousal and attention. It's very chemically similar to dopamine, enough so that they can plug into each other's receptors.
@@ -154,6 +154,7 @@ Exercise dampens cravings.
 > Dopamine produced during exercise will plug into receptors and thus blunt the craving, and over time the activity will produce more D2 receptors and restore balance in the reward system.
 
 ### Pregnancy
+Exercise is essential to both the pregnant mother's well-being and their child's. It should be seen as unacceptable to drop from a routine, given how much it benefits the kid in their development. 
 > For the first time the ACOG recommended that sedentary women *begin* exercising when they become pregnant, largely to counter risks such as diabetes, high blood pressure, and preeclampsia that can develop during gestation and harm both mother and child.
 
 > Stress, anxiety, and depression can have a frighteningly powerful impact on a pregnancy, and, in the extreme, can result in miscarriage, low birth weight, birth defects, or death of the baby. Babies born to unhappy mothers are fussier, less responsive, harder to soothe, and have unpredictable sleep patterns. And in follow-up tests, these babies are more likely to be hyperactive and suffer cognitive impairments. In rodent models, pups born to mothers subjected to stress during pregnancy (by way of shocking their feet) are skittish, clumsy, and less adventurous.
@@ -163,27 +164,32 @@ Exercise dampens cravings.
 > Most intriguing is a 2003 study showing that rat pups born of exercising moms had higher levels of BDNF immediately after birth, and also at 14 and 28 days. At the same time, they performed better than controls on learning tasks related to the hippocampus. Essentially, they learned better and faster than rats born of sedentary mothers.
 
 ### Ageing
+Remember that stress and recovery is essential to combating degeneration.
 > If you're not busy living, your body will be busy dying.
 
+So many of the negative effects of ageing can be significantly reduced through exercise, including heart problems, cancer risks, neurodegenerative diseases, and many of the other things that afflict most elderly people.
 > The average 75-year-old suffers from 3 chronic medical conditions and takes 5 prescription medicines, according to the CDC... The leading killers are heart disease, cancer, and stroke; together they account for 64% of all deaths in this age group.
 
 > Starting at about age 40, we lose on average 5% of our overall brain volume per decade, up until about age 70, when any number of conditions can accelerate the process.
 
 > ... about 1500 from Finland originally surveyed in the early 1970s were contacted again 21 years later, when they were between 65 and 79 years old. Those who had exercised at least twice a week were **50% less likely to have dementia**.
 
+Exercise can keep insulin levels at sufficient levels to prevent toxic levels of glucose in the bloodstream.
 > As we age, insulin levels drop and glucose has a harder time getting into the cells to fuel them. Then glucose can skyrocket, which creates waste products in the cells, such as free radicals, and damages blood vessels, putting us at risk for stroke and Alzheimer's... **Exercise increases levels of insulin-like growth factor (IGF-1), which regulates insulin in the body and improves synaptic plasticity in the brain**.
 
 Exercise also quells hunger by changing the levels of the hormones regulating it.
  > Exercise, naturally, counteracts obesity on two fronts: it burns calories, and it reduces appetite.
  
-A common observation across population studies:
+Although cancer causation is hard to claim, population studies seem to routinely arrive at the conclusion that:
 > **The most consistent risk factor for cancer is lack of activity**.
 
-> The road to successful aging really begins with desire, because without the desire to stay engaged and active and alive, people quickly fall into the death trap of being sedentary and solitary. **One of the problems of getting older is the lack of challenges, but with exercise we can continually improve and push ourselves**.
-
-> The one proven way to live longer is to consume fewer calories, at least if you're a lab rat. In experiments in which rodents eat 30% fewer calories, they live up to 40% longer than animals allowed to eat as much as they want.
+You should do your best to preserve the vigour, social connection, and passion to accomplish things when you're young. Toning down activity and having fewer goals and challenges nudges you closer to poorer health.
+> The road to successful ageing really begins with desire, because without the desire to stay engaged and active and alive, people quickly fall into the death trap of being sedentary and solitary. **One of the problems of getting older is the lack of challenges, but with exercise we can continually improve and push ourselves**.
 
 > Anything that keeps you in contact with other people helps you live better and longer — statistics show a tight inverse relationship between sociability and mortality.
+
+Interestingly, consuming fewer calories is a reliable way to extend lifespan, as observed in rats.
+> The one proven way to live longer is to consume fewer calories, at least if you're a lab rat. In experiments in which rodents eat 30% fewer calories, they live up to 40% longer than animals allowed to eat as much as they want.
 
 ### Regimen
 > When people ask me how much exercise they should do for their brain, I tell them the best advice is to get fit and then continue challenging themselves.
@@ -211,4 +217,3 @@ Not a lot of research exists around the mental benefits of heavy weight training
 > One factor clearly affected by strength training is HGH. A recent study looked at the hormone levels during weight training versus aerobic activity in well-trained men. Doing squats doubled HGH levels compared with running at high intensity for 30 minutes.
 
 > Statistics show that abut half of those who start up a new exercise routine drop out within 6 months to a year. Not surprisingly, one of the biggest reasons seems to be that **people often jump in at high intensity, which makes them feel bad physically and emotionally, and then they simply quit**.
-
