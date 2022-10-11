@@ -1,14 +1,15 @@
-from scripts.tasks-formatter.tasks_formatter.exceptions import TemplateFileException
-from scripts.tasks-formatter.tasks_formatter.exceptions import TaskFileException
-import typer
 import os
+
+import typer
 from colorama import Fore, Style
 from colorama import deinit as deinit_colours
 from colorama import init as init_colours
 
-from tasks_formatter.task_manager import TaskManager
-from journal_templater.journal_manager import JournalManager
 from journal_templater.exceptions import JournalException
+from journal_templater.journal_manager import JournalManager
+from tasks_formatter.exceptions import TaskFileException, TemplateFileException
+from tasks_formatter.task_manager import TaskManager
+
 
 def format_tasks(tasks_file_path: str, archived_tasks_file_path: str, num_future_dates: int) -> None:
     if not os.path.exists(archived_tasks_file_path):
