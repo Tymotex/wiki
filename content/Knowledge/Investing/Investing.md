@@ -37,7 +37,10 @@ An *investment* is the purchase of an asset or commodity with the expectation of
 - [[Knowledge/Personal Finance/Real Estate|Real Estate]]
 - [[Knowledge/Investing/Brokerage Apps|Brokerage Apps]] TODO
 - [[Knowledge/Investing/Stock Research|Stock Research]] TODO
+- [[Knowledge/Investing/Market Making|Market Making]]
+- [[Knowledge/Investing/Bid-Ask Spread|Bid-Ask Spread]]
 
+- 
 ## Stock Market
 ### Investing Strategies
 - Go 98% ETFs or index funds and 2% individual stocks. This gets you into the habit of researching stocks.
@@ -49,6 +52,8 @@ An *investment* is the purchase of an asset or commodity with the expectation of
 2. Check for a durable competitive advantage.
 3. Management has integrity and talent.
 4. Ensure a margin of safety. 
+
+
 
 ## Bond Market
 ### Stocks vs. Bonds
