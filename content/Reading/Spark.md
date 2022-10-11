@@ -134,21 +134,24 @@ Remember, exercise increases your level of BDNF, which has a strong correlation 
 > [Exercise] doesn't simply raise serotonin or dopamine or norepinephrine. **It adjusts all of them, to levels that, we can only presume, have been optimally programmed by evolution**. The same goes for exercise's effect on BDNF, IGF-1, VEGF, and FGF-2, which provide the building material and oversight for the construction of new connections and neurons.
 
 ### Addiction
-> The goals of exercise, the feeling of exervise, the challenge of exercise, the pleasure and the pain, the accomplishment, the physical well-being, the self-esteem. All that exercise us, you're now presenting to the addict as a very compelling option.
+Exercise is a very effective substitute for combating addiction.
+> The goals of exercise, the feeling of exercise, the challenge of exercise, the pleasure and the pain, the accomplishment, the physical well-being, the self-esteem. All that exercise us, you're now presenting to the addict as a very compelling option.
 
-> Animal studies show that drugs such as cocaine and amphetamine make the dendrites in the nucleus accumbens bloom, thus increasing their synaptic connections. The changes can remain months and maybe even years after the drugs are stopped, which is why it's so easy to rekapse. One way to look at addiction is that the brain has learned something too well. These adaptations lead toa  vicious cycle in which the basal ganglia goes on autopilot whenever you smell fried chicken, and the prefrontal cortex can't override your actions even though you may know better.
+Fighting your brain is incredibly hard because addiction is ingrained in the structure of your brain.
+> Animal studies show that drugs such as cocaine and amphetamine make the dendrites in the nucleus accumbens bloom, thus increasing their synaptic connections. The changes can remain months and maybe even years after the drugs are stopped, which is why it's so easy to relapse. **One way to look at addiction is that the brain has learned something too well**. These adaptations lead to a vicious cycle in which the basal ganglia goes on autopilot whenever you smell fried chicken, and the prefrontal cortex can't override your actions even though you may know better.
 
+An effective way to combat addiction is to reprogram default behaviours by executing alternative routines to indulging in the addictive substance/behaviour.
 > The routine and the physical activity gets the brain engaged and the mind moving in a direction other than toward the drug, reprogramming the basal ganglia to wire in an alternative reflexive behaviour.
 
+Having the belief in your ability to change is massively helpful in overcoming addiction, and exercise is an excellent way to build up that belief.
 > One of the connections I see here is between learning and overall mental strength. If the brain is flexible, the mind is stronger, and this gets at a concept known as self-efficacy. It's difficult to measure, but it relates to **confidence in our ability to change ourselves**.
 
 > The researchers characterised self-regulation as a resource that can be depleted but also recharged like a muscle. **Essentially, the more you use this faculty, the stronger it gets**. **And exercise is by far the best form of self-regulation we have**.
 
-> Thirty minutes of vigorous aerobic exercise 5 days a week is the bare minimum if you want to root out an addiction.
-
-> Dopamine produced during exercise will plug into receptors and thus blunt the craving, and over time the activity will produce more D2 receptors and restore balance in the reward system.
-
 > When we look at addiction as a neurological malfunction rather than as a moral failure, it suddenly takes on the form of something that can be fixed.
+
+Exercise dampens cravings.
+> Dopamine produced during exercise will plug into receptors and thus blunt the craving, and over time the activity will produce more D2 receptors and restore balance in the reward system.
 
 ### Pregnancy
 > For the first time the ACOG recommended that sedentary women *begin* exercising when they become pregnant, largely to counter risks such as diabetes, high blood pressure, and preeclampsia that can develop during gestation and harm both mother and child.
@@ -173,7 +176,6 @@ Remember, exercise increases your level of BDNF, which has a strong correlation 
 Exercise also quells hunger by changing the levels of the hormones regulating it.
  > Exercise, naturally, counteracts obesity on two fronts: it burns calories, and it reduces appetite.
  
-
 A common observation across population studies:
 > **The most consistent risk factor for cancer is lack of activity**.
 

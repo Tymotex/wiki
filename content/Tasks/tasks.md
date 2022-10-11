@@ -8,14 +8,12 @@ kanban-plugin: basic
 
 - [x] ### **🏆 Purpose**: konflux
 - [x] Add books to Kobo
-- [ ] Finalise notes on Spark
+- [x] **(1.5 hours)**<br>Finalise notes on Spark
 - [ ] **(1.5 hours)**<br>Refactor auth system. Remember: **no broken windows.**<br><br>In index.tsx, replace the features list with events listing when globally authenticated.<br>#konflux
 - [ ] **(1.5 hours)**<br>Design and implement the events page.<br>#konflux
 - [ ] **(1.5 hours)**<br>Check out gCal API.<br>#konflux
 - [ ] **(15 mins)**<br>Find fish meals, tofu meals, chicken meals, quinoa meals to try. Write in [[Knowledge/Health/Meals|Meals]]
-- [ ] ==4== **(45 mins)** Make a weekly diet plan and give it to mum.
 - [ ] ==2== **(2 hours)**<br>Investopedia stock market deep-dive:<br>- How does buying stocks through an app work?<br>- How is ownership of stocks protected?<br>#project #recurring
-- [ ] ==8== **(2 hours)** Read more about law, filling in your definitions. Specifically learn more about tax law.<br><br>Consider making a project out of this.
 - [ ] ==9== **(1.5 hours)**<br>Complete week 1 of [EdX](https://learning.edx.org/course/course-v1:BerkeleyX+Fin101x+3T2019/home).<br>#project
 - [ ] ==3== **(1 hour)** Go through **Never Split the Difference** and finalise notes.
 - [ ] ==3== Try Webull or another brokerage app.
@@ -45,11 +43,13 @@ kanban-plugin: basic
 ## **Friday** *[[Journal/2022-10-14|2022-10-14]]* (6)
 
 - [ ] ### **🏆 Purpose**: investing
+- [ ] ==8== **(2 hours)** Read more about law, filling in your definitions. Specifically learn more about tax law.<br><br>Consider making a project out of this.
 
 
 ## **Saturday** *[[Journal/2022-10-15|2022-10-15]]* (6)
 
 - [ ] ### **🏆 Purpose**: investing
+- [ ] ==4== **(45 mins)** Make a weekly diet plan and give it to mum.
 
 
 ## **Sunday** *[[Journal/2022-10-16|2022-10-16]]* (6)
