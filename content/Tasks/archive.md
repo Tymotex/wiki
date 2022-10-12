@@ -325,6 +325,10 @@ kanban-plugin: basic
 - [x] **(10 mins)**<br>Actually finalise notes on Spark
 - [x] ==8== Assess the feasibility of swimlanes. See the full discussion.
 
+## **Wednesday** *[[Journal/2022-10-12|2022-10-12]]* (6)
+
+- [x] ### **🏆 Purpose**: konflux and read
+
 ***
 
 ## Archive
