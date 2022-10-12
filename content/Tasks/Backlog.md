@@ -33,6 +33,7 @@ kanban-plugin: basic
 - [ ] **Invest** $1000 in an index fund.
 - [ ] **Approach women and have dates.** Do it infrequently enough that it doesn't derail you. You *must* practice.
 - [ ] Join Toastmasters.
+- [ ] Rewatch this and be inspired. https://www.youtube.com/watch?v=I9hJ_Rux9y0&ab_channel=Kurzgesagt%E2%80%93InaNutshell
 - [ ] Find and join a **hobby group.**
 - [ ] Read a book on **writing.**
 - [ ] Schedule weekly and monthly reviews of your life.
