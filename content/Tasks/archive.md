@@ -1,5 +1,7 @@
 ---
+
 kanban-plugin: basic
+
 ---
 
 ## **Monday** *[[Journal/2022-09-19|2022-09-19]]* (6)
@@ -10,6 +12,7 @@ kanban-plugin: basic
 - [x] [[_/(3 hours)  Write a tool to automate task progression in Python.]]
 - [x] [[_/[1 hour]  Set up git sync with mobile.]]
 
+
 ## **Monday** *[[Journal/2022-09-19|2022-09-19]]* (6)
 
 
@@ -18,6 +21,7 @@ kanban-plugin: basic
 
 - [x] **(5 hours)** Continue implementing `tasks-formatter`.<br><br>Add all classes and method stubs so that you can use PyTest.<br><br>Need a `remove_up_to_date` method that returns all tasks up to but not including a target date.
 - [x] Write tomorrow's purpose
+
 
 ## **Tuesday** *[[Journal/2022-09-20|2022-09-20]]* (6)
 
@@ -30,11 +34,13 @@ kanban-plugin: basic
 - [x] **(1 hour)** **Open source contribution** to a React library/project. Maybe contribute to `obsidian-kanban` by implementing an enhancement?
 - [x] Ensure wiki notes are privated. #critical
 
+
 ## **Wednesday** *[[Journal/2022-09-21|2022-09-21]]* (6)
 
 - [x] **(30 mins)** Set up Kindle for mum. Try Man's Search for Meaning.
 - [x] **(3 hours)** Refine and review C++ notes #critical
 - [x] Ensure wiki notes are privated. #critical
+
 
 ## **Wednesday** *[[Journal/2022-09-21|2022-09-21]]* (6)
 
@@ -47,6 +53,7 @@ kanban-plugin: basic
 - [x] Remove link to YouTube in timz.dev
 - [x] **(2 hours)** Set up **Prometheus and Grafana** for timz.dev or another project.
 - [x] **(15 mins)** Set up Kindle for mum. Try Man's Search for Meaning.
+
 
 ## **Thursday** *[[Journal/2022-09-22|2022-09-22]]* (6)
 
@@ -57,6 +64,7 @@ kanban-plugin: basic
 - [x] Remove link to YouTube in timz.dev
 - [x] **(2 hours)** Set up **Prometheus and Grafana** for timz.dev or another project.
 - [x] **(15 mins)** Set up Kindle for mum. Try Man's Search for Meaning.
+
 
 ## **Thursday** *[[Journal/2022-09-22|2022-09-22]]* (6)
 
@@ -76,6 +84,7 @@ kanban-plugin: basic
 - [x] 🏆 **Purpose today**: personal finance.
 - [x] **(1.5 hours)** Man's Search for Meaning
 
+
 ## **Friday** *[[Journal/2022-09-23|2022-09-23]]* (6)
 
 
@@ -86,6 +95,7 @@ kanban-plugin: basic
 - [x] 🏆 **Purpose today**: skim CSS and grind out konflux
 - [x] **(45 mins)** Finish Grid Garden and take notes.
 - [x] **(4 hours)** Consolidate CSS notes.
+
 
 ## **Saturday** *[[Journal/2022-09-24|2022-09-24]]* (6)
 
@@ -101,6 +111,7 @@ kanban-plugin: basic
 - [x] **(1 hour)** Finish learning CSS grid.
 - [x] (10 mins) Try [Obsidian Full Calendar plugin](https://github.com/davish/obsidian-full-calendar).
 
+
 ## **Sunday** *[[Journal/2022-09-25|2022-09-25]]* (6)
 
 
@@ -114,6 +125,7 @@ kanban-plugin: basic
 - [x] **(30 mins)** Fix Konflux bug
 - [x] **(1.5 hours)** Get to page 100 in Rich Dad Poor Dad
 
+
 ## **Monday** *[[Journal/2022-09-26|2022-09-26]]* (6)
 
 
@@ -124,6 +136,7 @@ kanban-plugin: basic
 - [x] **(3 hours)** Find a good spreadsheet template and build your own. Use it for a while (maybe review it every weekly review?)
 - [x] **(2.5 hours)** Finish Rich Dad Poor Dad
 - [x] Write a page for your principles.
+
 
 ## **Tuesday** *[[Journal/2022-09-27|2022-09-27]]* (6)
 
@@ -142,6 +155,7 @@ kanban-plugin: basic
 - [x] Apply Eleuphrat.
 - [x] Shuffle exercise playlist subset
 - [x] Watch high leverage career skills from youtube
+
 
 ## **Wednesday** *[[Journal/2022-09-28|2022-09-28]]* (6)
 
@@ -170,6 +184,7 @@ kanban-plugin: basic
 - [x] **(30 mins)**<br>Watch [Ed Coan](https://www.youtube.com/watch?v=DsXj2fQ4uow&ab_channel=MarkBell-SuperTrainingGym).
 - [x] **(1 hour)**<br>Write notes on the deadlift.
 
+
 ## **Thursday** *[[Journal/2022-09-29|2022-09-29]]* (6)
 
 
@@ -191,6 +206,7 @@ kanban-plugin: basic
 - [x] **(2 hours)**<br>~~Write a Python script that generates a set of journal prompts. Make it run on pressing `ctrl + j`.~~<br>Instead, I'm generating a bunch of journal entries using the task formatter. This is more flexible.<br>#project #second-brain
 - [x] Make 1 small tetrahedra out of black paper.
 
+
 ## **Friday** *[[Journal/2022-09-30|2022-09-30]]* (6)
 
 
@@ -203,6 +219,7 @@ kanban-plugin: basic
 - [x] ==1== **(3 hours)** <br>Work on Konflux Figma prototype.<br>#project #konflux
 - [x] ==1== **(60 mins)**<br>Book all Cairns experiences.
 
+
 ## **Saturday** *[[Journal/2022-10-01|2022-10-01]]* (6)
 
 
@@ -212,6 +229,7 @@ kanban-plugin: basic
 - [x] ### **🏆 Purpose**: konflux
 - [x] ==1== **(3 hours)** <br>Work on Konflux Figma prototype.<br>#project #konflux
 - [x] **(50 mins)**<br>Write notes on perm steps and maintenance, and digital vs non-digital perm. Book session.
+
 
 ## **Sunday** *[[Journal/2022-10-02|2022-10-02]]* (6)
 
@@ -225,6 +243,7 @@ kanban-plugin: basic
 - [x] ==3== **(10 mins)**<br>Buy an underwater phone pouch.
 - [x] **(4.5 hours)**<br>Work on Konflux. Get all the styling complete.
 
+
 ## **Monday** *[[Journal/2022-10-03|2022-10-03]]* (6)
 
 
@@ -237,6 +256,7 @@ kanban-plugin: basic
 - [x] Apply Eleuphrat.
 - [x] Ask mum to buy mince.
 
+
 ## **Tuesday** *[[Journal/2022-10-04|2022-10-04]]* (6)
 
 
@@ -248,6 +268,7 @@ kanban-plugin: basic
 - [x] Confirm you'll go through with the perm...
 - [x] ==1== **(30 mins)**<br>Write notes on the overhead press.
 - [x] ==5== **(45 mins)**<br>Write notes on the bench press.
+
 
 ## **Wednesday** *[[Journal/2022-10-05|2022-10-05]]* (6)
 
@@ -265,6 +286,7 @@ kanban-plugin: basic
 - [x] ==6== **(40 mins)**<br>Read Spark<br>#reading #recurring
 - [x] ==6== **(40 mins)**<br>Read Spark<br>#reading #recurring
 
+
 ## **Thursday** *[[Journal/2022-10-06|2022-10-06]]* (6)
 
 
@@ -281,6 +303,7 @@ kanban-plugin: basic
 - [x] Vacuum
 - [x] Try deficit, low pause and halting deadlifts.
 
+
 ## **Friday** *[[Journal/2022-10-07|2022-10-07]]* (6)
 
 
@@ -293,6 +316,7 @@ kanban-plugin: basic
 - [x] **(1.5 hours)**<br>Style the event sign in and modals.<br>#konflux
 - [x] **(1 hour)**<br>Work on Konflux.<br>#konflux
 
+
 ## **Sunday** *[[Journal/2022-10-09|2022-10-09]]* (6)
 
 - [x] ### **🏆 Purpose**: konflux, then personal finance, read.
@@ -300,11 +324,13 @@ kanban-plugin: basic
 - [x] **(1.5 hours)**<br>Get Google Auth working and native auth.<br>#konflux
 - [x] **(2 hours)**<br>Make auth bypass regular sign-in, add curvaceous styling., style avatar, clear errors.<br>#konflux
 
+
 ## **Sunday** *[[Journal/2022-10-09|2022-10-09]]* (6)
 
 - [x] ### **🏆 Purpose**: konflux, then personal finance, read.
 - [x] ==1== **(45 mins)**<br>Read Spark<br>#reading #recurring
 - [x] **(1.5 hours)**<br>Get Google Auth working and native auth.<br>#konflux
+
 
 ## **Monday** *[[Journal/2022-10-10|2022-10-10]]* (6)
 
@@ -314,6 +340,7 @@ kanban-plugin: basic
 - [x] ==1== <br>**(10 mins)** Weekly Review.
 - [x] **(30 mins)**<br>Make the journal script archive files older than 7 days, and make it also generate the weekly and monthly pages.<br>#second-brain
 - [x] ==7== <br>**(30 mins)**<br>Assess the feasibility of swimlanes. See the full discussion.
+
 
 ## **Tuesday** *[[Journal/2022-10-11|2022-10-11]]* (6)
 
@@ -325,13 +352,20 @@ kanban-plugin: basic
 - [x] **(10 mins)**<br>Actually finalise notes on Spark
 - [x] ==8== Assess the feasibility of swimlanes. See the full discussion.
 
+
 ## **Wednesday** *[[Journal/2022-10-12|2022-10-12]]* (6)
 
 - [x] ### **🏆 Purpose**: konflux and read
+- [x] ==1==<br>**(2 hours)**<br>Implement LocalAuthContext. Remember: **no broken windows.**<br><br>Make the rest work with this new refactor. Test out the user flows you wrote on paper.<br>#konflux
+- [x] ==1==<br>**(45 mins)**<br>Read The Psychology of Money.<br>#reading
+- [x] ==1==<br>**(45 mins)**<br>Read The Psychology of Money.<br>#reading
+- [x] ==1==<br>**(45 mins)**<br>Read The Psychology of Money.<br>#reading
+- [x] ==1==<br>**(45 mins)**<br>Read The Psychology of Money.<br>#reading
 
-***
 
 ## Archive
+
+
 
 
 

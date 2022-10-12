@@ -31,6 +31,9 @@ I was feeling a little agitated after a nap today and really wanted to go for it
 ---
 
 ## Relapses
+### 13th Oct
+I couldn't focus and gave up. This seems to be the most common reason.
+
 ### 10th Oct
 I had so many would-be wet dreams and woke up in emergency mode. I got up and did my squat session but I still had crazy urges. I was winning until I thought about how distracting this would be for the day and just gave up. What the fuck. I need to have a stronger *why* for doing this. I need to do it for somebody.
 
