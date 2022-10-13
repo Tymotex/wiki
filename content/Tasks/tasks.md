@@ -6,11 +6,12 @@ kanban-plugin: basic
 
 ## **Thursday** *[[Journal/2022-10-13|2022-10-13]]* (6)
 
-- [ ] ### **🏆 Purpose**: konflux, chores and read.
-- [ ] **(30 mins)**<br>Ensure that auth works properly.<br>#konflux
-- [ ] Finish the kusudama after first pomodoro while listening to Ali's book video.
-- [ ] Take out your trash.
-- [ ] What am I doing wrong with PMO?
+- [x] ### **🏆 Purpose**: konflux, chores and read.
+- [x] **(3 hours)**<br>Continue Auth refactor.<br>#konflux
+- [x] Finish the kusudama after first pomodoro while listening to Ali's book video.
+- [x] Take out your trash.
+- [x] What am I doing wrong with PMO?
+- [x] **(2 hours)**<br>Read Psychology of Money.<br>#reading #recurring
 - [ ] ==1==<br>**(30 mins)**<br>Extract out LoginModal and RegisterModal duplication into a reusable Modal component.<br><br>The modal form looks bad... style it better.<br>#konflux
 - [ ] ==1==<br>**(30 mins)**<br>Extract out the Event Name input to a separate component.<br>#konflux
 - [ ] ==1==<br>**(1.5 hours)**<br>Design and implement the events page.<br><br>In index.tsx, replace the features list with events listing when globally authenticated.<br>#konflux
@@ -26,7 +27,8 @@ kanban-plugin: basic
 
 ## **Friday** *[[Journal/2022-10-14|2022-10-14]]* (6)
 
-- [ ] ### **🏆 Purpose**: konflux polish and deployment
+- [ ] ### **🏆 Purpose**: konflux
+- [ ] **(2 hours)**<br>Finish Psychology of Money and your notes on it.<br>#reading #recurring
 - [ ] ==8== **(2 hours)** Read more about law, filling in your definitions. Specifically learn more about tax law.<br><br>Consider making a project out of this.
 - [ ] ==7== **(20 mins)** <br>Meeting with dad to discuss requirements for the quiz. Show dad Khan academy quiz.<br>#project
 - [ ] ==1==<br>**(30 mins)**<br>On Goodreads, put up a book review for Spark.
@@ -182,11 +184,11 @@ kanban-plugin: basic
 - [ ] ### **🏆 Purpose**:
 
 
-***
-
 ## Archive
 
-- [ ] Purpose today:
+
+
+
 
 %% kanban:settings
 ```
