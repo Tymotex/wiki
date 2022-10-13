@@ -10,6 +10,7 @@ kanban-plugin: basic
 - [ ] **(30 mins)**<br>Ensure that auth works properly.<br>#konflux
 - [ ] Finish the kusudama after first pomodoro while listening to Ali's book video.
 - [ ] Take out your trash.
+- [ ] What am I doing wrong with PMO?
 - [ ] ==1==<br>**(30 mins)**<br>Extract out LoginModal and RegisterModal duplication into a reusable Modal component.<br><br>The modal form looks bad... style it better.<br>#konflux
 - [ ] ==1==<br>**(30 mins)**<br>Extract out the Event Name input to a separate component.<br>#konflux
 - [ ] ==1==<br>**(1.5 hours)**<br>Design and implement the events page.<br><br>In index.tsx, replace the features list with events listing when globally authenticated.<br>#konflux
