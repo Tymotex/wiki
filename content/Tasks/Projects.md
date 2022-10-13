@@ -47,6 +47,8 @@ kanban-plugin: basic
 
 ## [[Reading/Reading|Reading]]
 
+- [ ] **(45 mins)**<br>Read Four Thousand Weeks.<br>#reading #recurring
+- [ ] **(45 mins)**<br>Read How to Not Die.<br>#reading #recurring
 - [ ] **(45 mins)**<br>Read On Writing Well.<br>#reading #recurring
 - [ ] **(45 mins)**<br>Read The Obstacle Is the Way.<br>#reading #recurring
 - [ ] **(45 mins)**<br>Read A Brief History of Time.<br>#reading #recurring

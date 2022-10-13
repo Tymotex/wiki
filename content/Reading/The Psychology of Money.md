@@ -39,6 +39,8 @@ Greed is insatiable.
 
 > ... **the ceiling of social comparison is so high that virtually no one will ever hit it**. Which means it's a battle that can never be won, or that the only way to win is to not fight to begin with — to accept that you might have enough, even if it's less than those around you.
 
+> If there's a part of our household financial plan I'm proud of it's tat we got the goalpost of lifestyle desires to stop moving at a young age. Our savings rate is fairly high, but we rarely feel like we're repressively frugal because our aspirations for more stuff haven't moved much. It's not that our aspirations are non-existent — we like nice stuff and live comfortable. We just got the goalpost to stop moving.
+
 ### Confounding Compounding
 > $81.5 billion of Warren Buffett's $84.5 billion net worth came *after his 65th birthday*. Our minds are not built to handle such absurdities.
 
@@ -49,6 +51,8 @@ Greed is insatiable.
 > There are books on economic cycles, trading strategies, and sector bets. But the most powerful and important book should be called Shut Up and Wait. It's just one page with a long-term chart of economic growth.
 
 > You can't blame people for devoting all their effort — effort in what they learn and what they do — to trying to earn the highest investment returns. It intuitively seems like the best way to get rich. But good investing isn't necessarily about earning the highest returns, because the highest returns tend to be one-off hits that can't be repeated. It's about earning pretty good returns that you can stick with and which can be repeated for the longest period of time. That's when compounding runs wild.
+
+> One of my deeply held investing beliefs is that there is little correlation between investment effort and investment results. The reason is because the world is driven by tails — a few variables account for the majority of returns. No matter how hard you try at investing you won't do well if you miss the 2 or 3 things that move the needle in your strategy. The reverse is true. Simple investment strategies can work great as long as they capture the few things that are important to that strategy's success. My investing strategy doesn't rely on picking the right sector, or timing the next recession. It relies on a high savings rate, patience, and optimism that the global economy will create value over the next several decades.
 
 ### Staying Wealthy
 > There's only one way to stay wealthy: some combination of frugality and paranoia.
@@ -81,6 +85,8 @@ One of the most reliable predictors of happiness is having a real sense of auton
 Recall the 'Monk and the Minister' parable discussed in [[Reading/The Simple Path to Wealth|The Simple Path to Wealth]]:
 > Two close boyhood friends grow up and go their separate ways. One becomes a humble monk, the other a rich and powerful minister to the king. Years later they meet. As they catch up, the portly minister (in his fine robes) takes pity on the thin and shabby monk. Seeking to help, he says: “You know, if you could learn to cater to the king, you wouldn’t have to live on rice and beans.” To which the monk replies: “If you could learn to live on rice and beans, you wouldn’t have to cater to the king.”
 
+> Use money to gain control over your time, because not having control of your time is such a powerful and universal drag on happiness. The ability to do what you want, when you want, with who you want, for as long as you wat to, pays the highest dividend that exists in finance
+
 ### Man-in-the-Car Paradox
 > No one is impressed with your possessions as much as you are.
 
@@ -92,6 +98,7 @@ A common idea propagated by the self-help community is that one should never be 
 Get out of your head, no one is thinking about you and no one will really commend you for being wealthy. They'll remember you for your contributions to something greater than yourself, and for your virtues and kindness to others.
 
 > If respect and admiration are your goal, be careful how you seek it. Humility, kindness, and empathy will bring you more respect than horsepower ever will.
+
 
 ### Wealth is What You Don't See
 > Wealth is the nice cars not purchased. The diamonds not bought. The watches not worn, the clothes forgone and the first-class upgrade declined. Wealth is financial assets that haven't yet been converted into the stuff you see.
@@ -128,6 +135,9 @@ A savings account with a 0% interest rate (or even negative interest rate) might
 > It's almost a badge of honour for investors to claim they're emotionless about their investments, because it seems rational... The reasonable investors who love their technically imperfect strategies have an edge, because they're more likely to stick with those strategies.
 
 This chapter is not an excuse to be less rational, or a way of discouraging rational and functional strategies. It's meant to stress that one of the most important variables in financial success is discipline, and being able to stick to an imperfect plan is much better than failing to stick to a perfect plan. This seems to be a important piece of wisdom in exercise routines - it doesn't really matter what exercise you do if you can't stick to the program.
+
+Morgan explains his 'worst financial decision he's ever made' in prioritising paying off a cheap mortgage instead of routing that money into index funds or bonds using purely emotional reasoning — because it feels good to have your own place, debt-free. This is one example of something reasonable trumping something rational (since investing instead of paying off your mortgage will likely lead to much more financial growth).
+> ... the foundation of, "does this help me sleep at night?" is the best universal guidepost for all financial decisions.
 
 ### Surprise!
 > Experiencing specific events does not necessarily qualify you to know what will happen next. In fact it rarely does, because experience leads to overconfidence more than forecasting ability.
@@ -189,5 +199,25 @@ Don't be tempted by rapidly rising prices as a long-term investor.
 We all subconsciously assign much greater weighting to negative events and forecasts than positive ones. A common manifestation of this is *loss aversion*.
 > Tell someone that everything will be great and they're likely to either shrug you off or offer a skeptical eye. Tell someone they're in danger and you have their undivided attention.
 
+Setbacks happen overnight while miracles often happen over too long of a time to notice.
+
+The world has gotten so much better in so many ways. Less violence, insanely better medicinal improvements, technology improvements, everyone is unfathomably richer compared to decades ago, etc. No one talks about this though.
+
+### When You'll Believe Anything
+We're all victim to a plethora of cognitive failings. Some salient ones include *confirmation bias* and *selective perception*, where we tend to only respect the evidence that affirms our pre-existing or desired beliefs.
+> The more you want something to be true, the more likely you are to believe a story that overestimates the odds of it being true.
+
+*Stories* are a fundamental part of our mentality. Since we cannot reasonably understand the core of everything in the world, from physics, to economics, to the origins of existence, to dating, we involuntarily fill the gaps with a coherent narrative that explains why something is the way it is. This is subconscious and is a curse of human limitations. You always know a lot less about how the world works than you might think you do.
+
+> "Hindsight, the ability to explain the past, gives us the illusion that the world is understandable. It gives us the illusion that the world makes sense, even when it doesn't make sense. That's a big deal in producing mistakes in many fields." — Daniel Kahneman.
+
+Pay less attention to market forecasts. No one can really predict them. As an investor however, you probably already know that, but the relevant note is that we still all have an insatiable need for structure amongst the chaos, which drives us to believe stories, pretty much involuntarily.
+
+> I have not met an investor who genuinely thinks market forecasts as a whole are accurate or useful. But there's still tremendous demand for forecasts, in both the media and from financial advisors. Why? Psychologist Philip Tetlock once wrote: "**We need to believe we live in a predictable, controllable world, so we turn to authoritative-sounding people who promise to satisfy that need.**"
+
+It's universally observable in all of us that:
+> We focus on what we know and neglect what we do not know, which makes us overly confident in our beliefs.
+
+> The more you want something to be true, the more likely you are to believe a story that overestimates the odds of it being true.
 
 

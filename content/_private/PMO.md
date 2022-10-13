@@ -6,7 +6,8 @@ title: PMO
 
 > "There can be no happiness if the things we believe in are different from the things we do." — Freya Stark.
 
-**When the fuck are you going to stop? THIS IS SO FUCKING BAD FOR YOU. YOU FEEL SO FUCKING ASHAMED. YOU FEEL SO PATHETIC. YOU NEED TO BEAT THIS EVENTUALLY. YOU ARE SUBHUMAN. IF YOU CAVE IN, YOU ARE LESS THAN NOTHING.** I will not accept myself if I continue doing this. WHY. WHY IS IT THAT YOU TRADE A FEW SECONDS OF RELIEF FOR A LIFETIME OF MISERY AND SHAME. Please, I BEG YOU JUST STOP IT. IT IS NOT SOMETHING YOU SHOULD EVER DO. I refuse to let this destroy my character. I will allow this demon to chip away everything but my soul. I will not give in. Giving in is suicide.
+**When the fuck are you going to stop? THIS IS SO FUCKING BAD FOR YOU. YOU FEEL SO FUCKING ASHAMED. YOU FEEL SO PATHETIC. YOU NEED TO BEAT THIS EVENTUALLY. YOU ARE SUBHUMAN. IF YOU CAVE IN, YOU ARE LESS THAN NOTHING.** I will not accept myself if I continue doing this. WHY. WHY IS IT THAT YOU TRADE A FEW SECONDS OF RELIEF FOR A LIFETIME OF MISERY AND SHAME. Please, I BEG YOU JUST STOP IT. IT IS NOT SOMETHING YOU SHOULD EVER DO. I refuse to let this destroy my character. I will allow this demon to chip away everything but my soul. I will not give in. Giving in is suicide. I am so fucking sick of this, if the urges come, I am going to just respond with pure anger. Why the fuck do you think you can do this to me and get away with it. 
+
 
 Giving into addiction is fundamentally about meaninglessness. Giving in means your *why* is not sufficiently strong.
 
@@ -38,7 +39,11 @@ I was feeling a little agitated after a nap today and really wanted to go for it
 
 ## Relapses
 ### 13th Oct
+<<<<<<< HEAD
 You're fucking pathetic. I am ashamed of you.
+=======
+I couldn't focus and gave up. This seems to be the most common reason.
+>>>>>>> 3ed4b7b107752e22024c8fd252a02e2c999e5b75
 
 ### 10th Oct
 I had so many would-be wet dreams and woke up in emergency mode. I got up and did my squat session but I still had crazy urges. I was winning until I thought about how distracting this would be for the day and just gave up. What the fuck. I need to have a stronger *why* for doing this. I need to do it for somebody.

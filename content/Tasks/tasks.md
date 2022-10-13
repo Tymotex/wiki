@@ -5,6 +5,7 @@ kanban-plugin: basic
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## **Monday** *[[Journal/2022-10-10|2022-10-10]]* (6)
 
 - [ ] ### **🏆 Purpose**: investing and chores.
@@ -75,10 +76,26 @@ kanban-plugin: basic
 - [ ] **(30 mins)**<br>On Goodreads, put up a book review for Spark.
 
 
+=======
+>>>>>>> 3ed4b7b107752e22024c8fd252a02e2c999e5b75
 ## **Thursday** *[[Journal/2022-10-13|2022-10-13]]* (6)
 
-- [ ] ### **🏆 Purpose**: konflux
-- [ ] ==2== **(1 hour)** Go through **Never Split the Difference** and finalise notes.
+- [ ] ### **🏆 Purpose**: konflux, chores and read.
+- [ ] **(30 mins)**<br>Ensure that auth works properly.<br>#konflux
+- [ ] Finish the kusudama after first pomodoro while listening to Ali's book video.
+- [ ] Take out your trash.
+- [ ] What am I doing wrong with PMO?
+- [ ] ==1==<br>**(30 mins)**<br>Extract out LoginModal and RegisterModal duplication into a reusable Modal component.<br><br>The modal form looks bad... style it better.<br>#konflux
+- [ ] ==1==<br>**(30 mins)**<br>Extract out the Event Name input to a separate component.<br>#konflux
+- [ ] ==1==<br>**(1.5 hours)**<br>Design and implement the events page.<br><br>In index.tsx, replace the features list with events listing when globally authenticated.<br>#konflux
+- [ ] **(1.5 hours)**<br>Check out gCal API.<br>#konflux
+- [ ] ==1==<br>**(10 mins)** Make the filter safe
+- [ ] ==1==<br>**(45 mins)**<br>Read Clean Code.<br>#reading
+- [ ] ==11==<br>**(40 mins)** Go through **Deep Work** and finalise notes.
+- [ ] ==3==<br>**(1 hour)**<br>Determine what the next steps would be to getting a language school started.<br>#project #mum
+- [ ] ==10==<br><br>Complete HireRight while listening to music.
+- [ ] ==13==<br><br>**(1 hour)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.<br><br>Add an old notes disclaimer at the top of each notes page.<br><br>Be ruthless and only keep the most important notes. Archive the rest.
+- [x] ==1==<br>Set profile picture on facebook to Keith, the C++ mascot
 
 
 ## **Friday** *[[Journal/2022-10-14|2022-10-14]]* (6)
@@ -86,6 +103,8 @@ kanban-plugin: basic
 - [ ] ### **🏆 Purpose**: konflux polish and deployment
 - [ ] ==8== **(2 hours)** Read more about law, filling in your definitions. Specifically learn more about tax law.<br><br>Consider making a project out of this.
 - [ ] ==7== **(20 mins)** <br>Meeting with dad to discuss requirements for the quiz. Show dad Khan academy quiz.<br>#project
+- [ ] ==1==<br>**(30 mins)**<br>On Goodreads, put up a book review for Spark.
+- [ ] **(45 mins)**<br>Plan and continue writing your blog post on exercise.<br>#blog
 
 
 ## **Saturday** *[[Journal/2022-10-15|2022-10-15]]* (6)
@@ -122,6 +141,7 @@ kanban-plugin: basic
 ## **Wednesday** *[[Journal/2022-10-19|2022-10-19]]* (6)
 
 - [ ] ### **🏆 Purpose**:
+- [ ] ==2== **(1 hour)** Go through **Never Split the Difference** and finalise notes.
 
 
 ## **Thursday** *[[Journal/2022-10-20|2022-10-20]]* (6)
