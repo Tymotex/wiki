@@ -362,6 +362,7 @@ kanban-plugin: basic
 - [x] ==1==<br>**(45 mins)**<br>Read The Psychology of Money.<br>#reading
 - [x] ==1==<br>**(45 mins)**<br>Read The Psychology of Money.<br>#reading
 
+---
 
 ## Archive
 
