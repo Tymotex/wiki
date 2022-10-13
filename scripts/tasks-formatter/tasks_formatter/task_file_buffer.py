@@ -274,7 +274,7 @@ class TaskFileBuffer:
                 column_name = match.group(1)
                 match = TaskFileBuffer.column_name_date_regex.search(column_name)
                 if not match:
-                    raise TaskFileException("Column '{column_name}' is missing a date of format: YYYY-MM-DD.")
+                    raise TaskFileException(f"Column '{column_name}' is missing a date of format: YYYY-MM-DD.")
                 date_str = match.group(1)
                 curr_column = (datetime.strptime(date_str, "%Y-%m-%d"), [])
             else:
