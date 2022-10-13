@@ -2,7 +2,7 @@
 kanban-plugin: basic
 ---
 
-## **Friday** *[[Journal/2022-10-14|2022-10-14]]* (6)
+## **Friday** *[[Journal/asd|2022-10-14]]* (6)
 
 - [ ] ### **🏆 Purpose**: konflux
 - [ ] **(2 hours)**<br>Finish Psychology of Money and your notes on it.<br>#reading #recurring
