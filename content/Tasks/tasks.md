@@ -6,6 +6,7 @@ kanban-plugin: basic
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## **Monday** *[[Journal/2022-10-10|2022-10-10]]* (6)
 
 - [ ] ### **🏆 Purpose**: investing and chores.
@@ -79,34 +80,27 @@ kanban-plugin: basic
 =======
 >>>>>>> 3ed4b7b107752e22024c8fd252a02e2c999e5b75
 ## **Thursday** *[[Journal/2022-10-13|2022-10-13]]* (6)
+=======
+## **Friday** *[[Journal/asd|2022-10-14]]* (6)
+>>>>>>> 94007dfe7a9a2c2de0b1ea0e1e806e4652965437
 
-- [x] ### **🏆 Purpose**: konflux, chores and read.
-- [x] **(3 hours)**<br>Continue Auth refactor.<br>#konflux
-- [x] Finish the kusudama after first pomodoro while listening to Ali's book video.
-- [x] Take out your trash.
-- [x] What am I doing wrong with PMO?
-- [x] **(2 hours)**<br>Read Psychology of Money.<br>#reading #recurring
-- [ ] ==1==<br>**(30 mins)**<br>Extract out LoginModal and RegisterModal duplication into a reusable Modal component.<br><br>The modal form looks bad... style it better.<br>#konflux
-- [ ] ==1==<br>**(30 mins)**<br>Extract out the Event Name input to a separate component.<br>#konflux
-- [ ] ==1==<br>**(1.5 hours)**<br>Design and implement the events page.<br><br>In index.tsx, replace the features list with events listing when globally authenticated.<br>#konflux
-- [ ] **(1.5 hours)**<br>Check out gCal API.<br>#konflux
-- [ ] ==1==<br>**(10 mins)** Make the filter safe
-- [ ] ==1==<br>**(45 mins)**<br>Read Clean Code.<br>#reading
-- [ ] ==11==<br>**(40 mins)** Go through **Deep Work** and finalise notes.
-- [ ] ==3==<br>**(1 hour)**<br>Determine what the next steps would be to getting a language school started.<br>#project #mum
-- [ ] ==10==<br><br>Complete HireRight while listening to music.
-- [ ] ==13==<br><br>**(1 hour)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.<br><br>Add an old notes disclaimer at the top of each notes page.<br><br>Be ruthless and only keep the most important notes. Archive the rest.
-- [x] ==1==<br>Set profile picture on facebook to Keith, the C++ mascot
-
-
-## **Friday** *[[Journal/2022-10-14|2022-10-14]]* (6)
-
-- [ ] ### **🏆 Purpose**: konflux
-- [ ] **(2 hours)**<br>Finish Psychology of Money and your notes on it.<br>#reading #recurring
+- [x] ### **🏆 Purpose**: konflux
+- [ ] **(1 hour)**<br>Finish Psychology of Money and your notes on it.<br>#reading
+- [x] ==2==<br><br>**(30 mins)**<br>Extract out LoginModal and RegisterModal duplication into a reusable Modal component.<br><br>The modal form looks bad... style it better.<br>#konflux
+- [x] ==2==<br><br>**(4 hours)**<br>Work on Konflux.<br>#konflux
 - [ ] ==8== **(2 hours)** Read more about law, filling in your definitions. Specifically learn more about tax law.<br><br>Consider making a project out of this.
 - [ ] ==7== **(20 mins)** <br>Meeting with dad to discuss requirements for the quiz. Show dad Khan academy quiz.<br>#project
 - [ ] ==1==<br>**(30 mins)**<br>On Goodreads, put up a book review for Spark.
 - [ ] **(45 mins)**<br>Plan and continue writing your blog post on exercise.<br>#blog
+- [ ] ==2==<br><br>**(1.5 hours)**<br>Design and implement the events page.<br><br>In index.tsx, replace the features list with events listing when globally authenticated.<br>#konflux
+- [ ] ==1==<br>**(1.5 hours)**<br>Check out gCal API.<br>#konflux
+- [ ] ==2==<br><br>**(10 mins)** Make the filter safe
+- [ ] ==2==<br><br>**(45 mins)**<br>Read Clean Code.<br>#reading
+- [ ] ==12==<br><br>**(40 mins)** Go through **Deep Work** and finalise notes.
+- [ ] ==4==<br><br>**(1 hour)**<br>Determine what the next steps would be to getting a language school started.<br>#project #mum
+- [ ] ==11==<br><br><br>Complete HireRight while listening to music.
+- [ ] ==14==<br><br><br>**(1 hour)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.<br><br>Add an old notes disclaimer at the top of each notes page.<br><br>Be ruthless and only keep the most important notes. Archive the rest.
+- [ ] Begin packing for cairns. Make checklist on that page. What else is there to do before departing? Eg. pre-arrange uber trip from cairns airport to hotel?
 
 
 ## **Saturday** *[[Journal/2022-10-15|2022-10-15]]* (6)

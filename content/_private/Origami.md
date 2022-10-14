@@ -5,12 +5,14 @@ title: Origami
 ## Favourites
 - [x] [Pentagon rose](https://www.youtube.com/watch?v=8YMgbtX7FZ8) and [calyx](https://www.youtube.com/watch?v=tocRa6D_iWM&ab_channel=TadashiMori-OrigamiTutorials).
 - [x] [Five intersecting tetrahedra](https://www.youtube.com/watch?v=aT2UHxA4uRY&ab_channel=OrigamiwithJoNakashima)
-- [ ] [Kusudama starsea](https://www.youtube.com/watch?v=u-71U6rs9Vg)
-    - [x] Modular star
+- [x] [Kusudama starsea](https://www.youtube.com/watch?v=u-71U6rs9Vg)
+- [x] Modular star
 - [x] Kusudama flower
+- [ ] Starlight Kusudama
 - [ ] Tigra
 - [ ] Dahlia
 - [ ] Tulip
+- [ ] Kusudama Dafina
 - [ ] [Christmas Tree](https://www.youtube.com/watch?v=4kWS1q8zFFc&list=PL5jDTd07plNBkAhTmX7ZJjKJNEf-W579j&index=41&ab_channel=OrigamiwithJoNakashima)
 - [ ] [Kusudama Paradigma](https://www.youtube.com/watch?v=ezabkkIq3ds&ab_channel=TadashiMori-OrigamiTutorials)
 - [ ] Anything from this playlist:
