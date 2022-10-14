@@ -6,18 +6,19 @@ kanban-plugin: basic
 
 ## **Saturday** *[[Journal/2022-10-15|2022-10-15]]* (6)
 
-- [ ] ### **🏆 Purpose**: investing and diet learning
+- [x] ### **🏆 Purpose**: investing and diet learning
+- [x] **(2.5 hours)**<br>Work on Konflux<br>#konflux
 - [ ] ==2== **(2 hours)**<br>Investopedia stock market deep-dive:<br>- How does buying stocks through an app work?<br>- How is ownership of stocks protected?<br>#project #recurring
+- [ ] ==3== Try Webull or another brokerage app.
+- [ ] ==9== **(1.5 hours)**<br>Complete week 1 of [EdX](https://learning.edx.org/course/course-v1:BerkeleyX+Fin101x+3T2019/home).<br>#project
 - [ ] ==4== **(45 mins)** Make a weekly diet plan and give it to mum.
 - [ ] **(15 mins)**<br>Find fish meals, tofu meals, chicken meals, quinoa meals to try. Write in [[Knowledge/Health/Meals|Meals]]
-- [ ] ==9== **(1.5 hours)**<br>Complete week 1 of [EdX](https://learning.edx.org/course/course-v1:BerkeleyX+Fin101x+3T2019/home).<br>#project
-- [ ] ==3== Try Webull or another brokerage app.
 - [ ] ==2==<br><br>**(30 mins)**<br>On Goodreads, put up a book review for Spark.
 - [ ] ==9==<br>**(2 hours)** Read more about law, filling in your definitions. Specifically learn more about tax law.<br><br>Consider making a project out of this.
-- [ ] ==8==<br>**(20 mins)** <br>Meeting with dad to discuss requirements for the quiz. Show dad Khan academy quiz.<br>#project
-- [ ] ==1==<br>**(45 mins)**<br>Plan and continue writing your blog post on exercise.<br>#blog
 - [ ] ==3==<br><br><br>**(1.5 hours)**<br>Design and implement the events page.<br><br>In index.tsx, replace the features list with events listing when globally authenticated.<br>#konflux
 - [ ] ==3==<br><br><br>**(10 mins)** Make the filter safe
+- [ ] ==1==<br>**(45 mins)**<br>Plan and continue writing your blog post on exercise.<br>#blog
+- [ ] ==8==<br>**(20 mins)** <br>Meeting with dad to discuss requirements for the quiz. Show dad Khan academy quiz.<br>#project
 - [ ] ==3==<br><br><br>**(45 mins)**<br>Read Clean Code.<br>#reading
 - [ ] ==13==<br><br><br>**(40 mins)** Go through **Deep Work** and finalise notes.
 - [ ] ==5==<br><br><br>**(1 hour)**<br>Determine what the next steps would be to getting a language school started.<br>#project #mum
