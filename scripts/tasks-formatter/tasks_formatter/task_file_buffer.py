@@ -259,7 +259,7 @@ class TaskFileBuffer:
             curr_line = lines[i]
 
             # Stop when a Markdown horizontal rule is encountered.
-            if curr_line == "---" or curr_line == "___" or curr_line == "***":
+            if curr_line == "---" or curr_line == "___" or curr_line == "***" or curr_line == "END":
                 # Commit the final task column.
                 if curr_column:
                     self._tasks.append(curr_column)
