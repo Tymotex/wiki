@@ -206,7 +206,7 @@ class TaskFileBuffer:
             lines: List[str] = [line.strip() for line in task_file.readlines() if bool(re.match(r"\S+", line))]
             resume_line_index = self._extract_frontmatter(lines)
             resume_line_index = self._extract_columns(lines, resume_line_index)
-            resume_line_index = self._extract_archive(lines, resume_line_index)
+            # resume_line_index = self._extract_archive(lines, resume_line_index)
             self._extract_board_settings(lines, resume_line_index)
 
     def _extract_frontmatter(self, lines, starting_line: int = 0) -> int: 
@@ -260,6 +260,14 @@ class TaskFileBuffer:
 
             # Stop when a Markdown horizontal rule is encountered.
             if curr_line == "---" or curr_line == "___" or curr_line == "***" or curr_line == "END":
+                # Commit the final task column.
+                if curr_column:
+                    self._tasks.append(curr_column)
+                return i + 1
+
+            # Stop when '%%' is encountered, which signals the start of the
+            # settings comment block.
+            if curr_line.startswith("%%"):
                 # Commit the final task column.
                 if curr_column:
                     self._tasks.append(curr_column)
