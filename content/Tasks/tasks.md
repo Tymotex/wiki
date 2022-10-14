@@ -9,6 +9,7 @@ kanban-plugin: basic
 - [x] ### **🏆 Purpose**: konflux
 - [ ] **(1 hour)**<br>Finish Psychology of Money and your notes on it.<br>#reading
 - [x] ==2==<br><br>**(30 mins)**<br>Extract out LoginModal and RegisterModal duplication into a reusable Modal component.<br><br>The modal form looks bad... style it better.<br>#konflux
+- [x] ==2==<br><br>**(4 hours)**<br>Work on Konflux.<br>#konflux
 - [ ] ==8== **(2 hours)** Read more about law, filling in your definitions. Specifically learn more about tax law.<br><br>Consider making a project out of this.
 - [ ] ==7== **(20 mins)** <br>Meeting with dad to discuss requirements for the quiz. Show dad Khan academy quiz.<br>#project
 - [ ] ==1==<br>**(30 mins)**<br>On Goodreads, put up a book review for Spark.
