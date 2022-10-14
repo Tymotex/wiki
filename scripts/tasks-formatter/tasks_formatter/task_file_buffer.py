@@ -273,6 +273,18 @@ class TaskFileBuffer:
                     self._tasks.append(curr_column)
                 return i + 1
 
+            # Skip past the archive and stop when '%%' is encountered.
+            if curr_line.startswith("## Archive"):
+                # Commit the final task column.
+                if curr_column:
+                    self._tasks.append(curr_column)
+
+                j = i
+                while not curr_line.startswith("%%"):
+                    curr_line = lines[j]
+                    j += 1
+                return j + 1
+
             match = TaskFileBuffer.level2_heading_regex.search(curr_line)
             if match:
                 # Commit the last column of tasks before extracting tasks from
