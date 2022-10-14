@@ -243,6 +243,7 @@ kanban-plugin: basic
 
 END
 
+## Archive
 
 
 %% kanban:settings
