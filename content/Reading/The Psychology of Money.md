@@ -2,15 +2,15 @@
 title: The Psychology of Money
 ---
 
-💎 Savings enable freedom and autonomy, the highest ROI possible. This is among the few things that reliably predict happiness.
+💎 Savings enable freedom, the highest ROI possible. Having autonomy over your time is among one of the very few things that reliably predict happiness.
 
-💎 Have more humility and save/invest all the money you can. Have patience and compounding will explode your finances.
+💎 Have more humility and save/invest all the money you can. Wealth is attained and demonstrated not through exuberant consumption, but through the things not consumed. Have patience and compounding will explode your finances.
 
 💎 Stop moving the goalpost, or at least keep the 'man-in-the-car paradox' in mind and never do it because you want respect and admiration.
 
 💎 The world is several orders of magnitude more complex than any can comprehend. Don't believe that you (especially) or the experts know better than anyone else.
 
-💎 Use the financial plan that best helps you sleep at night, not the optimal one on the spreadsheet. 
+💎 Use the financial plan that best helps you sleep at night, not the optimal one on the spreadsheet.
 
 ---
 

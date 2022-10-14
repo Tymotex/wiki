@@ -106,10 +106,13 @@ Ikigai by Francesc Miralles and Hector Garcia. 'Ikigai' means 'reason for being'
 - Sales, marketing and negotiation are skills you must learn.
 - Aim to aggressively acquire assets with each dollar you get and avoid liabilities as much as possible.
 
-> **The single most powerful asset we all have is our mind.** If it is trained well, it can create enormous wealth
+> **The single most powerful asset we all have is our mind.** If it is trained well, it can create enormous wealth.
 
 ### The Psychology of Money
-[[Reading/The Psychology of Money|The Psychology of Money]] by Morgan Housel.
+[[Reading/The Psychology of Money|The Psychology of Money]] by Morgan Housel. This book puts into perspective how people think and behave with their money. It's inspired me to be even more frugal, to stop moving the consumption goalpost forward, and to be skeptical about my ability and the ability of others in understanding how the world really works.
+- Savings enable freedom, one of the few things that lets you have the life you want (isn't that what matters?). It's one of the most reliable predictors of happiness.
+- Have more humility and stop moving the consumption goalpost. You attain happiness and gain admiration and respect by being a virtuous person, not through exuberant consumption.
+- Use a financial plan that lets you sleep best at night. Don't be arrogant enough to think you'll be unperturbed when the stock market wipes away your retirement savings.
 
 ---
 ## Science
