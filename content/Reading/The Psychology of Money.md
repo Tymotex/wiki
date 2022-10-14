@@ -2,30 +2,35 @@
 title: The Psychology of Money
 ---
 
-💎 Freedom is the most valuable thing that savings gets you.
+💎 Savings enable freedom and autonomy, the highest ROI possible. This is among the few things that reliably predict happiness.
+
+💎 Have more humility and save/invest all the money you can. Have patience and compounding will explode your finances.
+
+💎 Stop moving the goalpost, or at least keep the 'man-in-the-car paradox' in mind and never do it because you want respect and admiration.
+
+💎 The world is several orders of magnitude more complex than any can comprehend. Don't believe that you (especially) or the experts know better than anyone else.
+
+💎 Use the financial plan that best helps you sleep at night, not the optimal one on the spreadsheet. 
 
 ---
 
 ### No One is Crazy
+Everyone has their own idiosyncratic relationship with money because it's shaped by unique sets of circumstances and observations. Firmly held beliefs in one reasonable person can be totally at odds with beliefs of another reasonable person. A person's confidence in stocks could depend heavily on whether they were born and began investing at a time when the stock market was booming, versus a time when the stock market was plummeting. Similarly, a person born in Australia may have never faced a recession and hence may be overly optimistic about economic growth which would affect their investing and spending behaviour.
 > Your personal experiences with money make up maybe 0.00000001% of what's happened in the world, but maybe 80% of how you think the world works.
 
-Everyone has their own idiosyncratic relationship with money, but they're all shaped by incredibly unique sets of circumstances and observations. Firmly held beliefs in one reasonable person can be totally at odds with beliefs in another reasonable person.
-
 ### Luck and Risk
-Luck and risk (misfortune) are fundamental forces polarising people towards wild success and catastrophic failure. Detach from your ego and realise that luck played a massive role in your personal successes, and risk played a massive role in your failings. 
-
-The book discusses Bill Gates as an example and Paul Allen, the founders of Microsoft. They attended a high school which was one of the only in the world that access to a computer in the 1960s. Of the ~300 million people of comparable age in existence at the time, you'd need to win a 1-in-a-million dice roll to have gone to this high school. There was also a third person, Kent Evans, who was a close friend with Gates and Allen, and equally ambitious and obsessed with the possibilities of modern computer, but who died to a mountaineering accident before graduating high school, another 1-in-a-million dice roll.
-
-Emulating the decision-making of wildly successful people and expecting the same level of outcome is unreasonable.
-
+Luck and risk (misfortune) are external forces indiscriminately polarising people towards wild success and catastrophic failure alike. The lesson from this chapter is to detach from your ego and realise that luck played a massive role in your personal successes, and risk played a massive role in your failings. This is not to say you're a completely helpless victim of external forces, but rather that you should not forget about their effects, especially when observing highly successful people or people who've experienced massive failures — perhaps the only difference between them was a lucky break. When you're lucky, be grateful. When you're unlucky, try again rather than conclude something as a wrong decision.
 > "One lucky break, or one supremely shrewd decision — can we tell them apart?" — Benjamin Graham, reflecting on his GEICO stock which violated the principles he wrote about in the Intelligent Investor, but which won him a huge fortune.
 
 > The line between 'inspiringly bold' and 'foolishly reckless' can be a millimeter thick and only visible with hindsight.
 
-In many cases, it is impossible to distinguish between luck and misfortune. **Never judge people for the way they are and things they've achieved**.
+The book discusses Bill Gates as an example and Paul Allen, the founders of Microsoft. They attended a high school which was one of the few in the world that had access to a computer in the 1960s. Of the ~300 million people of comparable age in existence on Earth at the time, you'd need to score a 1-in-a-million chance to have gone to this high school. There was also a third person, Kent Evans, who was a close friend with Gates and Allen, and equally ambitious and obsessed with the possibilities of modern computing, but who died to a mountaineering accident before graduating high school, a 1-in-a-million freak accident.
 
+
+In many cases, it is impossible to distinguish between luck and misfortune. **Never judge people for the way they are and things they've achieved**.
 > **Be careful who you praise and admire. Be careful who you look down upon and wish to avoid becoming.**
 
+Emulating the decision-making of wildly successful people and expecting the same level of outcome is unreasonable.
 > Therefore, **focus less on specific individuals and case studies and more on broad patterns**.
 
 You can't fully attribute personal successes to inputs that you controlled — such as hard work, ambition and education. These are necessary inputs, but know that your outcomes are a complex function of luck.
