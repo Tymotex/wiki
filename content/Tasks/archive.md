@@ -375,14 +375,8 @@ kanban-plugin: basic
 - [x] ==2==<br><br>**(30 mins)**<br>Extract out LoginModal and RegisterModal duplication into a reusable Modal component.<br><br>The modal form looks bad... style it better.<br>#konflux
 - [x] ==2==<br><br>**(4 hours)**<br>Work on Konflux.<br>#konflux
 
-***
-
-## Archive
 
 
-
-%% kanban:settings
-## Archive
 %% kanban:settings
 ```
 {"kanban-plugin":"basic"}
