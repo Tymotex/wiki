@@ -4,9 +4,6 @@ kanban-plugin: basic
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 ## **Monday** *[[Journal/2022-10-10|2022-10-10]]* (6)
 
 - [ ] ### **🏆 Purpose**: investing and chores.
@@ -44,9 +41,6 @@ kanban-plugin: basic
 - [ ] ==3== Tell dad the lights are broken in the gym.
 - [ ] Find seasickness pills to buy.
 
-
-=======
->>>>>>> 010e2dfa41067a567a48f1c4336242d8829feda2
 ## **Tuesday** *[[Journal/2022-10-11|2022-10-11]]* (6)
 
 - [x] ### **🏆 Purpose**: konflux
@@ -77,12 +71,8 @@ kanban-plugin: basic
 - [ ] **(30 mins)**<br>On Goodreads, put up a book review for Spark.
 
 
-=======
->>>>>>> 3ed4b7b107752e22024c8fd252a02e2c999e5b75
 ## **Thursday** *[[Journal/2022-10-13|2022-10-13]]* (6)
-=======
 ## **Friday** *[[Journal/asd|2022-10-14]]* (6)
->>>>>>> 94007dfe7a9a2c2de0b1ea0e1e806e4652965437
 
 - [x] ### **🏆 Purpose**: konflux
 - [ ] **(1 hour)**<br>Finish Psychology of Money and your notes on it.<br>#reading
