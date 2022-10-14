@@ -8,7 +8,6 @@ kanban-plugin: basic
 
 - [x] ### **🏆 Purpose**: konflux
 - [ ] **(1 hour)**<br>Finish Psychology of Money and your notes on it.<br>#reading
-- [ ] ==2==<br><br>**(30 mins)**<br>Extract out the Event Name input to a separate component.<br>#konflux
 - [x] ==2==<br><br>**(30 mins)**<br>Extract out LoginModal and RegisterModal duplication into a reusable Modal component.<br><br>The modal form looks bad... style it better.<br>#konflux
 - [ ] ==8== **(2 hours)** Read more about law, filling in your definitions. Specifically learn more about tax law.<br><br>Consider making a project out of this.
 - [ ] ==7== **(20 mins)** <br>Meeting with dad to discuss requirements for the quiz. Show dad Khan academy quiz.<br>#project
@@ -22,6 +21,7 @@ kanban-plugin: basic
 - [ ] ==4==<br><br>**(1 hour)**<br>Determine what the next steps would be to getting a language school started.<br>#project #mum
 - [ ] ==11==<br><br><br>Complete HireRight while listening to music.
 - [ ] ==14==<br><br><br>**(1 hour)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.<br><br>Add an old notes disclaimer at the top of each notes page.<br><br>Be ruthless and only keep the most important notes. Archive the rest.
+- [ ] Begin packing for cairns. Make checklist on that page. What else is there to do before departing? Eg. pre-arrange uber trip from cairns airport to hotel?
 
 
 ## **Saturday** *[[Journal/2022-10-15|2022-10-15]]* (6)
