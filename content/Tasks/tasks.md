@@ -16,6 +16,7 @@ kanban-plugin: basic
 - [ ] ==3==<br><br><br>**(10 mins)** Make the filter safe
 - [ ] ==3==<br><br><br>**(45 mins)**<br>Read Clean Code.<br>#reading
 - [ ] ==13==<br><br><br>**(40 mins)** Go through **Deep Work** and finalise notes.
+- [ ] **(1 hour)** Go through **The Simple Path to Wealth** and finalise notes.
 - [ ] ==5==<br><br><br>**(1 hour)**<br>Determine what the next steps would be to getting a language school started.<br>#project #mum
 - [ ] ==1==<br>Begin packing for cairns. Make checklist on that page. What else is there to do before departing? Eg. pre-arrange uber trip from cairns airport to hotel?
 - [ ] ==8==<br>**(20 mins)** <br>Meeting with dad to discuss requirements for the quiz. Show dad Khan academy quiz.<br>#project
