@@ -42,6 +42,16 @@ The *stock market*, *share market* and *equity market* all refer to the same thi
 
 The above are reasons why stocks have *intrinsic value*, however the actual stock price is determined by people thinking it has value.
 
+## How are stocks bought and sold?
+Investors and traders submit *orders* to buy (**bid**) or sell (**ask**) shares at a specific price to a [[Knowledge/Investing/Stock Brokers|stock broker]]. When a bid and ask are compatible, then an exchange proceeds. Depending on the market's liquidity, the matching of bids and asks can happen virtually instantly or may take time or fail to be fulfilled.
+
+
+
+## How are stocks 'stored' or 'owned'?
+Companies listed on an exchange maintain a register of shareholders. The book-keeping may be delegated to the brokerage firm you bought the stocks through, who is responsible for recording your ownership of the securities and protecting it from loss of theft.
+
+Alternatively, some companies can issue physical certificates as one way of proof of ownership, but this is hardly ever done anymore in favour of the convenience and reliability of electronic records. For 4 centuries, holding the paper certificate you're issued was the only way of proving stock ownership.
+
 ## Common vs. Preferred Shares
 Shares are usually either *common shares* and *preferred shares*. 
 - Preferred shareholders get priority over common shareholders when receiving dividends and the assets if the company [[Knowledge/Investing/Stocks#Liquidation|liquidates]]. 

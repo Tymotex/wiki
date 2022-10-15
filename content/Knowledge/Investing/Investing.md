@@ -32,12 +32,14 @@ An *investment* is the purchase of an asset or commodity with the expectation of
 - [[Knowledge/Investing/Market Capitalisation|Market Capitalisation]]
 - [[Knowledge/Investing/Leverage|Leverage]]
 - [[Knowledge/Investing/IPO|IPO]]
-- [[Knowledge/Investing/Buying a Home|Buying a Home]]
-- [[Knowledge/Personal Finance/Real Estate|Real Estate]]
+- [[Knowledge/Investing/Buying a Home|Buying a Home]] TODO
+- [[Knowledge/Personal Finance/Real Estate|Real Estate]] TODO
+- [[Knowledge/Investing/Stock Brokers|Stock Brokers]]
 - [[Knowledge/Investing/Brokerage Apps|Brokerage Apps]] TODO
+- [[Knowledge/Economics/macroeconomics/Liquidity|Liquidity]] TODO
 - [[Knowledge/Investing/Stock Research|Stock Research]] TODO
-- [[Knowledge/Investing/Market Making|Market Making]]
-- [[Knowledge/Investing/Bid-Ask Spread|Bid-Ask Spread]]
+- [[Knowledge/Investing/Market Maker|Market Maker]] TODO
+- [[Knowledge/Investing/Bid-Ask Spread|Bid-Ask Spread]] TODO
 
 - [[Knowledge/Investing/Derivatives|Derivatives]] TODO
 - [[Knowledge/Investing/Options|Options]] TODO
@@ -47,7 +49,6 @@ An *investment* is the purchase of an asset or commodity with the expectation of
 - [[Knowledge/Investing/Domestic Versus International|Domestic vs. International]] TODO
 - [[Knowledge/Investing/ASX|ASX]] TODO
 - [[Knowledge/Investing/CHESS|CHESS]] TODO
-- [[Knowledge/Investing/Stock Brokers|ETF Brokers]] TODO
 - [[Knowledge/Investing/Currency Risk|Currency Risk]] TODO
 - [[Knowledge/Investing/Franking Credits|Franking Credits]] TODO
 - What is microinvesting? E.g. microinvesting apps include RAIZ, Spaceship, etc. TODO
