@@ -32,7 +32,6 @@ An *investment* is the purchase of an asset or commodity with the expectation of
 - [[Knowledge/Investing/Market Capitalisation|Market Capitalisation]]
 - [[Knowledge/Investing/Leverage|Leverage]]
 - [[Knowledge/Investing/IPO|IPO]]
-- [[Knowledge/Investing/Options|Options]] TODO
 - [[Knowledge/Investing/Buying a Home|Buying a Home]]
 - [[Knowledge/Personal Finance/Real Estate|Real Estate]]
 - [[Knowledge/Investing/Brokerage Apps|Brokerage Apps]] TODO
@@ -40,6 +39,8 @@ An *investment* is the purchase of an asset or commodity with the expectation of
 - [[Knowledge/Investing/Market Making|Market Making]]
 - [[Knowledge/Investing/Bid-Ask Spread|Bid-Ask Spread]]
 
+- [[Knowledge/Investing/Derivatives|Derivatives]] TODO
+- [[Knowledge/Investing/Options|Options]] TODO
 - [[Knowledge/Investing/Futures|Futures]] TODO
 - [[Knowledge/Investing/Real Estate Investment Trusts|REITs]] TODO
 - [[Knowledge/Investing/Listed Investment Companies|LICs]] TODO

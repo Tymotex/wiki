@@ -33,6 +33,7 @@ kanban-plugin: basic
 - [ ] ==9==<br>**(2 hours)** Read more about law, filling in your definitions. Specifically learn more about tax law.<br><br>Consider making a project out of this.
 - [ ] ==15==<br><br><br><br>**(1 hour)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.<br><br>Add an old notes disclaimer at the top of each notes page.<br><br>Be ruthless and only keep the most important notes. Archive the rest.
 - [ ] **(1 hour)**<br>Keep reading PassiveInvestingAustralia.com.<br>#investing
+- [ ] Read this paper: https://intl.assets.vgdynamic.info/intl/australia/documents/research/brief-to-hedge-or-not-tlrv.pdf
 
 
 ## **Monday** *[[Journal/2022-10-17|2022-10-17]]* (6)

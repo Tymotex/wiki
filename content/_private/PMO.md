@@ -8,6 +8,7 @@ title: PMO
 
 **When the fuck are you going to stop? THIS IS SO FUCKING BAD FOR YOU. YOU FEEL SO FUCKING ASHAMED. YOU FEEL SO PATHETIC. YOU NEED TO BEAT THIS EVENTUALLY. YOU ARE SUBHUMAN. IF YOU CAVE IN, YOU ARE LESS THAN NOTHING.** I will not accept myself if I continue doing this. WHY. WHY IS IT THAT YOU TRADE A FEW SECONDS OF RELIEF FOR A LIFETIME OF MISERY AND SHAME. Please, I BEG YOU JUST STOP IT. IT IS NOT SOMETHING YOU SHOULD EVER DO. I refuse to let this destroy my character. I will allow this demon to chip away everything but my soul. I will not give in. Giving in is suicide. I am so fucking sick of this, if the urges come, I am going to just respond with pure anger. Why the fuck do you think you can do this to me and get away with it. 
 
+**If you give up, you become more like Simon and Raymond.**
 
 Giving into addiction is fundamentally about meaninglessness. Giving in means your *why* is not sufficiently strong.
 
