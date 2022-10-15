@@ -17,7 +17,7 @@ It's widely recommended that most investors should just make monthly investments
 Historically, the only time investing in index funds has *not* worked has been when people cave into their emotions and deviate from their commitment to invest a regular sum into an index fund and attempt to beat the market on their own. **Just stay the course**.
 
 ### Success of Index Investing
-Index funds have famously outperformed the vast majority of actively managed funds over the long term, after-fee. It not only offers reliably superior performance over longer time horizons, it also minimises the amount of time you spend on investing (since you don't have to research stocks) so you can spend time doing other meaningful things. For high earners, this time saved is non-trivial, and may have nullif any market outperformance
+Index funds have famously outperformed the vast majority of actively managed funds over the long term, after-fee. It not only offers reliably superior performance over longer time horizons, it also minimises the amount of time you spend on investing (since you don't have to research stocks) so you can spend time doing other meaningful things. For high earners, this time saved is non-trivial, and may have nullified any market outperformance you did achieve.
 
 > "Fama and French (2010) reported results of a separate 22-year study suggesting that it is extremely difficult for an actively managed investment fund to outperform its benchmark regularly." — Vanguard, [The Case for Indexing (Australia)](https://static.vgcontent.info/crp/intl/auw/docs/literature/The-Case-for-Indexing-Australia.pdf?20190411%7C222851)
 
