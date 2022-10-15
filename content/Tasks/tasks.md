@@ -34,6 +34,7 @@ kanban-plugin: basic
 - [ ] ==15==<br><br><br><br>**(1 hour)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.<br><br>Add an old notes disclaimer at the top of each notes page.<br><br>Be ruthless and only keep the most important notes. Archive the rest.
 - [ ] **(1 hour)**<br>Keep reading PassiveInvestingAustralia.com.<br>#investing
 - [ ] Read this paper: https://intl.assets.vgdynamic.info/intl/australia/documents/research/brief-to-hedge-or-not-tlrv.pdf
+- [ ] Read https://www.bogleheads.org/blog/2020/03/02/50-years-of-investing-in-the-world-part-1/
 
 
 ## **Monday** *[[Journal/2022-10-17|2022-10-17]]* (6)

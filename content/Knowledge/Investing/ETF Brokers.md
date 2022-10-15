@@ -9,6 +9,8 @@ title: ETF Brokers
     - Won't pre-fill to the ATO, apparently.
 - Opentrader
 - Selfwealth
+- Fidelity
+- Charles Schwab
 
 
 
