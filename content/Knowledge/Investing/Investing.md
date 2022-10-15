@@ -47,6 +47,7 @@ An *investment* is the purchase of an asset or commodity with the expectation of
 - [[Knowledge/Investing/ASX|ASX]] TODO
 - [[Knowledge/Investing/CHESS|CHESS]] TODO
 - [[Knowledge/Investing/ETF Brokers|ETF Brokers]] TODO
+- What is microinvesting? E.g. microinvesting apps include RAIZ, Spaceship, etc. TODO
 
 
 ## Stock Market
