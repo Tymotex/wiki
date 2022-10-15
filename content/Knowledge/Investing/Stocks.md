@@ -47,7 +47,7 @@ The above are reasons why stocks have *intrinsic value*, however the actual stoc
 ## How are stocks bought and sold?
 Investors and traders submit *orders* to buy (**bid**) or sell (**ask**) shares at a specific price to a [[Knowledge/Investing/Stock Brokers|stock broker]]. When a bid and ask are compatible, then an exchange proceeds. Depending on the market's liquidity, the matching of bids and asks can happen virtually instantly or may take time or fail to be fulfilled.
 
-The matching of bids and asks was done manually originally.
+The matching of bids and asks was done manually originally but has been superseded by electronic trading systems that minimise inefficiencies and increase speed of transactions.
 
 ## How are stocks 'stored' or 'owned'?
 Companies listed on an exchange maintain a register of shareholders. The book-keeping may be delegated to the brokerage firm you bought the stocks through, who is responsible for recording your ownership of the securities and protecting it from loss of theft.
