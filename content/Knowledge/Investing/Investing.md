@@ -40,7 +40,15 @@ An *investment* is the purchase of an asset or commodity with the expectation of
 - [[Knowledge/Investing/Market Making|Market Making]]
 - [[Knowledge/Investing/Bid-Ask Spread|Bid-Ask Spread]]
 
-- 
+- [[Knowledge/Investing/Futures|Futures]] TODO
+- [[Knowledge/Investing/Real Estate Investment Trusts|REITs]] TODO
+- [[Knowledge/Investing/Listed Investment Companies|LICs]] TODO
+- [[Knowledge/Investing/Domestic Versus International|Domestic vs. International]] TODO
+- [[Knowledge/Investing/ASX|ASX]] TODO
+- [[Knowledge/Investing/CHESS|CHESS]] TODO
+- [[Knowledge/Investing/ETF Brokers|ETF Brokers]] TODO
+
+
 ## Stock Market
 ### Investing Strategies
 - Go 98% ETFs or index funds and 2% individual stocks. This gets you into the habit of researching stocks.
