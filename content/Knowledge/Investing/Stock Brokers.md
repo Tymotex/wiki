@@ -1,5 +1,5 @@
 ---
-title: ETF Brokers
+title: Stock Brokers
 ---
 
 - Stake
