@@ -3,7 +3,7 @@ title: Stocks
 description: Stocks
 ---
 
-**Stocks** represent pieces of official ownership, called 'ownership equity', of a business. They are a type of [[Knowledge/Investing/Securities|security]] and are traded in the [[Knowledge/Investing/Stock Market|stock market]].
+**Stocks** represent pieces of official ownership, called 'ownership equity', of a business. The entitle the owner to a proportionate amount of the business' assets and profits. They are a type of [[Knowledge/Investing/Securities|security]] and are traded in the [[Knowledge/Investing/Stock Market|stock market]].
 - Your ownership is quantifiable as: $\frac{\text{Company X stocks that you have}}{\text{Total Company X stocks}} \times 100\%$.
 - Stocks are often categorised under industry sectors, for example: tech stocks, energy stocks, etc., and locations, for example: US stocks, Australian stocks, etc.
 
@@ -12,11 +12,13 @@ description: Stocks
 - Your ownership gives you voting power in meetings and elections within the company. Generally, 1 share held gives you 1 vote, however this is set by the company, who can also split off shares into different classes where one class' shares have a greater weighting than another in terms of voting power.
 
 ## Why do companies sell stocks?
-When companies choose to list themselves on a *stock exchange* like the Nasdaq, they're provided with [[Knowledge/Economics/macroeconomics/Liquidity|liquidity]] and a means to acquire money for capital investment. The tradeoff is that they're subject to greater expenses and tighter regulation.
+When companies choose to list themselves on a *stock exchange* like the Nasdaq through an [[Knowledge/Investing/IPO|initial public offering]], they're provided with [[Knowledge/Economics/macroeconomics/Liquidity|liquidity]] and a means to acquire money for capital investment. The tradeoff is that they're subject to greater expenses and tighter regulation.
 
-To grow your company into an *empire* requires you to have access to a huge amount of capital, ie. money to invest in your ventures and operations. When a company can attract investors by listing themselves on the stock market, they'll be able to lease an office, hire more people, get more equipment, pursue more marketing efforts, etc.
+**Equity financing**: to grow your company requires you to have access to a huge amount of capital, i.e. money to invest in your ventures and operations. When a company can attract investors by listing themselves on the stock market, they'll be able to lease an office, hire more people, get more equipment, pursue more marketing efforts, etc. Acquiring money by letting investors become partial owners of your business is called *equity financing*.
 
-An alternative way for companies to raise capital is to sell [[Knowledge/Economics/macroeconomics/Bonds|bonds]]. Many companies will opt to sell both stocks and bonds. The act of selling shares is called *equity financing* and the act of selling bonds is called *debt financing*. For most startups, they simply don't have the assets to really sustainably meet debt payments, so equity financing is the preferred route, where they don't have to pay as much as they grow.
+**Debt financing**: an alternative way for companies to raise capital is to sell [[Knowledge/Economics/macroeconomics/Bonds|bonds]]. For most startups, they simply don't have the assets to really sustainably meet debt payments, so equity financing is the preferred capital-raising method, where they don't have to pay as much as they grow.
+
+> Many companies will opt to sell both stocks and bonds. The act of selling shares is called *equity financing* and the act of selling bonds is called *debt financing*.
 
 Companies can also acquire funding from [[Knowledge/Investing/Venture Capital|venture capital]] firms or [[Knowledge/Investing/Angel Investors|angel investors]].
 
@@ -45,7 +47,7 @@ The above are reasons why stocks have *intrinsic value*, however the actual stoc
 ## How are stocks bought and sold?
 Investors and traders submit *orders* to buy (**bid**) or sell (**ask**) shares at a specific price to a [[Knowledge/Investing/Stock Brokers|stock broker]]. When a bid and ask are compatible, then an exchange proceeds. Depending on the market's liquidity, the matching of bids and asks can happen virtually instantly or may take time or fail to be fulfilled.
 
-
+The matching of bids and asks was done manually originally.
 
 ## How are stocks 'stored' or 'owned'?
 Companies listed on an exchange maintain a register of shareholders. The book-keeping may be delegated to the brokerage firm you bought the stocks through, who is responsible for recording your ownership of the securities and protecting it from loss of theft.
@@ -57,6 +59,8 @@ Shares are usually either *common shares* and *preferred shares*.
 - Preferred shareholders get priority over common shareholders when receiving dividends and the assets if the company [[Knowledge/Investing/Stocks#Liquidation|liquidates]]. 
 - Preferred stocks grant the holder no voting rights while common stocks do. 
 - Preferred stocks are less risky but have lower potential returns.
+
+Common stocks are sometimes further differentiated into different classes of voting power. For example, Class A shares may allow 10 'vote units' while Class B shares may only allow 1 'vote unit'.
 
 ## Restricted vs. Float Shares
 *Restricted shares* are shares you can't buy or sell without permission from the SEC. They're issued typically as part of an employee's compensation. *Float shares* are shares that can be freely traded by the public.

@@ -37,7 +37,8 @@ An *investment* is the purchase of an asset or commodity with the expectation of
 - [[Knowledge/Investing/Stock Brokers|Stock Brokers]]
 - [[Knowledge/Investing/Brokerage Apps|Brokerage Apps]] TODO
 - [[Knowledge/Economics/macroeconomics/Liquidity|Liquidity]] TODO
-- [[Knowledge/Investing/Stock Research|Stock Research]] TODO
+- [[Knowledge/Investing/Stock Analysis|Stock Research]] TODO
+- [[Knowledge/Investing/Specialists|Specialists]] TODO
 - [[Knowledge/Investing/Market Maker|Market Maker]] TODO
 - [[Knowledge/Investing/Bid-Ask Spread|Bid-Ask Spread]] TODO
 
@@ -52,6 +53,10 @@ An *investment* is the purchase of an asset or commodity with the expectation of
 - [[Knowledge/Investing/Currency Risk|Currency Risk]] TODO
 - [[Knowledge/Investing/Franking Credits|Franking Credits]] TODO
 - What is microinvesting? E.g. microinvesting apps include RAIZ, Spaceship, etc. TODO
+
+- Cryptocurrency
+- Cryptocurrency Exchanges (Coinbase and Binance, for example) TODO
+- Decentralised Finance
 
 
 ## Stock Market
