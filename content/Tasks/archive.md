@@ -382,12 +382,23 @@ kanban-plugin: basic
 - [x] ==12==<br><br><br><br>Complete HireRight while listening to music.
 - [x] ==3== Why do all those personal finance authors advise against seeing your home as an investment? Kiyosaki does this but then uses real estate to build his wealth.
 
+## **Sunday** *[[Journal/2022-10-16|2022-10-16]]* (6)
+
+- [x] Reminder: Lidcombe tomorrow.
+- [x] ### **🏆 Purpose**: investing
+- [x] ==3==<br>**(2 hours)**<br>Investopedia stock market deep-dive:<br>- How does buying stocks through an app work?<br>- How is ownership of stocks protected?<br><br>Keep reading PassiveInvestingAustralia.com.<br>#investing  #recurring
+- [x] **(1 hours)**<br>Keep reading PassiveInvestingAustralia.com.<br>#investing
+- [x] #### **(10 mins)** Weekly Review.
+- [x] ==4==<br><br><br><br>**(10 mins)** Make the filter safe
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
