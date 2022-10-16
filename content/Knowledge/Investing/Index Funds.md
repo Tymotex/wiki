@@ -28,7 +28,9 @@ Jack Bogle recommends to always commit to investing in an index fund, even if th
 ![[Knowledge/Investing/assets/s&p-investing-in-local-peaks.png|400]]
 > "Never think you know more than the market does." — Jack Bogle.
 
-
+## Picking an Index Fund
+**Considerations**:
+- **Expense ratio** — the percentage of your total assets value taken by the fund as an operation/management fee. Even expense ratios of 1% will have an unintuitively massive impact on your long-term balance.
 
 
 
