@@ -6,8 +6,8 @@ kanban-plugin: basic
 
 ## **Monday** *[[Journal/2022-10-17|2022-10-17]]* (6)
 
-- [ ] ### **🏆 Purpose**: konflux and book reviews.
-- [ ] ==4==<br><br><br><br>**(1.5 hours)**<br>Design and implement the events page.<br><br>In index.tsx, replace the features list with events listing when globally authenticated.<br>#konflux
+- [x] ### **🏆 Purpose**: konflux and book reviews.
+- [ ] ==4==<br>**(1.5 hours)**<br>Design user db model, add to schema, and add new user on global auth success.<br>#konflux
 - [ ] ==3== **(1 hour)** Go through The Male Advantage and finalise notes.
 - [ ] ==14==<br><br><br><br>**(40 mins)** Go through **Deep Work** and finalise notes.
 - [ ] ==1==<br>**(1 hour)** Go through **The Simple Path to Wealth** and finalise notes.
@@ -18,6 +18,7 @@ kanban-plugin: basic
 - [ ] Read https://www.bogleheads.org/blog/2020/03/02/50-years-of-investing-in-the-world-part-1/
 - [ ] ==5==<br><br><br><br><br>**(45 mins)**<br>Read Clean Code.<br>#reading
 - [ ] ==3==<br><br><br>Begin packing for cairns. Make checklist on that page. What else is there to do before departing? Eg. pre-arrange uber trip from cairns airport to hotel?
+- [ ] Reply to Structs.sh PR.
 
 
 ## **Tuesday** *[[Journal/2022-10-18|2022-10-18]]* (6)
