@@ -10,6 +10,7 @@ kanban-plugin: basic
 - [ ] **(1 hour)**<br>Implement events page.<br>#konflux
 - [ ] **(1 hour)**<br>Implement unauthenticated events page.<br>#konflux
 - [ ] **(1 hour)**<br>Implement enhancements.<br>#konflux
+- [ ] ==6==<br><br><br><br><br><br>**(45 mins)**<br>Read Clean Code.<br>#reading
 - [ ] **(1 hour)**<br>Get it deployed.<br>#konflux
 - [ ] **(25 mins)**<br>Prepare for tomorrow's meeting with your team. Make a good impression, find topics to talk about.
 - [ ] ==4==<br>**(1 hour)** Go through The Male Advantage and finalise notes.
@@ -20,7 +21,6 @@ kanban-plugin: basic
 - [ ] ==10==<br><br>**(2 hours)** Read more about law, filling in your definitions. Specifically learn more about tax law.<br><br>Consider making a project out of this.
 - [ ] ==1==<br>Read this paper: https://intl.assets.vgdynamic.info/intl/australia/documents/research/brief-to-hedge-or-not-tlrv.pdf
 - [ ] ==1==<br>Read https://www.bogleheads.org/blog/2020/03/02/50-years-of-investing-in-the-world-part-1/
-- [ ] ==6==<br><br><br><br><br><br>**(45 mins)**<br>Read Clean Code.<br>#reading
 - [ ] ==4==<br><br><br><br>Begin packing for cairns. Make checklist on that page. What else is there to do before departing? Eg. pre-arrange uber trip from cairns airport to hotel?
 - [ ] ==1==<br>Reply to Structs.sh PR.
 
