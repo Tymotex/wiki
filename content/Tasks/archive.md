@@ -391,12 +391,20 @@ kanban-plugin: basic
 - [x] #### **(10 mins)** Weekly Review.
 - [x] ==4==<br><br><br><br>**(10 mins)** Make the filter safe
 
+## **Monday** *[[Journal/2022-10-17|2022-10-17]]* (6)
+
+- [x] ### **🏆 Purpose**: konflux and book reviews.
+- [x] ==4==<br>**(1.5 hours)**<br>Design user db model, add to schema, and add new user on global auth success.<br>#konflux
+- [x] **(2 hours)**<br>Implement authenticated events page.<br>#konflux
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
