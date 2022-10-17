@@ -10,6 +10,7 @@ kanban-plugin: basic
 - [ ] Get started with your procedural generation project.
 - [ ] **Learn Kubernetes** [the hard way](https://github.com/kelseyhightower/kubernetes-the-hard-way)
 - [ ] Attend a programming meetup or other meetup on **meetup.com.**
+- [ ] **(1 hour)** Upload all Notion notes to repo, and export your uni and high school notes from Google Docs as PDFs to upload as well.<br><br>Add an old notes disclaimer at the top of each notes page.<br><br>Be ruthless and only keep the most important notes. Archive the rest.
 - [ ] Try out [Gource](https://www.youtube.com/watch?v=DDhPBtzRuLY&ab_channel=MikeM%C3%B8llerNielsen)
 - [ ] Submit portfolio to bestfolio.
 - [ ] Refine all your course notes and make them appear in search results.
