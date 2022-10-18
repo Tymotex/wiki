@@ -47,6 +47,7 @@ Travel agencies handle a lot of the complexity with trip planning. DIY travel pl
 **Conditional items**:
 - Sunscreen.
     - Note: there are special 'reef-safe sunscreens'.
+- Sunglasses
 - Swimwear.
 - Sea sickness pills.
 - Towels.
