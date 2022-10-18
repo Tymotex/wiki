@@ -397,12 +397,22 @@ kanban-plugin: basic
 - [x] ==4==<br>**(1.5 hours)**<br>Design user db model, add to schema, and add new user on global auth success.<br>#konflux
 - [x] **(2 hours)**<br>Implement authenticated events page.<br>#konflux
 
+## **Tuesday** *[[Journal/2022-10-18|2022-10-18]]* (6)
+
+- [x] ### **🏆 Purpose**: konflux
+- [x] **(1 hour)**<br>Implement events page.<br>#konflux
+- [x] **(2 hours)**<br>Implement unauthenticated events page.<br>#konflux
+- [x] **(1.25 hour)**<br>Implement enhancements.<br>#konflux
+- [x] **(25 mins)**<br>Finalise the air tickets.
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
