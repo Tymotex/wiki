@@ -3,6 +3,8 @@
 - Do your hair. Straighten it, use sea salt spray and pomade to give it volume.
 - Start preparing at **10:00AM**. Leave at 10:40AM.
 
+> Remember, it'll feel a lot better once you just start.
+
 **Social**:
 - Greet: "Hi! It's really nice to see you again!"
 - Remember: just take deep breaths and slow down your speaking, and **SPEAK LOUDER YOU FUCKING NERD**.
@@ -22,5 +24,7 @@
     - Does anyone have any recommendations for what I could spend some time learning between now and when I start working?
     - Did all of you enjoy university?
     - What would each of you have done if you didn't go for software engineering?
+    - Do you feel that you don't enjoy programming less after you've been working professionally for a long time?
+- Thanks so much for inviting me back for lunch. I'm really excited to come back.
 
 
