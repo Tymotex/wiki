@@ -1,7 +1,9 @@
 **Prep**:
 - Wear: dark chinos, red jumper, purple shirt, brown monk-strap shoes. Don't give a fuck.
 - Do your hair. Straighten it, use sea salt spray and pomade to give it volume.
+- Shave off beard hairs.
 - Start preparing at **10:00AM**. Leave at 10:40AM.
+- Bring bag and umbrella.
 
 > Remember, it'll feel a lot better once you just start.
 
@@ -17,7 +19,8 @@
     - Working on a few projects just for fun. (portfolio site, )
 - Topics to talk about:
     - Has the office changed much?
-    - Does the team go into office much?
+    - Is it very busy right now?
+    - Do you all prefer working at home?
     - Do you have any book recommendations?
     - Do you have any hobbies to recommend?
     - Do you have any recommendations for where to travel?
@@ -26,5 +29,4 @@
     - What would each of you have done if you didn't go for software engineering?
     - Do you feel that you don't enjoy programming less after you've been working professionally for a long time?
 - Thanks so much for inviting me back for lunch. I'm really excited to come back.
-
 
