@@ -1,10 +1,10 @@
 ---
-title: Stock Research
+title: Stock Analysis
 ---
 
 Beta
 
-P/E ratio
+PE ratio
 
 PEG value
 

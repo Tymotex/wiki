@@ -113,7 +113,7 @@ class TaskFileBuffer:
                     num_days_from_target_date = date_index - curr_date_index
                     times_shifted = (int(match.group(2).strip("=")) if match.group(2) else 0) + num_days_from_target_date
                     task_description = match.group(3)
-                    reconstructed_task = f"- [{'X' if checked else ' '}] =={times_shifted}== {task_description.strip()}"
+                    reconstructed_task = f"- [{'X' if checked else ' '}] =={times_shifted}==\n{task_description.strip()}"
                     incomplete_tasks_from_prev_days.append(reconstructed_task)
                     tasks.remove(task)
 
@@ -206,7 +206,7 @@ class TaskFileBuffer:
             lines: List[str] = [line.strip() for line in task_file.readlines() if bool(re.match(r"\S+", line))]
             resume_line_index = self._extract_frontmatter(lines)
             resume_line_index = self._extract_columns(lines, resume_line_index)
-            resume_line_index = self._extract_archive(lines, resume_line_index)
+            # resume_line_index = self._extract_archive(lines, resume_line_index)
             self._extract_board_settings(lines, resume_line_index)
 
     def _extract_frontmatter(self, lines, starting_line: int = 0) -> int: 
@@ -259,11 +259,31 @@ class TaskFileBuffer:
             curr_line = lines[i]
 
             # Stop when a Markdown horizontal rule is encountered.
-            if curr_line == "---" or curr_line == "___" or curr_line == "***":
+            if curr_line == "---" or curr_line == "___" or curr_line == "***" or curr_line == "END":
                 # Commit the final task column.
                 if curr_column:
                     self._tasks.append(curr_column)
                 return i + 1
+
+            # Stop when '%%' is encountered, which signals the start of the
+            # settings comment block.
+            if curr_line.startswith("%%"):
+                # Commit the final task column.
+                if curr_column:
+                    self._tasks.append(curr_column)
+                return i + 1
+
+            # Skip past the archive and stop when '%%' is encountered.
+            if curr_line.startswith("## Archive"):
+                # Commit the final task column.
+                if curr_column:
+                    self._tasks.append(curr_column)
+
+                j = i
+                while not curr_line.startswith("%%"):
+                    curr_line = lines[j]
+                    j += 1
+                return j + 1
 
             match = TaskFileBuffer.level2_heading_regex.search(curr_line)
             if match:
@@ -274,7 +294,7 @@ class TaskFileBuffer:
                 column_name = match.group(1)
                 match = TaskFileBuffer.column_name_date_regex.search(column_name)
                 if not match:
-                    raise TaskFileException("Column '{column_name}' is missing a date of format: YYYY-MM-DD.")
+                    raise TaskFileException(f"Column '{column_name}' is missing a date of format: YYYY-MM-DD.")
                 date_str = match.group(1)
                 curr_column = (datetime.strptime(date_str, "%Y-%m-%d"), [])
             else:
@@ -284,7 +304,7 @@ class TaskFileBuffer:
                         raise TaskFileException(f"Line '{curr_line}' doesn't belong to any column.")
                     curr_column[1].append(curr_line)
                 else:
-                    raise TaskFileException(f"Line '{curr_line}' is neither a level-2 heading nor a Markdown checkbox.")
+                    raise TaskFileException(f"In '{self._task_file_path}', line '{curr_line}' is neither a level-2 heading nor a Markdown checkbox.")
 
         raise TaskFileException("No ending Markdown divider encountered.")
 

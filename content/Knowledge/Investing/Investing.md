@@ -32,11 +32,32 @@ An *investment* is the purchase of an asset or commodity with the expectation of
 - [[Knowledge/Investing/Market Capitalisation|Market Capitalisation]]
 - [[Knowledge/Investing/Leverage|Leverage]]
 - [[Knowledge/Investing/IPO|IPO]]
-- [[Knowledge/Investing/Options|Options]] TODO
-- [[Knowledge/Investing/Buying a Home|Buying a Home]]
-- [[Knowledge/Personal Finance/Real Estate|Real Estate]]
+- [[Knowledge/Investing/Buying a Home|Buying a Home]] TODO
+- [[Knowledge/Personal Finance/Real Estate|Real Estate]] TODO
+- [[Knowledge/Investing/Stock Brokers|Stock Brokers]]
 - [[Knowledge/Investing/Brokerage Apps|Brokerage Apps]] TODO
-- [[Knowledge/Investing/Stock Research|Stock Research]] TODO
+- [[Knowledge/Economics/macroeconomics/Liquidity|Liquidity]] TODO
+- [[Knowledge/Investing/Stock Analysis|Stock Research]] TODO
+- [[Knowledge/Investing/Specialists|Specialists]] TODO
+- [[Knowledge/Investing/Market Maker|Market Maker]] TODO
+- [[Knowledge/Investing/Bid-Ask Spread|Bid-Ask Spread]] TODO
+
+- [[Knowledge/Investing/Derivatives|Derivatives]] TODO
+- [[Knowledge/Investing/Options|Options]] TODO
+- [[Knowledge/Investing/Futures|Futures]] TODO
+- [[Knowledge/Investing/Real Estate Investment Trusts|REITs]] TODO
+- [[Knowledge/Investing/Listed Investment Companies|LICs]] TODO
+- [[Knowledge/Investing/Domestic Versus International|Domestic vs. International]] TODO
+- [[Knowledge/Investing/ASX|ASX]] TODO
+- [[Knowledge/Investing/CHESS|CHESS]] TODO
+- [[Knowledge/Investing/Currency Risk|Currency Risk]] TODO
+- [[Knowledge/Investing/Franking Credits|Franking Credits]] TODO
+- What is microinvesting? E.g. microinvesting apps include RAIZ, Spaceship, etc. TODO
+
+- Cryptocurrency
+- Cryptocurrency Exchanges (Coinbase and Binance, for example) TODO
+- Decentralised Finance
+
 
 ## Stock Market
 ### Investing Strategies
@@ -49,6 +70,8 @@ An *investment* is the purchase of an asset or commodity with the expectation of
 2. Check for a durable competitive advantage.
 3. Management has integrity and talent.
 4. Ensure a margin of safety. 
+
+
 
 ## Bond Market
 ### Stocks vs. Bonds

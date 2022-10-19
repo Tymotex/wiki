@@ -52,6 +52,8 @@ TODO: this article is really worth re-reading: https://jamesclear.com/reading-co
 
 > "He who has a *why* to live for can bear with almost any *how*" — Nietzsche.
 
+### Can't Hurt Me
+
 ---
 ## Self-Help, Skills & Philosophy
 ### Building a Second Brain
@@ -98,22 +100,30 @@ Ikigai by Francesc Miralles and Hector Garcia. 'Ikigai' means 'reason for being'
 
 ### Extreme Ownership
 
-### Can't Hurt Me
-
 ### Rich Dad Poor Dad
 [[Reading/Rich Dad Poor Dad|Rich Dad Poor Dad]] by Robert Kiyosaki. This book made me more ruthlessly pursue learning and affirms the idea that investing in your own knowledge offers the greatest returns.
 - Your knowledge is the greatest wealth vehicle, by far.
 - Sales, marketing and negotiation are skills you must learn.
 - Aim to aggressively acquire assets with each dollar you get and avoid liabilities as much as possible.
 
-> **The single most powerful asset we all have is our mind.** If it is trained well, it can create enormous wealth
+> **The single most powerful asset we all have is our mind.** If it is trained well, it can create enormous wealth.
+
+### The Psychology of Money
+[[Reading/The Psychology of Money|The Psychology of Money]] by Morgan Housel. This book puts into perspective how people think and behave with their money. It's inspired me to be even more frugal, to stop moving the consumption goalpost forward, and to be skeptical about my ability and the ability of others in understanding how the world really works.
+- Savings enable freedom, one of the few things that lets you have the life you want (isn't that what matters?). It's one of the most reliable predictors of happiness.
+- Have more humility and stop moving the consumption goalpost. You attain happiness and gain admiration and respect by being a virtuous person, not through exuberant consumption.
+- Use a financial plan that lets you sleep best at night. Don't be arrogant enough to think you'll be unperturbed when the stock market wipes away your retirement savings.
 
 ---
 ## Science
 ### Why We Sleep
+
+
 ### Spark
 [[Reading/Spark|Spark: The Revolutionary New Science of Exercise and the Brain]] by John Ratey.
-
+- Exercise is the most effective and accessible way to optimise the brain. It drives neurogenesis, improving learning, memory and executive functions.
+- Stress and recovery is a fundamental paradigm in biology. Stop thinking that stress is bad for you — it's essential towards coming back stronger, with the alternative being degeneration if you never subject yourself to stress.
+- Exercise tunes your neurotransmitter, hormones and growth factor to evolutionarily-optimal levels, rendering you bulletproof against stress, anxiety and depression, consistently leaving you ready to rise to life's challenges.
 
 ---
 

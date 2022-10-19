@@ -1,5 +1,3 @@
-
-
 """
 1. Generate the journal files for up to num_future_dates.
     If YYYY-MM-DD already exists, skip.
@@ -15,9 +13,11 @@ Don't forget to document how this all works.
 """
 
 from datetime import datetime, timedelta
+from glob import glob
 import os
 import random 
 import re
+import shutil
 from typing import List
 import yaml
 from journal_templater.exceptions import JournalException
@@ -55,14 +55,16 @@ class JournalManager:
         Creates all journal entries spanning from today to the number of future
         dates from today. For example, if `num_future_dates == 7` and today's
         date is 2022-09-30, then the following files will be created:
-        - 2022-09-30.md (today)
-        - 2022-10-01.md
-        - 2022-10-02.md
+        - 2022-09-30.md (Friday, today)
+        - 2022-09-30-monthly.md (A monthly document is created at the end of each month)
+        - 2022-10-01.md 
+        - 2022-10-02.md 
+        - 2022-10-02-weekly.md  (A weekly document is created every Sunday)
         - 2022-10-03.md
         - 2022-10-04.md
         - 2022-10-05.md
         - 2022-10-06.md
-        - 2022-10-07.md (7th day into the future)
+        - 2022-10-07.md (Friday, the 7th day into the future from now)
         All journal entries are named following the format YYYY-MM-DD.md.
         If an entry already exists, it is not touched.
         """
@@ -73,6 +75,8 @@ class JournalManager:
         last_date = self._date_today + timedelta(days=num_future_dates)
         curr_date = self._date_today
         one_day = timedelta(days=1)
+
+        # Make all the daily entries.
         while curr_date <= last_date:
             universal_iso_date = curr_date.strftime(r"%Y-%m-%d")
             journal_filename = f"{universal_iso_date}.md"
@@ -84,6 +88,63 @@ class JournalManager:
                     lines_to_write = self._interpolate_prompt_in_lines(template_lines)
                     journal_file.writelines(lines_to_write)
             curr_date += one_day
+
+        # Make the weekly entries.
+        curr_date = self._date_today
+        while curr_date <= last_date:
+            is_sunday = curr_date.weekday() == 6
+            if is_sunday:
+                universal_iso_date = curr_date.strftime(r"%Y-%m-%d")
+                weekly_entry_filename = f"{universal_iso_date}-weekly.md"
+                weekly_entry_path = os.path.join(self._journal_directory_path, weekly_entry_filename)
+
+                # Create the entry if it doesn't already exist.
+                if not os.path.exists(weekly_entry_path):
+                    open(weekly_entry_path, "w").close()
+            curr_date += one_day
+
+        # Make the monthly entries.
+        curr_date = self._date_today
+        while curr_date <= last_date:
+            todays_month = curr_date.month
+            tomorrows_month = (curr_date + timedelta(days=1)).month
+            is_last_day_of_month = tomorrows_month != todays_month
+            if is_last_day_of_month:
+                universal_iso_date = curr_date.strftime(r"%Y-%m-%d")
+                monthly_entry_filename = f"{universal_iso_date}-monthly.md"
+                monthly_entry_path = os.path.join(self._journal_directory_path, monthly_entry_filename)
+
+                # Create the entry if it doesn't already exist.
+                if not os.path.exists(monthly_entry_path):
+                    open(monthly_entry_path, "w").close()
+            curr_date += one_day
+
+    def archive_old_entries(self, archive_days_old: int):
+        """
+        Moves all the older journal entries beyond a cutoff date that's 
+        `archive_days_old` in the past into an archive folder in the same
+        journal directory.
+        For example, if `archive_days_old == 7`, then all journal entries
+        older than 7 days are archived.
+        """
+        # Make the archive folder if it doesn't already exist.
+        archive_dir_path = f"{self._journal_directory_path}{os.path.sep}archive"
+        if not os.path.exists(archive_dir_path):
+            os.makedirs(archive_dir_path)
+
+        iso_date_regex = re.compile(r"(\d{4}-\d{2}-\d{2})")
+        cutoff_date = self._date_today - timedelta(days=archive_days_old)
+
+        for journal_file_path in glob(f"{self._journal_directory_path}{os.path.sep}*.md"):
+            date_match = iso_date_regex.search(journal_file_path)
+            if not date_match:
+                continue
+            date_str = date_match.group(1)
+            date_obj = datetime.strptime(date_str, "%Y-%m-%d")
+            
+            # Move to the archive file when older than the cutoff.
+            if date_obj < cutoff_date:
+                shutil.move(journal_file_path, f"{archive_dir_path}{os.path.sep}{os.path.basename(journal_file_path)}")
 
     def _get_template_lines(self) -> List[str]:
         """

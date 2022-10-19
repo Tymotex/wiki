@@ -41,6 +41,9 @@ All carbohydrates must be reduced to monosaccharides first before they can be ab
 Polysaccharides are broken down and absorbed a slower rate than disaccharides.
 
 ## Fats
+- Avoid trans fat, animal fat and hydrogenated oils.
+- Omega-3 in fish is incredible.
+	> "One study showed that people who eat fish once a week slow the yearly rate of cognitive decline by 10%." — John Ratey in *Spark*.
 
 ### Trans fat
 
@@ -50,4 +53,4 @@ Polysaccharides are broken down and absorbed a slower rate than disaccharides.
 
 ## Water
 
-## fibre
+## Fibre

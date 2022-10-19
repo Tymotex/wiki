@@ -13,12 +13,12 @@ kanban-plugin: basic
 - [ ] **(1 horu)**<br>Try [curvaceous background](https://www.youtube.com/watch?v=lPJVi797Uy0&ab_channel=Fireship).<br>#konflux
 
 
-## [[Projects/Building a Second Brain/Building a Second Brain|Building a Second Brain]]
+## [[_archive/Building a Second Brain/Building a Second Brain|Building a Second Brain]]
 
-- [ ] **(15 mins)**<br>Automatically archive journal entries that are >= 7 days old.<br>#second-brain
 - [ ] **(1 hour)**<br>Try a Tkinter hello world and see if the project would benefit from a GUI.<br>#second-brain
-- [ ] **(30 mins)**<br>Write a Python script that prints statistics of the knowledge wiki to the index page. Eg. Number of pages, number of words, etc. Make it run on Obsidian startup.<br>#project #second-brain
-- [ ] Idea: Add a quote to think about in the journal prompts file.
+- [ ] **(30 mins)**<br>Write a Python script that prints statistics of the knowledge wiki to the index page. Eg. Number of pages, number of words, etc. Make it run on Obsidian startup or on hotkey press.<br>#project #second-brain
+- [x] Idea: Add a quote to think about in the journal prompts file.
+- [x] **(15 mins)**<br>Automatically archive journal entries that are >= 7 days old.<br>#second-brain
 
 
 ## [[Projects/Math Website/Math Website|Math Website]]
@@ -31,6 +31,7 @@ kanban-plugin: basic
 
 ## [[Projects/Structs Graph Visualiser/Graph Visualiser MVP|Structs Graph MVP]]
 
+- [ ] Ask about homepage design. Perhaps use Haikei and draw out sexy SVGs.<br>#structs
 
 
 ## Investing
@@ -46,7 +47,8 @@ kanban-plugin: basic
 
 ## [[Reading/Reading|Reading]]
 
-- [ ] **(45 mins)**<br>Read Spark<br>#reading #recurring
+- [ ] **(45 mins)**<br>Read Four Thousand Weeks.<br>#reading #recurring
+- [ ] **(45 mins)**<br>Read How to Not Die.<br>#reading #recurring
 - [ ] **(45 mins)**<br>Read On Writing Well.<br>#reading #recurring
 - [ ] **(45 mins)**<br>Read The Obstacle Is the Way.<br>#reading #recurring
 - [ ] **(45 mins)**<br>Read A Brief History of Time.<br>#reading #recurring

@@ -4,7 +4,19 @@ title: PMO
 
 > "He who has a *why* to live for can bear with almost any *how*" — Nietzsche.
 
+> "There can be no happiness if the things we believe in are different from the things we do." — Freya Stark.
+
+**When the fuck are you going to stop? THIS IS SO FUCKING BAD FOR YOU. YOU FEEL SO FUCKING ASHAMED. YOU FEEL SO PATHETIC. YOU NEED TO BEAT THIS EVENTUALLY. YOU ARE SUBHUMAN. IF YOU CAVE IN, YOU ARE LESS THAN NOTHING.** I will not accept myself if I continue doing this. WHY. WHY IS IT THAT YOU TRADE A FEW SECONDS OF RELIEF FOR A LIFETIME OF MISERY AND SHAME. Please, I BEG YOU JUST STOP IT. IT IS NOT SOMETHING YOU SHOULD EVER DO. I refuse to let this destroy my character. I will allow this demon to chip away everything but my soul. I will not give in. Giving in is suicide. I am so fucking sick of this, if the urges come, I am going to just respond with pure anger. Why the fuck do you think you can do this to me and get away with it. 
+
+**If you give up, you become more like Simon and Raymond.**
+
 Giving into addiction is fundamentally about meaninglessness. Giving in means your *why* is not sufficiently strong.
+
+Just get through this one. Get past it and you'll be closer to freedom. You **have to** beat this eventually, there's no alternative.
+
+Just know that when you cave in, you are fucking your brain up. This is your most valuable possession and you are actively destroying it. 
+
+When you cave in, that demon inside you gets stronger and you just make it harder for yourself next time. Endure it this time, and you dull its control over you.
 
 **When horny**:
 - Start thinking about your dream girl, your future wife. Listen to Perfect by Ed Sheeran.
@@ -17,8 +29,30 @@ Giving into addiction is fundamentally about meaninglessness. Giving in means yo
 Having a bad day is not an excuse. If you can't focus, you can't focus. Just suffer the debuff for the day. It's 100% worth it and your conscious brain knows it.
 
 ---
+## Wins
+### 12th Oct
+I couldn't get those pictures out of my mind. I wanted to cave in, seeing how I failed not too long ago anyway, but this is such a dangerous thought that quickly spirals into catastrophe. I was able to endure, and I did so by hyperfocusing on a task that engaged me. It seems that this is the most reliable way to get past these urges.
+
+### 9th Oct
+I was feeling a little agitated after a nap today and really wanted to go for it. I got up, got out of my room, and started working, and now the feelings are completely gone. I am so happy for taking this path instead of caving in.
+
+---
 
 ## Relapses
+### 13th Oct
+<<<<<<< HEAD
+You're fucking pathetic. I am ashamed of you.
+=======
+I couldn't focus and gave up. This seems to be the most common reason.
+>>>>>>> 3ed4b7b107752e22024c8fd252a02e2c999e5b75
+
+### 10th Oct
+I had so many would-be wet dreams and woke up in emergency mode. I got up and did my squat session but I still had crazy urges. I was winning until I thought about how distracting this would be for the day and just gave up. What the fuck. I need to have a stronger *why* for doing this. I need to do it for somebody.
+
+It takes just a few minutes before you realise how bad it feels to relapse. **STOP DOING IT. You're killing yourself. This is not who you are.**
+
+**Ironically, I PMOed so I could feel better during work, instead I lost the entire day to absent-mindedness and extreme feelings of guilt.**
+
 ### 29th Sep
 It happened again. I resisted hard and let it pass but then just decided to cave in. I really lack a 'why' for doing this. It can't be all about me, it has to be for someone else. I have to make this effort more meaningful and I'll get through anything.
 
