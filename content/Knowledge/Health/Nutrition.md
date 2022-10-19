@@ -36,7 +36,9 @@ Carbohydrates are subdivided into:
     1. Starch
     2. Fibre
 
-All carbohydrates must be reduced to glucose first before metabolism.
+All carbohydrates must be reduced to monosaccharides first before they can be absorbed.
+
+Polysaccharides are broken down and absorbed a slower rate than disaccharides.
 
 ## Fats
 
