@@ -30,6 +30,7 @@ kanban-plugin: basic
 - [ ] **(1 hour)**<br>Implement enhancements.<br>#konflux
 - [ ] **(1 hour)**<br>Get it deployed.<br>#konflux
 - [ ] **(25 mins)**<br>Prepare for tomorrow's meeting with your team. Make a good impression, find topics to talk about.
+- [ ] Consider making an Obsidian extension where you can design daily notes with journal prompts.
 
 
 ## **Wednesday** *[[Journal/2022-10-19|2022-10-19]]* (6)
