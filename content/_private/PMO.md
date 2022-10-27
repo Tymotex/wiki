@@ -39,12 +39,12 @@ I was feeling a little agitated after a nap today and really wanted to go for it
 ---
 
 ## Relapses
+### 24th Oct
+I relapsed to Google Images. It felt justified before I did it. Now I just feel like I've lost my edge. It felt justified because I was on a trip, and I was masturbating to release all the build-up of the sexual frustration from seeing Thai massage brothels and bikini girls for the last few days. I don't feel too bad right now, but I still regret it hard.
+
 ### 13th Oct
-<<<<<<< HEAD
 You're fucking pathetic. I am ashamed of you.
-=======
 I couldn't focus and gave up. This seems to be the most common reason.
->>>>>>> 3ed4b7b107752e22024c8fd252a02e2c999e5b75
 
 ### 10th Oct
 I had so many would-be wet dreams and woke up in emergency mode. I got up and did my squat session but I still had crazy urges. I was winning until I thought about how distracting this would be for the day and just gave up. What the fuck. I need to have a stronger *why* for doing this. I need to do it for somebody.

@@ -2,6 +2,7 @@
 title: Purchases
 ---
 
+- Hair dryer (cheap but reliable with good reviews)
 - Blackout curtains for better sleep.
 - Blue light filter glasses.
 - Liquid chalk
