@@ -10,7 +10,7 @@ kanban-plugin: basic
 - [ ] **(30 mins)**<br>Try FitBit recovery methods or escalate.
 - [ ] **(30 mins)**<br>Clear out all emails.
 - [ ] **(30 mins)**<br>Finish HireRight.
-- [ ] **(30 mins)**<br>Finish HireRight.
+- [ ] **(30 mins)**<br>Suggest redesign of the homepage to Dom. Send pics of haikei.
 - [ ] **(25 mins)**<br>Determine shopping list.<br>- [ ] hair dryer<br>- [ ] fan<br>- [ ] barbell bristle<br>- [ ] floss picks<br>- [ ] mouth tape<br>- [ ] pho ingredients
 - [ ] **(30 mins)**<br>Join Toastmasters. You must do it.
 - [ ] **(1 hour)**<br>Finish Four Thousand Weeks, then extract out all quotes.
