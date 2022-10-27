@@ -405,12 +405,42 @@ kanban-plugin: basic
 - [x] **(1.25 hour)**<br>Implement enhancements.<br>#konflux
 - [x] **(25 mins)**<br>Finalise the air tickets.
 
+## **Friday** *[[Journal/2022-10-21|2022-10-21]]* (6)
+
+
+
+## **Saturday** *[[Journal/2022-10-22|2022-10-22]]* (6)
+
+
+
+## **Sunday** *[[Journal/2022-10-23|2022-10-23]]* (6)
+
+
+
+## **Monday** *[[Journal/2022-10-24|2022-10-24]]* (6)
+
+
+
+## **Tuesday** *[[Journal/2022-10-25|2022-10-25]]* (6)
+
+
+
+## **Wednesday** *[[Journal/2022-10-26|2022-10-26]]* (6)
+
+
+
+## **Thursday** *[[Journal/2022-10-27|2022-10-27]]* (6)
+
+
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
