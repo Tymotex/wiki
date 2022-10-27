@@ -53,6 +53,7 @@ kanban-plugin: basic
 - [ ] **(45 mins)**<br>Read Psychology of Selling.<br>#reading #recurring
 - [ ] **(45 mins)**<br>Read The War of Art.<br>#reading #recurring
 - [ ] **(45 mins)**<br>Read The Selfish Gene.<br>#reading #recurring
+- [ ] **(1 hour)**<br>Read How to Not Die<br>#reading #recurring
 
 
 ## Dieting
