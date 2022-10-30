@@ -433,12 +433,29 @@ kanban-plugin: basic
 
 
 
+## **Friday** *[[Journal/2022-10-28|2022-10-28]]* (6)
+
+- [x] **(1 hour)**<br>Finish Structs.sh review.<br><br>Ask: am I good to continue working on this?
+- [x] **(30 mins)**<br>Try FitBit recovery methods or escalate.
+- [x] **(30 mins)**<br>Clear out all emails.
+- [x] **(30 mins)**<br>Finish HireRight.
+
+## **Saturday** *[[Journal/2022-10-29|2022-10-29]]* (6)
+
+
+
+## **Sunday** *[[Journal/2022-10-30|2022-10-30]]* (6)
+
+
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
