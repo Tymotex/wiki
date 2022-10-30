@@ -8,16 +8,16 @@ kanban-plugin: basic
 
 - [x] Purpose: investing.
 - [x] Suggest redesign of the homepage to Dom. Send pics of haikei.<br>- Replace visualiser buttons with a menu of icons.<br>- Round all the boxes in visualiser.
-- [ ] Invest in VTSAX
 - [ ] **(1 hour)**<br>Finish Four Thousand Weeks, then extract out all quotes.
 - [ ] **(1 hour)**<br>Read How to Not Die<br>#reading #recurring
 - [ ] **(30 mins)**<br>Join Toastmasters. You must do it.
-- [x] **(25 mins)**<br>Determine shopping list.<br>- [x] hair dryer<br>- [x] fan<br>- [x] floss picks<br>- [x] mouth tape<br>- [ ] pho ingredients
+- [x] **(25 mins)**<br>Determine shopping list.<br>- [x] hair dryer<br>- [x] fan<br>- [x] floss picks<br>- [x] mouth tape<br>- [x] pho ingredients
 
 
 ## **Tuesday** *[[Journal/2022-11-01|2022-11-01]]* (6)
 
 - [ ] ### **🏆 Purpose**:
+- [ ] Invest in VTSAX
 
 
 ## **Wednesday** *[[Journal/2022-11-02|2022-11-02]]* (6)
