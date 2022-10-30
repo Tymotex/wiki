@@ -8,7 +8,7 @@ kanban-plugin: basic
 
 - [x] Purpose: investing.
 - [x] Suggest redesign of the homepage to Dom. Send pics of haikei.<br>- Replace visualiser buttons with a menu of icons.<br>- Round all the boxes in visualiser.
-- [ ] **(1 hour)**<br>Finish Four Thousand Weeks, then extract out all quotes.
+- [ ] Invest in VTSAX
 - [ ] **(1 hour)**<br>Finish Four Thousand Weeks, then extract out all quotes.
 - [ ] **(1 hour)**<br>Read How to Not Die<br>#reading #recurring
 - [ ] **(30 mins)**<br>Join Toastmasters. You must do it.

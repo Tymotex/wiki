@@ -35,7 +35,7 @@ An *investment* is the purchase of an asset or commodity with the expectation of
 - [[Knowledge/Investing/Buying a Home|Buying a Home]] TODO
 - [[Knowledge/Personal Finance/Real Estate|Real Estate]] TODO
 - [[Knowledge/Investing/Stock Brokers|Stock Brokers]]
-- [[Knowledge/Investing/Brokerage Apps|Brokerage Apps]] TODO
+- [[Knowledge/Investing/Online Brokers|Online Brokers]] TODO
 - [[Knowledge/Economics/macroeconomics/Liquidity|Liquidity]] TODO
 - [[Knowledge/Investing/Stock Analysis|Stock Research]] TODO
 - [[Knowledge/Investing/Specialists|Specialists]] TODO
