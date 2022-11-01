@@ -10,6 +10,14 @@ It's advised to have a 50/30/20 split across survival expenses, luxury expenses 
 - **Monthly luxury expenses**: $460 (~7% of after-tax income).
 - **Investment**: remaining balance (~90% of after-tax income).
 
+---
+
+## Investment
+- 67% in VTI.
+- 33% in VAS.
+
+---
+
 ## Bank Accounts
 I migrated from CommBank to ING in mid-2022 since they're an online bank with zero fees. They also have a competitive savings interest rate due to their lower operational costs.
 

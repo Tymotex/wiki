@@ -5,9 +5,9 @@ description: Index Funds
 
 *Index funds* are a subclass of [[Knowledge/Investing/Mutual Funds|mutual funds]] that are [[Knowledge/Investing/Investing#Active vs Passive Investing|passively managed]] instead of [[Knowledge/Investing/Investing#Active vs Passive Investing|actively managed]]. They track a specific [[Knowledge/Investing/Market Index|market index]].
 
-[[Knowledge/Investing/Index Funds|Index funds]], and *index investing* in general, were 'invented' by *Jack Bogle* in the 1970s, who founded [Vanguard](https://www.vanguard.com.au/). He essentially got sick of mutual funds charging people so much for active management. He's credited with being the person who has helped investors create more wealth than anyone else on the planet.
+[[Knowledge/Investing/Index Funds|Index funds]], and *index investing* in general, were 'invented' by *Jack Bogle* in the 1970s, who founded [Vanguard](https://www.vanguard.com.au/). He essentially got sick of mutual funds charging people so much for active management. He's credited with being the person who has helped investors create more wealth than anyone else on the planet. You could individually buy each company listed in an index, however the brokerage fees would be massive. An investment company like Vanguard optimises this and provides the lowest possible fees.
 
-The expenses associated with *actively managed mutual funds* (those that have people monitoring investment performance) tend to be considerably higher than *passively managed mutual funds* (ie. index funds). Roughly, actively managed mutual funds often charge $1\text{-}2\%$ of your account balance per year while index funds charge well below $1\%$.
+The expenses associated with *actively managed mutual funds* (those that have people monitoring investment performance) tend to be considerably higher than *passively managed mutual funds* (ie. index funds). Roughly, actively managed mutual funds often charge $1\text{-}2\%$ of your account balance per year while index funds charge well below $1\%$ since they do not need to pay for research and analysis.
 
 > *Investing in an index allows you to say "I don’t know anything about choosing a company, sector, country, or anything else, and I also don’t know how to choose a fund manager capable of choosing them. I accept that I don’t know. But I still need to invest for my future."* ([sourced from PassiveInvestingAustralia](https://passiveinvestingaustralia.com/index-funds/))
 
@@ -33,9 +33,25 @@ Jack Bogle recommends to always commit to investing in an index fund, even if th
 - **Expense ratio** — the percentage of your total assets value taken by the fund as an operation/management fee. Even expense ratios of 1% will have an unintuitively massive impact on your long-term balance.
 
 
+### US Index Funds
+- VTI
+- VTS
+- VTSAX
 
+### Australian Index Funds
+- **VAS — Vanguard Australian Shares Index ETF**, which tracks S&P/ASX 300.
+    - 0.1% management fee.
+    - The ASX 300 consists of the top 300 companies by market capitalisation. The list of companies is 'flushed'/rebalanced biannually by default.
+    - Banks represent a large chunk of the ETFs value. Chart sourced from [Vanguard](https://fund-docs.vanguard.com/AU_ETF_Profile_flyer_VAS.pdf)
+    ![[Knowledge/Investing/assets/vas-pie-chart.png|400]]
+    - The holdings are weighted by market capitalisation, meaning that the larger companies constitute a larger part of your portfolio.
+    - Has one of the highest trading volumes, therefore high liquidity.
+- **VAP — Vanguard Australian Property Securities Index ETF** 
 
-
+### International
+- **VEU — Vanguard All-World ex-US Shares Index ETF AUD**
+- VGS
+- VDHG
 
 
 

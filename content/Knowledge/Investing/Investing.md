@@ -53,6 +53,7 @@ An *investment* is the purchase of an asset or commodity with the expectation of
 - [[Knowledge/Investing/Currency Risk|Currency Risk]] TODO
 - [[Knowledge/Investing/Franking Credits|Franking Credits]] TODO
 - What is microinvesting? E.g. microinvesting apps include RAIZ, Spaceship, etc. TODO
+- [[Knowledge/Investing/FIRE|FIRE]] TODO
 
 - Cryptocurrency
 - Cryptocurrency Exchanges (Coinbase and Binance, for example) TODO
@@ -64,14 +65,6 @@ An *investment* is the purchase of an asset or commodity with the expectation of
 - Go 98% ETFs or index funds and 2% individual stocks. This gets you into the habit of researching stocks.
 - Avoid all emotional decision-making.
     > "You don't make money when you buy and you don't make money when you sell. You make money when you wait." — Charlie Munger.
-
-#### The Buffett/Munger Approach
-1. Understand the business.
-2. Check for a durable competitive advantage.
-3. Management has integrity and talent.
-4. Ensure a margin of safety. 
-
-
 
 ## Bond Market
 ### Stocks vs. Bonds
