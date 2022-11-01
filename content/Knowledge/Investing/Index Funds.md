@@ -35,10 +35,12 @@ Jack Bogle recommends to always commit to investing in an index fund, even if th
 
 ### US Index Funds
 - VTI
-- VTS
+- **VTS — Vanguard US Total Market Shares Index ETF AUD**
+    - 0.04% management fee, which is about as low as it can possibly go.
 - VTSAX
 
 ### Australian Index Funds
+It's argued that the Australian market is too concentrated and constitutes only ~2% of the world's markets. The US market constitutes around ~40% of the world's markets. Australian index funds, however, let you exploit [[Knowledge/Investing/Franking Credits|franking credits]].
 - **VAS — Vanguard Australian Shares Index ETF**, which tracks S&P/ASX 300.
     - 0.1% management fee.
     - The ASX 300 consists of the top 300 companies by market capitalisation. The list of companies is 'flushed'/rebalanced biannually by default.
@@ -46,12 +48,18 @@ Jack Bogle recommends to always commit to investing in an index fund, even if th
     ![[Knowledge/Investing/assets/vas-pie-chart.png|400]]
     - The holdings are weighted by market capitalisation, meaning that the larger companies constitute a larger part of your portfolio.
     - Has one of the highest trading volumes, therefore high liquidity.
+- **A200 — BetaShares Australia 200 ETF**, which is basically VAS but it only tracks the top 200 companies of the ASX and has a lower management fee.
 - **VAP — Vanguard Australian Property Securities Index ETF** 
 
 ### International
 - **VEU — Vanguard All-World ex-US Shares Index ETF AUD**
-- VGS
-- VDHG
+- **VGS — Vanguard MSCI Index International Shares ETF**
+- **VDHG — Vanguard Diversified High Growth Index ETF**
 
-
-
+### Aussie Firebug Portfolio
+[Sourced from Aussie Firebug](https://www.aussiefirebug.com/our-investing-strategy-explained/).
+![[Knowledge/Investing/assets/aussie-firebug-portfolio.png|500]]
+- VAS (or A200) for exploiting franking credits.
+- VTS for US market exposure, strong returns, and ridiculously low fees.
+- VEU for exposure to the largest companies in the rest of the world.
+Altogether, this portfolio gives you a tiny slice of the largest companies on Earth.

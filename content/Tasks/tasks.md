@@ -12,6 +12,7 @@ kanban-plugin: basic
 - [ ] Listen to EM while running
 - [ ] What are trusts?
 - [ ] Does higher interest rate reduce house prices? Does it actually help buyers though?
+- [ ] Trinity study
 - [ ] What is DeFi?
 - [ ] **(1 hour)**<br>Finish Four Thousand Weeks, then extract out all quotes.
 - [ ] **(1 hour)**<br>Read How to Not Die<br>#reading #recurring
