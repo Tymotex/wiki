@@ -448,12 +448,24 @@ kanban-plugin: basic
 
 
 
+## **Monday** *[[Journal/2022-10-31|2022-10-31]]* (6)
+
+- [x] Purpose: investing.
+- [x] Suggest redesign of the homepage to Dom. Send pics of haikei.<br>- Replace visualiser buttons with a menu of icons.<br>- Round all the boxes in visualiser.
+- [x] **(25 mins)**<br>Determine shopping list.<br>- [x] hair dryer<br>- [x] fan<br>- [x] floss picks<br>- [x] mouth tape<br>- [x] pho ingredients
+
+## **Tuesday** *[[Journal/2022-11-01|2022-11-01]]* (6)
+
+
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
