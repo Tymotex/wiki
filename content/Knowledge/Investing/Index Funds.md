@@ -29,9 +29,12 @@ Jack Bogle recommends to always commit to investing in an index fund, even if th
 > "Never think you know more than the market does." — Jack Bogle.
 
 ## Picking an Index Fund
+In Australia, there are hundreds/thousands of ETFs to potentially choose from and different ETF providers such as Vanguard, BetaShares and iShares (by BlackRock). ETFs also go by different 'themes', such as those concentrating on international markets, US markets, domestic markets, energy sector, tech sector, etc.
+
 **Considerations**:
 - **Expense ratio** — the percentage of your total assets value taken by the fund as an operation/management fee. Even expense ratios of 1% will have an unintuitively massive impact on your long-term balance.
-
+- **Liquidity** — 
+    - ETF size and trading volume are not necessarily indicative of liquidity in that same way that they are for individual shares.
 
 ### US Index Funds
 - VTI
@@ -55,6 +58,12 @@ It's argued that the Australian market is too concentrated and constitutes only 
 - **VEU — Vanguard All-World ex-US Shares Index ETF AUD**
 - **VGS — Vanguard MSCI Index International Shares ETF**
 - **VDHG — Vanguard Diversified High Growth Index ETF**
+    - This is all-in-one. You cannot customise it.
+- **VGS — Vanguard FTSE Emerging Markets**
+- **IOO — iShares Global 100**
+    - Like VGS, but concentrates on 100 companies instead of 1500.
+- **IVV — iShares S&P 500**
+- **IAA — iShares Asia 50**
 
 ### Aussie Firebug Portfolio
 [Sourced from Aussie Firebug](https://www.aussiefirebug.com/our-investing-strategy-explained/).

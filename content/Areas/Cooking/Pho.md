@@ -3,6 +3,7 @@ title: Pho
 ---
 
 
+
 - Pre-roast the bones.
 - Adding onion to the broth.
 - Lightly stir-frying the noodles before pouring broth.
@@ -32,3 +33,9 @@ title: Pho
 **Broth**:
 1. Char on open flame: onions, ginger, cloves, star anise, cardamom, cinnamon.j
     - Scrape off charred parts.
+
+## Mistakes
+- Did not use brisket at the start, only used bones.
+- Onion taste too strong.
+- Spices are lacking.
+- Beef taste a little too strong.

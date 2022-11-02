@@ -10,6 +10,7 @@ kanban-plugin: basic
 - [ ] Ask mum for $5k
 - [ ] Start reading ATO tax articles.
 - [ ] Listen to EM while running
+- [ ] Write factors in picking an ETF.
 - [ ] What are trusts?
 - [ ] Does higher interest rate reduce house prices? Does it actually help buyers though?
 - [ ] Trinity study
