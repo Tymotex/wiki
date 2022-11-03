@@ -60,6 +60,7 @@ An *investment* is the purchase of an asset or commodity with the expectation of
 - Decentralised Finance
 
 - Short squeeze
+- NFTs
 
 
 ## Stock Market
