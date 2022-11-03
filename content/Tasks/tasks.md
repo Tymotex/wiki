@@ -4,8 +4,8 @@ kanban-plugin: basic
 
 ---
 
-## **Wednesday** *[[Journal/2022-11-02|2022-11-02]]* (6)
 
+## **Friday** *[[Journal/2022-11-04|2022-11-04]]* (6)
 - [ ] ### **🏆 Purpose**:
 - [ ] Ask mum for $5k
 - [ ] Start reading ATO tax articles.
@@ -19,20 +19,7 @@ kanban-plugin: basic
 - [ ] **(1 hour)**<br>Read How to Not Die<br>#reading #recurring
 - [ ] **(30 mins)**<br>Join Toastmasters. You must do it.
 - [ ] Make style improvements to Structs.sh and open a PR.
-
-
-## **🏆 Purpose**:
-
 - [ ] ==1==<br>Invest in VTSAX
-
-
-## **Thursday** *[[Journal/2022-11-03|2022-11-03]]* (6)
-
-- [ ] ### **🏆 Purpose**:
-
-
-## **Friday** *[[Journal/2022-11-04|2022-11-04]]* (6)
-
 - [ ] ### **🏆 Purpose**:
 - [ ] **Join a running club/meetup. Seriously, this is highly endorsed idea by Spark.**
 

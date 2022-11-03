@@ -59,6 +59,8 @@ An *investment* is the purchase of an asset or commodity with the expectation of
 - Cryptocurrency Exchanges (Coinbase and Binance, for example) TODO
 - Decentralised Finance
 
+- Short squeeze
+
 
 ## Stock Market
 ### Investing Strategies
