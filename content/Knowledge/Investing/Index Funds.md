@@ -35,6 +35,7 @@ In Australia, there are hundreds/thousands of ETFs to potentially choose from an
 - **Expense ratio** — the percentage of your total assets value taken by the fund as an operation/management fee. Even expense ratios of 1% will have an unintuitively massive impact on your long-term balance.
 - **Liquidity** — 
     - ETF size and trading volume are not necessarily indicative of liquidity in that same way that they are for individual shares.
+- **Currency hedging** —
 
 ### US Index Funds
 - VTI
