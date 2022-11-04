@@ -55,6 +55,8 @@ An *investment* is the purchase of an asset or commodity with the expectation of
 - [[Knowledge/Investing/Franking Credits|Franking Credits]] TODO
 - What is microinvesting? E.g. microinvesting apps include RAIZ, Spaceship, etc. TODO
 - [[Knowledge/Investing/FIRE|FIRE]] TODO
+- [[Knowledge/Personal Finance/Tax|Tax]] TODO
+- [[Knowledge/Investing/W-8BEN|W-8BEN]] TODO
 
 - Cryptocurrency
 - Cryptocurrency Exchanges (Coinbase and Binance, for example) TODO
@@ -74,3 +76,15 @@ An *investment* is the purchase of an asset or commodity with the expectation of
 ### Stocks vs. Bonds
 In general: bonds are lower risk but have lower returns than stocks. When you're young and don't have strict target dates for financial goals, just go for stocks and allocate a greater percentage of your portfolio to bonds when you require more certainty about your investment returns.
 
+## Portfolios
+- Warren Buffett's example portfolio for his wife:
+    ![[Knowledge/Investing/assets/buffett-simple-portfolio.png|400]]
+- [Aussie Firebug portfolio](https://www.aussiefirebug.com/our-investing-strategy-explained/):
+    ![[Knowledge/Investing/assets/aussie-firebug-portfolio.png|400]]
+- Having a 100% VDHG portfolio is decent for beginning investors. You can combine VAS, VGS, VTS, etc. to achieve a lower expense ratio but it'll require occasional manual rebalancing.
+- 50/50 split across Australian and international ETFs.
+- 
+
+
+
+    

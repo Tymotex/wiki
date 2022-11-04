@@ -41,7 +41,7 @@ In Australia, there are hundreds/thousands of ETFs to potentially choose from an
 - VTI
 - **VTS — Vanguard US Total Market Shares Index ETF AUD**
     - 0.04% management fee, which is about as low as it can possibly go.
-- VTSAX
+- **IVV**
 
 ### Australian Index Funds
 It's argued that the Australian market is too concentrated and constitutes only ~2% of the world's markets. The US market constitutes around ~40% of the world's markets. Australian index funds, however, let you exploit [[Knowledge/Investing/Franking Credits|franking credits]].
@@ -55,21 +55,26 @@ It's argued that the Australian market is too concentrated and constitutes only 
 - **A200 — BetaShares Australia 200 ETF**, which is basically VAS but it only tracks the top 200 companies of the ASX and has a lower management fee.
 - **VAP — Vanguard Australian Property Securities Index ETF** 
 
-### International
+### International & Emerging Markets
 - **VEU — Vanguard All-World ex-US Shares Index ETF AUD**
 - **VGS — Vanguard MSCI Index International Shares ETF**
 - **VDHG — Vanguard Diversified High Growth Index ETF**
     - This is all-in-one. You cannot customise it.
 - **VGS — Vanguard FTSE Emerging Markets**
+- **VGAD**
+- **VAE**
 - **IOO — iShares Global 100**
     - Like VGS, but concentrates on 100 companies instead of 1500.
 - **IVV — iShares S&P 500**
 - **IAA — iShares Asia 50**
+- **IVE**
+- **IWLD**
+- **IHWL**
 
 ### Aussie Firebug Portfolio
 [Sourced from Aussie Firebug](https://www.aussiefirebug.com/our-investing-strategy-explained/).
 ![[Knowledge/Investing/assets/aussie-firebug-portfolio.png|500]]
-- VAS (or A200) for exploiting franking credits.
+- VAS (or A200) for exploiting [[Knowledge/Investing/Franking Credits|franking credits]].
 - VTS for US market exposure, strong returns, and ridiculously low fees.
 - VEU for exposure to the largest companies in the rest of the world.
 Altogether, this portfolio gives you a tiny slice of the largest companies on Earth.
