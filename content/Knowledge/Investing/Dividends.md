@@ -8,3 +8,4 @@ There are *dividend reinvestment plans* which automatically use the cash payment
 
 Note: dividend payments reduce the price of the stock.
 > Collecting dividends is also no safer than selling down your portfolio, which is a common misconception. A non-reinvested dividend is literally a withdrawal from your portfolio, except you don't have control over when it happens[\*](https://www.reddit.com/r/fiaustralia/comments/jtcunb/new_to_fire_and_investing_start_here/).
+

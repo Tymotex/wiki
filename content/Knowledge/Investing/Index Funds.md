@@ -23,6 +23,8 @@ Historically, the only time investing in index funds has *not* worked has been w
 
 > "Fama and French (2010) reported results of a separate 22-year study suggesting that it is extremely difficult for an actively managed investment fund to outperform its benchmark regularly." — Vanguard, [The Case for Indexing (Australia)](https://static.vgcontent.info/crp/intl/auw/docs/literature/The-Case-for-Indexing-Australia.pdf?20190411%7C222851)
 
+> The ability to earn money on delayed tax payments (and earnings on those earnings, and so on) is one of the biggest advantages of capital growth over income-focused investments... This triggering of capital gains for all investors does not occur with ETFs due to the unique tax structure of ETFs. Instead, you defer these capital gains until you sell your ETF shares[\*](https://passiveinvestingaustralia.com/how-is-vdhg-tax-inefficient/).
+
 ### What If We're At a Peak?
 Jack Bogle recommends to always commit to investing in an index fund, even if they're priced at all-time highs and you're convinced that they're overvalued. 
 ![[Knowledge/Investing/assets/s&p-investing-in-local-peaks.png|400]]
@@ -33,9 +35,10 @@ In Australia, there are hundreds/thousands of ETFs to potentially choose from an
 
 **Considerations**:
 - **Expense ratio** — the percentage of your total assets value taken by the fund as an operation/management fee. Even expense ratios of 1% will have an unintuitively massive impact on your long-term balance.
-- **Liquidity** — 
+- **Liquidity**.
     - ETF size and trading volume are not necessarily indicative of liquidity in that same way that they are for individual shares.
-- **Currency hedging** —
+- Currency hedging.
+- Exposure to markets you're interested in.
 
 ### US Index Funds
 - **VTI — Vanguard Total Stock Market Index Fund ETF**, which tracks the [CRSP US Total Market Index](https://www.crsp.org/products/investment-products/crsp-us-total-market-index).
