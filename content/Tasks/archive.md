@@ -513,6 +513,8 @@ kanban-plugin: basic
 %% kanban:settings
 ## Archive
 %% kanban:settings
+## Archive
+%% kanban:settings
 ```
 {"kanban-plugin":"basic"}
 ```
