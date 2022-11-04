@@ -6,23 +6,23 @@ kanban-plugin: basic
 
 ## **Saturday** *[[Journal/2022-11-05|2022-11-05]]* (6)
 
-- [ ] ### **🏆 Purpose**:
+- [ ] ### **🏆 Purpose**: investing and reading
 - [x] Ask mum for $5k
+- [x] Write a bit on all the index funds you listed.
 - [x] Write factors in picking an ETF.
+- [x] Install UniSuper and Stake.
+- [ ] Trinity study
 - [ ] Start reading ATO tax articles.
 - [ ] Listen to EM while running
 - [ ] What are trusts?
 - [ ] Does higher interest rate reduce house prices? Does it actually help buyers though?
-- [ ] Trinity study
 - [ ] What is DeFi?
 - [ ] Why do markets open and close? Eg. why does the ASX not work on weekends?
-- [ ] Install UniSuper and Stake.
 - [ ] **(1 hour)**<br>Finish Four Thousand Weeks, then extract out all quotes.
 - [ ] **(1 hour)**<br>Read How to Not Die<br>#reading #recurring
 - [ ] **(30 mins)**<br>Join Toastmasters. You must do it.
 - [ ] Make style improvements to Structs.sh and open a PR.
 - [ ] **Join a running club/meetup. Seriously, this is highly endorsed idea by Spark.**
-- [x] Write a bit on all the index funds you listed.
 
 
 ## **Sunday** *[[Journal/2022-11-06|2022-11-06]]* (6)
