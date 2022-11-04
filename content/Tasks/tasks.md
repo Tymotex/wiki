@@ -13,12 +13,12 @@ kanban-plugin: basic
 - [x] Install UniSuper and Stake.
 - [x] Read this: https://www.reddit.com/r/fiaustralia/comments/jvo8ku/vdhg_review_is_this_a_good_investment_to_help/
 - [x] Trinity study
+- [x] Does higher interest rate reduce house prices? Does it actually help buyers though?
+- [x] Why do markets open and close? Eg. why does the ASX not work on weekends?
 - [ ] Start reading ATO tax articles.
 - [ ] Listen to EM while running
 - [ ] What are trusts?
-- [ ] Does higher interest rate reduce house prices? Does it actually help buyers though?
 - [ ] What is DeFi?
-- [x] Why do markets open and close? Eg. why does the ASX not work on weekends?
 - [ ] Simple Path to Wealth summary
 - [ ] **(1 hour)**<br>Finish Four Thousand Weeks, then extract out all quotes.
 - [ ] **(1 hour)**<br>Read How to Not Die<br>#reading #recurring
