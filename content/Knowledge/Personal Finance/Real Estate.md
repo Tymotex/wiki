@@ -5,6 +5,12 @@ description: Real Estate
 
 Real estate is physical land and property on that land (including its resources). It is a popular investment vehicle in markets where land and building prices increase over time.
 
+## Investing [TODO]
+Tax incentives for investors:
+- Negative gearing.
+- Property expenses are tax deductible. This includes interest on your mortgage.
+- Capital gains tax discounts.
+
 ## Interest Rate
 A higher interest rate decreases the *purchasing power* of buyers, reducing demand and therefore also bringing down house prices. 
 - Generally, a higher interest rate makes it harder for *both* home buyers and sellers. Overall, there will be fewer property transactions.
@@ -12,6 +18,13 @@ A higher interest rate decreases the *purchasing power* of buyers, reducing dema
 - A higher interest rate can *sometimes* improve rental yield since fewer people can qualify for mortgages.
 
 **You can be prompted to buy a new home by either lower interest rates, or lower housing prices (or both).**
+
+## Gearing
+***Positive** gearing* is where you take a loan to invest, but the income from the investment *exceeds* your loan's repayments, ie. you're getting a positive net income despite the loan repayments. 
+- For *positively geared investments*, you have to pay tax on your rental income. 
+
+***Negative** gearing* is when you take a loan to invest, but the income from that investment is still lower than the loan repayment. 
+- For *negatively geared investments*, you can claim a tax deduction on the loss, which is better enjoyed by high income earners. This is a favourable tax policy for investors that also exists in some other countries such as Japan and New Zealand.
 
 ## Residential Real Estate Categories
 |                |     |     |
@@ -51,11 +64,6 @@ Investing in real estate is harder, riskier and more complicated than index fund
 
 
 Rental income can cover most or all of the mortgage, however you cannot rely on it because there may be times where your property is vacant.
-
-*Positive gearing* is where you take a loan to invest, but the income from the investment exceeds your loan's repayments, ie. you're getting a positive net income despite the loan repayments. *Negative gearing* is when you take a loan to invest, but the income from that investment is still lower than the loan repayment. 
-- For *positively geared investments*, you have to pay tax on your rental income. For *negatively geared investments*, you can claim a tax deduction on the loss, which is better enjoyed by high income earners. 
-
-Property expenses are tax deductible. This includes interest on your mortgage.
 
 Real estate investment mostly does not require special domain knowledge.
 

@@ -18,7 +18,7 @@ kanban-plugin: basic
 - [ ] Start reading ATO tax articles.
 - [ ] Where do people find real estate?
 - [ ] Listen to EM while running
-- [ ] What are trusts?
+- [x] What are trusts?
 - [ ] What is DeFi?
 - [ ] Simple Path to Wealth summary
 - [ ] **(1 hour)**<br>Finish Four Thousand Weeks, then extract out all quotes.
