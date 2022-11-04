@@ -1,10 +1,8 @@
 ---
+
 kanban-plugin: basic
+
 ---
-
-## **Friday** *[[Journal/2022-11-04|2022-11-04]]* (6)
-
-
 
 ## **Saturday** *[[Journal/2022-11-05|2022-11-05]]* (6)
 
@@ -25,6 +23,8 @@ kanban-plugin: basic
 - [ ] ### **🏆 Purpose**:
 - [ ] **Join a running club/meetup. Seriously, this is highly endorsed idea by Spark.**
 - [ ] Write a bit on all the index funds you listed.
+- [ ] Why do markets open and close? Eg. why does the ASX not work on weekends?
+
 
 ## **Sunday** *[[Journal/2022-11-06|2022-11-06]]* (6)
 
@@ -32,33 +32,40 @@ kanban-plugin: basic
 - [ ] #### **(10 mins)** Weekly Review.
 - [ ] Ask mum to schedule a blood test for me in December.
 
+
 ## **Monday** *[[Journal/2022-11-07|2022-11-07]]* (6)
 
 - [ ] ### **🏆 Purpose**:
+
 
 ## **Tuesday** *[[Journal/2022-11-08|2022-11-08]]* (6)
 
 - [ ] ### **🏆 Purpose**:
 
+
 ## **Wednesday** *[[Journal/2022-11-09|2022-11-09]]* (6)
 
 - [ ] ### **🏆 Purpose**:
+
 
 ## **Thursday** *[[Journal/2022-11-10|2022-11-10]]* (6)
 
 - [ ] ### **🏆 Purpose**:
 
+
 ## **Friday** *[[Journal/2022-11-11|2022-11-11]]* (6)
 
 - [ ] ### **🏆 Purpose**:
 
-***
 
 ## Archive
 
 
 
+
+
 %% kanban:settings
+```
 {"kanban-plugin":"basic"}
 ```
 %%

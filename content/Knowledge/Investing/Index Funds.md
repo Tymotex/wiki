@@ -38,22 +38,27 @@ In Australia, there are hundreds/thousands of ETFs to potentially choose from an
 - **Currency hedging** —
 
 ### US Index Funds
-- VTI
-- **VTS — Vanguard US Total Market Shares Index ETF AUD**
-    - 0.04% management fee, which is about as low as it can possibly go.
-- **IVV**
+- **VTI — Vanguard Total Stock Market Index Fund ETF**, which tracks the [CRSP US Total Market Index](https://www.crsp.org/products/investment-products/crsp-us-total-market-index).
+    - 0.03% expense ratio, which is about as low as it can possibly go.
+- **VTS — Vanguard U.S. Total Market Shares Index ETF AUD**, which is pretty much the same as VTI but has a different name on the ASX. 
+    - 0.03% expense ratio.
+    - Since VTS is a cross-listing of the US-domiciled VTI, dividend reinvestment is unavailable, and has a slightly more annoying tax process.
+- **IVV — iShares Core S&P 500 ETF**, which tracks the S&P 500.
+    - 0.03% expense ratio.
+    - Australian-domiciled, so no tax process.
 
 ### Australian Index Funds
 It's argued that the Australian market is too concentrated and constitutes only ~2% of the world's markets. The US market constitutes around ~40% of the world's markets. Australian index funds, however, let you exploit [[Knowledge/Investing/Franking Credits|franking credits]].
 - **VAS — Vanguard Australian Shares Index ETF**, which tracks S&P/ASX 300.
-    - 0.1% management fee.
+    - 0.10% expense ratio.
     - The ASX 300 consists of the top 300 companies by market capitalisation. The list of companies is 'flushed'/rebalanced biannually by default.
     - Banks represent a large chunk of the ETFs value. Chart sourced from [Vanguard](https://fund-docs.vanguard.com/AU_ETF_Profile_flyer_VAS.pdf)
     ![[Knowledge/Investing/assets/vas-pie-chart.png|400]]
     - The holdings are weighted by market capitalisation, meaning that the larger companies constitute a larger part of your portfolio.
     - Has one of the highest trading volumes, therefore high liquidity.
 - **A200 — BetaShares Australia 200 ETF**, which is basically VAS but it only tracks the top 200 companies of the ASX and has a lower management fee.
-- **VAP — Vanguard Australian Property Securities Index ETF** 
+    - 0.07% expense ratio.
+- **VAP — Vanguard Australian Property Securities Index ETF**, which tracks the [S&P/ASX200 A-REIT](https://www.marketindex.com.au/asx/xpj).
 
 ### International & Emerging Markets
 - **VEU — Vanguard All-World ex-US Shares Index ETF AUD**
@@ -70,6 +75,12 @@ It's argued that the Australian market is too concentrated and constitutes only 
 - **IVE**
 - **IWLD**
 - **IHWL**
+
+## Interesting ETFs
+- **CRYP — BetaShares Crypto Innovators ETF**
+- **HACK — BetaShares Global Cybersecurity ETF**
+- **ESPO — VanEck Video Gaming and eSports ETF AUD**
+- **ASIA — BetaShares Asian Technology Tigers ETF**
 
 ### Aussie Firebug Portfolio
 [Sourced from Aussie Firebug](https://www.aussiefirebug.com/our-investing-strategy-explained/).
