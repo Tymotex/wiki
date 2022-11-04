@@ -11,8 +11,8 @@ kanban-plugin: basic
 - [x] Write a bit on all the index funds you listed.
 - [x] Write factors in picking an ETF.
 - [x] Install UniSuper and Stake.
+- [x] Read this: https://www.reddit.com/r/fiaustralia/comments/jvo8ku/vdhg_review_is_this_a_good_investment_to_help/
 - [ ] Trinity study
-- [ ] Read this: https://www.reddit.com/r/fiaustralia/comments/jvo8ku/vdhg_review_is_this_a_good_investment_to_help/
 - [ ] Start reading ATO tax articles.
 - [ ] Listen to EM while running
 - [ ] What are trusts?
