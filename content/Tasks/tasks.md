@@ -16,6 +16,7 @@ kanban-plugin: basic
 - [x] Does higher interest rate reduce house prices? Does it actually help buyers though?
 - [x] Why do markets open and close? Eg. why does the ASX not work on weekends?
 - [ ] Start reading ATO tax articles.
+- [ ] Where do people find real estate?
 - [ ] Listen to EM while running
 - [ ] What are trusts?
 - [ ] What is DeFi?
@@ -25,6 +26,7 @@ kanban-plugin: basic
 - [ ] **(30 mins)**<br>Join Toastmasters. You must do it.
 - [ ] Make style improvements to Structs.sh and open a PR.
 - [ ] **Join a running club/meetup. Seriously, this is highly endorsed idea by Spark.**
+- [ ] Ask mum/dad/brother: assuming next year housing prices reach a bottom, does this actually help me? Wouldn't interest rates be high enough that the advantage of lower house prices is possibly nullified by higher mortgage rates unless they drop very quickly after? Otherwise wouldn't every investor just capitalise on this opportunity especially since they're all anticipating low prices next year?
 
 
 ## **Sunday** *[[Journal/2022-11-06|2022-11-06]]* (6)

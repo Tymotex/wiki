@@ -5,12 +5,25 @@ description: Real Estate
 
 Real estate is physical land and property on that land (including its resources). It is a popular investment vehicle in markets where land and building prices increase over time.
 
+## Interest Rate
 A higher interest rate decreases the *purchasing power* of buyers, reducing demand and therefore also bringing down house prices. 
 - Generally, a higher interest rate makes it harder for *both* home buyers and sellers. Overall, there will be fewer property transactions.
 - Buyers can no longer qualify for bigger mortgages unless their wages increase.
 - A higher interest rate can *sometimes* improve rental yield since fewer people can qualify for mortgages.
 
+**You can be prompted to buy a new home by either lower interest rates, or lower housing prices (or both).**
 
+## Residential Real Estate Categories
+|                |     |     |
+| -------------- | --- | --- |
+| Apartment/Flat |     |     |
+| Studio         |     |     | 
+| Townhouse      |     |     |
+| Condominium    |     |     |
+| Duplex         |     |     |
+| Bungalows      |     |     |
+| Mansions       |     |     |
+| Villas         |     |     |
 
 ## Considerations
 
