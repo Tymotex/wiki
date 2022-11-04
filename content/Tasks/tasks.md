@@ -7,7 +7,7 @@ kanban-plugin: basic
 ## **Saturday** *[[Journal/2022-11-05|2022-11-05]]* (6)
 
 - [ ] ### **🏆 Purpose**:
-- [ ] Ask mum for $5k
+- [x] Ask mum for $5k
 - [ ] Start reading ATO tax articles.
 - [ ] Listen to EM while running
 - [ ] Write factors in picking an ETF.
@@ -19,11 +19,10 @@ kanban-plugin: basic
 - [ ] **(1 hour)**<br>Read How to Not Die<br>#reading #recurring
 - [ ] **(30 mins)**<br>Join Toastmasters. You must do it.
 - [ ] Make style improvements to Structs.sh and open a PR.
-- [ ] ==1==<br>Invest in VTSAX
-- [ ] ### **🏆 Purpose**:
 - [ ] **Join a running club/meetup. Seriously, this is highly endorsed idea by Spark.**
-- [ ] Write a bit on all the index funds you listed.
+- [x] Write a bit on all the index funds you listed.
 - [ ] Why do markets open and close? Eg. why does the ASX not work on weekends?
+- [ ] Install UniSuper.
 
 
 ## **Sunday** *[[Journal/2022-11-06|2022-11-06]]* (6)

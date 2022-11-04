@@ -42,7 +42,7 @@ In Australia, there are hundreds/thousands of ETFs to potentially choose from an
     - 0.03% expense ratio, which is about as low as it can possibly go.
 - **VTS — Vanguard U.S. Total Market Shares Index ETF AUD**, which is pretty much the same as VTI but has a different name on the ASX. 
     - 0.03% expense ratio.
-    - Since VTS is a cross-listing of the US-domiciled VTI, dividend reinvestment is unavailable, and has a slightly more annoying tax process.
+    - Since VTS is a cross-listing of the US-domiciled VTI, automatic dividend reinvestment is unavailable, and has a slightly more annoying tax process.
 - **IVV — iShares Core S&P 500 ETF**, which tracks the S&P 500.
     - 0.03% expense ratio.
     - Australian-domiciled, so no tax process.
@@ -62,25 +62,40 @@ It's argued that the Australian market is too concentrated and constitutes only 
 
 ### International & Emerging Markets
 - **VEU — Vanguard All-World ex-US Shares Index ETF AUD**
+    - 0.07% expense ratio.
 - **VGS — Vanguard MSCI Index International Shares ETF**
+    - 0.18% expense ratio.
+    - Has automated dividend reinvestments.
 - **VDHG — Vanguard Diversified High Growth Index ETF**
+    - 0.27% expense ratio.
     - This is all-in-one. You cannot customise it.
-- **VGS — Vanguard FTSE Emerging Markets**
-- **VGAD**
-- **VAE**
+    - Very frequently recommended to beginner investors. It does not require manual rebalancing.
+- **VGE — Vanguard FTSE Emerging Markets Shares ETF**.
+    - 0.48% expense ratio.
+- **VGS — Vanguard MSCI Index International Shares ETF**, which tracks the [MSCI world ex-Australia Index](https://au.investing.com/indices/msci-world-ex-australia)
+    - 0.18% expense ratio.
+- **VGAD — Vanguard MSCI Index International Shares ETF (AUD-Hedged)**, which tracks the [MSCI world ex-Australia Index](https://au.investing.com/indices/msci-world-ex-australia).
+    - Pretty much the same as VGS, but higher expense ratio due to the AUD hedging.
+    - 0.21% expense ratio.
+- **VAE — Vanguard FTSE Asia ex Japan Shares Index ETF**
+    - 0.40% expense ratio.
 - **IOO — iShares Global 100**
+    - 0.40% expense ratio.
     - Like VGS, but concentrates on 100 companies instead of 1500.
-- **IVV — iShares S&P 500**
 - **IAA — iShares Asia 50**
-- **IVE**
-- **IWLD**
-- **IHWL**
+    - 0.50% expense ratio.
+- **IVE — iShares MSCI EAFE ETF** for Europe, Aus, and Asia exposure.
+    - 0.32% expense ratio.
+- **IWLD — iShares Core MSCI World ex-Australia ESG Leaders ETF**
+    - 0.09% expense ratio.
 
 ## Interesting ETFs
 - **CRYP — BetaShares Crypto Innovators ETF**
 - **HACK — BetaShares Global Cybersecurity ETF**
 - **ESPO — VanEck Video Gaming and eSports ETF AUD**
 - **ASIA — BetaShares Asian Technology Tigers ETF**
+- **SKYY — First Trust Cloud Computing ETF**
+- **IGV — iShares Expanded Tech-Software Sector ETF**
 
 ### Aussie Firebug Portfolio
 [Sourced from Aussie Firebug](https://www.aussiefirebug.com/our-investing-strategy-explained/).
