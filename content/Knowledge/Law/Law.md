@@ -7,7 +7,9 @@ description: Law
 **Questions**
 - Why does there not exist a global set of laws?
     - Why is it the case that certain drugs are legal in one state, yet illegal in another?
-- 
+- Why are legal systems so complex (and growing continuously more complex) that you require the assistance of lawyers to understand them?
+    - It's the same reason why sports rulebooks are so long. There is a tradeoff between simplicity and enforceability. Simple language is inherently easier to manipulate, which you mustn't allow for when the legal system is meant to protect the wellbeing of society. Complexity is inevitable for precision. The simpler the legal system, the more opportunity for vindicating the guilty and criminalising the innocent.
+- Why do lawyers exist? Because the legal system is very complex to interpret and it is also very challenging to formulate a legally valid and convincing argument in a court.
 
 ---
 
