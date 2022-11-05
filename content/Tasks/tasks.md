@@ -7,7 +7,7 @@ kanban-plugin: basic
 ## **Sunday** *[[Journal/2022-11-06|2022-11-06]]* (6)
 
 - [ ] ### **🏆 Purpose**:
-- [ ] Start reading ATO tax articles.
+- [x] Start reading ATO tax articles.
 - [x] Where do people find real estate?<br><br>Domain<br>Realestate<br>onthehouse<br><br>Put your name down with realtors and you'll get given listings before they're public, apparently.
 - [ ] ==1==<br>Listen to EM while running
 - [ ] ==1==<br>What is DeFi?
