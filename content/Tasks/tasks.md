@@ -18,6 +18,7 @@ kanban-plugin: basic
 - [ ] ==1==<br>Make style improvements to Structs.sh and open a PR.
 - [ ] ==1==<br>**Join a running club/meetup. Seriously, this is highly endorsed idea by Spark.**
 - [ ] ==1==<br>Ask mum/dad/brother: assuming next year housing prices reach a bottom, does this actually help me? Wouldn't interest rates be high enough that the advantage of lower house prices is possibly nullified by higher mortgage rates unless they drop very quickly after? Otherwise wouldn't every investor just capitalise on this opportunity especially since they're all anticipating low prices next year?
+- [ ] Come up with something to do with Waleed.
 
 
 ## **Monday** *[[Journal/2022-11-07|2022-11-07]]* (6)
