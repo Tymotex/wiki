@@ -20,15 +20,20 @@ With a more complex tax system, it's necessary for individuals and firms alike t
 *Tax avoidance* is strategically minimising the amount of tax you pay, within legality. It mostly does not involve deception or dishonesty like in tax evasion.
 
 ## Tax Efficiency
-A process is considered tax efficient if it achieves the minimum tax paid out of other alternative processes while achieving the same outcome. In investing, you should structure your investments to pay the least amount of taxes possible.
+A process is considered tax-efficient if it achieves the minimum tax paid out of other alternative processes while achieving the same outcome. In investing, you should structure your investments to pay the least amount of taxes possible.
+
+Usually, index [[Knowledge/Investing/Exchange Traded Funds|ETFs]] are considered more tax-efficient compared to managed [[Knowledge/Investing/Mutual Funds|mutual funds]] and [[Knowledge/Investing/Listed Investment Companies|LICs]] due to low turnover (how quickly securities are bought or sold), resulting in fewer realised capital gains being taxed.
 
 ## ETF Tax
 As an ETF investor, pay attention to the following:
 - You need to pay tax on 2 things: your *distributions* (dividends) and *capital gains*.
+    - The distributions consist of cash and non-cash components. The ETF issuer sends you a document outlining the distributions' components (cash, franking credits, foreign credits, etc.)
+- You're receiving the full benefits of [[Knowledge/Investing/Franking Credits|franking credits]].
+- 50% capital gains tax discount on investments held for over 12 months.
+- Withheld foreign income, if the ETF invests in overseas companies. 
+    - If you buy US-domiciled ETFs, 30% of the income is withheld on distributions. Some of this is reclaimable by completing a [[Knowledge/Investing/W-8BEN|W-8BEN]] form.
 
 
 
-
-TODO: https://www.investopedia.com/terms/t/tax-efficiency.asp
 
 
