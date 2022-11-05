@@ -14,3 +14,5 @@ You accomplish rebalancing by:
 - Buying more of the underperformer (called *accumulation*).
 - Selling the overperformer (called *distribution*).
     - Also note that selling *realises* capital gains, which is **less tax efficient** because you no longer can earn compounded money on the would-be delayed tax payment. 
+
+> Mr. Bogle points to research Vanguard has done comparing stock and bond portfolios that were annually rebalanced and those not rebalanced at all. The results show the rebalanced portfolios outperformed buy by a margin so slight it can be attributed to noise as much as the strategy. His conclusion: "Rebalancing is a personal choice, not a choice that statistics can validate. There's certainly nothing the matter with doing it (although I don't do it myself), but also no reason to slavishly worry about small changes in the equity ratio." — The Simple Path to Wealth.

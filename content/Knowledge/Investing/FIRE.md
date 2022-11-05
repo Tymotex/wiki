@@ -9,4 +9,6 @@ FIRE depends heavily on aggressive saving for investing. For example, a savings 
 ## Trinity Study
 The [Trinity Study](https://en.wikipedia.org/wiki/Trinity_study) is the origin of the 4% rule where you *should* be able to draw 4% of your portfolio each year for 30 years without depleting your portfolio.
 
+> "When you can live on 4% of your investments per year, you are financially independent." — The Simple Path to Wealth.
+
 > "If history is any guide for the future, then withdrawal rates of 3% and 4% are extremely unlikely to exhaust any portfolio of stocks and bonds..."
