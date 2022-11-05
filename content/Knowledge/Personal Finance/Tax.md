@@ -29,10 +29,9 @@ As an ETF investor, pay attention to the following:
 - You need to pay tax on 2 things: your *distributions* (dividends) and *capital gains*.
     - The distributions consist of cash and non-cash components. The ETF issuer sends you a document outlining the distributions' components (cash, franking credits, foreign credits, etc.)
 - You're receiving the full benefits of [[Knowledge/Investing/Franking Credits|franking credits]].
-- 50% capital gains tax discount on investments held for over 12 months.
+- [50% capital gains tax discount](https://www.ato.gov.au/individuals/capital-gains-tax/calculating-your-cgt/) on investments held for over 12 months.
 - Withheld foreign income, if the ETF invests in overseas companies. 
     - If you buy US-domiciled ETFs, 30% of the income is withheld on distributions. Some of this is reclaimable by completing a [[Knowledge/Investing/W-8BEN|W-8BEN]] form.
-
 
 
 
