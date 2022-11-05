@@ -458,12 +458,26 @@ kanban-plugin: basic
 
 
 
+## **Saturday** *[[Journal/2022-11-05|2022-11-05]]* (6)
+
+- [x] Ask mum for $5k
+- [x] Write a bit on all the index funds you listed.
+- [x] Write factors in picking an ETF.
+- [x] Install UniSuper and Stake.
+- [x] Read this: https://www.reddit.com/r/fiaustralia/comments/jvo8ku/vdhg_review_is_this_a_good_investment_to_help/
+- [x] Trinity study
+- [x] Does higher interest rate reduce house prices? Does it actually help buyers though?
+- [x] Why do markets open and close? Eg. why does the ASX not work on weekends?
+- [x] What are trusts?
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
