@@ -470,12 +470,21 @@ kanban-plugin: basic
 - [x] Why do markets open and close? Eg. why does the ASX not work on weekends?
 - [x] What are trusts?
 
+## **Sunday** *[[Journal/2022-11-06|2022-11-06]]* (6)
+
+- [x] Start reading ATO tax articles.
+- [x] Where do people find real estate?<br><br>Domain<br>Realestate<br>onthehouse<br><br>Put your name down with realtors and you'll get given listings before they're public, apparently.
+- [x] ==1==<br>Simple Path to Wealth summary
+- [x] ==1==<br>Ask mum/dad/brother: assuming next year housing prices reach a bottom, does this actually help me? Wouldn't interest rates be high enough that the advantage of lower house prices is possibly nullified by higher mortgage rates unless they drop very quickly after? Otherwise wouldn't every investor just capitalise on this opportunity especially since they're all anticipating low prices next year?
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
