@@ -6,6 +6,7 @@ kanban-plugin: basic
 
 ## Programming & Career
 
+- [ ] **(1 hour)**<br>Determine what the next steps would be to getting a language school started.<br>#project #mum
 - [ ] [[_/Writing first blog  and publishing on Medium.]]
 - [ ] Get started with your procedural generation project.
 - [ ] **Learn Kubernetes** [the hard way](https://github.com/kelseyhightower/kubernetes-the-hard-way)

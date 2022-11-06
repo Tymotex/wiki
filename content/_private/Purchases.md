@@ -20,3 +20,5 @@ title: Purchases
 - Adjustable dumbbell set.
 - Good pillow.
 - Guitar finger picks that aren't clunky.
+- Cooling blanket.
+- Cooling mattress or bed temperature controller.

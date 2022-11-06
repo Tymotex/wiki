@@ -9,8 +9,6 @@ kanban-plugin: basic
 - [ ] **(30 mins)**<br>What is the purpose of the privacy policy? Do I need one? Write a new privacy policy page component if so.<br>#konflux
 - [ ] Should I stay open-source but add a license or should I go closed-source?<br>#konflux
 - [ ] Check out cronofy API<br>#konflux
-- [ ] Try Illustrator and use it re-make the logo. <br>#konflux
-- [ ] **(1 horu)**<br>Try [curvaceous background](https://www.youtube.com/watch?v=lPJVi797Uy0&ab_channel=Fireship).<br>#konflux
 
 
 ## [[_archive/Building a Second Brain/Building a Second Brain|Building a Second Brain]]
@@ -47,7 +45,7 @@ kanban-plugin: basic
 
 ## [[Reading/Reading|Reading]]
 
-- [ ] **(45 mins)**<br>Read Four Thousand Weeks.<br>#reading #recurring
+- [ ] **(1 hour)**<br>Read How to Not Die<br>#reading #recurring
 - [ ] **(45 mins)**<br>Read How to Not Die.<br>#reading #recurring
 - [ ] **(45 mins)**<br>Read On Writing Well.<br>#reading #recurring
 - [ ] **(45 mins)**<br>Read The Obstacle Is the Way.<br>#reading #recurring
@@ -55,6 +53,7 @@ kanban-plugin: basic
 - [ ] **(45 mins)**<br>Read Psychology of Selling.<br>#reading #recurring
 - [ ] **(45 mins)**<br>Read The War of Art.<br>#reading #recurring
 - [ ] **(45 mins)**<br>Read The Selfish Gene.<br>#reading #recurring
+- [ ] **(1 hour)**<br>Read How to Not Die<br>#reading #recurring
 
 
 ## Dieting

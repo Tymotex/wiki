@@ -7,4 +7,6 @@ title: Market Capitalisation
 - *Mid-cap* is $\geq \$2 \text{ billion}$
 - *Large-cap* is $\geq \$10 \text{ billion}$
 
-Generally, the greater the market capitalisation, the less risky an investment is.
+Generally:
+- The greater the market capitalisation, the less risky an investment is. 
+- The lesser the market capitalisation, the lower the trading volume and the less liquid an investment is (since there are fewer buyers and sellers).

@@ -405,12 +405,126 @@ kanban-plugin: basic
 - [x] **(1.25 hour)**<br>Implement enhancements.<br>#konflux
 - [x] **(25 mins)**<br>Finalise the air tickets.
 
+## **Friday** *[[Journal/2022-10-21|2022-10-21]]* (6)
+
+
+
+## **Saturday** *[[Journal/2022-10-22|2022-10-22]]* (6)
+
+
+
+## **Sunday** *[[Journal/2022-10-23|2022-10-23]]* (6)
+
+
+
+## **Monday** *[[Journal/2022-10-24|2022-10-24]]* (6)
+
+
+
+## **Tuesday** *[[Journal/2022-10-25|2022-10-25]]* (6)
+
+
+
+## **Wednesday** *[[Journal/2022-10-26|2022-10-26]]* (6)
+
+
+
+## **Thursday** *[[Journal/2022-10-27|2022-10-27]]* (6)
+
+
+
+## **Friday** *[[Journal/2022-10-28|2022-10-28]]* (6)
+
+- [x] **(1 hour)**<br>Finish Structs.sh review.<br><br>Ask: am I good to continue working on this?
+- [x] **(30 mins)**<br>Try FitBit recovery methods or escalate.
+- [x] **(30 mins)**<br>Clear out all emails.
+- [x] **(30 mins)**<br>Finish HireRight.
+
+## **Saturday** *[[Journal/2022-10-29|2022-10-29]]* (6)
+
+
+
+## **Sunday** *[[Journal/2022-10-30|2022-10-30]]* (6)
+
+
+
+## **Monday** *[[Journal/2022-10-31|2022-10-31]]* (6)
+
+- [x] Purpose: investing.
+- [x] Suggest redesign of the homepage to Dom. Send pics of haikei.<br>- Replace visualiser buttons with a menu of icons.<br>- Round all the boxes in visualiser.
+- [x] **(25 mins)**<br>Determine shopping list.<br>- [x] hair dryer<br>- [x] fan<br>- [x] floss picks<br>- [x] mouth tape<br>- [x] pho ingredients
+
+## **Tuesday** *[[Journal/2022-11-01|2022-11-01]]* (6)
+
+
+
+## **Saturday** *[[Journal/2022-11-05|2022-11-05]]* (6)
+
+- [x] Ask mum for $5k
+- [x] Write a bit on all the index funds you listed.
+- [x] Write factors in picking an ETF.
+- [x] Install UniSuper and Stake.
+- [x] Read this: https://www.reddit.com/r/fiaustralia/comments/jvo8ku/vdhg_review_is_this_a_good_investment_to_help/
+- [x] Trinity study
+- [x] Does higher interest rate reduce house prices? Does it actually help buyers though?
+- [x] Why do markets open and close? Eg. why does the ASX not work on weekends?
+- [x] What are trusts?
+
+## **Sunday** *[[Journal/2022-11-06|2022-11-06]]* (6)
+
+- [x] Start reading ATO tax articles.
+- [x] Where do people find real estate?<br><br>Domain<br>Realestate<br>onthehouse<br><br>Put your name down with realtors and you'll get given listings before they're public, apparently.
+- [x] ==1==<br>Simple Path to Wealth summary
+- [x] ==1==<br>Ask mum/dad/brother: assuming next year housing prices reach a bottom, does this actually help me? Wouldn't interest rates be high enough that the advantage of lower house prices is possibly nullified by higher mortgage rates unless they drop very quickly after? Otherwise wouldn't every investor just capitalise on this opportunity especially since they're all anticipating low prices next year?
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
