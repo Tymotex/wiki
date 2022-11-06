@@ -8,6 +8,8 @@ TODO: you've got to emphasise the weekly task to clear out your todos. Make sure
 
 ![[Reading/assets/sisyphus.png|500]]
 
+> The average human lifespan is absurdly, terrifyingly, insultingly short. But that isn't a reason for unremitting despair, or for living in an anxiety-fueld panic about making the most of your limited time. it's a cause for relief. You get to give up on something that was always impossible — the quest to become the optimised, infinitely capable, emotionally invincible, fully independent person you're officially supposed to be. Then you get to roll up your sleeves and start work on what's gloriously possible instead.
+
 > Time management is all life is.
 
 We're always constantly shifting the goalpost forward with what we want out of life. We constantly "nominate new and better Joneses with whom to try to keep up" with.
@@ -114,4 +116,15 @@ Interestingly, when people's vacation times overlap, people tend to be substanti
 ## The Human Disease
 > The more humane approach is to drop such efforts as completely as you can. Let your impossible standards crash to the ground. Then pick a few meaningful tasks from the rubble and **get started on them today**.
 
+> It's easy to spend years treating your life as a dress rehearsal on the rationale that what you're doing, for the time being, is acquiring the skills and experience that will permit you to assume authoritative control of things later on.
 
+> ... there is no institution, no walk of life, in which everyone isn't just winging it, all the time.
+
+> It's alarming to face the prospect that you might never truly feel as though you know what you're doing, in work, marriage, parenting, or anything else. but it's liberating, too, because it removes a central reason for feeling self-conscious or inhibited about your performance in those domains in the present moment: if the feeling of total authority is never going to arrive, you might as well not wait any longer to give such activities your all — to put bold plans into practice, to stop erring on the side of caution.
+
+An approach to life: always greedily do the next most important thing. Ignore everything else as you do it.
+> ... if you do with conviction the next and most necessary thing, you are always doing something meaningful and intended by fate.
+
+> ... **focus on one big project at a time (or at most, one work project and one nonwork project) and see it to completion before moving on to what's next**.
+
+> ... whenever a generous impulse arises in your mind — to give money, check in on a friend, send an email praising someone's work — act on the impulse right away.
