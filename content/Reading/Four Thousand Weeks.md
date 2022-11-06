@@ -55,6 +55,10 @@ Finitude itself can be the sole source of meaning for things. It is the fact tha
 
 > For instance, it's precisely the fact that getting married forecloses the possibility of meeting someone else — someone who might genuinely have been a better marriage partner; who could ever say? — that makes marriage meaningful.
 
+> ... there's no possibility of a romantic relationship being truly fulfilling unless you're willing, at least for a while, to settle for that specific relationship, with all its imperfections — which means spurning the seductive lure of an infinite number of superior imaginary alternatives.
+
+> [Sam] Harris' point is that we should therefore try to treat every such experience with the reverence we'd show if it were the final instance of it.
+
 We forget how confounding it is that *anything* exists, let alone us. You did not do anything to deserve the right to exist. You just do. Isn't that enough reason to be grateful for the ride, regardless of how painful or miserable some of it is?
 > I happen to be alive, and there's no cosmic law entitling me to that status. Being alive is just happenstance, and not one more day of it is guaranteed.
 
@@ -65,3 +69,49 @@ We forget how confounding it is that *anything* exists, let alone us. You did no
 
 Limit the number of works in progress.
 > Perhaps the most appealing way to resist the truth about your finite time is to initiate a large number of projects at once; that way, you get to feel as though you're keeping plenty of irons in the fire and making progress on all fronts. Instead, what usually ends up happening is that you make progress on no fronts — because each time a project starts to feel difficult, or frightening, or boring, you can bounce off to a different one instead. You get to preserve your sense of being in control of things, but at the cost of never finishing anything important.
+
+> Buffett... tells the man to make a list of the top 25 things he wants out of life and then to arrange them in order, from the most important to the least. The top 5, Buffett says, should be those around which he organises his time. But contrary to what the pilot might have been expecting to hear, the remaining twenty, Buffett allegedly explains, aren't the second-tier priorities to which he should turn when he gets the chance. Far from it. In fact, **they're the ones he should actively avoid at all costs — because they're the ambitions insufficiently important to him to form the core of his life yet seductive enough to distract him from the ones that matter most**.
+
+## Attention
+Your entire life is just what you pay attention to.
+> Your experience of being alive consists of nothing other than the sum of everything to which you pay attention.
+
+> It's true that killing time on the internet often doesn't feel especially fun, these days. But it doesn't need to feel fun. **In order to dull the pain of finitude, it just needs to make you feel unconstrained**.
+
+## Presence
+Focusing on time corrupts the otherwise enriching experiences you have moment to moment. Having truly joyous moments becomes almost impossible when they all must serve some greater purpose of investment in the future.
+> Inevitably, we become obsessed with "using [time] well," whereupon we discover an unfortunate truth: the more you focus on using time well, the more each day begins to feel like something you have to get through, en route to some calmer, better, more fulfilling point in the future, which never actually arrives.
+
+The sad irony in the advice to just 'be more present' in life's experience is that it is done with an intent no different fundamentally to the mindset we're trying to escape — to get the most out of the time we have. When you take this mindset into 'being present', you fail to be present. The moment mustn't be treated as a means to an end, but the end in itself.
+> The problem is that the effort to be present in the moment, though it seems like the exact opposite of the instrumentalist, future-focused mindset I've been criticising in this chapter, is in fact just a slightly different version of it. You're so fixated on trying to make the best use of your time — in this case not for some later outcome, but for an enriching experience of life right now — that it obscures the experience itself.
+
+> **In order to most fully inhabit the only life you ever get, you have to refrain from using every spare hour for personal growth.**
+
+> And so in order to be a source of true fulfilment, a good hobby probably should feel a little embarrassing; that's a sign you're doing it for its own sake, rather than for some socially sanctioned outcome.
+
+## Patience
+> ... speed addiction tends to be socially celebrated. Your friends are more likely to praise you for being "driven."
+
+## Staying on the Bus
+Like a game without quests or a complications in the storyline:
+> ... a life devoid of all problems would contain nothing worth doing, and would therefore be meaningless.
+
+> Once you give up on the unattainable goal of eradicating all your problems, it becomes possible to develop an appreciation for the fact that life just is a process of engaging with problem after problem, giving each one the time it requires — that **the presence of problems in your life, in other words, isn't an impediment to a meaningful existence but the very substance of one**.
+
+> If you've decided to work on a given project for 50 minutes, the **once 50 minutes have elapsed, get up and walk away from it**. Why? Because as Boice explained, the urge to push onward beyond that point "includes a big component of impatience about not being finished, about not being productive enough, about never again finding such an ideal time" for work. **Stopping helps strengthen the muscle of patience that will permit you to return to the project again and again, and thus to sustain your productivity over an entire career.**
+
+## Community
+Interestingly, when people's vacation times overlap, people tend to be substantially happier during those times.
+> In 2013, a researcher from Uppsala in Sweden elegantly proved the connection between synchronisation and life satisfaction when he had the ingenious notion of comparing Swedes' vacation patterns against statistics on the rate at which pharmacists dispensed antidepressants.
+
+> ... synchrony is a portal to another dimension — to that sacred place where the boundaries of the self grow fuzzy, and time seems not to exist.
+
+## Cosmic Insignificance Therapy
+> When things all seem too much, what better solace than a reminder that they are, provided you're willing to zoom out a bit, indistinguishable from nothing at all? The anxieties that clutter the average life — relationship troubles, status rivalries, money worries — shrink instantly down to irrelevance. So do pandemics and presidencies, for that matter: the cosmos carries on regardless, calm and imperturbable.
+
+> Pursuing the life projects that matter to you the most will almost always entail not feeling fully in control of your time, immune to the painful assaults of reality, or confident about the future. It means embarking on ventures that might fail, perhaps because you'll find you lacked sufficient talent; it means risking embarrassment, holding difficult conversations, disappointing others, and [so on...] is all but guaranteed.
+
+## The Human Disease
+> The more humane approach is to drop such efforts as completely as you can. Let your impossible standards crash to the ground. Then pick a few meaningful tasks from the rubble and **get started on them today**.
+
+
