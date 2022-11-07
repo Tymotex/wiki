@@ -41,12 +41,11 @@ An *investment* is the purchase of an asset or commodity with the expectation of
 - [[Knowledge/Investing/Specialists|Specialists]] TODO
 - [[Knowledge/Investing/Market Maker|Market Maker]] TODO
 - [[Knowledge/Investing/Bid-Ask Spread|Bid-Ask Spread]] TODO
-
-- [[Knowledge/Investing/Derivatives|Derivatives]] TODO
-- [[Knowledge/Investing/Options|Options]] TODO
-- [[Knowledge/Investing/Futures|Futures]] TODO
-- [[Knowledge/Investing/Forwards|Forwards]] TODO
-- [[Knowledge/Investing/Swaps|Swaps]] TODO
+- [[Knowledge/Investing/Derivatives|Derivatives]]
+    - [[Knowledge/Investing/Options|Options]]
+    - [[Knowledge/Investing/Futures|Futures]]
+    - [[Knowledge/Investing/Forwards|Forwards]]
+    - [[Knowledge/Investing/Swaps|Swaps]]
 - [[Knowledge/Investing/Trusts|Trusts]]
 - [[Knowledge/Investing/Real Estate Investment Trusts|REITs]] TODO
 - [[Knowledge/Investing/Listed Investment Companies|LICs]] TODO
