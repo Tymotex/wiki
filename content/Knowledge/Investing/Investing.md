@@ -45,6 +45,8 @@ An *investment* is the purchase of an asset or commodity with the expectation of
 - [[Knowledge/Investing/Derivatives|Derivatives]] TODO
 - [[Knowledge/Investing/Options|Options]] TODO
 - [[Knowledge/Investing/Futures|Futures]] TODO
+- [[Knowledge/Investing/Forwards|Forwards]] TODO
+- [[Knowledge/Investing/Swaps|Swaps]] TODO
 - [[Knowledge/Investing/Trusts|Trusts]]
 - [[Knowledge/Investing/Real Estate Investment Trusts|REITs]] TODO
 - [[Knowledge/Investing/Listed Investment Companies|LICs]] TODO

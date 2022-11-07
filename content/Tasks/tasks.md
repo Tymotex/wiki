@@ -6,13 +6,13 @@ kanban-plugin: basic
 
 ## **Monday** *[[Journal/2022-11-07|2022-11-07]]* (6)
 
-- [ ] Listen to EM while running
-- [ ] ==2==<br><br>**(1 hour)**<br>Read How to Not Die<br>#reading #recurring
+- [ ] Continue filling out investing terms
 - [ ] ==2==<br><br>**(30 mins)**<br>Join Toastmasters. You must do it.
 - [ ] ==2==<br><br>Make style improvements to Structs.sh and open a PR.
 - [ ] Come up with something to do with Waleed.
+- [x] Listen to EM while running
+- [x] ==2==<br><br>**(1 hour)**<br>Read How to Not Die<br>#reading #recurring
 - [x] ==2==<br><br>**(1 hour)**<br>Finish Four Thousand Weeks, then extract out all quotes.
-
 
 
 ## **Tuesday** *[[Journal/2022-11-08|2022-11-08]]* (6)
@@ -21,14 +21,15 @@ kanban-plugin: basic
 - [ ] Find and get present for aunt
 
 
-
 ## **Wednesday** *[[Journal/2022-11-09|2022-11-09]]* (6)
 
 - [ ] ### **🏆 Purpose**:
 
 
-<<<<<<< HEAD
-=======
+## <<<<<<< HEAD
+
+
+
 ## **Thursday** *[[Journal/2022-11-10|2022-11-10]]* (6)
 
 - [ ] ### **🏆 Purpose**:
@@ -56,7 +57,6 @@ kanban-plugin: basic
 - [ ] ### **🏆 Purpose**:
 
 
->>>>>>> 0721a872be7c40c51e672758b003297283405b82
 ## Archive
 
 
