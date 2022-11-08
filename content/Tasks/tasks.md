@@ -7,7 +7,8 @@ kanban-plugin: basic
 ## **Wednesday** *[[Journal/2022-11-09|2022-11-09]]* (6)
 
 - [ ] **(1 hour)** Reboot yourself... journal and meditate.
-- [ ] **(15 mins)** Familiarise self with PR.
+- [ ] **(15 mins)** Familiarise self with PR.<br><br>How've you been?<br><br>Not bad, I've been reading books mainly.<br><br>How've you found the experience being project lead?<br><br>How's the team?<br><br>I heard Gordon was considering leading Structs for next year.<br><br>- [ ] How do you guys actually review PRs on GitHub?<br>- [ ] `style`<br>- [ ] Draggability?<br>- [ ] Next steps? Should I continue working on this? I left a bunch of todos in some of the files.
+- [ ] Find Britex alternative (if it's worth it)
 - [ ] Find and get present for aunt
 - [ ] Come up with something to do with Waleed.
 - [ ] Continue reading How Not to Die.
