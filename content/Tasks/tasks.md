@@ -7,7 +7,6 @@ kanban-plugin: basic
 ## **Monday** *[[Journal/2022-11-07|2022-11-07]]* (6)
 
 - [ ] Continue filling out investing terms
-- [ ] ==2==<br><br>**(30 mins)**<br>Join Toastmasters. You must do it.
 - [ ] ==2==<br><br>Make style improvements to Structs.sh and open a PR.
 - [ ] Come up with something to do with Waleed.
 - [x] Listen to EM while running
@@ -24,10 +23,6 @@ kanban-plugin: basic
 ## **Wednesday** *[[Journal/2022-11-09|2022-11-09]]* (6)
 
 - [ ] ### **🏆 Purpose**:
-
-
-## <<<<<<< HEAD
-
 
 
 ## **Thursday** *[[Journal/2022-11-10|2022-11-10]]* (6)
