@@ -32,8 +32,10 @@ An *investment* is the purchase of an asset or commodity with the expectation of
 - [[Knowledge/Investing/Market Capitalisation|Market Capitalisation]]
 - [[Knowledge/Investing/Leverage|Leverage]]
 - [[Knowledge/Investing/IPO|IPO]]
-- [[Knowledge/Investing/Buying a Home|Buying a Home]] TODO
 - [[Knowledge/Personal Finance/Real Estate|Real Estate]] TODO
+- [[Knowledge/Investing/Buying a Home|Buying a Home]] TODO
+- [[Knowledge/Investing/Selling a Home|Selling a Home]] TODO
+- [[Knowledge/Investing/House Hunting|House Hunting]] TODO
 - [[Knowledge/Investing/Stock Brokers|Stock Brokers]]
 - [[Knowledge/Investing/Online Brokers|Online Brokers]] TODO
 - [[Knowledge/Economics/macroeconomics/Liquidity|Liquidity]] TODO
