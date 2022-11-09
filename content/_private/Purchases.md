@@ -22,3 +22,4 @@ title: Purchases
 - Guitar finger picks that aren't clunky.
 - Cooling blanket.
 - Cooling mattress or bed temperature controller.
+- Kitchen scales for cooking and calorie counting.
