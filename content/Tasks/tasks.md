@@ -7,7 +7,6 @@ kanban-plugin: basic
 ## **Wednesday** *[[Journal/2022-11-09|2022-11-09]]* (6)
 
 - [ ] **(1 hour)** Reboot yourself... journal and meditate.
-- [ ] **(15 mins)** Familiarise self with PR.<br><br>How've you been?<br><br>Not bad, I've been reading books mainly.<br><br>How've you found the experience being project lead?<br><br>How's the team?<br><br>I heard Gordon was considering leading Structs for next year.<br><br>- [ ] How do you guys actually review PRs on GitHub?<br>- [ ] `style`<br>- [ ] Draggability?<br>- [ ] Next steps? Should I continue working on this? I left a bunch of todos in some of the files.
 - [ ] Find Britex alternative (if it's worth it)
 - [ ] Find and get present for aunt
 - [ ] Come up with something to do with Waleed.
@@ -16,6 +15,7 @@ kanban-plugin: basic
 
 ## **🏆 Purpose**:
 
+- [ ] **(2 hours)** Structs.sh<br>- [ ] How do you guys actually review PRs on GitHub?<br>- [ ] `style`<br>- [ ] Draggability?<br>- [ ] Next steps? Should I continue working on this? I left a bunch of todos in some of the files.<br><br>Pick vertex number from 5-10 randomly.<br>- Loops are not supported.<br><br>- Statically generate the graph layout.<br>- attr('markerUnits', 'userSpaceOnUse')<br><br>- Remove draggability.
 - [ ] Contact Toastmasters and tell them you'll sit in next week (19th Saturday 9-11am).
 
 
