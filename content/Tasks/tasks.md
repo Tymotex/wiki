@@ -4,24 +4,16 @@ kanban-plugin: basic
 
 ---
 
-## **Wednesday** *[[Journal/2022-11-09|2022-11-09]]* (6)
 
+## **Thursday** *[[Journal/2022-11-10|2022-11-10]]* (6)
 - [ ] **(1 hour)** Reboot yourself... journal and meditate.
 - [ ] Find Britex alternative (if it's worth it)
 - [ ] Find and get present for aunt
 - [ ] Come up with something to do with Waleed.
 - [ ] Continue reading How Not to Die.
-
-
-## **🏆 Purpose**:
-
+- [ ] Ask mum to buy me quinoa
 - [ ] **(2 hours)** Structs.sh<br>- [ ] How do you guys actually review PRs on GitHub?<br>- [ ] `style`<br>- [ ] Draggability?<br>- [ ] Next steps? Should I continue working on this? I left a bunch of todos in some of the files.<br><br>Pick vertex number from 5-10 randomly.<br>- Loops are not supported.<br><br>- Statically generate the graph layout.<br>- attr('markerUnits', 'userSpaceOnUse')<br><br>- Remove draggability.
 - [ ] Contact Toastmasters and tell them you'll sit in next week (19th Saturday 9-11am).
-
-
-## **Thursday** *[[Journal/2022-11-10|2022-11-10]]* (6)
-
-- [ ] ### **🏆 Purpose**:
 
 
 ## **Friday** *[[Journal/2022-11-11|2022-11-11]]* (6)
