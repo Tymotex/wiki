@@ -16,10 +16,12 @@ description: Nutrition
 - $\approx 85\%$ of your energy is sourced from fats and carbs. The remaining $\approx 15\%$ is sourced from proteins. ([Source](https://healthinfo.healthengine.com.au/introduction-to-nutrition))
     - The brain consumes $\approx 55\%$ of total energy.
 - All carbs must be processed into glucose for metabolism.
-- 
+
+**Topics**:
+- [[Knowledge/Health/Insulin|Insulin]]
+- [[Knowledge/Health/Antioxidants|Antioxidants]]
 
 ## Proteins
-
 
 ## Carbohydrates
 

@@ -5,12 +5,29 @@ description: Real Estate
 
 Real estate is physical land and property on that land (including its resources). It is a popular investment vehicle in markets where land and building prices increase over time.
 
-## Investing [TODO]
-Tax incentives for investors:
-- Negative gearing.
-- Property expenses are tax deductible. This includes interest on your mortgage.
-- Capital gains tax discounts.
-
+Arguments for and against real estate investing:
+- You can borrow to finance the asset, meaning you can **leverage** a huge amount. It's not possible to leverage to the same extent for other investments like shares.
+- **Transactions costs are huge, 'forcing' you to buy and hold for several years (7+)**. Any capital gains may be nullified by the transactions costs. Expect a total transaction cost of around 10% the purchase price of the property (stamp duty, real estate agent commissions, etc.)
+- **Illiquid**. You can't pull money out of your investments like for shares. This is sometimes argued as a strength because it keeps investors committed to buying and holding.
+- You have **finer control** over the investment compared to shares. With shares, you cannot determine how businesses operate. With real estate, you can make improvements (*sweat equity*) and negotiate for below-market prices.
+- Quality investments usually require **far greater starting sums**. You'd need several thousands of dollars to get started in real estate investing, which definitely isn't the case for shares.
+- Requires **far more of your time and energy** compared to passively investing in shares. Some time sinks include:
+	- Finding professionals to work with.
+	- Being a landlord.
+	- Researching suburbs and zoning.
+- You will be living with day-to-day **emotional challenges and toil** of being a investment property owner. **You should be interested in real estate**. If you have too many work/family obligations or want to channel your time/energy into starting a business, reconsider real estate as an investment. Some headaches include:
+	- Tenants causing problems.
+	- Building maintenance.
+	- Frustration dealing with real estate agents.
+- Tax incentives for investors:
+	- Negative gearing. Unlike other countries, Australia's tax system lets you make unlimited deductions for income losses on investment properties.
+		- If, according to the accounting, your property lost $20000 for this year, and your income was $100000, then you're only taxed on $80000.
+	- Property expenses are tax deductible:
+		- Interest on mortgage.
+		- Building depreciation.
+	- Capital gains tax reductions.
+		- 50% discount on CGT when you've held the property for over a year (which makes the vast majority of real estate investors eligible).
+	
 ## Interest Rate
 A higher interest rate decreases the *purchasing power* of buyers, reducing demand and therefore also bringing down house prices. 
 - Generally, a higher interest rate makes it harder for *both* home buyers and sellers. Overall, there will be fewer property transactions.
@@ -27,9 +44,10 @@ A higher interest rate decreases the *purchasing power* of buyers, reducing dema
 - For *negatively geared investments*, you can claim a tax deduction on the loss, which is better enjoyed by high income earners. This is a favourable tax policy for investors that also exists in some other countries such as Japan and New Zealand.
 
 ## Residential Real Estate Categories
-|                |     |     |
+| Type               | Description    |     |
 | -------------- | --- | --- |
-| Apartment/Flat |     |     |
+| House | Land value might constitute a huge share of the property's value (e.g. 70%).    |     |
+| Apartment/Flat | Land value constitutes a small share of the property's value (e.g. 10%).     |     |
 | Studio         |     |     | 
 | Townhouse      |     |     |
 | Condominium    |     |     |

@@ -2,7 +2,9 @@
 title: Purchases
 ---
 
-- Hair dryer (cheap but reliable with good reviews)
+- [x] Hair dryer (cheap but reliable with good reviews)
+- [ ] Convenient smoothie blender.
+- [ ] Fitbit for Mum.
 - Blackout curtains for better sleep.
 - Blue light filter glasses.
 - Liquid chalk

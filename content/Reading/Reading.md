@@ -115,7 +115,7 @@ Ikigai by Francesc Miralles and Hector Garcia. 'Ikigai' means 'reason for being'
 - Use a financial plan that lets you sleep best at night. Don't be arrogant enough to think you'll be unperturbed when the stock market wipes away your retirement savings.
 
 ### Four Thousand Weeks
-
+[[Reading/Four Thousand Weeks|Four Thousand Weeks]] by Oliver Burkeman.
 
 ---
 ## Science
@@ -128,7 +128,16 @@ Ikigai by Francesc Miralles and Hector Garcia. 'Ikigai' means 'reason for being'
 - Stress and recovery is a fundamental paradigm in biology. Stop thinking that stress is bad for you — it's essential towards coming back stronger, with the alternative being degeneration if you never subject yourself to stress.
 - Exercise tunes your neurotransmitter, hormones and growth factor to evolutionarily-optimal levels, rendering you bulletproof against stress, anxiety and depression, consistently leaving you ready to rise to life's challenges.
 
+### How to Not Die
+[[Reading/How Not to Die|How to Not Die]] 
+
 ---
 
 ## Fiction
 ### Crime and Punishment
+
+---
+## Investing
+### Property Investing for Dummies
+[[Reading/Property Investing For Dummies|Property Investing for Dummies]]
+
