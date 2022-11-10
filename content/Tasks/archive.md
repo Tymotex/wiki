@@ -477,12 +477,30 @@ kanban-plugin: basic
 - [x] ==1==<br>Simple Path to Wealth summary
 - [x] ==1==<br>Ask mum/dad/brother: assuming next year housing prices reach a bottom, does this actually help me? Wouldn't interest rates be high enough that the advantage of lower house prices is possibly nullified by higher mortgage rates unless they drop very quickly after? Otherwise wouldn't every investor just capitalise on this opportunity especially since they're all anticipating low prices next year?
 
+## **Monday** *[[Journal/2022-11-07|2022-11-07]]* (6)
+
+- [x] Listen to EM while running
+- [x] ==2==<br><br>**(1 hour)**<br>Read How to Not Die<br>#reading #recurring
+- [x] ==2==<br><br>**(1 hour)**<br>Finish Four Thousand Weeks, then extract out all quotes.
+
+## **Tuesday** *[[Journal/2022-11-08|2022-11-08]]* (6)
+
+
+
+## **Thursday** *[[Journal/2022-11-10|2022-11-10]]* (6)
+
+
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings

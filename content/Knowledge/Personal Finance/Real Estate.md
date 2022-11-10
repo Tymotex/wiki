@@ -56,12 +56,6 @@ A higher interest rate decreases the *purchasing power* of buyers, reducing dema
 | Mansions       |     |     |
 | Villas         |     |     |
 
-## Considerations
-
-Location is the greatest factor.
-
-
-
 ## Property Versus Shares
 Sources:
 - https://www.choosi.com.au/life-insurance/articles/investing-property-or-shares
