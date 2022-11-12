@@ -491,12 +491,25 @@ kanban-plugin: basic
 
 
 
+## **Friday** *[[Journal/2022-11-11|2022-11-11]]* (6)
+
+- [x] ==1==<br>Contact Toastmasters and tell them you'll sit in next week (19th Saturday 9-11am).
+- [x] ==1==<br>Ask mum to buy me quinoa
+- [x] ==1==<br>Find Britex alternative (if it's worth it)
+- [x] ==1==<br>**(1 hour)** Reboot yourself... journal and meditate.
+
+## **Saturday** *[[Journal/2022-11-12|2022-11-12]]* (6)
+
+
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
