@@ -16,7 +16,9 @@
 - It would be good to add a vertex or edge without reloading the graph.
     - For adding/removing edges without reloading the graph:
     Just modify the DOM directly. Don’t bother recreating the graph. It’s adding a node that is problematic since we don’t know where to put the node statically.
-- Self-linking nodes. Maybe just don’t support them entirely and treat it as bad user input.
+- ~~Self-linking nodes. Maybe just don’t support them entirely and treat it as bad user input.~~
+    - Decided to not support this.
+- Weight labels can be blocked by vertices above them.
 
 **Ideas**
 - Add a legend for tracking visited nodes.
