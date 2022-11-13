@@ -502,12 +502,20 @@ kanban-plugin: basic
 
 
 
+## **Sunday** *[[Journal/2022-11-13|2022-11-13]]* (6)
+
+- [x] Buy inspire 2 for mum.
+- [x] Mortgage payments vs. ETFs
+- [x] How to work with an accountant?
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
