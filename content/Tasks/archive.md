@@ -508,12 +508,18 @@ kanban-plugin: basic
 - [x] Mortgage payments vs. ETFs
 - [x] How to work with an accountant?
 
+## **Monday** *[[Journal/2022-11-14|2022-11-14]]* (6)
+
+
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
