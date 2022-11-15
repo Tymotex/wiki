@@ -512,12 +512,21 @@ kanban-plugin: basic
 
 
 
+## **Tuesday** *[[Journal/2022-11-15|2022-11-15]]* (6)
+
+- [x] ==1==<br>Pick the best Great Barrier Reef cruise and book it today.
+- [x] ==1==<br>Ask: how do we handle the switching of graph properties? E.g. unweighted/weighted, undirected/directed.
+- [x] **(6 hours)**<br>Structs.sh graph grind.
+- [x] Hostplus
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
