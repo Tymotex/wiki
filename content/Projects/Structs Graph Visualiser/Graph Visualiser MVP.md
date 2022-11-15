@@ -160,7 +160,7 @@ Agenda for next meeting:
 Styling improvements:
 - Round the visualiser controller boxes.
 - Reduce the sizing of the brand name.
-- Set the speed scale like YouTube, from 0.25 to 2.
 - Make the homepage look more stylish, but retaining simplicity.
 - Remove redundant pages.
 - Clean up features section.
+- Make the popover menus more readable (colour contrast too low).
