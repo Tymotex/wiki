@@ -154,3 +154,13 @@ Agenda for next meeting:
 - Code review.
 - Weightedness and directedness checkbox problem: should we have visualiser-specific controller components? Currently it's awkward to do.
 - Styling of the highlighted vertices and edges.
+
+---
+
+Styling improvements:
+- Round the visualiser controller boxes.
+- Reduce the sizing of the brand name.
+- Set the speed scale like YouTube, from 0.25 to 2.
+- Make the homepage look more stylish, but retaining simplicity.
+- Remove redundant pages.
+- Clean up features section.
