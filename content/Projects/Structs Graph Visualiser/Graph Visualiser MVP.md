@@ -19,6 +19,7 @@
 - ~~Self-linking nodes. Maybe just don’t support them entirely and treat it as bad user input.~~
     - Decided to not support this.
 - Weight labels can be blocked by vertices above them.
+    - Solved.
 
 **Ideas**
 - Add a legend for tracking visited nodes.
@@ -106,6 +107,8 @@ I also added the arrowheads for directed graphs, going both 1-way and 2-ways, an
 
 ![final first iteration demo|400](Projects/Structs%20Graph%20Visualiser/Graph%20Visualiser%20MVP/final-first-prototype.png)
 
+![[Projects/Structs Graph Visualiser/assets/Graph-MVP-1.mp4|600]]
+
 ---
 
 ## 15th Aug
@@ -134,4 +137,20 @@ I need to figure out how the BST resets the styling after the animation conclude
 
 ![integrated graph visualiser with dfs|700](Projects/Structs%20Graph%20Visualiser/Graph%20Visualiser%20MVP/integrated-prototype-demo.png)
 
+![[Projects/Structs Graph Visualiser/assets/Graph-MVP-2.mp4|600]]
+
 ---
+## 15th Nov
+- Refactored all the rendering code.
+- Fixed the arrowhead `<marker>` problem where we couldn't target specific arrowheads to apply styling to.
+- Angled the weight labels.
+- Fixed animation errors from before (vertices and edges were blacked out when the animation timeline was seeked with the slider).
+- Made the graph render statically (as opposed to showing the 'big-bang' animation where all the vertices rapidly move to its equilibrium position).
+
+![[Projects/Structs Graph Visualiser/assets/graph-mvp-15th-nov-demo-vid.mp4|600]]
+![[Projects/Structs Graph Visualiser/assets/graph-mvp-15th-nov.png|600]]
+
+Agenda for next meeting:
+- Code review.
+- Weightedness and directedness checkbox problem: should we have visualiser-specific controller components? Currently it's awkward to do.
+- Styling of the highlighted vertices and edges.
