@@ -1,5 +1,7 @@
 ---
+
 kanban-plugin: basic
+
 ---
 
 ## **Tuesday** *[[Journal/2022-11-15|2022-11-15]]* (6)
@@ -20,42 +22,52 @@ kanban-plugin: basic
 - [x] **(6 hours)**<br>Structs.sh graph grind.
 - [x] Hostplus
 
+
 ## **Wednesday** *[[Journal/2022-11-16|2022-11-16]]* (6)
 
 - [ ] ### **🏆 Purpose**:
+- [ ] Tell Yue you're joining storage sre.
+
 
 ## **Thursday** *[[Journal/2022-11-17|2022-11-17]]* (6)
 
 - [ ] ### **🏆 Purpose**:
 
+
 ## **Friday** *[[Journal/2022-11-18|2022-11-18]]* (6)
 
 - [ ] ### **🏆 Purpose**:
 
+
 ## **Saturday** *[[Journal/2022-11-19|2022-11-19]]* (6)
 
 - [ ] ### **🏆 Purpose**:
+
 
 ## **Sunday** *[[Journal/2022-11-20|2022-11-20]]* (6)
 
 - [ ] ### **🏆 Purpose**:
 - [ ] #### **(10 mins)** Weekly Review.
 
+
 ## **Monday** *[[Journal/2022-11-21|2022-11-21]]* (6)
 
 - [ ] ### **🏆 Purpose**:
+
 
 ## **Tuesday** *[[Journal/2022-11-22|2022-11-22]]* (6)
 
 - [ ] ### **🏆 Purpose**:
 
-***
 
 ## Archive
 
 
 
+
+
 %% kanban:settings
+```
 {"kanban-plugin":"basic"}
 ```
 %%
