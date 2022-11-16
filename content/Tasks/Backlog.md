@@ -32,19 +32,20 @@ kanban-plugin: basic
 
 ## Self-Improvement
 
-- [ ] **Invest** $1000 in an index fund.
+- [ ] Tell mum you'll be responsible for your own food. Try some variations in your diet (e.g. more heavily plant-based)
 - [ ] **Approach women and have dates.** Do it infrequently enough that it doesn't derail you. You *must* practice.
 - [ ] Join Toastmasters.
 - [ ] Rewatch this and be inspired. https://www.youtube.com/watch?v=I9hJ_Rux9y0&ab_channel=Kurzgesagt%E2%80%93InaNutshell
 - [ ] Find and join a **hobby group.**
 - [ ] Read a book on **writing.**
-- [ ] Schedule weekly and monthly reviews of your life.
 - [ ] Pick out the most useful articles from **moneysmart.gov.au** and read them.
 - [ ] Find some big goal for mum and dad. Maybe the next cruise? Perhaps time it for the end of 2023?<br><br>(Inspired by Man's Search for Meaning)
 - [ ] Plan 2023 first quarter in [[Tasks/Goals|Goals]].
 - [ ] [Read how to get mum and dad to exercise more](https://www.google.com/search?q=how+to+get+parents+to+exercise&rlz=1C1CHBF_en-GBAU1004AU1004&oq=how+to+get+parents+to+exercise&aqs=chrome..69i57.3576j0j7&sourceid=chrome&ie=UTF-8).
-- [ ] What are antioxidants?
 - [ ] Incorporate sprinting (interval training) into your running regimen.
+- [x] **Invest** $1000 in an index fund.
+- [x] Schedule weekly and monthly reviews of your life.
+- [x] What are antioxidants?
 
 
 ## Hobbies

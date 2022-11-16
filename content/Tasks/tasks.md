@@ -7,19 +7,23 @@ kanban-plugin: basic
 ## **Friday** *[[Journal/2022-11-11|2022-11-11]]* (6)
 
 - [ ] ==1==<br>Write notes on the different classes of fats:<br>- Saturated<br>- Unsaturated<br>- Polyunsaturated<br>- Polysaturated?<br>- Monounsaturated.
+- [ ] What are fatty acids? Eg. omega-3, 6, 9, etc.
+- [ ] Write notes on all the housing types. Include pics.
 - [ ] ==1==<br>Come up with something to do with Waleed.
-- [ ] ==1==<br>Continue reading How Not to Die.
+- [ ] Read BetaShares emails.
 - [ ] ==1==<br>**(2 hours)** Structs.sh<br>- [ ] How do you guys actually review PRs on GitHub?<br>- [ ] `style`<br>- [ ] Draggability?<br>- [ ] Next steps? Should I continue working on this? I left a bunch of todos in some of the files.<br><br>Pick vertex number from 5-10 randomly.<br>- Loops are not supported.<br><br>- Statically generate the graph layout.<br>- attr('markerUnits', 'userSpaceOnUse')<br><br>- Remove draggability.
 - [x] ==1==<br>Contact Toastmasters and tell them you'll sit in next week (19th Saturday 9-11am).
 - [x] ==1==<br>Ask mum to buy me quinoa
 - [x] ==1==<br>Find Britex alternative (if it's worth it)
 - [x] ==1==<br>**(1 hour)** Reboot yourself... journal and meditate.
+- [x] ==1==<br>Continue reading How Not to Die.
 
 
 ## **Saturday** *[[Journal/2022-11-12|2022-11-12]]* (6)
 
 - [ ] ### **🏆 Purpose**:
 - [ ] ==1==<br>Find and get present for aunt
+- [ ] Prepare script and questions to ask Andy Kohn
 
 
 ## **Sunday** *[[Journal/2022-11-13|2022-11-13]]* (6)

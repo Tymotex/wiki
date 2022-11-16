@@ -27,7 +27,20 @@ Arguments for and against real estate investing:
 		- Building depreciation.
 	- Capital gains tax reductions.
 		- 50% discount on CGT when you've held the property for over a year (which makes the vast majority of real estate investors eligible).
-	
+
+## Investing Strategy
+*Note*: ***your* home (principal place of residence) is not an investment property**. Despite this, home equity is considered a source of security for banks when they're approving further loans.
+
+As a new investor:
+- Diversification wisdom applies equally to real estate investing. Don't concentration your investments on one geographical location. For new investors, **buy away from an area where you live**, such as a different suburb.
+- Prefer freestanding houses over other dwelling types. It's harder to achieve positive cash flow, but the expected returns is higher because of the land you hold.
+- Consider buying an investment property, but living with your parents.
+
+Some strategies:
+- **Serial home selling** is a strategy where you acquire one house, move into it immediately, renovate it, sell it for no CGT, then repeat.
+- *Buying in the path of progress* is a (speculative) strategy where you buy undeveloped land in a place where development progress is likely. It depends on you being able to identify places with expected rapid population and job growth.
+- *Buy-and-flip* is a strategy where you buy a house at a bargain, optionally fix it up, then sell it at market value very soon after. It's said that opportunities for this have largely disappeared after the GFC.
+
 ## Interest Rate
 A higher interest rate decreases the *purchasing power* of buyers, reducing demand and therefore also bringing down house prices. 
 - Generally, a higher interest rate makes it harder for *both* home buyers and sellers. Overall, there will be fewer property transactions.
@@ -43,18 +56,81 @@ A higher interest rate decreases the *purchasing power* of buyers, reducing dema
 ***Negative** gearing* is when you take a loan to invest, but the income from that investment is still lower than the loan repayment. 
 - For *negatively geared investments*, you can claim a tax deduction on the loss, which is better enjoyed by high income earners. This is a favourable tax policy for investors that also exists in some other countries such as Japan and New Zealand.
 
-## Residential Real Estate Categories
-| Type               | Description    |     |
-| -------------- | --- | --- |
-| House | Land value might constitute a huge share of the property's value (e.g. 70%).    |     |
-| Apartment/Flat | Land value constitutes a small share of the property's value (e.g. 10%).     |     |
-| Studio         |     |     | 
-| Townhouse      |     |     |
-| Condominium    |     |     |
-| Duplex         |     |     |
-| Bungalows      |     |     |
-| Mansions       |     |     |
-| Villas         |     |     |
+## Dwelling Categories
+Dwelling definitions matter legally and will differ between different states/countries.
+- **Freestanding House** — single, *detached* dwellings which may also have a granny flat on the lot.
+	- Most expensive type of dwelling (in terms of purchase and ongoing fees like maintenance and land tax).
+	- Land value might constitute a huge share of the property's value (e.g. 70%). 
+- Apartment/Flat — Land value constitutes a small share of the property's value (e.g. 10%).
+	- Buying an apartment only makes you an owner of the "airspace" and "interior surfaces" of the unit. The commons areas belong to the body corporate.
+- Studio —
+- Terrace —
+- Townhouse — , considered an in-between of apartments and freestanding houses.
+- Condominium —
+- Semi —
+- Duplex —
+- Bungalows —
+- Mansion —
+- Villas —
+
+**Detached dwellings such as freestanding houses tend to perform better than attached dwellings** like apartments in the long term.
+- Most people prefer detached dwellings for privacy and more land.
+- Detached dwellings are easier to build and therefore oversupply.
+- Greater land means higher expected capital growth.
+
+Detached dwellings tend to have lower rental yields than attached dwellings, however.
+
+## Tax
+PPoRs and IPs have very different tax treatments.
+- PPoRs are completely free of CGT.
+	- TODO: you can't carelessly exploit this because you must actually live in the PPoR for a while. The ATO does not specify how long precisely, but you must be able to prove that you lived there by receiving utility bills in your name, and having it be where mail is directed.
+- Costs in maintenance, improvement, mortgage interest, etc. are tax-deductible for IPs, not PPoRs. For investors with a high marginal tax rate (e.g. 45%), the tax deductions are amazing.
+- TODO: you can hold a property as a PPoR for up to 6 years before you incur CGT, even if that property is tenanted. This works, provided you don't claim another home as a PPoR.
+
+**Converting a PPoR to an IP**:
+- You'll pay CGT from the date of conversion onwards.
+- You may be able to claim tax deductions on improvements you made, *while it was a PPoR*.
+
+## Zoning
+> The value of land is heavily dependent upon what you can develop on it. **Never purchase land without thoroughly understanding its zoning status and what you can and can't build on it**.
+
+## Private Treaty vs. Auction
+There are mainly 2 ways a residential property is sold:
+1. *Private treaty*: multiple anonymous offers are collected. The best one wins. 
+	- Anonymity is legally protected.
+	- These 'final' offers are still conditional (if negotiated) on the house passing building and pest inspection and formal approval from the bank.
+2. *Auction*: multiple people compete and announce their offers. The best one wins.
+	- Hiring a buyer's advocate is recommended to keep you in check.
+	- If there are too few or no bidders, then the auction reverts to a private treaty.
+	- Auctions can sometime produce inflated prices when two emotional bidders participate in the auction. 
+	- Agents may still try to get bids post-auction from the people who gave up during the actual auction, and push the winner's offer up even further.
+	- Auctions have an associated *reserve price*, which is the lowest possible price the seller is willing to sell for. If the auction winner's offer doesn't clear the reservation price set by the seller, it's not sold. The winner is invited to further negotiation with the seller.
+
+## Property Development
+Developing property carries a number of serious financial risks:
+1. **Long end-to-end time** involved in finding, buying, developing and selling the property. The time under development generates no income for you.
+2. **Subdividing and rezone rules** have changed since you bought the property.
+3. **Pissed off locals** who will protest against your developments and local councils who will take their side to win their favour, politically.
+4. **Builders going broke halfway**.
+5. Unprecedented macroeconomic effects might kill you.
+
+Given these risks, the expected return should be very high to compensate you for taking them.
+
+## Professional Contacts
+- It's generally true that *"you get what you pay for."*
+- Having your real estate team established early can help you can complete a transaction more quickly than other buyers, which the seller will favour.
+
+The key people to have in your real estate team are:
+1. **Solicitor/conveyancer**.
+	- This is essential. Buying a property without legal advice is heavily discouraged. It's possible to buy a book and learn DIY conveyancing.
+	- This is the person you send documents to for them to review for caveats.
+	- Think of a solicitor as a superset of a conveyancer. They can do everything required for conveyance, plus more. A solicitor is generally recommended, at a slightly higher expense, since they are full-fledged lawyers who are qualified to provide legal advice.
+2. **Lender** *or* **mortgage broker**.
+3. **Accountant** (i.e. tax experts).
+	- A competent accountant can provide useful feedback on your investing strategy (although they're not legally allowed to give financial advice).
+4. Building inspector.
+5. Buyer's advocate.
+6. Valuers.
 
 ## Property Versus Shares
 Sources:
@@ -65,15 +141,7 @@ Sources:
 
 **TODO**: tidy this section up.
 
-
-Low interest rates and government incentives make real estate investment more attractive.
-
-The power of leverage creates notably higher annual returns.
-
 > Investing in properties is more subject to micro events such as changes in taxes. This is especially true in a country like Belgium that is known for its fiscal uncertainties.
-
-Investing in real estate is harder, riskier and more complicated than index funds.
-
 
 Rental income can cover most or all of the mortgage, however you cannot rely on it because there may be times where your property is vacant.
 

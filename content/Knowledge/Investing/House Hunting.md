@@ -30,6 +30,9 @@ Apparently my house is R2, low density residential
 ## Pitfalls
 - Noise from motorways or train lines.
 
+## Dealing With Real Estate Agents
+> "The rule is an unwritten one, but **agents tend to estimate their price range within about 10% below the seller's reserve**. The seller can change their mind at the last moment to raise or lower their reserve [price]. That's out of an agent's power. But one thing is sure: **Agents have a vested interest in talking sellers' price expectations down to ensure a sale**." — Property Investing for Dummies.
+
 ## Determining Market Value
 Real estate agents give price guides, but you should be skeptical.
 - Look at the most recently sold prices of similar properties in the same area.

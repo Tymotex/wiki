@@ -13,6 +13,8 @@ Foods to try more of:
 - Oatmeal (for fibre).
 - Berries.
 - Nuts, seeds and grains.
+- Beets (especially beet juice)
+- Cranberry (try the cocktail recipe given in the book, with blended mint).
 
 
 
@@ -119,3 +121,31 @@ Pathogens originating from animals such as E. coli, salmonella, C. diff are far 
 
 ## Blood Pressure
 > The number-one risk factor for death in the world they identified is high blood pressure. Also known as hypertension, high blood pressure lays waste to 9 million people worldwide every year.
+
+Sodium appears to a primary cause of high blood pressure (among other things).
+> After a high-sodium meal, there is significantly less blood flow unless vitamin C is injected into the skin, which appears to reverse much of the sodium-induced suppression of blood vessel function.
+
+> The poultry industry commonly injects chicken carcasses with salt water to artificially inflate their weight, yet they can still be labelled "100% natural".
+
+The observed blood pressure of adolescents through to people 60+ years old in rural Africa and China (who have extremely low-sodium plant-based diets) is 110/70.
+> ... the ideal blood pressure, defined as the level at which lowering it further yields no additional benefit, is probably around 110/70.
+
+In a double-blind, placebo-controlled study, flaxseeds were able to reduce blood pressure of hypertensive participants from 158/82 to 143/75, which is more effective than the leading medications for reducing blood pressure.
+
+> Tested head-to-head against a leading blood pressure drug, two cups of strong hibiscus tea every morning was as effective in lowering subjects' blood pressure as a starting dose of the drug Captopril taken twice a day.
+
+Nitric oxide (NO) causes vasodilation. It's created from nitrates in our diet, of which dark green leafy vegetables are a great source of (and beets, rhubarb, and others).
+
+Interestingly, nitrates enable your body to extract more energy from oxygen.
+> For example, one little shot of beet juice has been found to allow free divers to hold their breath for a half minute longer than usual. After sipping beet juice, cyclists were able to perform at the same level of intensity while consuming 19 % less oxygen than the placebo group.
+
+> To maximise athletic performance, the ideal dose and timing appears to be a half cup of beet juice (or 3 three-inch beets, or a cup of cooked spinach) two to three hours before a competition.
+
+## Liver Disease
+> When it came to suppressing the growth of human liver cancer cells in a petri dish, cranberries beat out the other most common fruits in the United States... Other studies have found that cranberries are also effective in vitro against additional cancers, including those of the brain, breast, colon, lung, mouth, ovary, prostate, and stomach. Unfortunately, there have yet to be clinical studies of the effects of cranberries on cancer patients that confirm these findings.
+
+## Kidney Disease
+Animal proteins tend to cause the kidney to enter a state of 'hyperfiltration', while plant proteins don't. This is thought to be caused by the inflammation in response to animal products in the body.
+
+Phosphate salts are commonly injected into chicken meat to increase its weight and colour. Phosphates, however, are known to be 'vascular toxins' and almost entirely get absorbed into the bloodstream, just like heme iron.
+> It's easy to avoid added phosphorus in processed foods — just don't buy anything containing ingredients with the word "phosphate" in their names... With meat, it's more difficult to determine the phosphate content, as producers aren't required to disclose injected additives... Chicken appears to be the worst offender: A supermarket survey found more than 90% of chicken products contained phosphate additives.

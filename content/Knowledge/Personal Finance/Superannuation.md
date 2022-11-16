@@ -39,3 +39,8 @@ Consider using the government's [YourSuper comparison tool](https://www.ato.gov.
 
 ### Salary Sacrifice
 An Australia-specific term for an arrangement between you and your employer where you trade a portion of your salary for some benefit from the employer, provided at no greater cost to them. Eg. [[Reading/Barefoot Investor|Barefoot Investor]] recommends arranging a salary sacrifice to increase the employer’s super contributions to 15%.
+
+## Self-Managed Super Fund (SMSF)
+SMSFs give you the freedom to invest in virtually any asset class. You could borrow and directly hold residential investment properties through a SMSF, something industry funds won't offer to do for you.
+
+Making mistakes by failing to comply with certain laws is very costly.
