@@ -519,12 +519,19 @@ kanban-plugin: basic
 - [x] **(6 hours)**<br>Structs.sh graph grind.
 - [x] Hostplus
 
+## **Wednesday** *[[Journal/2022-11-16|2022-11-16]]* (6)
+
+- [x] **(1 hour)**<br>Finalise the PR.
+- [x] **(1 hour)**<br>Solve black animation problem.
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
