@@ -20,7 +20,13 @@ description: Nutrition
 **Topics**:
 - [[Knowledge/Health/Insulin|Insulin]]
 - [[Knowledge/Health/Antioxidants|Antioxidants]]
-- 
+- [[Knowledge/Health/Fats|Fats]] TODO
+- [[Knowledge/Health/Fatty Acids|Fatty Acids]] TODO
+- [[Knowledge/Health/Cholesterol|Cholesterol]] TODO
+- Carbohydrates
+- Proteins
+- Vitamins
+- Minerals
 
 ## Proteins
 
@@ -46,14 +52,8 @@ Polysaccharides are broken down and absorbed a slower rate than disaccharides.
 ## Fats
 - Avoid trans fat, animal fat and hydrogenated oils.
 - Omega-3 in fish is incredible.
-	> "One study showed that people who eat fish once a week slow the yearly rate of cognitive decline by 10%." — John Ratey in *Spark*.
+	> "One study showed that people who eat fish once a week slow the yearly rate of cognitive decline by 10%." — John Ratey in *Spark*
 
-### Trans fat
 
-## Vitamins
 
-## Minerals
-
-## Water
-
-## Fibre
+    
