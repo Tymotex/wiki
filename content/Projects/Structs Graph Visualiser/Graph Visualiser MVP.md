@@ -154,6 +154,8 @@ Agenda for next meeting:
 - Code review.
 - Weightedness and directedness checkbox problem: should we have visualiser-specific controller components? Currently it's awkward to do.
 - Styling of the highlighted vertices and edges.
+- Reset all... I couldn't get it to execute the `reset` method.
+- **Discussion point**: the passing of callbacks and arguments (`bind`s and `call`s) makes IDE features (like looking up references) unavailable to use.
 
 ---
 
