@@ -4,28 +4,14 @@ kanban-plugin: basic
 
 ---
 
-## **Thursday** *[[Journal/2022-11-17|2022-11-17]]* (6)
-
-- [ ] ==3==<br><br><br>Write notes on the different classes of fats:<br>- Saturated<br>- Unsaturated<br>- Polyunsaturated<br>- Polysaturated?<br>- Monounsaturated.
-- [ ] ==3==<br><br><br>How is the government structured in Aus. and what they do at each level?
-- [ ] ==3==<br><br><br>Try mortgage calculators.
-- [ ] ==3==<br><br><br>Come up with something to do with Waleed.
-- [ ] ==2==<br><br>Should I invest the rest of my money?
-- [ ] ==1==<br>Tell Yue you're joining storage sre.
-
-
-## **🏆 Purpose**:
-
-
-
-## **Friday** *[[Journal/2022-11-18|2022-11-18]]* (6)
-
-- [ ] ### **🏆 Purpose**:
-
-
 ## **Saturday** *[[Journal/2022-11-19|2022-11-19]]* (6)
 
-- [ ] ### **🏆 Purpose**:
+- [x] Test
+- [x] ==3==<br><br><br>Write notes on the different classes of fats:<br>- Saturated<br>- Unsaturated<br>- Polyunsaturated<br>- Polysaturated?<br>- Monounsaturated.
+- [ ] ==3==<br><br><br>Try mortgage calculators.
+- [ ] ==1==<br>Tell Yue you're joining storage sre.
+- [ ] ==2==<br><br>Should I invest the rest of my money?
+- [ ] ==3==<br><br><br>How is the government structured in Aus. and what they do at each level?
 
 
 ## **Sunday** *[[Journal/2022-11-20|2022-11-20]]* (6)
@@ -54,6 +40,7 @@ kanban-plugin: basic
 ## **Thursday** *[[Journal/2022-11-24|2022-11-24]]* (6)
 
 - [ ] ### **🏆 Purpose**:
+- [ ] Let Raymond know when to catch up.
 
 
 ## Archive
