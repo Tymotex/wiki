@@ -524,12 +524,19 @@ kanban-plugin: basic
 - [x] **(1 hour)**<br>Finalise the PR.
 - [x] **(1 hour)**<br>Solve black animation problem.
 
+## **Saturday** *[[Journal/2022-11-19|2022-11-19]]* (6)
+
+- [x] Test
+- [x] ==3==<br><br><br>Write notes on the different classes of fats:<br>- Saturated<br>- Unsaturated<br>- Polyunsaturated<br>- Polysaturated?<br>- Monounsaturated.
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
