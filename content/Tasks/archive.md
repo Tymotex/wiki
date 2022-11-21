@@ -529,12 +529,19 @@ kanban-plugin: basic
 - [x] Test
 - [x] ==3==<br><br><br>Write notes on the different classes of fats:<br>- Saturated<br>- Unsaturated<br>- Polyunsaturated<br>- Polysaturated?<br>- Monounsaturated.
 
+## **Sunday** *[[Journal/2022-11-20|2022-11-20]]* (6)
+
+- [x] ==4==<br><br><br><br>Try mortgage calculators.
+- [x] Get rid of unnecessary things in my room. Just have my bed and end table. That's it. No laptop charger either.
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
