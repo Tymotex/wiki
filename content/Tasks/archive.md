@@ -491,12 +491,58 @@ kanban-plugin: basic
 
 
 
+## **Friday** *[[Journal/2022-11-11|2022-11-11]]* (6)
+
+- [x] ==1==<br>Contact Toastmasters and tell them you'll sit in next week (19th Saturday 9-11am).
+- [x] ==1==<br>Ask mum to buy me quinoa
+- [x] ==1==<br>Find Britex alternative (if it's worth it)
+- [x] ==1==<br>**(1 hour)** Reboot yourself... journal and meditate.
+
+## **Saturday** *[[Journal/2022-11-12|2022-11-12]]* (6)
+
+
+
+## **Sunday** *[[Journal/2022-11-13|2022-11-13]]* (6)
+
+- [x] Buy inspire 2 for mum.
+- [x] Mortgage payments vs. ETFs
+- [x] How to work with an accountant?
+
+## **Monday** *[[Journal/2022-11-14|2022-11-14]]* (6)
+
+
+
+## **Tuesday** *[[Journal/2022-11-15|2022-11-15]]* (6)
+
+- [x] ==1==<br>Pick the best Great Barrier Reef cruise and book it today.
+- [x] ==1==<br>Ask: how do we handle the switching of graph properties? E.g. unweighted/weighted, undirected/directed.
+- [x] **(6 hours)**<br>Structs.sh graph grind.
+- [x] Hostplus
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
