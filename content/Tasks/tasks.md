@@ -6,7 +6,7 @@ kanban-plugin: basic
 
 ## **Saturday** *[[Journal/2022-12-03|2022-12-03]]* (6)
 
-- [ ] Should I invest the rest of my money?
+- [x] Should I invest the rest of my money?
 
 
 ## **Sunday** *[[Journal/2022-12-04|2022-12-04]]* (6)
