@@ -570,12 +570,18 @@ kanban-plugin: basic
 
 
 
+## **Saturday** *[[Journal/2022-12-03|2022-12-03]]* (6)
+
+- [x] Should I invest the rest of my money?
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings

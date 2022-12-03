@@ -3,7 +3,11 @@ title: Recipes
 ---
 
 **To learn**:
-
+- [ ] Bean soup
+- [ ] Tortillas
+- [ ] Bean burrito
+- [ ] Porridge
+- [ ] Apple/Fruit pie
 
 **Dishes**:
 - [[Areas/Cooking/Pickles|Pickles]]
@@ -19,4 +23,5 @@ title: Recipes
     - Chia seeds.
     - Turmeric.
 - Freeze fruits instead of crushing ice.
+- Use homemade soy milk or oat milk to cut costs.
 
