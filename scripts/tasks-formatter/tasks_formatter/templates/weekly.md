@@ -1,1 +1,1 @@
-- [ ] #### **(10 mins)** Weekly Review.
+- [ ] **(10 mins)** Weekly Review.
