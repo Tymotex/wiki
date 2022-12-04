@@ -4,6 +4,7 @@ title: Recipes
 
 **To learn**:
 - [ ] Bean soup
+- [ ] Pasta
 - [ ] Tortillas
 - [ ] Bean burrito
 - [ ] Porridge
