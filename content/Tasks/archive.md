@@ -574,12 +574,18 @@ kanban-plugin: basic
 
 - [x] Should I invest the rest of my money?
 
+## **Sunday** *[[Journal/2022-12-04|2022-12-04]]* (6)
+
+- [x] **(1 hour)**<br>Read The Mind Illuminated
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
