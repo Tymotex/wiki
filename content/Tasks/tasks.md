@@ -21,6 +21,7 @@ kanban-plugin: basic
 - [ ] ==1== **(1 hour)**<br>Mindfulness book.
 - [ ] ==1== **(20 mins)**<br>Meditation.
 - [ ] Obsidian dashboard
+- [ ] Uniqlo:<br>- Turtleneck wine colour.<br>- 2 x Basic grey shirts.
 
 
 ## **Wednesday** *[[Journal/2022-12-07|2022-12-07]]* (6)
