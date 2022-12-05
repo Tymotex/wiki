@@ -10,9 +10,9 @@ kanban-plugin: basic
 - [x] Morning routine
 - [ ] Evening routine (8pm, brush, journal, lay, phone)
 - [x] ING payments
+- [x] **(30 mins)** Write hair care guide.
 - [ ] Tell mum to move to a room with AC
 - [ ] Fix obsidian sync once and for all. Merge strategy? Forced exit sync.
-- [ ] **(30 mins)** Write hair care guide.
 - [ ] **(30 mins)** Start a male fashion page. <br><br>Write the basics. <br>Find pictures you like.<br>Make a task again to figure out what to wear to Google.
 - [ ] **(10 mins)** Switch Notion from UNSW email to personal email. Same with Figma.
 - [ ] **(30 min)**<br>Buy either the siphon or a pump and hose.
@@ -28,6 +28,7 @@ kanban-plugin: basic
 - [ ] ### **🏆 Purpose**:
 - [ ] **(25 mins pomodoro)**<br>Just refamiliarise self with Konflux. Plan how you'll finish it off over today and the next 2 days.
 - [ ] Find out whether a cooling blanket (or other accessories for cooler sleep) is worth it.
+- [ ] Find and buy:<br>- Hair spray<br>- Hair cream
 
 
 ## **Thursday** *[[Journal/2022-12-08|2022-12-08]]* (6)

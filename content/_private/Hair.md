@@ -2,32 +2,33 @@
 title: Hair
 ---
 
-TODO:
-- Shampoo materials?
-- Conditioner materials?
-
 **About my hair**:
 - Straight. 
     - This means it tends to be oilier because it's easier for oil to travel along the hair shaft.
 - Medium hair porosity (I think)
 - Fine hair texture
+    - Prefer protein-based shampoos.
 - Medium hair density (I think)
 - Oily hair
     - Overwashing may stimulate more sebum production. Prefer washing less frequently.
+    - Prefer water-based conditioner over oil-based.
 
 ## Shampoo
 Shampooing too often can strip hair of its natural oils and dry out scalp. The recommended frequency is once a week.
 
 ## Conditioner
-Unlike shampoo, it's recommended to use conditioner often.
+Unlike shampoo, it's recommended to use a *daily conditioner* often. If using both shampoo and conditioner, then apply conditioner after shampoo.
 
-Water-based
-
-Oil-based
-
-Leave-in conditioner.
-
-Rinse-out conditioner.
+**Properties to know**:
+- Moisturising — contains more hydrating ingredients.
+- Clarifying — reduces oil.
+- Volumising.
+- Thickening.
+- Water-based.
+- Oil-based.
+- Leave-in.
+- Rinse-out.
+- Sulfate-free — gentler on the scalp and hair.
 
 ## Scalp Exfoliation
 You need to get rid of dirt buildup and dead skin cells.
