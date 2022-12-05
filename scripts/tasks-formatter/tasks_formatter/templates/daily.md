@@ -1,1 +1,3 @@
-- [ ] **🏆 Purpose**:
+- [ ] 🏆 Purpose
+- [ ] 🌞 Morning routine
+- [ ] 🌙 Evening routine
