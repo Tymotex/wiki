@@ -4,6 +4,7 @@ kanban-plugin: basic
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## **Friday** *[[Journal/2022-11-11|2022-11-11]]* (6)
 
 - [ ] ==1==<br>Write notes on the different classes of fats:<br>- Saturated<br>- Unsaturated<br>- Polyunsaturated<br>- Polysaturated?<br>- Monounsaturated.
@@ -84,50 +85,46 @@ kanban-plugin: basic
 =======
 >>>>>>> 171f548c0f4178d7afe1bbd568a4981058298b2a
 ## **Monday** *[[Journal/2022-11-21|2022-11-21]]* (6)
+=======
+## **Monday** *[[Journal/2022-12-05|2022-12-05]]* (6)
+>>>>>>> 4bac93465bb0c4ed9ac7d967ee0a3e2a8ecbbfaa
 
 - [ ] ### **🏆 Purpose**:
-- [ ] ==1==
-### **🏆 Purpose**:
-- [ ] ==1==
-**(25 mins)**<br>Just work on Konflux.
-- [ ] ==4==
-<br><br><br>Should I invest the rest of my money?
-- [ ] ==5==
-<br><br><br><br>How is the government structured in Aus. and what they do at each level?
-- [ ] ==3==
-<br><br>Tell Yue you're joining storage sre.
+- [ ] **(25 mins pomodoro)**<br>Just refamiliarise self with Konflux. Plan how you'll finish it off over today and the next 2 days.
+- [ ] **(1 hour)**<br>Mindfulness book.
+- [ ] **(20 mins)**<br>Meditation.
+- [ ] **(30 min)**<br>Buy either the siphon or a pump and hose.
+- [ ] **(10 mins)**<br>Liter measurements.
 
-## **Tuesday** *[[Journal/2022-11-22|2022-11-22]]* (6)
+## **Tuesday** *[[Journal/2022-12-06|2022-12-06]]* (6)
 
 - [ ] ### **🏆 Purpose**:
-- [ ] **Join a running club/meetup. Seriously, this is highly endorsed idea by Spark.**
+- [ ] **(30 mins)**<br>Complete house income/expenses comparison and send to Teng for review.
 
-## **Wednesday** *[[Journal/2022-11-23|2022-11-23]]* (6)
-
-- [ ] ### **🏆 Purpose**:
-- [ ] Ask Waleed about catching up.
-
-## **Thursday** *[[Journal/2022-11-24|2022-11-24]]* (6)
-
-- [ ] ### **🏆 Purpose**:
-- [ ] Let Raymond know when to catch up.
-
-## **Friday** *[[Journal/2022-11-25|2022-11-25]]* (6)
+## **Wednesday** *[[Journal/2022-12-07|2022-12-07]]* (6)
 
 - [ ] ### **🏆 Purpose**:
 
-## **Saturday** *[[Journal/2022-11-26|2022-11-26]]* (6)
+## **Thursday** *[[Journal/2022-12-08|2022-12-08]]* (6)
 
 - [ ] ### **🏆 Purpose**:
 
-## **Sunday** *[[Journal/2022-11-27|2022-11-27]]* (6)
+## **Friday** *[[Journal/2022-12-09|2022-12-09]]* (6)
+
+- [ ] ### **🏆 Purpose**:
+
+## **Saturday** *[[Journal/2022-12-10|2022-12-10]]* (6)
+
+- [ ] ### **🏆 Purpose**:
+
+## **Sunday** *[[Journal/2022-12-11|2022-12-11]]* (6)
 
 - [ ] ### **🏆 Purpose**:
 - [ ] #### **(10 mins)** Weekly Review.
 
-## **Monday** *[[Journal/2022-11-28|2022-11-28]]* (6)
+## **Monday** *[[Journal/2022-12-12|2022-12-12]]* (6)
 
-- [ ] ### **🏆 Purpose**:
+- [ ] **🏆 Purpose**:
 
 ***
 

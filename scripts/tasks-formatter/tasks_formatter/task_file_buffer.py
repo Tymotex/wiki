@@ -113,7 +113,7 @@ class TaskFileBuffer:
                     num_days_from_target_date = date_index - curr_date_index
                     times_shifted = (int(match.group(2).strip("=")) if match.group(2) else 0) + num_days_from_target_date
                     task_description = match.group(3)
-                    reconstructed_task = f"- [{'X' if checked else ' '}] =={times_shifted}==\n{task_description.strip()}"
+                    reconstructed_task = f"- [{'X' if checked else ' '}] =={times_shifted}== {task_description.strip()}"
                     incomplete_tasks_from_prev_days.append(reconstructed_task)
                     tasks.remove(task)
 
