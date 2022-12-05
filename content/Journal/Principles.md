@@ -20,15 +20,13 @@ Following these principles makes my life meaningful.
 ## Heroes
 Who are my heroes? Who do I aspire to be like?
 
-Cal Newport
-
-David Goggins
-
-Elon Musk
-
-Lex Fridman
-
-Chris Williamson
+- Lex Fridman
+- Cal Newport
+- David Goggins
+- Elon Musk
+- Sam Harris
+- Chris Williamson
+- Dean Karnazes
 
 
 
