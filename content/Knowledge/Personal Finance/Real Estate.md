@@ -80,7 +80,32 @@ Dwelling definitions matter legally and will differ between different states/cou
 
 Detached dwellings tend to have lower rental yields than attached dwellings, however.
 
+## Expenses
+The main expenses to consider are:
+- Property maintenance.
+- Strata fee.
+- Land tax (which exists mainly for investment properties).
+	- The value of the land itself is taxed, not including the property's value.
+
 ## Tax
+### Ownership Structure
+Make sure to get property ownership structure right before signing the contract of sale. Claiming the property under your name may lead to more taxes being paid than claiming the property under a different ownership structure (e.g. jointly).
+- **Sole ownership**: cheapest and simplest. You, and you alone, can decide what to do with the property.
+	- Making the spouse that does not work the sole owner of a positively geared property is probably better.
+	- Making the higher earning spouse the sole owner of a negatively geared property is probably better due to larger tax deductions.
+		- If you own multiple IPs, keep in mind that the stacking of tax deductions may push you below your spouse's tax bracket, at which point it'd be better to exploit their higher tax bracket for deductions.
+- **Joint tenancy**: held by more than 1 individual, split evenly. The share of ownership due to death of any individual will be distributed to the remaining individuals.
+	- This tends to be best for similarly-earning couples.
+- **Tenants-in-common**: held by more than 1 individual, split according to defined proportions (unlike joint tenancy). 
+	- Allows people to pool together money to afford expensive homes.
+	- You're vulnerable to the mistakes of other owners. E.g. if one goes bankrupt, then you could be forced to have the property sold.
+- **Partnerships**: held by more than 1 individual indirectly through a *partnership*.
+	- Partners usually have *unlimited liability*, meaning you can be screwed by the decisions of another partner.
+- **Company**: held by a company.
+	- Has limited liability, meaning you don't get financially destroyed if the company dies.
+	- This is expensive due to fees necessary to ensure compliance to regulation.
+
+### PPoR and IPs
 PPoRs and IPs have very different tax treatments.
 - PPoRs are completely free of CGT.
 	- TODO: you can't carelessly exploit this because you must actually live in the PPoR for a while. The ATO does not specify how long precisely, but you must be able to prove that you lived there by receiving utility bills in your name, and having it be where mail is directed.
@@ -88,8 +113,19 @@ PPoRs and IPs have very different tax treatments.
 - TODO: you can hold a property as a PPoR for up to 6 years before you incur CGT, even if that property is tenanted. This works, provided you don't claim another home as a PPoR.
 
 **Converting a PPoR to an IP**:
-- You'll pay CGT from the date of conversion onwards.
-- You may be able to claim tax deductions on improvements you made, *while it was a PPoR*.
+- You'll pay CGT on any capital gains from the date of conversion onwards.
+- You may be able to claim tax deductions on improvements you made, *while it was a PPoR*. Things that weren't tax-deductible or depreciable may now be otherwise.
+	- This is why you should keep records in the event you convert your PPoR into an IP.
+
+## Gearing
+- Depreciation of wear-and-tearable things like the carpet, oven, blinds, etc. count as expenses and should be claimed to reduce your tax. Many of these things can't be claimed as a one-off tax deduction. These items have different lifespans (which may be entirely inaccurate but we must follow the ATO's guidelines):
+	- Carpets depreciate to $0 over 10 years.
+	- Buildings depreciate to $0 over 40 years.
+		- **Depreciation affects the costs basis** and therefore has tax impacts you should know about. If you depreciate a building's cost, which costs $100k let's say, for 1 year (for example), and then sell the property at $200k, your capital gain would actually be $102.5k, not $100k.
+	- Capital works (such as driveways) depreciate at the same rate as buildings.
+	- ... and so on. These lifespans are subject to change by the ATO.
+- Negative gearing is suited for a higher marginal tax rate individuals. Positive gearing is suited for lower marginal tax rate individuals.
+- Currently, there are no limits to how far you can negatively gear. You can even negatively gear to the point of having a negative taxable income (at which point, you owe no taxes and clearly don't benefit from deductions anymore).
 
 ## Zoning
 > The value of land is heavily dependent upon what you can develop on it. **Never purchase land without thoroughly understanding its zoning status and what you can and can't build on it**.
@@ -105,6 +141,7 @@ There are mainly 2 ways a residential property is sold:
 	- Auctions can sometime produce inflated prices when two emotional bidders participate in the auction. 
 	- Agents may still try to get bids post-auction from the people who gave up during the actual auction, and push the winner's offer up even further.
 	- Auctions have an associated *reserve price*, which is the lowest possible price the seller is willing to sell for. If the auction winner's offer doesn't clear the reservation price set by the seller, it's not sold. The winner is invited to further negotiation with the seller.
+	- Unlike private treaties where you can lay out all the terms, auctions require you to do all your due diligence before an offer (securing financing, building inspections, etc.)
 
 ## Property Development
 Developing property carries a number of serious financial risks:
@@ -119,6 +156,8 @@ Given these risks, the expected return should be very high to compensate you for
 ## Professional Contacts
 - It's generally true that *"you get what you pay for."*
 - Having your real estate team established early can help you can complete a transaction more quickly than other buyers, which the seller will favour.
+- Interview your professional contacts if you can, check their credentials, and call their references. This is pretty important if you hire property managers as poor management can lead to reduced profits and more property damage.
+- Where appropriate, the people you hire should have *professional indemnity insurance*.
 
 The key people to have in your real estate team are:
 1. **Solicitor/conveyancer**.
@@ -128,9 +167,39 @@ The key people to have in your real estate team are:
 2. **Lender** *or* **mortgage broker**.
 3. **Accountant** (i.e. tax experts).
 	- A competent accountant can provide useful feedback on your investing strategy (although they're not legally allowed to give financial advice).
-4. Building inspector.
-5. Buyer's advocate.
-6. Valuers.
+4. **Building inspector**.
+	- It's advised to never cheap out on a building inspection.
+5. **Buyer's advocate**.
+6. **Valuers**.
+	- They access to more data than you do. If they stop you from overpaying for a property, then their fee was very worth it.
+7. **Property manager**.
+	- Unless you have several IPs, it may be better to hire a property manager due to their economies of scale.
+8. **Tradespeople**.
+	- Plumber
+	- Electrician
+	- Gardener
+	- Carpenter
+	- Painter
+
+## Insurance
+Get insurance as soon as possible (usually before settlement). Treat insurance as a last (but necessary) resort and do everything you can to minimise risks yourself.
+- House and contents insurance
+	- Rebuilding costs following natural disasters.
+- Landlord's insurance
+	- Loss of rental income.
+	- Damage by tenants.
+- Public liability insurance
+	- Legal costs defending personal injury lawsuits.
+
+Also consider income and wealth preservation insurances like for life, TPD, trauma, etc. When your income is taken away temporarily or permanently, you may be forced to abandon your long-term investment plan and destroy your financial security.
+
+## Negotiation
+- Never reveal your upper limit (or just reveal as little about yourself as possible). The correct response to queries of how much you can pay is: "it depends on the property".
+- Always get an answer to "why is the vendor selling?" from the agent. Some vendors may just be testing the market.
+- Set an expiry time on your offer.
+- Seek to be the most knowledgeable about the property and be able to fully back up your offer with data (repair costs, other sold prices of similar properties, etc.)
+- Supposing the seller is hell-bent on a certain price, try to negotiate for chattels or repairs to identified problems in the building inspection.
+- Get quotes on repair work that's necessary, factoring in an additional amount for your time and energy for getting those repairs done. Use these to argue for deductions on the price.
 
 ## Property Versus Shares
 Sources:

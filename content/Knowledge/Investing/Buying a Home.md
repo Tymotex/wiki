@@ -23,4 +23,9 @@ See [[Knowledge/Personal Finance/Real Estate|real estate]].
 7. **Finalise loan** with the bank.
 8. **Pre-settlement**:
     - You are entitled to a pre-settlement inspection to verify that the house is still in the same condition.
+	 - Get insurance as soon as possible.
+	 - Consider changing locks.
 9. **Settlement**.
+	 - Expect lazy cleaning by the previous owner-occupier. 
+	 - The time prior to settlement allows for you to plan for getting the property tenanted as soon as possible. Get quotes for repairs during this time.
+	 - Ensure utility service providers have switched fully to you.

@@ -117,6 +117,9 @@ Ikigai by Francesc Miralles and Hector Garcia. 'Ikigai' means 'reason for being'
 ### Four Thousand Weeks
 [[Reading/Four Thousand Weeks|Four Thousand Weeks]] by Oliver Burkeman.
 
+### The Mind Illuminated
+[[Reading/The Mind Illuminated|The Mind Illuminated]] by John Yates.
+
 ---
 ## Science
 ### Why We Sleep

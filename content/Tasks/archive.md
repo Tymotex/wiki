@@ -519,12 +519,35 @@ kanban-plugin: basic
 - [x] **(6 hours)**<br>Structs.sh graph grind.
 - [x] Hostplus
 
+## **Wednesday** *[[Journal/2022-11-16|2022-11-16]]* (6)
+
+- [x] **(1 hour)**<br>Finalise the PR.
+- [x] **(1 hour)**<br>Solve black animation problem.
+
+## **Saturday** *[[Journal/2022-11-19|2022-11-19]]* (6)
+
+- [x] Test
+- [x] ==3==<br><br><br>Write notes on the different classes of fats:<br>- Saturated<br>- Unsaturated<br>- Polyunsaturated<br>- Polysaturated?<br>- Monounsaturated.
+
+## **Sunday** *[[Journal/2022-11-20|2022-11-20]]* (6)
+
+- [x] ==4==<br><br><br><br>Try mortgage calculators.
+- [x] Get rid of unnecessary things in my room. Just have my bed and end table. That's it. No laptop charger either.
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings

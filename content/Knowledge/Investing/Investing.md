@@ -36,11 +36,13 @@ An *investment* is the purchase of an asset or commodity with the expectation of
 - [[Knowledge/Investing/Mortgage|Mortgages]] TODO
 - [[Knowledge/Investing/Conveyancing|Conveyancing]] TODO
 - [[Knowledge/Investing/Building Inspection|Building inspection]] TODO
-- [[Knowledge/Investing/Pest Inspection|Pest inspection]] TODO
 - [[Knowledge/Investing/Rent vs. Buy|Rent vs. Buy]] TODO
+- [[Knowledge/Investing/Body Corporate|Body Corporate]] TODO
 - [[Knowledge/Investing/Buying a Home|Buying a Home]] TODO
 - [[Knowledge/Investing/Selling a Home|Selling a Home]] TODO
 - [[Knowledge/Investing/House Hunting|House Hunting]] TODO
+- [[Knowledge/Investing/Landlording|Landlording]] TODO
+- 
 - [[Knowledge/Investing/Stock Brokers|Stock Brokers]]
 - [[Knowledge/Investing/Online Brokers|Online Brokers]] TODO
 - [[Knowledge/Economics/macroeconomics/Liquidity|Liquidity]] TODO

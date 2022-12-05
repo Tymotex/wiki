@@ -4,7 +4,9 @@ title: Purchases
 
 - [x] Hair dryer (cheap but reliable with good reviews)
 - [ ] Convenient smoothie blender.
-- [ ] Fitbit for Mum.
+- [x] Fitbit for Mum.
+- [ ] Budget kitchen scale
+- [ ] Loop Quiet
 - Blackout curtains for better sleep.
 - Blue light filter glasses.
 - Liquid chalk
@@ -24,4 +26,3 @@ title: Purchases
 - Guitar finger picks that aren't clunky.
 - Cooling blanket.
 - Cooling mattress or bed temperature controller.
-- Kitchen scales for cooking and calorie counting.

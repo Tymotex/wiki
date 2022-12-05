@@ -28,3 +28,12 @@ These exemptions/concessions are not intended to help property investors.
 
 A point raised by the authors is that an interest-only loan is entirely tax deductible.
 > Australia's tax laws at the time of writing state that **interest paid on money borrowed to fund investments is tax-deductible**, whereas repayment of investment capital and personal, non-investment debt is *not* deductible.
+
+Pay attention to media hype and general sentiments around house prices at the moment.
+> The more headlines start screaming about how 'unaffordable' property prices are, the closer to a peak of a boom the market usually is... if everyone is talking about how easy it is to make money in property, the better the chances that the smart money is about to move on.
+
+Seek to be the person *most* knowledgeable about the potential home and its future opportunities for growth.
+
+> The reason that negotiating is so important to being successful with your real estate investments is this: You want to pay the seller only for the current value of the property as-is and **not the future potential that your skill and expertise will create**. 
+
+Keep in mind the difference the authors make between 'good' and 'bad' debt: *good debt is tax-deductible, bad debt is not*.
