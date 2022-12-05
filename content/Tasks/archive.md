@@ -578,12 +578,19 @@ kanban-plugin: basic
 
 - [x] **(1 hour)**<br>Read The Mind Illuminated
 
+## **Monday** *[[Journal/2022-12-05|2022-12-05]]* (6)
+
+- [x] Evening routine (8pm, brush, journal, lay, phone)
+- [x] **(10 mins)**<br>Liter measurements.
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
