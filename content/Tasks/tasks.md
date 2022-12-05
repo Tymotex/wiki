@@ -9,7 +9,7 @@ kanban-plugin: basic
 - [ ] **(1 hour)**<br>Mindfulness book.
 - [ ] **(20 mins)**<br>Meditation.
 - [ ] **(30 min)**<br>Buy either the siphon or a pump and hose.
-- [ ] **(10 mins)**<br>Liter measurements.
+- [x] **(10 mins)**<br>Liter measurements.
 
 ## **Tuesday** *[[Journal/2022-12-06|2022-12-06]]* (6)
 
