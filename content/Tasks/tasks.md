@@ -2,31 +2,22 @@
 kanban-plugin: basic
 ---
 
-## **Tuesday** *[[Journal/2022-12-06|2022-12-06]]* (6)
-
-- [x] ### **🏆 Purpose**: get through all tasks today
-- [x] Morning routine
-- [ ] Evening routine (8pm, brush, journal, lay, phone)
-- [x] ING payments
-- [x] **(30 mins)** Write hair care guide.
-- [ ] Tell mum to move to a room with AC
-- [ ] Fix obsidian sync once and for all. Merge strategy? Forced exit sync.
-- [ ] **(30 mins)** Start a male fashion page. <br><br>Write the basics. <br>Find pictures you like.<br>Make a task again to figure out what to wear to Google.
-- [ ] **(10 mins)** Switch Notion from UNSW email to personal email. Same with Figma.
-- [ ] **(30 min)**<br>Buy either the siphon or a pump and hose.
-- [ ] **(30 mins)** Tweak exercise regimen. Put running in the powerlifting spreadsheet and rename. Some goals: run 5km a day on all days except Monday and Tuesday. No time target, just 5km. Need barbell curls and reverse grip
-- [ ] **(30 mins)**<br>Complete house income/expenses comparison and send to Teng for review.
-- [ ] ==1== **(1 hour)**<br>Mindfulness book.
-- [ ] ==1== **(20 mins)**<br>Meditation.
-- [ ] Obsidian dashboard
-- [ ] Uniqlo:<br>- Turtleneck wine colour.<br>- 2 x Basic grey shirts.
-
 ## **Wednesday** *[[Journal/2022-12-07|2022-12-07]]* (6)
 
 - [ ] ### **🏆 Purpose**:
 - [ ] **(25 mins pomodoro)**<br>Just refamiliarise self with Konflux. Plan how you'll finish it off over today and the next 2 days.
 - [ ] Find out whether a cooling blanket (or other accessories for cooler sleep) is worth it.
 - [ ] Find and buy:<br>- Hair spray<br>- Hair cream
+- [ ] ==1== Evening routine (8pm, brush, journal, lay, phone)
+- [ ] ==1== Fix obsidian sync once and for all. Merge strategy? Forced exit sync.
+- [ ] ==1== **(10 mins)** Switch Notion from UNSW email to personal email. Same with Figma.
+- [ ] ==1== **(30 min)**<br>Buy either the siphon or a pump and hose.
+- [ ] ==1== **(30 mins)** Tweak exercise regimen. Put running in the powerlifting spreadsheet and rename. Some goals: run 5km a day on all days except Monday and Tuesday. No time target, just 5km. Need barbell curls and reverse grip
+- [ ] ==1== **(30 mins)**<br>Complete house income/expenses comparison and send to Teng for review.
+- [ ] ==2== **(1 hour)**<br>Mindfulness book.
+- [ ] ==2== **(20 mins)**<br>Meditation.
+- [ ] ==1== Obsidian dashboard
+- [ ] ==1== Uniqlo:<br>- Turtleneck wine colour.<br>- 2 x Basic grey shirts.
 
 ## **Thursday** *[[Journal/2022-12-08|2022-12-08]]* (6)
 
@@ -51,6 +42,12 @@ kanban-plugin: basic
 - [ ] **🏆 Purpose**:
 
 ## **Tuesday** *[[Journal/2022-12-13|2022-12-13]]* (6)
+
+- [ ] 🏆 Purpose
+- [ ] 🌞 Morning routine
+- [ ] 🌙 Evening routine
+
+## **Wednesday** *[[Journal/2022-12-14|2022-12-14]]* (6)
 
 - [ ] 🏆 Purpose
 - [ ] 🌞 Morning routine

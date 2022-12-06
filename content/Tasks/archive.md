@@ -583,12 +583,23 @@ kanban-plugin: basic
 - [x] Evening routine (8pm, brush, journal, lay, phone)
 - [x] **(10 mins)**<br>Liter measurements.
 
+## **Tuesday** *[[Journal/2022-12-06|2022-12-06]]* (6)
+
+- [x] ### **🏆 Purpose**: get through all tasks today
+- [x] Morning routine
+- [x] ING payments
+- [x] **(30 mins)** Write hair care guide.
+- [x] Tell mum to move to a room with AC
+- [x] **(30 mins)** Start a male fashion page. <br><br>Write the basics. <br>Find pictures you like.<br>Make a task again to figure out what to wear to Google.
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
