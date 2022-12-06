@@ -17,8 +17,8 @@ kanban-plugin: basic
 - [ ] ==1== **(30 mins)**<br>Complete house income/expenses comparison and send to Teng for review.
 - [ ] ==2== **(1 hour)**<br>Mindfulness book.
 - [ ] ==2== **(20 mins)**<br>Meditation.
-- [ ] ==1== Obsidian dashboard
-- [ ] ==1== Uniqlo:<br>- Turtleneck wine colour.<br>- 2 x Basic grey shirts.
+- [ ] Make a basic Obsidian dashboard.
+- [ ] Uniqlo:<br>- Turtleneck wine colour.<br>- 2 x Basic grey shirts.
 - [x] ==1== **(10 mins)** Switch Notion from UNSW email to personal email. Same with Figma.
 - [x] Is protein powder healthy? See Dr. Greger
 
