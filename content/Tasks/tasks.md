@@ -10,7 +10,6 @@ kanban-plugin: basic
 - [ ] **(25 mins pomodoro)**<br>Just refamiliarise self with Konflux. Plan how you'll finish it off over today and the next 2 days.
 - [ ] Find out whether a cooling blanket (or other accessories for cooler sleep) is worth it.
 - [ ] Devise a bulking plan
-- [ ] Is protein powder healthy? See Dr. Greger
 - [ ] Find and buy:<br>- Hair spray<br>- Hair cream
 - [ ] ==1== Evening routine (8pm, brush, journal, lay, phone)
 - [ ] ==1== Fix obsidian sync once and for all. Merge strategy? Forced exit sync.
@@ -22,6 +21,7 @@ kanban-plugin: basic
 - [ ] ==1== Obsidian dashboard
 - [ ] ==1== Uniqlo:<br>- Turtleneck wine colour.<br>- 2 x Basic grey shirts.
 - [x] ==1== **(10 mins)** Switch Notion from UNSW email to personal email. Same with Figma.
+- [x] Is protein powder healthy? See Dr. Greger
 
 
 ## **Thursday** *[[Journal/2022-12-08|2022-12-08]]* (6)

@@ -5,9 +5,10 @@ title: Recipes
 **To learn**:
 - [ ] Some Tempeh recipe
 - [ ] Bean soup
-- [ ] Pasta
 - [ ] Tortillas
 - [ ] Bean burrito
+- [ ] Tofu scramble with spinach, mushrooms, tomato, etc.
+- [ ] Creamy tomato and spinach pasta
 - [ ] Porridge
 - [ ] Apple/Fruit pie
 
