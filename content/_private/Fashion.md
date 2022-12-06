@@ -17,11 +17,24 @@ TODO:
 - Cowl neck hoodies?
 - Racer jacket?
 
-![[_private/assets/sleeve-rolling.png|350]]
+## Wardrobe
+### Work
+- Muscle fit short sleeve shirt
+- Oxford cloth button down
+- Skinny-fit chinos
+- Dark jeans
+- Dark suede chelsea
+
+### Winter casual
+- Dark turtleneck with coat.
+
+
 
 - Optimal fit is the most important thing to get right.
 - Avoid logos, prints, etc.
 
 ## Shirts
+Prefer non-iron shirts.
 - Oxford button-down
-- 
+
+![[_private/assets/sleeve-rolling.png|350]]
