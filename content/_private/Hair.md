@@ -58,3 +58,6 @@ Steps:
 5. Another chemical is applied which structurally creates curls in your hair.
 6. Rollers are undone, then your hair is washed.
 7. Final trims.
+
+## Inspiration
+![[_private/assets/robert-pattinson.png|300]]

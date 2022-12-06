@@ -11,9 +11,9 @@ kanban-plugin: basic
 - [ ] Find out whether a cooling blanket (or other accessories for cooler sleep) is worth it.
 - [ ] Devise a bulking plan
 - [ ] Find and buy:<br>- Hair spray<br>- Hair cream
+- [ ] **(30 min)**<br>Buy either the siphon or a pump and hose.
 - [ ] **(1 hour)**<br>Mindfulness book.
 - [ ] **(30 mins)** Tweak exercise regimen. Put running in the powerlifting spreadsheet and rename. Some goals: run 5km a day on all days except Monday and Tuesday. No time target, just 5km. Need barbell curls and reverse grip
-- [ ] **(30 min)**<br>Buy either the siphon or a pump and hose.
 - [ ] **(30 mins)**<br>Complete house income/expenses comparison and send to Teng for review.
 - [ ] Just get Obsidian Sync. Get the student discount.
 - [ ] Make a basic Obsidian dashboard.
