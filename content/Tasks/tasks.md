@@ -18,7 +18,7 @@ kanban-plugin: basic
 - [ ] 🏆 Purpose: Konflux
 - [ ] 🌙 Evening routine
 - [x] ==3== Fix wiki failing builds
-- [ ] Clear out all emails
+- [x] Clear out all emails
 - [ ] ==2== **(25 mins pomodoro)**<br>Just refamiliarise self with Konflux. Plan how you'll finish it off over today and the next 2 days.
 
 
