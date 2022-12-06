@@ -21,3 +21,7 @@ TODO:
 
 - Optimal fit is the most important thing to get right.
 - Avoid logos, prints, etc.
+
+## Shirts
+- Oxford button-down
+- 
