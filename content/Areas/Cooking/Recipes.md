@@ -3,6 +3,7 @@ title: Recipes
 ---
 
 **To learn**:
+- [ ] Some Tempeh recipe
 - [ ] Bean soup
 - [ ] Pasta
 - [ ] Tortillas
