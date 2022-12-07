@@ -26,6 +26,7 @@ kanban-plugin: basic
 
 - [ ] ### **🏆 Purpose**:
 - [ ] Just get Obsidian Sync. Get the student discount.
+- [ ] Relist plecos
 
 
 ## **Friday** *[[Journal/2022-12-09|2022-12-09]]* (6)
