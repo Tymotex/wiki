@@ -11,6 +11,7 @@ title: Purchases
     - [ ] Light blue OCBD
     - [ ] (Uniqlo) 2 x Basic grey shirts.
     - [ ] (Uniqlo) Turtleneck wine colour.
+    - [ ] Chino shorts.
 - Blackout curtains for better sleep.
 - Blue light filter glasses.
 - Liquid chalk
