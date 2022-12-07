@@ -7,16 +7,17 @@ kanban-plugin: basic
 ## **Wednesday** *[[Journal/2022-12-07|2022-12-07]]* (6)
 
 - [ ] ### **🏆 Purpose**:
+- [ ] Change water.
 - [ ] Read what measurements I need. Measure out everything about your body for selecting clothes.
 - [ ] Find and buy:<br>- Hair spray<br>- Hair cream
 - [ ] Find and buy apple watch
 - [ ] **(30 min)**<br>Buy either the siphon or a pump and hose.
 - [ ] Find out whether a cooling blanket (or other accessories for cooler sleep) is worth it.
-- [ ] **(25 mins pomodoro)**<br>Just refamiliarise self with Konflux. Plan how you'll finish it off over today and the next 2 days.
-- [ ] Devise a bulking plan
-- [ ] **(1 hour)**<br>Mindfulness book.
 - [ ] **(30 mins)**<br>Complete house income/expenses comparison and send to Teng for review.
-- [ ] Make a basic Obsidian dashboard.
+- [ ] **(1 hour)**<br>Mindfulness book.
+- [ ] **(25 mins pomodoro)**<br>Just refamiliarise self with Konflux. Plan how you'll finish it off over today and the next 2 days.
+- [x] Make a basic Obsidian dashboard.
+- [x] Devise a bulking plan
 - [x] ==1== **(10 mins)** Switch Notion from UNSW email to personal email. Same with Figma.
 - [x] Is protein powder healthy? See Dr. Greger
 - [x] **(30 mins)** Tweak exercise regimen. Put running in the powerlifting spreadsheet and rename. Some goals: run 5km a day on all days except Monday and Tuesday. No time target, just 5km. Need barbell curls and reverse grip
