@@ -5,12 +5,12 @@ title: Purchases
 - [x] Hair dryer (cheap but reliable with good reviews)
 - [ ] Convenient smoothie blender.
 - [x] Fitbit for Mum.
-- [ ] Budget kitchen scale
-- [ ] Loop Quiet
+- [ ] ~~Budget kitchen scale~~ (this is overkill)
+- [ ] ~~Loop Quiet~~ (got cheaper ear plugs)
 - Clothes:
-    - [ ] 
-    - [ ] (Uniqlo) Turtleneck wine colour.
+    - [ ] Light blue OCBD
     - [ ] (Uniqlo) 2 x Basic grey shirts.
+    - [ ] (Uniqlo) Turtleneck wine colour.
 - Blackout curtains for better sleep.
 - Blue light filter glasses.
 - Liquid chalk
