@@ -7,6 +7,10 @@ title: Purchases
 - [x] Fitbit for Mum.
 - [ ] Budget kitchen scale
 - [ ] Loop Quiet
+- Clothes:
+    - [ ] 
+    - [ ] (Uniqlo) Turtleneck wine colour.
+    - [ ] (Uniqlo) 2 x Basic grey shirts.
 - Blackout curtains for better sleep.
 - Blue light filter glasses.
 - Liquid chalk

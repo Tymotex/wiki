@@ -17,6 +17,8 @@ TODO:
 - Cowl neck hoodies?
 - Racer jacket?
 
+
+
 ## Principles
 - Optimal fit is the most important thing to get right.
 - Avoid logos, prints, etc.
