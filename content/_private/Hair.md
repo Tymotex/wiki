@@ -44,6 +44,8 @@ You need to get rid of dirt buildup and dead skin cells.
 - **Paste**.
     - Prefer clay. It provides stronger hold and low shine, and is good for your hair health.
 - **Hairspray** is useful to 'lock' your style in place. Use this after you've used wax/cream/etc and have dry hair and don't touch it again.
+- **Sea salt spray** 
+    - Use on damp hair, not dry. Scrunch while blow-drying.
 
 ## Korean Perm
 Traditional perms produce stiff, tight curls. Korean perms produce long natural waves that add volume.
