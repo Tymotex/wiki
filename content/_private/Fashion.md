@@ -29,8 +29,7 @@ TODO:
 - Oxford cloth button down
 - Skinny-fit chinos
 - Dark jeans
-- Dark suede chelsea boots
-    - Or desert boots
+- Dark brown chelsea boots
 
 ### Winter casual
 - Dark turtleneck with coat.
