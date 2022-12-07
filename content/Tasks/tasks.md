@@ -7,10 +7,10 @@ kanban-plugin: basic
 ## **Thursday** *[[Journal/2022-12-08|2022-12-08]]* (6)
 
 - [ ] Relist plecos
-- [ ] ==1== Find and buy:<br>- Hair spray<br>- Hair cream
-- [ ] ==1== Find out whether a cooling blanket (or other accessories for cooler sleep) is worth it.
+- [x] ==1== Find out whether a cooling blanket (or other accessories for cooler sleep) is worth it.
 - [ ] ==1== **(1 hour)**<br>Mindfulness book.
 - [ ] ==1== **(25 mins pomodoro)**<br>Just refamiliarise self with Konflux. Plan how you'll finish it off over today and the next 2 days.
+- [x] ==1== Find and buy:<br>- Hair spray<br>- Hair cream
 - [x] ==1== **(30 min)**<br>Buy either the siphon or a pump and hose.
 
 

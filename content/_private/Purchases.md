@@ -15,6 +15,7 @@ title: Purchases
     - [ ] Chino shorts (for Summer).
 - Blackout curtains for better sleep.
 - Blue light filter glasses.
+- Cooling mattress pad (or other sleep cooling accessories)
 - Liquid chalk
 - Barbell maintenance items (nylon brush with firm bristles, wd-40, 3-in-1 multi-purpose oil)
 - Plate rack.
