@@ -592,12 +592,24 @@ kanban-plugin: basic
 - [x] Tell mum to move to a room with AC
 - [x] **(30 mins)** Start a male fashion page. <br><br>Write the basics. <br>Find pictures you like.<br>Make a task again to figure out what to wear to Google.
 
+## **Wednesday** *[[Journal/2022-12-07|2022-12-07]]* (6)
+
+- [x] Make a basic Obsidian dashboard.
+- [x] Devise a bulking plan
+- [x] ==1== **(10 mins)** Switch Notion from UNSW email to personal email. Same with Figma.
+- [x] Is protein powder healthy? See Dr. Greger
+- [x] **(30 mins)** Tweak exercise regimen. Put running in the powerlifting spreadsheet and rename. Some goals: run 5km a day on all days except Monday and Tuesday. No time target, just 5km. Need barbell curls and reverse grip
+- [x] Change water.
+- [x] Read what measurements I need. Measure out everything about your body for selecting clothes.
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
