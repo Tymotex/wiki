@@ -24,6 +24,9 @@ TODO:
     - The shoulder seams is most important to get right. Tailors can help fix other areas well.
 - Avoid logos, prints, etc.
 
+## Measurements
+- Pants: 30x34 inches (waist circumference, leg length)
+
 ## Wardrobe
 ### Work
 - Muscle fit short sleeve shirt
