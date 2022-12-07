@@ -21,6 +21,7 @@ TODO:
 
 ## Principles
 - Optimal fit is the most important thing to get right.
+    - The shoulder seams is most important to get right. Tailors can help fix other areas well.
 - Avoid logos, prints, etc.
 
 ## Wardrobe
