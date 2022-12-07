@@ -7,6 +7,7 @@ kanban-plugin: basic
 ## **Wednesday** *[[Journal/2022-12-07|2022-12-07]]* (6)
 
 - [ ] ### **🏆 Purpose**:
+- [ ] Read what measurements I need. Measure out everything about your body for selecting clothes.
 - [ ] Find and buy:<br>- Hair spray<br>- Hair cream
 - [ ] Find and buy apple watch
 - [ ] **(30 min)**<br>Buy either the siphon or a pump and hose.

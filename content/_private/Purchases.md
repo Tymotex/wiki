@@ -8,10 +8,11 @@ title: Purchases
 - [ ] ~~Budget kitchen scale~~ (this is overkill)
 - [ ] ~~Loop Quiet~~ (got cheaper ear plugs)
 - Clothes:
-    - [ ] Light blue OCBD
+    - [ ] Light blue OCBD, or white
+    - [ ] Navy chinos
     - [ ] (Uniqlo) 2 x Basic grey shirts.
     - [ ] (Uniqlo) Turtleneck wine colour.
-    - [ ] Chino shorts.
+    - [ ] Chino shorts (for Summer).
 - Blackout curtains for better sleep.
 - Blue light filter glasses.
 - Liquid chalk
