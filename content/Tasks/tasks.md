@@ -7,6 +7,7 @@ kanban-plugin: basic
 ## **Thursday** *[[Journal/2022-12-08|2022-12-08]]* (6)
 
 - [ ] Desert boots vs. chelsea boots.<br>And where to get them?
+- [ ] Trip plan confirm with mum
 - [ ] When uniqlo trip?
 - [ ] Set up syncthing
 - [ ] Water change
