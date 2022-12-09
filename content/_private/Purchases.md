@@ -6,10 +6,10 @@ title: Purchases
 - [ ] Convenient smoothie blender.
 - [x] Fitbit for Mum.
 - [ ] ~~Budget kitchen scale~~ (this is overkill)
-- [ ] ~~Loop Quiet~~ (got cheaper ear plugs)
+- [x] ~~Loop Quiet~~ (got cheaper ear plugs)
 - Clothes:
-    - [ ] Light blue OCBD, or white
-    - [ ] Navy chinos
+    - [x] Light blue OCBD, or white
+    - [x] Navy chinos
     - [ ] (Uniqlo) 2 x Basic grey shirts.
     - [ ] (Uniqlo) Turtleneck wine colour.
     - [ ] Chino shorts (for Summer).
