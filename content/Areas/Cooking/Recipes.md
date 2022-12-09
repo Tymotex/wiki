@@ -4,7 +4,7 @@ title: Recipes
 
 **To learn**:
 - [ ] Some Tempeh recipe
-- [ ] Bean soup
+- [ ] [Bean in tomato sauce](https://ellerepublic.de/en/white-beans-in-tomato-sauce/#wprm-recipe-container-50313)
 - [ ] Tortillas
 - [ ] Bean burrito
 - [ ] Tofu scramble with spinach, mushrooms, tomato, etc.
