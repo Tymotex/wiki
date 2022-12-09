@@ -602,12 +602,25 @@ kanban-plugin: basic
 - [x] Change water.
 - [x] Read what measurements I need. Measure out everything about your body for selecting clothes.
 
+## **Thursday** *[[Journal/2022-12-08|2022-12-08]]* (6)
+
+- [x] Desert boots vs. chelsea boots.<br>And where to get them?
+- [x] When uniqlo trip?
+- [x] **(15 mins)** Meditate
+- [x] ==1== Find and buy:<br>- Hair spray<br>- Hair cream
+- [x] ==1== **(30 min)**<br>Buy either the siphon or a pump and hose.
+- [x] ==1== Find out whether a cooling blanket (or other accessories for cooler sleep) is worth it.
+- [x] **(1 hour)**<br>Mindfulness book.
+- [x] Relist plecos with new pictures.
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
