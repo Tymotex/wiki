@@ -613,12 +613,22 @@ kanban-plugin: basic
 - [x] **(1 hour)**<br>Mindfulness book.
 - [x] Relist plecos with new pictures.
 
+## **Friday** *[[Journal/2022-12-09|2022-12-09]]* (6)
+
+- [x] Wish Rishi happy birthday.
+
+## **Saturday** *[[Journal/2022-12-10|2022-12-10]]* (6)
+
+
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
