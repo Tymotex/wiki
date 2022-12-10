@@ -12,7 +12,7 @@ kanban-plugin: basic
 - [ ] ==2== Trip plan confirm with mum
 - [ ] ==2== Fix wiki failing builds
 - [ ] ==1== **(25 mins pomodoro)**<br>Just refamiliarise self with Konflux. Plan how you'll finish it off over today and the next 2 days.
-- [ ] Purchases:<br>- Garlic powder<br>- Onion powder<br>- Basil ground<br>- Cheese? Which one
+- [ ] Purchases:<br>- Garlic powder<br>- Onion powder<br>- Basil ground<br>- Cheese? Which one<br>- 500g lean mince for pasta<br>- Jalapeno
 
 
 ## **Monday** *[[Journal/2022-12-12|2022-12-12]]* (6)
