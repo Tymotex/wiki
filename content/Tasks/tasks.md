@@ -12,7 +12,7 @@ kanban-plugin: basic
 - [ ] ==2== Trip plan confirm with mum
 - [ ] ==2== Fix wiki failing builds
 - [ ] ==1== **(25 mins pomodoro)**<br>Just refamiliarise self with Konflux. Plan how you'll finish it off over today and the next 2 days.
-- [ ] Purchases:<br>- Garlic powder<br>- Onion powder<br>- Cheese? Which one<br>- 500g lean mince for pasta<br>- Jalapeno<br>- Nut butter<br>- Tempeh<br>- Tamari<br>- Cocount cream<br>- PItted dates<br>- Hair cream/paste<br>- Hair spray
+- [ ] Purchases:<br>- Garlic powder<br>- Onion powder<br>- Parmessan<br>- Jalapeno<br>- Nut butter<br>- Tempeh<br>- Tamari<br>- Cocount cream<br>- PItted dates<br>- Hair cream/paste<br>- Hair spray
 
 
 ## **Monday** *[[Journal/2022-12-12|2022-12-12]]* (6)
