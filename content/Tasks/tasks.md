@@ -2,35 +2,6 @@
 kanban-plugin: basic
 ---
 
-## **Wednesday** *[[Journal/2022-12-07|2022-12-07]]* (6)
-
-
-
-## **Thursday** *[[Journal/2022-12-08|2022-12-08]]* (6)
-
-- [ ] 🏆 Purpose
-- [ ] 🌞 Morning routine
-- [ ] 🌙 Evening routine
-
-## **Friday** *[[Journal/2022-12-09|2022-12-09]]* (6)
-
-- [ ] 🏆 Purpose
-- [ ] 🌞 Morning routine
-- [ ] 🌙 Evening routine
-
-## **Saturday** *[[Journal/2022-12-10|2022-12-10]]* (6)
-
-- [ ] 🏆 Purpose
-- [ ] 🌞 Morning routine
-- [ ] 🌙 Evening routine
-
-## **Sunday** *[[Journal/2022-12-11|2022-12-11]]* (6)
-
-- [ ] 🏆 Purpose
-- [ ] 🌞 Morning routine
-- [ ] 🌙 Evening routine
-- [ ] **(10 mins)** Weekly Review.
-
 ## **Monday** *[[Journal/2022-12-12|2022-12-12]]* (6)
 
 - [x] How to pick a laptop
@@ -38,6 +9,19 @@ kanban-plugin: basic
 - [x] Pick a laptop for aunt
 - [x] Tortilla
 - [x] Quinoa recipe
+- [ ] ==4== 🏆 Purpose
+- [ ] ==4== 🌞 Morning routine
+- [ ] ==4== 🌙 Evening routine
+- [ ] ==3== 🏆 Purpose
+- [ ] ==3== 🌞 Morning routine
+- [ ] ==3== 🌙 Evening routine
+- [ ] ==2== 🏆 Purpose
+- [ ] ==2== 🌞 Morning routine
+- [ ] ==2== 🌙 Evening routine
+- [ ] ==1== 🏆 Purpose
+- [ ] ==1== 🌞 Morning routine
+- [ ] ==1== 🌙 Evening routine
+- [ ] ==1== **(10 mins)** Weekly Review.
 
 ## **Tuesday** *[[Journal/2022-12-13|2022-12-13]]* (6)
 
@@ -92,6 +76,8 @@ kanban-plugin: basic
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 {"kanban-plugin":"basic"}
 ```

@@ -602,6 +602,10 @@ kanban-plugin: basic
 - [x] Change water.
 - [x] Read what measurements I need. Measure out everything about your body for selecting clothes.
 
+## **Wednesday** *[[Journal/2022-12-07|2022-12-07]]* (6)
+
+
+
 ## **Thursday** *[[Journal/2022-12-08|2022-12-08]]* (6)
 
 - [x] Desert boots vs. chelsea boots.<br>And where to get them?
@@ -613,11 +617,27 @@ kanban-plugin: basic
 - [x] **(1 hour)**<br>Mindfulness book.
 - [x] Relist plecos with new pictures.
 
+## **Thursday** *[[Journal/2022-12-08|2022-12-08]]* (6)
+
+
+
 ## **Friday** *[[Journal/2022-12-09|2022-12-09]]* (6)
 
 - [x] Wish Rishi happy birthday.
 
+## **Friday** *[[Journal/2022-12-09|2022-12-09]]* (6)
+
+
+
 ## **Saturday** *[[Journal/2022-12-10|2022-12-10]]* (6)
+
+
+
+## **Saturday** *[[Journal/2022-12-10|2022-12-10]]* (6)
+
+
+
+## **Sunday** *[[Journal/2022-12-11|2022-12-11]]* (6)
 
 
 
@@ -631,6 +651,8 @@ kanban-plugin: basic
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
