@@ -3,7 +3,7 @@ title: Recipes
 ---
 
 **To learn**:
-- [ ] Guacamole
+- [ ] [Guacamole](https://downshiftology.com/recipes/best-ever-guacamole/)
 - [ ] [Hot sauce](https://dontwastethecrumbs.com/15-minute-homemade-hot-sauce/)
 - [ ] Marinated baked tempeh
 - [ ] Bean burrito
