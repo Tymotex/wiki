@@ -1,17 +1,21 @@
 ---
+
 kanban-plugin: basic
+
 ---
 
 ## **Monday** *[[Journal/2022-12-12|2022-12-12]]* (6)
 
 - [ ] **🏆 Purpose**: konflux
-- [ ] How to pick a laptop
-- [ ] Pick a laptop for Google
-- [ ] Pick a laptop for aunt
-- [ ] Tortilla
+- [x] How to pick a laptop
+- [x] Pick a laptop for Google
+- [x] Pick a laptop for aunt
+- [x] Tortilla
 - [ ] Quinoa recipe
+- [ ] Ask Teng whether Lenovo Chromebook Duet is a good choice.
 - [ ] ==3== Fix wiki failing builds
 - [ ] ==2== **(25 mins pomodoro)**<br>Just refamiliarise self with Konflux. Plan how you'll finish it off over today and the next 2 days.
+
 
 ## **Tuesday** *[[Journal/2022-12-13|2022-12-13]]* (6)
 
@@ -19,17 +23,20 @@ kanban-plugin: basic
 - [ ] 🌞 Morning routine
 - [ ] 🌙 Evening routine
 
+
 ## **Wednesday** *[[Journal/2022-12-14|2022-12-14]]* (6)
 
 - [ ] 🏆 Purpose
 - [ ] 🌞 Morning routine
 - [ ] 🌙 Evening routine
 
+
 ## **Thursday** *[[Journal/2022-12-15|2022-12-15]]* (6)
 
 - [ ] 🏆 Purpose
 - [ ] 🌞 Morning routine
 - [ ] 🌙 Evening routine
+
 
 ## **Friday** *[[Journal/2022-12-16|2022-12-16]]* (6)
 
@@ -38,11 +45,13 @@ kanban-plugin: basic
 - [ ] 🌙 Evening routine
 - [ ] ==1== Just get Obsidian Sync. Get the student discount.
 
+
 ## **Saturday** *[[Journal/2022-12-17|2022-12-17]]* (6)
 
 - [ ] 🏆 Purpose
 - [ ] 🌞 Morning routine
 - [ ] 🌙 Evening routine
+
 
 ## **Sunday** *[[Journal/2022-12-18|2022-12-18]]* (6)
 
@@ -51,19 +60,22 @@ kanban-plugin: basic
 - [ ] 🌙 Evening routine
 - [ ] **(10 mins)** Weekly Review.
 
+
 ## **Monday** *[[Journal/2022-12-19|2022-12-19]]* (6)
 
 - [ ] 🏆 Purpose
 - [ ] 🌞 Morning routine
 - [ ] 🌙 Evening routine
 
-***
 
 ## Archive
 
 
 
+
+
 %% kanban:settings
+```
 {"kanban-plugin":"basic"}
 ```
 %%

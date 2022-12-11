@@ -13,6 +13,7 @@ title: Purchases
     - [ ] (Uniqlo) 2 x Basic grey shirts.
     - [ ] (Uniqlo) Turtleneck wine colour.
     - [ ] Chino shorts (for Summer).
+- [ ] Mechanical keyboard for home (as a hobby)
 - Blackout curtains for better sleep.
 - Blue light filter glasses.
 - Cooling mattress pad (or other sleep cooling accessories)
