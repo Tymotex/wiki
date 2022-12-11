@@ -3,6 +3,8 @@ title: Recipes
 ---
 
 **To learn**:
+- [ ] Guacamole
+- [ ] [Hot sauce](https://dontwastethecrumbs.com/15-minute-homemade-hot-sauce/)
 - [ ] Marinated baked tempeh
 - [ ] Bean burrito
 - [ ] Tofu scramble with spinach, mushrooms, tomato, etc.
@@ -21,6 +23,7 @@ title: Recipes
 ## Smoothies
 - Kale + Pineapple + Banana
 - Blueberries + Banana
+- Banana + Oatmeal
 
 **Tips**:
 - In all smoothies, consider adding:
