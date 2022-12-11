@@ -2,19 +2,16 @@
 kanban-plugin: basic
 ---
 
-## **Sunday** *[[Journal/2022-12-11|2022-12-11]]* (6)
-
-- [ ] ### **🏆 Purpose**:
-- [ ] #### **(10 mins)** Weekly Review.
-- [ ] Just get Obsidian Sync. Get the student discount.
-- [ ] ==2== Trip plan confirm with mum
-- [ ] ==2== Fix wiki failing builds
-- [ ] ==1== **(25 mins pomodoro)**<br>Just refamiliarise self with Konflux. Plan how you'll finish it off over today and the next 2 days.
-- [ ] Purchases:<br>- Garlic powder<br>- Onion powder<br>- Parmessan<br>- Jalapeno<br>- Nut butter<br>- Tempeh<br>- Tamari<br>- Cocount cream<br>- PItted dates<br>- Hair cream/paste<br>- Hair spray
-
 ## **Monday** *[[Journal/2022-12-12|2022-12-12]]* (6)
 
 - [ ] **🏆 Purpose**:
+- [ ] ==1== ### **🏆 Purpose**:
+- [ ] ==1== #### **(10 mins)** Weekly Review.
+- [ ] ==1== Just get Obsidian Sync. Get the student discount.
+- [ ] ==3== Trip plan confirm with mum
+- [ ] ==3== Fix wiki failing builds
+- [ ] ==2== **(25 mins pomodoro)**<br>Just refamiliarise self with Konflux. Plan how you'll finish it off over today and the next 2 days.
+- [ ] ==1== Purchases:<br>- Garlic powder<br>- Onion powder<br>- Parmessan<br>- Jalapeno<br>- Nut butter<br>- Tempeh<br>- Tamari<br>- Cocount cream<br>- PItted dates<br>- Hair cream/paste<br>- Hair spray
 
 ## **Tuesday** *[[Journal/2022-12-13|2022-12-13]]* (6)
 
@@ -53,12 +50,20 @@ kanban-plugin: basic
 - [ ] 🌙 Evening routine
 - [ ] **(10 mins)** Weekly Review.
 
+## **Monday** *[[Journal/2022-12-19|2022-12-19]]* (6)
+
+- [ ] 🏆 Purpose
+- [ ] 🌞 Morning routine
+- [ ] 🌙 Evening routine
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 {"kanban-plugin":"basic"}
 ```
