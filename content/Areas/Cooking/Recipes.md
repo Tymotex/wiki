@@ -3,8 +3,7 @@ title: Recipes
 ---
 
 **To learn**:
-- [ ] [Guacamole](https://downshiftology.com/recipes/best-ever-guacamole/)
-- [ ] [Hot sauce](https://dontwastethecrumbs.com/15-minute-homemade-hot-sauce/)
+- [ ] 
 - [ ] Marinated baked tempeh
 - [ ] Miso soup
 - [ ] Bean burrito
@@ -20,6 +19,8 @@ title: Recipes
 - [[Areas/Cooking/Pickles|Pickles]]
 - [[Areas/Cooking/Pho|Phở]]
 - [Beans with tomatoes](https://spainonafork.com/garlic-kidney-beans-with-tomatoes-recipe/)
+- [Guacamole](https://downshiftology.com/recipes/best-ever-guacamole/)
+- [Hot sauce](https://dontwastethecrumbs.com/15-minute-homemade-hot-sauce/)
 
 ## Smoothies
 - Kale + Pineapple + Banana
