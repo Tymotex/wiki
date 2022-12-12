@@ -6,6 +6,7 @@ title: Recipes
 - [ ] [Guacamole](https://downshiftology.com/recipes/best-ever-guacamole/)
 - [ ] [Hot sauce](https://dontwastethecrumbs.com/15-minute-homemade-hot-sauce/)
 - [ ] Marinated baked tempeh
+- [ ] Miso soup
 - [ ] Bean burrito
 - [ ] Tofu scramble with spinach, mushrooms, tomato, etc.
 - [ ] Creamy tomato and spinach pasta
