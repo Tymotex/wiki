@@ -10,7 +10,7 @@ kanban-plugin: basic
 - [x] ==3== Fix wiki failing builds
 - [x] Clear out all emails
 - [x] ==2== **(25 mins pomodoro)**<br>Just refamiliarise self with Konflux. Plan how you'll finish it off over today and the next 2 days.
-- [ ] How to get started with mechanical keyboards hobby. Should I even? What budget do I need?
+- [x] How to get started with mechanical keyboards hobby. Should I even? What budget do I need?
 - [x] Where am I up to in C++? Divide and finish it over the next _ days.
 - [ ] **(25 mins)** Fix those 2 bugs
 - [ ] **(25 mins)** Do a usability review. Note down unfinished things and areas of improvement.
