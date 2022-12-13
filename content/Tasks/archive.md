@@ -645,12 +645,28 @@ kanban-plugin: basic
 
 
 
+## **Tuesday** *[[Journal/2022-12-13|2022-12-13]]* (6)
+
+- [x] 🏆 Purpose: Konflux
+- [x] ==3== Fix wiki failing builds
+- [x] Clear out all emails
+- [x] ==2== **(25 mins pomodoro)**<br>Just refamiliarise self with Konflux. Plan how you'll finish it off over today and the next 2 days.
+- [x] How to get started with mechanical keyboards hobby. Should I even? What budget do I need?
+- [x] Where am I up to in C++? Divide and finish it over the next _ days.
+- [x] **(25 mins)** Fix those 2 bugs
+- [x] Do a usability review. Note down unfinished things and areas of improvement.
+- [x] If not globally authenticated, remove event list functionality.
+- [x] When the organiser leaves, event should be deleted for everyone.
+- [x] Watch that FireShip video.
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
