@@ -16,8 +16,8 @@ kanban-plugin: basic
 - [x] Do a usability review. Note down unfinished things and areas of improvement.
 - [x] If not globally authenticated, remove event list functionality.
 - [x] When the organiser leaves, event should be deleted for everyone.
+- [x] Watch that FireShip video.
 - [ ] **(1 hour)** C++ chapter 3
-- [ ] Watch that FireShip video.
 - [ ] 🌙 Evening routine
 
 
