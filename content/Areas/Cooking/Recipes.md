@@ -3,7 +3,7 @@ title: Recipes
 ---
 
 **To learn**:
-- [ ] 
+- [ ] Chickpea curry, or tofu curry
 - [ ] Marinated baked tempeh
 - [ ] Miso soup
 - [ ] Bean burrito
