@@ -9,7 +9,7 @@ title: Purchases
 - [x] ~~Loop Quiet~~ (got cheaper ear plugs)
 - [ ] Oregano seeds
 - [ ] Hair cream/paste
-- [ ] Hair spray
+- [ ] Hair sprayknif 
 - Clothes:
     - [x] Light blue OCBD, or white
     - [x] Navy chinos
