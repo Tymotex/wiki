@@ -17,7 +17,6 @@ kanban-plugin: basic
 - [ ] If unauthenticated, remove event list functionality.
 - [ ] When the organiser leaves, event should be deleted for everyone.
 - [ ] Watch that FireShip video.
-- [ ] **(2 hours)** Deployment tasks. Get it working from the domain: konflux.timz.dev
 - [ ] **(1 hour)** C++ chapter 3
 - [ ] 🌙 Evening routine
 
@@ -27,6 +26,7 @@ kanban-plugin: basic
 - [ ] 🏆 Purpose
 - [ ] 🌞 Morning routine
 - [ ] 🌙 Evening routine
+- [ ] **(2 hours)** Deployment tasks. Get it working from the domain: konflux.timz.dev
 
 
 ## **Thursday** *[[Journal/2022-12-15|2022-12-15]]* (6)
