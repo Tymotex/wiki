@@ -16,17 +16,18 @@ kanban-plugin: basic
 - [x] Do a usability review. Note down unfinished things and areas of improvement.
 - [x] If not globally authenticated, remove event list functionality.
 - [x] When the organiser leaves, event should be deleted for everyone.
-- [ ] Watch that FireShip video.
 - [ ] **(1 hour)** C++ chapter 3
+- [ ] Watch that FireShip video.
 - [ ] 🌙 Evening routine
 
 
 ## **Wednesday** *[[Journal/2022-12-14|2022-12-14]]* (6)
 
-- [ ] 🏆 Purpose
+- [ ] 🏆 Purpose: deploy and finalise Konflux.
 - [ ] 🌞 Morning routine
 - [ ] 🌙 Evening routine
 - [ ] **(2 hours)** Deployment tasks. Get it working from the domain: konflux.timz.dev
+- [ ] **(1 hour)** Add Konflux to your portfolio and maybe make a short video demonstrating its usage.
 
 
 ## **Thursday** *[[Journal/2022-12-15|2022-12-15]]* (6)
