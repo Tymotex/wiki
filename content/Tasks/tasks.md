@@ -9,10 +9,12 @@ kanban-plugin: basic
 - [ ] 🏆 Purpose: deploy and finalise Konflux.
 - [x] 🌞 Morning routine
 - [ ] 🌙 Evening routine
-- [ ] **(2 hours)** Deployment tasks. Get it working from the domain: konflux.timz.dev
+- [x] **(1 hour)** Deployment tasks. Get it working from the domain: konflux.timz.dev
+- [ ] **(20 mins)** Get Google Auth working from konflux.timz.dev
 - [ ] **(1 hour)** Add Konflux to your portfolio and maybe make a short video demonstrating its usage.
 - [ ] **(1 hour)** C++ chapter 3
 - [ ] **(1 hour)**<br>Clean up book notes and summarise How Not to Die.
+- [ ] **(1 hour)**<br>Transfer Git notes to Obsidian.
 - [ ] Will C++ ever become obsolete?
 
 
