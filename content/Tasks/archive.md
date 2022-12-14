@@ -659,12 +659,21 @@ kanban-plugin: basic
 - [x] When the organiser leaves, event should be deleted for everyone.
 - [x] Watch that FireShip video.
 
+## **Wednesday** *[[Journal/2022-12-14|2022-12-14]]* (6)
+
+- [x] 🏆 Purpose: deploy and finalise Konflux.
+- [x] 🌞 Morning routine
+- [x] **(1 hour)** Deployment tasks. Get it working from the domain: konflux.timz.dev
+- [x] **(20 mins)** Get Google Auth working from konflux.timz.dev
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
