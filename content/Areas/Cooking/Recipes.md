@@ -13,6 +13,7 @@ title: Recipes
 - [ ] Apple/Fruit pie
 
 **Dishes**:
+- [Thai red curry (vegetarian)](https://cookieandkate.com/thai-red-curry-recipe/)
 - [Flour tortillas](https://thecafesucrefarine.com/best-ever-homemade-flour-tortillas/)
 - [Creamy garlic mushroom pasta](https://www.youtube.com/watch?v=8AFIFnh-f3U&ab_channel=AnitaCooks) 
     - Good, but but requires modifications to make healthy.
