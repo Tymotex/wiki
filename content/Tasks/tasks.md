@@ -8,7 +8,7 @@ kanban-plugin: basic
 
 - [x] 🏆 Purpose: finalise Konflux, then learn C++ and summarise books.
 - [x] Read through all the tasks in the pre-launch checklist for Firebase apps.
-- [ ] **(1 hour)** Add Konflux to your portfolio and maybe make a short video demonstrating its usage.
+- [ ] **(1 hour)** Add Konflux to your portfolio and maybe make a short video demonstrating its usage.<br><br>Script:<br>1. Left: Log in with Google.<br>2. Left: create an event called: "Study session for COMP2521."<br>3. Left: Select a few days, then a few times.<br>4. Right: copy link and navigate.<br>5. Right: log in as Linus.<br>6. Right: fill in some times.<br>7. Left: hover over availabilities.<br>8. Left: play with availabilities.<br>9. Right: leave event.<br>10. Done.
 - [ ] ==1== **(1 hour)** C++ chapter 3
 - [ ] ==1== **(1 hour)**<br>Clean up book notes and summarise How Not to Die.
 - [ ] Fix tactile-ds HTTPS bug.
