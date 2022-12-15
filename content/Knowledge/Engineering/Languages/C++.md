@@ -229,7 +229,14 @@ int arr[4] = { 1 };            // [1, 0, 0, 0] – the rest of array is zeroed.
 int arr[] = { 1, 2, 3, 4 };    // Array size can be omitted if it can be inferred from RHS.
 int arr[] { 1, 2, 3, 4 };      // You can use uniform initialisation instead of copy initialisation.
 ```
-The size of the array must be able to be determined during compile-time.
+The size of the array must be able to be determined at compile-time.
+
+### Pointers vs. Arrays
+What's the difference between `int* array` and `int array[]`? They both can be used to access a sequence of data and are mostly interchangeable.
+
+The main difference is in **runtime allocation and resizing**: `int* array` is far more flexible, allowing allocation/deallocation and resizing during runtime, whereas `int array[]` cannot be resized after declaration.
+
+> In general, *prefer using arrays over pointers*. It's less error-prone and more readable.
 
 ## L-Values and R-Values
 An **lvalue** is a memory location that identifies an object. **Variables are lvalues**.
@@ -328,10 +335,11 @@ int main() {
 ```
 
 # Quirks
+Random C++ details you encounter infrequently but which are still good to know.
 
 ## if-statements
-### Follow-up condition
-In C++, you can declare variables inside `if` statements and follow it up with a condition: `if (init; condition) { ... }`.
+### if-statement with initialiser
+In C++17, you can declare variables inside `if` statements and follow it up with a condition: `if (init; condition) { ... }`.
 ```cpp
 vector<int> vec = { 1, 2, 3 };
 
