@@ -236,7 +236,7 @@ What's the difference between `int* array` and `int array[]`? They both can be u
 
 The main difference is in **runtime allocation and resizing**: `int* array` is far more flexible, allowing allocation/deallocation and resizing during runtime, whereas `int array[]` cannot be resized after declaration.
 
-> In general, *prefer using arrays over pointers*. It's less error-prone and more readable.
+> In general, *prefer using declaring **true array-types** with `[]` over pointers-type arrays with `*`*. It's less error-prone (because you don't have to worry about dynamic allocation and remembering to free allocated memory) and more readable.
 
 ## L-Values and R-Values
 An **lvalue** is a memory location that identifies an object. **Variables are lvalues**.
