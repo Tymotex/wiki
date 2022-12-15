@@ -14,8 +14,8 @@ The **[ISO C++ standard](https://isocpp.org/std/%20the-standard)** defines:
 
 Also see [[Knowledge/Engineering/Languages/C++ Standard Library|C++ standard library]].
 
-# Core
-## Variable Initialisation
+# Basics
+## Copy, List and Direct Initialisation
 There are a few ways to initialise a variable with a value.
 1. **Copy initialisation**: using `=`. It implicitly calls a constructor.
 2. **List initialisation**, also called **uniform initialisation**: using `{ }`.
@@ -96,13 +96,14 @@ r = r2;      // Remember, you can think of references as aliases. This assignmen
     ```
 - References must be initialised and can’t be reassigned afterwards
 
-## Auto
+## Type Qualifiers: auto, const, constexpr, static
+### Auto
 When specifying the data type of something as `auto`, C++ automatically infers the type.
 - Use `auto` for concision, especially when long generic types are involved.
 - It's fine to use [[Knowledge/Engineering/Languages/C++#Variables|copy initialisation]] if you use `auto` since type narrowing won't be a problem. E.g. `auto x = 1`.
 - Always assume that `auto`, by itself, will make a copy of the RHS. Use `auto&` if copying is undesirable (such as when copying large vectors).
 
-## Const
+### Const
 The `const` qualifier makes it 'impossible' to assign a new value to a variable after it's initialised. There is 0 negative performance impact of enforcing `const` since it's all done at compile-time. Using const can actually allow the compiler to make optimisations.
 
 > Prefer making things const by default. See [const correctness](https://isocpp.org/wiki/faq/const-correctness) for a pitch on why.
@@ -118,7 +119,7 @@ The `const` qualifier makes it 'impossible' to assign a new value to a variable 
     constexpr int x = cube(2);    // Error, *unless cube is defined as a [**constexpr function**](https://www.ibm.com/docs/es/xl-c-and-cpp-aix/16.1?topic=functions-constexpr-c11)*
     ```
 
-### Const Pointers
+#### Const Pointers
 ```cpp
 const int *p;               // A pointer to an immutable int.
 const int * const q = ...;  // An immutable pointer to an immutable int. It must be initialised with a memory address.
@@ -126,7 +127,7 @@ int * const r = ...;        // An immutable pointer to an int. It must be initis
 ```
 If this is hard to read, see the [[Knowledge/Engineering/Languages/C++#Clockwise Spiral Rule|clockwise-spiral rule]].
 
-### Const References
+#### Const References
 Typing a variable as a const reference makes it a read-only alias. It's especially helpful for function parameters.
 > Prefer typing function parameters as const references. This gives the caller confidence that what they pass in is not modified in any way.
 
@@ -143,14 +144,7 @@ void bar1(std::string* s);         // So can this.
 
 You can't have 100% certainty that what you pass as a const reference is unchanged. See [this example from isocpp](https://isocpp.org/wiki/faq/const-correctness#return-const-ref-from-const-memfn):
 
-### Constexpr
-The `constexpr` type specifier is like `const`, except the RHS value must be able to be determined at compile-time. 
-```cpp
-const int a = some_val;
-constexpr int b = 42;
-```
-
-### Const Methods
+#### Const Methods
 Const methods can only read `this` and never mutate anything about it. To specify a const method, the `const` qualifier *must* be placed after the parameter list.
 ```cpp
 class Foo {
@@ -161,10 +155,28 @@ public:
 
 > What about making methods **return const values**, eg. `const Foo bar();`? [It's *mostly* pointless](https://stackoverflow.com/questions/8716330/purpose-of-returning-by-const-value). However, it is *not* pointless if you're returning a pointer or reference to something that is const.
 
-### Constexpr Functions
+### Constexpr
+The `constexpr` type specifier is like `const`, except the RHS value must be able to be determined at compile-time. 
+```cpp
+const int a = some_val;
+constexpr int b = 42;
+```
+
+#### Constexpr Functions
 Constexpr functions are those than *can* be executed at compile-time, meaning all its state and behaviour is determinable at compile-time.
 
-## Clockwise-Spiral Rule
+### Static
+#### Static Variables
+Inside functions, static variables let you share a value across all calls to that function.
+```cpp
+void foo() {
+    static int a = 42;    // All calls to **foo** will see **a = 42**.
+    ...                   // If **a** changes, then all calls to **foo** will see that change too
+}
+```
+> Static function variables are **generally considered bad** because they represent global state and are therefore much more difficult to reason about[\*](https://stackoverflow.com/questions/7026507/why-are-static-variables-considered-evil#:~:text=Static%20variables%20are%20generally%20considered,assumptions%20of%20object%2Doriented%20programming.).
+
+### Clockwise-Spiral Rule
 [Clockwise-Spiral Rule](http://c-faq.com/decl/spiral.anderson.html) is a trick for reading variable types.
 1. Start at the variable name.
 2. Follow an outwards clockwise spiral from that variable name to build up a sentence.
@@ -183,30 +195,6 @@ int *myVar;                     // pointer to an int.
 int const *myVar;               // pointer to a const int.
 int * const myVar = ...;        // const pointer to an int.
 int const * const myVar = ...;  // const pointer to a const int.
-```
-
-## Static
-### Static Variables
-Inside functions, static variables let you share a value across all calls to that function.
-```cpp
-void foo() {
-    static int a = 42;    // All calls to **foo** will see **a = 42**.
-    ...                   // If **a** changes, then all calls to **foo** will see that change too
-}
-```
-> Static function variables are **generally considered bad** because they represent global state and are therefore much more difficult to reason about[\*](https://stackoverflow.com/questions/7026507/why-are-static-variables-considered-evil#:~:text=Static%20variables%20are%20generally%20considered,assumptions%20of%20object%2Doriented%20programming.).
-
-## If-Statements
-In C++, you can declare variables inside `if` statements and follow it up with a condition: `if (init; condition) { ... }`.
-```cpp
-vector<int> vec = { 1, 2, 3 };
-
-if (int size = vec.size()) {
-    cout << "Vector size is not 0" << endl;
-}
-if (int size = vec.size(); n > 2) {
-    cout << "Vector size is > 2" << endl;
-}
 ```
 
 ## IO
@@ -294,8 +282,67 @@ int main() {
 }
 ```
 
-## Standard Library
-See [[Knowledge/Engineering/Languages/C++ Standard Library|C++ Standard Library]].
+## Modularity
+### Separate Compilation
+C++ supports *separate compilation*, where code in one file only sees the declarations for the types and functions it uses, not the implementation. This decouples the smaller units comprising a project and minimises compilation time since each unit can be compiled only if they change.
+
+We take advantage of separate compilation by listing out declarations in a header file. Example:
+![[Knowledge/Engineering/Languages/assets/vector-header-cpp.png|500]]
+```cpp
+// Vector.h — the header file defining the Vector class and its properties and methods (but without implementation)
+class Vector {
+    public:
+        Vector(int size);
+        double& operator[[]];
+        int size();
+    private:
+        double* elements;
+        int capacity;
+};
+```
+
+```cpp
+// Vector.cpp — the implementation for Vector.h
+#include "Vector.h"
+
+// Implementing the constructor and methods outside of the class definition.
+Vector::Vector(int s) :elements{new double[s]}, capacity{s} {}   
+
+double& Vector::operator[[]] { return elements[i]; }
+int Vector::size() { return capacity; }
+```
+
+```cpp
+// user.cpp — the user of Vector.h, who has know idea about how it's implemented.
+//            It only knows about the declarations inside Vector.h
+
+#include <iostream>
+#include "Vector.h"
+
+using namespace std;
+
+int main() { 
+    Vector v(10);
+    cout << "Vector size: " << v.size() << endl;
+}
+```
+
+# Quirks
+
+## if-statements
+### Follow-up condition
+In C++, you can declare variables inside `if` statements and follow it up with a condition: `if (init; condition) { ... }`.
+```cpp
+vector<int> vec = { 1, 2, 3 };
+
+if (int size = vec.size()) {
+    cout << "Vector size is not 0" << endl;
+}
+if (int size = vec.size(); size > 2) {
+    cout << "Vector size is > 2" << endl;
+}
+```
+
 
 ---
 # Old Notes
@@ -1402,60 +1449,6 @@ Compilation of C++ programs follow 3 steps:
     
     Takes object files and produces a library or executable file that your OS can use.
     
-
-### Separate Compilation
-C++ supports *separate compilation*, where code in one file only sees the declarations for the types and functions it uses, not the implementation. This decouples the smaller units comprising a project and minimises compilation time since each unit can be compiled only if they change.
-
-We take advantage of separate compilation by listing out declarations in a header file. Example:
-!(Knowledge/Engineering/Languages/assets/vector-header-cpp.png|500)[]
-
-    
-    ```cpp
-    // **Vector.h — the header file defining the Vector class and its properties and methods (but without implementation)**
-    
-    class Vector {
-        public:
-            Vector(int size);
-            double& operator[[]];
-            int size();
-        private:
-            double* elements;
-            int capacity;
-    };
-    ```
-    
-    ```cpp
-    // **Vector.cpp — the implementation for Vector.h**
-    
-    #include "Vector.h"
-    
-    Vector::Vector(int s) :elements{new double[s]}, capacity{s} {}   // Implementing the constructor outside of the class definition
-    
-    double& Vector::operator[[]] {
-        return elements[i];
-    }
-    
-    int Vector::size() {
-        return capacity;
-    }
-    ```
-    
-    ```cpp
-    // **user.cpp — the user of Vector.h who has know idea about how it's implemented**
-    
-    #include <iostream>
-    #include "Vector.h"
-    
-    using namespace std;
-    
-    int main() { 
-        Vector v(10);
-        cout << "Vector size: " << v.size() << endl;
-    }
-    ```
-    
-
-
 ### Curly Braces in C++:
 
 This section exists because I keep seeing curly braces appearing in different contexts and having totally different semantics.
@@ -1688,3 +1681,6 @@ Basically Google’s standard library
 
 # Flashcards
 - What is separate compilation?
+- What are the differences between copy, list and direct initialisation?
+- What is the difference between `const` and `constexpr`?
+- 
