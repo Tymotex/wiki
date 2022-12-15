@@ -16,20 +16,19 @@ Also see [[Knowledge/Engineering/Languages/C++ Standard Library|C++ standard lib
 
 # Core
 ## Variable Initialisation
-There are many ways to initialise a variable with a value.
+There are a few ways to initialise a variable with a value.
 1. **Copy initialisation**: using `=`. It implicitly calls a constructor.
 2. **List initialisation**, also called **uniform initialisation**: using `{ }`.
 3. **Direct initialisation**: using `( )`. Think of the parentheses as being used to *directly* invoke a specific constructor.
+
+> Prefer uniform initialisation over copy initialisation.
+
     ```cpp
     int b(1);     // Direct initialisation.
     int a{1};     // List initialisation.
     int c = 1;    // Copy initialisation.
     int d = {1};  // Copy/List initialisation.
     ```
-
-> Prefer uniform initialisation over copy initialisation.
-
-### Details
 - *List initialisation* does not allow *narrowing*. Try to use list initialisation `{ }` more often.
     ```cpp
     int i = 7.8;  // Gets floored to 7
@@ -1405,12 +1404,11 @@ Compilation of C++ programs follow 3 steps:
     
 
 ### Separate Compilation
+C++ supports *separate compilation*, where code in one file only sees the declarations for the types and functions it uses, not the implementation. This decouples the smaller units comprising a project and minimises compilation time since each unit can be compiled only if they change.
 
-C++ supports separate compilation to decouple parts of a project and minimise compilation time.
+We take advantage of separate compilation by listing out declarations in a header file. Example:
+!(Knowledge/Engineering/Languages/assets/vector-header-cpp.png|500)[]
 
-- Example — using header files to separate the users of an interface and the implementation for that interface
-    
-    ![Untitled](Knowledge/Engineering/Languages/assets/Untitled%209.png)
     
     ```cpp
     // **Vector.h — the header file defining the Vector class and its properties and methods (but without implementation)**
@@ -1687,3 +1685,6 @@ Basically Google’s standard library
 [https://abseil.io/](https://abseil.io/)
 
 [[Knowledge/Engineering/Languages/C++ Cheatsheet]]
+
+# Flashcards
+- What is separate compilation?
