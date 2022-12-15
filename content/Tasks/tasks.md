@@ -14,6 +14,7 @@ kanban-plugin: basic
 - [ ] **(1 hour)**<br>Transfer Git notes to Obsidian.
 - [ ] **(1 hour)**<br>Clean up book notes and summarise How Not to Die.
 - [ ] **(45 mins)** Read The Way
+- [x] In timz.dev, add video button to all project cards, if they have a `videoUrl`
 - [x] Cancel mum's Uber One membership.
 
 
@@ -22,7 +23,6 @@ kanban-plugin: basic
 - [ ] 🏆 Purpose
 - [ ] 🌞 Morning routine
 - [ ] 🌙 Evening routine
-- [ ] In timz.dev, add video button to all project cards, if they have a `videoUrl`
 
 
 ## **Sunday** *[[Journal/2022-12-18|2022-12-18]]* (6)
