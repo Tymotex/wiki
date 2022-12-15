@@ -11,6 +11,7 @@ kanban-plugin: basic
 - [ ] **(1 hour)** Add Konflux to your portfolio and maybe make a short video demonstrating its usage.
 - [ ] ==1== **(1 hour)** C++ chapter 3
 - [ ] ==1== **(1 hour)**<br>Clean up book notes and summarise How Not to Die.
+- [ ] Fix tactile-ds HTTPS bug.
 
 
 ## **Friday** *[[Journal/2022-12-16|2022-12-16]]* (6)
