@@ -673,12 +673,20 @@ kanban-plugin: basic
 - [x] **(1 hour)** Add Konflux to your portfolio and maybe make a short video demonstrating its usage.<br><br>Script:<br>1. Left: Log in with Google.<br>2. Left: create an event called: "Study session for COMP2521."<br>3. Left: Select a few days, then a few times.<br>4. Right: copy link and navigate.<br>5. Right: log in as Linus.<br>6. Right: fill in some times.<br>7. Left: hover over availabilities.<br>8. Left: play with availabilities.<br>9. Right: leave event.<br>10. Done.
 - [x] Fix tactile-ds HTTPS bug.
 
+## **Friday** *[[Journal/2022-12-16|2022-12-16]]* (6)
+
+- [x] 🏆 Purpose: C++ and Clean Code.
+- [x] In timz.dev, add video button to all project cards, if they have a `videoUrl`
+- [x] Cancel mum's Uber One membership.
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
