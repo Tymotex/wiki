@@ -333,6 +333,37 @@ int main() {
     cout << "Vector size: " << v.size() << endl;
 }
 ```
+### Namespaces
+Namespaces ***define a scope for a set of names***. It's used to organise your project into logical groups and to prevent name collisions when you're using libraries, for example.
+```cpp
+namespace UNSW {
+    class Student {
+        public:
+            string id;
+
+            Student(string id) {
+                this->id = id;
+            }
+    };
+}
+
+int main() {
+    UNSW::Student me("z5258971");
+    std::cout << me.id << "\n";
+}
+```
+
+Use `using` to avoid using a fully qualified name every time.
+```cpp
+using std::cout;
+
+int main() {
+    cout << "Hello world\n";
+    return 0;
+}
+```
+            
+> ℹ️ Any identifier you bring in that's *not within* a namespace will be in the *global namespace*
 
 # Quirks
 Random C++ details you encounter infrequently but which are still good to know.
@@ -993,43 +1024,6 @@ When you declare an enum with `enum class`, it is strongly typed such that you w
     }
     ```
     
-
-## Namespaces
-
-Namespaces ***define a scope for a set of names***. It's used to organise your project into logical groups and to prevent name collisions when you're using libraries, for example.
-
-```cpp
-**namespace UNSW** {
-    **class Student** {
-        public:
-            string id;
-
-            Student(string id) {
-                this->id = id;
-            }
-    };
-}
-
-int main() {
-    **UNSW::Student** me("z5258971");
-    std::cout << me.id << "\n";
-}
-```
-
-- To access a name in another namespace, use the *scope resolution operator* `::`
-    - If specifying the namespace an identifier comes from is tedious, you can use `using` to bring in a specific identifier
-        - Example
-            
-            ```cpp
-            using std::cout;
-            
-            int main() {
-                cout << "Hello world\n";
-            }
-            ```
-            
-- Any identifier you bring in that's not within a namespace will be in the *global namespace*
-
 ## Exception Handling [TODO]
 
 - `try`-`catch`
