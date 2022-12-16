@@ -15,7 +15,7 @@ kanban-plugin: basic
 - [ ] ==1== **(1 hour)**<br>Clean up book notes and summarise How Not to Die.
 - [ ] **(45 mins)** Research basic skincare.
 - [ ] ==1== Make a plan to grind out the math website in record time.
-- [ ] Find a book similar to Mark Manson's Models.
+- [x] Find a book similar to Mark Manson's Models.
 
 
 ## **Sunday** *[[Journal/2022-12-18|2022-12-18]]* (6)
