@@ -428,12 +428,13 @@ void something_bad() noexcept;
 ```
 
 Why use it?
-- The compiler generates optimised code since it can assume it doesn't have to support try-catch control flow.
+- The compiler generates slightly more optimal code since it can assume it doesn't have to support try-catch control flow.
+- For documentation for other developers.
 
 ## Classes
 
 #### RAII
-The technique of acquiring resources in the constructor and then freeing them in the destructor is called *RAII (Resource Acquisition is Initialisation)*. The idea is about coupling the use of a resource to the lifetime of an object so that when it goes out of scope, or when it throws an exception, the resources it held are guaranteed to be released.
+The technique of acquiring resources in the constructor and then freeing them in the destructor is called *RAII (Resource Acquisition is Initialisation)*. The idea is about coupling the use of a resource to the lifetime of an object so that when it goes out of scope, or when it throws an exception, the resources it held are guaranteed to be released. Always design classes with RAII in mind.
 - This works well for mutexes where you can acquire the lock in the constructor and unlock in the destructor.
 
 # Quirks
