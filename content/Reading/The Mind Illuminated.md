@@ -25,6 +25,41 @@ Attention tends to produce a self-centered experience. When your attention is ca
 ## Stage 1
 Meditate everyday and *diligently*, meaning that you should genuinely uphold a commitment to the practice once you sit down. Mastery is attained when you can do this every day.
 
+### How to Meditate
+Before you meditate, go through this procedure:
+1. **Motivation** — why are you doing this? Don't judge yourself for your reasons.
+2. **Goals** — what are you going to do in this session? E.g. maintain posture.
+3. **Expectations** — remember that your attention and fluctuates massively day to day and month to month. Don't expect perfect attention.
+4. **Diligence** — wholeheartedly commit to the practice. Don't just fall asleep.
+5. **Distractions** — what's been on your mind today? Those are the things likely to distract you during this session.
+6. **Posture** — doing whatever is necessary to be upright and relaxed.
+
+When you begin:
+1. *Arrive immediately*. Open your peripheral awareness as wide as possible by noticing every sensation you can.
+2. Direct attention towards the rise and fall of the abdomen and chest and the nose and upper lip.
+3. Focus on the nose and upper lip.
+	- Counting in-breaths and out-breaths is useful as a beginner. Don't count more than 10 or less than 5.
+4. When your attention is inevitably captured, direct it back to the breath without chastising yourself. 
+	- Appreciate the 'a-ha moment' when you've realised that you've been captured by thought or distraction. That a-ha moment is completely unconscious. So is being distracted. It's pointless to chastise yourself because your unconscious is responsible for the distraction and realisation cycle.
+	- Don't try to narrow your peripheral awareness. Keep all contextual sensations and thoughts in the background.
+
+### The 5 Hindrances
+1. **Worldly desire** — hedonism and status.
+2. **Aversion** — hatred, dissatisfaction and resistance.
+3. **Laziness and lethargy**.
+4. **Remorse and worry**.
+5. **Doubt**
+
 ## Stage 2
 > Willpower can't prevent the mind from forgetting the breath. Nor can you force yourself to become aware that the mind is wandering. Instead, just hold the intention to appreciate the "aha" moment that recognises mind-wandering, while gently but firmly redirecting attention back to the breath.
+
+## Stage 3
+*Label* distractions as you realise you've been captured by them. For instance, if you're thinking about what to do after the meditation, label it as "planning", then return to the meditation object.
+
+*Check-in* regularly and briefly to train your introspective awareness to catch distractions before you completely capture your attention. Do this habitually after some interval (e.g. every 12 breaths), but don't be strict on the exact regularity.
+
+
+
+
+
 

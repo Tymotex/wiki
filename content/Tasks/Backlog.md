@@ -37,6 +37,7 @@ kanban-plugin: basic
 - [ ] **Approach women and have dates.** Do it infrequently enough that it doesn't derail you. You *must* practice.
 - [ ] Rewatch this and be inspired. https://www.youtube.com/watch?v=I9hJ_Rux9y0&ab_channel=Kurzgesagt%E2%80%93InaNutshell
 - [ ] Find and join a **hobby group.**
+- [ ] Read more about skincare
 - [ ] Read a book on **writing.**
 - [ ] Pick out the most useful articles from **moneysmart.gov.au** and read them.
 - [ ] Find some big goal for mum and dad. Maybe the next cruise? Perhaps time it for the end of 2023?<br><br>(Inspired by Man's Search for Meaning)
@@ -63,7 +64,7 @@ kanban-plugin: basic
 
 ## Fun
 
-- [ ] 
+- [ ] NZ trip. When to have it?
 - [ ] Ask Rishi to run
 - [ ] Join a 5km run with friends.
 - [ ] Watch a movie from [[_/Movie list|this list]].
