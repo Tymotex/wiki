@@ -36,6 +36,25 @@ There are a few ways to initialise a variable with a value.
     ```
 - `explicit` constructors are *not invokable* with copy initialisation.
 
+#### Aggregate Initialisation [TODO]
+
+##### Designated Initialisers
+C++20 introduces a new way to initialise the members of a class/struct:
+```cpp
+struct Human {
+  string name;
+  int age;
+};
+
+int main() {
+  Human andrew{ .name = "Andrew", .age = 42 };
+  Human linus{ .name{"Linus"} };     // You can also use list initialisation on the members.
+
+  Human ada{ .age = 36, .name = "Ada" };       // Error. You must initialise the fields in the same order as they're declared in the struct/class.
+  return 0;
+}
+```
+
 ## Pointers and References
 Pointers and references are really the same thing under the hood, however they have different semantics to the programmer. You can consider references as syntactic sugar for pointers whose main purpose is to help you write cleaner code, compared to if you were to use pointers for the same use case.
 
