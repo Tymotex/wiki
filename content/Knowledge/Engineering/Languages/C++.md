@@ -394,6 +394,25 @@ namespace Foo {
 }
 ```
 
+## Error Handling
+C++ provides the familiar `try` and `catch`  blocks for error handling. 
+```cpp
+try {
+        
+} catch(out_of_range& err) {
+
+} catch(...) {
+    // All exceptions are caught here when you use `...`
+}
+```
+
+- `throw` [TODO]
+- `noexcept` functions [TODO]
+    
+    Turns `throw` statements into `std::terminate()`
+
+
+
 # Quirks
 Random C++ details you encounter infrequently but which are still good to know.
 
@@ -1051,26 +1070,6 @@ When you declare an enum with `enum class`, it is strongly typed such that you w
     }
     ```
     
-## Exception Handling [TODO]
-
-- `try`-`catch`
-    
-    ```cpp
-    try {
-    		
-    } catch(out_of_range& err) {
-    
-    } catch(...) {
-    
-    }
-    ```
-    
-    - The last try block with condition `(...)` catches all exceptions that weren't matched by previous `catch` conditions
-- `throw` [TODO]
-- `noexcept` functions [TODO]
-    
-    Turns `throw` statements into `std::terminate()`
-    
 
 ## Modules [TODO]
 
@@ -1717,3 +1716,6 @@ Basically Google’s standard library
 - What is the difference between `const` and `constexpr`?
 - What happens when an identifier is declared outside of a namespace?
     - That identifier becomes globally scoped, i.e. part of the global namespace. It can be referenced directly or with `::` to explicitly say it's from the global namespace.
+- Explain RAII and what problem it aims to solve.
+    - *Resource allocation is initialisation* means that any resources (things like file handles, database handles, etc.) required by a class should be acquired in the constructor and then released in the destructor. Think of it as "scope-bound resource management". The point here is that when a class throws an exception or goes out of scope, the destructor is called, guaranteeing no resources to be held after the object's lifetime.
+- What are designated initialisers in C++? How do you use them?
