@@ -423,13 +423,12 @@ private:
 
 ### noexcept
 Use `noexcept` at the end of a function signature to declare that it will never throw an exception. If it does in fact throw an exception, it will just directly `std::terminate()`.
-
 ```cpp
-void something_bad()
+void something_bad() noexcept;
 ```
 
 Why use it?
-- 
+- The compiler generates optimised code since it can assume it doesn't have to support try-catch control flow.
 
 ## Classes
 
@@ -440,9 +439,7 @@ The technique of acquiring resources in the constructor and then freeing them in
 # Quirks
 Random C++ details you encounter infrequently but which are still good to know.
 
-## if-statements
-### if-statement with initialiser
-In C++17, you can declare variables inside `if` statements and follow it up with a condition: `if (init; condition) { ... }`.
+- **if-statement with initialiser**: in C++17, you can declare variables inside `if` statements and follow it up with a condition: `if (init; condition) { ... }`.
 ```cpp
 vector<int> vec = { 1, 2, 3 };
 
@@ -453,6 +450,10 @@ if (int size = vec.size(); size > 2) {
     cout << "Vector size is > 2" << endl;
 }
 ```
+- **`noexcept(false)`**: it's possible to use `noexcept(false)` in function signatures to say that 'this function throws no exceptions (but it actually might, lol)'. Just avoid using it.
+- **`noexcept(true)`** and `noexcept` are completely equivalent.
+- **`throw()`**: in older C++, you can put `throw()` at the end of a function signature to say that the function never throws exceptions, for example: `void something_bad() throw()`. It's been deprecated by `noexcept` in C++11, which is preferred over `throw()`, so you'd do: `void something_bad() noexcept`.
+
 ---
 # Old Notes
 
