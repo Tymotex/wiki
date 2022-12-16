@@ -36,9 +36,7 @@ There are a few ways to initialise a variable with a value.
     ```
 - `explicit` constructors are *not invokable* with copy initialisation.
 
-#### Aggregate Initialisation [TODO]
-
-##### Designated Initialisers
+#### Designated Initialisers
 C++20 introduces a new way to initialise the members of a class/struct:
 ```cpp
 struct Human {
