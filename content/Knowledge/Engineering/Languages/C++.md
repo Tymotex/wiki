@@ -411,7 +411,11 @@ try {
     
     Turns `throw` statements into `std::terminate()`
 
+### Custom Exceptions
+Just inherit from `std::exception`. 
+```cpp
 
+```
 
 # Quirks
 Random C++ details you encounter infrequently but which are still good to know.
