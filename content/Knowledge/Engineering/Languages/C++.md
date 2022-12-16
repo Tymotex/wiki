@@ -353,7 +353,7 @@ int main() {
 }
 ```
 
-Use `using` to avoid using a fully qualified name every time.
+Use `using` to avoid using a fully qualified name every time. 
 ```cpp
 using std::cout;
 
@@ -363,7 +363,19 @@ int main() {
 }
 ```
             
-> ℹ️ Any identifier you bring in that's *not within* a namespace will be in the *global namespace*
+Any identifier you declare that's *not within* a namespace will be implicitly part of the *global namespace*. Globally scoped identifiers are accessible with `::` without specifying a name.
+```cpp
+int num = 42;
+
+namespace Foo {
+    int num = 24;
+
+    void bar() {
+        std::cout << num;     // 24. Picks the closer `Foo::num` over `::num`.
+        std::cout << ::num;   // 42.
+    }
+}
+```
 
 # Quirks
 Random C++ details you encounter infrequently but which are still good to know.
@@ -381,8 +393,6 @@ if (int size = vec.size(); size > 2) {
     cout << "Vector size is > 2" << endl;
 }
 ```
-
-
 ---
 # Old Notes
 
@@ -1684,6 +1694,9 @@ Basically Google’s standard library
 
 # Flashcards
 - What is separate compilation?
+    - A division of a larger project into smaller units that interact with each other through header files. One unit only knows about another unit through their header files. The big benefit of structuring projects this way is to allow for compilation to be done independently on these units, meaning that if one unit changes while others have not, then only that one unit is to be compiled.
 - What are the differences between copy, list and direct initialisation?
+    - They're the 3 ways initialisation of a new variable is done in C++. Copy initialisation is done with `=`, list initialisation is done with `{}`, and direct initialisation is done with `()`. Copy initialisation invokes the . Direct initialisation is directly invoking the constructor, hence the use of `()`.
 - What is the difference between `const` and `constexpr`?
-- 
+- What happens when an identifier is declared outside of a namespace?
+    - That identifier becomes globally scoped, i.e. part of the global namespace. It can be referenced directly or with `::` to explicitly say it's from the global namespace.
