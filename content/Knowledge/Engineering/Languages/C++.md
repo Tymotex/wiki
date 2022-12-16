@@ -443,16 +443,14 @@ Random C++ details you encounter infrequently but which are still good to know.
 ```cpp
 vector<int> vec = { 1, 2, 3 };
 
-if (int size = vec.size()) {
+if (int size = vec.size())
     cout << "Vector size is not 0" << endl;
-}
-if (int size = vec.size(); size > 2) {
+if (int size = vec.size(); size > 2)
     cout << "Vector size is > 2" << endl;
-}
 ```
 - **`noexcept(false)`**: it's possible to use `noexcept(false)` in function signatures to say that 'this function throws no exceptions (but it actually might, lol)'. Just avoid using it.
-- **`noexcept(true)`** and `noexcept` are completely equivalent.
-- **`throw()`**: in older C++, you can put `throw()` at the end of a function signature to say that the function never throws exceptions, for example: `void something_bad() throw()`. It's been deprecated by `noexcept` in C++11, which is preferred over `throw()`, so you'd do: `void something_bad() noexcept`.
+- **`noexcept(true)`** and `noexcept` are completely equivalent. 
+- **`throw()`**: in older C++, you can put `throw()` at the end of a function signature to say that the function never throws exceptions, for example: `void something_bad() throw()`. It's been deprecated by `noexcept` in C++11, which is preferred over `throw()`, so you'd do: `void something_bad() noexcept` instead.
 
 ---
 # Old Notes
