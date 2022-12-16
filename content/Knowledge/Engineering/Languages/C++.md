@@ -356,6 +356,7 @@ if (int size = vec.size(); size > 2) {
 # Old Notes
 
 > TODO: This is a huge mess that I'll slowly clean up...
+
 ### Others:
 - `new` operator — for instantiating classes and creating arrays.
     The `new` operator denotes a request for memory allocation on the heap. If the request can be granted, then it'll evaluate to the memory address of the newly allocated memory and then the constructor will be called.
