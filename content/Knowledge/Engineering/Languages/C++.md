@@ -48,7 +48,7 @@ struct Human {
 
 int main() {
   Human andrew{ .name = "Andrew", .age = 42 };
-  Human linus{ .name{"Linus"} };     // You can also use list initialisation on the members.
+  Human linus{ .name{"Linus"} };               // You can also use list initialisation on the members.
 
   Human ada{ .age = 36, .name = "Ada" };       // Error. You must initialise the fields in the same order as they're declared in the struct/class.
   return 0;
