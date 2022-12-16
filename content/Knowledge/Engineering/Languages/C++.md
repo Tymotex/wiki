@@ -395,7 +395,7 @@ namespace Foo {
 ```
 
 ## Error Handling
-C++ provides the familiar `try` and `catch`  blocks for error handling. 
+C++ provides the familiar `try` and `catch`  blocks for error handling. Note that when an exception is thrown, the destructor for the object that threw the exception is called, enabling [[Knowledge/Engineering/Languages/C++#RAII|RAII]].
 ```cpp
 try {
         
@@ -403,19 +403,39 @@ try {
 
 } catch(...) {
     // All exceptions are caught here when you use `...`
+
+    throw;  // Use `throw` on its own to re-throw the exception.
 }
 ```
 
-- `throw` [TODO]
-- `noexcept` functions [TODO]
-    
-    Turns `throw` statements into `std::terminate()`
-
 ### Custom Exceptions
-Just inherit from `std::exception`. 
+Just inherit from `std::exception`, implement the `const char* what() const throw()` method, and a constructor that takes in a `string` error message.
 ```cpp
+class MyException : public std::exception {
+public:
+  MyException(const string &message) : message_(message) {}
+  const char *what() const throw() { return message_.c_str(); }
 
+private:
+  string message_;
+};
 ```
+
+### noexcept
+Use `noexcept` at the end of a function signature to declare that it will never throw an exception. If it does in fact throw an exception, it will just directly `std::terminate()`.
+
+```cpp
+void something_bad()
+```
+
+Why use it?
+- 
+
+## Classes
+
+#### RAII
+The technique of acquiring resources in the constructor and then freeing them in the destructor is called *RAII (Resource Acquisition is Initialisation)*. The idea is about coupling the use of a resource to the lifetime of an object so that when it goes out of scope, or when it throws an exception, the resources it held are guaranteed to be released.
+- This works well for mutexes where you can acquire the lock in the constructor and unlock in the destructor.
 
 # Quirks
 Random C++ details you encounter infrequently but which are still good to know.
@@ -777,8 +797,6 @@ Assuming you don't encounter such classes there is little reason not to use the 
         
         ```
         
-    - **RAII** — the technique of acquiring resources in the constructor and then freeing them in the destructor is called *RAII (Resource Acquisition is Initialisation)*. The idea is about coupling the use of a resource to the lifetime of an object
-        - This also works well for mutexes where you can acquire the lock in the constructor and unlock in the destructor
 - **Virtual methods** — a function that has an implementation but which may be redefined later by a class deriving from this one
     - ***Pure virtual method*** — where a function ***must*** be defined by a class deriving from this one
         
@@ -1723,3 +1741,5 @@ Basically Google’s standard library
 - Explain RAII and what problem it aims to solve.
     - *Resource allocation is initialisation* means that any resources (things like file handles, database handles, etc.) required by a class should be acquired in the constructor and then released in the destructor. Think of it as "scope-bound resource management". The point here is that when a class throws an exception or goes out of scope, the destructor is called, guaranteeing no resources to be held after the object's lifetime.
 - What are designated initialisers in C++? How do you use them?
+- How do you define a custom exception in C++?
+    - Write a new class that inherits from `std::exception` and implement the `const char* what() const throw()` method and implement a constructor that takes in an error message. 
