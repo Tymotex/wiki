@@ -530,6 +530,31 @@ auto multiply(int a, int b) { return a * b; }
 
 In *A Tour of C++*, Bjarne says to not overuse return type deductions.
 
+### Initialiser List
+You can make a constructor or method take in an `std::initializer_list` to let the caller directly pass in a curly brace list like `{1, 2, 3, 4}` as an argument.
+```cpp
+class Foo {
+public:
+  vector<int> values;
+
+  Foo(const std::initializer_list<int>& elems) {
+    for (const int &elem : elems)
+      values.push_back(elem);
+  }
+  void foo(const std::initializer_list<int>& elems) {
+    for (const int& elem : elems)
+        cout << "Elem: " << elem << endl;
+  }
+};
+
+int main() {
+  Foo foo = {1, 2, 4, 8};
+  foo.foo({ 1, 2, 3 });
+  return 0;
+}
+```
+When the compiler sees something like `{1, 2, 3, 4}`, it will convert it to an instance of `std::initializer_list` (if used in a context like above).
+
 ### Inline Functions
 **`inline` functions**: when you want a function to be compiled such that the code is put *directly where it's called* instead of going through the overhead of entering a new function context, make that function `inline`. 
 
