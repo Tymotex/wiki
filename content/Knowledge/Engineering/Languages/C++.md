@@ -443,8 +443,19 @@ Suppose you have a function that returns a large object (e.g. a big matrix). Sin
 
 # Quirks
 Random C++ details you encounter infrequently but which are still good to know.
-- **Structured binding**: you can unpack values in C++ like how you destructure objects in JavaScript.
+- **Structured binding**: you can unpack values in C++17, similar to how you destructure objects in JavaScript.
+    ```cpp
+    struct Coordinate {
+      int x;
+      int y;
+    };
     
+    int main() {
+      Coordinate point{2, 4};
+      auto [foo, bar] = point;   // foo == 2, bar == 4
+      return 0;
+    }
+    ```
 - **Copy elision**: by default, when you pass an object to a function, that object is copied over (pass-by-value). When it doesn't affect program behaviour, the compiler can move the object rather than making a full copy of it. This compiler optimisation can also happen when returning an object, throwing an exception, etc.
     ```cpp
     string foo() {
@@ -455,6 +466,10 @@ Random C++ details you encounter infrequently but which are still good to know.
     int main() {
       string s = foo();
     }
+    ```
+- **Return type deduction**: in C++14, you can infer the return type of function whose return type is left as `auto`.
+    ```cpp
+    auto multiply(int a, int b) { return a * b; }
     ```
 - **if-statement with initialiser**: in C++17, you can declare variables inside `if` statements and follow it up with a condition: `if (init; condition) { ... }`.
     ```cpp
