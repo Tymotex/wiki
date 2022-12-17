@@ -488,7 +488,6 @@ int main() {
   return 0;
 }
 ```
-
 - Operator overloading is just a type of [[Knowledge/Engineering/Programming/Object Oriented Programming#Static Polymorphism|static polymorphism]]. **Operators are just functions**. When compiled, expressions with operators are just converted to equivalent function calls. E.g. `a += b` becomes `operator+=(a, b)`.
 - Operator overloading also exists in C#, Java, Python, etc.
 
@@ -756,15 +755,19 @@ std::sort(c.begin(), c.end(), **[[]] {**
 ```cpp
 class Human {
 public:
-    int age;
     string name;
-		static string scientific_name;
-		
-		// Default constructor.
-	    // Having this means that `Human` objects will never be uninitialised.
-		Human() { ... }
+    static string scientific_name;
+    
+    // Default constructor.
+    // Having this means that `Human` objects will never be uninitialised.
+    Human() { ... }
 
+    // Destructor. Called when an instance goes out of scope or on exception.
+    ~Human() { ... }
     Human(int age, string name) { ... }
+
+private:
+    int age_;
 };
 
 // Non-const static class variables must be initialised outside the class definition.
@@ -782,6 +785,7 @@ int main() {
 }
 ```
 - Why do non-const static members have to be initialised outside the class? See this [explanation](https://stackoverflow.com/questions/47882456/why-do-non-constant-static-variables-need-to-be-initialized-outside-the-class#:~:text=In%20the%20case%20of%20a,as%20part%20of%20an%20object.).
+- 
 
 ### Instantiating Classes: [TODO]
 
@@ -887,19 +891,6 @@ Assuming you don't encounter such classes there is little reason not to use the 
             cout << me[42] << endl;     // Prints 21
         }
         ```
-        
-- ***Destructors***
-    
-    A method that's called when the object goes out of scope. It's main purpose is to ensure memory allocated resources on the heap are freed to prevent memory leaks.
-    
-    - Example
-        
-        You define a destructor the same way you define a constructor, except you prefix the classname with `~`
-        
-        ```cpp
-        
-        ```
-        
 - **Virtual methods** — a function that has an implementation but which may be redefined later by a class deriving from this one
     - ***Pure virtual method*** — where a function ***must*** be defined by a class deriving from this one
         

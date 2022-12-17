@@ -7,7 +7,7 @@ title: Purchases
 - [x] Fitbit for Mum.
 - [ ] ~~Budget kitchen scale~~ (this is overkill)
 - [x] ~~Loop Quiet~~ (got cheaper ear plugs)
-- [ ] Oregano seeds
+- [x] Oregano seeds
 - [ ] Hair cream/paste
 - [ ] Hair spray
 - Clothes:
