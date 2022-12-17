@@ -542,7 +542,13 @@ if (int size = vec.size(); size > 2)
 - **`throw()`**: in older C++, you can put `throw()` at the end of a function signature to say that the function never throws exceptions, for example: `void something_bad() throw()`. It's been deprecated by `noexcept` in C++11, which is preferred over `throw()`, so you'd do: `void something_bad() noexcept` instead.
 
 ### Aggregates [TODO]
+*Aggregates* are either arrays or structs/classes that you didn't define constructors, private/protected instance variables or virtual methods for. When those conditions are met, that class is an *aggregate* type and can be initialised with `{}`.
+- The order that you declare the fields matter.
 
+> Even though they both use `{}`, ***aggregate initialisation* is different from *list initialisation***! 
+
+#### PODs
+*PODs* (*Plain Old Data*) are a kind of *aggregate type* that do not overload `operator=`, have no destructor, and there are no non-static members that are: non-POD classes, arrays of non-POD classes, or references.
 
 ---
 # Old Notes
