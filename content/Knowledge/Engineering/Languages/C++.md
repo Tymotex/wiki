@@ -467,6 +467,14 @@ The technique of acquiring resources in the constructor and then freeing them in
 ### Move Constructor [TODO]
 Suppose you have a function that returns a large object (e.g. a big matrix). Since you can't return a reference to a local variable, and it is a bad idea to resort to the C-style returning of a pointer to a `new` object that the caller has to memory-manage, the best option is to use a move constructor.
 
+### Operator Overloading
+You can define operations on classes by overloading operators like `+`, `+=`, `==`, etc.
+```cpp
+class Foo
+```
+
+Operator overloading is just a type of [[Knowledge/Engineering/Programming/Object Oriented Programming#Static Polymorphism|static polymorphism]]. **Operators are just functions**. When compiled, expressions with operators are just converted to equivalent function calls. E.g. `a += b` becomes `operator+=(a, b)`.
+
 ## Other C++ Features
 Smaller but important C++ details.
 
@@ -532,6 +540,9 @@ if (int size = vec.size(); size > 2)
 - **`noexcept(false)`**: it's possible to use `noexcept(false)` in function signatures to say that 'this function throws no exceptions (but it actually might, lol)'. Just avoid using it.
 - **`noexcept(true)`** and `noexcept` are completely equivalent. 
 - **`throw()`**: in older C++, you can put `throw()` at the end of a function signature to say that the function never throws exceptions, for example: `void something_bad() throw()`. It's been deprecated by `noexcept` in C++11, which is preferred over `throw()`, so you'd do: `void something_bad() noexcept` instead.
+
+### Aggregates [TODO]
+
 
 ---
 # Old Notes
