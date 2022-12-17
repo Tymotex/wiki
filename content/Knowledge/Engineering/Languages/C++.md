@@ -103,15 +103,16 @@ r = r2;      // Remember, you can think of references as aliases. This assignmen
 ```
 ![illustration of references|600](Knowledge/Engineering/Languages/assets/references-illustrated.png)
 
-- References are useful as function parameters to avoid copying the entire argument
+- References are useful as function parameters to avoid copying the entire argument. **In C++, pass-by-value is the default**, although *copy elision* can happen which nullifies the performance impact of making a copy of an object.
     ```cpp
-    void sort(vector<int>& sequence);    // Inplace sort
+    void sort(vector<int>& sequence);    // Will sort the given sequence, in-place.
     ```
 - Const references are useful for when you don't want to modify an argument and **just want to read its contents**. It prevents the need to make a copy of that argument for the function's scope. This is really common practice:
     ```cpp
     void getAverage(const vector<int>& sequence);
     ```
-- References must be initialised and can’t be reassigned afterwards
+- References must be initialised and can’t be reassigned afterwards.
+- When you return a reference, you are '*granting the caller access to something that isn't local to the function*'. It is an error to return a reference to a local variable.
 
 ## Type Qualifiers: auto, const, constexpr, static
 ### Auto
@@ -439,16 +440,26 @@ The technique of acquiring resources in the constructor and then freeing them in
 
 # Quirks
 Random C++ details you encounter infrequently but which are still good to know.
-
+- **Copy elision**: by default, when you pass an object to a function, that object is copied over (pass-by-value). When it doesn't affect program behaviour, the compiler can move the object rather than making a full copy of it. This compiler optimisation can also happen when returning an object, throwing an exception, etc.
+    ```cpp
+    string foo() {
+      string str = "Hello, world!";
+      return str;  // copy elision occurs here
+    }
+    
+    int main() {
+      string s = foo();
+    }
+    ```
 - **if-statement with initialiser**: in C++17, you can declare variables inside `if` statements and follow it up with a condition: `if (init; condition) { ... }`.
-```cpp
-vector<int> vec = { 1, 2, 3 };
-
-if (int size = vec.size())
-    cout << "Vector size is not 0" << endl;
-if (int size = vec.size(); size > 2)
-    cout << "Vector size is > 2" << endl;
-```
+    ```cpp
+    vector<int> vec = { 1, 2, 3 };
+    
+    if (int size = vec.size())
+        cout << "Vector size is not 0" << endl;
+    if (int size = vec.size(); size > 2)
+        cout << "Vector size is > 2" << endl;
+    ```
 - **`noexcept(false)`**: it's possible to use `noexcept(false)` in function signatures to say that 'this function throws no exceptions (but it actually might, lol)'. Just avoid using it.
 - **`noexcept(true)`** and `noexcept` are completely equivalent. 
 - **`throw()`**: in older C++, you can put `throw()` at the end of a function signature to say that the function never throws exceptions, for example: `void something_bad() throw()`. It's been deprecated by `noexcept` in C++11, which is preferred over `throw()`, so you'd do: `void something_bad() noexcept` instead.
@@ -1743,3 +1754,5 @@ Basically Google’s standard library
 - What are designated initialisers in C++? How do you use them?
 - How do you define a custom exception in C++?
     - Write a new class that inherits from `std::exception` and implement the `const char* what() const throw()` method and implement a constructor that takes in an error message. 
+- Explain copy elision.
+
