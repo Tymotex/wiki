@@ -434,6 +434,8 @@ Why use it?
 
 ## Classes
 
+Defining a default constructor 
+
 #### RAII
 The technique of acquiring resources in the constructor and then freeing them in the destructor is called *RAII (Resource Acquisition is Initialisation)*. The idea is about coupling the use of a resource to the lifetime of an object so that when it goes out of scope, or when it throws an exception, the resources it held are guaranteed to be released. Always design classes with RAII in mind.
 - This works well for mutexes where you can acquire the lock in the constructor and unlock in the destructor.
@@ -441,36 +443,44 @@ The technique of acquiring resources in the constructor and then freeing them in
 ### Move Constructor [TODO]
 Suppose you have a function that returns a large object (e.g. a big matrix). Since you can't return a reference to a local variable, and it is a bad idea to resort to the C-style returning of a pointer to a `new` object that the caller has to memory-manage, the best option is to use a move constructor.
 
-# Quirks
-Random C++ details you encounter infrequently but which are still good to know.
-- **Structured binding**: you can unpack values in C++17, similar to how you destructure objects in JavaScript.
-    ```cpp
-    struct Coordinate {
-      int x;
-      int y;
-    };
+## Other C++ Features
+Smaller but important C++ details.
+
+### Structured Bindings
+You can unpack values in C++17, similar to how you destructure objects in JavaScript.
+```cpp
+struct Coordinate {
+  int x;
+  int y;
+};
+
+int main() {
+  Coordinate point{2, 4};
+  auto [foo, bar] = point;   // foo == 2, bar == 4
+  return 0;
+}
+```
     
-    int main() {
-      Coordinate point{2, 4};
-      auto [foo, bar] = point;   // foo == 2, bar == 4
-      return 0;
-    }
-    ```
-- **Copy elision**: by default, when you pass an object to a function, that object is copied over (pass-by-value). When it doesn't affect program behaviour, the compiler can move the object rather than making a full copy of it. This compiler optimisation can also happen when returning an object, throwing an exception, etc.
-    ```cpp
-    string foo() {
-      string str = "Hello, world!";
-      return str;  // copy elision occurs here
-    }
-    
-    int main() {
-      string s = foo();
-    }
-    ```
-- **Return type deduction**: in C++14, you can infer the return type of function whose return type is left as `auto`.
-    ```cpp
-    auto multiply(int a, int b) { return a * b; }
-    ```
+### Copy Elision
+By default, when you pass an object to a function, that object is copied over (pass-by-value). When it doesn't affect program behaviour, the compiler can move the object rather than making a full copy of it. This compiler optimisation can also happen when returning an object, throwing an exception, etc.
+```cpp
+string foo() {
+  string str = "Hello, world!";
+  return str;  // copy elision occurs here
+}
+
+int main() {
+  string s = foo();
+}
+```
+
+### Return Type Deduction
+In C++14, you can infer the return type of function whose return type is left as `auto`.
+```cpp
+auto multiply(int a, int b) { return a * b; }
+```
+
+In *A Tour of C++*, Bjarne says to not overuse return type deductions.
 
 ### Inline Functions
 **`inline` functions**: when you want a function to be compiled such that the code is put *directly where it's called* instead of going through the overhead of entering a new function context, make that function `inline`. 
@@ -483,7 +493,7 @@ inline void foo();
     - This performance improvement is done at the cost of a marginally bigger executable size since the code is now duplicated across potentially many places. Smaller functions are usually better candidates for inlining.
     - [Why not make everything inline?](https://softwareengineering.stackexchange.com/questions/254688/why-dont-compilers-inline-everything) 
 
-### if-statement with initialiser
+### if-statement With Initialiser
 In C++17, you can declare variables inside `if` statements and follow it up with a condition: `if (init; condition) { ... }`.
 ```cpp
 vector<int> vec = { 1, 2, 3 };
@@ -494,7 +504,7 @@ if (int size = vec.size(); size > 2)
     cout << "Vector size is > 2" << endl;
 ```
 
-### Noexcept
+### Noexcept Conditions
 - **`noexcept(false)`**: it's possible to use `noexcept(false)` in function signatures to say that 'this function throws no exceptions (but it actually might, lol)'. Just avoid using it.
 - **`noexcept(true)`** and `noexcept` are completely equivalent. 
 - **`throw()`**: in older C++, you can put `throw()` at the end of a function signature to say that the function never throws exceptions, for example: `void something_bad() throw()`. It's been deprecated by `noexcept` in C++11, which is preferred over `throw()`, so you'd do: `void something_bad() noexcept` instead.
@@ -680,23 +690,21 @@ std::sort(c.begin(), c.end(), **[[]] {**
 ```
 
 ## Classes
-
-A class has a set of public or private *members*, which can be variables, functions or subtypes.
-
 ```cpp
-**class Human** {
-**public:**
+class Human {
+public:
     int age;
     string name;
 		static string scientific_name;
 		
-		// **Default constructor**
-		**Human**() { ... }
+		// Default constructor.
+	    // Having this means that `Human` objects will never be uninitialised.
+		Human() { ... }
 
-    **Human**(int age, string name) { ... }
+    Human(int age, string name) { ... }
 };
 
-// Static class variables must be initialised outside the class definition:
+// Non-const static class variables must be initialised outside the class definition.
 string Human::scientific_name = "homo sapiens";
 
 int main() {
@@ -706,10 +714,11 @@ int main() {
 
 		// **Allocating the object on the stack** (meaning there's not need to call delete)
 		Human me2(20, "Tim");
-		Human me3{20, "Tim"};     // An equivalent way of instantiating a class
-		Human me4;                // Implicitly calls the default constructor	
+		Human me3{20, "Tim"};     // An equivalent way of instantiating a class.
+		Human me4;                // Implicitly calls the default constructor.
 }
 ```
+- Why do non-const static members have to be initialised outside the class? See this [explanation](https://stackoverflow.com/questions/47882456/why-do-non-constant-static-variables-need-to-be-initialized-outside-the-class#:~:text=In%20the%20case%20of%20a,as%20part%20of%20an%20object.).
 
 ### Instantiating Classes: [TODO]
 
@@ -853,49 +862,44 @@ Assuming you don't encounter such classes there is little reason not to use the 
 
 ### Misc:
 
-- `const` methods
+> Methods that don't modify object state should be declared `const`. See this [const-correctness article](http://www.gotw.ca/gotw/006.htm)
     
-    <aside>
-    💡 Methods that don't modify object state should be declared `const`. See this [const-correctness article](http://www.gotw.ca/gotw/006.htm)
+When you add the `const` keyword to a method the `this` pointer will essentially become a pointer to `*const` object*, and you cannot therefore change any member data (unless you use `mutable` for class fields).
     
-    </aside>
-    
-    When you add the `const` keyword to a method the `this` pointer will essentially become a pointer to `*const` object*, and you cannot therefore change any member data (unless you use `mutable` for class fields).
-    
-    Declaring a method with `const` will cause a compiler error to be raised for when that method attempts to change a class variable.
-    
-    ```cpp
-    class Student {
-    public:
-      ...
-      **void myConstFunction() const** {       
-        this->name = "Overriden";         // Compiler error!
-      }
-    
-    private:
-      string name;
-    };
-    ```
-    
-    You can add the `mutable` keyword to allow exceptions for what class variables can be modified by const member functions.
-    
-    ```cpp
-    class Student {
-    public:
-    	...
-      Student(string name) {
-        cout << "Constructor" << endl;
-        this->name = name;
-      }
-    
-      **void myConstFunction() const** { 
-        this->name = "Overriden";       // This is now fine ✓
-      }
-    
-    private:
-      **mutable** string name;              // Permit `name` to be mutated by const member functions 
-    };
-    ```
+Declaring a method with `const` will cause a compiler error to be raised for when that method attempts to change a class variable.
+
+```cpp
+class Student {
+public:
+  ...
+  **void myConstFunction() const** {       
+    this->name = "Overriden";         // Compiler error!
+  }
+
+private:
+  string name;
+};
+```
+
+You can add the `mutable` keyword to allow exceptions for what class variables can be modified by const member functions.
+
+```cpp
+class Student {
+public:
+    ...
+  Student(string name) {
+    cout << "Constructor" << endl;
+    this->name = name;
+  }
+
+  **void myConstFunction() const** { 
+    this->name = "Overriden";       // This is now fine ✓
+  }
+
+private:
+  **mutable** string name;              // Permit `name` to be mutated by const member functions 
+};
+```
     
 - `const` objects
     
@@ -1777,6 +1781,7 @@ Basically Google’s standard library
 - Explain copy elision.
 - What problem does a move constructor solve — when would you use one?
 - What is a const method and why would you use it?
+    - A const method is one where `const` As a caller of a const method, you can trust it won't mutate the object it was called on (although you still can't be 100% certain).
 - When would you write a function that has a `const` return type?
     - Pretty much never.
 - What are inline functions? Why would you use them?
