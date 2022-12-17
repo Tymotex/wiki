@@ -679,12 +679,19 @@ kanban-plugin: basic
 - [x] In timz.dev, add video button to all project cards, if they have a `videoUrl`
 - [x] Cancel mum's Uber One membership.
 
+## **Saturday** *[[Journal/2022-12-17|2022-12-17]]* (6)
+
+- [x] 🌞 Morning routine
+- [x] Find a book similar to Mark Manson's Models.
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings

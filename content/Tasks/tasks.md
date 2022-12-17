@@ -2,25 +2,20 @@
 kanban-plugin: basic
 ---
 
-## **Saturday** *[[Journal/2022-12-17|2022-12-17]]* (6)
-
-- [ ] 🏆 **Purpose**: eng textbooks.
-- [x] 🌞 Morning routine
-- [ ] ==1== **(1 hour)** C++ chapter 3
-- [ ] ==1== **(1 hour)** Clean Code
-- [ ] ==1== **(1 hour)** Clean Code
-- [ ] ==1== **(1 hour)**<br>Transfer Git notes to Obsidian.
-- [ ] ==1== **(1 hour)**<br>Clean up book notes and summarise How Not to Die.
-- [ ] **(45 mins)** Research basic skincare.
-- [ ] ==1== Make a plan to grind out the math website in record time.
-- [x] Find a book similar to Mark Manson's Models.
-
 ## **Sunday** *[[Journal/2022-12-18|2022-12-18]]* (6)
 
 - [ ] 🏆 Purpose
 - [ ] 🌞 Morning routine
 - [ ] 🌙 Evening routine
 - [ ] **(10 mins)** Weekly Review.
+- [ ] ==1== 🏆 **Purpose**: eng textbooks.
+- [ ] ==2== **(1 hour)** C++ chapter 3
+- [ ] ==2== **(1 hour)** Clean Code
+- [ ] ==2== **(1 hour)** Clean Code
+- [ ] ==2== **(1 hour)**<br>Transfer Git notes to Obsidian.
+- [ ] ==2== **(1 hour)**<br>Clean up book notes and summarise How Not to Die.
+- [ ] ==1== **(45 mins)** Research basic skincare.
+- [ ] ==2== Make a plan to grind out the math website in record time.
 
 ## **Monday** *[[Journal/2022-12-19|2022-12-19]]* (6)
 
@@ -58,12 +53,21 @@ kanban-plugin: basic
 - [ ] 🌞 Morning routine
 - [ ] 🌙 Evening routine
 
+## **Sunday** *[[Journal/2022-12-25|2022-12-25]]* (6)
+
+- [ ] 🏆 Purpose
+- [ ] 🌞 Morning routine
+- [ ] 🌙 Evening routine
+- [ ] **(10 mins)** Weekly Review.
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 {"kanban-plugin":"basic"}
 ```
