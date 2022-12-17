@@ -548,7 +548,10 @@ if (int size = vec.size(); size > 2)
 > Even though they both use `{}`, ***aggregate initialisation* is different from *list initialisation***! 
 
 #### PODs
-*PODs* (*Plain Old Data*) are a kind of *aggregate type* that do not overload `operator=`, have no destructor, and there are no non-static members that are: non-POD classes, arrays of non-POD classes, or references.
+*PODs* (*Plain Old Data*) are a kind of *aggregate type* that do not overload `operator=`, have no destructor, and there are no non-static members that are: non-POD classes, arrays of non-POD classes, or references. [Learn more](https://stackoverflow.com/questions/4178175/what-are-aggregates-and-pods-and-how-why-are-they-special).
+- **They're very similar to structs in C**.
+- Using PODs offers performance advantages because the compiler no longer needs to set up the same abstractions necessary for normal classes to work.
+- Many built-in types are PODs, such as `int`, `double`, `enums`, etc.
 
 ---
 # Old Notes
@@ -1786,4 +1789,6 @@ Basically Google’s standard library
 - When would you write a function that has a `const` return type?
     - Pretty much never.
 - What are inline functions? Why would you use them?
-- 
+- What are aggregate types? What are POD types?
+- Explain the differences between classes and structs.
+    - They're basically the same, except the members in classes are private by default whereas the members in structs are public by default. Note that this difference is only for C++. In C# which also has classes and structs, the structs are also *value types*, meaning that they're passed-by-value instead of by reference.
