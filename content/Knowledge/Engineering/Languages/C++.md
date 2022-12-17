@@ -443,6 +443,8 @@ Suppose you have a function that returns a large object (e.g. a big matrix). Sin
 
 # Quirks
 Random C++ details you encounter infrequently but which are still good to know.
+- **Structured binding**: you can unpack values in C++ like how you destructure objects in JavaScript.
+    
 - **Copy elision**: by default, when you pass an object to a function, that object is copied over (pass-by-value). When it doesn't affect program behaviour, the compiler can move the object rather than making a full copy of it. This compiler optimisation can also happen when returning an object, throwing an exception, etc.
     ```cpp
     string foo() {
