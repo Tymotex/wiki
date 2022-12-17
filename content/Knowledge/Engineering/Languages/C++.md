@@ -438,6 +438,9 @@ Why use it?
 The technique of acquiring resources in the constructor and then freeing them in the destructor is called *RAII (Resource Acquisition is Initialisation)*. The idea is about coupling the use of a resource to the lifetime of an object so that when it goes out of scope, or when it throws an exception, the resources it held are guaranteed to be released. Always design classes with RAII in mind.
 - This works well for mutexes where you can acquire the lock in the constructor and unlock in the destructor.
 
+### Move Constructor [TODO]
+Suppose you have a function that returns a large object (e.g. a big matrix). Since you can't return a reference to a local variable, and it is a bad idea to resort to the C-style returning of a pointer to a `new` object that the caller has to memory-manage, the best option is to use a move constructor.
+
 # Quirks
 Random C++ details you encounter infrequently but which are still good to know.
 - **Copy elision**: by default, when you pass an object to a function, that object is copied over (pass-by-value). When it doesn't affect program behaviour, the compiler can move the object rather than making a full copy of it. This compiler optimisation can also happen when returning an object, throwing an exception, etc.
@@ -1755,4 +1758,5 @@ Basically Google’s standard library
 - How do you define a custom exception in C++?
     - Write a new class that inherits from `std::exception` and implement the `const char* what() const throw()` method and implement a constructor that takes in an error message. 
 - Explain copy elision.
+- What problem does a move constructor solve — when would you use one?
 
