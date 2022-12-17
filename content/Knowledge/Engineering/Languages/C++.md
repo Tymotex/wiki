@@ -163,15 +163,39 @@ void bar1(std::string* s);         // So can this.
 You can't have 100% certainty that what you pass as a const reference is unchanged. See [this example from isocpp](https://isocpp.org/wiki/faq/const-correctness#return-const-ref-from-const-memfn):
 
 #### Const Methods
-Const methods can only read `this` and never mutate anything about it. To specify a const method, the `const` qualifier *must* be placed after the parameter list.
+Const methods can only read `this` and never mutate any of its members. The `this` pointer will essentially become a pointer to `const` object. To specify a const method, the `const` qualifier *must* be placed after the parameter list. 
 ```cpp
-class Foo {
+class Student {
 public:
-    void inspect() const;
+  // ...
+  void my_const_func() const {       
+    this->name = "Overriden";   // Compiler error!
+  }
+
+private:
+  string name;
 };
 ```
+> Methods that don't modify object state should be declared `const`. See this [const-correctness article](http://www.gotw.ca/gotw/006.htm)
 
 > What about making methods **return const values**, eg. `const Foo bar();`? [It's *mostly* pointless](https://stackoverflow.com/questions/8716330/purpose-of-returning-by-const-value). However, it is *not* pointless if you're returning a pointer or reference to something that is const.
+
+##### Mutable 
+Declaring a method with `const` will cause a compiler error to be raised for when that method attempts to change a class variable.
+
+You can add the `mutable` keyword to allow an exception for what class variables can be modified by const member functions.
+```cpp
+class Student {
+public:
+  // ...
+  void myConstFunction() const { 
+    this->name = "Overriden";       // This is now fine ✓.
+  }
+
+private:
+  mutable string name;              // Permit `name` to be mutated by const member functions.
+};
+```
 
 ### Constexpr
 The `constexpr` type specifier is like `const`, except the RHS value must be able to be determined at compile-time. 
@@ -861,46 +885,6 @@ Assuming you don't encounter such classes there is little reason not to use the 
 ---
 
 ### Misc:
-
-> Methods that don't modify object state should be declared `const`. See this [const-correctness article](http://www.gotw.ca/gotw/006.htm)
-    
-When you add the `const` keyword to a method the `this` pointer will essentially become a pointer to `*const` object*, and you cannot therefore change any member data (unless you use `mutable` for class fields).
-    
-Declaring a method with `const` will cause a compiler error to be raised for when that method attempts to change a class variable.
-
-```cpp
-class Student {
-public:
-  ...
-  **void myConstFunction() const** {       
-    this->name = "Overriden";         // Compiler error!
-  }
-
-private:
-  string name;
-};
-```
-
-You can add the `mutable` keyword to allow exceptions for what class variables can be modified by const member functions.
-
-```cpp
-class Student {
-public:
-    ...
-  Student(string name) {
-    cout << "Constructor" << endl;
-    this->name = name;
-  }
-
-  **void myConstFunction() const** { 
-    this->name = "Overriden";       // This is now fine ✓
-  }
-
-private:
-  **mutable** string name;              // Permit `name` to be mutated by const member functions 
-};
-```
-    
 - `const` objects
     
     An object declared with `const` means that mutating its fields is not allowed. You can't set class variables directly and you can't call methods that set class variables either.
@@ -1781,7 +1765,7 @@ Basically Google’s standard library
 - Explain copy elision.
 - What problem does a move constructor solve — when would you use one?
 - What is a const method and why would you use it?
-    - A const method is one where `const` As a caller of a const method, you can trust it won't mutate the object it was called on (although you still can't be 100% certain).
+    - A const method is one where `const` is placed at the end of the function signature. It basically says the method will not modify whatever `this` is. As a caller of a const method, you can trust it won't mutate the object it was called on (although you still can't be 100% certain because the `mutable` keyword exists, which lets the const method mutate specific fields anyway, and there are other ways even without the `mutable` keyword, I think).
 - When would you write a function that has a `const` return type?
     - Pretty much never.
 - What are inline functions? Why would you use them?
