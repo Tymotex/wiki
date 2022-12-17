@@ -470,10 +470,27 @@ Suppose you have a function that returns a large object (e.g. a big matrix). Sin
 ### Operator Overloading
 You can define operations on classes by overloading operators like `+`, `+=`, `==`, etc.
 ```cpp
-class Foo
+class Coordinate {
+public:
+  int x;
+  int y;
+
+  Coordinate operator+(const Coordinate &other) {
+    return {.x = this->x + other.x, .y = this->y + other.y};
+  }
+};
+
+int main() {
+  Coordinate foo{42, 24};
+  Coordinate bar{2, 2};
+  Coordinate result = foo + bar;
+  cout << "Coordinate: " << result.x << ", " << result.y << endl;
+  return 0;
+}
 ```
 
-Operator overloading is just a type of [[Knowledge/Engineering/Programming/Object Oriented Programming#Static Polymorphism|static polymorphism]]. **Operators are just functions**. When compiled, expressions with operators are just converted to equivalent function calls. E.g. `a += b` becomes `operator+=(a, b)`.
+- Operator overloading is just a type of [[Knowledge/Engineering/Programming/Object Oriented Programming#Static Polymorphism|static polymorphism]]. **Operators are just functions**. When compiled, expressions with operators are just converted to equivalent function calls. E.g. `a += b` becomes `operator+=(a, b)`.
+- Operator overloading also exists in C#, Java, Python, etc.
 
 ## Other C++ Features
 Smaller but important C++ details.
@@ -549,8 +566,10 @@ if (int size = vec.size(); size > 2)
 
 #### PODs
 *PODs* (*Plain Old Data*) are a kind of *aggregate type* that do not overload `operator=`, have no destructor, and there are no non-static members that are: non-POD classes, arrays of non-POD classes, or references. [Learn more](https://stackoverflow.com/questions/4178175/what-are-aggregates-and-pods-and-how-why-are-they-special).
+
+Put simply, PODs are just simple data, or simple data containers, hence the name 'plain old data'.
 - **They're very similar to structs in C**.
-- Using PODs offers performance advantages because the compiler no longer needs to set up the same abstractions necessary for normal classes to work.
+- Because they're very simple, using PODs can offer performance advantages because the compiler no longer needs to set up the same abstractions necessary for normal classes to work, letting them generate more efficient code.
 - Many built-in types are PODs, such as `int`, `double`, `enums`, etc.
 
 ---
