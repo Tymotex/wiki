@@ -471,15 +471,30 @@ Random C++ details you encounter infrequently but which are still good to know.
     ```cpp
     auto multiply(int a, int b) { return a * b; }
     ```
-- **if-statement with initialiser**: in C++17, you can declare variables inside `if` statements and follow it up with a condition: `if (init; condition) { ... }`.
-    ```cpp
-    vector<int> vec = { 1, 2, 3 };
-    
-    if (int size = vec.size())
-        cout << "Vector size is not 0" << endl;
-    if (int size = vec.size(); size > 2)
-        cout << "Vector size is > 2" << endl;
-    ```
+
+### Inline Functions
+**`inline` functions**: when you want a function to be compiled such that the code is put *directly where it's called* instead of going through the overhead of entering a new function context, make that function `inline`. 
+
+**I.e. if you want the machine code to not have function calls to this function, put `inline`** before the function signature. This tells the compiler to place a copy of the function's code *at each point where the function is called* at compile time.
+```cpp
+inline void foo();
+```
+- Inlining functions offers a marginal performance improvement (usually) because you avoid allocating a new [[Knowledge/Engineering/Operating Systems/Stack Frame|stack frame]] that’s usually associated with making a function call.
+    - This performance improvement is done at the cost of a marginally bigger executable size since the code is now duplicated across potentially many places. Smaller functions are usually better candidates for inlining.
+    - [Why not make everything inline?](https://softwareengineering.stackexchange.com/questions/254688/why-dont-compilers-inline-everything) 
+
+### if-statement with initialiser
+In C++17, you can declare variables inside `if` statements and follow it up with a condition: `if (init; condition) { ... }`.
+```cpp
+vector<int> vec = { 1, 2, 3 };
+
+if (int size = vec.size())
+    cout << "Vector size is not 0" << endl;
+if (int size = vec.size(); size > 2)
+    cout << "Vector size is > 2" << endl;
+```
+
+### Noexcept
 - **`noexcept(false)`**: it's possible to use `noexcept(false)` in function signatures to say that 'this function throws no exceptions (but it actually might, lol)'. Just avoid using it.
 - **`noexcept(true)`** and `noexcept` are completely equivalent. 
 - **`throw()`**: in older C++, you can put `throw()` at the end of a function signature to say that the function never throws exceptions, for example: `void something_bad() throw()`. It's been deprecated by `noexcept` in C++11, which is preferred over `throw()`, so you'd do: `void something_bad() noexcept` instead.
@@ -600,21 +615,6 @@ Random C++ details you encounter infrequently but which are still good to know.
     ```
     
     - It can be convenient for lambdas and functions that return generic types
-- `inline` functions
-    
-    You can prefix a function or method signature with the inline keyword. This makes it so the compiler places a copy of the code in that function at each point where the function is called at compile time, meaning that the code is basically copied into the calling function.
-    
-    - Doing this offers a marginal performance improvement because you avoid allocating a new [[Knowledge/Engineering/Operating Systems/Stack Frame|stack frame]] that’s usually associated with making a function call
-        - This performance improvement is done at the cost of a marginally bigger executable size
-        - [Why not make everything inline?](https://softwareengineering.stackexchange.com/questions/254688/why-dont-compilers-inline-everything)
-    - You should mainly consider using inline on functions that are very small but called several times in a program
-    
-    ```cpp
-    **inline** void Func() {
-        cout << "Hello world" << endl;
-    }
-    ```
-    
 
 ---
 
@@ -1776,4 +1776,8 @@ Basically Google’s standard library
     - Write a new class that inherits from `std::exception` and implement the `const char* what() const throw()` method and implement a constructor that takes in an error message. 
 - Explain copy elision.
 - What problem does a move constructor solve — when would you use one?
-
+- What is a const method and why would you use it?
+- When would you write a function that has a `const` return type?
+    - Pretty much never.
+- What are inline functions? Why would you use them?
+- 
