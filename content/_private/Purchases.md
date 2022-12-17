@@ -9,7 +9,7 @@ title: Purchases
 - [x] ~~Loop Quiet~~ (got cheaper ear plugs)
 - [ ] Oregano seeds
 - [ ] Hair cream/paste
-- [ ] Hair sprayknif 
+- [ ] Hair spray
 - Clothes:
     - [x] Light blue OCBD, or white
     - [x] Navy chinos
@@ -36,6 +36,5 @@ title: Purchases
 - Better barbell with sharper knurlings
 - Adjustable dumbbell set.
 - Good pillow.
-- Guitar finger picks that aren't clunky.
 - Cooling blanket.
 - Cooling mattress or bed temperature controller.
