@@ -603,6 +603,14 @@ Put simply, PODs are just simple data, or simple data containers, hence the name
 - Because they're very simple, using PODs can offer performance advantages because the compiler no longer needs to set up the same abstractions necessary for normal classes to work, letting them generate more efficient code.
 - Many built-in types are PODs, such as `int`, `double`, `enums`, etc.
 
+### Protected and Private Inheritance
+Protected and private inheritance are specific to C++. Other languages usually won't have this.
+> Just use public inheritance (`: public`) if you want to represent an *is-a* relationship. Use protected and private inheritance sparingly.
+
+- Protected inheritance makes all public members inherited from the parent protected.
+- Private inheritance makes all public and protected members inherited from the parent private.
+
+
 ---
 # Old Notes
 
@@ -819,12 +827,10 @@ int main() {
 - Why do non-const static members have to be initialised outside the class? See this [explanation](https://stackoverflow.com/questions/47882456/why-do-non-constant-static-variables-need-to-be-initialized-outside-the-class#:~:text=In%20the%20case%20of%20a,as%20part%20of%20an%20object.).
 
 ### Inheritance
-Inheritance is done with the syntax `class Foo : public Bar`. 
+Inheritance is done with the syntax `class Foo : public Bar`. Also see [[Knowledge/Engineering/Languages/C++#Protected and Private Inheritance|Protected and Private Inheritance]].
 - Constructors are not inherited by default.
 - Child constructors can reference the parent constructors in the [[Knowledge/Engineering/Languages/C++#Member Initialiser List|member initialiser list]] following the constructor signature.
-
-- Protected inheritance makes all public members inherited from the parent protected.
-- Private inheritance makes all public and protected members inherited from the parent private.
+- Multiple inheritance is done like this: `class Foo : public Bar, public Baz`.
 
 ### Member Initialiser List and Delegating Constructors
 Use a member initialiser list following a constructor signature to initialise class variables and invoke other constructors.
@@ -840,13 +846,10 @@ public:
 };
 ```
 - ⚠️ This is not to be confused with [[Knowledge/Engineering/Languages/C++#Copy, List and Direct Initialisation|list initialisation]].
-- **This is *not* just a shorthand**. The difference between member initialiser lists and assigning variables in the constructor body is that
-
-Member initialiser list — the constructor for each member will be called and initialised in one operation
-There is the additional overhead of creation and assignment when you do this
-You can’t initialise const class variables this way
-Class members are initialised in the order that they are declared in the class, not the order they appear in the actual member initialiser list
-It’s good practice to keep the order of class variable declarations and the order they appear in member initialiser lists the same
+- **This is *not* just a shorthand**:
+    - You must initialise const members in the member initialiser list.
+    - Initialisation is always done before the executing the constructor body.
+- **Order matters**. Initialise members in the same order that they're declared in the class as a good practice.
 
 ### Instantiating Classes: [TODO]
 
