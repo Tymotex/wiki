@@ -169,7 +169,7 @@ class Student {
 public:
   // ...
   void my_const_func() const {       
-    this->name = "Overriden";   // Compiler error!
+    this->name = "Overridden";   // Compiler error!
   }
 
 private:
@@ -189,7 +189,7 @@ class Student {
 public:
   // ...
   void myConstFunction() const { 
-    this->name = "Overriden";       // This is now fine ✓.
+    this->name = "Overridden";       // This is now fine ✓.
   }
 
 private:
@@ -897,15 +897,33 @@ Virtual methods are methods that have an implementation but which *may* be redef
 - `override` keyword — is an *optional* qualifier that tells programmers that a method is meant to provide a definition for a virtual method from a base class
 - Any class with virtual functions should always provide a virtual *destructor*
 
-### Object Slicing [TODO]
-When you assign a child instance to a variable of the type of the parent, the members specific to the child are 'sliced off'. 
+### Object Slicing
+When you copy a child object to a variable of the type of the parent, the members specific to the child are 'sliced off'. 
 ```cpp
-Parent foo = Child();
+Parent foo = Child();   // When the child object is copied to a variable of a parent type,
+                        // all its members and overridden methods are 
 ```
-- An important consequence of object slicing is that you can no longer call the child class' overriden methods on when the variable is of the parent type.
+- An important consequence of object slicing is that you can no longer call the child class' overridden methods on when the variable is of the parent type. In the following example, the output is "Something":
+    ```cpp
+    class Parent {
+    public:
+        virtual void do_something() { cout << "Something\n"; }
+    };
+    
+    class Child : public Parent {
+    public:
+        void do_something() override { cout << "Overridden\n"; }
+    };
+    
+    int main() {
+        Parent foo = Child();
+        foo.do_something();
+        return 0;
+    }
+    ```
+    - If you used `Parent* foo = new Child();` instead, the output would be "Overridden".
 
-
-> Object slicing does not exist in most other languages, like Java.
+> Object slicing does not happen in the same way in most other languages, like Java. When you do `Parent foo = new Child()` in Java, `foo`'s overriden methods are still intact and will be called instead of the base method. This is because languages like Java use implicit references to manipulate objects and objects are copied by reference by default, unlike C++.
 
 ### Instantiating Classes: [TODO]
 
@@ -1876,7 +1894,7 @@ Basically Google’s standard library
 - How do you make a class abstract in C++?
     - Give it at least one pure virtual function. E.g. `virtual void foo() = 0;`.
 - What are the differences between virtual functions and pure virtual functions? How does this differ between C++ and other languages like C# or Java?
-    - Virtual functions are those that *can* be overriden. Pure virtual functions are those that *must* be overriden. In other languages like C#, all methods are virtual by default. In those languages, pure virtual functions are known as *abstract functions*.
+    - Virtual functions are those that *can* be overridden. Pure virtual functions are those that *must* be overridden. In other languages like C#, all methods are virtual by default. In those languages, pure virtual functions are known as *abstract functions*.
 - How do you use `override` in C++? What's the point?
 - Why is the output of the following program "Something"?
   ```cpp
@@ -1887,7 +1905,7 @@ Basically Google’s standard library
     
     class Child : public Parent {
     public:
-        void do_something() override { cout << "Overriden\n"; }
+        void do_something() override { cout << "Overridden\n"; }
     };
     
     int main() {
@@ -1896,4 +1914,4 @@ Basically Google’s standard library
         return 0;
     }
     ```
-    - If this code were written in Java, the output would be "Overriden". In C++, we have *object slicing*. If you wanted to get this C++ to output "Overriden", you'd have to use pointer types or references.
+    - If this code were written in Java, the output would be "Overridden". In C++, we have *object slicing*. If you wanted to get this C++ to output "Overridden", you'd have to use pointer types or references.
