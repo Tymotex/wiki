@@ -817,9 +817,38 @@ int main() {
 }
 ```
 - Why do non-const static members have to be initialised outside the class? See this [explanation](https://stackoverflow.com/questions/47882456/why-do-non-constant-static-variables-need-to-be-initialized-outside-the-class#:~:text=In%20the%20case%20of%20a,as%20part%20of%20an%20object.).
-- **Inheritance** is done with the syntax `class Foo : public Bar`.
-    - Protected inheritance makes all public members inherited from the parent protected.
-    - Private inheritance makes all public and protected members inherited from the parent private.
+
+### Inheritance
+Inheritance is done with the syntax `class Foo : public Bar`. 
+- Constructors are not inherited by default.
+- Child constructors can reference the parent constructors in the [[Knowledge/Engineering/Languages/C++#Member Initialiser List|member initialiser list]] following the constructor signature.
+
+- Protected inheritance makes all public members inherited from the parent protected.
+- Private inheritance makes all public and protected members inherited from the parent private.
+
+### Member Initialiser List
+Use a member initialiser list following a constructor signature to initialise class variables and invoke other constructors.
+- ⚠️ This is not to be confused with [[Knowledge/Engineering/Languages/C++#Copy, List and Direct Initialisation|list initialisation]].
+- Initialise member variables before the constructor body executes (const members MUST be initialised this way, you can’t set them in the body)
+    
+
+```cpp
+```
+// **Member initialiser list**
+Foo(int num)**: bar(num)** {};
+
+// **Simple assignment**
+Foo(int num) {
+		bar = num;
+}
+There is a significant difference between initialising a class variable with member initialiser list and simple assignment in the constructor body
+
+Member initialiser list — the constructor for each member will be called and initialised in one operation
+Simple assignment in the body
+There is the additional overhead of creation and assignment when you do this
+You can’t initialise const class variables this way
+Class members are initialised in the order that they are declared in the class, not the order they appear in the actual member initialiser list
+It’s good practice to keep the order of class variable declarations and the order they appear in member initialiser lists the same
 
 ### Instantiating Classes: [TODO]
 
@@ -1027,38 +1056,6 @@ Assuming you don't encounter such classes there is little reason not to use the 
     }
     ```
     
-- Access modifiers — `public`, `private`, `protected`
-    
-    `public` — members are visible and usable anywhere in the program
-    
-    `private` — members are visible and usable only within the class itself and to *friend classes*
-    
-    `protected` — like *private,* but derived classes are also allowed to access the members
-    
-- ***Member initialiser list** —* for 'properly' initialising class variables in the constructor [TODO]
-    
-    <aside>
-    ⚠️ This is not to be confused with **list initialisation**!
-    
-    </aside>
-    
-    ```cpp
-    // **Member initialiser list**
-    Foo(int num)**: bar(num)** {};
-    
-    // **Simple assignment**
-    Foo(int num) {
-    		bar = num;
-    }
-    ```
-    
-    There is a significant difference between initialising a class variable with member initialiser list and simple assignment in the constructor body
-    
-    - Member initialiser list — the constructor for each member will be called and initialised in one operation
-    - Simple assignment in the body
-        - There is the additional overhead of creation *and* assignment when you do this
-        - You can't initialise `const` class variables this way
-    
     ---
     
     - Class members are initialised in the **order that they are declared in the class**, not the order they appear in the actual member initialiser list
@@ -1257,9 +1254,6 @@ This looks like a C++20 feature, which isn't really out yet (at least not stably
     myclass bar (10,20);  // calls first constructor
     ```
     
-- constructor initialiser list (member initialiser list) — the list of stuff that follows the colon : in a constructor implementation.
-    - Call base class constructors here
-    - Initialise member variables before the constructor body executes (const members MUST be initialised this way, you can’t set them in the body)
 
 ### Extern [TODO]
 - `extern` keyword
