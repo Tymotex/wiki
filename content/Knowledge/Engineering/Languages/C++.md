@@ -818,6 +818,8 @@ int main() {
 ```
 - Why do non-const static members have to be initialised outside the class? See this [explanation](https://stackoverflow.com/questions/47882456/why-do-non-constant-static-variables-need-to-be-initialized-outside-the-class#:~:text=In%20the%20case%20of%20a,as%20part%20of%20an%20object.).
 - **Inheritance** is done with the syntax `class Foo : public Bar`.
+    - Protected inheritance makes all public members inherited from the parent protected.
+    - Private inheritance makes all public and protected members inherited from the parent private.
 
 ### Instantiating Classes: [TODO]
 
