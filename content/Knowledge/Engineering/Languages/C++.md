@@ -607,9 +607,36 @@ Put simply, PODs are just simple data, or simple data containers, hence the name
 Protected and private inheritance are specific to C++. Other languages usually won't have this.
 > Just default to using public inheritance (`: public`) if you want to represent an *is-a* relationship. Use protected and private inheritance sparingly.
 
+```cpp
+class Parent {
+public:
+    int a;
+protected:
+    int b;
+private:
+    int c;
+};
+
+class PublicChild : public Parent {
+    // a is public.
+    // b is protected.
+    // c is inaccessible here.
+};
+
+class ProtectedChild : protected Parent {
+    // a is protected.
+    // b is protected.
+    // c is inaccessible here.
+};
+
+class PrivateChild : private Parent {
+    // a is private.
+    // b is private.
+    // c is inaccessible here.
+};
+```
 - Protected inheritance makes all public members inherited from the parent protected.
 - Private inheritance makes all public and protected members inherited from the parent private. Private inheritance basically hides the inheritance from the rest of the world.
-
 
 ---
 # Old Notes
@@ -851,6 +878,25 @@ public:
     - Initialisation is always done before the executing the constructor body.
 - **Order matters**. Initialise members in the same order that they're declared in the class as a good practice.
 
+### Virtual Methods
+Virtual methods are methods that have an implementation but which *may* be redefined later by a child class.
+
+
+- ***Pure virtual method*** — where a function ***must*** be defined by a class deriving from this one
+    
+    ```cpp
+    class Foo {
+    public:
+            virtual void Bar() **= 0**;
+    }
+    ```
+    
+- ***Abstract class*** — a class that has at least 1 *pure virtual method*. It cannot be instantiated
+    - C++ doesn't have an `abstract` keyword like Java. To make a class abstract, you just define 1 pure virtual method
+- ***Concrete class*** — a class that has no *pure virtual functions* and can be directly instantiated
+- `override` keyword — is an *optional* qualifier that tells programmers that a method is meant to provide a definition for a virtual method from a base class
+- Any class with virtual functions should always provide a virtual *destructor*
+
 ### Instantiating Classes: [TODO]
 
 ```cpp
@@ -955,21 +1001,6 @@ Assuming you don't encounter such classes there is little reason not to use the 
             cout << me[42] << endl;     // Prints 21
         }
         ```
-- **Virtual methods** — a function that has an implementation but which may be redefined later by a class deriving from this one
-    - ***Pure virtual method*** — where a function ***must*** be defined by a class deriving from this one
-        
-        ```cpp
-        class Foo {
-        public:
-        		virtual void Bar() **= 0**;
-        }
-        ```
-        
-    - ***Abstract class*** — a class that has at least 1 *pure virtual method*. It cannot be instantiated
-        - C++ doesn't have an `abstract` keyword like Java. To make a class abstract, you just define 1 pure virtual method
-    - ***Concrete class*** — a class that has no *pure virtual functions* and can be directly instantiated
-    - `override` keyword — is an *optional* qualifier that tells programmers that a method is meant to provide a definition for a virtual method from a base class
-    - Any class with virtual functions should always provide a virtual *destructor*
 - Polymorphism [TODO]
     
     I think you can only access polymorphic objects through pointers and references
@@ -1048,7 +1079,7 @@ Assuming you don't encounter such classes there is little reason not to use the 
     
     private:
       int size;
-    };
+        };
     
     int main() {
       MyVector v = 2;      // Without an **explicit** constructor, this actually calls **MyVector(2)**. 
@@ -1831,3 +1862,9 @@ Basically Google’s standard library
 - Explain the differences between classes and structs.
     - They're basically the same, except the members in classes are private by default whereas the members in structs are public by default. Note that this difference is only for C++. In C# which also has classes and structs, the structs are also *value types*, meaning that they're passed-by-value instead of by reference.
 - Explain lvalues and rvalues.
+- Explain what the access modifiers do in inheritance.
+- How do you make a class abstract in C++?
+    - Give it at least one pure virtual function. E.g. `virtual void foo() = 0;`.
+- What are the differences between virtual functions and pure virtual functions? How does this differ between C++ and other languages like C# or Java?
+    - Virtual functions are those that *can* be overriden. Pure virtual functions are those that *must* be overriden. In other languages like C#, all methods are virtual by default. In those languages, pure virtual functions are known as *abstract functions*.
+- How do you use `override` in C++? What's the point?
