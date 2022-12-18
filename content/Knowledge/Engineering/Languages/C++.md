@@ -897,6 +897,16 @@ Virtual methods are methods that have an implementation but which *may* be redef
 - `override` keyword — is an *optional* qualifier that tells programmers that a method is meant to provide a definition for a virtual method from a base class
 - Any class with virtual functions should always provide a virtual *destructor*
 
+### Object Slicing [TODO]
+When you assign a child instance to a variable of the type of the parent, the members specific to the child are 'sliced off'. 
+```cpp
+Parent foo = Child();
+```
+- An important consequence of object slicing is that you can no longer call the child class' overriden methods on when the variable is of the parent type.
+
+
+> Object slicing does not exist in most other languages, like Java.
+
 ### Instantiating Classes: [TODO]
 
 ```cpp
@@ -1868,3 +1878,22 @@ Basically Google’s standard library
 - What are the differences between virtual functions and pure virtual functions? How does this differ between C++ and other languages like C# or Java?
     - Virtual functions are those that *can* be overriden. Pure virtual functions are those that *must* be overriden. In other languages like C#, all methods are virtual by default. In those languages, pure virtual functions are known as *abstract functions*.
 - How do you use `override` in C++? What's the point?
+- Why is the output of the following program "Something"?
+  ```cpp
+    class Parent {
+    public:
+        virtual void do_something() { cout << "Something\n"; }
+    };
+    
+    class Child : public Parent {
+    public:
+        void do_something() override { cout << "Overriden\n"; }
+    };
+    
+    int main() {
+        Parent foo = Child();
+        foo.do_something();
+        return 0;
+    }
+    ```
+    - If this code were written in Java, the output would be "Overriden". In C++, we have *object slicing*. If you wanted to get this C++ to output "Overriden", you'd have to use pointer types or references.
