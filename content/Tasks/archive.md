@@ -684,12 +684,18 @@ kanban-plugin: basic
 - [x] 🌞 Morning routine
 - [x] Find a book similar to Mark Manson's Models.
 
+## **Sunday** *[[Journal/2022-12-18|2022-12-18]]* (6)
+
+
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
