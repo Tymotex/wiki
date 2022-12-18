@@ -43,6 +43,10 @@ TODO.
 #### Dynamic Polymorphism
 TODO.
 
+How does the program know which method is the correct one to invoke at runtime? tl;dr — in C++, every class with virtual functions has its own [virtual function table](https://en.wikipedia.org/wiki/Virtual_method_table) (an array of function pointers) created at compile-time that holds pointers to that class' virtual methods. Every object, on creation, gets a pointer to the function table of its class.
+![[Knowledge/Engineering/Programming/assets/virtual-function-table.png|650]]
+([sourced from Trail of Bits](https://blog.trailofbits.com/2017/02/13/devirtualizing-c-with-binary-ninja/))
+
 ### Method Overidding
 Method overriding is when you make a subclass provide an implementation for a method that's defined in its base class. Method overriding enables **[[Knowledge/Engineering/Programming/Object Oriented Programming#Dynamic Polymorphism|runtime polymorphism]]**.
 
