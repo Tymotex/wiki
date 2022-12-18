@@ -555,6 +555,13 @@ int main() {
 ```
 When the compiler sees something like `{1, 2, 3, 4}`, it will convert it to an instance of `std::initializer_list` (if used in a context like above).
 
+### Casting [TODO]
+- `static_cast`  — casts from one type to another. **It does not check what you're doing makes sense**, so avoid using it often.
+- `dynamic_cast` — casts pointer/reference types. Useful for runtime typechecking of objects. E.g. you can convert an instance of a parent class into an instance of a child class.
+- `reinterpret_cast` — treating an object as a raw sequence of bytes.
+- `const_cast` — casts away 'constness'.
+- `(type) value` — C-style typecasting. This is the least preferred way since it's unconstrained.
+
 ### Inline Functions
 **`inline` functions**: when you want a function to be compiled such that the code is put *directly where it's called* instead of going through the overhead of entering a new function context, make that function `inline`. 
 
