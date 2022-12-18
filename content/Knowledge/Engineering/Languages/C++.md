@@ -806,7 +806,7 @@ private:
 string Human::scientific_name = "homo sapiens";
 
 int main() {
-		// **Allocating the object on the heap**
+    // **Allocating the object on the heap**
     Human* me1 = new Human(20, "Tim");
     delete me1;
 
@@ -817,7 +817,7 @@ int main() {
 }
 ```
 - Why do non-const static members have to be initialised outside the class? See this [explanation](https://stackoverflow.com/questions/47882456/why-do-non-constant-static-variables-need-to-be-initialized-outside-the-class#:~:text=In%20the%20case%20of%20a,as%20part%20of%20an%20object.).
-- 
+- **Inheritance** is done with the syntax `class Foo : public Bar`.
 
 ### Instantiating Classes: [TODO]
 
@@ -938,7 +938,6 @@ Assuming you don't encounter such classes there is little reason not to use the 
     - ***Concrete class*** — a class that has no *pure virtual functions* and can be directly instantiated
     - `override` keyword — is an *optional* qualifier that tells programmers that a method is meant to provide a definition for a virtual method from a base class
     - Any class with virtual functions should always provide a virtual *destructor*
-- **Inheritance [TODO]**
 - Polymorphism [TODO]
     
     I think you can only access polymorphic objects through pointers and references
@@ -1834,3 +1833,4 @@ Basically Google’s standard library
 - What are aggregate types? What are POD types?
 - Explain the differences between classes and structs.
     - They're basically the same, except the members in classes are private by default whereas the members in structs are public by default. Note that this difference is only for C++. In C# which also has classes and structs, the structs are also *value types*, meaning that they're passed-by-value instead of by reference.
+- Explain lvalues and rvalues.
