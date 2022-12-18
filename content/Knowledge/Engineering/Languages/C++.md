@@ -605,10 +605,10 @@ Put simply, PODs are just simple data, or simple data containers, hence the name
 
 ### Protected and Private Inheritance
 Protected and private inheritance are specific to C++. Other languages usually won't have this.
-> Just use public inheritance (`: public`) if you want to represent an *is-a* relationship. Use protected and private inheritance sparingly.
+> Just default to using public inheritance (`: public`) if you want to represent an *is-a* relationship. Use protected and private inheritance sparingly.
 
 - Protected inheritance makes all public members inherited from the parent protected.
-- Private inheritance makes all public and protected members inherited from the parent private.
+- Private inheritance makes all public and protected members inherited from the parent private. Private inheritance basically hides the inheritance from the rest of the world.
 
 
 ---
