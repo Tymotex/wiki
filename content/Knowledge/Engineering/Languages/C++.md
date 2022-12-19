@@ -457,8 +457,252 @@ Why use it?
 - For documentation for other developers.
 
 ## Classes
-
-Defining a default constructor 
+```cpp
+class Human {
+public:
+    string name;
+    static string scientific_name;
+        // Default constructor.
+    // Having this means that `Human` objects will never be uninitialised.
+    Human() { ... }
+    // Destructor. Called when an instance goes out of scope or on exception.
+    ~Human() { ... }
+    Human(int age, string name) { ... }
+private:
+    int age_;
+};
+// Non-const static class variables must be initialised outside the class definition.
+string Human::scientific_name = "homo sapiens";
+int main() {
+    // **Allocating the object on the heap**
+    Human* me1 = new Human(20, "Tim");
+    delete me1;
+        // **Allocating the object on the stack** (meaning there's not need to call delete)
+        Human me2(20, "Tim");
+        Human me3{20, "Tim"};     // An equivalent way of instantiating a class.
+        Human me4;                // Implicitly calls the default constructor.
+}
+```
+- Why do non-const static members have to be initialised outside the class? See this [explanation](https://stackoverflow.com/questions/47882456/why-do-non-constant-static-variables-need-to-be-initialized-outside-the-class#:~:text=In%20the%20case%20of%20a,as%20part%20of%20an%20object.).
+### Inheritance
+Inheritance is done with the syntax `class Foo : public Bar`. Also see [[Knowledge/Engineering/Languages/C++#Protected and Private Inheritance|Protected and Private Inheritance]].
+- Constructors are not inherited by default.
+- Child constructors can reference the parent constructors in the [[Knowledge/Engineering/Languages/C++#Member Initialiser List|member initialiser list]] following the constructor signature.
+- Multiple inheritance is done like this: `class Foo : public Bar, public Baz`.
+### Member Initialiser List and Delegating Constructors
+Use a member initialiser list following a constructor signature to initialise class variables and invoke other constructors.
+```cpp
+class Foo {
+public:
+    int bar;
+    string baz;
+    Foo() : Foo(0, "") {}
+    Foo(int num) : Foo(num, "") {}
+    Foo(int num, string str) : bar(num), baz(str) {}
+};
+```
+- ⚠️ This is not to be confused with [[Knowledge/Engineering/Languages/C++#Copy, List and Direct Initialisation|list initialisation]].
+- **This is *not* just a shorthand**:
+    - You must initialise const members in the member initialiser list.
+    - Initialisation is always done before the executing the constructor body.
+- **Order matters**. Initialise members in the same order that they're declared in the class as a good practice.
+### Virtual Methods
+Virtual methods are methods that have an implementation but which *may* be redefined later by a child class.
+- ***Pure virtual method*** — where a function ***must*** be defined by a class deriving from this one
+        ```cpp
+    class Foo {
+    public:
+            virtual void Bar() **= 0**;
+    }
+    ```
+    - ***Abstract class*** — a class that has at least 1 *pure virtual method*. It cannot be instantiated
+    - C++ doesn't have an `abstract` keyword like Java. To make a class abstract, you just define 1 pure virtual method
+- ***Concrete class*** — a class that has no *pure virtual functions* and can be directly instantiated
+- `override` keyword — is an *optional* qualifier that tells programmers that a method is meant to provide a definition for a virtual method from a base class
+- Any class with virtual functions should always provide a virtual *destructor*
+### Object Slicing
+When you copy a child object to a variable of the type of the parent, the members specific to the child are 'sliced off' so that the resulting object is a valid instance of the parent type. 
+```cpp
+Parent foo = Child();   // When the child object is copied to a variable of a parent type,
+                        // all its members and overridden methods are 
+```
+- An important consequence of object slicing is that you can no longer call the child class' overridden methods on when the variable is of the parent type. In the following example, the output is "Something":
+    ```cpp
+    class Parent {
+    public:
+        virtual void do_something() { cout << "Something\n"; }
+    };
+        class Child : public Parent {
+    public:
+        void do_something() override { cout << "Overridden\n"; }
+    };
+        int main() {
+        Parent foo = Child();
+        foo.do_something();
+        return 0;
+    }
+    ```
+    - If you used `Parent* foo = new Child();` instead, the output would be "Overridden".
+> Object slicing does not happen in the same way in most other languages, like Java. When you do `Parent foo = new Child()` in Java, `foo`'s overriden methods are still intact and will be called instead of the base method. This is because languages like Java use implicit references to manipulate objects and objects are copied by reference by default, unlike C++.
+![[Knowledge/Engineering/Languages/assets/object-slicing-cpp.png|600]]
+(sourced from [GeeksForGeeks](https://www.geeksforgeeks.org/object-slicing-in-c/))
+### Instantiating Classes
+There are several ways of instantiating a class:
+```cpp
+void func() {
+    // Allocated on the stack:
+    Foo f1;              // Implicitly calls the default constructor, Foo().
+                         // In other languages like C#, this would be an uninitialised object.
+    Foo f2 = Foo(1);     // Copy initialisation.
+    Foo f3 = 1;          // Also copy initialisation.
+    Foo f4(1);           // Direct initialisation.
+    Foo f5{1};           // List initialisation (generally preferred because it avoids implicit type 
+                         // conversions and avoids creating unnecessary temporary objects).
+    Foo f6 = {1};        // Also copy initialisation, but with an initialiser list.
+    Foo f7();            // You'd think this is calling the default constructor, but it's not.
+                         // See 'most vexing parse'. Use `Foo f7;` instead to call the default ctor.
+    // Manually allocated on the heap (avoid when posssible):
+    Foo* f8 = new Foo();
+    delete f8;
+}
+```
+Note that when using brace initialisation, the constructor that takes in a `std::initializer_list` will be preferred for invocation.
+```cpp
+class Foo {
+public:
+    Foo(initializer_list<int>) {
+        cout << "Initialiser list constructor called.\n";
+    }
+    Foo(const int&) {
+        cout << "Normal constructor called.\n";
+    }
+};
+int main() {
+    Foo b(42);  // Normal constructor called.
+    Foo c{42};  // Initialiser list constructor called.
+    return 0;
+}
+```
+**General Guidelines[*](https://stackoverflow.com/questions/9976927/when-to-use-the-brace-enclosed-initializer):**
+- Use `=` if the (single) value you are initialising with is intended to be the *exact value* of the object.
+    - Prefer using `=` when assigning to `auto` variables.
+    - Prefer when initialising variables with primitive types (eg. int, bool, float, etc.).
+- Use `{ }` if the values you are initialising with are a list of values to be *stored in the object* (like the elements of a vector/array, or real/imaginary part of a complex number).
+    - Prefer using { } in the majority of cases because it can be used in every context and is less error-prone than the alternatives.
+- Use `( )` if the values you are initialising with are *not* values to be stored, but *describe* the intended value/state of the object, use parentheses.
+    - Essentially, if the intent is to call a particular constructor, then use parentheses `( )`.
+    - E.g. good example with `vector`:
+        ```cpp
+        vector<int> **v(10)**;          // Empty vector of 10 elements
+        cout << v.size() << endl;   // Prints **10**
+                vector<int> **u{1, 2, 3}**;     // Vector with elements 1, 2, 3
+        cout << u.size() << endl;   // Prints **3**
+        ```
+- In general, prefer allocating on the stack rather than the heap, unless you need the object to persist after the function terminates.
+    - You'd have to use `unique_ptr` if you don't want to memory-manage with `new` and `delete`.
+        - Allocating on the heap is less performant than allocating on the stack. **Stack allocation is faster** because the access pattern makes it trivial to allocate and deallocate memory from it (a pointer/integer is simply incremented or decremented), while the heap has much more complex bookkeeping involved in memory allocation/deallocation.
+    - Very large objects should be allocated on the heap to prevent stack overflow (the heap is larger than the stack).
+- Note: In Java/C#, you can’t allocate objects on the stack, they’d all be allocated on the heap. You could use a `struct` instead
+### Const Objects [TODO]
+- `const` objects
+        An object declared with `const` means that mutating its fields is not allowed. You can't set class variables directly and you can't call methods that set class variables either.
+        ```cpp
+    class Student {
+    public:
+        string name;
+            Student() {
+            this->name = "Andrew";
+        }
+            void setName(string name) {
+            this->name = name;
+        }
+    };
+        int main() {
+        Student s1;
+        s1.name = "Taylor";     // ✓
+            **const Student s2**;        
+        s2.name = "Taylor";     // ✘ not fine because this modifies a class variable
+        s2.setName("Taylor");   // ✘ not fine because this modifies a class variable
+    }
+    ```
+### Final Methods [TODO]
+- `final` methods
+        Postfixing a method signature with the `final` keyword will make it so that it cannot be implemented by a deriving class.
+        - [Why final exists](https://stackoverflow.com/questions/8824587/what-is-the-purpose-of-the-final-keyword-in-c11-for-functions)
+        ```cpp
+    class **BaseFoo** {
+    public:
+        virtual void Info() = 0;
+    };
+        class **Foo** : public **BaseFoo** {
+    public:
+        void Info() override final {}
+    };
+        class **DerivingFoo** : public **Foo** {
+    public:
+        void Info() override {}            // **Error**: cannot override **final** funtion
+    };
+    ```
+### Explicit Methods [TODO]
+- `explicit` methods
+        You can put explicit in front of constructors or methods to prevent implicit type conversions from other types to your class.
+        - It’s good practice to make constructors explicit by default, unless an implicit conversion makes sense semantically. [Source](https://stackoverflow.com/questions/3716453/is-it-a-good-practice-to-make-constructor-explicit)
+        ```cpp
+    class MyVector {
+    public:
+      **MyVector(int num)** {
+        size = num;
+      }
+          void Show() {
+        cout << "Size: " << size << endl;
+      }
+        private:
+      int size;
+        };
+        int main() {
+      MyVector v = 2;      // Without an **explicit** constructor, this actually calls **MyVector(2)**. 
+                                                 // When you define **`explicit MyVector(int num)`**, this call would cause an error.
+      v.print();
+    }
+    ```
+### Friend [TODO]
+- `friend` — granting full internal access to other classes and functions
+        A class can declare who their *friends* are in their body. Friends are then able to access everything within that class, including private members.
+        - You can only declare who’s allowed to access you, not who you can have access to. Eg. in real life, you can’t grant yourself access to someone else’s privates, but you can grant others access to yours 😏
+    - You can declare other classes or standalone functions as your friends
+    - Example
+                ```cpp
+        class Baby {
+        public:
+            Baby(const string& name) {}
+        private:
+            **friend class Mother;**        // Makes it so that methods of **Mother** will be able to see everything in **Baby**
+            string name;
+        };
+                class Mother {
+        public:
+            Mother(const string& babyName) : baby(babyName) {}
+                    void RenameBaby(const string& newName) {
+                **baby.name = newName;**    // This is only possible because of `**friend class Mother**`
+            }
+        private:
+            Baby baby;
+        };
+                int main() {
+            Mother mum("Andrew");
+            mum.RenameBaby("Andy");
+        }
+        ```
+                **Use cases:**
+        - When you want to write white-box unit tests, then you can declare the unit test class as a friend. It’s good for unit testing private methods
+        - It’s [debatable](https://stackoverflow.com/questions/4171310/what-is-wrong-with-making-a-unit-test-a-friend-of-the-class-it-is-testing/4171331#4171331) whether it’s good practice to test private methods. Testing a public method will indirectly test a private method anyway
+### Deleted Functions [TODO]
+- *Deleted* *functions* (`= delete`)
+        Just like how you can use `= 0` to declare a function to be a pure virtual function, you can use `= delete` to declare a function to be a *delete function*.
+        A *delete function* is one that has been explicitly disabled. It’s useful for disabling certain operators from being usable on your class, for example. Any attempts to call a deleted function raises a compile-time error.
+    ```cpp
+    Bar(const Foo &) = delete;
+    ```
 
 #### RAII
 The technique of acquiring resources in the constructor and then freeing them in the destructor is called *RAII (Resource Acquisition is Initialisation)*. The idea is about coupling the use of a resource to the lifetime of an object so that when it goes out of scope, or when it throws an exception, the resources it held are guaranteed to be released. Always design classes with RAII in mind.
@@ -656,6 +900,18 @@ class PrivateChild : private Parent {
 - Protected inheritance makes all public members inherited from the parent protected.
 - Private inheritance makes all public and protected members inherited from the parent private. Private inheritance basically hides the inheritance from the rest of the world.
 
+### Class Prototypes
+Class prototypes are just like function prototypes. You can declare all your classes upfront and then use them wherever you want throughout the code.
+```cpp
+// Declare classes.
+class A;
+class B;
+
+// Define classes later (any order is okay).
+class B { ... };
+class A { ... };
+```
+
 ---
 # Old Notes
 
@@ -835,388 +1091,6 @@ std::sort(c.begin(), c.end(), **[[]] {**
     **return a.key < b.key;
 }**);
 ```
-
-## Classes
-```cpp
-class Human {
-public:
-    string name;
-    static string scientific_name;
-    
-    // Default constructor.
-    // Having this means that `Human` objects will never be uninitialised.
-    Human() { ... }
-
-    // Destructor. Called when an instance goes out of scope or on exception.
-    ~Human() { ... }
-    Human(int age, string name) { ... }
-
-private:
-    int age_;
-};
-
-// Non-const static class variables must be initialised outside the class definition.
-string Human::scientific_name = "homo sapiens";
-
-int main() {
-    // **Allocating the object on the heap**
-    Human* me1 = new Human(20, "Tim");
-    delete me1;
-
-		// **Allocating the object on the stack** (meaning there's not need to call delete)
-		Human me2(20, "Tim");
-		Human me3{20, "Tim"};     // An equivalent way of instantiating a class.
-		Human me4;                // Implicitly calls the default constructor.
-}
-```
-- Why do non-const static members have to be initialised outside the class? See this [explanation](https://stackoverflow.com/questions/47882456/why-do-non-constant-static-variables-need-to-be-initialized-outside-the-class#:~:text=In%20the%20case%20of%20a,as%20part%20of%20an%20object.).
-
-### Inheritance
-Inheritance is done with the syntax `class Foo : public Bar`. Also see [[Knowledge/Engineering/Languages/C++#Protected and Private Inheritance|Protected and Private Inheritance]].
-- Constructors are not inherited by default.
-- Child constructors can reference the parent constructors in the [[Knowledge/Engineering/Languages/C++#Member Initialiser List|member initialiser list]] following the constructor signature.
-- Multiple inheritance is done like this: `class Foo : public Bar, public Baz`.
-
-### Member Initialiser List and Delegating Constructors
-Use a member initialiser list following a constructor signature to initialise class variables and invoke other constructors.
-```cpp
-class Foo {
-public:
-    int bar;
-    string baz;
-
-    Foo() : Foo(0, "") {}
-    Foo(int num) : Foo(num, "") {}
-    Foo(int num, string str) : bar(num), baz(str) {}
-};
-```
-- ⚠️ This is not to be confused with [[Knowledge/Engineering/Languages/C++#Copy, List and Direct Initialisation|list initialisation]].
-- **This is *not* just a shorthand**:
-    - You must initialise const members in the member initialiser list.
-    - Initialisation is always done before the executing the constructor body.
-- **Order matters**. Initialise members in the same order that they're declared in the class as a good practice.
-
-### Virtual Methods
-Virtual methods are methods that have an implementation but which *may* be redefined later by a child class.
-
-
-- ***Pure virtual method*** — where a function ***must*** be defined by a class deriving from this one
-    
-    ```cpp
-    class Foo {
-    public:
-            virtual void Bar() **= 0**;
-    }
-    ```
-    
-- ***Abstract class*** — a class that has at least 1 *pure virtual method*. It cannot be instantiated
-    - C++ doesn't have an `abstract` keyword like Java. To make a class abstract, you just define 1 pure virtual method
-- ***Concrete class*** — a class that has no *pure virtual functions* and can be directly instantiated
-- `override` keyword — is an *optional* qualifier that tells programmers that a method is meant to provide a definition for a virtual method from a base class
-- Any class with virtual functions should always provide a virtual *destructor*
-
-### Object Slicing
-When you copy a child object to a variable of the type of the parent, the members specific to the child are 'sliced off' so that the resulting object is a valid instance of the parent type. 
-```cpp
-Parent foo = Child();   // When the child object is copied to a variable of a parent type,
-                        // all its members and overridden methods are 
-```
-- An important consequence of object slicing is that you can no longer call the child class' overridden methods on when the variable is of the parent type. In the following example, the output is "Something":
-    ```cpp
-    class Parent {
-    public:
-        virtual void do_something() { cout << "Something\n"; }
-    };
-    
-    class Child : public Parent {
-    public:
-        void do_something() override { cout << "Overridden\n"; }
-    };
-    
-    int main() {
-        Parent foo = Child();
-        foo.do_something();
-        return 0;
-    }
-    ```
-    - If you used `Parent* foo = new Child();` instead, the output would be "Overridden".
-
-> Object slicing does not happen in the same way in most other languages, like Java. When you do `Parent foo = new Child()` in Java, `foo`'s overriden methods are still intact and will be called instead of the base method. This is because languages like Java use implicit references to manipulate objects and objects are copied by reference by default, unlike C++.
-
-![[Knowledge/Engineering/Languages/assets/object-slicing-cpp.png|600]]
-(sourced from [GeeksForGeeks](https://www.geeksforgeeks.org/object-slicing-in-c/))
-
-### Instantiating Classes
-There are several ways of instantiating a class:
-```cpp
-void func() {
-    // Allocated on the stack:
-    Foo f1;              // Implicitly calls the default constructor, Foo().
-    Foo f2 = Foo(1);     // Copy initialisation.
-    Foo f3 = 1;          // Also copy initialisation.
-    Foo f4(1);           // Direct initialisation.
-    Foo f5{1};           // List initialisation (generally preferred because it avoids implicit type 
-                         // conversions and avoids creating unnecessary temporary objects).
-    Foo f6 = {1};        // Also copy initialisation, but with an initialiser list.
-    Foo f7();            // You'd think this is calling the default constructor, but it's not. See 'most vexing parse'
-
-    // Manually allocated on the heap (avoid when posssible):
-    Foo* f8 = new Foo();
-    delete f8;
-}
-```
-**General Guidelines[*](https://stackoverflow.com/questions/9976927/when-to-use-the-brace-enclosed-initializer):**
-- Use `=` if the (single) value you are initialising with is intended to be the *exact value* of the object
-    - Prefer using `=` when assigning to `auto` variables
-    - Prefer when initialising variables with primitive types (eg. int, bool, float, etc.)
-- Use `{ }` if the values you are initialising with are a list of values to be *stored in the object* (like the elements of a vector/array, or real/imaginary part of a complex number)
-    - Prefer using { } in the majority of cases because it can be used in every context and is less error-prone than the alternatives
-- Use `( )` if the values you are initialising with are *not* values to be stored, but *describe* the intended value/state of the object, use parentheses
-    - Essentially, if the intent is to call a particular constructor, then use parentheses `( )`
-    - E.g. good example with `vector`
-        ```cpp
-        vector<int> **v(10)**;          // Empty vector of 10 elements
-        cout << v.size() << endl;   // Prints **10**
-        
-        vector<int> **u{1, 2, 3}**;     // Vector with elements 1, 2, 3
-        cout << u.size() << endl;   // Prints **3**
-        ```
-
-[There are MANY reasons to use brace initialization, but you should be aware that **the `initializer_list<>` constructor is preferred to the other constructors**, the exception being the default-constructor. This leads to problems with constructors and templates where the type `T` constructor can be either an initializer list or a plain old ctor.](https://stackoverflow.com/questions/18222926/why-is-list-initialization-using-curly-braces-better-than-the-alternatives)
-
-```cpp
-struct Foo {
-    Foo() {}
-    Foo(std::initializer_list<Foo>) { std::cout << "initializer list" << std::endl; }
-    Foo(const Foo&) { std::cout << "copy ctor" << std::endl; }
-};
-
-int main() {
-    Foo a;
-    Foo b(a); // copy ctor
-    Foo c{a}; // copy ctor (init. list element) + initializer list!!!
-}
-
-```
-
-Assuming you don't encounter such classes there is little reason not to use the intializer list.
-
-- Ways to construct an object
-    ```cpp
-    Foo f;            // Just calls Foo's default constructor, **Foo()**. In Java/C#, this would be an uninitialised object, but in C++ it has implicitly called the default constructor
-    Foo f = Foo(1);    // **Copy initialisation**:   calls Foo(), *then the **copy constructor***
-    Foo f = Foo(1);		// Direct initialisation							
-    Foo f();           // **Direct initialisation**: calls Foo()
-    ^WARNING This doesn't do what you think it does. This is actually interpreted as a function prototype. What you want is just **Foo f;** which just invokes the default constructor 
-    ```
-
-                       
-                       
-### OOP:
-
-- ***Operator overloading*** — lets you define what operators like `++`, `[ ]`, `()`, etc. do when used on an instance of your class.
-    
-    The compiler converts something like `a != b` to a function call `operator!=(a, b)`
-    
-    - Example
-        
-        ```cpp
-        class Human {
-            public:
-                Human(int age, string name) {
-                    this->age = age;
-                    this->name = name;
-                }
-        
-                // Defines the subscript operator []'s behaviour. Returns a reference to the age property, regardless of the index (which is pretty dumb)
-        				// Eg. **me[123]** will evalute to **this->age**
-                int& **operator[]**(int i) { return this->age; }
-        				
-        				// Defines the *prefix* incrementor operator ++'s behaviour. It just increases the age
-                void **operator++**() { this->age++; }
-        
-            private:
-                int age;
-                string name;
-        };
-        
-        int main() {
-            Human me(20, "Tim");
-            ++me;
-            cout << me[42] << endl;     // Prints 21
-        }
-        ```
-- Polymorphism [TODO]
-    
-    I think you can only access polymorphic objects through pointers and references
-    
-
----
-
-### Misc:
-- `const` objects
-    
-    An object declared with `const` means that mutating its fields is not allowed. You can't set class variables directly and you can't call methods that set class variables either.
-    
-    ```cpp
-    class Student {
-    public:
-        string name;
-    
-        Student() {
-            this->name = "Andrew";
-        }
-    
-        void setName(string name) {
-            this->name = name;
-        }
-    };
-    
-    int main() {
-        Student s1;
-        s1.name = "Taylor";     // ✓
-    
-        **const Student s2**;        
-        s2.name = "Taylor";     // ✘ not fine because this modifies a class variable
-        s2.setName("Taylor");   // ✘ not fine because this modifies a class variable
-    }
-    ```
-    
-- `final` methods
-    
-    Postfixing a method signature with the `final` keyword will make it so that it cannot be implemented by a deriving class.
-    
-    - [Why final exists](https://stackoverflow.com/questions/8824587/what-is-the-purpose-of-the-final-keyword-in-c11-for-functions)
-    
-    ```cpp
-    class **BaseFoo** {
-    public:
-        virtual void Info() = 0;
-    };
-    
-    class **Foo** : public **BaseFoo** {
-    public:
-        void Info() override final {}
-    };
-    
-    class **DerivingFoo** : public **Foo** {
-    public:
-        void Info() override {}            // **Error**: cannot override **final** funtion
-    };
-    ```
-    
-- `explicit` methods
-    
-    You can put explicit in front of constructors or methods to prevent implicit type conversions from other types to your class.
-    
-    - It’s good practice to make constructors explicit by default, unless an implicit conversion makes sense semantically. [Source](https://stackoverflow.com/questions/3716453/is-it-a-good-practice-to-make-constructor-explicit)
-    
-    ```cpp
-    class MyVector {
-    public:
-      **MyVector(int num)** {
-        size = num;
-      }
-    
-      void Show() {
-        cout << "Size: " << size << endl;
-      }
-    
-    private:
-      int size;
-        };
-    
-    int main() {
-      MyVector v = 2;      // Without an **explicit** constructor, this actually calls **MyVector(2)**. 
-    											 // When you define **`explicit MyVector(int num)`**, this call would cause an error.
-      v.print();
-    }
-    ```
-    
-    ---
-    
-    - Class members are initialised in the **order that they are declared in the class**, not the order they appear in the actual member initialiser list
-        - It's good practice to keep the order of class variable declarations and the order they appear in member initialiser lists the same
-    
-- `friend` — granting full internal access to other classes and functions
-    
-    A class can declare who their *friends* are in their body. Friends are then able to access everything within that class, including private members.
-    
-    - You can only declare who’s allowed to access you, not who you can have access to. Eg. in real life, you can’t grant yourself access to someone else’s privates, but you can grant others access to yours 😏
-    - You can declare other classes or standalone functions as your friends
-    - Example
-        
-        ```cpp
-        class Baby {
-        public:
-            Baby(const string& name) {}
-        private:
-            **friend class Mother;**        // Makes it so that methods of **Mother** will be able to see everything in **Baby**
-            string name;
-        };
-        
-        class Mother {
-        public:
-            Mother(const string& babyName) : baby(babyName) {}
-        
-            void RenameBaby(const string& newName) {
-                **baby.name = newName;**    // This is only possible because of `**friend class Mother**`
-            }
-        private:
-            Baby baby;
-        };
-        
-        int main() {
-            Mother mum("Andrew");
-            mum.RenameBaby("Andy");
-        }
-        ```
-        
-    
-    **Use cases:**
-    
-    - When you want to write white-box unit tests, then you can declare the unit test class as a friend. It’s good for unit testing private methods
-        - It’s [debatable](https://stackoverflow.com/questions/4171310/what-is-wrong-with-making-a-unit-test-a-friend-of-the-class-it-is-testing/4171331#4171331) whether it’s good practice to test private methods. Testing a public method will indirectly test a private method anyway
-- Class prototypes
-    
-    Class prototypes: just like function prototypes, you can declare all your classes upfront and then use them wherever you want throughout the code:
-    
-    ```cpp
-    // Declare my classes
-    class A;
-    class B;
-    class C;
-    
-    // Define my classes (any order will do)
-    class A { ... };
-    class B { ... };
-    class C { ... };
-    ```
-    
-    - Remeber, *hoisting* does not exist in C++
-- *Deleted* *functions* (`= delete`)
-    
-    Just like how you can use `= 0` to declare a function to be a pure virtual function, you can use `= delete` to declare a function to be a *delete function*.
-    
-    A *delete function* is one that has been explicitly disabled. It’s useful for disabling certain operators from being usable on your class, for example. Any attempts to call a deleted function raises a compile-time error.
-    
-    ```cpp
-    class Foo {
-    		Bar(const Foo &) **= delete**;
-    }
-    ```
-    
-
----
-
-- In general, prefer allocating on the stack rather than the heap, unless you need the object to persist after the function terminates
-    - When allocating on the heap, you have to explicitly call `delete` on that object to prevent memory leaks. Making the caller responsible for remembering to call `delete` themselves is bad practice
-        - Every `new` must have a corresponding `delete`, just like how every `malloc(...)` must have a corresponding `free(...)` in C
-        - With stack-allocated objects, the destructor is automatically called when the scope ends
-    - Allocating on the heap is less performant than allocating on the stack
-        - **The stack is faster** because the access pattern makes it trivial to allocate and deallocate memory from it (a pointer/integer is simply incremented or decremented), while the heap has much more complex bookkeeping involved in an allocation or free[*](https://stackoverflow.com/questions/24057331/is-accessing-data-in-the-heap-faster-than-from-the-stack)
-    - Very large objects should still be on the heap to prevent stack overflow (the heap is larger than the stack)
-- Note: In Java/C#, you can’t allocate objects on the stack, they’d all be allocated on the heap. You could use a `struct` instead
 
 ## Enums
 
