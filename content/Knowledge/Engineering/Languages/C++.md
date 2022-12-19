@@ -696,6 +696,8 @@ int main() {
                 **Use cases:**
         - When you want to write white-box unit tests, then you can declare the unit test class as a friend. It’s good for unit testing private methods
         - It’s [debatable](https://stackoverflow.com/questions/4171310/what-is-wrong-with-making-a-unit-test-a-friend-of-the-class-it-is-testing/4171331#4171331) whether it’s good practice to test private methods. Testing a public method will indirectly test a private method anyway
+
+
 ### Deleted Functions [TODO]
 - *Deleted* *functions* (`= delete`)
         Just like how you can use `= 0` to declare a function to be a pure virtual function, you can use `= delete` to declare a function to be a *delete function*.
