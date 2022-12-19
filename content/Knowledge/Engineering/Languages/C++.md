@@ -705,13 +705,31 @@ private:
 
 > Use friend classes sparingly. If you're in a situation where you want to use a friend class, it's a red flag, design-wise.
 
-### Deleted Functions [TODO]
-- *Deleted* *functions* (`= delete`)
-        Just like how you can use `= 0` to declare a function to be a pure virtual function, you can use `= delete` to declare a function to be a *delete function*.
-        A *delete function* is one that has been explicitly disabled. It’s useful for disabling certain operators from being usable on your class, for example. Any attempts to call a deleted function raises a compile-time error.
-    ```cpp
-    Bar(const Foo &) = delete;
-    ```
+### Deleted Functions
+Just like how you can use `= 0` to declare a function to be a pure virtual function, you can use `= delete` to declare a function to be a *deleted function*, where it can no longer be invoked. This is mostly used to suppress operations and constructors to prevent misuse. 
+```cpp
+class A {
+public:
+    A() = default;
+
+    // Deleted copy constructor.
+    A(const A& other) = delete;
+
+    // Deleted assignment operator.
+    A &operator=(const A& other) = delete;
+};
+
+int main() {
+    A a1;
+    A a2 = a1; // error, copy constructor is deleted.
+    a1 = a2;   // error, assignment operator is deleted.
+
+    return 0;
+}
+```
+
+### Defaulted Functions
+Like *deleted functions*, you can postfix a constructor or method signature with `= default` to make the compiler supply a default implementation.
 
 ### RAII
 The technique of acquiring resources in the constructor and then freeing them in the destructor is called *RAII (Resource Acquisition is Initialisation)*. The idea is about coupling the use of a resource to the lifetime of an object so that when it goes out of scope, or when it throws an exception, the resources it held are guaranteed to be released. Always design classes with RAII in mind.
@@ -1821,11 +1839,11 @@ class GargantuanTableIterator {
     ```
     - If this code were written in Java, the output would be "Overridden". In C++, we have *object slicing*. If you wanted to get this C++ to output "Overridden", you'd have to use pointer types or references.
 - Explain 3 ways the `delete` keyword is used.
-    - Deleting memory-allocated objects: `delete obj;`, deleting arrays: `delete[] my_arr;`, declaring deleted functions `void foo() = delete;`.
+    - Deleting memory-allocated objects: `delete obj;`, deleting arrays: `delete[] my_arr;`, declaring deleted functions `void foo() = delete;`. Deleted functions are mainly used to suppress operations and constructors, mainly. E.g. you'd mark an overloaded operator method as deleted to prevent the misuse of it.
 - Explain const objects.
     - Object variables declared with the `const` qualifier
 - What are the uses for `final`?
     - It can be used to declare final methods and final classes. Final methods can't be overridden or changed by child classes. They're declared like this: `void foo() final;`. Final classes cannot be inherited. They're declared like this: `class Foo final;` .
 - Explain `friend` in C++ — what do they do and how do you use it?
-    - Inside class `Foo`, use `friend class Bar` to grant ``
+    - Inside class `Foo`, use `friend class Bar` to grant `Bar` access to every member of `Foo`. "Friends can touch your privates," and "you can't grant yourself access to other people's privates, but you can grants others access to yours". It's use is discouraged, but sometimes it's helpful for unit testing classes to access private methods.
 
