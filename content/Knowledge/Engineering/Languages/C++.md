@@ -627,46 +627,48 @@ int main() {
 }
 ```
 
-### Final Methods [TODO]
-- `final` methods
-        Postfixing a method signature with the `final` keyword will make it so that it cannot be implemented by a deriving class.
-        - [Why final exists](https://stackoverflow.com/questions/8824587/what-is-the-purpose-of-the-final-keyword-in-c11-for-functions)
-    ```cpp
-    class **BaseFoo** {
-    public:
-        virtual void Info() = 0;
+### Final Methods
+Postfixing a method signature with the `final` keyword will make it so that it cannot be overridden by a deriving class.
+- Why not just declare a method without the `virtual` modifier? Wouldn't that prevent overriding? See [why final exists](https://stackoverflow.com/questions/8824587/what-is-the-purpose-of-the-final-keyword-in-c11-for-functions).
+```cpp
+class FooParent {
+public:
+    virtual void Info() = 0;
+};
+
+class Foo : public FooParent {
+public:
+    void Info() override final {}
+};
+
+class FooChild : public Foo {
+public:
+    void Info() override {}      // Error: cannot override final funtion
+};
+```
+
+### Explicit Methods
+You can prefix `explicit` in front of a constructor or method signature to prevent implicit type conversions.
+- It’s good practice to make constructors `explicit` by default, unless an implicit conversion makes sense semantically. [Source](https://stackoverflow.com/questions/3716453/is-it-a-good-practice-to-make-constructor-explicit).
+    - Why doesn't the language make constructors explicit by default? Because people thought it was cleaner and now it's irreversible because people want backward compatibility ([source](https://stackoverflow.com/questions/4607047/why-constructors-arent-explicit-by-default)).
+```cpp
+class MyVector {
+public:
+  MyVector(int num) {
+    size = num;
+  }
+      void Show() {
+    cout << "Size: " << size << endl;
+  }
+    private:
+  int size;
     };
-        class **Foo** : public **BaseFoo** {
-    public:
-        void Info() override final {}
-    };
-        class **DerivingFoo** : public **Foo** {
-    public:
-        void Info() override {}            // **Error**: cannot override **final** funtion
-    };
-    ```
-### Explicit Methods [TODO]
-- `explicit` methods
-        You can put explicit in front of constructors or methods to prevent implicit type conversions from other types to your class.
-        - It’s good practice to make constructors explicit by default, unless an implicit conversion makes sense semantically. [Source](https://stackoverflow.com/questions/3716453/is-it-a-good-practice-to-make-constructor-explicit)
-    ```cpp
-    class MyVector {
-    public:
-      **MyVector(int num)** {
-        size = num;
-      }
-          void Show() {
-        cout << "Size: " << size << endl;
-      }
-        private:
-      int size;
-        };
-        int main() {
-      MyVector v = 2;      // Without an **explicit** constructor, this actually calls **MyVector(2)**. 
-                                                 // When you define **`explicit MyVector(int num)`**, this call would cause an error.
-      v.print();
-    }
-    ```
+    int main() {
+  MyVector v = 2;      // Without an **explicit** constructor, this actually calls **MyVector(2)**. 
+                                             // When you define **`explicit MyVector(int num)`**, this call would cause an error.
+  v.print();
+}
+```
 ### Friend [TODO]
 - `friend` — granting full internal access to other classes and functions
         A class can declare who their *friends* are in their body. Friends are then able to access everything within that class, including private members.
@@ -1819,3 +1821,11 @@ class GargantuanTableIterator {
     - Deleting memory-allocated objects: `delete obj;`, deleting arrays: `delete[] my_arr;`, declaring deleted functions `void foo() = delete;`.
 - Explain const objects.
     - Object variables declared with the `const` qualifier
+- What are the uses for `final`?
+    - It can be used to declare final methods and final classes. Final methods can't be overridden or changed by child classes. They're declared like this: `void foo() final;`. Final classes cannot be inherited. They're declared like this: `class Foo final;` .
+
+
+
+
+
+
