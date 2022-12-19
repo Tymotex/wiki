@@ -461,13 +461,18 @@ Why use it?
 class Human {
 public:
     string name;
+
     static string scientific_name;
-        // Default constructor.
+
+    // Default constructor.
     // Having this means that `Human` objects will never be uninitialised.
     Human() { ... }
+
     // Destructor. Called when an instance goes out of scope or on exception.
     ~Human() { ... }
+
     Human(int age, string name) { ... }
+
 private:
     int age_;
 };
@@ -765,6 +770,9 @@ private:
 };
 ```
 - This works well for mutexes where you can acquire the lock in the constructor and unlock it in the destructor.
+
+### Copy Constructor [TODO]
+By default, the compiler generates a copy constructor that performs a simple memberwise copy to form a new object. Often, this default copy constructor is acceptable. For sophisticated concrete types and abstract types, the default implementation should be [[Knowledge/Engineering/Languages/C++#Deleted Functions|deleted]] or manually implemented.
 
 ### Move Constructor [TODO]
 Suppose you have a function that returns a large object (e.g. a big matrix). Since you can't return a reference to a local variable, and it is a bad idea to resort to the C-style returning of a pointer to a `new` object that the caller has to memory-manage, the best option is to use a move constructor.
