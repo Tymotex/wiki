@@ -898,7 +898,7 @@ Virtual methods are methods that have an implementation but which *may* be redef
 - Any class with virtual functions should always provide a virtual *destructor*
 
 ### Object Slicing
-When you copy a child object to a variable of the type of the parent, the members specific to the child are 'sliced off'. 
+When you copy a child object to a variable of the type of the parent, the members specific to the child are 'sliced off' so that the resulting object is a valid instance of the parent type. 
 ```cpp
 Parent foo = Child();   // When the child object is copied to a variable of a parent type,
                         // all its members and overridden methods are 
@@ -924,6 +924,9 @@ Parent foo = Child();   // When the child object is copied to a variable of a pa
     - If you used `Parent* foo = new Child();` instead, the output would be "Overridden".
 
 > Object slicing does not happen in the same way in most other languages, like Java. When you do `Parent foo = new Child()` in Java, `foo`'s overriden methods are still intact and will be called instead of the base method. This is because languages like Java use implicit references to manipulate objects and objects are copied by reference by default, unlike C++.
+
+![[Knowledge/Engineering/Languages/assets/object-slicing-cpp.png|600]]
+(sourced from [GeeksForGeeks](https://www.geeksforgeeks.org/object-slicing-in-c/))
 
 ### Instantiating Classes: [TODO]
 
