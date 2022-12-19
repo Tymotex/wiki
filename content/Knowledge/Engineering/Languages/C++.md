@@ -946,26 +946,26 @@ Parent foo = Child();   // When the child object is copied to a variable of a pa
 ![[Knowledge/Engineering/Languages/assets/object-slicing-cpp.png|600]]
 (sourced from [GeeksForGeeks](https://www.geeksforgeeks.org/object-slicing-in-c/))
 
-### Instantiating Classes: [TODO]
+### Instantiating Classes
+There are several ways of instantiating a class:
 ```cpp
 void func() {
     // Allocated on the stack:
     Foo f1;              // Implicitly calls the default constructor, Foo().
     Foo f2 = Foo(1);     // Copy initialisation.
-    Foo f3 = 1;          // TODO:
-    Foo f4(1);           // Direct initialisation
-    Foo f5{1};           // List initialisation      (Generally preferred, unless **auto** is used)
-    Foo f6 = {1};        // TODO:
+    Foo f3 = 1;          // Also copy initialisation.
+    Foo f4(1);           // Direct initialisation.
+    Foo f5{1};           // List initialisation (generally preferred because it avoids implicit type 
+                         // conversions and avoids creating unnecessary temporary objects).
+    Foo f6 = {1};        // Also copy initialisation, but with an initialiser list.
     Foo f7();            // You'd think this is calling the default constructor, but it's not. See 'most vexing parse'
 
-    // Allocated on the heap (avoid when posssible)
+    // Manually allocated on the heap (avoid when posssible):
     Foo* f8 = new Foo();
     delete f8;
 }
 ```
-
-**General Guidelines for Choosing the Initialisation Method[*](https://stackoverflow.com/questions/9976927/when-to-use-the-brace-enclosed-initializer):**
-
+**General Guidelines[*](https://stackoverflow.com/questions/9976927/when-to-use-the-brace-enclosed-initializer):**
 - Use `=` if the (single) value you are initialising with is intended to be the *exact value* of the object
     - Prefer using `=` when assigning to `auto` variables
     - Prefer when initialising variables with primitive types (eg. int, bool, float, etc.)
@@ -973,8 +973,7 @@ void func() {
     - Prefer using { } in the majority of cases because it can be used in every context and is less error-prone than the alternatives
 - Use `( )` if the values you are initialising with are *not* values to be stored, but *describe* the intended value/state of the object, use parentheses
     - Essentially, if the intent is to call a particular constructor, then use parentheses `( )`
-    - Eg. good example with `vector`
-        
+    - E.g. good example with `vector`
         ```cpp
         vector<int> **v(10)**;          // Empty vector of 10 elements
         cout << v.size() << endl;   // Prints **10**
@@ -982,7 +981,6 @@ void func() {
         vector<int> **u{1, 2, 3}**;     // Vector with elements 1, 2, 3
         cout << u.size() << endl;   // Prints **3**
         ```
-        
 
 [There are MANY reasons to use brace initialization, but you should be aware that **the `initializer_list<>` constructor is preferred to the other constructors**, the exception being the default-constructor. This leads to problems with constructors and templates where the type `T` constructor can be either an initializer list or a plain old ctor.](https://stackoverflow.com/questions/18222926/why-is-list-initialization-using-curly-braces-better-than-the-alternatives)
 
