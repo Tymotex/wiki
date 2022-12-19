@@ -603,10 +603,11 @@ int main() {
         - Allocating on the heap is less performant than allocating on the stack. **Stack allocation is faster** because the access pattern makes it trivial to allocate and deallocate memory from it (a pointer/integer is simply incremented or decremented), while the heap has much more complex bookkeeping involved in memory allocation/deallocation.
     - Very large objects should be allocated on the heap to prevent stack overflow (the heap is larger than the stack).
 - Note: In Java/C#, you can’t allocate objects on the stack, they’d all be allocated on the heap. You could use a `struct` instead
+
 ### Const Objects [TODO]
 - `const` objects
         An object declared with `const` means that mutating its fields is not allowed. You can't set class variables directly and you can't call methods that set class variables either.
-        ```cpp
+    ```cpp
     class Student {
     public:
         string name;
@@ -629,7 +630,7 @@ int main() {
 - `final` methods
         Postfixing a method signature with the `final` keyword will make it so that it cannot be implemented by a deriving class.
         - [Why final exists](https://stackoverflow.com/questions/8824587/what-is-the-purpose-of-the-final-keyword-in-c11-for-functions)
-        ```cpp
+    ```cpp
     class **BaseFoo** {
     public:
         virtual void Info() = 0;
@@ -647,7 +648,7 @@ int main() {
 - `explicit` methods
         You can put explicit in front of constructors or methods to prevent implicit type conversions from other types to your class.
         - It’s good practice to make constructors explicit by default, unless an implicit conversion makes sense semantically. [Source](https://stackoverflow.com/questions/3716453/is-it-a-good-practice-to-make-constructor-explicit)
-        ```cpp
+    ```cpp
     class MyVector {
     public:
       **MyVector(int num)** {
@@ -671,7 +672,7 @@ int main() {
         - You can only declare who’s allowed to access you, not who you can have access to. Eg. in real life, you can’t grant yourself access to someone else’s privates, but you can grant others access to yours 😏
     - You can declare other classes or standalone functions as your friends
     - Example
-                ```cpp
+        ```cpp
         class Baby {
         public:
             Baby(const string& name) {}
@@ -706,9 +707,22 @@ int main() {
     Bar(const Foo &) = delete;
     ```
 
-#### RAII
+### RAII
 The technique of acquiring resources in the constructor and then freeing them in the destructor is called *RAII (Resource Acquisition is Initialisation)*. The idea is about coupling the use of a resource to the lifetime of an object so that when it goes out of scope, or when it throws an exception, the resources it held are guaranteed to be released. Always design classes with RAII in mind.
-- This works well for mutexes where you can acquire the lock in the constructor and unlock in the destructor.
+```cpp
+class ResourceHolder {
+public:
+    ResourceHolder() {
+        arr = new int[12];
+    }
+    ~ResourceHolder() {
+        delete[] arr;
+    }
+private:
+    int* arr;
+};
+```
+- This works well for mutexes where you can acquire the lock in the constructor and unlock it in the destructor.
 
 ### Move Constructor [TODO]
 Suppose you have a function that returns a large object (e.g. a big matrix). Since you can't return a reference to a local variable, and it is a bad idea to resort to the C-style returning of a pointer to a `new` object that the caller has to memory-manage, the best option is to use a move constructor.
@@ -737,7 +751,7 @@ int main() {
 - Operator overloading is just a type of [[Knowledge/Engineering/Programming/Object Oriented Programming#Static Polymorphism|static polymorphism]]. **Operators are just functions**. When compiled, expressions with operators are just converted to equivalent function calls. E.g. `a += b` becomes `operator+=(a, b)`.
 - Operator overloading also exists in C#, Java, Python, etc.
 
-## Other C++ Features
+## Random C++ Features
 Smaller but important C++ details.
 
 ### Structured Bindings
@@ -1751,14 +1765,6 @@ class GargantuanTableIterator {
 };
 ```
 
-# Abseil:
-
-Basically Google’s standard library
-
-[https://abseil.io/](https://abseil.io/)
-
-[[Knowledge/Engineering/Languages/C++ Cheatsheet]]
-
 # Flashcards
 - What is separate compilation?
     - A division of a larger project into smaller units that interact with each other through header files. One unit only knows about another unit through their header files. The big benefit of structuring projects this way is to allow for compilation to be done independently on these units, meaning that if one unit changes while others have not, then only that one unit is to be compiled.
@@ -1808,3 +1814,5 @@ Basically Google’s standard library
     }
     ```
     - If this code were written in Java, the output would be "Overridden". In C++, we have *object slicing*. If you wanted to get this C++ to output "Overridden", you'd have to use pointer types or references.
+- Explain 3 ways the `delete` keyword is used.
+    - Deleting memory-allocated objects: `delete obj;`, deleting arrays: `delete[] my_arr;`, declaring deleted functions `void foo() = delete;`.
