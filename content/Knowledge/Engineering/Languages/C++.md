@@ -654,53 +654,56 @@ You can prefix `explicit` in front of a constructor or method signature to preve
 ```cpp
 class MyVector {
 public:
-  MyVector(int num) {
-    size = num;
-  }
-      void Show() {
-    cout << "Size: " << size << endl;
-  }
-    private:
-  int size;
-    };
-    int main() {
-  MyVector v = 2;      // Without an **explicit** constructor, this actually calls **MyVector(2)**. 
-                                             // When you define **`explicit MyVector(int num)`**, this call would cause an error.
-  v.print();
+    int size;
+
+    explicit MyVector(int num) : size(num) {}
+};
+
+int main() {
+    MyVector v = 2;      // Without an explicit constructor, this actually invokes `MyVector(2)`.
+}                        // When you define `explicit MyVector(int num)`, this call would cause an error.
+```
+### Friend Classes
+Inside your class body, you can declare a class as a `friend` which grants them full access to all your class' members, including private ones. Just remember the inappropriate but memorable phrase: **"friends can access your privates"**.
+
+A class can declare who their *friends* are in their body. Friends are then able to access everything within that class, including private members.
+- You can only declare who’s allowed to access you, *not who you can have access to*. Like in real life, **you can’t grant yourself access to someone else’s privates**, but you can grant others access to yours 😏.
+    - You can declare other classes or specific functions as your friends.
+```cpp
+class Baby {
+public:
+    Baby(const string& name) {}
+
+    // Methods of `Mother` will be able to see everything in `Baby`.
+    friend class Mother;        
+
+private:
+    string name;
+};
+
+class Mother {
+public:
+    Mother(const string& babyName) : baby(babyName) {}
+
+    void rename_baby(const string& new_name) {
+        // This is only possible because of `friend class Mother`.
+        baby.name = new_name;    
+    }
+
+private:
+    Baby baby;
+};
+        int main() {
+    Mother mum("Andrew");
+    mum.RenameBaby("Andy");
 }
 ```
-### Friend [TODO]
-- `friend` — granting full internal access to other classes and functions
-        A class can declare who their *friends* are in their body. Friends are then able to access everything within that class, including private members.
-        - You can only declare who’s allowed to access you, not who you can have access to. Eg. in real life, you can’t grant yourself access to someone else’s privates, but you can grant others access to yours 😏
-    - You can declare other classes or standalone functions as your friends
-    - Example
-        ```cpp
-        class Baby {
-        public:
-            Baby(const string& name) {}
-        private:
-            **friend class Mother;**        // Makes it so that methods of **Mother** will be able to see everything in **Baby**
-            string name;
-        };
-                class Mother {
-        public:
-            Mother(const string& babyName) : baby(babyName) {}
-                    void RenameBaby(const string& newName) {
-                **baby.name = newName;**    // This is only possible because of `**friend class Mother**`
-            }
-        private:
-            Baby baby;
-        };
-                int main() {
-            Mother mum("Andrew");
-            mum.RenameBaby("Andy");
-        }
-        ```
-                **Use cases:**
-        - When you want to write white-box unit tests, then you can declare the unit test class as a friend. It’s good for unit testing private methods
-        - It’s [debatable](https://stackoverflow.com/questions/4171310/what-is-wrong-with-making-a-unit-test-a-friend-of-the-class-it-is-testing/4171331#4171331) whether it’s good practice to test private methods. Testing a public method will indirectly test a private method anyway
 
+**When to use friend classes?**
+- When you want to write white-box unit tests, you can declare the unit test class as a friend. It’s good for unit testing private methods which you don't want to expose to anyone other than the unit testing class.
+    - Caveat: it’s [debatable](https://stackoverflow.com/questions/4171310/what-is-wrong-with-making-a-unit-test-a-friend-of-the-class-it-is-testing/4171331#4171331) whether it’s good practice to test private methods. Testing a public method should indirectly test a private method anyway.
+
+> Use friend classes sparingly. If you're in a situation where you want to use a friend class, it's a red flag, design-wise.
 
 ### Deleted Functions [TODO]
 - *Deleted* *functions* (`= delete`)
@@ -1823,9 +1826,6 @@ class GargantuanTableIterator {
     - Object variables declared with the `const` qualifier
 - What are the uses for `final`?
     - It can be used to declare final methods and final classes. Final methods can't be overridden or changed by child classes. They're declared like this: `void foo() final;`. Final classes cannot be inherited. They're declared like this: `class Foo final;` .
-
-
-
-
-
+- Explain `friend` in C++ — what do they do and how do you use it?
+    - Inside class `Foo`, use `friend class Bar` to grant ``
 
