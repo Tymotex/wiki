@@ -604,28 +604,27 @@ int main() {
     - Very large objects should be allocated on the heap to prevent stack overflow (the heap is larger than the stack).
 - Note: In Java/C#, you can’t allocate objects on the stack, they’d all be allocated on the heap. You could use a `struct` instead
 
-### Const Objects [TODO]
-- `const` objects
-        An object declared with `const` means that mutating its fields is not allowed. You can't set class variables directly and you can't call methods that set class variables either.
-    ```cpp
-    class Student {
-    public:
-        string name;
-            Student() {
-            this->name = "Andrew";
-        }
-            void setName(string name) {
-            this->name = name;
-        }
-    };
-        int main() {
-        Student s1;
-        s1.name = "Taylor";     // ✓
-            **const Student s2**;        
-        s2.name = "Taylor";     // ✘ not fine because this modifies a class variable
-        s2.setName("Taylor");   // ✘ not fine because this modifies a class variable
+### Const Objects
+`const` objects prevents its fields being modified. You can only call its const methods.
+```cpp
+class Student {
+public:
+    string name;
+        Student() {
+        this->name = "Andrew";
     }
-    ```
+    void setName(string name) {
+        this->name = name;
+    }
+};
+
+int main() {
+    const Student s;        
+    s.name = "Taylor";     // ✘ not fine because this modifies a class variable.
+    s.setName("Taylor");   // ✘ not fine because this calls a non-const method.
+}
+```
+
 ### Final Methods [TODO]
 - `final` methods
         Postfixing a method signature with the `final` keyword will make it so that it cannot be implemented by a deriving class.
@@ -1816,3 +1815,5 @@ class GargantuanTableIterator {
     - If this code were written in Java, the output would be "Overridden". In C++, we have *object slicing*. If you wanted to get this C++ to output "Overridden", you'd have to use pointer types or references.
 - Explain 3 ways the `delete` keyword is used.
     - Deleting memory-allocated objects: `delete obj;`, deleting arrays: `delete[] my_arr;`, declaring deleted functions `void foo() = delete;`.
+- Explain const objects.
+    - Object variables declared with the `const` qualifier
