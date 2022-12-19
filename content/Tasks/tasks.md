@@ -2,20 +2,16 @@
 kanban-plugin: basic
 ---
 
-## **Monday** *[[Journal/2022-12-19|2022-12-19]]* (6)
-
-- [x] 🏆 Purpose: C++
-- [ ] ==3== **(1 hour)**<br>Transfer Git notes to Obsidian.
-- [ ] ==3== **(1 hour)**<br>Clean up book notes and summarise How Not to Die.
-- [ ] ==2== **(45 mins)** Research basic skincare.
-- [ ] ==3== Make a plan to grind out the math website in record time.
-
 ## **Tuesday** *[[Journal/2022-12-20|2022-12-20]]* (6)
 
 - [ ] 🏆 Purpose
 - [ ] 🌞 Morning routine
 - [ ] 🌙 Evening routine
 - [ ] Go get your shirt and pants tailored at Top Ryde.
+- [ ] ==4== **(1 hour)**<br>Transfer Git notes to Obsidian.
+- [ ] ==4== **(1 hour)**<br>Clean up book notes and summarise How Not to Die.
+- [ ] ==3== **(45 mins)** Research basic skincare.
+- [ ] ==4== Make a plan to grind out the math website in record time.
 
 ## **Wednesday** *[[Journal/2022-12-21|2022-12-21]]* (6)
 
@@ -54,12 +50,20 @@ kanban-plugin: basic
 - [ ] 🌞 Morning routine
 - [ ] 🌙 Evening routine
 
+## **Tuesday** *[[Journal/2022-12-27|2022-12-27]]* (6)
+
+- [ ] 🏆 Purpose
+- [ ] 🌞 Morning routine
+- [ ] 🌙 Evening routine
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
