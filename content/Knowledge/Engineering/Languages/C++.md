@@ -557,7 +557,25 @@ When the compiler sees something like `{1, 2, 3, 4}`, it will convert it to an i
 
 ### Casting [TODO]
 - `static_cast`  — casts from one type to another. **It does not check what you're doing makes sense**, so avoid using it often.
-- `dynamic_cast` — casts pointer/reference types. Useful for runtime typechecking of objects. E.g. you can convert an instance of a parent class into an instance of a child class.
+- `dynamic_cast` — casts pointer/reference types. Useful for runtime type-checking of objects. E.g. you can convert an instance of a parent class into an instance of a child class.
+    ```cpp
+    class Parent {
+    public:
+        virtual ~Parent() {}
+    };
+    
+    class Child : public Parent {};
+    
+    int main() {
+        Parent* foo = new Child();
+        if (Child* child = dynamic_cast<Child*>(foo))
+            cout << "foo is a child.\n";
+    
+        return 0;
+    }
+    ```
+    - Sometimes you have to use this, but do so sparingly.
+        > "If we can avoid using type information, we can write simpler and more efficient code, but occasionally type information is lost and must be recovered. This typically happens when we pass an object to some system that accepts an interface specified by a base class. When that system later passes the object back to us, we might have to recover the original type." — Bjarne Stroustrup, A Tour of C++.
 - `reinterpret_cast` — treating an object as a raw sequence of bytes.
 - `const_cast` — casts away 'constness'.
 - `(type) value` — C-style typecasting. This is the least preferred way since it's unconstrained.
