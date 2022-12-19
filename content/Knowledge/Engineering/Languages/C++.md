@@ -730,6 +730,24 @@ int main() {
 
 ### Defaulted Functions
 Like *deleted functions*, you can postfix a constructor or method signature with `= default` to make the compiler supply a default implementation.
+```cpp
+class A {
+public:
+    A() = default;
+
+    // Default copy constructor.
+    A(const A &other) = default;
+
+    // Default assignment.
+    A &operator=(const A &other) = default;
+
+    // Default destructor.
+    ~A() = default; 
+};
+```
+
+#### Rule of 3 [TODO]
+See [Rule of 3](https://en.wikipedia.org/wiki/Rule_of_three_(C%2B%2B_programming)). "If a class defines any of the following then it should probably define all three: destructor, copy constructor, copy assignment operator."
 
 ### RAII
 The technique of acquiring resources in the constructor and then freeing them in the destructor is called *RAII (Resource Acquisition is Initialisation)*. The idea is about coupling the use of a resource to the lifetime of an object so that when it goes out of scope, or when it throws an exception, the resources it held are guaranteed to be released. Always design classes with RAII in mind.
