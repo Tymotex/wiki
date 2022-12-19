@@ -610,9 +610,11 @@ int main() {
 class Student {
 public:
     string name;
-        Student() {
+
+    Student() {
         this->name = "Andrew";
     }
+
     void setName(string name) {
         this->name = name;
     }
