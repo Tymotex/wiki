@@ -947,18 +947,16 @@ Parent foo = Child();   // When the child object is copied to a variable of a pa
 (sourced from [GeeksForGeeks](https://www.geeksforgeeks.org/object-slicing-in-c/))
 
 ### Instantiating Classes: [TODO]
-
 ```cpp
 void func() {
-    // Allocated on the stack 
-    Foo f1;              // Implicitly calls the default constructor Foo()
-    Foo f2 = Foo(1);     // Copy initialisation
-		Foo f3 = 1;          // TODO:
-		Foo f4(1);           // Direct initialisation
-		Foo f5{1};           // List initialisation      (Generally preferred, unless **auto** is used)
-		Foo f6 = {1};        // TODO:
-
-		Foo f7();            // You'd think this is calling the default constructor, but it's not. See '[most vexing parse](https://en.wikipedia.org/wiki/Most_vexing_parse)'
+    // Allocated on the stack:
+    Foo f1;              // Implicitly calls the default constructor, Foo().
+    Foo f2 = Foo(1);     // Copy initialisation.
+    Foo f3 = 1;          // TODO:
+    Foo f4(1);           // Direct initialisation
+    Foo f5{1};           // List initialisation      (Generally preferred, unless **auto** is used)
+    Foo f6 = {1};        // TODO:
+    Foo f7();            // You'd think this is calling the default constructor, but it's not. See 'most vexing parse'
 
     // Allocated on the heap (avoid when posssible)
     Foo* f8 = new Foo();

@@ -233,6 +233,10 @@ for (const std::filesystem::directory_entry& each_file : std::filesystem::direct
 
 ## Smart Pointers [TODO]
 
+When `unique_ptr` goes out of scope, `delete` is executed on the object it owns.
+
+> "The code using `unique_ptr` will be exactly as efficient as code using the raw pointers correctly." — Bjarne Stroustrup, A Tour of C++.
+
 ## Tuple
 
 ```cpp
