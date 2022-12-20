@@ -692,12 +692,18 @@ kanban-plugin: basic
 
 - [x] 🏆 Purpose: C++
 
+## **Tuesday** *[[Journal/2022-12-20|2022-12-20]]* (6)
+
+
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
