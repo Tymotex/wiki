@@ -4,12 +4,12 @@ title: Recipes
 
 **To learn**:
 - [ ] Chickpea curry, or tofu curry
-- [ ] Marinated baked tempeh
+- [ ] Marinated peanut baked tempeh
 - [ ] Miso soup
-- [ ] Bean burrito
 - [ ] Tofu scramble with spinach, mushrooms, tomato, etc.
 - [ ] Creamy tomato and spinach pasta
 - [ ] Porridge
+- [ ] Enchilada
 - [ ] Apple/Fruit pie
 
 **Dishes**:
