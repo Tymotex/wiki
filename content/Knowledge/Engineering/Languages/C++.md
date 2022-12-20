@@ -798,11 +798,17 @@ int main() {
 - Operator overloading also exists in C#, Java, Python, etc.
 
 ### Copy Constructor and Operation [TODO]
-By default, the compiler generates a copy constructor that performs a simple memberwise copy to form a new object. Often, this default copy constructor is acceptable. For sophisticated concrete types and abstract types, the default implementation should be [[Knowledge/Engineering/Languages/C++#Deleted Functions|deleted]] or manually implemented.
+A *copy constructor* is a constructor that takes in a const reference instance of the same class.
+```cpp
+Foo(const Foo& other);
+```
+
+If you don't implement the copy constructor yourself, the compiler generates a default copy constructor that performs a simple memberwise copy to form a new object. Often, this default copy constructor is acceptable. For sophisticated concrete types and abstract types, the default implementation should be [[Knowledge/Engineering/Languages/C++#Deleted Functions|deleted]] or manually implemented.
 - An example of when default copy could be bad: when your class holds a pointer to a resource, a memberwise copy would copy the pointer over to the new object. Now both objects would affect the same resource.
 
-```cpp
-```
+    E.g. suppose we have a crappy `Vector` implementation that uses the default copy constructor and copy assignment operator. `Vector` manages a pointer to an underlying array. When you just do a memberwise copy, you only copy over the pointer to the underlying array, not the underlying array itself.
+    ![[Knowledge/Engineering/Languages/assets/bad-copy-vector-cpp.png|600]]
+
 
 ### Move Constructor and Operation [TODO]
 Suppose you have a function that returns a large object (e.g. a big matrix) and you want to avoid copying it to the caller, which would be very wasteful of clock cycles. Since you can't return a reference to a local variable, and it is a bad idea to resort to the C-style returning of a pointer to a `new` object that the caller has to memory-manage, the best option is to use a move constructor.
