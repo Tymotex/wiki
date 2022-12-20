@@ -773,6 +773,7 @@ private:
 
 ### Copy Constructor [TODO]
 By default, the compiler generates a copy constructor that performs a simple memberwise copy to form a new object. Often, this default copy constructor is acceptable. For sophisticated concrete types and abstract types, the default implementation should be [[Knowledge/Engineering/Languages/C++#Deleted Functions|deleted]] or manually implemented.
+- An example of when default copy could be bad: when your class holds a pointer to a resource, a memberwise copy would copy the pointer over to the new object. Now both objects would affect the same resource.
 
 ### Move Constructor [TODO]
 Suppose you have a function that returns a large object (e.g. a big matrix). Since you can't return a reference to a local variable, and it is a bad idea to resort to the C-style returning of a pointer to a `new` object that the caller has to memory-manage, the best option is to use a move constructor.
