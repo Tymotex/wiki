@@ -8,16 +8,17 @@ title: Purchases
 - [ ] ~~Budget kitchen scale~~ (this is overkill)
 - [x] ~~Loop Quiet~~ (got cheaper ear plugs)
 - [x] Oregano seeds
-- [ ] Hair cream/paste
-- [ ] Hair spray
-- Clothes:
-    - [x] Light blue OCBD, or white
-    - [x] Navy chinos
-    - [ ] Another OCBD, either: grey, light red or white.
-    - [ ] (Uniqlo) 2 x Basic grey shirts.
-    - [ ] (Uniqlo) Turtleneck wine colour.
-    - [ ] Chino shorts (for Summer).
-    - [ ] Messenger bag
+- [x] Hair cream/paste
+- [x] Hair spray
+- [ ] Hot sauce bottles
+- [ ] SPF moisturiser, or standalone sunscreen
+- [x] Light blue OCBD, or white
+- [x] Navy chinos
+- [ ] Another OCBD, either: grey, light red or white.
+- [ ] (Uniqlo) 2 x Basic grey shirts.
+- [ ] (Uniqlo) Turtleneck wine colour.
+- [ ] Chino shorts (for Summer).
+- [ ] Messenger bag
 - [ ] Mechanical keyboard for home (as a hobby?)
 - Blackout curtains for better sleep.
 - Blue light filter glasses.
