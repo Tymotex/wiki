@@ -294,36 +294,38 @@ int j = i * 2  // i * 2 is an rvalue.
 
 - Rvalues are important because they **enable move semantics** in C++. There are many instances in C++ code where it’s not necessary to copy a value or object from one place to another. E.g. when passing arguments into a function or when saving the returned value on the caller’s side. Implementing move semantics, where appropriate, is great for performance because it prevents expensive copies.
 
-### L-value and R-value References
+> Very loosely, Bjarne describes lvalues as "something that can appear on the left-hand side of an assignment" and rvalues as "a value that you can't assign to."
+
+### L-Value Reference
 An **lvalue reference** uses a single ampersand `&`, eg. `string& s = "..."`
 - Const lvalue reference types (eg. `const string& s`) as a function parameter allow the caller to **pass both an l-value or r-value, equivalently**.
 
+### R-Value Reference
 An **rvalue reference** uses double ampersand `&&`, eg. `string&& s`. You’d use this to receive rvalues in functions, like literals and temporary objects. Doing this means you can avoid unnecessarily copying a value that is a ‘throwaway’ on the caller’s side.
 - You can define a *move constructor* and *move assignment operator* that take in an rvalue reference instead of a const lvalue reference. It’ll behave the same way, but it won’t guarantee the source to be unchanged.
-
 ```cpp
 // Takes in an l-value reference which forces the caller to pass in variables.
-void **GreetLvalue**(string &name) {    
+void GreetLvalue(string &name) {    
   cout << name << endl;
 }
 
 // Takes in an r-value reference which forces the caller to pass in literals 
 // or temporary objects.
-void **GreetRvalue**(string &&name) {   
+void GreetRvalue(string &&name) {   
   cout << name << endl;             
 }
 
-// Const references let the caller pass both lvalues and rvalues alike
-void **Greet**(const string &name) {    
-  cout << name << endl;             // Note: `const string &` will create a temporary variable behind the
-}                                   // scenes and then assign it to `name`. This is why you can pass both
-                                    // lvalues and rvalues to a const l-value reference like this.
+// Const references let the caller pass both lvalues and rvalues alike.
+void Greet(const string &name) {    
+  cout << name << endl;  // Note: `const string &` will create a temporary variable behind the
+}                        // scenes and then assign it to `name`. This is why you can pass both
+                         // lvalues and rvalues to a const l-value reference like this.
 int main() {
   string myName = "Tim";
   GreetLvalue(myName);     // ✓
-  GreetLvalue("Andrew");   // Error: cannot bind **non-const lvalue reference**
+  GreetLvalue("Andrew");   // Error: cannot bind non-const lvalue reference.
 
-  GreetRvalue(myName);     // Error: cannot bind **rvalue reference**
+  GreetRvalue(myName);     // Error: cannot bind rvalue reference.
   GreetRvalue("Andrew");   // ✓
 
   Greet(myName);           // ✓
@@ -771,13 +773,6 @@ private:
 ```
 - This works well for mutexes where you can acquire the lock in the constructor and unlock it in the destructor.
 
-### Copy Constructor [TODO]
-By default, the compiler generates a copy constructor that performs a simple memberwise copy to form a new object. Often, this default copy constructor is acceptable. For sophisticated concrete types and abstract types, the default implementation should be [[Knowledge/Engineering/Languages/C++#Deleted Functions|deleted]] or manually implemented.
-- An example of when default copy could be bad: when your class holds a pointer to a resource, a memberwise copy would copy the pointer over to the new object. Now both objects would affect the same resource.
-
-### Move Constructor [TODO]
-Suppose you have a function that returns a large object (e.g. a big matrix). Since you can't return a reference to a local variable, and it is a bad idea to resort to the C-style returning of a pointer to a `new` object that the caller has to memory-manage, the best option is to use a move constructor.
-
 ### Operator Overloading
 You can define operations on classes by overloading operators like `+`, `+=`, `==`, etc.
 ```cpp
@@ -801,6 +796,22 @@ int main() {
 ```
 - Operator overloading is just a type of [[Knowledge/Engineering/Programming/Object Oriented Programming#Static Polymorphism|static polymorphism]]. **Operators are just functions**. When compiled, expressions with operators are just converted to equivalent function calls. E.g. `a += b` becomes `operator+=(a, b)`.
 - Operator overloading also exists in C#, Java, Python, etc.
+
+### Copy Constructor and Operation [TODO]
+By default, the compiler generates a copy constructor that performs a simple memberwise copy to form a new object. Often, this default copy constructor is acceptable. For sophisticated concrete types and abstract types, the default implementation should be [[Knowledge/Engineering/Languages/C++#Deleted Functions|deleted]] or manually implemented.
+- An example of when default copy could be bad: when your class holds a pointer to a resource, a memberwise copy would copy the pointer over to the new object. Now both objects would affect the same resource.
+
+```cpp
+```
+
+### Move Constructor and Operation [TODO]
+Suppose you have a function that returns a large object (e.g. a big matrix). Since you can't return a reference to a local variable, and it is a bad idea to resort to the C-style returning of a pointer to a `new` object that the caller has to memory-manage, the best option is to use a move constructor.
+
+
+
+```cpp
+
+```
 
 ## Random C++ Features
 Smaller but important C++ details.
@@ -1873,4 +1884,4 @@ class GargantuanTableIterator {
     - It can be used to declare final methods and final classes. Final methods can't be overridden or changed by child classes. They're declared like this: `void foo() final;`. Final classes cannot be inherited. They're declared like this: `class Foo final;` .
 - Explain `friend` in C++ — what do they do and how do you use it?
     - Inside class `Foo`, use `friend class Bar` to grant `Bar` access to every member of `Foo`. "Friends can touch your privates," and "you can't grant yourself access to other people's privates, but you can grants others access to yours". It's use is discouraged, but sometimes it's helpful for unit testing classes to access private methods.
-
+- Explain lvalue and rvalue references.
