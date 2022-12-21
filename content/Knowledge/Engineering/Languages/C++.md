@@ -852,6 +852,8 @@ Foo bar(std::move(foo));   // Read this like: "moving foo's contents to bar."
 ```
 
 > `std::move` doesn't actually move anything, which is a bit misleading. It just converts an lvalue to rvalue reference ([technically an xvalue](https://en.cppreference.com/w/cpp/utility/move)) so as to invoke the move constructor. The actual 'moving' itself is done by the move constructor.
+> 
+> `std::move(foo)` basically says "you are now allowed to steal resources from `foo`".
 
 ## Random C++ Features
 Smaller but important C++ details.
