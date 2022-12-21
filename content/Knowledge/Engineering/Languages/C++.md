@@ -930,15 +930,13 @@ To make a class, function or type trait a template, just prefix the definition w
 
 Interpret `template<typename T>` as "for all types T".
 
+
 ### Templates vs. Generics
-Templates are massively different from generics in other OOP languages like Java.
+Templates are massively different from generics in other OOP languages like Java. 
 
 In Java, generics are mainly syntactic sugar that help programmers avoid boilerplate code. In C++, templates are a code generation system that enables generic programming and more. Some main differences:
-- Java doesn’t let you pass primitive types like `int` as type parameters... yup. You can’t do this.
-    ```cpp
-    ArrayList<int> myList = new ArrayList<int>();
-    ```
-- 
+
+> Think of C++'s templates as very sophisticated preprocessor commands. It's used to *generate* type-safe code. In Java's generic system, [type erasure](https://www.baeldung.com/java-type-erasure) is used, resulting in a single implementation of the generic class/function rather than many specialised instances of a template like in C++.
 
 ### Function Templates
 Suppose you’re writing multiple overloads for a method, and each overload does essentially the same thing but just takes in different types.
