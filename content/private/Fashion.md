@@ -45,7 +45,7 @@ TODO:
 Prefer non-iron shirts.
 - Oxford button-down
 
-![[_private/assets/sleeve-rolling.png|350]]
+![[private/assets/sleeve-rolling.png|350]]
 
 ## Inspiration
-![[_private/assets/black-and-charcoal.png]]
+![[private/assets/black-and-charcoal.png]]

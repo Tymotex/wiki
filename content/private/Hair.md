@@ -63,4 +63,4 @@ Steps:
 7. Final trims.
 
 ## Inspiration
-![[_private/assets/robert-pattinson.png|300]]
+![[private/assets/robert-pattinson.png|300]]
