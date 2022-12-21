@@ -800,7 +800,21 @@ int main() {
 ### Copy Constructor and Operation [TODO]
 A *copy constructor* is a constructor that takes in a const reference instance of the same class.
 ```cpp
-Foo(const Foo& other);
+Foo(const Foo& other);   // Copy constructor signature.
+
+```
+
+The copy constructor is invoked implicitly in a number of situations:
+- Passing by value to a function (the function creates its own copy for local use).
+- Returning a value will create a copy for the caller (this can be very inefficient, which is why [[Knowledge/Engineering/Languages/C++#Move Constructor and Operation [TODO]|move semantics]] exists).
+- 
+```cpp
+
+
+Foo foo;
+Foo bar;
+Foo baz = foo;     // Implicitly calls the copy constructor.
+baz = bar;         // Calls copy assignment operator, not the copy constructor.
 ```
 
 If you don't implement the copy constructor yourself, the compiler generates a default copy constructor that performs a simple memberwise copy to form a new object. Often, this default copy constructor is acceptable. For sophisticated concrete types and abstract types, the default implementation should be [[Knowledge/Engineering/Languages/C++#Deleted Functions|deleted]] or manually implemented.
