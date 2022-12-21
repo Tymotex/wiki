@@ -968,41 +968,53 @@ void swap(T& a, T& b) {
     - The compiler is smart enough to avoid instantiating duplicate functions.
 
 ### Class Templates
-Much like how a function template is a generalisation of an algorithm, a class template is a generalisation of a type, *but it’s not an actual type*.
-
+Basically [[Knowledge/Engineering/Languages/C++#Function Templates|function templates]], but with classes.
 ```cpp
-template <typename T>
-class MyContainer {
+template <typename Item>
+class Stack {
 public:
-    MyContainer(T n);
-}
+    void push(Item i);
+    void show();
+private:
+    vector<Item> vec_;
+};
 
-// When implementing methods done outside of the class, you must fully 
-// qualify the method with the prefix `MyContainer<T>::`.
+// When implementing methods outside of the class, you must fully qualify
+// the method name with the prefix `MyContainer<T>::`.
 //
 // Anything following `::` will be within the class' scope, meaning that
 // specifying <T> becomes optional again — because T is known in the class
 // body.
-template <typename T>
-MyContainer<T>::MyContainer(T n) {
-    
+template <typename Item>
+void Stack<Item>::push(Item i) {
+    vec_.push_back(i);
+}
+
+template <typename Item>
+void Stack<Item>::show() {
+    for (const Item& item : vec_)
+        cout << item << " ";
+    cout << "\n";
+}
+
+int main() {
+    Stack<int> nums;
+    nums.push(42);
+    nums.push(24);
+    nums.show();
+
+    Stack<string> strs;
+    strs.push("Hello");
+    strs.push("World");
+    strs.show();
+
+    return 0;
 }
 ```
-
 - Note: when within the scope of the class body, you can use `MyContainer` and `MyContainer<T>` interchangeably. Essentially, you can consider `<T>` optional inside the class body. However, when outside the class scope (i.e. before the `::`), you have to fully qualify the name with `MyContainer<T>::`
     - Once you specify the `::` in `MyContainer<T>::`, you can imagine that you’re basically re-entering the class scope, and then everything you could access within the class become available again.
     ![[Knowledge/Engineering/Languages/assets/class-template-method-scope.png|500]]
     (sourced from [CppCon](https://www.youtube.com/watch?v=LMP_sxOaz6g&ab_channel=CppCon))
-
-**Container Class Templates:**
-A container is an object that contains other objects. Examples include arrays, linked lists, etc.
-
-The standard C++ library provides various container class templates like:
-
-- `list<T>`
-- `vector<T>`
-- `set<T>`
-
 
 ## Random C++ Features
 Smaller but important C++ details.

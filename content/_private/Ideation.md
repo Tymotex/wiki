@@ -4,6 +4,9 @@ description: Ideation
 ---
 
 ## App Ideas
+**Obsidian Flashcard Generation with AI**
+- Look through a given note, extract out flashcards.
+
 **Habit tracker that properly gamifies things.**
 - Procedurally generate a world/island/ecosystem that grows based on the person's performance. Trees start growing, towns start emerging when the person does well. Terrain starts becoming barren and graveyards spawn when the person becomes negligent.
 - Widget for easy progress logging.
