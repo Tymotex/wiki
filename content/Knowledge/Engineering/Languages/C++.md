@@ -491,11 +491,13 @@ int main() {
 }
 ```
 - Why do non-const static members have to be initialised outside the class? See this [explanation](https://stackoverflow.com/questions/47882456/why-do-non-constant-static-variables-need-to-be-initialized-outside-the-class#:~:text=In%20the%20case%20of%20a,as%20part%20of%20an%20object.).
+
 ### Inheritance
 Inheritance is done with the syntax `class Foo : public Bar`. Also see [[Knowledge/Engineering/Languages/C++#Protected and Private Inheritance|Protected and Private Inheritance]].
 - Constructors are not inherited by default.
 - Child constructors can reference the parent constructors in the [[Knowledge/Engineering/Languages/C++#Member Initialiser List|member initialiser list]] following the constructor signature.
 - Multiple inheritance is done like this: `class Foo : public Bar, public Baz`.
+
 ### Member Initialiser List and Delegating Constructors
 Use a member initialiser list following a constructor signature to initialise class variables and invoke other constructors.
 ```cpp
@@ -513,6 +515,7 @@ public:
     - You must initialise const members in the member initialiser list.
     - Initialisation is always done before the executing the constructor body.
 - **Order matters**. Initialise members in the same order that they're declared in the class as a good practice.
+
 ### Virtual Methods
 Virtual methods are methods that have an implementation but which *may* be redefined later by a child class.
 - ***Pure virtual method*** — where a function ***must*** be defined by a class deriving from this one
@@ -527,6 +530,7 @@ Virtual methods are methods that have an implementation but which *may* be redef
 - ***Concrete class*** — a class that has no *pure virtual functions* and can be directly instantiated
 - `override` keyword — is an *optional* qualifier that tells programmers that a method is meant to provide a definition for a virtual method from a base class
 - Any class with virtual functions should always provide a virtual *destructor*
+
 ### Object Slicing
 When you copy a child object to a variable of the type of the parent, the members specific to the child are 'sliced off' so that the resulting object is a valid instance of the parent type. 
 ```cpp
@@ -553,6 +557,7 @@ Parent foo = Child();   // When the child object is copied to a variable of a pa
 > Object slicing does not happen in the same way in most other languages, like Java. When you do `Parent foo = new Child()` in Java, `foo`'s overriden methods are still intact and will be called instead of the base method. This is because languages like Java use implicit references to manipulate objects and objects are copied by reference by default, unlike C++.
 ![[Knowledge/Engineering/Languages/assets/object-slicing-cpp.png|600]]
 (sourced from [GeeksForGeeks](https://www.geeksforgeeks.org/object-slicing-in-c/))
+
 ### Instantiating Classes
 There are several ways of instantiating a class:
 ```cpp
@@ -800,10 +805,10 @@ int main() {
 - Operator overloading also exists in C#, Java, Python, etc.
 
 ### Copy Constructor and Operation
-A *copy constructor* is a constructor that takes in a const reference instance of the same class.
+A *copy constructor* is a constructor that takes in a (typically const) reference to an instance of the same class. A *copy assignment operator overload* also takes in a (typically const) reference to an instance of the same class and returns a reference to an instance of the same class.
 ```cpp
-Foo(const Foo& other);   // Copy constructor signature.
-
+Foo(const Foo& other) { ... }             // Copy constructor signature.
+Foo& operator=(const Foo& other) { ... }  // Copy assignment operator.
 ```
 
 The copy constructor is invoked implicitly in a number of situations:
@@ -832,6 +837,7 @@ Suppose you have a function that returns a large object (e.g. a big matrix) and 
 ```cpp
 
 ```
+- Move constructors are implemented to 'steal' over the resources held by the given instance. This means transferring over things like underlying data structures, file handles, etc.
 
 ## Random C++ Features
 Smaller but important C++ details.
@@ -1907,3 +1913,9 @@ class GargantuanTableIterator {
 - Explain `friend` in C++ — what do they do and how do you use it?
     - Inside class `Foo`, use `friend class Bar` to grant `Bar` access to every member of `Foo`. "Friends can touch your privates," and "you can't grant yourself access to other people's privates, but you can grants others access to yours". It's use is discouraged, but sometimes it's helpful for unit testing classes to access private methods.
 - Explain lvalue and rvalue references.
+- Write a valid function signature for: a copy constructor, copy assignment operator overload, move constructor.
+    - `Foo(const Foo& other)`, `Foo& operator=(const Foo& other)`, `Foo(Foo&& other)`.
+
+
+
+
