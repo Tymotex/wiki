@@ -11,7 +11,7 @@ kanban-plugin: basic
 - [ ] Check out cronofy API<br>#konflux
 
 
-## [[archive/Building a Second Brain/Building a Second Brain|Building a Second Brain]]
+## [[_archive/Building a Second Brain/Building a Second Brain|Building a Second Brain]]
 
 - [ ] **(1 hour)**<br>Try a Tkinter hello world and see if the project would benefit from a GUI.<br>#second-brain
 - [ ] **(30 mins)**<br>Write a Python script that prints statistics of the knowledge wiki to the index page. Eg. Number of pages, number of words, etc. Make it run on Obsidian startup or on hotkey press.<br>#project #second-brain

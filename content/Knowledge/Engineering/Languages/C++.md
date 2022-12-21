@@ -813,7 +813,7 @@ Foo& operator=(const Foo& other) { ... }  // Copy assignment operator.
 
 The copy constructor is invoked implicitly in a number of situations:
 - Passing by value to a function (the function creates its own copy for local use).
-- Returning a value will create a copy for the caller (this can be very inefficient, which is why optimisations like [[Knowledge/Engineering/Languages/C++#Copy Elision|copy elision]] and [[Knowledge/Engineering/Languages/C++#Move Constructor and Operation [TODO]|move semantics]] exists).
+- Returning a value will create a copy for the caller (this can be very inefficient, which is why optimisations like [[Knowledge/Engineering/Languages/C++#Copy Elision|copy elision]] and [[Knowledge/Engineering/Languages/C++#Move Constructor and Operation|move semantics]] exists).
 - Copy initialisation:
     ```cpp
     Foo foo;
@@ -829,13 +829,66 @@ If you don't implement the copy constructor yourself, the compiler generates a d
     ![[Knowledge/Engineering/Languages/assets/bad-copy-vector-cpp.png|600]]
 
 
-### Move Constructor and Operation [TODO]
+### Move Constructor and Operation
 A *move constructor* is a constructor that takes in an [[Knowledge/Engineering/Languages/C++#R-Value Reference|rvalue reference]] to an instance of the same class. A move assignment operator overload takes in an rvalue reference (to an instance of the same class) and returns a reference to the same class.
+```cpp
+class Foo {
+public:
+    Foo(initializer_list<int> vals) {
+        arr_ = new int[vals.size()];
+        size_ = vals.size();
+        int i = 0;
+        for (const int& val : vals) arr_[i++] = val;
+    }
+
+    // Move constructor.
+    Foo(Foo&& other) {
+        // Steal the given Foo's members/resources.
+        arr_ = other.arr_;
+        size_ = other.size_;
+        other.arr_ = nullptr;
+        other.size_ = 0;
+    }
+
+    // Move assignment operator.
+    Foo& operator=(Foo&& other) {
+        if (this == &other) return *this;
+
+        arr_ = other.arr_;
+        size_ = other.size_;
+        other.arr_ = nullptr;
+        other.size_ = 0;
+        return *this;
+    }
+
+    void print_vals() {
+        cout << "Values: ";
+        for (int i = 0; i < size_; ++i) cout << arr_[i] << " ";
+        cout << "\n";
+    }
+
+private:
+    int* arr_;
+    int size_;
+};
+
+int main() {
+    Foo foo{2, 4, 8};
+    Foo bar{};
+
+    foo.print_vals();
+    bar.print_vals();
+
+    bar = std::move(foo);
+
+    foo.print_vals();
+    bar.print_vals();
+
+    return 0;
+}
+```
 
 Suppose you have a function that returns a large object (e.g. a big matrix) and you want to avoid copying it to the caller, which would be very wasteful of clock cycles. Since you can't return a reference to a local variable, and it is a bad idea to resort to the C-style returning of a pointer to a `new` object that the caller has to memory-manage, the best option is to use a move constructor.
-```cpp
-
-```
 - Move constructors are implemented to 'steal' over the resources held by the given instance. This means transferring over things like underlying data structures, file handles, etc.
 
 #### std::move
