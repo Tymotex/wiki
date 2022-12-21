@@ -776,6 +776,7 @@ private:
 };
 ```
 - This works well for mutexes where you can acquire the lock in the constructor and unlock it in the destructor.
+- RAII is implemented religiously in standard library resources such as threads, files, data structures, etc.
 
 ### Operator Overloading
 You can define operations on classes by overloading operators like `+`, `+=`, `==`, etc.
@@ -800,6 +801,7 @@ int main() {
 ```
 - Operator overloading is just a type of [[Knowledge/Engineering/Programming/Object Oriented Programming#Static Polymorphism|static polymorphism]]. **Operators are just functions**. When compiled, expressions with operators are just converted to equivalent function calls. E.g. `a += b` becomes `operator+=(a, b)`.
 - Operator overloading also exists in C#, Java, Python, etc.
+- Make sure the copy constructor/assignment is implemented such that logical equivalences hold. E.g. `a != b` should be the same as `!(a == b)`, etc.
 
 ### Copy Constructor and Operation
 A *copy constructor* is a constructor that takes in a (typically const) reference to an instance of the same class. A *copy assignment operator overload* also takes in a (typically const) reference to an instance of the same class and returns a reference to an instance of the same class.
@@ -1099,6 +1101,9 @@ class B;
 class B { ... };
 class A { ... };
 ```
+
+### User-Defined Literals
+It's possible to define custom literals that improve readability. E.g. `<chrono>` makes it possible to write: `24h`, `42min`, etc. directly.
 
 ---
 # Old Notes
