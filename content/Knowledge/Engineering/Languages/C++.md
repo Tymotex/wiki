@@ -1105,6 +1105,18 @@ class A { ... };
 ### User-Defined Literals
 It's possible to define custom literals that improve readability. E.g. `<chrono>` makes it possible to write: `24h`, `42min`, etc. directly.
 
+Example:
+```cpp
+constexpr int operator""min(unsigned long long arg) {
+    return 60 * arg;
+}
+
+int main() {
+    cout << "Seconds: " << 42min << "\n";
+    return 0;
+}
+```
+
 ---
 # Old Notes
 
