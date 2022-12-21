@@ -839,6 +839,21 @@ Suppose you have a function that returns a large object (e.g. a big matrix) and 
 ```
 - Move constructors are implemented to 'steal' over the resources held by the given instance. This means transferring over things like underlying data structures, file handles, etc.
 
+#### std::move
+Suppose you have a class `Foo` that implements a move constructor: `Foo(Foo&& other)`. To invoke this, you'd do something like:
+```cpp
+Foo foo;
+Foo bar((Foo&&)foo);   // Invoke the move constructor.
+```
+
+Since this is ugly and doesn't work for `auto` inferred types, we have `std::move` instead.
+```cpp
+Foo foo;
+Foo bar(std::move(foo));
+```
+
+> `std::move` doesn't actually move anything, which is misleading. It just converts an lvalue to xvalue.
+
 ## Random C++ Features
 Smaller but important C++ details.
 
@@ -1913,8 +1928,8 @@ class GargantuanTableIterator {
 - Explain `friend` in C++ — what do they do and how do you use it?
     - Inside class `Foo`, use `friend class Bar` to grant `Bar` access to every member of `Foo`. "Friends can touch your privates," and "you can't grant yourself access to other people's privates, but you can grants others access to yours". It's use is discouraged, but sometimes it's helpful for unit testing classes to access private methods.
 - Explain lvalue and rvalue references.
-- Write a valid function signature for: a copy constructor, copy assignment operator overload, move constructor.
-    - `Foo(const Foo& other)`, `Foo& operator=(const Foo& other)`, `Foo(Foo&& other)`.
+- Write a valid function signature for: a copy constructor, copy assignment operator overload, move constructor and move assignment operator overload.
+    - `Foo(const Foo& other)`, `Foo& operator=(const Foo& other)`, `Foo(Foo&& other)`, `Foo& operator=(Foo&& other)`.
 
 
 
