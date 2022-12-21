@@ -1117,6 +1117,12 @@ int main() {
 }
 ```
 
+### thread_local
+There is a `thread_local` keyword in C++. When a variable is declared with `thread_local`, it is brought into existence when the thread starts and deallocated when the thread ends. In that sense, the thread sees that variable as a *static* variable since it exists throughout its lifetime.
+    ```cpp
+    thread_local int myInt = ...;
+    ```
+
 ---
 # Old Notes
 
@@ -1709,53 +1715,35 @@ The standard C++ library provides various container class templates like:
 - `vector<T>`
 - `set<T>`
 
-TODO: should learn more about move semantics. Specifically copy and move constructors as well as std::move
-
-
-# C++ Appendix:
-
+# Appendix:
 All the notes under this section are meant to be topics or details you don’t need to care much about to program effectively with C++ but which are important background information.
 
-### How C++ Compilation Works:
-
+### C++ Compilation
 Compilation of C++ programs follow 3 steps:
-
 1. **Preprocessing** 
-    
     Preprocessor directives like `#include`, `#define`, `#if`, etc. transforms the code before any compilation happens. At the end of this step, a pure C++ file is produced.
-    
 2. **Compilation**
-    
     The compiler (eg. g++, the GNU C++ compiler) takes in pure C++ source code and produces an object file. This step doesn’t produce anyting that the user can actually run — it just produces the machine language instructions.
-    
 3. **Linking**
-    
     Takes object files and produces a library or executable file that your OS can use.
-    
-### Curly Braces in C++:
 
-This section exists because I keep seeing curly braces appearing in different contexts and having totally different semantics.
+### Unnamed Scopes
+Usually, we use `{}` to define scopes for functions, classes, if-blocks, for-loops, etc., but you can also just use them directly in code to create a restricted scope.
+```cpp
+void foo() {
+    cout << "Hello\n";
+    {   // Start of an unnamed scope.
+        // A smaller scope containing some statements
+    }   
+    return;
+}
+```
+- Doing this within a function is useful when you want a destructor to be called as soon as possible. E.g. often when dealing with mutexes, you’d want to acquire and release a lock as soon as possible.
 
-- Defining ***scope blocks***
-    
-    ```cpp
-    //***CODE****
-    {
-    	  // A smaller scope containing some statements
-    }
-    //****MORE CODE****
-    ```
-    
-    - Doing this within a function is useful when you want a destructor to be called as soon as possible. Eg. often when dealing with mutexes, you’d want to acquire and release a lock as soon as possible.
-- 
-
-### Union:
-
+### Union
 A `union` is data structure like a `class` or `struct`, except all its members share the same memory address, meaning it can only hold 1 value for one member at a time. The implication is that a union can only hold **one value at a time**, and its total allocated memory is equal to $\texttt{max(sizeof each member)}$.
-
-- It’s mainly used when you really need to conserve memory
-- They’re largely useless in C++ and more useful in C
-
+- It’s mainly used when you *really* need to conserve memory.
+- They’re mostly useless in C++ but more useful in C.
 ```cpp
 union Numeric {
     short  sVal;
@@ -1767,34 +1755,14 @@ int main() {
     cout << "Unions" << endl;
 
     Numeric num = { 42 };
-    cout << num.sVal << endl;    // Prints **42**
-    cout << num.iVal << endl;    // Prints **42**
-    cout << num.dVal << endl;    // Interprets the bits of 42 using floating point representation (IEEE 754)
+    cout << num.sVal << endl;    // Prints 42.
+    cout << num.iVal << endl;    // Prints 42.
+    cout << num.dVal << endl;    // Interprets the bits of 42 using floating point representation (IEEE 754).
 }
 ```
 
-### Struct:
-
-- **Structs vs. Classes:** There are very few differences between a `struct` and a `class` in C++.
-    
-    
-    | Struct | Class |
-    | --- | --- |
-    | Members are public by default | Members are private by default |
-    | Are value types | Are reference types |
-- **Structs in C vs. C++**
-    
-    
-    | C | C++ |
-    | --- | --- |
-    | Can only have fields | Can have methods and fields |
-    | No class features | Has constructors, inheritance, private/protected/public members, literally everything you expect in a class |
-- You should use structs when you need a plain-old-data structure that doesn’t require any class-like features[*](https://stackoverflow.com/questions/54585/when-should-you-use-a-class-vs-a-struct-in-c)
-
 ### Structured Binding:
-
 **Structured binding** is syntactic sugar for declaring variables initialised with items/fields of a data structure.
-
 - JavaScript calls this ***destructuring***, Python calls this *unpacking*, C# calls this *deconstructing*
 - Unfortunately, you have to specify as many identifiers as there are things to unpack
 
@@ -1832,27 +1800,6 @@ int main() {
     tuple<int, bool, double> tup(1, false, 3.14);
     auto [x, y, z] = tup;
     ```
-    
-
-Continue at 5.2 in Tour of C++
-
-# C++ Primer:
-
-- Any variable with the following properties will be placed into *static memory*:
-    - Declared with `static`
-    - Has namespace scope
-    
-    ![Untitled](Knowledge/Engineering/Languages/assets/Untitled%2010.png)
-    
-- Variable with *static storage duration* have their address and size known at compile time. They’ll live for as long as the program lifetime.
-- There is a `thread_local` keyword in C++. When a variable is declared with `thread_local`, it is brought into existence when the thread starts and deallocated when the thread ends. In that sense, the thread sees it as a *static storage duration* variable.
-    
-    ```cpp
-    thread_local int myInt = ...;
-    ```
-    
-
-Continue at ‘RAII (The "Resource Acquisition Is Initialization" Idiom)’
 
 # C++ Style
 
@@ -2016,4 +1963,4 @@ class GargantuanTableIterator {
     - `Foo(const Foo& other)`, `Foo& operator=(const Foo& other)`, `Foo(Foo&& other)`, `Foo& operator=(Foo&& other)`.
 - What is std::move?
     - It's a function you use to help you invoke the move constructor or the move assignment operator. It converts an lvalue to an rvalue reference (well, technically an xvalue, I think). It doesn't do any actual moving itself.
-
+- What's `thread_local`?
