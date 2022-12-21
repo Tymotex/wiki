@@ -927,7 +927,7 @@ Foo bar(std::move(foo));   // Read this like: "moving foo's contents to bar."
 Smaller but important C++ details.
 
 ### Structured Bindings
-You can unpack values in C++17, similar to how you destructure objects in JavaScript.
+You can unpack values in C++17, similar to how you destructure objects in JavaScript. It's just syntactic sugar.
 ```cpp
 struct Coordinate {
   int x;
@@ -940,7 +940,24 @@ int main() {
   return 0;
 }
 ```
+- JavaScript calls this ***destructuring***, Python calls this *unpacking*, C# calls this *deconstructing*.
+- Unfortunately, you have to specify as many identifiers as there are things to unpack. 
+- Ranged for-loop:
+    ```cpp
+    map<string, int> m;
+    m.insert(pair<string, int>("Hello", 42));
+    m.insert(pair<string, int>("World", 24));
     
+    for (const auto& [key, val] : m) {
+        cout << "Key: " << key << ", val: " << val << endl;
+    }
+    ```
+- Tuple destructuring:
+    ```cpp
+    tuple<int, bool, double> tup(1, false, 3.14);
+    auto [x, y, z] = tup;
+    ```
+
 ### Copy Elision
 By default, when you pass an object to a function, that object is copied over (pass-by-value). When it doesn't affect program behaviour, the compiler can move the object rather than making a full copy of it. This compiler optimisation can also happen when returning an object, throwing an exception, etc.
 ```cpp
@@ -1119,9 +1136,43 @@ int main() {
 
 ### thread_local
 There is a `thread_local` keyword in C++. When a variable is declared with `thread_local`, it is brought into existence when the thread starts and deallocated when the thread ends. In that sense, the thread sees that variable as a *static* variable since it exists throughout its lifetime.
-    ```cpp
-    thread_local int myInt = ...;
-    ```
+```cpp
+thread_local int myInt = ...;
+```
+
+### Unnamed Scopes
+Usually, we use `{}` to define scopes for functions, classes, if-blocks, for-loops, etc., but you can also just use them directly in code to create a restricted scope.
+```cpp
+void foo() {
+    cout << "Hello\n";
+    {   // Start of an unnamed scope.
+        // A smaller scope containing some statements
+    }   
+    return;
+}
+```
+- Doing this within a function is useful when you want a destructor to be called as soon as possible. E.g. often when dealing with mutexes, you’d want to acquire and release a lock as soon as possible.
+
+### Union
+A `union` is data structure like a `class` or `struct`, except all its members share the same memory address, meaning it can only hold 1 value for one member at a time. The implication is that a union can only hold **one value at a time**, and its total allocated memory is equal to $\texttt{max(sizeof each member)}$.
+- It’s mainly used when you *really* need to conserve memory.
+- They’re mostly useless in C++ but more useful in C.
+```cpp
+union Numeric {
+    short  sVal;
+    int    iVal;
+    double dVal;
+};
+
+int main() {
+    cout << "Unions" << endl;
+
+    Numeric num = { 42 };
+    cout << num.sVal << endl;    // Prints 42.
+    cout << num.iVal << endl;    // Prints 42.
+    cout << num.dVal << endl;    // Interprets the bits of 42 using floating point representation (IEEE 754).
+}
+```
 
 ---
 # Old Notes
@@ -1727,101 +1778,18 @@ Compilation of C++ programs follow 3 steps:
 3. **Linking**
     Takes object files and produces a library or executable file that your OS can use.
 
-### Unnamed Scopes
-Usually, we use `{}` to define scopes for functions, classes, if-blocks, for-loops, etc., but you can also just use them directly in code to create a restricted scope.
-```cpp
-void foo() {
-    cout << "Hello\n";
-    {   // Start of an unnamed scope.
-        // A smaller scope containing some statements
-    }   
-    return;
-}
-```
-- Doing this within a function is useful when you want a destructor to be called as soon as possible. E.g. often when dealing with mutexes, you’d want to acquire and release a lock as soon as possible.
 
-### Union
-A `union` is data structure like a `class` or `struct`, except all its members share the same memory address, meaning it can only hold 1 value for one member at a time. The implication is that a union can only hold **one value at a time**, and its total allocated memory is equal to $\texttt{max(sizeof each member)}$.
-- It’s mainly used when you *really* need to conserve memory.
-- They’re mostly useless in C++ but more useful in C.
-```cpp
-union Numeric {
-    short  sVal;
-    int    iVal;
-    double dVal;
-};
+### Style
+See [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html). Note: there are many decisions in the Google C++ style guide that many people protest against, for example, the lack of exceptions. It generally has good style rules otherwise.
 
-int main() {
-    cout << "Unions" << endl;
-
-    Numeric num = { 42 };
-    cout << num.sVal << endl;    // Prints 42.
-    cout << num.iVal << endl;    // Prints 42.
-    cout << num.dVal << endl;    // Interprets the bits of 42 using floating point representation (IEEE 754).
-}
-```
-
-### Structured Binding:
-**Structured binding** is syntactic sugar for declaring variables initialised with items/fields of a data structure.
-- JavaScript calls this ***destructuring***, Python calls this *unpacking*, C# calls this *deconstructing*
-- Unfortunately, you have to specify as many identifiers as there are things to unpack
-
-**Use Cases:**
-
-- Array destructuring
-    
-    ```cpp
-    int arr[3] = { 1, 2, 3 };
-    auto [a, b, c] = arr;
-    ```
-    
-- Ranged for-loop
-    
-    ```cpp
-    map<string, int> m;
-    m.insert(pair<string, int>("Hello", 42));
-    m.insert(pair<string, int>("World", 24));
-    
-    for (**const auto& [key, val]** : m) {
-        cout << "Key: " << key << ", val: " << val << endl;
-    }
-    ```
-    
-- Class/struct destructuring
-    
-    ```cpp
-    Foo f(42, 24);
-    auto [u, v] = f;
-    ```
-    
-- Tuple destructuring
-    
-    ```cpp
-    tuple<int, bool, double> tup(1, false, 3.14);
-    auto [x, y, z] = tup;
-    ```
-
-# C++ Style
-
-### Style Guide
-
-[Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
-
-Note: there are many decisions in the Google C++ style guide that many people protest against, for example, the lack of exceptions. It generally has good style rules otherwise.
-
-### Soruce Code Documentation
-
+### Commenting
 The advice here is sourced from [Google’s C++ style guide](https://google.github.io/styleguide/cppguide.html).
 
-**File Comments**
-
+#### File Comments
 File comments are preferred but not always necessary. Function and class documentation, on the other hand, must be present with exceptions only for trivial cases.
-
 - Start with licence boilerplate, then broadly describe what abstractions are introduced by the file.
 - Don’t duplicate comments across a class’ `.h` and `.cc` file.
-
 [Example](https://github.com/google/googletest/blob/main/googletest/src/gtest-all.cc)
-
 ```cpp
 // Copyright 2008, Google Inc.
 // All rights reserved.
@@ -1836,10 +1804,8 @@ File comments are preferred but not always necessary. Function and class documen
 // This file serves this purpose.
 ```
 
-**Variable comments**
-
+#### Variable Comments
 Generally not required if the name is sufficiently descriptive. Often for class variables, more context is needed to explain the purpose of the variable.
-
 ```cpp
 private:
 	 // Used to bounds-check table accesses. -1 means
@@ -1847,22 +1813,18 @@ private:
 	 int num_total_entries_;
 ```
 
-**TODO comments**
-
+#### TODO Comments
 ```cpp
 // TODO(kl@gmail.com): Use a "*" here for concatenation operator.
 // TODO(Zeke) change this to use relations.
 // TODO(bug 12345): remove the "Last visitors" feature.
 ```
 
-**Function comments**
-
+#### Function Comments
 Always write a comment to explain what the function/method accomplishes unless it is trivial. This includes private functions.
-
 - Start with a verb. Eg. “Opens a file...” or “Returns an iterator for...”
 - Which arguments can be `nullptr` and what that would mean.
 - Performance implications of how the function is used.
-
 ```cpp
 // Returns an iterator for this table, positioned at the first entry
 // lexically greater than or equal to `start_word`. If there is no
@@ -1876,18 +1838,13 @@ Always write a comment to explain what the function/method accomplishes unless i
 std::unique_ptr<Iterator> GetIterator(absl::string_view start_word) const;
 ```
 
-**Class comments**
-
+#### Class Comments
 Always write a comment to explain what the class’ purpose is and when to correctly use it. Always do this in the `.h` file, leaving comments about implementation detail to the implementing `.cc` file.
-
 - Good place to provide a code snippet illustrating a simple use case.
 - About documenting the `.h` header file vs. documenting the `.cc` source file
     - Document how to use the function in the header file, or more accurately close to the declaration
     - Document how the function works (if it's not obvious from the code) in the source file, or more accurately, close to the definition
-    
-    [Source](https://softwareengineering.stackexchange.com/questions/84071/is-it-better-to-document-functions-in-the-header-file-or-the-source-file).
-    
-
+[Source](https://softwareengineering.stackexchange.com/questions/84071/is-it-better-to-document-functions-in-the-header-file-or-the-source-file).
 ```cpp
 // Iterates over the contents of a GargantuanTable.
 // 
@@ -1902,6 +1859,7 @@ class GargantuanTableIterator {
 ```
 
 # Flashcards
+Some simple Q-and-A notes to be used as flashcards.
 - What is separate compilation?
     - A division of a larger project into smaller units that interact with each other through header files. One unit only knows about another unit through their header files. The big benefit of structuring projects this way is to allow for compilation to be done independently on these units, meaning that if one unit changes while others have not, then only that one unit is to be compiled.
 - What are the differences between copy, list and direct initialisation?
