@@ -696,12 +696,19 @@ kanban-plugin: basic
 
 
 
+## **Wednesday** *[[Journal/2022-12-21|2022-12-21]]* (6)
+
+- [x] 🏆 Purpose: C++, math website.
+- [x] Research basic skincare.
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
