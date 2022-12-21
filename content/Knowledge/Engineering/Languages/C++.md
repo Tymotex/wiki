@@ -923,6 +923,13 @@ Foo bar(std::move(foo));   // Read this like: "moving foo's contents to bar."
 > 
 > `std::move(foo)` basically says "you are now allowed to steal resources from `foo`".
 
+## Templates
+
+
+To make a class, function or type trait a template, just prefix the definition with the `template` keyword followed by a list of type parameters: `template<typename A, typename B, ...>`.
+
+Interpret `template<typename T>` as "for all types T".
+
 ## Random C++ Features
 Smaller but important C++ details.
 
