@@ -930,6 +930,96 @@ To make a class, function or type trait a template, just prefix the definition w
 
 Interpret `template<typename T>` as "for all types T".
 
+### Templates vs. Generics
+Templates are massively different from generics in other OOP languages like Java.
+
+In Java, generics are mainly syntactic sugar that help programmers avoid boilerplate code. In C++, templates are a code generation system that enables generic programming and more. Some main differences:
+- Java doesn’t let you pass primitive types like `int` as type parameters... yup. You can’t do this.
+    ```cpp
+    ArrayList<int> myList = new ArrayList<int>();
+    ```
+- 
+
+### Function Templates
+Suppose you’re writing multiple overloads for a method, and each overload does essentially the same thing but just takes in different types.
+
+```cpp
+void **swap**(int& i, int& j) {
+		int tmp = i;
+		i = j;
+		j = tmp;
+}
+
+void **swap**(string& s1, string& s2) {
+		string tmp = s1;
+		s1 = s2;
+		s2 = tmp;
+}
+...
+```
+
+Clearly there’s a lot of duplicated code in each overload, and this approach would not scale well in practice. A solution to this is to use ***function templates*** to define a generalised algorithm and let the compiler generate all the overloads for you on compilation.
+
+- Strictly speaking, a function template is not really a function. It’s a generalisation of an algorithm that is used as a tool by the compiler for generating similar but independent functions.
+    - The act of generating a function from a function template by the compiler is called ***template instantiation***
+        - When you invoke `**swap<int>(i, j)**`, the compiler will *instantiate* a function with signature `**void swap<int>(int& a, int& b)**` for you by plugging in the types into the template function you defined. Template instantiation is done on-demand when you compile.
+            - The compiler is smart enough to avoid instantiating duplicate functions.
+```cpp
+**template <typename T>**      // Start of T's scope
+****void swap(T& a, T& b) { 
+		T tmp = a;
+		a = b;
+		b = tmp;
+}                          // End of T's scope
+```
+`T` is a ***type argument***. Its scope is limited to the function signature and body.
+
+- Using `class` instead of `typename`
+    You can also use the `class` keyword instead of `typename`. The behaviour is exactly the same in template definitions... there are historical reasons why they’re interchangeable. 
+    ```cpp
+    // These two are equivalent:
+    template <typename T>
+    template <class T>
+    ```
+    They obviously both have *very* different meanings in contexts outside of defining templates, however.
+
+### Class Templates
+Much like how a function template is a generalisation of an algorithm, a class template is a generalisation of a type, *but it’s not an actual type*.
+
+```cpp
+template <typename T>
+class MyContainer {
+public:
+    MyContainer(T n);
+}
+
+// When implementing methods done outside of the class, you must fully 
+// qualify the method with the prefix `MyContainer<T>::`.
+//
+// Anything following `::` will be within the class' scope, meaning that
+// specifying <T> becomes optional again — because T is known in the class
+// body.
+template <typename T>
+MyContainer<T>::MyContainer(T n) {
+    
+}
+```
+
+- Note: when within the scope of the class body, you can use `MyContainer` and `MyContainer<T>` interchangeably. Essentially, you can consider `<T>` optional inside the class body. However, when outside the class scope (i.e. before the `::`), you have to fully qualify the name with `MyContainer<T>::`
+    - Once you specify the `::` in `MyContainer<T>::`, you can imagine that you’re basically re-entering the class scope, and then everything you could access within the class become available again.
+    ![[Knowledge/Engineering/Languages/assets/class-template-method-scope.png|500]]
+    (sourced from [CppCon](https://www.youtube.com/watch?v=LMP_sxOaz6g&ab_channel=CppCon))
+
+**Container Class Templates:**
+A container is an object that contains other objects. Examples include arrays, linked lists, etc.
+
+The standard C++ library provides various container class templates like:
+
+- `list<T>`
+- `vector<T>`
+- `set<T>`
+
+
 ## Random C++ Features
 Smaller but important C++ details.
 
@@ -1665,95 +1755,6 @@ public:
 - regular array literal vs using std::array
 - [https://www.google.com/search?q=references+as+members&oq=references+as+members&aqs=chrome..69i57.4024j0j7&sourceid=chrome&ie=UTF-8](https://www.google.com/search?q=references+as+members&oq=references+as+members&aqs=chrome..69i57.4024j0j7&sourceid=chrome&ie=UTF-8)
 
-## Templates
-- Templates vs. generics [TODO]
-    Templates are massively different from generics like in Java.
-    In Java, generics are mainly syntactic sugar that help programmers avoid boilerplate casting code.
-    Some main differences that developers should know:
-    - Java doesn’t let you pass primitive types like `int` as type parameters... yup. You can’t do this
-        ```cpp
-        ArrayList<int> myList = new ArrayList<int>();
-        ```
-
-[CppCon talk](https://www.youtube.com/watch?v=LMP_sxOaz6g&ab_channel=CppCon) 
-
-### Function Templates
-Suppose you’re writing multiple overloads for a method, and each overload does essentially the same thing but just takes in different types.
-
-```cpp
-void **swap**(int& i, int& j) {
-		int tmp = i;
-		i = j;
-		j = tmp;
-}
-
-void **swap**(string& s1, string& s2) {
-		string tmp = s1;
-		s1 = s2;
-		s2 = tmp;
-}
-...
-```
-
-Clearly there’s a lot of duplicated code in each overload, and this approach would not scale well in practice. A solution to this is to use ***function templates*** to define a generalised algorithm and let the compiler generate all the overloads for you on compilation.
-
-- Strictly speaking, a function template is not really a function. It’s a generalisation of an algorithm that is used as a tool by the compiler for generating similar but independent functions.
-    - The act of generating a function from a function template by the compiler is called ***template instantiation***
-        - When you invoke `**swap<int>(i, j)**`, the compiler will *instantiate* a function with signature `**void swap<int>(int& a, int& b)**` for you by plugging in the types into the template function you defined. Template instantiation is done on-demand when you compile.
-            - The compiler is smart enough to avoid instantiating duplicate functions.
-```cpp
-**template <typename T>**      // Start of T's scope
-****void swap(T& a, T& b) { 
-		T tmp = a;
-		a = b;
-		b = tmp;
-}                          // End of T's scope
-```
-`T` is a ***type argument***. Its scope is limited to the function signature and body.
-
-- Using `class` instead of `typename`
-    You can also use the `class` keyword instead of `typename`. The behaviour is exactly the same in template definitions... there are historical reasons why they’re interchangeable. 
-    ```cpp
-    // These two are equivalent:
-    template <typename T>
-    template <class T>
-    ```
-    They obviously both have *very* different meanings in contexts outside of defining templates, however.
-
-### Class Templates
-Much like how a function template is a generalisation of an algorithm, a class template is a generalisation of a type, *but it’s not an actual type*.
-
-```cpp
-template <typename T>
-class MyContainer {
-public:
-    MyContainer(T n);
-}
-
-// When implementing methods done outside of the class, you must fully 
-// qualify the method with the prefix `MyContainer<T>::`.
-//
-// Anything following `::` will be within the class' scope, meaning that
-// specifying <T> becomes optional again — because T is known in the class
-// body.
-template <typename T>
-MyContainer<T>::MyContainer(T n) {
-    
-}
-```
-
-- Note: when within the scope of the class body, you can use `MyContainer` and `MyContainer<T>` interchangeably. Essentially, you can consider `<T>` optional inside the class body. However, when outside the class scope (i.e. before the `::`), you have to fully qualify the name with `MyContainer<T>::`
-    - Once you specify the `::` in `MyContainer<T>::`, you can imagine that you’re basically re-entering the class scope, and then everything you could access within the class become available again.
-    ![[Knowledge/Engineering/Languages/assets/class-template-method-scope.png|500]]
-
-**Container Class Templates:**
-A container is an object that contains other objects. Examples include arrays, linked lists, etc.
-
-The standard C++ library provides various container class templates like:
-
-- `list<T>`
-- `vector<T>`
-- `set<T>`
 
 # Appendix:
 All the notes under this section are meant to be topics or details you don’t need to care much about to program effectively with C++ but which are important background information.
