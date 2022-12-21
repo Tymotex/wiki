@@ -760,9 +760,6 @@ public:
 };
 ```
 
-#### Rule of 3 [TODO]
-See [Rule of 3](https://en.wikipedia.org/wiki/Rule_of_three_(C%2B%2B_programming)). "If a class defines any of the following then it should probably define all three: destructor, copy constructor, copy assignment operator."
-
 ### RAII
 The technique of acquiring resources in the constructor and then freeing them in the destructor is called *RAII (Resource Acquisition is Initialisation)*. The idea is about coupling the use of a resource to the lifetime of an object so that when it goes out of scope, or when it throws an exception, the resources it held are guaranteed to be released. Always design classes with RAII in mind.
 ```cpp
@@ -807,8 +804,14 @@ int main() {
 ### Copy Constructor and Operation
 A *copy constructor* is a constructor that takes in a (typically const) reference to an instance of the same class. A *copy assignment operator overload* also takes in a (typically const) reference to an instance of the same class and returns a reference to an instance of the same class.
 ```cpp
-Foo(const Foo& other) { ... }             // Copy constructor signature.
-Foo& operator=(const Foo& other) { ... }  // Copy assignment operator.
+class Foo {
+public:
+    // Copy constructor.
+    Foo(const Foo& other) { ... }
+
+    // Copy assignment operator.
+    Foo& operator=(const Foo& other) { ... }  
+};
 ```
 
 The copy constructor is invoked implicitly in a number of situations:
@@ -831,6 +834,19 @@ If you don't implement the copy constructor yourself, the compiler generates a d
 
 ### Move Constructor and Operation
 A *move constructor* is a constructor that takes in an [[Knowledge/Engineering/Languages/C++#R-Value Reference|rvalue reference]] to an instance of the same class. A move assignment operator overload takes in an rvalue reference (to an instance of the same class) and returns a reference to the same class.
+```cpp
+class Foo {
+public:
+    // Move constructor.
+    Foo(Foo&& other) { ... }
+
+    // Move assignment operator.
+    Foo& operator=(Foo&& other) { ... }
+};
+```
+
+Suppose you have a function that returns a large object (e.g. a big matrix) and you want to avoid copying it to the caller, which would be very wasteful of clock cycles. Since you can't return a reference to a local variable, and it is a bad idea to resort to the C-style returning of a pointer to a `new` object that the caller has to memory-manage, the best option is to use a move constructor.
+- Move constructors are implemented to 'steal' over the resources held by the given instance (hence why we don't take in a `const` rvalue reference). This means transferring over things like underlying data structures, file handles, etc.
 ```cpp
 class Foo {
 public:
@@ -888,9 +904,6 @@ int main() {
 }
 ```
 
-Suppose you have a function that returns a large object (e.g. a big matrix) and you want to avoid copying it to the caller, which would be very wasteful of clock cycles. Since you can't return a reference to a local variable, and it is a bad idea to resort to the C-style returning of a pointer to a `new` object that the caller has to memory-manage, the best option is to use a move constructor.
-- Move constructors are implemented to 'steal' over the resources held by the given instance. This means transferring over things like underlying data structures, file handles, etc.
-
 #### std::move
 Suppose you have a class `Foo` that implements a move constructor: `Foo(Foo&& other)`. To invoke this, you'd do something like:
 ```cpp
@@ -904,7 +917,7 @@ Foo foo;
 Foo bar(std::move(foo));   // Read this like: "moving foo's contents to bar."
 ```
 
-> `std::move` doesn't actually move anything, which is a bit misleading. It just converts an lvalue to rvalue reference ([technically an xvalue](https://en.cppreference.com/w/cpp/utility/move)) so as to invoke the move constructor. The actual 'moving' itself is done by the move constructor.
+> `std::move` doesn't actually move anything, which is a bit misleading. It just converts an lvalue to rvalue reference ([technically an xvalue](https://en.cppreference.com/w/cpp/utility/move)) so as to invoke the move constructor. It has zero side effects and behaves very much like a typecast. The actual 'moving' itself is done by the move constructor.
 > 
 > `std::move(foo)` basically says "you are now allowed to steal resources from `foo`".
 
@@ -1986,6 +1999,4 @@ class GargantuanTableIterator {
     - `Foo(const Foo& other)`, `Foo& operator=(const Foo& other)`, `Foo(Foo&& other)`, `Foo& operator=(Foo&& other)`.
 - What is std::move?
     - It's a function you use to help you invoke the move constructor or the move assignment operator. It converts an lvalue to an rvalue reference (well, technically an xvalue, I think). It doesn't do any actual moving itself.
-
-
 
