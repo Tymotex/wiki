@@ -634,6 +634,8 @@ int main() {
 }
 ```
 
+> Note the differences between `const Foo foo = ...;` in C++ vs. `const foo = ...` in JavaScript/TypeScript. In JavaScript, you can still mutate the fields freely by default, you just can't reassign `foo` to point to a different object.
+
 ### Final Methods
 Postfixing a method signature with the `final` keyword will make it so that it cannot be overridden by a deriving class.
 - Why not just declare a method without the `virtual` modifier? Wouldn't that prevent overriding? See [why final exists](https://stackoverflow.com/questions/8824587/what-is-the-purpose-of-the-final-keyword-in-c11-for-functions).
@@ -797,7 +799,7 @@ int main() {
 - Operator overloading is just a type of [[Knowledge/Engineering/Programming/Object Oriented Programming#Static Polymorphism|static polymorphism]]. **Operators are just functions**. When compiled, expressions with operators are just converted to equivalent function calls. E.g. `a += b` becomes `operator+=(a, b)`.
 - Operator overloading also exists in C#, Java, Python, etc.
 
-### Copy Constructor and Operation [TODO]
+### Copy Constructor and Operation
 A *copy constructor* is a constructor that takes in a const reference instance of the same class.
 ```cpp
 Foo(const Foo& other);   // Copy constructor signature.
@@ -806,16 +808,14 @@ Foo(const Foo& other);   // Copy constructor signature.
 
 The copy constructor is invoked implicitly in a number of situations:
 - Passing by value to a function (the function creates its own copy for local use).
-- Returning a value will create a copy for the caller (this can be very inefficient, which is why [[Knowledge/Engineering/Languages/C++#Move Constructor and Operation [TODO]|move semantics]] exists).
-- 
-```cpp
-
-
-Foo foo;
-Foo bar;
-Foo baz = foo;     // Implicitly calls the copy constructor.
-baz = bar;         // Calls copy assignment operator, not the copy constructor.
-```
+- Returning a value will create a copy for the caller (this can be very inefficient, which is why optimisations like [[Knowledge/Engineering/Languages/C++#Copy Elision|copy elision]] and [[Knowledge/Engineering/Languages/C++#Move Constructor and Operation [TODO]|move semantics]] exists).
+- Copy initialisation:
+    ```cpp
+    Foo foo;
+    Foo bar;
+    Foo baz = foo;     // Implicitly calls the copy constructor.
+    baz = bar;         // Calls copy assignment operator, not the copy constructor.
+    ```
 
 If you don't implement the copy constructor yourself, the compiler generates a default copy constructor that performs a simple memberwise copy to form a new object. Often, this default copy constructor is acceptable. For sophisticated concrete types and abstract types, the default implementation should be [[Knowledge/Engineering/Languages/C++#Deleted Functions|deleted]] or manually implemented.
 - An example of when default copy could be bad: when your class holds a pointer to a resource, a memberwise copy would copy the pointer over to the new object. Now both objects would affect the same resource.
@@ -863,6 +863,8 @@ int main() {
   string s = foo();
 }
 ```
+
+> Copy elision is not enforced in the C++ standard, so don't write code assuming this optimisation will happen.
 
 ### Return Type Deduction
 In C++14, you can infer the return type of function whose return type is left as `auto`.
