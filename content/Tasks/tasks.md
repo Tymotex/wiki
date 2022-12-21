@@ -7,8 +7,8 @@ kanban-plugin: basic
 ## **Wednesday** *[[Journal/2022-12-21|2022-12-21]]* (6)
 
 - [x] 🏆 Purpose: C++, math website.
+- [ ] Complete chatper 5 C++.
 - [ ] ==5== Make a plan to grind out the math website in record time.
-- [ ] ==5== **(1 hour)**<br>Transfer Git notes to Obsidian.
 - [ ] ==5== **(1 hour)**<br>Clean up book notes and summarise How Not to Die.
 - [ ] Ask mum how to split payment.
 - [x] Research basic skincare.
@@ -33,6 +33,7 @@ kanban-plugin: basic
 
 - [ ] 🏆 Purpose
 - [ ] 🌞 Morning routine
+- [ ] ==5== **(1 hour)**<br>Transfer Git notes to Obsidian.
 - [ ] 🌙 Evening routine
 
 
