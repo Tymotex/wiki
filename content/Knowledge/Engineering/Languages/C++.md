@@ -924,7 +924,9 @@ Foo bar(std::move(foo));   // Read this like: "moving foo's contents to bar."
 > `std::move(foo)` basically says "you are now allowed to steal resources from `foo`".
 
 ## Templates
-Templates in C++ are a code generation system that lets you specify a general implementation of a class or function and then generate specialised instances of that template for different types, on demand. Templates provides everything offered by generics in languages like Java, plus more.
+Templates in C++ are a code generation system that lets you specify a general implementation of a class or function and then generate specialised instances of that template for different types, on demand.
+- Templates provides everything offered by generics in languages like Java, plus more.
+- Since templates are purely a compile-time feature, there is no real difference between template-generated code and equivalent handwritten code.
 
 To make a class or function a template, just prefix the definition with the `template` keyword followed by a list of type parameters: `template <typename A, typename B, ...>`.
 - Read `template <typename T>` as "for all types T, ..."
@@ -934,6 +936,7 @@ To make a class or function a template, just prefix the definition with the `tem
     template <typename T>
     template <class T>
     ```
+- Templates can take in value arguments as well as type arguments.
 
 ### Templates vs. Generics
 Templates are massively different from generics in other OOP languages like Java. 
@@ -1015,6 +1018,11 @@ int main() {
     - Once you specify the `::` in `MyContainer<T>::`, you can imagine that you’re basically re-entering the class scope, and then everything you could access within the class become available again.
     ![[Knowledge/Engineering/Languages/assets/class-template-method-scope.png|500]]
     (sourced from [CppCon](https://www.youtube.com/watch?v=LMP_sxOaz6g&ab_channel=CppCon))
+
+### Concepts [TODO]
+Since in many situations we don't want to accept *any* type in our template, we can specify constraints with predicates, which we call *concepts*.
+
+This is a C++20 feature.
 
 ## Random C++ Features
 Smaller but important C++ details.
@@ -1908,3 +1916,5 @@ Some simple Q-and-A notes to be used as flashcards.
 - What is std::move?
     - It's a function you use to help you invoke the move constructor or the move assignment operator. It converts an lvalue to an rvalue reference (well, technically an xvalue, I think). It doesn't do any actual moving itself.
 - What's `thread_local`?
+- How do you define a function template?
+- How do you define a class template? How do you define the methods of a class template outside of the class definition?
