@@ -830,10 +830,9 @@ If you don't implement the copy constructor yourself, the compiler generates a d
 
 
 ### Move Constructor and Operation [TODO]
+A *move constructor* is a constructor that takes in an [[Knowledge/Engineering/Languages/C++#R-Value Reference|rvalue reference]] to an instance of the same class. A move assignment operator overload takes in an rvalue reference (to an instance of the same class) and returns a reference to the same class.
+
 Suppose you have a function that returns a large object (e.g. a big matrix) and you want to avoid copying it to the caller, which would be very wasteful of clock cycles. Since you can't return a reference to a local variable, and it is a bad idea to resort to the C-style returning of a pointer to a `new` object that the caller has to memory-manage, the best option is to use a move constructor.
-
-
-
 ```cpp
 
 ```
@@ -849,10 +848,10 @@ Foo bar((Foo&&)foo);   // Invoke the move constructor.
 Since this is ugly and doesn't work for `auto` inferred types, we have `std::move` instead.
 ```cpp
 Foo foo;
-Foo bar(std::move(foo));
+Foo bar(std::move(foo));   // Read this like: "moving foo's contents to bar."
 ```
 
-> `std::move` doesn't actually move anything, which is misleading. It just converts an lvalue to xvalue.
+> `std::move` doesn't actually move anything, which is a bit misleading. It just converts an lvalue to rvalue reference ([technically an xvalue](https://en.cppreference.com/w/cpp/utility/move)) so as to invoke the move constructor. The actual 'moving' itself is done by the move constructor.
 
 ## Random C++ Features
 Smaller but important C++ details.
@@ -1930,7 +1929,8 @@ class GargantuanTableIterator {
 - Explain lvalue and rvalue references.
 - Write a valid function signature for: a copy constructor, copy assignment operator overload, move constructor and move assignment operator overload.
     - `Foo(const Foo& other)`, `Foo& operator=(const Foo& other)`, `Foo(Foo&& other)`, `Foo& operator=(Foo&& other)`.
-
+- What is std::move?
+    - It's a function you use to help you invoke the move constructor or the move assignment operator. It converts an lvalue to an rvalue reference (well, technically an xvalue, I think). It doesn't do any actual moving itself.
 
 
 
