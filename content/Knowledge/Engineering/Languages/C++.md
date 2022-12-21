@@ -924,12 +924,16 @@ Foo bar(std::move(foo));   // Read this like: "moving foo's contents to bar."
 > `std::move(foo)` basically says "you are now allowed to steal resources from `foo`".
 
 ## Templates
+Templates in C++ are a code generation system that lets you specify a general implementation of a class or function and then generate specialised instances of that template for different types, on demand. Templates provides everything offered by generics in languages like Java, plus more.
 
-
-To make a class, function or type trait a template, just prefix the definition with the `template` keyword followed by a list of type parameters: `template<typename A, typename B, ...>`.
-
-Interpret `template<typename T>` as "for all types T".
-
+To make a class or function a template, just prefix the definition with the `template` keyword followed by a list of type parameters: `template <typename A, typename B, ...>`.
+- Read `template <typename T>` as "for all types T, ..."
+- You can also use the `class` keyword instead of `typename`. They’re interchangeable. 
+    ```cpp
+    // These two are equivalent:
+    template <typename T>
+    template <class T>
+    ```
 
 ### Templates vs. Generics
 Templates are massively different from generics in other OOP languages like Java. 
@@ -939,47 +943,29 @@ In Java, generics are mainly syntactic sugar that help programmers avoid boilerp
 > Think of C++'s templates as very sophisticated preprocessor commands. It's used to *generate* type-safe code. In Java's generic system, [type erasure](https://www.baeldung.com/java-type-erasure) is used, resulting in a single implementation of the generic class/function rather than many specialised instances of a template like in C++.
 
 ### Function Templates
-Suppose you’re writing multiple overloads for a method, and each overload does essentially the same thing but just takes in different types.
-
+Function templates are a generalised algorithm that the compiler can generate copies of for usage with specific types.
 ```cpp
-void **swap**(int& i, int& j) {
-		int tmp = i;
-		i = j;
-		j = tmp;
+template <typename T, typename U>
+void foo(T t, U u) {
+    // ...
 }
-
-void **swap**(string& s1, string& s2) {
-		string tmp = s1;
-		s1 = s2;
-		s2 = tmp;
-}
-...
 ```
-
-Clearly there’s a lot of duplicated code in each overload, and this approach would not scale well in practice. A solution to this is to use ***function templates*** to define a generalised algorithm and let the compiler generate all the overloads for you on compilation.
-
+- `T` is a ***type argument***. Its scope is limited to the function signature and body.
 - Strictly speaking, a function template is not really a function. It’s a generalisation of an algorithm that is used as a tool by the compiler for generating similar but independent functions.
-    - The act of generating a function from a function template by the compiler is called ***template instantiation***
-        - When you invoke `**swap<int>(i, j)**`, the compiler will *instantiate* a function with signature `**void swap<int>(int& a, int& b)**` for you by plugging in the types into the template function you defined. Template instantiation is done on-demand when you compile.
-            - The compiler is smart enough to avoid instantiating duplicate functions.
+- The act of generating a function from a function template by the compiler is called ***template instantiation***
+
+A generic swap function:
 ```cpp
-**template <typename T>**      // Start of T's scope
-****void swap(T& a, T& b) { 
-		T tmp = a;
-		a = b;
-		b = tmp;
+template <typename T>      // Start of T's scope
+void swap(T& a, T& b) { 
+    T tmp = a;
+    a = b;
+    b = tmp;
 }                          // End of T's scope
 ```
-`T` is a ***type argument***. Its scope is limited to the function signature and body.
-
-- Using `class` instead of `typename`
-    You can also use the `class` keyword instead of `typename`. The behaviour is exactly the same in template definitions... there are historical reasons why they’re interchangeable. 
-    ```cpp
-    // These two are equivalent:
-    template <typename T>
-    template <class T>
-    ```
-    They obviously both have *very* different meanings in contexts outside of defining templates, however.
+- When you invoke `swap<int>(i, j)`, the compiler will *instantiate* a function with signature `void swap<int>(int& a, int& b)` for you by plugging in the types into the template function you defined.
+    - Template instantiation is done on-demand when you compile.
+    - The compiler is smart enough to avoid instantiating duplicate functions.
 
 ### Class Templates
 Much like how a function template is a generalisation of an algorithm, a class template is a generalisation of a type, *but it’s not an actual type*.
