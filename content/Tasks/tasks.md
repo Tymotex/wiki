@@ -20,6 +20,7 @@ kanban-plugin: basic
 - [x] ==1== Complete chatper 5 C++.
 - [ ] Write about your heroes.
 - [ ] Start thinking about how you'll learn Stoicism.
+- [ ] Write your goals for next year (and the remainder of this year).
 
 
 ## **Friday** *[[Journal/2022-12-23|2022-12-23]]* (6)
@@ -29,6 +30,7 @@ kanban-plugin: basic
 - [ ] 🌞 Morning routine
 - [ ] 🌙 Evening routine
 - [ ] Remove the entirety of 'Old Notes'.
+- [ ] Start reading stoicism FAQ: https://www.reddit.com/r/Stoicism/wiki/intro_faq/#wiki_why_study_stoicism.3F
 
 
 ## **Saturday** *[[Journal/2022-12-24|2022-12-24]]* (6)
