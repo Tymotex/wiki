@@ -40,19 +40,7 @@ kanban-plugin: basic
 - [ ] 🌙 Evening routine
 
 
-<<<<<<< HEAD
-## **Thursday** *[[Journal/2022-12-22|2022-12-22]]* (6)
-
-- [ ] 🏆 Purpose
-- [ ] 🌞 Morning routine
-- [ ] 🌙 Evening routine
-
-
-## **Friday** *[[Journal/2022-12-23|2022-12-23]]* (6)
->>>>>>> a7785436380b28f8294041d1ccac4348d25de3e3
-=======
 ## **Thursday** *[[Journal/2022-12-29|2022-12-29]]* (6)
->>>>>>> 808841e86e4af1ba313f1197744c55baa9135f46
 
 - [ ] 🏆 Purpose
 - [ ] 🌞 Morning routine
