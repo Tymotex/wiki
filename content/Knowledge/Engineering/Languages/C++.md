@@ -1031,7 +1031,21 @@ int main() {
     ![[Knowledge/Engineering/Languages/assets/class-template-method-scope.png|500]]
     (sourced from [CppCon](https://www.youtube.com/watch?v=LMP_sxOaz6g&ab_channel=CppCon))
 
-### Alias
+### Aliases
+You can use `using` to create type aliases for template types.
+```cpp
+template <typename T> 
+using MyMap = unordered_map<T, string>;
+
+int main() {
+    MyMap<string> map;
+
+    map.insert(make_pair("Hello", "world"));
+    map.insert(make_pair("Goodbye", "world"));
+
+    return 0;
+}
+```
 
 ### Concepts [TODO]
 Since in many situations we don't want to accept *any* type in our template, we can specify constraints with predicates, which we call *concepts*.
@@ -1345,6 +1359,9 @@ int main() {
 }
 ```
 
+### Compile-Time If [TODO]
+`if constexpr() { ... }`. C++17.
+
 ---
 # Old Notes
 
@@ -1462,16 +1479,6 @@ This looks like a C++20 feature, which isn't really out yet (at least not stably
     - using namespace should never be used in header files because it forces the consumer of the header file to also bring in all those identifiers into their namespaces
     - You can always do `using std::cout` so that you don't have to always type `std::cout`
 - [Translation units](https://stackoverflow.com/questions/1106149/what-is-a-translation-unit-in-c) (basically just a c or cpp file *after* it's finished including all of the header files)
-
-### Exception Handling [TODO]
-- Exception handling
-    - And the built-in exception types that C++ defines in [stdexcept](https://en.cppreference.com/w/cpp/header/stdexcept)
-
-### Asserts [TODO]
-- `assert` and `static_assert` (runtime vs compile time assertions)
-
-### Casts [TODO]
-- static_cast and const_cast and dynamic_cast and regular C-style casting
 
 ### Initializer List [TODO]
 - `std::initializer_list<T>` — seems like it allows an object to be initialised using curly brace syntax and has

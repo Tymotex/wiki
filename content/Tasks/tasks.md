@@ -26,6 +26,7 @@ kanban-plugin: basic
 - [ ] Go get your shirt and pants tailored at Top Ryde.
 - [ ] 🌞 Morning routine
 - [ ] 🌙 Evening routine
+- [ ] Remove the entirety of 'Old Notes'.
 
 
 ## **Saturday** *[[Journal/2022-12-24|2022-12-24]]* (6)
