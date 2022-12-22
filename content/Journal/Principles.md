@@ -20,16 +20,28 @@ Following these principles makes my life meaningful.
 12. I strive to implement the processes and character necessary to be wealthy because I love experiencing life to the fullest and especially giving that my loved ones.
 
 ## Heroes
-Who are my heroes? Who do I aspire to be like?
+These are the people I aspire to be like. The attribute I venerate in each of these people is their mental toughness and temperance.
 
-- Lex Fridman
-- Cal Newport
-- David Goggins
-- Elon Musk
-- Sam Harris
-- Chris Williamson
-- Dean Karnazes
+### Marcus Aurelius
+![[Journal/assets/marcus-aurelius.png|250]]
 
+### Theodore Roosevelt
+
+
+### David Goggins
+![[Journal/assets/david-goggins.png|200]]
+
+
+### Elon Musk
+![[Journal/assets/elon-musk.png|300]]
+
+### Lex Fridman
+
+
+### Jocko Willink
+
+
+### Lou Gehrig
 
 
 

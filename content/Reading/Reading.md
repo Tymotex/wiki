@@ -144,3 +144,7 @@ Ikigai by Francesc Miralles and Hector Garcia. 'Ikigai' means 'reason for being'
 ### Property Investing for Dummies
 [[Reading/Property Investing For Dummies|Property Investing for Dummies]]
 
+---
+# Reading List
+
+- Never Finished — David Goggins
