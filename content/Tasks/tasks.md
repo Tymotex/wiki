@@ -9,6 +9,8 @@ kanban-plugin: basic
 - [x] 🏆 Purpose: C++, books, math.
 - [ ] Macbook transfer files
 - [ ] Buy Inspire 2 protector.
+- [ ] See skincare again from skincare science.
+- [ ] Need to get skincare products. Which ones? Make a task to get them.
 - [ ] **(2 hours)** Chapter 6 C++.
 - [ ] ==6== Make a plan to grind out the math website in record time.
 - [ ] ==6== **(1 hour)**<br>Clean up book notes and summarise How Not to Die.

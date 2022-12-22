@@ -1872,7 +1872,9 @@ Some simple Q-and-A notes to be used as flashcards.
     - Functors are also called *function objects*.
 - How are functors and lambda functions related?
     - Lambda functions are basically anonymous functors.
-        
+- In lambda expression `[&, foo] () { ... }`, what does `[&, foo]` mean?
+    - It's a capture group, which is a list of identifiers from the containing scope that should be accessible within the function body. The `[&, foo]` means that all identifiers should be accessible by reference, except for `foo` which should be copied.
+
 ## Questions
 Some questions I have that are answered:
 - Why use functors over methods? From what I know, the main purpose of functors is to act as stateful functions. Methods can clearly accomplish the same purpose.
