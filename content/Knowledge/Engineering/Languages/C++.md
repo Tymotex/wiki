@@ -1031,6 +1031,8 @@ int main() {
     ![[Knowledge/Engineering/Languages/assets/class-template-method-scope.png|500]]
     (sourced from [CppCon](https://www.youtube.com/watch?v=LMP_sxOaz6g&ab_channel=CppCon))
 
+### Alias
+
 ### Concepts [TODO]
 Since in many situations we don't want to accept *any* type in our template, we can specify constraints with predicates, which we call *concepts*.
 

@@ -34,6 +34,7 @@ kanban-plugin: basic
 - [ ] 🌞 Morning routine
 - [ ] ==5== **(1 hour)**<br>Transfer Git notes to Obsidian.
 - [ ] 🌙 Evening routine
+- [ ] Let Raymond know whether you're free Thursday.
 
 
 ## **Sunday** *[[Journal/2022-12-25|2022-12-25]]* (6)
