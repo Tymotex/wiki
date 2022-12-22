@@ -13,7 +13,6 @@ kanban-plugin: basic
 - [ ] Remove the entirety of 'Old Notes'.
 - [ ] Start reading stoicism FAQ: https://www.reddit.com/r/Stoicism/wiki/intro_faq/#wiki_why_study_stoicism.3F
 - [ ] ==1== Macbook transfer files
-- [ ] ==1== Buy Inspire 2 protector.
 - [ ] ==1== See skincare again from skincare science.
 - [ ] ==1== Need to get skincare products. Which ones? Make a task to get them.
 - [ ] ==1== **(2 hours)** Chapter 6 C++.
@@ -25,6 +24,7 @@ kanban-plugin: basic
 - [ ] ==1== Start thinking about how you'll learn Stoicism.
 - [ ] ==1== Write your goals for next year (and the remainder of this year).
 - [ ] Do your Google onboarding.
+- [x] ==1== Buy Inspire 2 protector.
 
 
 ## **Saturday** *[[Journal/2022-12-24|2022-12-24]]* (6)

@@ -5,6 +5,11 @@ title: Skincare
 1. Cleanser
 2. Exfoliator
 3. Moisturiser
-    - Use SPF
+4. Sunscreen
+    - This matters long-term because of photoaging.
+    - Prefer broad-spectrum sunscreen. Both UVA and UVB rays are damaging.
+    - SPF (sun protection factor) is a measure of protection effectiveness.
+        - In the lab, SPF is a rough measure of how long it would take for the sun to cause sunburn on protected skin vs. non-protected skin. An SPF 30 sunscreen would let you stay 30 times longer under the sun before you burn.
+        - SPF 30 is not twice as good as SPF 15. The protective effects are diminishing.
 
 Switch pillowcases regularly.
