@@ -2,7 +2,7 @@
 title: Stoicism
 ---
 
-Stoicism is a philosophy concerned with how to flourish as human beings.
+Stoicism is a life philosophy concerned with how to flourish as human beings, rationally.
 
 ## Getting Started
 Start with reading the work by the ancients:
