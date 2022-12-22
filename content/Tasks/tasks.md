@@ -6,16 +6,11 @@ kanban-plugin: basic
 
 ## **Friday** *[[Journal/2022-12-23|2022-12-23]]* (6)
 
-- [ ] 🏆 Purpose
+- [ ] 🏆 Purpose: C++, goals, books, math.
+- [ ] **(45 mins)** Clean out the entirety of 'Old Notes'.
 - [ ] Go get your shirt and pants tailored at Top Ryde.
-- [ ] 🌞 Morning routine
-- [ ] 🌙 Evening routine
-- [ ] Remove the entirety of 'Old Notes'.
 - [ ] Start reading stoicism FAQ: https://www.reddit.com/r/Stoicism/wiki/intro_faq/#wiki_why_study_stoicism.3F
 - [ ] ==1== Macbook transfer files
-- [ ] ==1== See skincare again from skincare science.
-- [ ] ==1== Need to get skincare products. Which ones? Make a task to get them.
-- [ ] ==1== **(2 hours)** Chapter 6 C++.
 - [ ] ==7== Make a plan to grind out the math website in record time.
 - [ ] ==7== **(1 hour)**<br>Clean up book notes and summarise How Not to Die.
 - [ ] ==1== **(30 mins)** Complete Discipline is Destiny summary.
@@ -25,6 +20,9 @@ kanban-plugin: basic
 - [ ] ==1== Write your goals for next year (and the remainder of this year).
 - [ ] Do your Google onboarding.
 - [x] ==1== Buy Inspire 2 protector.
+- [x] ==1== See skincare again from skincare science.
+- [x] ==1== Need to get skincare products. Which ones? Make a task to get them.
+- [x] ==1== **(2 hours)** Chapter 6 C++.
 
 
 ## **Saturday** *[[Journal/2022-12-24|2022-12-24]]* (6)
