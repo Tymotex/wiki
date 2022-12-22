@@ -1039,7 +1039,58 @@ This is a C++20 feature.
 ### Deduction Guides [TODO]
 This is for aiding type inference.
 
-## Functions
+## Functors
+*Functors*, or *function objects*, are instances of a class that **implements the function call operator method, `operator()`**, which means that they can invoked as if they were functions themselves. Functors are highly customisable, reusable, stateful functions.
+```cpp
+class DrinkingLaw {
+public:
+    DrinkingLaw(int required_age) : required_age_(required_age) {}
+
+    // Implementing this method is what makes this class a functor
+    bool operator()(int age) {
+        return age >= required_age_;
+    }
+private:
+    int required_age_;
+};
+
+int main() {
+    DrinkingLaw canDrink(18);
+    cout << "I can drink: "
+         << (canDrink(21) ? "Yup" : "Nope")
+         << endl;
+}
+```
+
+### Lambda Functions
+You can think of lambda functions as syntactic sugar for *inline*, *anonymous [[Knowledge/Engineering/Languages/C++#Functors|functors]]*.
+```cpp
+[_] (params) -> RetType {   // You can omit the return type if it can be inferred.
+    // Function body
+}
+```
+You can use the capture clause (the `[]` of the expression) to access variables from the outer scope.
+- `[&foo, bar]` — captures `foo` by reference and `bar` by value.
+- `[&]` — capture all variables by reference.
+    - `[&, foo]` — capture all variables by reference apart from `foo`, which is captured by value.
+- `[=]` — capture all variables by value.
+    - `[=, &foo]` — capture all variables by value apart from `foo`, which is captured by reference.
+
+A classic use of lambda functions is passing it as the comparator function to `std::sort` to determine whether one element comes before another.
+```cpp
+int main() {
+    vector<int> v{2, 4, 8};
+
+    std::sort(v.begin(), v.end(), [] (int a, int b) {
+        return a > b;
+    });
+
+    for (int val : v) cout << val << " ";
+    cout << "\n";
+
+    return 0;
+}
+```
 
 ## Random C++ Features
 Smaller but important C++ details.
@@ -1353,61 +1404,7 @@ int main() {
     ```
 - `::` *scope resolution operator* — for unambiguously referencing a name [TODO]
 
-
-## Functions
-### Functors
-*Functors*, or *function objects*, are instances of a class that **implements the function call operator method, `operator()`**, which means that they can invoked as if they were functions themselves. Functors are highly customisable, reusable, stateful functions.
-```cpp
-class DrinkingLaw {
-public:
-    DrinkingLaw(int required_age) : required_age_(required_age) {}
-
-    // Implementing this method is what makes this class a functor
-    bool operator()(int age) {
-        return age >= required_age_;
-    }
-private:
-    int required_age_;
-};
-
-int main() {
-    DrinkingLaw canDrink(18);
-    cout << "I can drink: "
-         << (canDrink(21) ? "Yup" : "Nope")
-         << endl;
-}
-```
-
-### Lambda Functions (Anonymous Functors)
-
-You can think of lambda functions as syntactic sugar for *inline*, *anonymous functors*. 
-
-```cpp
-[_] (params) -> RetType    // You can omit the return type if it can be implicitly inferred
-{
-		// Function body
-}
-```
-
-- You can use the capture clause (the `[]` of the expression) to access variables from the outer scope
-    - `[&foo, bar]` — capture foo by reference and bar by value
-    - `[&]` — capture all variables by reference
-        - `[&, foo]` — capture all variables by reference apart from `foo`
-    - `[=]` — capture all variables by value
-        - [=, &foo] — capture all variables by value apart from `foo`
-
-Lambda functions are great for concise, localised customisation of *predicate functions* (which are functions which given inputs, returns true/false). 
-
-A classic use of lambda functions is passing it as the comparator function to `std::sort` to define the the ordering of the sorted collection.
-
-```cpp
-std::sort(c.begin(), c.end(), **[[]] {**
-    **return a.key < b.key;
-}**);
-```
-
 ## Enums
-
 In addition to structs and classes, you can also use enums to declare new data types. Enums are used to represent small sets of integer values in a readable way.
 
 There are two kinds of enums in C++, *plain enums* and *enum classes* (which are preferred over plain enums because of their type safety).
@@ -1873,8 +1870,9 @@ Some simple Q-and-A notes to be used as flashcards.
     - You can make function or class templates take in a value in addition to type arguments. E.g. `template <typename T, int N>`.
 - What are functors?
     - Functors are also called *function objects*.
-- How are functors and lambda 
-    
+- How are functors and lambda functions related?
+    - Lambda functions are basically anonymous functors.
+        
 ## Questions
 Some questions I have that are answered:
 - Why use functors over methods? From what I know, the main purpose of functors is to act as stateful functions. Methods can clearly accomplish the same purpose.
