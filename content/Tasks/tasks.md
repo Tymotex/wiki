@@ -1,5 +1,7 @@
 ---
+
 kanban-plugin: basic
+
 ---
 
 ## **Friday** *[[Journal/2022-12-23|2022-12-23]]* (6)
@@ -22,12 +24,15 @@ kanban-plugin: basic
 - [ ] ==1== Write about your heroes.
 - [ ] ==1== Start thinking about how you'll learn Stoicism.
 - [ ] ==1== Write your goals for next year (and the remainder of this year).
+- [ ] Do your Google onboarding.
+
 
 ## **Saturday** *[[Journal/2022-12-24|2022-12-24]]* (6)
 
 - [ ] 🏆 Purpose
 - [ ] 🌞 Morning routine
 - [ ] 🌙 Evening routine
+
 
 ## **Sunday** *[[Journal/2022-12-25|2022-12-25]]* (6)
 
@@ -36,11 +41,13 @@ kanban-plugin: basic
 - [ ] 🌙 Evening routine
 - [ ] **(10 mins)** Weekly Review.
 
+
 ## **Monday** *[[Journal/2022-12-26|2022-12-26]]* (6)
 
 - [ ] 🏆 Purpose
 - [ ] 🌞 Morning routine
 - [ ] 🌙 Evening routine
+
 
 ## **Tuesday** *[[Journal/2022-12-27|2022-12-27]]* (6)
 
@@ -48,11 +55,13 @@ kanban-plugin: basic
 - [ ] 🌞 Morning routine
 - [ ] 🌙 Evening routine
 
+
 ## **Wednesday** *[[Journal/2022-12-28|2022-12-28]]* (6)
 
 - [ ] 🏆 Purpose
 - [ ] 🌞 Morning routine
 - [ ] 🌙 Evening routine
+
 
 ## **Thursday** *[[Journal/2022-12-29|2022-12-29]]* (6)
 
@@ -60,19 +69,22 @@ kanban-plugin: basic
 - [ ] 🌞 Morning routine
 - [ ] 🌙 Evening routine
 
+
 ## **Friday** *[[Journal/2022-12-30|2022-12-30]]* (6)
 
 - [ ] 🏆 Purpose
 - [ ] 🌞 Morning routine
 - [ ] 🌙 Evening routine
 
-***
 
 ## Archive
 
 
 
+
+
 %% kanban:settings
+```
 {"kanban-plugin":"basic"}
 ```
 %%
