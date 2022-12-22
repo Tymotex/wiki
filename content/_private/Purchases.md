@@ -12,6 +12,7 @@ title: Purchases
 - [x] Hair spray
 - [ ] Hot sauce bottles
 - [ ] SPF moisturiser, or standalone sunscreen
+- [ ] CeraVe hydrating cleanser
 - [x] Light blue OCBD, or white
 - [x] Navy chinos
 - [ ] Another OCBD, either: grey, light red or white.
