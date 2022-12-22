@@ -2,6 +2,9 @@
 title: Goals
 ---
 
+TODO: check out Google tasks.
+- What's your goal for Google next year? Get promoted to L4.
+
 # 2022 Oct → Dec
 I only have to focus on 4 things this year: career, investing, reading, and lifting. 
 

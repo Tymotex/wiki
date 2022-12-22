@@ -7,17 +7,18 @@ title: Purchases
 - [x] Fitbit for Mum.
 - [ ] ~~Budget kitchen scale~~ (this is overkill)
 - [x] ~~Loop Quiet~~ (got cheaper ear plugs)
-- [ ] Oregano seeds
-- [ ] Hair cream/paste
-- [ ] Hair sprayknif 
-- Clothes:
-    - [x] Light blue OCBD, or white
-    - [x] Navy chinos
-    - [ ] Another OCBD, either: grey, light red or white.
-    - [ ] (Uniqlo) 2 x Basic grey shirts.
-    - [ ] (Uniqlo) Turtleneck wine colour.
-    - [ ] Chino shorts (for Summer).
-    - [ ] Messenger bag
+- [x] Oregano seeds
+- [x] Hair cream/paste
+- [x] Hair spray
+- [ ] Hot sauce bottles
+- [ ] SPF moisturiser, or standalone sunscreen
+- [x] Light blue OCBD, or white
+- [x] Navy chinos
+- [ ] Another OCBD, either: grey, light red or white.
+- [ ] (Uniqlo) 2 x Basic grey shirts.
+- [ ] (Uniqlo) Turtleneck wine colour.
+- [ ] Chino shorts (for Summer).
+- [ ] Messenger bag
 - [ ] Mechanical keyboard for home (as a hobby?)
 - Blackout curtains for better sleep.
 - Blue light filter glasses.
@@ -36,7 +37,6 @@ title: Purchases
 - Better barbell with sharper knurlings
 - Adjustable dumbbell set.
 - Good pillow.
-- Guitar finger picks that aren't clunky.
 - Cooling blanket.
 - Cooling mattress or bed temperature controller.
 - Meditation bench

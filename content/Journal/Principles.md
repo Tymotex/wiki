@@ -2,6 +2,8 @@
 title: Principles
 ---
 
+>"Waste no more time arguing about what a good man should be. Be one." — Marcus Aurelius.
+
 ## Principles
 Following these principles makes my life meaningful.
 1. I love my family and will do anything for them. I know that becoming the best version of myself is the most reliable way to make them and myself happy.
@@ -17,5 +19,32 @@ Following these principles makes my life meaningful.
 11. I always do the right thing, not for recognition or for personal benefit. I do it because I feel deeply shameful otherwise and believe life is more meaningful that way.
 12. I strive to implement the processes and character necessary to be wealthy because I love experiencing life to the fullest and especially giving that my loved ones.
 
+<<<<<<< HEAD
+=======
+## Heroes
+These are the people I aspire to be like. The attribute I venerate in each of these people is their mental toughness and temperance.
+
+### Marcus Aurelius
+![[Journal/assets/marcus-aurelius.png|250]]
+
+### Theodore Roosevelt
+
+
+### David Goggins
+![[Journal/assets/david-goggins.png|200]]
+
+
+### Elon Musk
+![[Journal/assets/elon-musk.png|300]]
+
+### Lex Fridman
+
+
+### Jocko Willink
+
+
+### Lou Gehrig
+
+>>>>>>> 808841e86e4af1ba313f1197744c55baa9135f46
 
 

@@ -43,6 +43,10 @@ TODO.
 #### Dynamic Polymorphism
 TODO.
 
+How does the program know which method is the correct one to invoke at runtime? tl;dr — in C++, every class with virtual functions has its own [virtual function table](https://en.wikipedia.org/wiki/Virtual_method_table) (an array of function pointers) created at compile-time that holds pointers to that class' virtual methods. Every object, on creation, gets a pointer to the function table of its class.
+![[Knowledge/Engineering/Programming/assets/virtual-function-table.png|650]]
+([sourced from Trail of Bits](https://blog.trailofbits.com/2017/02/13/devirtualizing-c-with-binary-ninja/))
+
 ### Method Overidding
 Method overriding is when you make a subclass provide an implementation for a method that's defined in its base class. Method overriding enables **[[Knowledge/Engineering/Programming/Object Oriented Programming#Dynamic Polymorphism|runtime polymorphism]]**.
 
@@ -61,7 +65,7 @@ Abstract classes let you define **both** *concrete methods* and *abstract method
 Making a class abstract differs between programming languages.
 - In TypeScript, prefix a class with `abstract`.
 - In C#, prefix a class with `abstract`.
-- In C++, give the class at least one [[Knowledge/Engineering/Languages/C++|pure virtual function]], eg. `virtual void foo() = 0;`. There is no `abstract` keyword.
+- In C++, give the class at least one [[Knowledge/Engineering/Languages/C++|pure virtual function]] (i.e. an abstract method), eg. `virtual void foo() = 0;`. There is no `abstract` keyword.
 
 #### Abstract Method
 *You can only define abstract methods inside an abstract class*. Abstract methods are ones that **must be overridden** and implemented by the subclasses. If you want to provide a default implementation and allow for subclasses to optionally override a method, use [[Knowledge/Engineering/Programming/Object Oriented Programming#Virtual Method|virtual methods]] instead.
@@ -76,12 +80,11 @@ To define abstract methods:
 
 ### Virtual Method
 Virtual methods are methods that can be overridden by subclasses. To force subclasses to implement a method, use [[Knowledge/Engineering/Programming/Object Oriented Programming#Abstract Method|abstract methods]] instead.
-
-You cannot make virtual methods static.
+- You cannot make virtual methods static.
 
 **Differences between languages**
 To define virtual methods:
-- In some languages like C# and TypeScript, methods are virtual by default.
+- In some languages like TypeScript and Java, methods are virtual by default. I.e. you can override methods by default — there's no need to mark them as virtual.
 - In C++, you'd use the `virtual` modifier, but it's a little complicated because you can still override methods without it. See [this StackOverflow post](https://stackoverflow.com/questions/2391679/why-do-we-need-virtual-functions-in-c).
 
 ### Interface

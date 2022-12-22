@@ -673,12 +673,72 @@ kanban-plugin: basic
 - [x] **(1 hour)** Add Konflux to your portfolio and maybe make a short video demonstrating its usage.<br><br>Script:<br>1. Left: Log in with Google.<br>2. Left: create an event called: "Study session for COMP2521."<br>3. Left: Select a few days, then a few times.<br>4. Right: copy link and navigate.<br>5. Right: log in as Linus.<br>6. Right: fill in some times.<br>7. Left: hover over availabilities.<br>8. Left: play with availabilities.<br>9. Right: leave event.<br>10. Done.
 - [x] Fix tactile-ds HTTPS bug.
 
+## **Friday** *[[Journal/2022-12-16|2022-12-16]]* (6)
+
+- [x] 🏆 Purpose: C++ and Clean Code.
+- [x] In timz.dev, add video button to all project cards, if they have a `videoUrl`
+- [x] Cancel mum's Uber One membership.
+
+## **Saturday** *[[Journal/2022-12-17|2022-12-17]]* (6)
+
+- [x] 🌞 Morning routine
+- [x] Find a book similar to Mark Manson's Models.
+
+## **Sunday** *[[Journal/2022-12-18|2022-12-18]]* (6)
+
+
+
+## **Monday** *[[Journal/2022-12-19|2022-12-19]]* (6)
+
+- [x] 🏆 Purpose: C++
+
+## **Tuesday** *[[Journal/2022-12-20|2022-12-20]]* (6)
+
+
+
+## **Wednesday** *[[Journal/2022-12-21|2022-12-21]]* (6)
+
+- [x] 🏆 Purpose: C++, math website.
+- [x] Research basic skincare.
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
