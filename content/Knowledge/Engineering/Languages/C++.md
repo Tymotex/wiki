@@ -1036,6 +1036,11 @@ Since in many situations we don't want to accept *any* type in our template, we 
 
 This is a C++20 feature.
 
+### Deduction Guides [TODO]
+This is for aiding type inference.
+
+## Functions
+
 ## Random C++ Features
 Smaller but important C++ details.
 
@@ -1350,74 +1355,13 @@ int main() {
 
 
 ## Functions
-
-- Overloading
-    
-    For functions with the same name, the appropriate function is called depending on which signature matches the call.
-    
-    ```cpp
-    void print(int);
-    void print(string);
-    
-    void print(int i) {
-        cout << i << "\n";
-    }
-    
-    void print(string s) {
-        cout << s << "\n";
-    }
-    
-    int main() {
-        print(1);
-        print("Tim Zhang");
-    }
-    ```
-    
-- Default parameter values
-    
-    ```cpp
-    void func(int value = 10) {
-    		std::cout << value << endl;
-    }
-    ```
-    
-- *Pass-by-value* vs. *pass-by-reference* for function parameters
-    
-    ```cpp
-    void func(vector<int> vec, vector<int>& refVec) {
-    		vec[1] = 99;         // Only modifies the copied **vec** and does not affect anything on the caller's side
-    		refVec[1] = 42;      // Directly modifies the original vector passed in
-    }
-    ```
-    
-    - It's preferred to pass larger values by reference to avoid copying them into the function
-        - If a function is only ever expected to read a vector's values, for instance, then it's common to declare it with `const vector<int>&`
-- `auto` return type
-    
-    You can also use `auto` in function return types
-    
-    ```cpp
-    auto add(int a, int b) {
-        return a + b;
-    }
-    ```
-    
-    - It can be convenient for lambdas and functions that return generic types
-
----
-
-- *Hoisting* does not exist in C++ or C
-
 ### Functors (Function Objects):
-
 *Functors*, or *function objects*, are instances of a regular class that **implements the function call operator method**, `operator()`, which means that they can called as if they were functions themselves.
-
 - Example
-    
     ```cpp
-    class **DrinkingLaw** {
+    class DrinkingLaw {
     public:
-        DrinkingLaw(int requiredAge) : requiredAge(requiredAge) {}
+        DrinkingLaw(int required_age) : requiredAge(requiredAge) {}
     
         **bool** **operator()(int age)** {         // Implementing this method is what makes this class a functor
             return age >= requiredAge;
@@ -1930,3 +1874,7 @@ Some simple Q-and-A notes to be used as flashcards.
 - What's `thread_local`?
 - How do you define a function template?
 - How do you define a class template? How do you define the methods of a class template outside of the class definition?
+- What are value arguments in template definitions?
+    - You can make function or class templates take in a value in addition to type arguments. E.g. `template <typename T, int N>`.
+- What are functors?
+    - Functors are also called *function objects*.
