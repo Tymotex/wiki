@@ -1355,35 +1355,30 @@ int main() {
 
 
 ## Functions
-### Functors (Function Objects):
-*Functors*, or *function objects*, are instances of a regular class that **implements the function call operator method**, `operator()`, which means that they can called as if they were functions themselves.
-- Example
-    ```cpp
-    class DrinkingLaw {
-    public:
-        DrinkingLaw(int required_age) : requiredAge(requiredAge) {}
-    
-        **bool** **operator()(int age)** {         // Implementing this method is what makes this class a functor
-            return age >= requiredAge;
-        }
-    private:
-        int requiredAge;
-    };
-    
-    int main() {
-        DrinkingLaw canDrink(18);
-        cout << "I can drink: " << (canDrink(20) ? "Yup" : "Nope") << endl;
+### Functors
+*Functors*, or *function objects*, are instances of a class that **implements the function call operator method, `operator()`**, which means that they can invoked as if they were functions themselves. Functors are highly customisable, reusable, stateful functions.
+```cpp
+class DrinkingLaw {
+public:
+    DrinkingLaw(int required_age) : required_age_(required_age) {}
+
+    // Implementing this method is what makes this class a functor
+    bool operator()(int age) {
+        return age >= required_age_;
     }
-    ```
-    
+private:
+    int required_age_;
+};
 
-**Functors vs functions/methods:**
+int main() {
+    DrinkingLaw canDrink(18);
+    cout << "I can drink: "
+         << (canDrink(21) ? "Yup" : "Nope")
+         << endl;
+}
+```
 
-- Functors can contain state, since they’re just instances of a class
-    - Useful in cases where you want to calculate a running value of some kind
-- Functors are way more customisable since you get them by calling the constructor, where you could pass in different arguments to get a functor that behaves differently
-
-### Lambda Functions (Anonymous Functors):
+### Lambda Functions (Anonymous Functors)
 
 You can think of lambda functions as syntactic sugar for *inline*, *anonymous functors*. 
 
@@ -1878,3 +1873,8 @@ Some simple Q-and-A notes to be used as flashcards.
     - You can make function or class templates take in a value in addition to type arguments. E.g. `template <typename T, int N>`.
 - What are functors?
     - Functors are also called *function objects*.
+- How are functors and lambda 
+    
+## Questions
+Some questions I have that are answered:
+- Why use functors over methods? From what I know, the main purpose of functors is to act as stateful functions. Methods can clearly accomplish the same purpose.
