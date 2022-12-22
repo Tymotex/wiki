@@ -936,7 +936,19 @@ To make a class or function a template, just prefix the definition with the `tem
     template <typename T>
     template <class T>
     ```
-- Templates can take in value arguments as well as type arguments.
+- Templates can take in **value arguments** as well as type arguments:
+    ```cpp
+    template <typename T, int N>
+    T* make_array() {
+        return new T[N];
+    }
+    
+    int main() {
+        auto arr = make_array<int, 12>();
+        delete arr;
+        return 0;
+    }
+    ```
 
 ### Templates vs. Generics
 Templates are massively different from generics in other OOP languages like Java. 
