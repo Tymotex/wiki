@@ -3,12 +3,10 @@ title: Stoicism
 ---
 
 ## Getting Started
-1. Start with reading the work by the ancients:
-    - Meditations — Marcus Aurelius
-    - Letters of a Stoic — Seneca
-    - Discourses — Epictetus
-2. 
-3. 
+Start with reading the work by the ancients:
+- Meditations — Marcus Aurelius
+- Letters of a Stoic — Seneca
+- Discourses — Epictetus
    
 ## History
 Stocisim's origin is credited to Zeno.
