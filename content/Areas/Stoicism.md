@@ -2,19 +2,24 @@
 title: Stoicism
 ---
 
+## Getting Started
+1. Start with reading the work by the ancients:
+    - Meditations — Marcus Aurelius
+    - Letters of a Stoic — Seneca
+    - Discourses — Epictetus
+2. 
+3. 
+   
+## History
+Stocisim's origin is credited to Zeno.
+
+## Quotes
 > "He who has a *why* to live for can bear with almost any *how*" — Nietzsche.
 
 > "Everything can be taken from a man but one thing: the last of the human freedoms - to choose one's attitude in any given set of circumstances, to choose one's own way." — Viktor Frankl.
 
-> "Waste no more time arguing about what a good man should be. Be one."
+> "Waste no more time arguing about what a good man should be. Be one." — Marcus Aurelius.
 
-## Getting Started
-1. Start with reading the work by the ancients:
-    - Epictetus
-    - Marcus Aurelius
-    - Seneca
-    - Socrates
-   
-## History
-A philosophy whose origin is credited to Zeno.
+> "We suffer more often in imagination than in reality." — Seneca.
 
+> "Man cannot remake himself without suffering, for he is both the marble and the sculptor." — Alexis Carrell.
