@@ -17,17 +17,5 @@ Following these principles makes my life meaningful.
 11. I always do the right thing, not for recognition or for personal benefit. I do it because I feel deeply shameful otherwise and believe life is more meaningful that way.
 12. I strive to implement the processes and character necessary to be wealthy because I love experiencing life to the fullest and especially giving that my loved ones.
 
-## Heroes
-Who are my heroes? Who do I aspire to be like?
-
-- Lex Fridman
-- Cal Newport
-- David Goggins
-- Elon Musk
-- Sam Harris
-- Chris Williamson
-- Dean Karnazes
-
-
 
 

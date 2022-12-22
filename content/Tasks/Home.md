@@ -7,3 +7,4 @@
 - [[Tasks/Goals|Goals]]
 - [[Tasks/Life Roadmap|Life Roadmap]]
 - [[Journal/Principles|Principles]]
+- [[_private/Heroes|Heroes]]

@@ -6,13 +6,19 @@ title: Purchases
 - [ ] Convenient smoothie blender.
 - [x] Fitbit for Mum.
 - [ ] ~~Budget kitchen scale~~ (this is overkill)
-- [ ] ~~Loop Quiet~~ (got cheaper ear plugs)
+- [x] ~~Loop Quiet~~ (got cheaper ear plugs)
+- [ ] Oregano seeds
+- [ ] Hair cream/paste
+- [ ] Hair sprayknif 
 - Clothes:
-    - [ ] Light blue OCBD, or white
-    - [ ] Navy chinos
+    - [x] Light blue OCBD, or white
+    - [x] Navy chinos
+    - [ ] Another OCBD, either: grey, light red or white.
     - [ ] (Uniqlo) 2 x Basic grey shirts.
     - [ ] (Uniqlo) Turtleneck wine colour.
     - [ ] Chino shorts (for Summer).
+    - [ ] Messenger bag
+- [ ] Mechanical keyboard for home (as a hobby?)
 - Blackout curtains for better sleep.
 - Blue light filter glasses.
 - Cooling mattress pad (or other sleep cooling accessories)

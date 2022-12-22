@@ -18,3 +18,4 @@ title: S
 - Dominating.
 - Choker necklaces.
 - Being scratched, pinched, hit.
+- Tickling.

@@ -602,12 +602,147 @@ kanban-plugin: basic
 - [x] Change water.
 - [x] Read what measurements I need. Measure out everything about your body for selecting clothes.
 
+## **Wednesday** *[[Journal/2022-12-07|2022-12-07]]* (6)
+
+
+
+## **Thursday** *[[Journal/2022-12-08|2022-12-08]]* (6)
+
+- [x] Desert boots vs. chelsea boots.<br>And where to get them?
+- [x] When uniqlo trip?
+- [x] **(15 mins)** Meditate
+- [x] ==1== Find and buy:<br>- Hair spray<br>- Hair cream
+- [x] ==1== **(30 min)**<br>Buy either the siphon or a pump and hose.
+- [x] ==1== Find out whether a cooling blanket (or other accessories for cooler sleep) is worth it.
+- [x] **(1 hour)**<br>Mindfulness book.
+- [x] Relist plecos with new pictures.
+
+## **Thursday** *[[Journal/2022-12-08|2022-12-08]]* (6)
+
+
+
+## **Friday** *[[Journal/2022-12-09|2022-12-09]]* (6)
+
+- [x] Wish Rishi happy birthday.
+
+## **Friday** *[[Journal/2022-12-09|2022-12-09]]* (6)
+
+
+
+## **Saturday** *[[Journal/2022-12-10|2022-12-10]]* (6)
+
+
+
+## **Saturday** *[[Journal/2022-12-10|2022-12-10]]* (6)
+
+
+
+## **Sunday** *[[Journal/2022-12-11|2022-12-11]]* (6)
+
+
+
+## **Sunday** *[[Journal/2022-12-11|2022-12-11]]* (6)
+
+
+
+## **Tuesday** *[[Journal/2022-12-13|2022-12-13]]* (6)
+
+- [x] 🏆 Purpose: Konflux
+- [x] ==3== Fix wiki failing builds
+- [x] Clear out all emails
+- [x] ==2== **(25 mins pomodoro)**<br>Just refamiliarise self with Konflux. Plan how you'll finish it off over today and the next 2 days.
+- [x] How to get started with mechanical keyboards hobby. Should I even? What budget do I need?
+- [x] Where am I up to in C++? Divide and finish it over the next _ days.
+- [x] **(25 mins)** Fix those 2 bugs
+- [x] Do a usability review. Note down unfinished things and areas of improvement.
+- [x] If not globally authenticated, remove event list functionality.
+- [x] When the organiser leaves, event should be deleted for everyone.
+- [x] Watch that FireShip video.
+
+## **Wednesday** *[[Journal/2022-12-14|2022-12-14]]* (6)
+
+- [x] 🏆 Purpose: deploy and finalise Konflux.
+- [x] 🌞 Morning routine
+- [x] **(1 hour)** Deployment tasks. Get it working from the domain: konflux.timz.dev
+- [x] **(20 mins)** Get Google Auth working from konflux.timz.dev
+
+## **Thursday** *[[Journal/2022-12-15|2022-12-15]]* (6)
+
+- [x] 🏆 Purpose: finalise Konflux, then learn C++ and summarise books.
+- [x] Read through all the tasks in the pre-launch checklist for Firebase apps.
+- [x] **(1 hour)** Add Konflux to your portfolio and maybe make a short video demonstrating its usage.<br><br>Script:<br>1. Left: Log in with Google.<br>2. Left: create an event called: "Study session for COMP2521."<br>3. Left: Select a few days, then a few times.<br>4. Right: copy link and navigate.<br>5. Right: log in as Linus.<br>6. Right: fill in some times.<br>7. Left: hover over availabilities.<br>8. Left: play with availabilities.<br>9. Right: leave event.<br>10. Done.
+- [x] Fix tactile-ds HTTPS bug.
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings

@@ -182,6 +182,6 @@ firebase init    # Creates `firebase.json` in the current directory and proceeds
                  # a guided setup of your services.
 firebase use     # View project aliases.
 firebase serve   # Locally host the project so you can test it out before deploying to production.
-firebase deploy  # Deploy resources to your Firebase project. Eg. use this to set configuration and security rules.
+firebase deploy  # Deploy resources to your Firebase project. E.g. use this to set configuration and security rules.
 ```
 

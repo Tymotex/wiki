@@ -26,6 +26,9 @@ TODO:
 
 ## Measurements
 - Pants: 30x34 inches (waist circumference, leg length)
+- Shoes:
+    - 9.5 US size — 26.5cm (10¹/₂ inches) from heel to tip of big toe.
+    - 2X wide, 5E, 6E, XX, XXW — 10.8cm (4¹/₄ inches) foot width from furthest left point to furthest right point.
 
 ## Wardrobe
 ### Work
