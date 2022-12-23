@@ -1108,6 +1108,31 @@ int main() {
 }
 ```
 
+## Enums
+In addition to structs and classes, you can also use enums to declare new data types. Enums are used to represent small sets of integer values in a readable way. There are two kinds of enums in C++, *plain enums* and *enum classes* (which are preferred over plain enums because of their type safety).
+
+### Plain Enum
+Declared with just `enum`. The enum's values can be implicitly converted to integers
+```cpp
+enum Mood { happy, sad, nihilistic };
+
+int main() {
+    Mood currMood = Mood::happy;  
+    int val = currMood;           // No error, the Mood value is implicitly converted to an integer type.
+}
+```
+    
+### Enum Class
+When you declare an enum with `enum class`, it is strongly typed such that you won't be able to assign an enum value to an integer variable or to another enum type. It reduces the number of 'surprises' which is why it's preferred
+```cpp
+enum class Mood { happy, sad, nihilistic };
+
+int main() {
+    Mood currMood = Mood::happy;  
+    int val = currMood;            // Error, Mood::happy is not an int.
+}
+```
+
 ## Random C++ Features
 Smaller but important C++ details.
 
@@ -1362,6 +1387,13 @@ int main() {
 ### Compile-Time If [TODO]
 `if constexpr() { ... }`. C++17.
 
+### Volatile
+
+
+### Extern
+
+
+
 ---
 # Old Notes
 
@@ -1423,32 +1455,6 @@ int main() {
     ```
 - `::` *scope resolution operator* — for unambiguously referencing a name [TODO]
 
-## Enums
-In addition to structs and classes, you can also use enums to declare new data types. Enums are used to represent small sets of integer values in a readable way. There are two kinds of enums in C++, *plain enums* and *enum classes* (which are preferred over plain enums because of their type safety).
-
-### Plain Enum
-Declared with just `enum`. The enum's values can be implicitly converted to integers
-    
-    ```cpp
-    **enum Mood** { happy, sad, nihilistic };
-    
-    int main() {
-    		Mood currMood = Mood::happy;  
-    		int val = currMood;           // No error, the **Mood** value is implicitly converted to an integer type
-    }
-    ```
-    
-### Enum Class
-When you declare an enum with `enum class`, it is strongly typed such that you won't be able to assign an enum value to an integer variable or to another enum type. It reduces the number of 'surprises' which is why it's preferred
-```cpp
-enum class Mood { happy, sad, nihilistic };
-
-int main() {
-    Mood currMood = Mood::happy;  
-    int val = currMood;            // Error, Mood::happy is not an int.
-}
-```
-    
 ### Using [TODO]
 `using` keyword — what are all the uses of it?
 - question: are there performance impacts to this?
@@ -1521,11 +1527,16 @@ int main() {
     - [Good explanation](https://stackoverflow.com/questions/10422034/when-to-use-extern-in-c)
     - `extern int x;` tells the compiler that an object of type `int` called `x` exists *somewhere*. It's not the compilers job to know where it exists, it just needs to know the type and name so it knows how to use it. Once all of the source files have been compiled, the linker will resolve all of the references of `x` to the one definition that it finds in one of the compiled source files. For it to work, the definition of the `x` variable needs to have what's called “external linkage”, which basically means that it needs to be declared outside of a function (at what's usually called “the file scope”) and without the `static` keyword.
 
-### Volatile [TODO]
-- `volatile` keyword
+From what I understand, `extern int foo`  is basically saying "trust me compiler, there's an int called foo that is defined somewhere." 
 
-### Decltype [TODO]
-- `decltype` keyword
+A common use case for `extern`:
+```cpp
+// In foo.h
+extern int foo;
+
+// In foo.cc
+
+```
 
 ### Templates
 - Templates
@@ -1873,6 +1884,9 @@ Some simple Q-and-A notes to be used as flashcards.
     - Lambda functions are basically anonymous functors.
 - In lambda expression `[&, foo] () { ... }`, what does `[&, foo]` mean?
     - It's a capture group, which is a list of identifiers from the containing scope that should be accessible within the function body. The `[&, foo]` means that all identifiers should be accessible by reference, except for `foo` which should be copied.
+- What's the difference between plain enums and enum classes? Which one should you generally prefer?
+- What is the `extern` keyword in C++?
+- 
 
 ## Questions
 Some questions I have that are answered:
