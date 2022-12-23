@@ -1430,66 +1430,51 @@ int main() {
 ### Others:
 
 ### new
-`new` is used to instantiate classes and arrays on the heap. 
+`new` is used to instantiate classes and arrays on the heap. All objects allocated with `new` must have a corresponding `delete` somewhere.
+- You should [always prefer stack allocations](https://stackoverflow.com/questions/333443/c-object-instantiation) rather than heap allocations.
+    - This helps avoid memory leaks because when the variable is allocated for in the stack, its *destructor* is automatically called when leaving its scope
+- It is generally better to avoid having to use `new` and `delete` in your code, or at least the code that's using your code shouldn't have to be responsible for memory management.
+- Prefer `new` and `delete` over C-style `malloc` and `free`. The reasons are: type safety (since `new` ensures instantiated objects are initialised), readability, `new` throws an exception on failure while `malloc` doesn't.
+```cpp
+class Human {
+public:
+    Human() {};
+};
 
-- Prefer `new` and `delete` over C-style `malloc` and `free`.
-- 
+int main() {
+    // Creating an object whose memory will be allocated on the heap.
+    Human* me = new Human();
+    delete me;
 
-- `new` operator — for instantiating classes and creating arrays.
-    The `new` operator denotes a request for memory allocation on the heap. If the request can be granted, then it'll evaluate to the memory address of the newly allocated memory and then the constructor will be called.
-    An object allocated for on the heap will need to be explicitly freed with C++'s `delete` keyword.
-    ```cpp
-    class Human {
-        public:
-            Human() {
-                cout << "Constructor has been called" << endl;
-            }
-    };
-    
-    int main() {
-    		// **Creating an object** whose memory will be allocated on the heap
-        Human* me = new Human();
-        delete me;
-    
-    		// Creating an array whose memory will be allocated on the heap
-    		int* A = new int[3];
-    		delete A;
-    
-    		int B[3];             // This array will have its memory allocated on the stack, so no **delete** operation is necessary
-    		
+    // Creating an array whose memory will be allocated on the heap.
+    int* A = new int[3];
+    delete A;
+
+    // This array will have its memory allocated on the stack, so no delete operation is necessary.
+    int B[3];             
+}
+```
+
+#### delete
+There are two delete operators, `delete` and `delete[]`.
+- `delete` — for individual objects. It calls the destructor of that single object.
+- `delete[]` — for arrays. It calls the destructor on each object.
+```cpp
+public:
+    string* courses;
+    string* zId;
+
+    Student() {
+        courses = new string[3];
+        zId = new string("z5258971");
     }
-    ```
-    - Being allocated on the heap means that it is independent of the scope that it was created in and that it'll persist until it is explictly destroyed or until the program ends
-    - You should [always prefer stack allocations](https://stackoverflow.com/questions/333443/c-object-instantiation) rather than heap allocations
-        - This helps avoid memory leaks because when the variable is allocated for in the stack, its *destructor* is automatically called when leaving its scope
-    - The user of your class should never have to use `new` and `delete` in their consuming code
-    - If you need to allocate a resource like a file handle, socket, etc. it should be wrapped in a class where the constructor acquires the resources, then the destructor frees the resources (guranteeing resource release)
-        - This is the basic idea behind [RAII](https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization) — *resource allocation is initialisation*
-    - Avoid using `malloc` like you would in C
-- `delete` operator — for deallocating objects and arrays allocated on the heap.
 
-    There's two delete operators, `delete` and `delete[]`.
-    - `delete` — for individual objects. It calls the destructor of that single object
-    - `delete[]` — for arrays. It calls the destructor on each object
-    
-    ```cpp
-    public:
-        string* courses;
-        string* zId;
-    
-        Student() {
-            courses = new string[3];
-            zId = new string("z5258971");
-        }
-    
-        ~Student() {
-            **delete[] courses**;       // Deleting an array
-            **delete zId**;             // Deleting an individual string
-        }
-    };
-    ```
-- `::` *scope resolution operator* — for unambiguously referencing a name [TODO]
-
+    ~Student() {
+        delete[] courses;       // Deleting an array.
+        delete zId;             // Deleting an individual string.
+    }
+};
+```
 
 ### Initializer List [TODO]
 - `std::initializer_list<T>` — seems like it allows an object to be initialised using curly brace syntax and has
