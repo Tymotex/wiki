@@ -71,3 +71,11 @@ Your battle to become a good man is internal and mostly solitary. It's more than
 > **Let them have their fun. Let them live and work as they please. You've got enough to worry about when it comes to your own destiny**. It's not on you to try to change everyone else. **Be a strong, inspiring example and let that be enough**... and even then try to be empathetic.
 
 > None of us are so perfect that we can afford to spend much time questioning other people's courage, nitpicking their habits, trying to push them to reach their potential. Not when we have so much further to go ourselves.
+
+Maintain 'grace under pressure'. Learn to associate high pressure situations with a calm mind.
+
+You must always lead by example. You must always demonstrate your capacity to live up to and beyond your standards. "Imagine a king who fights his own battles. Woudln't that be a sight?" — Achilles.
+> A leader must be selfless, they must sacrifice, they must face the same deprivations as everyone else in the organisation. If you can do this, Mattis learned form the writings of General Viscount Slim, "they will follow you to the end of the world."
+
+> The leader shows up first and leaves last.
+
