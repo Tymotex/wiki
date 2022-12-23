@@ -1168,6 +1168,37 @@ int main() {
     auto [x, y, z] = tup;
     ```
 
+### Using
+There are a few different ways the `using` keyword is used:
+1. Type aliasing (alternative to C-style `typedef`).
+    It’s generally more preferred to use `using` over C-style `typedef`. It also supports a little more extra functionality that is not available with `typedef`, specifically for templates. [Source](https://stackoverflow.com/questions/10747810/what-is-the-difference-between-typedef-and-using-in-c11)
+    ```cpp
+    // These two are (mostly) equivalent:
+    using Age = unsigned int;
+    typedef unsigned int Age;
+    ``` 
+    - `typedef` is locally scoped. `using` makes the type alias available in the whole translation unit.
+2. Make an identifier from a namespace available in the current namespace.
+    ```cpp
+    using std::cout;
+    using std::cin;
+    ```
+3. Make **all** identifiers from a namespace available in the current namespace.
+    ```cpp
+    using namespace std;
+    ```
+    - Avoid this as much as possible in large projects. It pollutes your namespace with lots of new identifiers.
+    - `using namespace` should never be used in header files because it forces the consumer of the header file to also bring in all those identifiers into their namespaces
+4. Lifting a parent class' members into the current scope.
+    - Can be used to inherit constructors:
+    ```cpp
+    class D : public C {
+     public:
+      using C::C;  // Inherits all constructors from C.
+      void NewMethod();
+    };
+    ```
+
 ### Copy Elision
 By default, when you pass an object to a function, that object is copied over (pass-by-value). When it doesn't affect program behaviour, the compiler can move the object rather than making a full copy of it. This compiler optimisation can also happen when returning an object, throwing an exception, etc.
 ```cpp
@@ -1455,39 +1486,6 @@ int main() {
     ```
 - `::` *scope resolution operator* — for unambiguously referencing a name [TODO]
 
-### Using
-- Are there performance impacts to the using keyword?
-
-There are a few different ways the `using` keyword is used:
-1. Type aliasing (alternative to C-style `typedef`).
-    It’s generally more preferred to use `using` over C-style `typedef`. It also supports a little more extra functionality that is not available with `typedef`, specifically for templates. [Source](https://stackoverflow.com/questions/10747810/what-is-the-difference-between-typedef-and-using-in-c11)
-    ```cpp
-    using Age = unsigned int;
-    typedef unsigned int Age;
-    ``` 
-1. Make an identifier from a namespace available in the current namespace.
-    ```cpp
-    using std::cout;
-    using std::cin;
-    ```
-3. Make all identifiers from a namespace available in the current namespace.
-    ```cpp
-    using namespace std;
-    ```
-4. Lifting a parent class' members into the current scope.
-    - Can be used to inherit constructors:
-    ```cpp
-    class D : public C {
-     public:
-      using C::C;  // Inherits all constructors from C.
-      void NewMethod();
-    };
-    ```
-- Is using namespace std; bad practice?
-    - It's bad because it pollutes your namespace with lots of new identifiers that could collide with whatever identifiers you try to bring in. Your code could be silently calling the wrong function for instance
-    - using namespace should never be used in header files because it forces the consumer of the header file to also bring in all those identifiers into their namespaces
-    - You can always do `using std::cout` so that you don't have to always type `std::cout`
-- [Translation units](https://stackoverflow.com/questions/1106149/what-is-a-translation-unit-in-c) (basically just a c or cpp file *after* it's finished including all of the header files)
 
 ### Initializer List [TODO]
 - `std::initializer_list<T>` — seems like it allows an object to be initialised using curly brace syntax and has
