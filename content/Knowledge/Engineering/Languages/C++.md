@@ -114,6 +114,53 @@ r = r2;      // Remember, you can think of references as aliases. This assignmen
 - References must be initialised and can’t be reassigned afterwards.
 - When you return a reference, you are '*granting the caller access to something that isn't local to the function*'. It is an error to return a reference to a local variable.
 
+## new
+`new` is used to instantiate classes and arrays on the heap. All objects allocated with `new` must have a corresponding `delete` somewhere.
+- You should [always prefer stack allocations](https://stackoverflow.com/questions/333443/c-object-instantiation) rather than heap allocations.
+    - This helps avoid memory leaks because when the variable is allocated for in the stack, its *destructor* is automatically called when leaving its scope
+- It is generally better to avoid having to use `new` and `delete` in your code, or at least the code that's using your code shouldn't have to be responsible for memory management.
+- Prefer `new` and `delete` over C-style `malloc` and `free`. The reasons are: type safety (since `new` ensures instantiated objects are initialised), readability, `new` throws an exception on failure while `malloc` doesn't.
+```cpp
+class Human {
+public:
+    Human() {};
+};
+
+int main() {
+    // Creating an object whose memory will be allocated on the heap.
+    Human* me = new Human();
+    delete me;
+
+    // Creating an array whose memory will be allocated on the heap.
+    int* A = new int[3];
+    delete A;
+
+    // This array will have its memory allocated on the stack, so no delete operation is necessary.
+    int B[3];             
+}
+```
+
+### delete
+There are two delete operators, `delete` and `delete[]`.
+- `delete` — for individual objects. It calls the destructor of that single object.
+- `delete[]` — for arrays. It calls the destructor on each object.
+```cpp
+public:
+    string* courses;
+    string* zId;
+
+    Student() {
+        courses = new string[3];
+        zId = new string("z5258971");
+    }
+
+    ~Student() {
+        delete[] courses;       // Deleting an array.
+        delete zId;             // Deleting an individual string.
+    }
+};
+```
+
 ## Type Qualifiers: auto, const, constexpr, static
 ### Auto
 When specifying the data type of something as `auto`, C++ automatically infers the type.
@@ -1427,67 +1474,15 @@ int main() {
 
 ---
 # Old Notes
-### Others:
-
-### new
-`new` is used to instantiate classes and arrays on the heap. All objects allocated with `new` must have a corresponding `delete` somewhere.
-- You should [always prefer stack allocations](https://stackoverflow.com/questions/333443/c-object-instantiation) rather than heap allocations.
-    - This helps avoid memory leaks because when the variable is allocated for in the stack, its *destructor* is automatically called when leaving its scope
-- It is generally better to avoid having to use `new` and `delete` in your code, or at least the code that's using your code shouldn't have to be responsible for memory management.
-- Prefer `new` and `delete` over C-style `malloc` and `free`. The reasons are: type safety (since `new` ensures instantiated objects are initialised), readability, `new` throws an exception on failure while `malloc` doesn't.
-```cpp
-class Human {
-public:
-    Human() {};
-};
-
-int main() {
-    // Creating an object whose memory will be allocated on the heap.
-    Human* me = new Human();
-    delete me;
-
-    // Creating an array whose memory will be allocated on the heap.
-    int* A = new int[3];
-    delete A;
-
-    // This array will have its memory allocated on the stack, so no delete operation is necessary.
-    int B[3];             
-}
-```
-
-#### delete
-There are two delete operators, `delete` and `delete[]`.
-- `delete` — for individual objects. It calls the destructor of that single object.
-- `delete[]` — for arrays. It calls the destructor on each object.
-```cpp
-public:
-    string* courses;
-    string* zId;
-
-    Student() {
-        courses = new string[3];
-        zId = new string("z5258971");
-    }
-
-    ~Student() {
-        delete[] courses;       // Deleting an array.
-        delete zId;             // Deleting an individual string.
-    }
-};
-```
 
 ### Initializer List [TODO]
 - `std::initializer_list<T>` — seems like it allows an object to be initialised using curly brace syntax and has
-    
     NOT TO BE CONFUSED WITH ‘Member initialiser lists’ used in constructors to initialise its fields.
-    
     Apparently, an instance of std::initializer_list<...> is automatically constructed when:
-    
-    1. {} is used to construct a new object: `Person person{"Tim", "Zhang"}`
-        - Note: I think it’s a bit confusing. From experimentation, this will call the constructor of signature `Person(std::initializer_list<string> l) {...}` if it exists. Else it will look for `Person(string firstName, string lastName) { ... }`.
-    2. {} is used on the RHS of an assignment.
-        - Note: I think this will look for the = operator (assignment) overload method that takes in an instance of `std::initializer_list` and call that.
-    3. {} is bound to auto. Eg.
+    1. `{}` is used to construct a new object: `Person person{"Tim", "Zhang"}`
+         This will call the constructor of signature `Person(std::initializer_list<string> l) {...}` **if it exists**. If such a constructor doesn't exist, it will look for `Person(string firstName, string lastName) { ... }`. So basically, it prefers invoking constructors that take in `std::initializer_list` but it will silently fall back to direct invocation if that fails.
+    2. `{}` is used on the RHS of an assignment: `vector<int> vec = { 1, 2, 4 };`
+    3. `{}` is bound to `auto`. E.g.
         
         ```cpp
         for (auto i : { 2, 5, 7 }) {
