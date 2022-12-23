@@ -10,16 +10,17 @@ title: Purchases
 - [x] Oregano seeds
 - [x] Hair cream/paste
 - [x] Hair spray
-- [ ] Hot sauce bottles
 - [ ] SPF moisturiser, or standalone sunscreen
+- [ ] CeraVe hydrating cleanser
+- [ ] Meditations book
 - [x] Light blue OCBD, or white
 - [x] Navy chinos
 - [ ] Another OCBD, either: grey, light red or white.
 - [ ] (Uniqlo) 2 x Basic grey shirts.
 - [ ] (Uniqlo) Turtleneck wine colour.
-- [ ] Chino shorts (for Summer).
 - [ ] Messenger bag
 - [ ] Mechanical keyboard for home (as a hobby?)
+- [ ] Chino shorts (for Summer).
 - Blackout curtains for better sleep.
 - Blue light filter glasses.
 - Cooling mattress pad (or other sleep cooling accessories)

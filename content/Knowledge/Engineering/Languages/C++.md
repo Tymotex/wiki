@@ -1108,6 +1108,31 @@ int main() {
 }
 ```
 
+## Enums
+In addition to structs and classes, you can also use enums to declare new data types. Enums are used to represent small sets of integer values in a readable way. There are two kinds of enums in C++, *plain enums* and *enum classes* (which are preferred over plain enums because of their type safety).
+
+### Plain Enum
+Declared with just `enum`. The enum's values can be implicitly converted to integers
+```cpp
+enum Mood { happy, sad, nihilistic };
+
+int main() {
+    Mood currMood = Mood::happy;  
+    int val = currMood;           // No error, the Mood value is implicitly converted to an integer type.
+}
+```
+    
+### Enum Class
+When you declare an enum with `enum class`, it is strongly typed such that you won't be able to assign an enum value to an integer variable or to another enum type. It reduces the number of 'surprises' which is why it's preferred
+```cpp
+enum class Mood { happy, sad, nihilistic };
+
+int main() {
+    Mood currMood = Mood::happy;  
+    int val = currMood;            // Error, Mood::happy is not an int.
+}
+```
+
 ## Random C++ Features
 Smaller but important C++ details.
 
@@ -1243,7 +1268,7 @@ if (int size = vec.size(); size > 2)
 - **`noexcept(true)`** and `noexcept` are completely equivalent. 
 - **`throw()`**: in older C++, you can put `throw()` at the end of a function signature to say that the function never throws exceptions, for example: `void something_bad() throw()`. It's been deprecated by `noexcept` in C++11, which is preferred over `throw()`, so you'd do: `void something_bad() noexcept` instead.
 
-### Aggregates [TODO]
+### Aggregates
 *Aggregates* are either arrays or structs/classes that you didn't define constructors, private/protected instance variables or virtual methods for. When those conditions are met, that class is an *aggregate* type and can be initialised with `{}`.
 - The order that you declare the fields matter.
 
@@ -1362,6 +1387,13 @@ int main() {
 ### Compile-Time If [TODO]
 `if constexpr() { ... }`. C++17.
 
+### Volatile
+
+
+### Extern
+
+
+
 ---
 # Old Notes
 
@@ -1423,57 +1455,34 @@ int main() {
     ```
 - `::` *scope resolution operator* — for unambiguously referencing a name [TODO]
 
-## Enums
-In addition to structs and classes, you can also use enums to declare new data types. Enums are used to represent small sets of integer values in a readable way.
+### Using
+- Are there performance impacts to the using keyword?
 
-There are two kinds of enums in C++, *plain enums* and *enum classes* (which are preferred over plain enums because of their type safety).
-
-- **Plain Enum:**
-Declared with just `enum`. The enum's values can be implicitly converted to integers
-    
+There are a few different ways the `using` keyword is used:
+1. Type aliasing (alternative to C-style `typedef`).
+    It’s generally more preferred to use `using` over C-style `typedef`. It also supports a little more extra functionality that is not available with `typedef`, specifically for templates. [Source](https://stackoverflow.com/questions/10747810/what-is-the-difference-between-typedef-and-using-in-c11)
     ```cpp
-    **enum Mood** { happy, sad, nihilistic };
-    
-    int main() {
-    		Mood currMood = Mood::happy;  
-    		int val = currMood;           // No error, the **Mood** value is implicitly converted to an integer type
-    }
-    ```
-    
-- **Enum Classes:**
-When you declare an enum with `enum class`, it is strongly typed such that you won't be able to assign an enum value to an integer variable or to another enum type. It reduces the number of 'surprises' which is why it's preferred
-    
+    using Age = unsigned int;
+    typedef unsigned int Age;
+    ``` 
+1. Make an identifier from a namespace available in the current namespace.
     ```cpp
-    **enum class Mood** { happy, sad, nihilistic };
-    
-    int main() {
-    		Mood currMood = Mood::happy;  
-    		int val = currMood;            // Error, **Mood::happy** is not an **int**
-    }
+    using std::cout;
+    using std::cin;
     ```
-    
-
-## Modules [TODO]
-
-This looks like a C++20 feature, which isn't really out yet (at least not stably in Nov 2021).
-
-
-
-### Using [TODO]
-`using` keyword — what are all the uses of it?
-- question: are there performance impacts to this?
-- Can be used for type aliasing instead of typedef
-    - It’s generally more preferred to use `using` over C-style `typedef`. It also supports a little more extra functionality that is not available with `typedef` [Source](https://stackoverflow.com/questions/10747810/what-is-the-difference-between-typedef-and-using-in-c11)
-- Can be used to inherit constructors:
-    
+3. Make all identifiers from a namespace available in the current namespace.
+    ```cpp
+    using namespace std;
+    ```
+4. Lifting a parent class' members into the current scope.
+    - Can be used to inherit constructors:
     ```cpp
     class D : public C {
      public:
-      using C::C;  // inherit all constructors from C
+      using C::C;  // Inherits all constructors from C.
       void NewMethod();
     };
     ```
-    
 - Is using namespace std; bad practice?
     - It's bad because it pollutes your namespace with lots of new identifiers that could collide with whatever identifiers you try to bring in. Your code could be silently calling the wrong function for instance
     - using namespace should never be used in header files because it forces the consumer of the header file to also bring in all those identifiers into their namespaces
@@ -1531,11 +1540,16 @@ This looks like a C++20 feature, which isn't really out yet (at least not stably
     - [Good explanation](https://stackoverflow.com/questions/10422034/when-to-use-extern-in-c)
     - `extern int x;` tells the compiler that an object of type `int` called `x` exists *somewhere*. It's not the compilers job to know where it exists, it just needs to know the type and name so it knows how to use it. Once all of the source files have been compiled, the linker will resolve all of the references of `x` to the one definition that it finds in one of the compiled source files. For it to work, the definition of the `x` variable needs to have what's called “external linkage”, which basically means that it needs to be declared outside of a function (at what's usually called “the file scope”) and without the `static` keyword.
 
-### Volatile [TODO]
-- `volatile` keyword
+From what I understand, `extern int foo`  is basically saying "trust me compiler, there's an int called foo that is defined somewhere." 
 
-### Decltype [TODO]
-- `decltype` keyword
+A common use case for `extern`:
+```cpp
+// In foo.h
+extern int foo;
+
+// In foo.cc
+
+```
 
 ### Templates
 - Templates
@@ -1883,6 +1897,9 @@ Some simple Q-and-A notes to be used as flashcards.
     - Lambda functions are basically anonymous functors.
 - In lambda expression `[&, foo] () { ... }`, what does `[&, foo]` mean?
     - It's a capture group, which is a list of identifiers from the containing scope that should be accessible within the function body. The `[&, foo]` means that all identifiers should be accessible by reference, except for `foo` which should be copied.
+- What's the difference between plain enums and enum classes? Which one should you generally prefer?
+- What is the `extern` keyword in C++?
+- 
 
 ## Questions
 Some questions I have that are answered:

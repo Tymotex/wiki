@@ -2,9 +2,15 @@
 title: Discipline is Destiny
 ---
 
-💎 We are always at Hercules' Crossroad. The path of suffering is reliably the better choice.
+💎 We are always at Hercules' Crossroad. The path of suffering is reliably the better choice. Remember, each choice is a 'vote' for what kind of person we will become.
 
 💎 Consistency is a superpower. Show up every day like your life depends on it and you'll have lucky breaks.
+
+💎 Strictly hold yourself to high standards, but be generously forgiving of other people's flaws. You are no better than them.
+
+💎 Lack of emotional control is attributable to almost all of your regrets and mistakes. Do whatever it takes to maintain grace under pressure, and to see the virtues in others while forgiving their vices.
+
+💎 Lead by example — be the first in line to duty and last in line for recognition.
 
 ---
 
@@ -36,4 +42,53 @@ Learn to love the toil itself, not the fruits of labour.
 
 Constantly seek discomfort, like Seneca, who would commit to going days voluntarily living in poverty. Deny yourself luxuries if you don't want to be a slave to them. Temperance in times of plenty are when it really counts. 
 
+Stop saying yes to everything and trying to juggle many balls. You can only realistically excel in one thing, at least at a time. Every time you say yes to something, you're also saying no to everything else. Be ruthless about what you allow to be a focus in your life. 
+> If you don't know where you're sailing, the Stoics said, no wind is favourable.
 
+> What is the most important contribution I make — to my work, to my family, to the world? Then comes the discipline to ignore just about everything else.
+
+> Here is the inescapable logic: Everything we say yes to means saying no to something else. No one can be two places at once. No one can give all their focus to more than one thing. But the power of this reality can also work for you: Every no can also be a yes, a yes to what really matters. To rebuff one opportunity means to cultivate another.
+
+Stop being a little bitch and just do the thing you know you'd be most glad to have done as the first thing in your day.
+> To procrastinate is to be entitled. It is arrogant. It assumes there will be a later. It assumes you'll have the discipline to get to it later (despite not having the discipline now).
+
+> The thing to start with is the hard part, the part you want to do the least. Not begrudgingly, but promptly and enthusiastically, with a body that's been trained for hard work and a mind that's sharp and focused.
+
+Your lack of emotional control can probably be attributed to every regret in your life. This doesn't mean you have to be emotionless — you should allow yourself to feel extremely passionate emotions when they arise, but you mustn't act on it in a way that contradicts your good character.
+> Nearly every regret, every mistake, every embarrassing moment — whether it be personal or professional or historical — have one thing in common: Somebody lost control of their emotions. Somebody got carried away. Somebody was scared, or defensive. Somebody wasn't thinking beyond the next few seconds.
+
+Realise how negligent you were of your time, even if you feel subjectively that you're a person that values their time a lot. You still had wasteful moments that you'd be ashamed of. Use this as a model for how you can do better now.
+> Take a minute to think about how you spent the last year, the last month, the last week, the last day. Think about how much of it was wasted, how much of it was half-assed, how much of it was spent in reaction to things out of your control. And even if you have decent results to show for this time, still, you could have done better. We call could have.
+
+"You tried your best" was a frustrating thing for me to hear. To me, it felt like a patronising consolation for my failures. On further inspection, what is really frustrating is the fact that I didn't really try my best. I still felt entirely responsible for the outcome. When you genuinely try your best, the outcome shouldn't matter anymore — you've fought and you've lost, and you'll be at peace because you don't worry about things outside of your control.
+> As long as a man is trying as hard as he can to do what he thinks to be right, he is a success, regardless of the outcome. This is the wonderful thing about doing your best. it insulates you,e ver so slightly, from outcomes as well as ego. It's not that you don't care about results. It's that you have a kind of trump card. Your success doesn't go to your head because you know you're capable of more. Your failures don't destroy you because you are sure there wasn't anything more you could have done.
+
+Stop trying to bend the will of others and getting them to be like you. Be strict with yourself and only with yourself.
+> It was said that the true majesty of Marcus Aurelius was that his exactingness was directed only at himself.
+
+Marcus Aurelius never expected people to hold themselves to impeccable standards like he did to himself. Being emperor and being virtuous made him no better than the people around him, from his perspective. You should emulate this humility in yourself — don't judge people for being worse off than you in whatever way.
+> He did not "go around expecting Plato's Republic." People were people, he understood they were not perfect. He found a way to work with flawed people, putting them to service for the good of the empire, searching them for virtues that he celebrated and accepting their vices, which he knew were not in his control.
+
+> They were human beings. And they were not perfect. but if they were perfect, they would not give us hope. We love them because they tried. Because they course corrected in failure, because they were humble in victory, because they did the work and got the results.
+
+Your battle to become a good man is internal and mostly solitary. It's more than enough to occupy you. Think about how far you have left. Elevate others when you can, but leave them to be as they are. 
+> **Let them have their fun. Let them live and work as they please. You've got enough to worry about when it comes to your own destiny**. It's not on you to try to change everyone else. **Be a strong, inspiring example and let that be enough**... and even then try to be empathetic.
+
+> None of us are so perfect that we can afford to spend much time questioning other people's courage, nitpicking their habits, trying to push them to reach their potential. Not when we have so much further to go ourselves.
+
+Maintain 'grace under pressure'. Learn to associate high pressure situations with a calm mind.
+
+You must always lead by example. You must always demonstrate your capacity to live up to and beyond your standards. "Imagine a king who fights his own battles. Wouldn't that be a sight?" — Achilles.
+> A leader must be selfless, they must sacrifice, they must face the same deprivations as everyone else in the organisation. If you can do this, Mattis learned form the writings of General Viscount Slim, "they will follow you to the end of the world."
+
+> The leader shows up first and leaves last. The leader works hardest. The leader puts others before themselves. The leader takes the hit. Everything else is just semantics and titles.
+
+> We have to show, not tell; first in line for danger, last in line for rewards. First in line for duty, last in line for recognition. To lead, you have to bleed.
+
+I love the idea of working and suffering in silence, knowing that I'm doing something for myself in an effort to master my mind.
+> Paul Gallico, writing about his friend Lou Gehrig, tried to define the heroism of the man, and settled on "among other things, the capacity for quiet, uncomplaining suffering, the ability to take it and never to let on, never to let the world suspect you are taking it."
+
+A closing statement:
+> "Supplement [courage] with self-control," Cicero wrote, "and then every ingredient for the happy life is yours. For you will have courage as your defence against distress and fear, and self-control to liberate you from sensuality and keep you free of immoderate cravings."
+
+The essence of this book is to have temperance. Do your duty, do the hard things first, and to live to your values, uncompromisingly. Never flaunt, and only enforce high standards for yourself while being generously forgiving of the flaws of others.

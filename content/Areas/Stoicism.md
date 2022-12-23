@@ -2,6 +2,8 @@
 title: Stoicism
 ---
 
+Stoicism is a life philosophy concerned with how to flourish as human beings, rationally.
+
 ## Getting Started
 Start with reading the work by the ancients:
 - Meditations — Marcus Aurelius

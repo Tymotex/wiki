@@ -701,12 +701,26 @@ kanban-plugin: basic
 - [x] 🏆 Purpose: C++, math website.
 - [x] Research basic skincare.
 
+## **Thursday** *[[Journal/2022-12-22|2022-12-22]]* (6)
+
+- [x] 🏆 Purpose: C++, books, math.
+- [x] ==1== Ask mum how to split payment.
+- [x] ==1== Complete chatper 5 C++.
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
