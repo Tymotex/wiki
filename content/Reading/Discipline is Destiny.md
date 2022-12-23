@@ -67,6 +67,7 @@ Marcus Aurelius never expected people to hold themselves to impeccable standards
 
 > They were human beings. And they were not perfect. but if they were perfect, they would not give us hope. We love them because they tried. Because they course corrected in failure, because they were humble in victory, because they did the work and got the results.
 
-Your path to becoming a good mabn
-> **Let them have their fun. Let them live and work as they please. You've got enough to worry about when it comes to your own destiny**.
+Your battle to become a good man is internal and mostly solitary. It's more than enough to occupy you. Think about how far you have left. Elevate others when you can, but leave them to be as they are. 
+> **Let them have their fun. Let them live and work as they please. You've got enough to worry about when it comes to your own destiny**. It's not on you to try to change everyone else. **Be a strong, inspiring example and let that be enough**... and even then try to be empathetic.
 
+> None of us are so perfect that we can afford to spend much time questioning other people's courage, nitpicking their habits, trying to push them to reach their potential. Not when we have so much further to go ourselves.
