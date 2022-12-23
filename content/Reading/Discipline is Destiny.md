@@ -2,11 +2,15 @@
 title: Discipline is Destiny
 ---
 
-💎 We are always at Hercules' Crossroad. The path of suffering is reliably the better choice.
+💎 We are always at Hercules' Crossroad. The path of suffering is reliably the better choice. Remember, each choice is a 'vote' for what kind of person we will become.
 
 💎 Consistency is a superpower. Show up every day like your life depends on it and you'll have lucky breaks.
 
-💎 
+💎 Strictly hold yourself to high standards, but be generously forgiving of other people's flaws. You are no better than them.
+
+💎 Lack of emotional control is attributable to almost all of your regrets and mistakes. Do whatever it takes to maintain grace under pressure, and to see the virtues in others while forgiving their vices.
+
+💎 Lead by example — be the first in line to duty and last in line for recognition.
 
 ---
 
@@ -81,5 +85,10 @@ You must always lead by example. You must always demonstrate your capacity to li
 
 > We have to show, not tell; first in line for danger, last in line for rewards. First in line for duty, last in line for recognition. To lead, you have to bleed.
 
-> 
+I love the idea of working and suffering in silence, knowing that I'm doing something for myself in an effort to master my mind.
+> Paul Gallico, writing about his friend Lou Gehrig, tried to define the heroism of the man, and settled on "among other things, the capacity for quiet, uncomplaining suffering, the ability to take it and never to let on, never to let the world suspect you are taking it."
 
+A closing statement:
+> "Supplement [courage] with self-control," Cicero wrote, "and then every ingredient for the happy life is yours. For you will have courage as your defence against distress and fear, and self-control to liberate you from sensuality and keep you free of immoderate cravings."
+
+The essence of this book is to have temperance. Do your duty, do the hard things first, and to live to your values, uncompromisingly. Never flaunt, and only enforce high standards for yourself while being generously forgiving of the flaws of others.

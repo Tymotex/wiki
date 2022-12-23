@@ -1424,11 +1424,9 @@ int main() {
 - `::` *scope resolution operator* — for unambiguously referencing a name [TODO]
 
 ## Enums
-In addition to structs and classes, you can also use enums to declare new data types. Enums are used to represent small sets of integer values in a readable way.
+In addition to structs and classes, you can also use enums to declare new data types. Enums are used to represent small sets of integer values in a readable way. There are two kinds of enums in C++, *plain enums* and *enum classes* (which are preferred over plain enums because of their type safety).
 
-There are two kinds of enums in C++, *plain enums* and *enum classes* (which are preferred over plain enums because of their type safety).
-
-- **Plain Enum:**
+### Plain Enum
 Declared with just `enum`. The enum's values can be implicitly converted to integers
     
     ```cpp
@@ -1440,25 +1438,17 @@ Declared with just `enum`. The enum's values can be implicitly converted to inte
     }
     ```
     
-- **Enum Classes:**
+### Enum Class
 When you declare an enum with `enum class`, it is strongly typed such that you won't be able to assign an enum value to an integer variable or to another enum type. It reduces the number of 'surprises' which is why it's preferred
+```cpp
+enum class Mood { happy, sad, nihilistic };
+
+int main() {
+    Mood currMood = Mood::happy;  
+    int val = currMood;            // Error, Mood::happy is not an int.
+}
+```
     
-    ```cpp
-    **enum class Mood** { happy, sad, nihilistic };
-    
-    int main() {
-    		Mood currMood = Mood::happy;  
-    		int val = currMood;            // Error, **Mood::happy** is not an **int**
-    }
-    ```
-    
-
-## Modules [TODO]
-
-This looks like a C++20 feature, which isn't really out yet (at least not stably in Nov 2021).
-
-
-
 ### Using [TODO]
 `using` keyword — what are all the uses of it?
 - question: are there performance impacts to this?
