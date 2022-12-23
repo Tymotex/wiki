@@ -1427,10 +1427,14 @@ int main() {
 
 ---
 # Old Notes
-
-> TODO: This is a huge mess that I'll slowly clean up...
-
 ### Others:
+
+### new
+`new` is used to instantiate classes and arrays on the heap. 
+
+- Prefer `new` and `delete` over C-style `malloc` and `free`.
+- 
+
 - `new` operator — for instantiating classes and creating arrays.
     The `new` operator denotes a request for memory allocation on the heap. If the request can be granted, then it'll evaluate to the memory address of the newly allocated memory and then the constructor will be called.
     An object allocated for on the heap will need to be explicitly freed with C++'s `delete` keyword.
