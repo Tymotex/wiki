@@ -36,4 +36,11 @@ Learn to love the toil itself, not the fruits of labour.
 
 Constantly seek discomfort, like Seneca, who would commit to going days voluntarily living in poverty. Deny yourself luxuries if you don't want to be a slave to them. Temperance in times of plenty are when it really counts. 
 
+Stop saying yes to everything and trying to juggle many balls. You can only realistically excel in one thing, at least at a time. Every time you say yes to something, you're also saying no to everything else. Be ruthless about what you allow to be a focus in your life.
+> If you don't know where you're sailing, the Stoics said, no wind is favourable.
+
+> What is the most important contribution I make — to my work, to my family, to the world? Then comes the discipline to ignore just about everything else.
+
+> Here is the inescapable logic: Everything we say yes to means saying no to something else. No one can be two places at once. No one can give all their focus to more than one thing. But the power of this reality can also work for you: Every no can also be a yes, a yes to what really matters. To rebuff one opportunity means to cultivate another.
+
 
