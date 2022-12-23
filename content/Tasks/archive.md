@@ -707,12 +707,26 @@ kanban-plugin: basic
 - [x] ==1== Ask mum how to split payment.
 - [x] ==1== Complete chatper 5 C++.
 
+## **Friday** *[[Journal/2022-12-23|2022-12-23]]* (6)
+
+- [x] 🏆 Purpose: C++, goals, books, math.
+- [x] **(45 mins)** Clean out the entirety of 'Old Notes'.
+- [x] ==1== Start thinking about how you'll learn Stoicism.
+- [x] ==1== **(30 mins)** Complete Discipline is Destiny summary.
+- [x] ==1== Buy Inspire 2 protector.
+- [x] ==1== See skincare again from skincare science.
+- [x] ==1== Need to get skincare products. Which ones? Make a task to get them.
+- [x] ==1== **(2 hours)** Chapter 6 C++.
+- [x] Go get your shirt and pants tailored at Top Ryde.
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
