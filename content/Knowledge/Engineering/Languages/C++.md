@@ -1268,7 +1268,7 @@ if (int size = vec.size(); size > 2)
 - **`noexcept(true)`** and `noexcept` are completely equivalent. 
 - **`throw()`**: in older C++, you can put `throw()` at the end of a function signature to say that the function never throws exceptions, for example: `void something_bad() throw()`. It's been deprecated by `noexcept` in C++11, which is preferred over `throw()`, so you'd do: `void something_bad() noexcept` instead.
 
-### Aggregates [TODO]
+### Aggregates
 *Aggregates* are either arrays or structs/classes that you didn't define constructors, private/protected instance variables or virtual methods for. When those conditions are met, that class is an *aggregate* type and can be initialised with `{}`.
 - The order that you declare the fields matter.
 
@@ -1455,21 +1455,34 @@ int main() {
     ```
 - `::` *scope resolution operator* — for unambiguously referencing a name [TODO]
 
-### Using [TODO]
-`using` keyword — what are all the uses of it?
-- question: are there performance impacts to this?
-- Can be used for type aliasing instead of typedef
-    - It’s generally more preferred to use `using` over C-style `typedef`. It also supports a little more extra functionality that is not available with `typedef` [Source](https://stackoverflow.com/questions/10747810/what-is-the-difference-between-typedef-and-using-in-c11)
-- Can be used to inherit constructors:
-    
+### Using
+- Are there performance impacts to the using keyword?
+
+There are a few different ways the `using` keyword is used:
+1. Type aliasing (alternative to C-style `typedef`).
+    It’s generally more preferred to use `using` over C-style `typedef`. It also supports a little more extra functionality that is not available with `typedef`, specifically for templates. [Source](https://stackoverflow.com/questions/10747810/what-is-the-difference-between-typedef-and-using-in-c11)
+    ```cpp
+    using Age = unsigned int;
+    typedef unsigned int Age;
+    ``` 
+1. Make an identifier from a namespace available in the current namespace.
+    ```cpp
+    using std::cout;
+    using std::cin;
+    ```
+3. Make all identifiers from a namespace available in the current namespace.
+    ```cpp
+    using namespace std;
+    ```
+4. Lifting a parent class' members into the current scope.
+    - Can be used to inherit constructors:
     ```cpp
     class D : public C {
      public:
-      using C::C;  // inherit all constructors from C
+      using C::C;  // Inherits all constructors from C.
       void NewMethod();
     };
     ```
-    
 - Is using namespace std; bad practice?
     - It's bad because it pollutes your namespace with lots of new identifiers that could collide with whatever identifiers you try to bring in. Your code could be silently calling the wrong function for instance
     - using namespace should never be used in header files because it forces the consumer of the header file to also bring in all those identifiers into their namespaces
