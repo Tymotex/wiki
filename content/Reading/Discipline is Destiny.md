@@ -53,5 +53,20 @@ Stop being a little bitch and just do the thing you know you'd be most glad to h
 Your lack of emotional control can probably be attributed to every regret in your life. This doesn't mean you have to be emotionless — you should allow yourself to feel extremely passionate emotions when they arise, but you mustn't act on it in a way that contradicts your good character.
 > Nearly every regret, every mistake, every embarrassing moment — whether it be personal or professional or historical — have one thing in common: Somebody lost control of their emotions. Somebody got carried away. Somebody was scared, or defensive. Somebody wasn't thinking beyond the next few seconds.
 
-Think about how you spent the 
+Realise how negligent you were of your time, even if you feel subjectively that you're a person that values their time a lot. You still had wasteful moments that you'd be ashamed of. Use this as a model for how you can do better now.
 > Take a minute to think about how you spent the last year, the last month, the last week, the last day. Think about how much of it was wasted, how much of it was half-assed, how much of it was spent in reaction to things out of your control. And even if you have decent results to show for this time, still, you could have done better. We call could have.
+
+"You tried your best" was a frustrating thing for me to hear. To me, it felt like a patronising consolation for my failures. On further inspection, what is really frustrating is the fact that I didn't really try my best. I still felt entirely responsible for the outcome. When you genuinely try your best, the outcome shouldn't matter anymore — you've fought and you've lost, and you'll be at peace because you don't worry about things outside of your control.
+> As long as a man is trying as hard as he can to do what he thinks to be right, he is a success, regardless of the outcome. This is the wonderful thing about doing your best. it insulates you,e ver so slightly, from outcomes as well as ego. It's not that you don't care about results. It's that you have a kind of trump card. Your success doesn't go to your head because you know you're capable of more. Your failures don't destroy you because you are sure there wasn't anything more you could have done.
+
+Stop trying to bend the will of others and getting them to be like you. Be strict with yourself and only with yourself.
+> It was said that the true majesty of Marcus Aurelius was that his exactingness was directed only at himself.
+
+Marcus Aurelius never expected people to hold themselves to impeccable standards like he did to himself. Being emperor and being virtuous made him no better than the people around him, from his perspective. You should emulate this humility in yourself — don't judge people for being worse off than you in whatever way.
+> He did not "go around expecting Plato's Republic." People were people, he understood they were not perfect. He found a way to work with flawed people, putting them to service for the good of the empire, searching them for virtues that he celebrated and accepting their vices, which he knew were not in his control.
+
+> They were human beings. And they were not perfect. but if they were perfect, they would not give us hope. We love them because they tried. Because they course corrected in failure, because they were humble in victory, because they did the work and got the results.
+
+Your path to becoming a good mabn
+> **Let them have their fun. Let them live and work as they please. You've got enough to worry about when it comes to your own destiny**.
+
