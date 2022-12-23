@@ -8,7 +8,7 @@ kanban-plugin: basic
 
 - [ ] 🏆 Purpose: C++, goals, books, math.
 - [ ] **(45 mins)** Clean out the entirety of 'Old Notes'.
-- [ ] Go get your shirt and pants tailored at Top Ryde.
+- [ ] Beg mum to repair my jeans and alter my chinos.
 - [ ] Start reading stoicism FAQ: https://www.reddit.com/r/Stoicism/wiki/intro_faq/#wiki_why_study_stoicism.3F
 - [ ] ==1== Macbook transfer files
 - [ ] ==7== Make a plan to grind out the math website in record time.
@@ -23,6 +23,7 @@ kanban-plugin: basic
 - [x] ==1== See skincare again from skincare science.
 - [x] ==1== Need to get skincare products. Which ones? Make a task to get them.
 - [x] ==1== **(2 hours)** Chapter 6 C++.
+- [x] Go get your shirt and pants tailored at Top Ryde.
 
 
 ## **Saturday** *[[Journal/2022-12-24|2022-12-24]]* (6)
