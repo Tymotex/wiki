@@ -1476,31 +1476,24 @@ int main() {
 # Old Notes
 
 ### Initializer List [TODO]
-Apparently, an instance of std::initializer_list<...> is automatically constructed when:
+
+- `std::initializer_list` is an *iterable*.
+- For some reason, you cannot subscript an instance of `std::initializer_list` like you would a vector or array ([SO discussion](https://stackoverflow.com/questions/17787394/why-doesnt-stdinitializer-list-provide-a-subscript-operator)).
+
+The compiler automatically converts `{ ... }` to an instantiation of `std::initializer_list` in these situations:
 1. `{}` is used to construct a new object: `Person person{"Tim", "Zhang"}`
      This will call the constructor of signature `Person(std::initializer_list<string> l) {...}` **if it exists**. If such a constructor doesn't exist, it will look for `Person(string firstName, string lastName) { ... }`. So basically, it prefers invoking constructors that take in `std::initializer_list` but it will silently fall back to direct invocation if that fails.
 2. `{}` is used on the RHS of an assignment: `vector<int> vec = { 1, 2, 4 };`
 3. `{}` is bound to `auto`. E.g.
     ```cpp
-    for (auto i : { 2, 5, 7 }) cout << i << endl;
+    for (auto i : { 2, 5, 7 })    // `std::initializer_list` is an iterable.
+        cout << i << endl;   
     ```
 
-It's not possible to implement your own `std::initializer_list` because 
-https://stackoverflow.com/questions/18164353/implementation-of-stdinitializer-list
+Interesting questions:
+- [It's not possible](https://stackoverflow.com/questions/18164353/implementation-of-stdinitializer-list) to implement your own `std::initializer_list`. It's coupled to the language standard and the logic of the compiler, which you can't recreate through your own class.
+- [Why isn't `std::initializer_list` built-in?](https://stackoverflow.com/questions/15198807/why-isnt-stdinitializer-list-a-language-built-in)
 
-
-
-Note: `std::initializer_list` is an iterable.
-
-For some reason, you cannot subscript an instance of std::initializer_list like you would a vector or array ([SO discussion](https://stackoverflow.com/questions/17787394/why-doesnt-stdinitializer-list-provide-a-subscript-operator)). It seems that it’s just not a desired enough use case?
-
-[**Notes from cplusplus.com](https://www.cplusplus.com/reference/initializer_list/initializer_list/):**
-
-The compiler automatically converts { ... } to objects of type std::initializer_list. For example: 
-
-```cpp
-auto il = { 10, 20, 30 };  // the type of il is an initializer_list
-```
 
 Constructors taking only one argument of this type are a special kind of constructor, called *initializer-list constructor*. Initializer-list constructors take precedence over other constructors when the initializer-list constructor syntax is used:
 
@@ -1880,7 +1873,8 @@ Some simple Q-and-A notes to be used as flashcards.
     - It's a capture group, which is a list of identifiers from the containing scope that should be accessible within the function body. The `[&, foo]` means that all identifiers should be accessible by reference, except for `foo` which should be copied.
 - What's the difference between plain enums and enum classes? Which one should you generally prefer?
 - What is the `extern` keyword in C++?
-- 
+- What is the type of `foo` here? `auto foo = { 10, 20, 30 };`
+
 
 ## Questions
 Some questions I have that are answered:
