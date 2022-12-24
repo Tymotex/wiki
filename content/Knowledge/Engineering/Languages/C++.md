@@ -1096,10 +1096,12 @@ int main() {
 }
 ```
 
-### Concepts
-Since in many situations we don't want to accept *any* type in our template, we can specify constraints with predicates, which we call *concepts*.
+### Concepts [TODO]
+Concepts are predicates that are used to apply constraints to the type arguments you pass to a template function or class.
+- This is from C++20. Prior to C++20, you'd rely on [[Knowledge/Engineering/Languages/C++#Type Traits [TODO]|type traits]] with `static_assert`s, or simply trusting programmers to follow documentation on how to use a template correctly.
 
-This is a C++20 feature.
+### Type Traits [TODO]
+
 
 ### Deduction Guides [TODO]
 This is for aiding type inference.
