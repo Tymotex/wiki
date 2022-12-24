@@ -1096,7 +1096,7 @@ int main() {
 }
 ```
 
-### Concepts [TODO]
+### Concepts
 Since in many situations we don't want to accept *any* type in our template, we can specify constraints with predicates, which we call *concepts*.
 
 This is a C++20 feature.
@@ -1248,7 +1248,7 @@ The STL containers support different iterator categories:
 (sourced from [GeeksForGeeks](https://www.geeksforgeeks.org/))
 
 ## Random C++ Features
-Smaller but important C++ details.
+Other important C++ details.
 
 ### Structured Bindings
 You can unpack values in C++17, similar to how you destructure objects in JavaScript. It's just syntactic sugar.
@@ -1725,6 +1725,8 @@ Some simple Q-and-A notes to be used as flashcards.
     - You have to wrap each case in curly braces. E.g. `case foo: { ... }`.
 - Should you always use range-based for loops?
     - In general yes, but with exceptions. Eg. you should not use it when you are erasing values, inserting something into the middle of something, etc., basically anytime you need to manipulate the position of the iterator, you’d have to fall back to the ugly for loop.
+-  What are the 5 main iterator categories? How do they relate to each other?
+    - They are: input, output, forward, bidirectional, random access.
 
 ## Questions
 Some questions I have that are answered:
