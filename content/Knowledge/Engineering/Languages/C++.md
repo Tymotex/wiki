@@ -1213,8 +1213,25 @@ Interesting questions:
 
 ### Iterators
 An iterator is an object that points to a specific item in a container. It has methods and operations for iterating over a container.
+- To support range-based for loops, your class has to implement the `begin()` and `end()` methods and make them return an iterator.
+```cpp
+std::vector<int> values = {1, 2, 3};
 
-### Iterator Categories
+for (std::vector<int>::iterator it = values.begin(); it != values.end(); it++)
+    cout << *it << endl;
+
+// Syntactic sugar for the above:
+for (int value : values)
+    cout << value << endl;
+```
+- `end()` isn’t the last element, it points one position beyond the last element.
+- There are also:
+    - `const_iterator` for read-only iteration.
+    - `reverse_iterator` for reverse iteration. Use it with `rbegin` and `rend`
+
+Iterators can be moved forwards and backwards with `++` and `--`, similar to pointer arithmetic.
+
+#### Iterator Categories
 There are different types of iterators in C++, in order to least functionality to richest functionality:
 1. **Input iterator** — you can only *access* the container in a single forward pass.
 2. **Output iterator** — you can only *assign* values to the container in a single forward pass.
@@ -1224,34 +1241,13 @@ There are different types of iterators in C++, in order to least functionality t
 
 They form a hierarchy where forward iterators contain all the functionality of input and output iterators, bidirectional contains all of forward, and random-access contains all of bidirectional:
 ![[Knowledge/Engineering/Languages/assets/iterator-category-hierarchy.png|400]]
+(sourced from [GeeksForGeeks](https://www.geeksforgeeks.org/))
+![[Knowledge/Engineering/Languages/assets/iterator-category-functionality-table.png|600]]
+(sourced from [GeeksForGeeks](https://www.geeksforgeeks.org/))
 
-The STL containers support different iterator categor
-
-
-
-
-- To support range-based for loops, your class has to implement the `begin()` and `end()` methods and make them return an iterator.
-```cpp
-std::vector<int> values = {1, 2, 3};
-
-// Equivalently
-for (std::vector<int>::iterator it = values.begin(); it != values.end(); it++) {
-        cout << *it << endl;
-}
-
-// Syntactic sugar for the above
-for (int value : values) {
-        cout << value << endl;
-}
-```
-    - end() isn’t the last element, it’s points one position beyond the last element.
-- `const_iterator` is for read-only iteration — making sure you don’t mutate the collection.
-
-Iterators can be moved forwards and backwards with `++` and `--`, similar to pointer arithmetic.
-
-
-
-
+The STL containers support different iterator categories:
+![[Knowledge/Engineering/Languages/assets/stl-container-iterator-type-supported.png|500]]
+(sourced from [GeeksForGeeks](https://www.geeksforgeeks.org/))
 
 ## Random C++ Features
 Smaller but important C++ details.
