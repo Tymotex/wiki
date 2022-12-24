@@ -1558,9 +1558,6 @@ Compilation of C++ programs follow 3 steps:
 3. **Linking**
     Takes object files and produces a library or executable file that your OS can use.
 
-### Style
-See [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html). Note: there are many decisions in the Google C++ style guide that many people protest against, for example, the lack of exceptions. It generally has good style rules otherwise.
-
 ### Commenting
 The advice here is sourced from [Google’s C++ style guide](https://google.github.io/styleguide/cppguide.html).
 
