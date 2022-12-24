@@ -114,6 +114,53 @@ r = r2;      // Remember, you can think of references as aliases. This assignmen
 - References must be initialised and can’t be reassigned afterwards.
 - When you return a reference, you are '*granting the caller access to something that isn't local to the function*'. It is an error to return a reference to a local variable.
 
+## new
+`new` is used to instantiate classes and arrays on the heap. All objects allocated with `new` must have a corresponding `delete` somewhere.
+- You should [always prefer stack allocations](https://stackoverflow.com/questions/333443/c-object-instantiation) rather than heap allocations.
+    - This helps avoid memory leaks because when the variable is allocated for in the stack, its *destructor* is automatically called when leaving its scope
+- It is generally better to avoid having to use `new` and `delete` in your code, or at least the code that's using your code shouldn't have to be responsible for memory management.
+- Prefer `new` and `delete` over C-style `malloc` and `free`. The reasons are: type safety (since `new` ensures instantiated objects are initialised), readability, `new` throws an exception on failure while `malloc` doesn't.
+```cpp
+class Human {
+public:
+    Human() {};
+};
+
+int main() {
+    // Creating an object whose memory will be allocated on the heap.
+    Human* me = new Human();
+    delete me;
+
+    // Creating an array whose memory will be allocated on the heap.
+    int* A = new int[3];
+    delete A;
+
+    // This array will have its memory allocated on the stack, so no delete operation is necessary.
+    int B[3];             
+}
+```
+
+### delete
+There are two delete operators, `delete` and `delete[]`.
+- `delete` — for individual objects. It calls the destructor of that single object.
+- `delete[]` — for arrays. It calls the destructor on each object.
+```cpp
+public:
+    string* courses;
+    string* zId;
+
+    Student() {
+        courses = new string[3];
+        zId = new string("z5258971");
+    }
+
+    ~Student() {
+        delete[] courses;       // Deleting an array.
+        delete zId;             // Deleting an individual string.
+    }
+};
+```
+
 ## Type Qualifiers: auto, const, constexpr, static
 ### Auto
 When specifying the data type of something as `auto`, C++ automatically infers the type.
@@ -396,31 +443,33 @@ int main() {
     std::cout << me.id << "\n";
 }
 ```
-
-Use `using` to avoid using a fully qualified name every time. 
-```cpp
-using std::cout;
-
-int main() {
-    cout << "Hello world\n";
-    return 0;
-}
-```
-            
-Any identifier you declare that's *not within* a namespace will be implicitly part of the *global namespace*. Globally scoped identifiers are accessible with `::` without specifying a name.
-```cpp
-int num = 42;
-
-namespace Foo {
-    int num = 24;
-
-    void bar() {
-        std::cout << num;     // 24. Picks the closer `Foo::num` over `::num`.
-        std::cout << ::num;   // 42.
+- You can do namespace aliases to shorten namespaces. Never do this in header files
+    ```cpp
+    namespace testing = ::my::testing::framework;
+    ```
+- Use `using` to avoid using a fully qualified name every time. 
+    ```cpp
+    using std::cout;
+    
+    int main() {
+        cout << "Hello world\n";
+        return 0;
     }
-}
-```
-
+    ```
+- Any identifier you declare that's *not within* a namespace will be implicitly part of the *global namespace*. Globally scoped identifiers are accessible with `::` without specifying a name.
+    ```cpp
+    int num = 42;
+    
+    namespace Foo {
+        int num = 24;
+    
+        void bar() {
+            std::cout << num;     // 24. Picks the closer `Foo::num` over `::num`.
+            std::cout << ::num;   // 42.
+        }
+    }
+    ```
+    
 ## Error Handling
 C++ provides the familiar `try` and `catch`  blocks for error handling. Note that when an exception is thrown, the destructor for the object that threw the exception is called, enabling [[Knowledge/Engineering/Languages/C++#RAII|RAII]].
 ```cpp
@@ -1133,6 +1182,71 @@ int main() {
 }
 ```
 
+### Initialiser List
+`std::initializer_list` is a special class whose objects are used to pass around a sequence of data using curly braces `{}` in a readable, intuitive way.
+- `std::initializer_list` is an *iterable*.
+- For some reason, you cannot subscript an instance of `std::initializer_list` like you would a vector or array ([SO discussion](https://stackoverflow.com/questions/17787394/why-doesnt-stdinitializer-list-provide-a-subscript-operator)).
+
+The compiler automatically converts `{ ... }` to an instantiation of `std::initializer_list` in these situations:
+1. `{}` is used to construct a new object: `Person person{"Tim", "Zhang"}`
+     This will call the constructor of signature `Person(std::initializer_list<string> l) {...}` **if it exists**. If such a constructor doesn't exist, it will look for `Person(string firstName, string lastName) { ... }`. So basically, it prefers invoking constructors that take in `std::initializer_list` but it will silently fall back to direct invocation if that fails.
+    - Constructors taking only one argument of this type are a special kind of constructor, called *initialiser-list constructor*.
+    ```cpp
+    struct Foo {
+        Foo(int,int) { ... };
+        Foo(initializer_list<int>) { ... };
+    };
+    
+    Foo foo {10,20};  // Calls the initialiser-list constructor. Calls `Foo(int, int)` if it doesn't exist.
+    Foo bar (10,20);  // Calls `Foo(int, int)`.
+    ```
+2. `{}` is used on the RHS of an assignment: `vector<int> vec = { 1, 2, 4 };`
+3. `{}` is bound to `auto`. E.g.
+    ```cpp
+    for (auto i : { 2, 5, 7 })    // `std::initializer_list` is an iterable.
+        cout << i << endl;   
+    ```
+
+Interesting questions:
+- [It's not possible](https://stackoverflow.com/questions/18164353/implementation-of-stdinitializer-list) to implement your own `std::initializer_list`. It's coupled to the language standard and the logic of the compiler, which you can't recreate through your own class.
+- [Why isn't `std::initializer_list` built-in?](https://stackoverflow.com/questions/15198807/why-isnt-stdinitializer-list-a-language-built-in)
+
+### Iterators
+An iterator is an object that points to a specific item in a container. It has methods and operations for iterating over a container.
+- To support range-based for loops, your class has to implement the `begin()` and `end()` methods and make them return an iterator.
+```cpp
+std::vector<int> values = {1, 2, 3};
+
+for (std::vector<int>::iterator it = values.begin(); it != values.end(); it++)
+    cout << *it << endl;
+
+// Syntactic sugar for the above:
+for (int value : values)
+    cout << value << endl;
+```
+- `end()` isn’t the last element, it points one position beyond the last element.
+- There is also:
+    - `const_iterator` for read-only iteration.
+    - `reverse_iterator` for reverse iteration. Use it with `rbegin` and `rend`
+
+#### Iterator Categories
+There are different types of iterators in C++, in order to least functionality to richest functionality:
+1. **Input iterator** — you can only *access* the container in a single forward pass.
+2. **Output iterator** — you can only *assign* values to the container in a single forward pass.
+3. **Forward iterator** — combines input and output iterators.
+4. **Bidirectional iterator** — forward iterator that can also go back.
+5. **Random access iterator** — you can move the iterator anywhere, not just forward and back.
+
+They form a hierarchy where forward iterators contain all the functionality of input and output iterators, bidirectional contains all of forward, and random-access contains all of bidirectional:
+![[Knowledge/Engineering/Languages/assets/iterator-category-hierarchy.png|400]]
+(sourced from [GeeksForGeeks](https://www.geeksforgeeks.org/))
+![[Knowledge/Engineering/Languages/assets/iterator-category-functionality-table.png|600]]
+(sourced from [GeeksForGeeks](https://www.geeksforgeeks.org/))
+
+The STL containers support different iterator categories:
+![[Knowledge/Engineering/Languages/assets/stl-container-iterator-type-supported.png|500]]
+(sourced from [GeeksForGeeks](https://www.geeksforgeeks.org/))
+
 ## Random C++ Features
 Smaller but important C++ details.
 
@@ -1168,6 +1282,37 @@ int main() {
     auto [x, y, z] = tup;
     ```
 
+### Using
+There are a few different ways the `using` keyword is used:
+1. Type aliasing (alternative to C-style `typedef`).
+    It’s generally more preferred to use `using` over C-style `typedef`. It also supports a little more extra functionality that is not available with `typedef`, specifically for templates. [Source](https://stackoverflow.com/questions/10747810/what-is-the-difference-between-typedef-and-using-in-c11)
+    ```cpp
+    // These two are (mostly) equivalent:
+    using Age = unsigned int;
+    typedef unsigned int Age;
+    ``` 
+    - `typedef` is locally scoped. `using` makes the type alias available in the whole translation unit.
+2. Make an identifier from a namespace available in the current namespace.
+    ```cpp
+    using std::cout;
+    using std::cin;
+    ```
+3. Make **all** identifiers from a namespace available in the current namespace.
+    ```cpp
+    using namespace std;
+    ```
+    - Avoid this as much as possible in large projects. It pollutes your namespace with lots of new identifiers.
+    - `using namespace` should never be used in header files because it forces the consumer of the header file to also bring in all those identifiers into their namespaces
+4. Lifting a parent class' members into the current scope.
+    - Can be used to inherit constructors:
+    ```cpp
+    class D : public C {
+     public:
+      using C::C;  // Inherits all constructors from C.
+      void NewMethod();
+    };
+    ```
+
 ### Copy Elision
 By default, when you pass an object to a function, that object is copied over (pass-by-value). When it doesn't affect program behaviour, the compiler can move the object rather than making a full copy of it. This compiler optimisation can also happen when returning an object, throwing an exception, etc.
 ```cpp
@@ -1180,8 +1325,10 @@ int main() {
   string s = foo();
 }
 ```
+- Note: in English/linguistics, to *elide* means to merge and therefore omit something in language. E.g. "dunno" == "don’t know".
 
 > Copy elision is not enforced in the C++ standard, so don't write code assuming this optimisation will happen.
+
 
 ### Return Type Deduction
 In C++14, you can infer the return type of function whose return type is left as `auto`.
@@ -1391,350 +1538,28 @@ int main() {
 
 
 ### Extern
-
-
-
----
-# Old Notes
-
-> TODO: This is a huge mess that I'll slowly clean up...
-
-### Others:
-- `new` operator — for instantiating classes and creating arrays.
-    The `new` operator denotes a request for memory allocation on the heap. If the request can be granted, then it'll evaluate to the memory address of the newly allocated memory and then the constructor will be called.
-    An object allocated for on the heap will need to be explicitly freed with C++'s `delete` keyword.
-    ```cpp
-    class Human {
-        public:
-            Human() {
-                cout << "Constructor has been called" << endl;
-            }
-    };
-    
-    int main() {
-    		// **Creating an object** whose memory will be allocated on the heap
-        Human* me = new Human();
-        delete me;
-    
-    		// Creating an array whose memory will be allocated on the heap
-    		int* A = new int[3];
-    		delete A;
-    
-    		int B[3];             // This array will have its memory allocated on the stack, so no **delete** operation is necessary
-    		
-    }
-    ```
-    - Being allocated on the heap means that it is independent of the scope that it was created in and that it'll persist until it is explictly destroyed or until the program ends
-    - You should [always prefer stack allocations](https://stackoverflow.com/questions/333443/c-object-instantiation) rather than heap allocations
-        - This helps avoid memory leaks because when the variable is allocated for in the stack, its *destructor* is automatically called when leaving its scope
-    - The user of your class should never have to use `new` and `delete` in their consuming code
-    - If you need to allocate a resource like a file handle, socket, etc. it should be wrapped in a class where the constructor acquires the resources, then the destructor frees the resources (guranteeing resource release)
-        - This is the basic idea behind [RAII](https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization) — *resource allocation is initialisation*
-    - Avoid using `malloc` like you would in C
-- `delete` operator — for deallocating objects and arrays allocated on the heap.
-
-    There's two delete operators, `delete` and `delete[]`.
-    - `delete` — for individual objects. It calls the destructor of that single object
-    - `delete[]` — for arrays. It calls the destructor on each object
-    
-    ```cpp
-    public:
-        string* courses;
-        string* zId;
-    
-        Student() {
-            courses = new string[3];
-            zId = new string("z5258971");
-        }
-    
-        ~Student() {
-            **delete[] courses**;       // Deleting an array
-            **delete zId**;             // Deleting an individual string
-        }
-    };
-    ```
-- `::` *scope resolution operator* — for unambiguously referencing a name [TODO]
-
-### Using
-- Are there performance impacts to the using keyword?
-
-There are a few different ways the `using` keyword is used:
-1. Type aliasing (alternative to C-style `typedef`).
-    It’s generally more preferred to use `using` over C-style `typedef`. It also supports a little more extra functionality that is not available with `typedef`, specifically for templates. [Source](https://stackoverflow.com/questions/10747810/what-is-the-difference-between-typedef-and-using-in-c11)
-    ```cpp
-    using Age = unsigned int;
-    typedef unsigned int Age;
-    ``` 
-1. Make an identifier from a namespace available in the current namespace.
-    ```cpp
-    using std::cout;
-    using std::cin;
-    ```
-3. Make all identifiers from a namespace available in the current namespace.
-    ```cpp
-    using namespace std;
-    ```
-4. Lifting a parent class' members into the current scope.
-    - Can be used to inherit constructors:
-    ```cpp
-    class D : public C {
-     public:
-      using C::C;  // Inherits all constructors from C.
-      void NewMethod();
-    };
-    ```
-- Is using namespace std; bad practice?
-    - It's bad because it pollutes your namespace with lots of new identifiers that could collide with whatever identifiers you try to bring in. Your code could be silently calling the wrong function for instance
-    - using namespace should never be used in header files because it forces the consumer of the header file to also bring in all those identifiers into their namespaces
-    - You can always do `using std::cout` so that you don't have to always type `std::cout`
-- [Translation units](https://stackoverflow.com/questions/1106149/what-is-a-translation-unit-in-c) (basically just a c or cpp file *after* it's finished including all of the header files)
-
-### Initializer List [TODO]
-- `std::initializer_list<T>` — seems like it allows an object to be initialised using curly brace syntax and has
-    
-    NOT TO BE CONFUSED WITH ‘Member initialiser lists’ used in constructors to initialise its fields.
-    
-    Apparently, an instance of std::initializer_list<...> is automatically constructed when:
-    
-    1. {} is used to construct a new object: `Person person{"Tim", "Zhang"}`
-        - Note: I think it’s a bit confusing. From experimentation, this will call the constructor of signature `Person(std::initializer_list<string> l) {...}` if it exists. Else it will look for `Person(string firstName, string lastName) { ... }`.
-    2. {} is used on the RHS of an assignment.
-        - Note: I think this will look for the = operator (assignment) overload method that takes in an instance of `std::initializer_list` and call that.
-    3. {} is bound to auto. Eg.
-        
-        ```cpp
-        for (auto i : { 2, 5, 7 }) {
-            cout << i << endl;
-        }
-        ```
-        
-    
-    Note: `std::initializer_list` is an iterable.
-    
-    For some reason, you cannot subscript an instance of std::initializer_list like you would a vector or array ([SO discussion](https://stackoverflow.com/questions/17787394/why-doesnt-stdinitializer-list-provide-a-subscript-operator)). It seems that it’s just not a desired enough use case?
-    
-    [**Notes from cplusplus.com](https://www.cplusplus.com/reference/initializer_list/initializer_list/):**
-    
-    The compiler automatically converts { ... } to objects of type std::initializer_list. For example: 
-    
-    ```cpp
-    auto il = { 10, 20, 30 };  // the type of il is an initializer_list
-    ```
-    
-    Constructors taking only one argument of this type are a special kind of constructor, called *initializer-list constructor*. Initializer-list constructors take precedence over other constructors when the initializer-list constructor syntax is used:
-    
-    ```cpp
-    struct myclass {
-    	  myclass (int,int);
-    	  myclass (initializer_list<int>);
-    	  /* definitions ... */
-    };
-    
-    myclass foo {10,20};  // calls initializer_list ctor
-    myclass bar (10,20);  // calls first constructor
-    ```
-    
-
-### Extern [TODO]
-- `extern` keyword
-    - [Good explanation](https://stackoverflow.com/questions/10422034/when-to-use-extern-in-c)
-    - `extern int x;` tells the compiler that an object of type `int` called `x` exists *somewhere*. It's not the compilers job to know where it exists, it just needs to know the type and name so it knows how to use it. Once all of the source files have been compiled, the linker will resolve all of the references of `x` to the one definition that it finds in one of the compiled source files. For it to work, the definition of the `x` variable needs to have what's called “external linkage”, which basically means that it needs to be declared outside of a function (at what's usually called “the file scope”) and without the `static` keyword.
-
 From what I understand, `extern int foo`  is basically saying "trust me compiler, there's an int called foo that is defined somewhere." 
-
-A common use case for `extern`:
 ```cpp
-// In foo.h
-extern int foo;
+// main.cc
+#include <iostream>
 
-// In foo.cc
+int main() {
+    // `foo` exists, but its value is defined in some other file. Trust me, compiler.
+    extern int foo;
 
+    std::cout << foo << "\n";
+    return 0;
+}
+
+// foo.cc — there is literally just this one line in this file.
+int foo = 42;    
 ```
-
-### Templates
-- Templates
-    - They’re quite similar to generics in managed languages like Java or C#, but they’re much more powerful. A template is basically you getting the compiler to write code for you, based on a couple rules.
-        - You can kind of think of template functions as things that are created on demand — kind of like a code generator. If there are no calls to it, then it actually doesn’t exist after compilation. You could leave syntax errors inside template functions that aren’t called and the compiler just ignores them entirely (but this is compiler-dependent)!
-        - Some companies literally ban the use of templates in their source code. It’s because overusing templates can make the code very unreadable. There’s a delicate tradeoff between having to do manual, repetitive coding and accessing the powerful abstracted-away code-generation magic that templates offer
-        - *Metaprogramming* is basically about when a program has knowledge of itself and can manipulate itself.
-            - C#’s reflection feature is a form of metaprogramming (where it can examine its own static types)
-            - C++ gives us template metaprogramming, where the templates you program are used by the compiler to generate more source code.
-
-
-
-
-    
-- Copy elision — the compiler is ‘*allowed*’ to *elide* copies where results are “as if” copies were made. Ie. the compiler can decide to skip the copy/move construction of an object. Return value optimisation (RVO) is one such instance.
-    - Note: in English/linguistics, to *elide* means to merge and therefore omit something in language. Eg. dunno == don’t know, kinda == kind of, etc
-    - It’s an optimisation technique implemented by most C++ compilers to prevent extraneous copy operations. It is because of copy elision that return-by-value and pass-by-value usually remain quite performant in C++ (assuming the certain criteria to allow for it are met).
-    - Calls to the copy or move constructors can be entirely skipped!
-- Wtf can curly braces be used for?
-    - Defining anonymous scope blocks
-        - Yep, wrote notes on this
-    - Initialising arrays and vectors, and possibly other objects?
-        - Yep. It’s generally preferred. You wrote notes on this
-    - Constructor initialiser lists
-        
-        ```cpp
-        Vector::Vector(int s) :elements{new double[s]}, capacity{s} { ...constructor body... }
-        
-        // ^
-        // According to https://stackoverflow.com/questions/36212837/member-initializer-list-notation-curly-braces-vs-parentheses
-        // this is pretty much equivalent to:
-        Vector::Vector(int s) :elements(new double[s]), capacity(s) { ...constructor body... }
-        
-        // Google's style guide's section on constructor initialiser lists shows examples with parentheses instead of curly braces 
-        // Scott Meyer in 'Effective Modern C++': There’s no consensus that either approach is better than the other, so my advice is to pick one and apply it consistently.
-        ```
-        
-- Delegating constructors
-    - You can call other constructors from a constructor in the initialiser list. Doing this however means you can’t use a member initialiser list
-    - You cannot call constructors from the body of another constructor ☹️
-    - Often, you’d have to resort to defining a SharedInit() method
-
-Constructors and assignments for copy or move semantics:
-
-```cpp
-class X {
-public:
-		X(Sometype);            // 'Ordinary constructor' for creating an object
-		X();                    // Default constructor
-		X(const X &);           // Copy constructor. Takes in a const l-value reference
-		X(X &&);                // Move constructor. Takes in an r-value reference
-
-		X& operator=(const X&); // Copy assignment
-		X& operator=(X&&);      // Move assignment
-		
-		~X();                   
-		...
-};
-```
-
-- Switch-case statements in C++ are a bit different. They’re like this? (They have curly braces around the cases)
-    
-    ```cpp
-    switch (tag) {
-        case 1: { 
-            // ...
-            break;
-        }
-        case 2: {  
-            // ...
-            break;
-        }
-        case 3: {  
-            // ...
-            break;
-        }
-    }
-    ```
-    
-- Iterators
-    - It’s up to the implementation to define what iteration means. It’s kind of like operator overloading, you could make the ++ operator do literally anything.
-        - To support range-based for loops, your class has to implement the `begin()` and `end()` methods and make them return an iterator
-        
-        ```cpp
-        std::vector<int> values = {1, 2, 3};
-        
-        // Equivalently
-        for (std::vector<int>::iterator it = values.begin(); it != values.end(); it++) {
-        		cout << *it << endl;
-        }
-        
-        // Syntactic sugar for the above
-        for (int value : values) {
-        		cout << value << endl;
-        }
-        ```
-        
-        - end() isn’t the last element, it’s one beyond the last element, meaning it’s an invalid iterator
-        - Should you always use range-based for loops?
-            - In general yes, but with exceptions. Eg. you should not use it when you are erasing values, inserting something into the middle of something, etc., basically anytime you need to manipulate the position of the iterator, you’d have to fall back to the ugly for loop.
-    - Looping with indexes vs iterators
-        - Indexes work for arrays, vectors, etc. but for other data structures like sets, you have no choice but to use iterators .
-    - const_iterator is for read-only iteration — making sure you don’t mutate the collection.
-    - When mutating a container, you must keep in mind that changing the container has an impact on existing iterators that point at elements in the container.
-        
-        ```cpp
-        // BUGGY CODE, DO NOT USE
-        for (auto it = c.begin(); it != c.end(); ++it) {
-        	  if (BadValue(*it)) {
-        		    c.erase(it);
-        	  }
-        }
-        ```
-        
-        - Although this seems simple enough, there is a fatal flaw: erasing an element in an associative container invalidates all iterators that point to that element. Thus, in the above `for`loops continuation step, the iterator `it` will be invalid whenever `c.erase(it)` was just invoked, resulting in undefined behaviour. To remedy this issue, we can leverage the post-increment operator like so:
-        
-        ```cpp
-        for (auto it = c.begin(); it != c.end(); ) {
-          if (BadValue(*it)) {
-            c.erase(it++);
-          } else {
-            ++it;
-          }
-        }
-        ```
-        
-        - This time, our loop behaves as expected. While `it` is incremented before calling `erase`, the post-increment operator returns the previous (unincremented) value, which is then passed to `erase`. For `vector`s, `deque`s, and `list`s, we can leverage the fact that `erase` returns an iterator that points at the next value in the container and write:
-        
-        ```cpp
-        for (vector<int>::iterator it = c.begin(); it != c.end(); ) {
-        	  if (BadValue(*it)) {
-        		    it = c.erase(it);
-        	  } else {
-        		    ++it;
-        	  }
-        }
-        ```
-        
-- `#include` tells the preprocessor to copy the contents of the included file and directly paste it into the current file, that’s literally all that happens.
-    - `#include <path>`
-        - With `<>`, the preprocessor searches for the thing to include in directories defined by the compiler. You would use <> often for including standard library headers
-        - On Linux, you can find all the libraries stored on the path `/usr/include/c++/<version_num>`
-    - `#include “path”`
-        - With `“”`, the preprocessor searches first in the same directory as the file first, and then searches through the same directories that `#include <path>` would search through
-- Header guards are used inside header files to ensure that the contents of the file are not copied and pasted more than once to any single file. They have the form:
-    
-    ```cpp
-    #ifndef YOUR_HEADER_NAME_H
-    #define YOUR_HEADER_NAME_H
-    
-    ...
-    
-    #endif
-    ```
-    
-- The entire purpose of namespaces is to avoid naming conflicts (and as a logical container for classes, further namespaces, etc.)
-- About std::swap:
-    - Often, `std::swap(T& a, T& b)` is horribly inefficient because it could involve copies or moves three times
-- Constexpr methods — declared with the `constexpr` qualifier
-    - Constexpr methods are also implicitly `inline` methods
-    - Can be used to initialise constants at compile time
-- What is external linkage? [https://stackoverflow.com/questions/1358400/what-is-external-linkage-and-internal-linkage#:~:text=External linkage refers to things,units (or object files)](https://stackoverflow.com/questions/1358400/what-is-external-linkage-and-internal-linkage#:~:text=External%20linkage%20refers%20to%20things,units%20(or%20object%20files)).
-    - Linkage has to do with how many instances (or copies) of a named object there are in a program. it is usually best for a constant with one name to refer to a single object within the program.
-    - When you write a .cc file, the compiler generates a translation unit from it. This is basically the source file, plus all the headers that you #included.
-        - Internal linkage refers to everything **only in scope of a translation unit**
-        - External linkage refers to things that exist beyond a particular translation unit. Ie. accessible through the whole program, which is the combination of al translation units
-- You can do namespace aliases to shorten namespaces. Never do this in header files
-    
-    ```cpp
-    namespace testing = ::my::testing::framework;
-    ```
-    
-- TODO: Copy over the stuff in the cheatsheet that are missing in this set of notes
-    - Eg. bitsets, `<algorithm>` functions, etc.
-- Still can’t fully understand `const`.
-    - I think I’m really confused with combinations of qualifiers: static, const, constexpr in a class definition and outside of it, and whether you can initialise the member/variable when declared or if it must be defined in the .cc file.
-    Could list out all possibilities.
-- regular array literal vs using std::array
-- [https://www.google.com/search?q=references+as+members&oq=references+as+members&aqs=chrome..69i57.4024j0j7&sourceid=chrome&ie=UTF-8](https://www.google.com/search?q=references+as+members&oq=references+as+members&aqs=chrome..69i57.4024j0j7&sourceid=chrome&ie=UTF-8)
-
+Compiling the above with `g++ -o main main.cc foo.cc` and it just works.
 
 # Appendix:
-All the notes under this section are meant to be topics or details you don’t need to care much about to program effectively with C++ but which are important background information.
+All the notes under this section are meant to be topics or details you don’t need to care much about to program effectively with C++.
 
-### C++ Compilation
+### C++ Compilation [TODO]
 Compilation of C++ programs follow 3 steps:
 1. **Preprocessing** 
     Preprocessor directives like `#include`, `#define`, `#if`, etc. transforms the code before any compilation happens. At the end of this step, a pure C++ file is produced.
@@ -1742,10 +1567,6 @@ Compilation of C++ programs follow 3 steps:
     The compiler (eg. g++, the GNU C++ compiler) takes in pure C++ source code and produces an object file. This step doesn’t produce anyting that the user can actually run — it just produces the machine language instructions.
 3. **Linking**
     Takes object files and produces a library or executable file that your OS can use.
-
-
-### Style
-See [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html). Note: there are many decisions in the Google C++ style guide that many people protest against, for example, the lack of exceptions. It generally has good style rules otherwise.
 
 ### Commenting
 The advice here is sourced from [Google’s C++ style guide](https://google.github.io/styleguide/cppguide.html).
@@ -1899,8 +1720,13 @@ Some simple Q-and-A notes to be used as flashcards.
     - It's a capture group, which is a list of identifiers from the containing scope that should be accessible within the function body. The `[&, foo]` means that all identifiers should be accessible by reference, except for `foo` which should be copied.
 - What's the difference between plain enums and enum classes? Which one should you generally prefer?
 - What is the `extern` keyword in C++?
-- 
+- What is the type of `foo` here? `auto foo = { 10, 20, 30 };`
+- What's different about switch-case statements in C++ compared to other languages?
+    - You have to wrap each case in curly braces. E.g. `case foo: { ... }`.
+- Should you always use range-based for loops?
+    - In general yes, but with exceptions. Eg. you should not use it when you are erasing values, inserting something into the middle of something, etc., basically anytime you need to manipulate the position of the iterator, you’d have to fall back to the ugly for loop.
 
 ## Questions
 Some questions I have that are answered:
 - Why use functors over methods? From what I know, the main purpose of functors is to act as stateful functions. Methods can clearly accomplish the same purpose.
+- Why use regular array literal with `[]` vs using `std::array`?

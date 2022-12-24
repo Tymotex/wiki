@@ -13,6 +13,7 @@ title: Purchases
 - [ ] SPF moisturiser, or standalone sunscreen
 - [ ] CeraVe hydrating cleanser
 - [ ] Meditations book
+- [ ] Protein powder
 - [x] Light blue OCBD, or white
 - [x] Navy chinos
 - [ ] Another OCBD, either: grey, light red or white.
