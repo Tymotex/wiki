@@ -44,4 +44,3 @@ Goggins proves to me that it's possible to push yourself through what seems like
 
 ### Jocko Willink
 ![[Journal/assets/jocko-willink.png|200]]
-He has a mastery over 
