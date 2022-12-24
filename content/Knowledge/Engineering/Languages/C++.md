@@ -1101,6 +1101,7 @@ Concepts are predicates that are used to apply constraints to the type arguments
 - This is from C++20. Prior to C++20, you'd rely on [[Knowledge/Engineering/Languages/C++#Type Traits [TODO]|type traits]] with `static_assert`s, or simply trusting programmers to follow documentation on how to use a template correctly.
 - Useful concepts are provided in the [standard `<concepts>` header](https://en.cppreference.com/w/cpp/concepts).
 
+TODO: notes on concept-based overloading, defining concepts.
 ```cpp
 template <...>
     requires
@@ -1110,6 +1111,24 @@ template <...>
 ```
 
 - You can overload template functions: depending on the type arguments, run a different generic algorithm.
+
+```cpp
+template <typename T, typename U = T>
+concept EqualityComparable =
+    requires (T a, U b) {
+        { a == b } -> bool;
+        { a != b } -> bool;
+        { b == a } -> bool;
+        { b != a } -> bool;
+    }
+
+// ...
+static_assert(EqualityComparable<int, double>);
+static_assert(EqualityComparable<int>);          
+static_assert(EqualityComparable<char>);          
+static_assert(EqualityComparable<char, string>);  // Fails.
+```
+
 
 ### Type Traits [TODO]
 
