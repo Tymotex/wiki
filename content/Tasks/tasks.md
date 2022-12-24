@@ -1,7 +1,5 @@
 ---
-
 kanban-plugin: basic
-
 ---
 
 ## **Saturday** *[[Journal/2022-12-24|2022-12-24]]* (6)
@@ -21,7 +19,6 @@ kanban-plugin: basic
 - [ ] Clean your rooms.
 - [ ] Ask mum if dayi would like origami.
 
-
 ## **Sunday** *[[Journal/2022-12-25|2022-12-25]]* (6)
 
 - [ ] 🏆 Purpose
@@ -29,13 +26,11 @@ kanban-plugin: basic
 - [ ] 🌙 Evening routine
 - [ ] **(10 mins)** Weekly Review.
 
-
 ## **Monday** *[[Journal/2022-12-26|2022-12-26]]* (6)
 
 - [ ] 🏆 Purpose
 - [ ] 🌞 Morning routine
 - [ ] 🌙 Evening routine
-
 
 ## **Tuesday** *[[Journal/2022-12-27|2022-12-27]]* (6)
 
@@ -43,13 +38,11 @@ kanban-plugin: basic
 - [ ] 🌞 Morning routine
 - [ ] 🌙 Evening routine
 
-
 ## **Wednesday** *[[Journal/2022-12-28|2022-12-28]]* (6)
 
 - [ ] 🏆 Purpose
 - [ ] 🌞 Morning routine
 - [ ] 🌙 Evening routine
-
 
 ## **Thursday** *[[Journal/2022-12-29|2022-12-29]]* (6)
 
@@ -57,13 +50,11 @@ kanban-plugin: basic
 - [ ] 🌞 Morning routine
 - [ ] 🌙 Evening routine
 
-
 ## **Friday** *[[Journal/2022-12-30|2022-12-30]]* (6)
 
 - [ ] 🏆 Purpose
 - [ ] 🌞 Morning routine
 - [ ] 🌙 Evening routine
-
 
 ## **Saturday** *[[Journal/2022-12-31|2022-12-31]]* (6)
 
@@ -72,15 +63,13 @@ kanban-plugin: basic
 - [ ] 🌙 Evening routine
 - [ ] **(10 mins)** Monthly Review.
 
+***
 
 ## Archive
 
 
 
-
-
 %% kanban:settings
-```
 {"kanban-plugin":"basic"}
 ```
 %%
