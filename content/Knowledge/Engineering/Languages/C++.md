@@ -1097,8 +1097,19 @@ int main() {
 ```
 
 ### Concepts [TODO]
-Concepts are predicates that are used to apply constraints to the type arguments you pass to a template function or class.
+Concepts are predicates that are used to apply constraints to the type arguments you pass to a template function or class. The main reason to use concepts is to get the compiler to be better at preventing misuage.
 - This is from C++20. Prior to C++20, you'd rely on [[Knowledge/Engineering/Languages/C++#Type Traits [TODO]|type traits]] with `static_assert`s, or simply trusting programmers to follow documentation on how to use a template correctly.
+- Useful concepts are provided in the [standard `<concepts>` header](https://en.cppreference.com/w/cpp/concepts).
+
+```cpp
+template <...>
+    requires
+
+// The equivalent and less verbose way to use concepts without requirements clauses:
+template <...>
+```
+
+- You can overload template functions: depending on the type arguments, run a different generic algorithm.
 
 ### Type Traits [TODO]
 
