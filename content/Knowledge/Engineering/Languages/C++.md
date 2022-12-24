@@ -1225,11 +1225,9 @@ for (int value : values)
     cout << value << endl;
 ```
 - `end()` isn’t the last element, it points one position beyond the last element.
-- There are also:
+- There is also:
     - `const_iterator` for read-only iteration.
     - `reverse_iterator` for reverse iteration. Use it with `rbegin` and `rend`
-
-Iterators can be moved forwards and backwards with `++` and `--`, similar to pointer arithmetic.
 
 #### Iterator Categories
 There are different types of iterators in C++, in order to least functionality to richest functionality:
