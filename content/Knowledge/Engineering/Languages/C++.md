@@ -1475,8 +1475,7 @@ int main() {
 ---
 # Old Notes
 
-### Initializer List [TODO]
-
+### Initialiser List
 - `std::initializer_list` is an *iterable*.
 - For some reason, you cannot subscript an instance of `std::initializer_list` like you would a vector or array ([SO discussion](https://stackoverflow.com/questions/17787394/why-doesnt-stdinitializer-list-provide-a-subscript-operator)).
 
@@ -1494,18 +1493,15 @@ Interesting questions:
 - [It's not possible](https://stackoverflow.com/questions/18164353/implementation-of-stdinitializer-list) to implement your own `std::initializer_list`. It's coupled to the language standard and the logic of the compiler, which you can't recreate through your own class.
 - [Why isn't `std::initializer_list` built-in?](https://stackoverflow.com/questions/15198807/why-isnt-stdinitializer-list-a-language-built-in)
 
-
-Constructors taking only one argument of this type are a special kind of constructor, called *initializer-list constructor*. Initializer-list constructors take precedence over other constructors when the initializer-list constructor syntax is used:
-
+Constructors taking only one argument of this type are a special kind of constructor, called *initialiser-list constructor*. Initialiser-list constructors take precedence over other constructors when the initialiser-list constructor syntax is used:
 ```cpp
-struct myclass {
-      myclass (int,int);
-      myclass (initializer_list<int>);
-      /* definitions ... */
+struct Foo {
+    Foo(int,int) { ... };
+    Foo(initializer_list<int>) { ... };
 };
 
-myclass foo {10,20};  // calls initializer_list ctor
-myclass bar (10,20);  // calls first constructor
+Foo foo {10,20};  // Calls the initialiser-list constructor. Calls `Foo(int, int)` if it doesn't exist.
+Foo bar (10,20);  // Calls `Foo(int, int)`.
 ```
 
 
