@@ -19,8 +19,6 @@ Following these principles makes my life meaningful.
 11. I always do the right thing, not for recognition or for personal benefit. I do it because I feel deeply shameful otherwise and believe life is more meaningful that way.
 12. I strive to implement the processes and character necessary to be wealthy because I love experiencing life to the fullest and especially giving that my loved ones.
 
-<<<<<<< HEAD
-=======
 ## Heroes
 These are the people I aspire to be like. The attribute I venerate in each of these people is their mental toughness and temperance.
 
@@ -38,13 +36,12 @@ These are the people I aspire to be like. The attribute I venerate in each of th
 ![[Journal/assets/elon-musk.png|300]]
 
 ### Lex Fridman
-
+![[Journal/assets/lex-fridman.png|300]]
 
 ### Jocko Willink
 
 
 ### Lou Gehrig
 
->>>>>>> 808841e86e4af1ba313f1197744c55baa9135f46
 
 

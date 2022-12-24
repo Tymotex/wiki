@@ -9,15 +9,14 @@ kanban-plugin: basic
 - [x] 🏆 Purpose: C++, then everything else.
 - [x] **(60 mins)** Clean out the entirety of 'Old Notes'.
 - [x] **(45 mins)** Finish all notes on iterators and implement an iterator yourself.
-- [ ] ==7== **(1 hour)**<br>Clean up book notes and summarise How Not to Die.
-- [ ] ==1== Start reading stoicism FAQ: https://www.reddit.com/r/Stoicism/wiki/intro_faq/#wiki_why_study_stoicism.3F
-- [ ] ==8== Make a plan to grind out the math website in record time.
+- [x] ==1== Start reading stoicism FAQ: https://www.reddit.com/r/Stoicism/wiki/intro_faq/#wiki_why_study_stoicism.3F
 - [ ] ==2== Write about your heroes.
 - [ ] ==2== Write your goals for next year (and the remainder of this year).
 - [ ] ==1== Do your Google onboarding.
 - [ ] Bubbler scheduler.
 - [ ] Ask mum if dayi would like origami.
 - [ ] Tell mum not to get me food in the future.
+- [x] ==8== Make a plan to grind out the math website in record time.
 - [x] Clean your rooms.
 - [x] ==1== Beg mum to repair my jeans and alter my chinos.
 
@@ -29,6 +28,7 @@ kanban-plugin: basic
 - [ ] 🌙 Evening routine
 - [ ] ==2== Macbook transfer files
 - [ ] **(10 mins)** Weekly Review.
+- [ ] **(2 hours)** Finish first draft of Figma prototype for math website.
 
 
 ## **Monday** *[[Journal/2022-12-26|2022-12-26]]* (6)
@@ -50,6 +50,7 @@ kanban-plugin: basic
 - [ ] 🏆 Purpose
 - [ ] 🌞 Morning routine
 - [ ] 🌙 Evening routine
+- [ ] ==7== **(1 hour)**<br>Clean up book notes and summarise How Not to Die.
 
 
 ## **Thursday** *[[Journal/2022-12-29|2022-12-29]]* (6)
