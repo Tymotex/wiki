@@ -40,7 +40,11 @@ Goggins proves to me that it's possible to push yourself through what seems like
 
 ### Lex Fridman
 ![[Journal/assets/lex-fridman.png|200]]
-
+Lex is a person, I discovered, whose attitude towards work, life and love resonates strongest with me. Out of all the people I know, I think this person is most like the person I hope to become:
+1. He's an engineer and scientist. He
 
 ### Jocko Willink
 ![[Journal/assets/jocko-willink.png|200]]
+Jocko clearly fits into the archetype of a stoic hypermasculine soldier, but what I admire is his humility, open-mindedness and unwavering discipline. Contrary to his 'meathead' appearance and demeanour, he is intelligent, well-read and has a degree of emotional awareness rarely seen in people. 
+
+This is a man that always shows up early and always takes ownership. If he's told you will do A, he will do A, uncompromisingly.
