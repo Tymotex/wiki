@@ -1212,6 +1212,22 @@ Interesting questions:
 - [Why isn't `std::initializer_list` built-in?](https://stackoverflow.com/questions/15198807/why-isnt-stdinitializer-list-a-language-built-in)
 
 ### Iterators
+An iterator is an object that points to a specific item in a container. It has methods and operations for iterating over a container.
+
+### Iterator Categories
+There are different types of iterators in C++, in order to least functionality to richest functionality:
+1. **Input iterator** — you can only *access* the container in a single forward pass.
+2. **Output iterator** — you can only *assign* values to the container in a single forward pass.
+3. **Forward iterator** — combines input and output iterators.
+4. **Bidirectional iterator** — forward iterator that can also go back.
+5. **Random access iterator** — you can move the iterator anywhere, not just forward and back.
+
+They form a hierarchy where forward iterators contain all the functionality of input and output iterators, bidirectional contains all of forward, and random-access contains all of bidirectional:
+![[Knowledge/Engineering/Languages/assets/iterator-category-hierarchy.png|400]]
+
+The STL containers support different iterator categor
+
+
 
 
 - To support range-based for loops, your class has to implement the `begin()` and `end()` methods and make them return an iterator.
