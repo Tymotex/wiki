@@ -1258,8 +1258,10 @@ int main() {
   string s = foo();
 }
 ```
+- Note: in English/linguistics, to *elide* means to merge and therefore omit something in language. E.g. "dunno" == "don’t know".
 
 > Copy elision is not enforced in the C++ standard, so don't write code assuming this optimisation will happen.
+
 
 ### Return Type Deduction
 In C++14, you can infer the return type of function whose return type is left as `auto`.
@@ -1469,7 +1471,7 @@ int main() {
 
 
 ### Extern
-
+From what I understand, `extern int foo`  is basically saying "trust me compiler, there's an int called foo that is defined somewhere." 
 
 
 ---
@@ -1482,6 +1484,16 @@ int main() {
 The compiler automatically converts `{ ... }` to an instantiation of `std::initializer_list` in these situations:
 1. `{}` is used to construct a new object: `Person person{"Tim", "Zhang"}`
      This will call the constructor of signature `Person(std::initializer_list<string> l) {...}` **if it exists**. If such a constructor doesn't exist, it will look for `Person(string firstName, string lastName) { ... }`. So basically, it prefers invoking constructors that take in `std::initializer_list` but it will silently fall back to direct invocation if that fails.
+    - Constructors taking only one argument of this type are a special kind of constructor, called *initialiser-list constructor*.
+    ```cpp
+    struct Foo {
+        Foo(int,int) { ... };
+        Foo(initializer_list<int>) { ... };
+    };
+    
+    Foo foo {10,20};  // Calls the initialiser-list constructor. Calls `Foo(int, int)` if it doesn't exist.
+    Foo bar (10,20);  // Calls `Foo(int, int)`.
+    ```
 2. `{}` is used on the RHS of an assignment: `vector<int> vec = { 1, 2, 4 };`
 3. `{}` is bound to `auto`. E.g.
     ```cpp
@@ -1493,34 +1505,6 @@ Interesting questions:
 - [It's not possible](https://stackoverflow.com/questions/18164353/implementation-of-stdinitializer-list) to implement your own `std::initializer_list`. It's coupled to the language standard and the logic of the compiler, which you can't recreate through your own class.
 - [Why isn't `std::initializer_list` built-in?](https://stackoverflow.com/questions/15198807/why-isnt-stdinitializer-list-a-language-built-in)
 
-Constructors taking only one argument of this type are a special kind of constructor, called *initialiser-list constructor*. Initialiser-list constructors take precedence over other constructors when the initialiser-list constructor syntax is used:
-```cpp
-struct Foo {
-    Foo(int,int) { ... };
-    Foo(initializer_list<int>) { ... };
-};
-
-Foo foo {10,20};  // Calls the initialiser-list constructor. Calls `Foo(int, int)` if it doesn't exist.
-Foo bar (10,20);  // Calls `Foo(int, int)`.
-```
-
-
-### Extern [TODO]
-- `extern` keyword
-    - [Good explanation](https://stackoverflow.com/questions/10422034/when-to-use-extern-in-c)
-    - `extern int x;` tells the compiler that an object of type `int` called `x` exists *somewhere*. It's not the compilers job to know where it exists, it just needs to know the type and name so it knows how to use it. Once all of the source files have been compiled, the linker will resolve all of the references of `x` to the one definition that it finds in one of the compiled source files. For it to work, the definition of the `x` variable needs to have what's called “external linkage”, which basically means that it needs to be declared outside of a function (at what's usually called “the file scope”) and without the `static` keyword.
-
-From what I understand, `extern int foo`  is basically saying "trust me compiler, there's an int called foo that is defined somewhere." 
-
-A common use case for `extern`:
-```cpp
-// In foo.h
-extern int foo;
-
-// In foo.cc
-
-```
-
 ### Templates
 - Templates
     - They’re quite similar to generics in managed languages like Java or C#, but they’re much more powerful. A template is basically you getting the compiler to write code for you, based on a couple rules.
@@ -1530,56 +1514,7 @@ extern int foo;
             - C#’s reflection feature is a form of metaprogramming (where it can examine its own static types)
             - C++ gives us template metaprogramming, where the templates you program are used by the compiler to generate more source code.
 
-
-
-
-    
 - Copy elision — the compiler is ‘*allowed*’ to *elide* copies where results are “as if” copies were made. Ie. the compiler can decide to skip the copy/move construction of an object. Return value optimisation (RVO) is one such instance.
-    - Note: in English/linguistics, to *elide* means to merge and therefore omit something in language. Eg. dunno == don’t know, kinda == kind of, etc
-    - It’s an optimisation technique implemented by most C++ compilers to prevent extraneous copy operations. It is because of copy elision that return-by-value and pass-by-value usually remain quite performant in C++ (assuming the certain criteria to allow for it are met).
-    - Calls to the copy or move constructors can be entirely skipped!
-- Wtf can curly braces be used for?
-    - Defining anonymous scope blocks
-        - Yep, wrote notes on this
-    - Initialising arrays and vectors, and possibly other objects?
-        - Yep. It’s generally preferred. You wrote notes on this
-    - Constructor initialiser lists
-        
-        ```cpp
-        Vector::Vector(int s) :elements{new double[s]}, capacity{s} { ...constructor body... }
-        
-        // ^
-        // According to https://stackoverflow.com/questions/36212837/member-initializer-list-notation-curly-braces-vs-parentheses
-        // this is pretty much equivalent to:
-        Vector::Vector(int s) :elements(new double[s]), capacity(s) { ...constructor body... }
-        
-        // Google's style guide's section on constructor initialiser lists shows examples with parentheses instead of curly braces 
-        // Scott Meyer in 'Effective Modern C++': There’s no consensus that either approach is better than the other, so my advice is to pick one and apply it consistently.
-        ```
-        
-- Delegating constructors
-    - You can call other constructors from a constructor in the initialiser list. Doing this however means you can’t use a member initialiser list
-    - You cannot call constructors from the body of another constructor ☹️
-    - Often, you’d have to resort to defining a SharedInit() method
-
-Constructors and assignments for copy or move semantics:
-
-```cpp
-class X {
-public:
-		X(Sometype);            // 'Ordinary constructor' for creating an object
-		X();                    // Default constructor
-		X(const X &);           // Copy constructor. Takes in a const l-value reference
-		X(X &&);                // Move constructor. Takes in an r-value reference
-
-		X& operator=(const X&); // Copy assignment
-		X& operator=(X&&);      // Move assignment
-		
-		~X();                   
-		...
-};
-```
-
 - Switch-case statements in C++ are a bit different. They’re like this? (They have curly braces around the cases)
     
     ```cpp
