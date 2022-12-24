@@ -443,31 +443,33 @@ int main() {
     std::cout << me.id << "\n";
 }
 ```
-
-Use `using` to avoid using a fully qualified name every time. 
-```cpp
-using std::cout;
-
-int main() {
-    cout << "Hello world\n";
-    return 0;
-}
-```
-            
-Any identifier you declare that's *not within* a namespace will be implicitly part of the *global namespace*. Globally scoped identifiers are accessible with `::` without specifying a name.
-```cpp
-int num = 42;
-
-namespace Foo {
-    int num = 24;
-
-    void bar() {
-        std::cout << num;     // 24. Picks the closer `Foo::num` over `::num`.
-        std::cout << ::num;   // 42.
+- You can do namespace aliases to shorten namespaces. Never do this in header files
+    ```cpp
+    namespace testing = ::my::testing::framework;
+    ```
+- Use `using` to avoid using a fully qualified name every time. 
+    ```cpp
+    using std::cout;
+    
+    int main() {
+        cout << "Hello world\n";
+        return 0;
     }
-}
-```
-
+    ```
+- Any identifier you declare that's *not within* a namespace will be implicitly part of the *global namespace*. Globally scoped identifiers are accessible with `::` without specifying a name.
+    ```cpp
+    int num = 42;
+    
+    namespace Foo {
+        int num = 24;
+    
+        void bar() {
+            std::cout << num;     // 24. Picks the closer `Foo::num` over `::num`.
+            std::cout << ::num;   // 42.
+        }
+    }
+    ```
+    
 ## Error Handling
 C++ provides the familiar `try` and `catch`  blocks for error handling. Note that when an exception is thrown, the destructor for the object that threw the exception is called, enabling [[Knowledge/Engineering/Languages/C++#RAII|RAII]].
 ```cpp
@@ -1209,6 +1211,25 @@ Interesting questions:
 - [It's not possible](https://stackoverflow.com/questions/18164353/implementation-of-stdinitializer-list) to implement your own `std::initializer_list`. It's coupled to the language standard and the logic of the compiler, which you can't recreate through your own class.
 - [Why isn't `std::initializer_list` built-in?](https://stackoverflow.com/questions/15198807/why-isnt-stdinitializer-list-a-language-built-in)
 
+### Iterators
+
+
+- To support range-based for loops, your class has to implement the `begin()` and `end()` methods and make them return an iterator.
+```cpp
+std::vector<int> values = {1, 2, 3};
+
+// Equivalently
+for (std::vector<int>::iterator it = values.begin(); it != values.end(); it++) {
+        cout << *it << endl;
+}
+
+// Syntactic sugar for the above
+for (int value : values) {
+        cout << value << endl;
+}
+```
+    - end() isn’t the last element, it’s points one position beyond the last element.
+- `const_iterator` is for read-only iteration — making sure you don’t mutate the collection.
 
 ## Random C++ Features
 Smaller but important C++ details.
@@ -1519,49 +1540,10 @@ int foo = 42;
 ```
 Compiling the above with `g++ -o main main.cc foo.cc` and it just works.
 
----
-# Old Notes
-- Iterators
-    - To support range-based for loops, your class has to implement the `begin()` and `end()` methods and make them return an iterator.
-    ```cpp
-    std::vector<int> values = {1, 2, 3};
-    
-    // Equivalently
-    for (std::vector<int>::iterator it = values.begin(); it != values.end(); it++) {
-            cout << *it << endl;
-    }
-    
-    // Syntactic sugar for the above
-    for (int value : values) {
-            cout << value << endl;
-    }
-    ```
-        - end() isn’t the last element, it’s points one position beyond the last element.
-    - `const_iterator` is for read-only iteration — making sure you don’t mutate the collection.
-- The entire purpose of namespaces is to avoid naming conflicts (and as a logical container for classes, further namespaces, etc.)
-- What is external linkage? [https://stackoverflow.com/questions/1358400/what-is-external-linkage-and-internal-linkage#:~:text=External linkage refers to things,units (or object files)](https://stackoverflow.com/questions/1358400/what-is-external-linkage-and-internal-linkage#:~:text=External%20linkage%20refers%20to%20things,units%20(or%20object%20files)).
-    - Linkage has to do with how many instances (or copies) of a named object there are in a program. it is usually best for a constant with one name to refer to a single object within the program.
-    - When you write a .cc file, the compiler generates a translation unit from it. This is basically the source file, plus all the headers that you #included.
-        - Internal linkage refers to everything **only in scope of a translation unit**
-        - External linkage refers to things that exist beyond a particular translation unit. Ie. accessible through the whole program, which is the combination of al translation units
-- You can do namespace aliases to shorten namespaces. Never do this in header files
-    
-    ```cpp
-    namespace testing = ::my::testing::framework;
-    ```
-    
-- TODO: Copy over the stuff in the cheatsheet that are missing in this set of notes
-    - Eg. bitsets, `<algorithm>` functions, etc.
-- Still can’t fully understand `const`.
-    - I think I’m really confused with combinations of qualifiers: static, const, constexpr in a class definition and outside of it, and whether you can initialise the member/variable when declared or if it must be defined in the .cc file.
-    Could list out all possibilities.
-- [https://www.google.com/search?q=references+as+members&oq=references+as+members&aqs=chrome..69i57.4024j0j7&sourceid=chrome&ie=UTF-8](https://www.google.com/search?q=references+as+members&oq=references+as+members&aqs=chrome..69i57.4024j0j7&sourceid=chrome&ie=UTF-8)
-
-
 # Appendix:
-All the notes under this section are meant to be topics or details you don’t need to care much about to program effectively with C++ but which are important background information.
+All the notes under this section are meant to be topics or details you don’t need to care much about to program effectively with C++.
 
-### C++ Compilation
+### C++ Compilation [TODO]
 Compilation of C++ programs follow 3 steps:
 1. **Preprocessing** 
     Preprocessor directives like `#include`, `#define`, `#if`, etc. transforms the code before any compilation happens. At the end of this step, a pure C++ file is produced.
@@ -1569,7 +1551,6 @@ Compilation of C++ programs follow 3 steps:
     The compiler (eg. g++, the GNU C++ compiler) takes in pure C++ source code and produces an object file. This step doesn’t produce anyting that the user can actually run — it just produces the machine language instructions.
 3. **Linking**
     Takes object files and produces a library or executable file that your OS can use.
-
 
 ### Style
 See [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html). Note: there are many decisions in the Google C++ style guide that many people protest against, for example, the lack of exceptions. It generally has good style rules otherwise.
