@@ -719,12 +719,24 @@ kanban-plugin: basic
 - [x] ==1== **(2 hours)** Chapter 6 C++.
 - [x] Go get your shirt and pants tailored at Top Ryde.
 
+## **Saturday** *[[Journal/2022-12-24|2022-12-24]]* (6)
+
+- [x] 🏆 Purpose: C++, then everything else.
+- [x] **(60 mins)** Clean out the entirety of 'Old Notes'.
+- [x] **(45 mins)** Finish all notes on iterators and implement an iterator yourself.
+- [x] ==1== Start reading stoicism FAQ: https://www.reddit.com/r/Stoicism/wiki/intro_faq/#wiki_why_study_stoicism.3F
+- [x] ==8== Make a plan to grind out the math website in record time.
+- [x] Clean your rooms.
+- [x] ==1== Beg mum to repair my jeans and alter my chinos.
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
