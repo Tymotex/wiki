@@ -1555,7 +1555,6 @@ Compiling the above with `g++ -o main main.cc foo.cc` and it just works.
 - Still can’t fully understand `const`.
     - I think I’m really confused with combinations of qualifiers: static, const, constexpr in a class definition and outside of it, and whether you can initialise the member/variable when declared or if it must be defined in the .cc file.
     Could list out all possibilities.
-- regular array literal vs using std::array
 - [https://www.google.com/search?q=references+as+members&oq=references+as+members&aqs=chrome..69i57.4024j0j7&sourceid=chrome&ie=UTF-8](https://www.google.com/search?q=references+as+members&oq=references+as+members&aqs=chrome..69i57.4024j0j7&sourceid=chrome&ie=UTF-8)
 
 
@@ -1736,3 +1735,4 @@ Some simple Q-and-A notes to be used as flashcards.
 ## Questions
 Some questions I have that are answered:
 - Why use functors over methods? From what I know, the main purpose of functors is to act as stateful functions. Methods can clearly accomplish the same purpose.
+- Why use regular array literal with `[]` vs using `std::array`?
