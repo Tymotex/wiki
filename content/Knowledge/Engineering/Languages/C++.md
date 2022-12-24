@@ -1476,46 +1476,45 @@ int main() {
 # Old Notes
 
 ### Initializer List [TODO]
-- `std::initializer_list<T>` — seems like it allows an object to be initialised using curly brace syntax and has
-    NOT TO BE CONFUSED WITH ‘Member initialiser lists’ used in constructors to initialise its fields.
-    Apparently, an instance of std::initializer_list<...> is automatically constructed when:
-    1. `{}` is used to construct a new object: `Person person{"Tim", "Zhang"}`
-         This will call the constructor of signature `Person(std::initializer_list<string> l) {...}` **if it exists**. If such a constructor doesn't exist, it will look for `Person(string firstName, string lastName) { ... }`. So basically, it prefers invoking constructors that take in `std::initializer_list` but it will silently fall back to direct invocation if that fails.
-    2. `{}` is used on the RHS of an assignment: `vector<int> vec = { 1, 2, 4 };`
-    3. `{}` is bound to `auto`. E.g.
-        
-        ```cpp
-        for (auto i : { 2, 5, 7 }) {
-            cout << i << endl;
-        }
-        ```
-        
-    
-    Note: `std::initializer_list` is an iterable.
-    
-    For some reason, you cannot subscript an instance of std::initializer_list like you would a vector or array ([SO discussion](https://stackoverflow.com/questions/17787394/why-doesnt-stdinitializer-list-provide-a-subscript-operator)). It seems that it’s just not a desired enough use case?
-    
-    [**Notes from cplusplus.com](https://www.cplusplus.com/reference/initializer_list/initializer_list/):**
-    
-    The compiler automatically converts { ... } to objects of type std::initializer_list. For example: 
-    
+Apparently, an instance of std::initializer_list<...> is automatically constructed when:
+1. `{}` is used to construct a new object: `Person person{"Tim", "Zhang"}`
+     This will call the constructor of signature `Person(std::initializer_list<string> l) {...}` **if it exists**. If such a constructor doesn't exist, it will look for `Person(string firstName, string lastName) { ... }`. So basically, it prefers invoking constructors that take in `std::initializer_list` but it will silently fall back to direct invocation if that fails.
+2. `{}` is used on the RHS of an assignment: `vector<int> vec = { 1, 2, 4 };`
+3. `{}` is bound to `auto`. E.g.
     ```cpp
-    auto il = { 10, 20, 30 };  // the type of il is an initializer_list
+    for (auto i : { 2, 5, 7 }) cout << i << endl;
     ```
-    
-    Constructors taking only one argument of this type are a special kind of constructor, called *initializer-list constructor*. Initializer-list constructors take precedence over other constructors when the initializer-list constructor syntax is used:
-    
-    ```cpp
-    struct myclass {
-    	  myclass (int,int);
-    	  myclass (initializer_list<int>);
-    	  /* definitions ... */
-    };
-    
-    myclass foo {10,20};  // calls initializer_list ctor
-    myclass bar (10,20);  // calls first constructor
-    ```
-    
+
+It's not possible to implement your own `std::initializer_list` because 
+https://stackoverflow.com/questions/18164353/implementation-of-stdinitializer-list
+
+
+
+Note: `std::initializer_list` is an iterable.
+
+For some reason, you cannot subscript an instance of std::initializer_list like you would a vector or array ([SO discussion](https://stackoverflow.com/questions/17787394/why-doesnt-stdinitializer-list-provide-a-subscript-operator)). It seems that it’s just not a desired enough use case?
+
+[**Notes from cplusplus.com](https://www.cplusplus.com/reference/initializer_list/initializer_list/):**
+
+The compiler automatically converts { ... } to objects of type std::initializer_list. For example: 
+
+```cpp
+auto il = { 10, 20, 30 };  // the type of il is an initializer_list
+```
+
+Constructors taking only one argument of this type are a special kind of constructor, called *initializer-list constructor*. Initializer-list constructors take precedence over other constructors when the initializer-list constructor syntax is used:
+
+```cpp
+struct myclass {
+      myclass (int,int);
+      myclass (initializer_list<int>);
+      /* definitions ... */
+};
+
+myclass foo {10,20};  // calls initializer_list ctor
+myclass bar (10,20);  // calls first constructor
+```
+
 
 ### Extern [TODO]
 - `extern` keyword
