@@ -4,6 +4,13 @@ title: Stoicism
 
 Stoicism is a life philosophy concerned with how to flourish as human beings, rationally.
 
+There are 4 fundamental virtues.
+1. Justice — doing the right thing.
+    - Marcus Aurelius considerd this "the source of all the other virtues."
+2. Prudence — 
+3. Courage — 
+4. Temperance — 
+
 ## Getting Started
 Start with reading the work by the ancients:
 - Meditations — Marcus Aurelius
