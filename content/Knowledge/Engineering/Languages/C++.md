@@ -1180,6 +1180,36 @@ int main() {
 }
 ```
 
+### Initialiser List
+`std::initializer_list` is a special class whose objects are used to pass around a sequence of data using curly braces `{}` in a readable, intuitive way.
+- `std::initializer_list` is an *iterable*.
+- For some reason, you cannot subscript an instance of `std::initializer_list` like you would a vector or array ([SO discussion](https://stackoverflow.com/questions/17787394/why-doesnt-stdinitializer-list-provide-a-subscript-operator)).
+
+The compiler automatically converts `{ ... }` to an instantiation of `std::initializer_list` in these situations:
+1. `{}` is used to construct a new object: `Person person{"Tim", "Zhang"}`
+     This will call the constructor of signature `Person(std::initializer_list<string> l) {...}` **if it exists**. If such a constructor doesn't exist, it will look for `Person(string firstName, string lastName) { ... }`. So basically, it prefers invoking constructors that take in `std::initializer_list` but it will silently fall back to direct invocation if that fails.
+    - Constructors taking only one argument of this type are a special kind of constructor, called *initialiser-list constructor*.
+    ```cpp
+    struct Foo {
+        Foo(int,int) { ... };
+        Foo(initializer_list<int>) { ... };
+    };
+    
+    Foo foo {10,20};  // Calls the initialiser-list constructor. Calls `Foo(int, int)` if it doesn't exist.
+    Foo bar (10,20);  // Calls `Foo(int, int)`.
+    ```
+2. `{}` is used on the RHS of an assignment: `vector<int> vec = { 1, 2, 4 };`
+3. `{}` is bound to `auto`. E.g.
+    ```cpp
+    for (auto i : { 2, 5, 7 })    // `std::initializer_list` is an iterable.
+        cout << i << endl;   
+    ```
+
+Interesting questions:
+- [It's not possible](https://stackoverflow.com/questions/18164353/implementation-of-stdinitializer-list) to implement your own `std::initializer_list`. It's coupled to the language standard and the logic of the compiler, which you can't recreate through your own class.
+- [Why isn't `std::initializer_list` built-in?](https://stackoverflow.com/questions/15198807/why-isnt-stdinitializer-list-a-language-built-in)
+
+
 ## Random C++ Features
 Smaller but important C++ details.
 
@@ -1472,89 +1502,41 @@ int main() {
 
 ### Extern
 From what I understand, `extern int foo`  is basically saying "trust me compiler, there's an int called foo that is defined somewhere." 
+```cpp
+// main.cc
+#include <iostream>
 
+int main() {
+    // `foo` exists, but its value is defined in some other file. Trust me, compiler.
+    extern int foo;
+
+    std::cout << foo << "\n";
+    return 0;
+}
+
+// foo.cc — there is literally just this one line in this file.
+int foo = 42;    
+```
+Compiling the above with `g++ -o main main.cc foo.cc` and it just works.
 
 ---
 # Old Notes
-
-### Initialiser List
-- `std::initializer_list` is an *iterable*.
-- For some reason, you cannot subscript an instance of `std::initializer_list` like you would a vector or array ([SO discussion](https://stackoverflow.com/questions/17787394/why-doesnt-stdinitializer-list-provide-a-subscript-operator)).
-
-The compiler automatically converts `{ ... }` to an instantiation of `std::initializer_list` in these situations:
-1. `{}` is used to construct a new object: `Person person{"Tim", "Zhang"}`
-     This will call the constructor of signature `Person(std::initializer_list<string> l) {...}` **if it exists**. If such a constructor doesn't exist, it will look for `Person(string firstName, string lastName) { ... }`. So basically, it prefers invoking constructors that take in `std::initializer_list` but it will silently fall back to direct invocation if that fails.
-    - Constructors taking only one argument of this type are a special kind of constructor, called *initialiser-list constructor*.
+- Iterators
+    - To support range-based for loops, your class has to implement the `begin()` and `end()` methods and make them return an iterator.
     ```cpp
-    struct Foo {
-        Foo(int,int) { ... };
-        Foo(initializer_list<int>) { ... };
-    };
+    std::vector<int> values = {1, 2, 3};
     
-    Foo foo {10,20};  // Calls the initialiser-list constructor. Calls `Foo(int, int)` if it doesn't exist.
-    Foo bar (10,20);  // Calls `Foo(int, int)`.
-    ```
-2. `{}` is used on the RHS of an assignment: `vector<int> vec = { 1, 2, 4 };`
-3. `{}` is bound to `auto`. E.g.
-    ```cpp
-    for (auto i : { 2, 5, 7 })    // `std::initializer_list` is an iterable.
-        cout << i << endl;   
-    ```
-
-Interesting questions:
-- [It's not possible](https://stackoverflow.com/questions/18164353/implementation-of-stdinitializer-list) to implement your own `std::initializer_list`. It's coupled to the language standard and the logic of the compiler, which you can't recreate through your own class.
-- [Why isn't `std::initializer_list` built-in?](https://stackoverflow.com/questions/15198807/why-isnt-stdinitializer-list-a-language-built-in)
-
-### Templates
-- Templates
-    - They’re quite similar to generics in managed languages like Java or C#, but they’re much more powerful. A template is basically you getting the compiler to write code for you, based on a couple rules.
-        - You can kind of think of template functions as things that are created on demand — kind of like a code generator. If there are no calls to it, then it actually doesn’t exist after compilation. You could leave syntax errors inside template functions that aren’t called and the compiler just ignores them entirely (but this is compiler-dependent)!
-        - Some companies literally ban the use of templates in their source code. It’s because overusing templates can make the code very unreadable. There’s a delicate tradeoff between having to do manual, repetitive coding and accessing the powerful abstracted-away code-generation magic that templates offer
-        - *Metaprogramming* is basically about when a program has knowledge of itself and can manipulate itself.
-            - C#’s reflection feature is a form of metaprogramming (where it can examine its own static types)
-            - C++ gives us template metaprogramming, where the templates you program are used by the compiler to generate more source code.
-
-- Copy elision — the compiler is ‘*allowed*’ to *elide* copies where results are “as if” copies were made. Ie. the compiler can decide to skip the copy/move construction of an object. Return value optimisation (RVO) is one such instance.
-- Switch-case statements in C++ are a bit different. They’re like this? (They have curly braces around the cases)
+    // Equivalently
+    for (std::vector<int>::iterator it = values.begin(); it != values.end(); it++) {
+            cout << *it << endl;
+    }
     
-    ```cpp
-    switch (tag) {
-        case 1: { 
-            // ...
-            break;
-        }
-        case 2: {  
-            // ...
-            break;
-        }
-        case 3: {  
-            // ...
-            break;
-        }
+    // Syntactic sugar for the above
+    for (int value : values) {
+            cout << value << endl;
     }
     ```
-    
-- Iterators
-    - It’s up to the implementation to define what iteration means. It’s kind of like operator overloading, you could make the ++ operator do literally anything.
-        - To support range-based for loops, your class has to implement the `begin()` and `end()` methods and make them return an iterator
-        
-        ```cpp
-        std::vector<int> values = {1, 2, 3};
-        
-        // Equivalently
-        for (std::vector<int>::iterator it = values.begin(); it != values.end(); it++) {
-        		cout << *it << endl;
-        }
-        
-        // Syntactic sugar for the above
-        for (int value : values) {
-        		cout << value << endl;
-        }
-        ```
-        
-        - end() isn’t the last element, it’s one beyond the last element, meaning it’s an invalid iterator
-        - Should you always use range-based for loops?
-            - In general yes, but with exceptions. Eg. you should not use it when you are erasing values, inserting something into the middle of something, etc., basically anytime you need to manipulate the position of the iterator, you’d have to fall back to the ugly for loop.
+        - end() isn’t the last element, it’s points one position beyond the last element.
     - Looping with indexes vs iterators
         - Indexes work for arrays, vectors, etc. but for other data structures like sets, you have no choice but to use iterators .
     - const_iterator is for read-only iteration — making sure you don’t mutate the collection.
@@ -1805,7 +1787,10 @@ Some simple Q-and-A notes to be used as flashcards.
 - What's the difference between plain enums and enum classes? Which one should you generally prefer?
 - What is the `extern` keyword in C++?
 - What is the type of `foo` here? `auto foo = { 10, 20, 30 };`
-
+- What's different about switch-case statements in C++ compared to other languages?
+    - You have to wrap each case in curly braces. E.g. `case foo: { ... }`.
+- Should you always use range-based for loops?
+    - In general yes, but with exceptions. Eg. you should not use it when you are erasing values, inserting something into the middle of something, etc., basically anytime you need to manipulate the position of the iterator, you’d have to fall back to the ugly for loop.
 
 ## Questions
 Some questions I have that are answered:

@@ -18,6 +18,7 @@ kanban-plugin: basic
 - [ ] ==1== Do your Google onboarding.
 - [ ] Bubbler scheduler.
 - [ ] Clean your rooms.
+- [ ] Ask mum if dayi would like origami.
 
 
 ## **Sunday** *[[Journal/2022-12-25|2022-12-25]]* (6)
