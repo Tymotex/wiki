@@ -23,25 +23,25 @@ Following these principles makes my life meaningful.
 These are the people I aspire to be like. The attribute I venerate in each of these people is their mental toughness and temperance.
 
 ### Marcus Aurelius
-![[Journal/assets/marcus-aurelius.png|250]]
+![[Journal/assets/marcus-aurelius.png|200]]
+> "Waste no more time arguing about what a good man should be. Be one." — Marcus Aurelius.
 
 ### Theodore Roosevelt
+![[Journal/assets/theodore-roosevelt.png|200]]
 
 
 ### David Goggins
 ![[Journal/assets/david-goggins.png|200]]
-
+Goggins proves to me that it's possible to push yourself through what seems like insurmountable pain. Knowing that a person like him exists has made think about how much of a little bitch I really am. I've become aware and disgusted towards my weaker self because of him, and it has helped me to bring out a superior man out of me.
 
 ### Elon Musk
-![[Journal/assets/elon-musk.png|300]]
+![[Journal/assets/elon-musk.png|200]]
+
 
 ### Lex Fridman
-![[Journal/assets/lex-fridman.png|300]]
+![[Journal/assets/lex-fridman.png|200]]
+
 
 ### Jocko Willink
-
-
-### Lou Gehrig
-
-
+![[Journal/assets/jocko-willink.png|200]]
 
