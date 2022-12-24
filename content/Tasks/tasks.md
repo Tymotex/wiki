@@ -6,8 +6,9 @@ kanban-plugin: basic
 
 ## **Saturday** *[[Journal/2022-12-24|2022-12-24]]* (6)
 
-- [ ] 🏆 Purpose
-- [ ] **(60 mins)** Clean out the entirety of 'Old Notes'.
+- [x] 🏆 Purpose: C++, then everything else.
+- [x] **(60 mins)** Clean out the entirety of 'Old Notes'.
+- [ ] **(45 mins)** Finish all notes on iterators and implement an iterator yourself.
 - [ ] ==7== **(1 hour)**<br>Clean up book notes and summarise How Not to Die.
 - [ ] ==1== Beg mum to repair my jeans and alter my chinos.
 - [ ] ==1== Start reading stoicism FAQ: https://www.reddit.com/r/Stoicism/wiki/intro_faq/#wiki_why_study_stoicism.3F

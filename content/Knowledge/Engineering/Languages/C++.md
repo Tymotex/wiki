@@ -1231,6 +1231,12 @@ for (int value : values) {
     - end() isn’t the last element, it’s points one position beyond the last element.
 - `const_iterator` is for read-only iteration — making sure you don’t mutate the collection.
 
+Iterators can be moved forwards and backwards with `++` and `--`, similar to pointer arithmetic.
+
+
+
+
+
 ## Random C++ Features
 Smaller but important C++ details.
 
