@@ -1566,7 +1566,7 @@ int main() {
 ### Compile-Time If [TODO]
 `if constexpr() { ... }`. C++17.
 
-### Volatile
+### Volatile [TODO]
 
 
 ### Extern
@@ -1587,6 +1587,9 @@ int main() {
 int foo = 42;    
 ```
 Compiling the above with `g++ -o main main.cc foo.cc` and it just works.
+
+### Fold Expressions [TODO]
+
 
 # Appendix:
 All the notes under this section are meant to be topics or details you don’t need to care much about to program effectively with C++.
