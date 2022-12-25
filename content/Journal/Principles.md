@@ -26,12 +26,6 @@ These are the people I aspire to be like. The attribute I venerate in each of th
 ![[Journal/assets/marcus-aurelius.png|200]]
 > "Waste no more time arguing about what a good man should be. Be one." — Marcus Aurelius.
 
-### Theodore Roosevelt
-![[Journal/assets/theodore-roosevelt.png|200]]
-This guy is a shining example in all the areas of life I care about: work, learning, integrity, discipline. Even during his presidency, he exercises intensely daily and for several hours. He wrote somewhere around 40 books. He basically 100%-ed life.
-
-He got shot on-stage for a speech one time, survived by sheer chance, and still spoke for 84 minutes afterwards. That kind of equanimity and stubbornly stoic character is one I deeply admire and hope to emulate in my life.
-
 ### David Goggins
 ![[Journal/assets/david-goggins.png|200]]
 Goggins proves to me that it's possible to push yourself through what seems like insurmountable pain. Knowing that a person like him exists has made think about how much of a little bitch I really am. I've become aware and disgusted towards my weaker self because of him, and it has helped me to bring out a superior man out of me.
@@ -54,3 +48,9 @@ Lex is a person, I discovered, whose attitude towards work, life and love resona
 Jocko clearly fits into the archetype of a stoic hypermasculine soldier, but what I admire is his humility, open-mindedness and unwavering discipline. Contrary to his 'meathead' appearance and demeanour, he is intelligent, well-read and has a degree of emotional awareness rarely seen in people. 
 
 This is a man that always shows up early and always takes ownership. If he's told you will do A, he will do A, uncompromisingly.
+
+### Theodore Roosevelt
+![[Journal/assets/theodore-roosevelt.png|200]]
+This guy is a shining example in all the areas of life I care about: work, learning, integrity, discipline. Even during his presidency, he exercises intensely daily and for several hours. He wrote somewhere around 40 books. He basically 100%-ed life.
+
+He got shot on-stage for a speech one time, survived by sheer chance, and still spoke for 84 minutes afterwards. That kind of equanimity and stubbornly stoic character is one I deeply admire and hope to emulate in my life.
