@@ -2,7 +2,9 @@
 title: C++ Standard Library
 ---
 
-This section contains notes about some of the most useful things in the `std` namespace. [C++ Standard Library headers](https://en.cppreference.com/w/cpp/header)
+This section contains notes about some of the most useful things in the `std` namespace. The C++ standard library also contains the entire C standard library, each available through `<c*>`, e.g. `<cstdlib>`, which in C is equivalent to `<stdlib.h>`, and `<cmath>`, which in C is equivalent to `<math.h>`.
+
+See all [C++ Standard Library headers](https://en.cppreference.com/w/cpp/header).
 
 ## IO
 - Printing to a specific number of decimal points
@@ -427,13 +429,11 @@ Note: using raw string literals, $\texttt{R"(...)"}$, makes writing regex patter
 
 ## Chrono [TODO]
 
-# C++ Data Structures & Algorithms:
+# STL
+The STL (standard template library) contains highly efficient generic data structures and algorithms. The STL encompasses many headers like: `<array>`, `<stack>`, `<vector>`, etc.
 
-This is a summary of the highly efficient general-purpose data structures and algorithms provided by the standard library. Refer to this section for interview preparation and learning competitive programming with C++.  
-
-## Vector:
-
-'Vector' is a misleading name. It should be called '[ArrayList](https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html)' or 'DynamicArray'. It is implemented with an array under the hood.
+## vector
+'Vector' isn't the best name. It should be called '[ArrayList](https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html)' or 'DynamicArray'. It is implemented with an array under the hood.
 
 - To resize the underlying array, a larger memory block is allocated and all items in the original array are copied over to the new larger one. This is an $O(n)$ operation
 - Vectors consume more memory than arrays, but offers methods for runtime resizing
