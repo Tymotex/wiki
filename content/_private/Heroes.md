@@ -11,6 +11,7 @@ These are the people I aspire to be like. The attribute I venerate in each of th
 
 His first act as emperor was to transfer a significant part of his power to Lucius Verus, his adoptive brother.
 
+Some tragedies during his reign:
 - Floods.
 - Invasion by the Parthian Empire.
 - Antonine plague.
