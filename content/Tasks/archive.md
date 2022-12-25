@@ -729,12 +729,22 @@ kanban-plugin: basic
 - [x] Clean your rooms.
 - [x] ==1== Beg mum to repair my jeans and alter my chinos.
 
+## **Sunday** *[[Journal/2022-12-25|2022-12-25]]* (6)
+
+- [x] 🏆 Purpose: reboot, C++
+- [x] ==3== Write about your heroes.
+- [x] ==2== Do your Google onboarding.
+- [x] ==1== Bubbler scheduler.
+- [x] ==1== Ask mum if dayi would like origami.
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
