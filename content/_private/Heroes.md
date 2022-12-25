@@ -9,6 +9,13 @@ These are the people I aspire to be like. The attribute I venerate in each of th
 ![[Journal/assets/marcus-aurelius.png|200]]
 > "Waste no more time arguing about what a good man should be. Be one." — Marcus Aurelius.
 
+His first act as emperor was to transfer a significant part of his power to Lucius Verus, his adoptive brother.
+
+- Floods.
+- Invasion by the Parthian Empire.
+- Antonine plague.
+- Germanic tribes invading from the north.
+
 ### David Goggins
 ![[Journal/assets/david-goggins.png|200]]
 Goggins proves to me that it's possible to push yourself through what seems like insurmountable pain. Knowing that a person like him exists has made think about how much of a little bitch I really am. I've become aware and disgusted towards my weaker self because of him, and it has helped me to bring out a superior man out of me.
