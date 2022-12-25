@@ -15,6 +15,7 @@ His first act as emperor was to transfer a significant part of his power to Luci
 - Invasion by the Parthian Empire.
 - Antonine plague.
 - Germanic tribes invading from the north.
+- Betrayal by close companion Avidius Cassius.
 
 ### David Goggins
 ![[Journal/assets/david-goggins.png|200]]
