@@ -236,17 +236,20 @@ for (const std::filesystem::directory_entry& each_file : std::filesystem::direct
 ## Smart Pointers [TODO]
 `<memory>` provides two smart pointers: `unique_ptr` and `shared_ptr`, for managing objects allocated on the heap.
 
+Use smart pointers whenever you need *pointer semantics*. The main time you do is when you want to make use of a polymorphic object. You *do not* need pointer semantics when returning things from a function because that will be handled by copy and move (furthermore, copy elision ensures no unnecessary copies).
+
 ### `<unique_ptr>`
 By giving a pointer to `unique_ptr`, we can have confidence that when that `unique_ptr` goes out of scope, the object it tracks gets deallocated in the destructor of `unique_ptr`.
 - It's recommended to use `make_unique<Foo>(...).` instead of `unique_ptr<T>(new Foo(...))`, mainly so you can completely eliminate the usage of naked `new` and `delete`s.
 - Since `unique_ptr` represents sole ownership, its copy constructor and assignment operation are disabled. You can use move semantics to transfer the `unique_ptr` from one variable to another.
-- You can pass and return `unique_ptr`s in functions. Note that no copying actually happens when passing between functions — only implicit moves are happening.
+- You can pass and return `unique_ptr`s in functions (by value).
     ```cpp
     unique_ptr<int> make_foo() {
         return make_unique<int>(42);
     }
     ```
-    - Why is this allowed when the copy operation is disabled?
+    - [Wait, why is this allowed when the copy operation is disabled?](https://stackoverflow.com/questions/4316727/returning-unique-ptr-from-functions) Basically, it is *guaranteed* for either copy elision to happen *or* for `std::move` to be implicitly called on the return value. Either way, the caller of `make_foo` is guaranteed sole ownership.
+      > "The part of the Standard blessing the RVO goes on to say that if the conditions for the RVO are met, but compilers choose not to perform copy elision, the object being returned must be treated as an rvalue. In effect, the Standard requires that when the RVO is permitted, either copy elision takes place or `std::move` is implicitly applied to local objects being returned." — Scott Meyers.
 
 > "The code using `unique_ptr` will be exactly as efficient as code using the raw pointers correctly." — Bjarne Stroustrup, A Tour of C++.
 

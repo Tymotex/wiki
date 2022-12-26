@@ -968,7 +968,11 @@ Foo foo;
 Foo bar(std::move(foo));   // Read this like: "moving foo's contents to bar."
 ```
 
-> `std::move` doesn't actually move anything, which is a bit misleading. It just converts an lvalue to rvalue reference ([technically an xvalue](https://en.cppreference.com/w/cpp/utility/move)) so as to invoke the move constructor. It has zero side effects and behaves very much like a typecast. The actual 'moving' itself is done by the move constructor.
+Once you've used `move(foo)`, you mustn't use `foo` again. Because it's error prone, Bjarne recommends to use it sparingly and only when t
+
+> `std::move` doesn't actually move anything, which is a bit misleading. It just converts an lvalue to rvalue reference so as to invoke the move constructor. It has zero side effects and behaves very much like a typecast. The actual 'moving' itself is done by the move constructor.
+> 
+> A less mislead name for `std::move` would have been `rvalue_cast`, according to Bjarne.
 > 
 > `std::move(foo)` basically says "you are now allowed to steal resources from `foo`".
 
@@ -1741,7 +1745,7 @@ Some simple Q-and-A notes to be used as flashcards.
 - Write a valid function signature for: a copy constructor, copy assignment operator overload, move constructor and move assignment operator overload.
     - `Foo(const Foo& other)`, `Foo& operator=(const Foo& other)`, `Foo(Foo&& other)`, `Foo& operator=(Foo&& other)`.
 - What is std::move?
-    - It's a function you use to help you invoke the move constructor or the move assignment operator. It converts an lvalue to an rvalue reference (well, technically an xvalue, I think). It doesn't do any actual moving itself.
+    - It's a function you use to help you invoke the move constructor or the move assignment operator. It converts an lvalue to an rvalue reference. It doesn't do any actual moving itself.
 - What's `thread_local`?
 - How do you define a function template?
 - How do you define a class template? How do you define the methods of a class template outside of the class definition?
