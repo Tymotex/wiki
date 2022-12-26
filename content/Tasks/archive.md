@@ -737,12 +737,20 @@ kanban-plugin: basic
 - [x] ==1== Bubbler scheduler.
 - [x] ==1== Ask mum if dayi would like origami.
 
+## **Monday** *[[Journal/2022-12-26|2022-12-26]]* (6)
+
+- [x] 🏆 Purpose: fucking Figma, then SRE book, then Meditations.
+- [x] **(2 hours)** Finish first draft of Figma prototype for math website.
+- [x] ==4== Write your goals for next year (and the remainder of this year).
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
