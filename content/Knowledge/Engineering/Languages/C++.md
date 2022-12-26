@@ -968,7 +968,7 @@ Foo foo;
 Foo bar(std::move(foo));   // Read this like: "moving foo's contents to bar."
 ```
 
-Once you've used `move(foo)`, you mustn't use `foo` again. Because it's error prone, Bjarne recommends to use it sparingly and only when t
+Once you've used `move(foo)`, you mustn't use `foo` again. Because it's error prone, Bjarne recommends to use it sparingly and only when the performance improvements justify it.
 
 > `std::move` doesn't actually move anything, which is a bit misleading. It just converts an lvalue to rvalue reference so as to invoke the move constructor. It has zero side effects and behaves very much like a typecast. The actual 'moving' itself is done by the move constructor.
 > 
