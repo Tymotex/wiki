@@ -20,3 +20,7 @@ Unformulated goals:
     - Ask out someone and go on at least 1 date.
 - **Health**
     - End the year between 76kg (24.5 BMI) to 80kg (25.8 BMI). The 24.5 BMI is apparently most attractive according to women while 25.8 BMI is most aesthetic according to men.
+    - Squat 150kg.
+    - Deadlift 160kg.
+    - Bench 120kg.
+    - Strict barbell curl 45kg.
