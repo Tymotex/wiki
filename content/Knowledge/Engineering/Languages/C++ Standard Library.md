@@ -449,20 +449,21 @@ Note: using raw string literals, $\texttt{R"(...)"}$, makes writing regex patter
 # STL
 The STL (standard template library) contains highly efficient generic data structures and algorithms. The STL encompasses many headers like: `<array>`, `<stack>`, `<vector>`, etc.
 
-## vector
+## `<vector>`
 'Vector' isn't the best name. It should be called '[ArrayList](https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html)' or 'DynamicArray'. It is implemented with an array under the hood.
 
-- To resize the underlying array, a larger memory block is allocated and all items in the original array are copied over to the new larger one. This is an $O(n)$ operation
+Details:
+- To resize the underlying array, a larger memory block is allocated and all items in the original array are copied over to the new larger one. This is an $O(n)$ operation.
 - Vectors consume more memory than arrays, but offers methods for runtime resizing
 
 ```cpp
 #include <vector>
 
-// ***Initialisation***
+// Initialisation
 vector<int> a = { 1, 2, 3 };    
 
-// ***Main methods***
-a.**insert**(posIter, b)           // **O(1)** - Inserts **b** at **posIter**   
+// Main methods
+a.**insert**(posIter, b)           // O(1) - Inserts b at posIter
 a.**insert**(posIter, it1, it2)    //        Inserts elements from **it1** to **it2** at **posIter**
 
 a.**erase**(posIter)               // Deletes item at **posIter**
