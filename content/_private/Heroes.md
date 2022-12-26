@@ -46,3 +46,9 @@ This is a man that always shows up early and always takes ownership. If he's tol
 This guy is a shining example in all the areas of life I care about: work, learning, integrity, discipline. Even during his presidency, he exercises intensely daily and for several hours. He wrote somewhere around 40 books. He basically 100%-ed life.
 
 He got shot on-stage for a speech one time, survived by sheer chance, and still spoke for 84 minutes afterwards. That kind of equanimity and stubbornly stoic character is one I deeply admire and hope to emulate in my life.
+
+## Other Heroes
+- Sam Harris — for his eloquence, intelligence and calmness.
+- Joe Rogan — for his open-mindedness and celebration of other people.
+- Bjarne Stroustrup — for his devotion to computer science and skill in programming.
+- Jordan Peterson — for his eloquence, integrity and guidance during testing times.
