@@ -2,9 +2,52 @@
 title: C++ Standard Library
 ---
 
-This section contains notes about some of the most useful things in the `std` namespace. The C++ standard library also contains the entire C standard library, each available through `<c*>`, e.g. `<cstdlib>`, which in C is equivalent to `<stdlib.h>`, and `<cmath>`, which in C is equivalent to `<math.h>`.
+This section contains notes about some of the most useful things in the `std` namespace. The C++ standard library also contains the entire C standard library, each available through `<c>`, e.g. `<cstdlib>`, which in C is equivalent to `<stdlib.h>`, and `<cmath>`, which in C is equivalent to `<math.h>`.
 
 See all [C++ Standard Library headers](https://en.cppreference.com/w/cpp/header).
+
+## Strings
+The set of methods available to the `std::string` class is similar to the methods available to `std::vector`, plus a few more special string manipulation methods and operator support like `+`, `<<`, `>>`. 
+
+```cpp
+
+// Main operations
+s1 + s2              // Concatentation
+s1.append(s2)        // Alternative to + operator
+
+// TODO: https://www.cplusplus.com/reference/string/string/compare/
+s1.compare(s2)
+s1.compare(s2, pos
+
+s.substr(startPos, runLen)   // Returns the substring from inclusive startPos onwards for runLen characters
+
+//TODO: more string ops https://www.cplusplus.com/reference/string/string/
+s.find
+s.find_first_of
+s.find_first_not_of
+s.find_last_of
+s.find_last_not_of
+>
+// Others
+s.copy()
+
+char c;
+std::isdigit(c)    // Returns true if the string consists of a valid digit.
+std::isalnum(c)
+std::isspace(c)
+```
+
+Raw Strings:
+
+There are raw string literals just like in Python where everything inside the string is treated as raw characters, not special characters. This means you won’t have to escape any special characters with backslash and they’ll all lose their meaning. This is especially useful when defining strings containing regex patterns which contain a bunch of backslashes.
+
+The format for defining a raw string literal is: $\texttt{R"(...)"}$. 
+
+```cpp
+std::string my_raw_str = R"(my raw string)";   // → "my raw string"
+```
+
+
 
 ## IO
 - Printing to a specific number of decimal points
@@ -29,7 +72,7 @@ See all [C++ Standard Library headers](https://en.cppreference.com/w/cpp/header)
 
 ## Strings [TODO]
 
-- String formatting with `**std::stringstream**` from `<sstream>`
+- String formatting with `std::stringstream` from `<sstream>`
     
     ```cpp
     std::stringstream fmt;
@@ -56,7 +99,7 @@ In computer science, a stream is an abstraction that represents a sequence of da
 
 ![Untitled](Knowledge/Engineering/Languages/assets/Untitled%206.png)
 
-### **`ostream`**
+### `ostream`
 
 An `ostream` serialises typed values as bytes and dumps them somewhere. 
 
@@ -116,7 +159,7 @@ An `istream` takes in bytes and converts it to typed values.
 
 ---
 
-- **Formatted extraction:**
+- Formatted extraction:
 The type of the RHS of the ‘get from’ operator determines what input is accepted
     
     ```cpp
@@ -135,16 +178,16 @@ The type of the RHS of the ‘get from’ operator determines what input is acce
         
     - The user input can be space-separated, new-line-separated or tab-separated integers. There can be any number of ' ', '\n', '\t' characters between the integers
     - If what the user types in cannot be casted to the expected type, nothing happens. The program continues execution and the variable ends up being uninitialised
-- **Unformatted line extraction with** `**std::getline**`
+- Unformatted line extraction with `std::getline`
 When you want to read an entire line up to and not including the newline character, you should use `getline` rather than directly read from `cin` (which always considers space characters ' ', '\n', '\t' to be terminating)
     
     ```cpp
     string msg;
     std::cin >> msg;
     
-    // If the user types: **hello world**, then msg will only be "**hello**".
-    // If you want to capture the entire line instead, use ***getline***
-    std::**getline**(cin, msg);
+    // If the user types: hello world, then msg will only be "hello".
+    // If you want to capture the entire line instead, use getline
+    std::getline(cin, msg);
     ```
     
 - Common pitfall: when you do formatted execution followed by unformatted extraction, you’ll skip over the unformatted extraction. 
@@ -211,15 +254,15 @@ in.eof();      // Returns true if EOF has been reached.
 String streams let you treat instances of `std::string` as stream objects, letting you work with them in the same way that you’d work with `cin`, `cout` of file streams.
 
 ```cpp
-// You can use `**istringstream**` anywhere you use `**istream**`. You can use this to feed strings to something that expects input.
+// You can use `istringstream` anywhere you use `istream`. You can use this to feed strings to something that expects input.
 std::istringstream str_in("42 12 24");
 int a, b, c;
 str_in >> a >> b >> c;
 
-// Similarly, `**ostringstream**` can substitute for `**ostream**` instances. You can use this to capture output into a string.
+// Similarly, `ostringstream` can substitute for `ostream` instances. You can use this to capture output into a string.
 std::ostringstream str_out;
 str_out << "Hello world";
-std::string extracted = str_out.**str**();
+std::string extracted = str_out.str();
 ```
 
 ## Filesystem
@@ -236,7 +279,7 @@ for (const std::filesystem::directory_entry& each_file : std::filesystem::direct
 ## Smart Pointers [TODO]
 `<memory>` provides two smart pointers: `unique_ptr` and `shared_ptr`, for managing objects allocated on the heap.
 
-Use smart pointers whenever you need *pointer semantics*. The main time you do is when you want to make use of a polymorphic object. You *do not* need pointer semantics when returning things from a function because that will be handled by copy and move (furthermore, copy elision ensures no unnecessary copies).
+Use smart pointers whenever you need pointer semantics. The main time you do is when you want to make use of a polymorphic object. You do not need pointer semantics when returning things from a function because that will be handled by copy and move (furthermore, copy elision ensures no unnecessary copies).
 
 ### `<unique_ptr>`
 By giving a pointer to `unique_ptr`, we can have confidence that when that `unique_ptr` goes out of scope, the object it tracks gets deallocated in the destructor of `unique_ptr`.
@@ -248,28 +291,28 @@ By giving a pointer to `unique_ptr`, we can have confidence that when that `uniq
         return make_unique<int>(42);
     }
     ```
-    - [Wait, why is this allowed when the copy operation is disabled?](https://stackoverflow.com/questions/4316727/returning-unique-ptr-from-functions) Basically, it is *guaranteed* for either copy elision to happen *or* for `std::move` to be implicitly called on the return value. Either way, the caller of `make_foo` is guaranteed sole ownership.
+    - [Wait, why is this allowed when the copy operation is disabled?](https://stackoverflow.com/questions/4316727/returning-unique-ptr-from-functions) Basically, it is guaranteed for either copy elision to happen or for `std::move` to be implicitly called on the return value. Either way, the caller of `make_foo` is guaranteed sole ownership.
       > "The part of the Standard blessing the RVO goes on to say that if the conditions for the RVO are met, but compilers choose not to perform copy elision, the object being returned must be treated as an rvalue. In effect, the Standard requires that when the RVO is permitted, either copy elision takes place or `std::move` is implicitly applied to local objects being returned." — Scott Meyers.
 
 > "The code using `unique_ptr` will be exactly as efficient as code using the raw pointers correctly." — Bjarne Stroustrup, A Tour of C++.
 
 ### `<shared_ptr>`
-Similar to `unique_ptr`, but `shared_ptr`s **get copied instead of moved**. The object held by `shared_ptr` is deleted only when no other `shared_ptr` points at it.
+Similar to `unique_ptr`, but `shared_ptr`s get copied instead of moved. The object held by `shared_ptr` is deleted only when no other `shared_ptr` points at it.
 
 ## Tuple
 
 ```cpp
 // Construct tuples with `std::make_tuple`   
-**std::tuple<string, int>** person("Andrew", 42);
+std::tuple<string, int> person("Andrew", 42);
 
 // Access tuple values with `std::get`. Tuples don't work with the subscript operator [] unfortunately. Reason: https://stackoverflow.com/questions/32606464/why-can-we-not-access-elements-of-a-tuple-by-index.
-cout << **std::get<0>**(person) << endl;
-cout << **std::get<1>**(person) << endl;
+cout << std::get<0>(person) << endl;
+cout << std::get<1>(person) << endl;
 
 // You can also construct tuples with `std::make_tuple`. This is better
 // when you want to pass a tuple r-value to a function because `make_tuple`
 // can infer types. See: https://stackoverflow.com/questions/34180636/what-is-the-reason-for-stdmake-tuple
-std::tuple<string, int> person = **std::make_tuple**("Andrew", 42);
+std::tuple<string, int> person = std::make_tuple("Andrew", 42);
 ```
 
 ## Multithreading
@@ -345,9 +388,9 @@ unlock()
     #include <iostream>
     #include <thread>
     
-    **static int count = 0;**    // This is a shared resource that parallel threads will try to read/write to
+    static int count = 0;    // This is a shared resource that parallel threads will try to read/write to
     
-    void **IncrementCount**() {
+    void IncrementCount() {
         while (count < 100) {
             std::cout << "Thread with ID " << std::this_thread::get_id() 
                       << " sees count as " << count << "\n";
@@ -357,11 +400,11 @@ unlock()
     }
     
     int main() {
-        **std::thread t1(IncrementCount);
-        std::thread t2(IncrementCount);**
+        std::thread t1(IncrementCount);
+        std::thread t2(IncrementCount);
     
-        **t1.join();
-        t2.join();**
+        t1.join();
+        t2.join();
         return 0;
     }
     ```
@@ -381,7 +424,7 @@ unlock()
     Thread with ID 140123013252864 sees count as 91
     ```
     
-    **Solution:**
+    Solution:
     
     ```cpp
     #include <iostream>
@@ -389,15 +432,15 @@ unlock()
     #include <mutex>
     
     static int count = 0;
-    **std::mutex count_mutex;**
+    std::mutex count_mutex;
     
     void IncrementCount() {
         while (count < 100) {
-            **count_mutex.lock()**;
+            count_mutex.lock();
             std::cout << "Thread with ID " << std::this_thread::get_id() 
                       << " sees count as " << count << "\n";
             count++; 
-            **count_mutex.unlock()**;
+            count_mutex.unlock();
         }
         return;
     }
@@ -433,28 +476,26 @@ Note: using raw string literals, $\texttt{R"(...)"}$, makes writing regex patter
 ```cpp
 #include <regex>
 
-**std::regex** pattern(R"()");
-**std::smatch** matches;        // A container for storing std::string matches (capture groups). There are also other containers like std::cmatch for storing string literal matches. 
+std::regex pattern(R"()");
+std::smatch matches;        // A container for storing std::string matches (capture groups). There are also other containers like std::cmatch for storing string literal matches. 
 														// These are all instances of std::match_results and can be indexed with the subscript operator [].
 
-// **═════ Functions ═════**
-**std::regex_match**(haystack, pattern);            // Returns true if matched.
+// ═════ Functions ═════
+std::regex_match(haystack, pattern);            // Returns true if matched.
 
-**std::regex_search**(haystack, matches, pattern);  // Returns true if matched. Populates the std::smatch object with capture group matches that you can extract.
+std::regex_search(haystack, matches, pattern);  // Returns true if matched. Populates the std::smatch object with capture group matches that you can extract.
 		matches[i]                                  // Accesses the i-th match. Note: matches[1] accesses the first match, matches[2] accesses the second match, and so on.
 ```
 
 ## Chrono [TODO]
 
-# STL
+# STL Containers
 The STL (standard template library) contains highly efficient generic data structures and algorithms. The STL encompasses many headers like: `<array>`, `<stack>`, `<vector>`, etc.
 
 ## `<vector>`
 'Vector' isn't the best name. It should be called '[ArrayList](https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html)' or 'DynamicArray'. It is implemented with an array under the hood.
-
-Details:
 - To resize the underlying array, a larger memory block is allocated and all items in the original array are copied over to the new larger one. This is an $O(n)$ operation.
-- Vectors consume more memory than arrays, but offers methods for runtime resizing
+- Vectors consume more memory than arrays, but offers methods for runtime resizing.
 
 ```cpp
 #include <vector>
@@ -463,281 +504,191 @@ Details:
 vector<int> a = { 1, 2, 3 };    
 
 // Main methods
-a.**insert**(posIter, b)           // O(1) - Inserts b at posIter
-a.**insert**(posIter, it1, it2)    //        Inserts elements from **it1** to **it2** at **posIter**
+a.insert(posIter, b)           // O(1) - Inserts b at posIter
+a.insert(posIter, it1, it2)    //        Inserts elements from it1 to it2 at posIter
 
-a.**erase**(posIter)               // Deletes item at **posIter**
-a.**erase**(startIter, endIter)    // Deletes all elements in range from inclusive **startIter** to exclusive **endIter**
+a.erase(posIter)               // Deletes item at posIter
+a.erase(startIter, endIter)    // Deletes all elements in range from inclusive startIter to exclusive endIter
 
-a.**push_back**(b)                 // **O(1)** - Append
-a.**pop_back**()                   // **O(1)** - Pop from end
+a.push_back(b)                 // O(1) - Append
+a.pop_back()                   // O(1) - Pop from end
 
-a.**front**()                      // **O(1)** - Peek front
-a.**back**()                       // **O(1)** - Peek back
+a.front()                      // O(1) - Peek front
+a.back()                       // O(1) - Peek back
 
-a**[**i**]**                           // **O(1)** - Access item at an index (the same way you would for arrays)
-a.**at**(i)                        //        Alternative to []. It throws an exception for out of bounds access
+a[i]                           // O(1) - Access item at an index (the same way you would for arrays)
+a.at(i)                        //        Alternative to []. It throws an exception for out of bounds access
 
-// ***Iterators***
-a.**begin**()               // Iterator starting from first element (index 0)
-a.**end**()                 // Iterator starting from last element
+// Iterators
+a.begin()               // Iterator starting from first element (index 0)
+a.end()                 // Iterator starting from last element
 
-a.**rbegin**()              // Reversed
-a.**rend**()                
+a.rbegin()              // Reversed
+a.rend()                
 
-a.**cbegin**()              // Read-only iterator
-a.**cend**()                
+a.cbegin()              // Read-only iterator
+a.cend()                
 
-// ***Properties***
-a.**size**()
-a.**empty**()
-a.**max_size**()
-a.**capacity**()
-
+// Properties
+a.size()
+a.empty()
+a.max_size()
+a.capacity()
 ```
 
-- Slicing and splicing
-    
-    ```cpp
-    
-    // ***Slicing***
-    template<typename T>
-    vector<T> **slice**(vector<T> vec, int start, int end) {     
-    		// Returns a new vector from inclusive start to exclusive end
-        auto first = vec.cbegin() + start; 
-        auto last = vec.cbegin() + end;
-        vector<T> sliced(first, last);
-        return sliced;
-    }
-    
-    // ***Splicing***
-    vector<int> a = { 1, 2, 3};
-    vector<int> b = { 4, 5 };
-    a.insert(a.begin() + 1, b.begin(), b.end());     // a is now { 1, **4**, **5**, 2, 3 }
-    a.erase(a.begin() + 2, a.begin() + 3);           // a is now { 1, 4, 2, 3 } 
-    ```
-    
+Slicing and splicing:
+```cpp
 
-## Set:
+// Slicing
+template<typename T>
+vector<T> slice(vector<T> vec, int start, int end) {     
+        // Returns a new vector from inclusive start to exclusive end
+    auto first = vec.cbegin() + start; 
+    auto last = vec.cbegin() + end;
+    vector<T> sliced(first, last);
+    return sliced;
+}
 
-### `set`
+// Splicing
+vector<int> a = { 1, 2, 3};
+vector<int> b = { 4, 5 };
+a.insert(a.begin() + 1, b.begin(), b.end());     // a is now { 1, 4, 5, 2, 3 }
+a.erase(a.begin() + 2, a.begin() + 3);           // a is now { 1, 4, 2, 3 } 
+```
 
-Stores elements in ***sorted order*** without duplicates. For most use cases, you probably want to use `unordered_set` instead, which has more favourable time complexities.
+## `<set>`
+Stores elements in sorted order without duplicates. For most use cases, you probably want to use `unordered_set` instead, which has more favourable time complexities.
+- The underlying implementation uses a balanced tree.
 
 ```cpp
-**set<T> s**;
+set<T> s;
 
-s.**insert**(T elem)      // **O(logn)** - Inserts element
-s.**find**(T elem)        // **O(logn)** - Gets an element
-                      //           Returns an iterator which points to the value if it was found, otherwise it points to **s.end()** 
-s.**size**()              // **O(1)**    - Cardinality
+s.insert(T elem)      // O(logn) - Inserts element
+s.find(T elem)        // O(logn) - Gets an element
+                      //           Returns an iterator which points to the value if it was
+                      //           found, otherwise it points to s.end().
+s.size()              // O(1)    - Cardinality.
 ```
 
-- The underlying implementation uses a balanced tree
-
-### `unordered_set`
-
-Same 
-
+## `<unordered_set>`
+Same as `std::set` from `<set>`, just unordered.
 ```cpp
 unordered_set<T> s;
 
-// **CRUD:**
+// CRUD:
 s.insert(T elem)      // O(1) 
 s.find(T elem)        // O(1)
 s.erase()
 
-// **Properties:**
+// Properties:
 s.size()              // O(1)
 s.empty()
 ```
+- Uses a hash table as the underlying data structure.
 
-- Uses a hash table as the underlying data structure
-
-## Map:
-
-### `map`
-
+## `<map>`
+A data structure mapping a set of keys to values. This one maintains order of keys. If this is irrelevant (which it usually is), use `unordered_map` instead.
+- Implemented with a self-balancing binary search tree.
 ```cpp
 map<string, int> m;
 
-// ***Main operations***
-m.insert(pair)      // Takes in **std::pair<keyT, valT>**
+// Main operations
+m.insert(pair)      // Takes in std::pair<keyT, valT>
 m[key] = val        // More straightforward way to add key-value pairs
 m.erase(key)        // Deletes key-value pair by key. Doesn't fail if the key doesn't exist
 
-// ***Iterators***
+// Iterators
 m.begin()
 m.end()
-// ... and all the other ones available to classes like **std::vector**
+// ... and all the other ones available to classes like std::vector
 
-// ***Properties***
+// Properties
 m.size()
 m.max_size()
 m.empty()
 ```
-
-- Usage example
-    
-    ```cpp
-    // ***Adding key-value pairs***
-    map<string, int> frequencies;
-    frequencies["Hello"] = 4;
-    frequencies["World"] = 3;
-    int val = frequencies["World"];
-    
-    // ***Iterating through key-value pairs***
-    for (auto it = frequencies.begin(); it != frequencies.end(); ++it) {
-        cout << it->first << " : " << it->second << endl;
-    }
-    ```
-    
-
----
-
 - There are [multiple ways](https://stackoverflow.com/questions/17172080/insert-vs-emplace-vs-operator-in-c-map) to insert key-value pairs into a map, eg. `insert()`, `[ ]` operator, `emplace()`, etc.
 
-### `unordered_map`
-
-The interface is very similar to `std::map`, however it offers a few more lower-level methods like `bucket_count()`, `load_factor()`, etc.
-
+Usage example:
 ```cpp
+// Adding key-value pairs:
+map<string, int> frequencies;
+frequencies["Hello"] = 4;
+frequencies["World"] = 3;
+int val = frequencies["World"];
 
+// Iterating through key-value pairs:
+for (auto it = frequencies.begin(); it != frequencies.end(); ++it)
+    cout << it->first << " : " << it->second << endl;
 ```
 
-## Strings:
+## `<unordered_map>`
+The interface is very similar to `std::map` from `<map>`, however it offers a few more lower-level methods like `bucket_count()`, `load_factor()`, etc.
 
-The set of methods available to the `std::string` class is similar to the methods available to `std::vector`, plus a few more special string manipulation methods and operator support like `+`, `<<`, `>>`. 
-
-```cpp
-
-// ***Main operations***
-s1 + s2              // Concatentation
-s1.append(s2)        // Alternative to + operator
-
-// TODO: https://www.cplusplus.com/reference/string/string/compare/
-s1.compare(s2)
-s1.compare(s2, pos
-
-s.substr(startPos, runLen)   // Returns the substring from inclusive **startPos** onwards for **runLen** characters
-
-//TODO: more string ops https://www.cplusplus.com/reference/string/string/
-s.find
-s.find_first_of
-s.find_first_not_of
-s.find_last_of
-s.find_last_not_of
->
-// ***Others***
-s.copy()
-
-char c;
-std::isdigit(c)    // Returns true if the string consists of a valid digit.
-std::isalnum(c)
-std::isspace(c)
-```
-
-**Raw Strings:**
-
-There are raw string literals just like in Python where everything inside the string is treated as raw characters, not special characters. This means you won’t have to escape any special characters with backslash and they’ll all lose their meaning. This is especially useful when defining strings containing regex patterns which contain a bunch of backslashes.
-
-The format for defining a raw string literal is: $\texttt{R"(...)"}$. 
+## `<array>`
 
 ```cpp
-std::string my_raw_str = R"(my raw string)";   // → "my raw string"
-```
-
-
-## Arrays:
-
-```cpp
-// ***Initialisation***
+// Initialisation
 int nums[3];
 int nums[3] = { 1, 2, 3 };     // [1, 2, 3]
 int nums[]  = { 1, 2, 3 };     // [1, 2, 3]
 int nums[3] = { 1 };           // [1, 0, 0]
 int nums[3] = {  };            // [0, 0, 0]
 
-// TODO: ***Utility functions***
+// TODO: Utility functions
 std::fill_n(nums, 3, -1);
 
 ```
+- To get the size of an array, you’d need to do $\texttt{sizeof(arr) / sizeof(arr[0])}$. It is almost always recommended to use `std::vector` over regular arrays[](https://stackoverflow.com/questions/2037736/how-to-find-the-size-of-an-int).
 
-- To get the size of an array, you’d need to do $\texttt{sizeof(arr) / sizeof(arr[0])}$. It is almost always recommended to use `std::vector` over regular arrays[*](https://stackoverflow.com/questions/2037736/how-to-find-the-size-of-an-int).
-
-### Matrices:
-
-## Priority Queue:
-
+## `<priority_queue>` [TODO]
 ```cpp
-#include <**priority_queue**>
-
+#include <priority_queue>
 ```
 
-## Stack & Queue:
-
-### std::stack:
-
+## `<stack>`
 ```cpp
-#include <**stack**>
+#include <stack>
 
 stack<int> s;
 
-// ***Main methods***
-s.**push**(item);      
-s.**top**()          // Reads the top element
-s.**pop**()          // Removes the top element. *Doesn't actually return anything*
-s.**empty**()
-s.**size**()
+// Main methods
+s.push(item);      
+s.top()          // Reads the top element
+s.pop()          // Removes the top element. Doesn't actually return anything
+s.empty()
+s.size()
 ```
 
-### std::queue:
+## `<queue>`
 
 ```cpp
-#include <**queue**>
+#include <queue>
 
 queue<int> q;
 
-// ***Main methods***
-q.**push**()   
-q.**front**()          // Reads the next element
-q.**back**()           // Reads the last element
-q.**pop**()            // Removes the top element. Doesn't actually return anything
-q.**empty**()
-q.**size**()
+// Main methods
+q.push()   
+q.front()          // Reads the next element
+q.back()           // Reads the last element
+q.pop()            // Removes the top element. Doesn't actually return anything
+q.empty()
+q.size()
 ```
 
-### std::deque:
-
+## `<deque>` [TODO]
 ```cpp
-#include <**deque**>
+#include <deque>
 
 ```
-
-
-### Smart Pointers [TODO]
-
-Smart pointers — wraps a naked pointer. Preferred over naked pointers, mainly because it handles the deletion of objects that would cause a memory leak otherwise.
-    - Smart pointers are 'smart' because they enforce ownership semantics.
-        - Objects owned by a `unique_ptr` will have `delete` invoked on them when the `unique_ptr` goes out of scope
-        - Smart pointers are preferred in C++ just because they offer better memory management
-Naked pointers, also called *dumb pointers*, are regular C-style pointers.
-        
-```cpp
-int* p;   // A naked pointer
-```
-
-- Use `#include <memory>`
-- Makes it so that you never have to call `new` or `delete` in your code
-- C++ code should prefer smart pointers (most commonly `std::unique_ptr`) instead of raw pointers when dynamically allocating objects. The `delete` operator is used on the allocated object in `std::unique_ptr`’s destructor
 - `std::unique_ptr` — the simplest smart pointer. When it goes out of scope, the object gets deleted. They’re called unique because they cannot be copied — because if you were to have two pointers to the same memory address, then if delete is called on one pointer, then the other pointer would be pointing to invalid memory.
     - If you only have one reference to an object and you want it to be freed once out of scope, then use unique_ptr
     - There’s also stuff like `std::make_unique` that is apparently a [replacement for the new operator when initialiser std::unique_ptr?](https://stackoverflow.com/questions/37514509/advantages-of-using-stdmake-unique-over-new-operator)
-        - It is recommended to use the 'make_unique/make_shared' function **to create smart pointers**
+        - It is recommended to use the 'make_unique/make_shared' function to create smart pointers
 - `std::shared_ptr`
     - Unlike `std::unique_ptr`, shared_ptr lets you have multiple references to the same object. You can assign a `std::shared_ptr` to another variable that is type `std::shared_ptr`
     - Uses reference counting. When you assign std::shared_ptr to a variable of type std::shared_ptr, it’ll increment the count
-    - You **have to** use `std::make_shared` to instantiate shared_ptr. It is important to do this because shared_ptr needs to manage bookkeeping around the counting of references. If you were to use new, then you’ve created a separate instance that won’t be counted as a reference.
+    - You have to use `std::make_shared` to instantiate shared_ptr. It is important to do this because shared_ptr needs to manage bookkeeping around the counting of references. If you were to use new, then you’ve created a separate instance that won’t be counted as a reference.
 - `std::weak_ptr`
     - When you assign `std::shared_ptr` to a variable of type `std::weak_ptr`, it won’t increment the underlying references count managed by the shared_ptr.
 - [Return smart pointers by value](https://www.internalpointers.com/post/move-smart-pointers-and-out-functions-modern-c#:~:text=Return%20smart%20pointers%20from%20functions)
