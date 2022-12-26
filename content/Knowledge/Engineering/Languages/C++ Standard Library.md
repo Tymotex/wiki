@@ -234,10 +234,17 @@ for (const std::filesystem::directory_entry& each_file : std::filesystem::direct
 ```
 
 ## Smart Pointers [TODO]
+`<memory>` provides two smart pointers: `unique_ptr` and `shared_ptr`, for managing objects allocated on the heap.
 
-When `unique_ptr` goes out of scope, `delete` is executed on the object it owns.
+### `<unique_ptr>`
+By giving a pointer to `unique_ptr`, we can have confidence that when that `unique_ptr` goes out of scope, the object it tracks gets deallocated.
+
+
 
 > "The code using `unique_ptr` will be exactly as efficient as code using the raw pointers correctly." — Bjarne Stroustrup, A Tour of C++.
+
+### `<shared_ptr>`
+
 
 ## Tuple
 
