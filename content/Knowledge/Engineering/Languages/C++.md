@@ -1765,7 +1765,7 @@ Some simple Q-and-A notes to be used as flashcards.
 - Why should I use `make_unique` to create `unique_ptr`s instead of directly constructing them using `new` like in: `unique_ptr<Foo>(new Foo(...))`?
     - It's exception safe, meaning if `foo(unique_ptr<X>(new X), unique_ptr<Y>(new Y))` fails, there are no resource leaks. It avoids usage of `new` and `delete`, which is always recommended for modern C++ code. It's more readable since you specify `Foo` only once compared to twice: `make_unique<Foo>`.
 - Explain the difference between `unique_ptr` and `shared_ptr`.
-    - The copy constructor and assignment operator are disabled in `unique_ptr` and only allows for move semantics.
+    - `unique_ptr` represents sole ownership while `shared_ptr` represents shared ownership. A `unique_ptr` deletes the object it's hosting once it goes out of scope. A `shared_ptr` does the same only if it is the last remaining owner of the object it's hosting. The copy constructor and assignment operator are disabled in `unique_ptr` and only allows for move semantics. In `shared_ptr`, copy and move are enabled.
 
 ## Questions
 Some questions I have that are answered:

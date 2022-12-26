@@ -244,7 +244,7 @@ By giving a pointer to `unique_ptr`, we can have confidence that when that `uniq
         return make_unique<int>(42);
     }
     ```
-- It's recommended to use `make_unique<Foo>(...).` instead of `unique_ptr<T>(new Foo(...))`, mainly so you can eliminate the usage of naked `new` and `delete`s.
+- It's recommended to use `make_unique<Foo>(...).` instead of `unique_ptr<T>(new Foo(...))`, mainly so you can completely eliminate the usage of naked `new` and `delete`s.
 - Since `unique_ptr` represents sole ownership, its copy constructor and assignment operation are disabled. You can use move semantics to transfer the `unique_ptr` from one variable to another.
 
 > "The code using `unique_ptr` will be exactly as efficient as code using the raw pointers correctly." — Bjarne Stroustrup, A Tour of C++.
