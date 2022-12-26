@@ -2,7 +2,7 @@
 title: C++ Standard Library
 ---
 
-This section contains notes about some of the most useful things in the `std` namespace. The C++ standard library also contains the entire C standard library, each available through `<c>`, e.g. `<cstdlib>`, which in C is equivalent to `<stdlib.h>`, and `<cmath>`, which in C is equivalent to `<math.h>`.
+This section contains notes about some of the most useful things from the `std` namespace. The C++ standard library also contains the *entire C standard library*, each header being available through `<c*>`, e.g. `<cstdlib>`, which in C is equivalent to `<stdlib.h>`, and `<cmath>`, which in C is equivalent to `<math.h>`.
 
 See all [C++ Standard Library headers](https://en.cppreference.com/w/cpp/header).
 
@@ -261,6 +261,7 @@ cout << std::get<1>(person) << endl;
 // can infer types. See: https://stackoverflow.com/questions/34180636/what-is-the-reason-for-stdmake-tuple
 std::tuple<string, int> person = std::make_tuple("Andrew", 42);
 ```
+# `<algorithm>` [TODO]
 
 # I/O [TODO]
 
@@ -476,8 +477,7 @@ When you assign `std::shared_ptr` to a variable of type `std::weak_ptr`, it won�
 
 # Concurrency
 
-### Thread (`std::thread`)
-
+## `<thread>`
 <aside>
 ℹ️ On Linux, you have to compile with the flag `-pthread` to link the POSIX thread library: `g++ -pthread -o term term.c`
 
@@ -527,13 +527,7 @@ int main() {
     }
     ```
     
-
-### Futures (`std::future`) [TODO]
-
-### Async (`std::async`) [TODO]
-
-### Mutex (`std::mutex`)
-
+## `<mutex>`
 `std::mutex` is a very simple lockable object used to synchronise access to a resource shared by parallel threads.
 
 ```cpp
@@ -626,6 +620,10 @@ unlock()
     Thread with ID 140367027558144 sees count as 90
     Thread with ID 140367027558144 sees count as 91
     ```
+
+## `<future>` [TODO]
+
+### `async` [TODO]
     
 
 
@@ -635,15 +633,21 @@ Note: using raw string literals, $\texttt{R"(...)"}$, makes writing regex patter
 ```cpp
 #include <regex>
 
-std::regex pattern(R"()");
-std::smatch matches;        // A container for storing std::string matches (capture groups). There are also other containers like std::cmatch for storing string literal matches. 
-														// These are all instances of std::match_results and can be indexed with the subscript operator [].
+std::regex pattern(R"(.*)");
+std::smatch matches;        // A container for storing std::string matches (capture groups).
+                            // There are also other containers like std::cmatch for storing
+                            // string literal matches. 
+							// These are all instances of std::match_results and can be
+							// indexed with the subscript operator [].
+    matches[i]              // Accesses the i-th match. Note: matches[1] accesses the first
+                            // match, matches[2] accesses the second match, and so on.
 
 // ═════ Functions ═════
 std::regex_match(haystack, pattern);            // Returns true if matched.
 
-std::regex_search(haystack, matches, pattern);  // Returns true if matched. Populates the std::smatch object with capture group matches that you can extract.
-		matches[i]                                  // Accesses the i-th match. Note: matches[1] accesses the first match, matches[2] accesses the second match, and so on.
+std::regex_search(haystack, matches, pattern);  // Returns true if matched. Populates the 
+                                                // std::smatch object with capture group
+                                                // matches that you can extract.
 ```
 
 # C Standard Libraries [TODO]
