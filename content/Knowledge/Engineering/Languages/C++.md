@@ -1760,8 +1760,10 @@ Some simple Q-and-A notes to be used as flashcards.
     - You have to wrap each case in curly braces. E.g. `case foo: { ... }`.
 - Should you always use range-based for loops?
     - In general yes, but with exceptions. Eg. you should not use it when you are erasing values, inserting something into the middle of something, etc., basically anytime you need to manipulate the position of the iterator, you’d have to fall back to the ugly for loop.
--  What are the 5 main iterator categories? How do they relate to each other?
+- What are the 5 main iterator categories? How do they relate to each other?
     - They are: input, output, forward, bidirectional, random access.
+- Why should I use `make_unique` to create `unique_ptr`s instead of directly constructing them using `new` like in: `unique_ptr<Foo>(new Foo(...))`?
+    - 
 
 ## Questions
 Some questions I have that are answered:

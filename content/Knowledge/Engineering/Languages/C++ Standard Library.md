@@ -237,14 +237,20 @@ for (const std::filesystem::directory_entry& each_file : std::filesystem::direct
 `<memory>` provides two smart pointers: `unique_ptr` and `shared_ptr`, for managing objects allocated on the heap.
 
 ### `<unique_ptr>`
-By giving a pointer to `unique_ptr`, we can have confidence that when that `unique_ptr` goes out of scope, the object it tracks gets deallocated.
-
-
+By giving a pointer to `unique_ptr`, we can have confidence that when that `unique_ptr` goes out of scope, the object it tracks gets deallocated in the destructor of `unique_ptr`.
+- You can pass and return `unique_ptr`s in functions.
+    ```cpp
+    unique_ptr<int> make_foo() {
+        return make_unique<int>(42);
+    }
+    ```
+- It's recommended to use `make_unique<Foo>(...).` instead of `unique_ptr<T>(new Foo(...))`. 
+    - 
 
 > "The code using `unique_ptr` will be exactly as efficient as code using the raw pointers correctly." — Bjarne Stroustrup, A Tour of C++.
 
 ### `<shared_ptr>`
-
+Similar to `unique_ptr`, but `shared_ptr`s **get copied instead of moved**. The object held by `shared_ptr` is deleted only when no other `shared_ptr` points at it.
 
 ## Tuple
 
