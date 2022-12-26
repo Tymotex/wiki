@@ -8,16 +8,17 @@ kanban-plugin: basic
 
 - [x] 🏆 Purpose: fucking Figma, then SRE book, then Meditations.
 - [x] **(2 hours)** Finish first draft of Figma prototype for math website.
+- [ ] Get dad's opinion on prototype.
 - [ ] ==3== Macbook transfer files
 - [ ] ==4== Write your goals for next year (and the remainder of this year).
 - [ ] **(2 hours)** SRE book
 - [ ] **(1 hour)** Meditations
+- [ ] How to prevent afternoon food coma? What are *all* the strategies?
 
 
 ## **Tuesday** *[[Journal/2022-12-27|2022-12-27]]* (6)
 
 - [ ] 🏆 Purpose
-- [ ] Get dad's opinion on prototype.
 
 
 ## **Wednesday** *[[Journal/2022-12-28|2022-12-28]]* (6)
