@@ -1763,7 +1763,9 @@ Some simple Q-and-A notes to be used as flashcards.
 - What are the 5 main iterator categories? How do they relate to each other?
     - They are: input, output, forward, bidirectional, random access.
 - Why should I use `make_unique` to create `unique_ptr`s instead of directly constructing them using `new` like in: `unique_ptr<Foo>(new Foo(...))`?
-    - 
+    - It's exception safe, meaning if `foo(unique_ptr<X>(new X), unique_ptr<Y>(new Y))` fails, there are no resource leaks. It avoids usage of `new` and `delete`, which is always recommended for modern C++ code. It's more readable since you specify `Foo` only once compared to twice: `make_unique<Foo>`.
+- Explain the difference between `unique_ptr` and `shared_ptr`.
+    - The copy constructor and assignment operator are disabled in `unique_ptr` and only allows for move semantics.
 
 ## Questions
 Some questions I have that are answered:
