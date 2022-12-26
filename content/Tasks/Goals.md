@@ -27,6 +27,7 @@ title: Goals
     - Help mum and dad get low-stress regular income.
 - **Habits**
     - Continue to meditate 15-20 mins every day.
+    - Actually stick to a schedule... Seriously, you've actually never done this before.
 
 
 
