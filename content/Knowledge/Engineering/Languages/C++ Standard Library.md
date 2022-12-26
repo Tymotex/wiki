@@ -238,14 +238,15 @@ for (const std::filesystem::directory_entry& each_file : std::filesystem::direct
 
 ### `<unique_ptr>`
 By giving a pointer to `unique_ptr`, we can have confidence that when that `unique_ptr` goes out of scope, the object it tracks gets deallocated in the destructor of `unique_ptr`.
-- You can pass and return `unique_ptr`s in functions.
+- It's recommended to use `make_unique<Foo>(...).` instead of `unique_ptr<T>(new Foo(...))`, mainly so you can completely eliminate the usage of naked `new` and `delete`s.
+- Since `unique_ptr` represents sole ownership, its copy constructor and assignment operation are disabled. You can use move semantics to transfer the `unique_ptr` from one variable to another.
+- You can pass and return `unique_ptr`s in functions. Note that no copying actually happens when passing between functions — only implicit moves are happening.
     ```cpp
     unique_ptr<int> make_foo() {
         return make_unique<int>(42);
     }
     ```
-- It's recommended to use `make_unique<Foo>(...).` instead of `unique_ptr<T>(new Foo(...))`, mainly so you can completely eliminate the usage of naked `new` and `delete`s.
-- Since `unique_ptr` represents sole ownership, its copy constructor and assignment operation are disabled. You can use move semantics to transfer the `unique_ptr` from one variable to another.
+    - Why is this allowed when the copy operation is disabled?
 
 > "The code using `unique_ptr` will be exactly as efficient as code using the raw pointers correctly." — Bjarne Stroustrup, A Tour of C++.
 
