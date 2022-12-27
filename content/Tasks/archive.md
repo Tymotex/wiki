@@ -743,12 +743,21 @@ kanban-plugin: basic
 - [x] **(2 hours)** Finish first draft of Figma prototype for math website.
 - [x] ==4== Write your goals for next year (and the remainder of this year).
 
+## **Tuesday** *[[Journal/2022-12-27|2022-12-27]]* (6)
+
+- [x] 🏆 Purpose: C++, sre
+- [x] **(1 hour)** Smart pointers.
+- [x] **(1 hour)** Finish reading containers chapter.
+- [x] Book avatar 2
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
