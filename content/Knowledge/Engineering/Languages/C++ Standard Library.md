@@ -64,6 +64,9 @@ std::string_view vs std::string
 
 - You can do `constexpr std::string_view s = "…"`, but not `constexpr std::string s = "…"`
 
+- You can get string literals of type `std::string` by suffixing a regular string literal with `s`, e.g. `"Hello"s`
+- You can get `string_view` literals by suffixing string literals with `sv`, e.g. `"Hello"sv`
+
 # STL Containers
 The STL (standard template library) contains highly efficient generic data structures and algorithms. The STL encompasses many headers like: `<array>`, `<stack>`, `<vector>`, etc.
 
