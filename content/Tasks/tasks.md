@@ -8,7 +8,7 @@ kanban-plugin: basic
 
 - [x] 🏆 Purpose: C++, sre
 - [x] **(1 hour)** Smart pointers.
-- [ ] **(1 hour)** Finish reading containers chapter.
+- [x] **(1 hour)** Finish reading containers chapter.
 - [ ] **(2 hours)** SRE book
 - [ ] Get dad's opinion on prototype.
 - [ ] Clarify remaining goals into concrete steps. Get January ready. Perhaps print a calendar with checkboxes inside: wake up before \_\_, run, meditate, brush teeth.<br>Evening: worked out?, stopped at \_\_, journal.
