@@ -7,8 +7,8 @@ kanban-plugin: basic
 ## **Tuesday** *[[Journal/2022-12-27|2022-12-27]]* (6)
 
 - [x] 🏆 Purpose: C++, sre
-- [ ] **(1 hour)** Smart pointers.
-- [ ] **(1 hour)** Containers
+- [x] **(1 hour)** Smart pointers.
+- [ ] **(1 hour)** Finish reading containers chapter.
 - [ ] **(2 hours)** SRE book
 - [ ] Get dad's opinion on prototype.
 - [ ] Take a physique picture.
