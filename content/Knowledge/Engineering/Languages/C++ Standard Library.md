@@ -61,6 +61,8 @@ str.find_first_of
 std::string::npos
 
 std::string_view vs std::string
+- A `string_view` is nothing but a pointer to a string and a length. It serves as basically a read-only substring of an underlying string.
+- `string_view` offers better performance than `string`. Use it in cases where you need a string but don't need to 'own' it.
 
 - You can do `constexpr std::string_view s = "…"`, but not `constexpr std::string s = "…"`
 

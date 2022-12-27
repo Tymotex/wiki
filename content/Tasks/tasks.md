@@ -18,6 +18,8 @@ kanban-plugin: basic
 - [ ] ==1== **(1 hour)** Meditations
 - [ ] ==2== How to prevent afternoon food coma? What are *all* the strategies?
 - [ ] Read about early career advice (especially specifically for software eng.)<br>This should influence your goals.<br>I think it makes sense to double down on making 2023 a year where I learn a fuckload about computing fundamentals and try mastering programming languages.
+- [ ] What has really impressed you about new hires? Especially in software engineering. Read about this.
+- [ ] Read about all sleep advice. Follow them religiously for today.<br>Don't drink water after x hours before bed.
 
 
 ## **Thursday** *[[Journal/2022-12-29|2022-12-29]]* (6)
