@@ -7,9 +7,9 @@ This section contains notes about some of the most useful things from the `std` 
 See all [C++ Standard Library headers](https://en.cppreference.com/w/cpp/header).
 
 ## `<string>` [TODO]
+There is no built-in string type in C++, but the standard library provides `std::string` in `<string>`. Note that string literals on the other hand are part of the language itself, their data type is `const char*`.
 
 The set of methods available to the `std::string` class is similar to the methods available to `std::vector`, plus a few more special string manipulation methods and operator support like `+`, `<<`, `>>`. 
-
 ```cpp
 
 // Main operations
