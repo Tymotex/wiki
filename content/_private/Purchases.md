@@ -11,7 +11,7 @@ title: Purchases
 - [x] Hair cream/paste
 - [x] Hair spray
 - [ ] SPF moisturiser, or standalone sunscreen
-- [ ] CeraVe hydrating cleanser
+- [x] CeraVe hydrating cleanser
 - [ ] Meditations book
 - [ ] Protein powder
 - [x] Light blue OCBD, or white
