@@ -20,7 +20,7 @@ kanban-plugin: basic
 - [ ] What has really impressed you about new hires? Especially in software engineering. Read about this.
 - [ ] Read about all sleep advice. Follow them religiously for today.<br>Don't drink water after x hours before bed.
 - [x] ==1== **(1 hour)** Meditations
-- [ ] **(45 mins)** Read up on protein powder efficacy and health.
+- [ ] **(45 mins)** Pick a protein powder.
 
 
 ## **Thursday** *[[Journal/2022-12-29|2022-12-29]]* (6)
