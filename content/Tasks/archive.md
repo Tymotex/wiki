@@ -750,12 +750,18 @@ kanban-plugin: basic
 - [x] **(1 hour)** Finish reading containers chapter.
 - [x] Book avatar 2
 
+## **Wednesday** *[[Journal/2022-12-28|2022-12-28]]* (6)
+
+- [x] ==1== **(1 hour)** Meditations
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
