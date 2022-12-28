@@ -62,12 +62,12 @@ std::string::npos
 
 std::string_view vs std::string
 - A `string_view` is nothing but a pointer to a string and a length. It serves as basically a read-only substring of an underlying string.
-- `string_view` offers better performance than `string`. Use it in cases where you need a string but don't need to 'own' it.
-
+- `string_view` can offer better performance than `string`.
+- [Why not just use `const string&`?](https://stackoverflow.com/questions/40127965/how-exactly-is-stdstring-view-faster-than-const-stdstring) Because that *has* to refer to a `std::string` exactly, not a char array, `const char*`, `vector<char>` etc., which means that a new `std::string` instance must be created from these other 'sequence of char' formats, which is potentially expensive.
 - You can do `constexpr std::string_view s = "…"`, but not `constexpr std::string s = "…"`
 
-- You can get string literals of type `std::string` by suffixing a regular string literal with `s`, e.g. `"Hello"s`
-- You can get `string_view` literals by suffixing string literals with `sv`, e.g. `"Hello"sv`
+- You can get string literals of type `std::string` by suffixing a regular string literal with `s`, e.g. `"Hello"s`.
+- You can get `string_view` literals by suffixing string literals with `sv`, e.g. `"Hello"sv`.
 
 # STL Containers
 The STL (standard template library) contains highly efficient generic data structures and algorithms. The STL encompasses many headers like: `<array>`, `<stack>`, `<vector>`, etc.
