@@ -14,8 +14,7 @@ kanban-plugin: basic
 - [ ] ==2== Write your goals for next year (and the remainder of this year).
 - [ ] ==1== Do your Google onboarding.
 - [ ] Bubbler scheduler.
-- [ ] Ask mum if dayi would like origami.
-- [ ] Tell mum not to get me food in the future.
+- [x] Ask mum if dayi would like origami.
 - [x] ==8== Make a plan to grind out the math website in record time.
 - [x] Clean your rooms.
 - [x] ==1== Beg mum to repair my jeans and alter my chinos.
@@ -29,6 +28,7 @@ kanban-plugin: basic
 - [ ] ==2== Macbook transfer files
 - [ ] **(10 mins)** Weekly Review.
 - [ ] **(2 hours)** Finish first draft of Figma prototype for math website.
+- [ ] Tell mum not to get me food in the future.
 
 
 ## **Monday** *[[Journal/2022-12-26|2022-12-26]]* (6)
