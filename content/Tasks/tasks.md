@@ -1,7 +1,5 @@
 ---
-
 kanban-plugin: basic
-
 ---
 
 ## **Thursday** *[[Journal/2022-12-29|2022-12-29]]* (6)
@@ -18,14 +16,12 @@ kanban-plugin: basic
 - [x] ==3== How to prevent afternoon food coma? What are *all* the strategies?<br><br>Okay they're basically:<br>- Sleep well (obviously)<br>- Stay hydrated (this is probably the one I was least careful about)<br>- Eat lighter meals but more frequently<br>- Don't eat a fuckload of carbs and proteins. <br>- Also don't double down on fatty foods. It contributes to food coma as well.<br>- A general rule: eat light, stay hydrated. Eat more frequently to compensate for a less filling meal.<br>- Get some light exercise in, somehow.
 - [x] ==1== **(45 mins)** Pick a protein powder.
 
-
 ## **Friday** *[[Journal/2022-12-30|2022-12-30]]* (6)
 
 - [ ] 🏆 Purpose
 - [ ] 🌞 Morning routine
 - [ ] 🌙 Evening routine
 - [ ] ==1== Take a physique picture.
-
 
 ## **Saturday** *[[Journal/2022-12-31|2022-12-31]]* (6)
 
@@ -34,7 +30,6 @@ kanban-plugin: basic
 - [ ] 🌙 Evening routine
 - [ ] **(10 mins)** Monthly Review.
 
-
 ## **Sunday** *[[Journal/2023-01-01|2023-01-01]]* (6)
 
 - [ ] 🏆 Purpose
@@ -42,36 +37,30 @@ kanban-plugin: basic
 - [ ] 🌙 Evening routine
 - [ ] **(10 mins)** Weekly Review.
 
-
 ## **Monday** *[[Journal/2023-01-02|2023-01-02]]* (6)
 
 - [ ] 🏆 Purpose
-
 
 ## **Tuesday** *[[Journal/2023-01-03|2023-01-03]]* (6)
 
 - [ ] 🏆 Purpose
 
-
 ## **Wednesday** *[[Journal/2023-01-04|2023-01-04]]* (6)
 
 - [ ] 🏆 Purpose
-
 
 ## **Thursday** *[[Journal/2023-01-05|2023-01-05]]* (6)
 
 - [ ] 🏆 Purpose
 - [ ] Get a Bulknutrients sample.
 
+***
 
 ## Archive
 
 
 
-
-
 %% kanban:settings
-```
 {"kanban-plugin":"basic"}
 ```
 %%
