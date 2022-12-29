@@ -33,7 +33,7 @@ title: Goals
 - **Self-Improvement**
     - Continue to meditate 15-20 mins every day.
     - Actually stick to a schedule... Seriously, you've actually never done this before.
-    - Something related to conquering social fears.
+    - Something related to conquering social fears. Start being able to **talk to people**.
 
 
 
