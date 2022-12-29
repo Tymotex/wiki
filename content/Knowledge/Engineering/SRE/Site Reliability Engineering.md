@@ -3,8 +3,9 @@ title: Site Reliability Engineering
 ---
 
 **Questions**:
-- What exactly is reliability?
 - 
+
+---
 
 SREs are software engineers whose focus is to create *reliable*, scalable software systems. *Reliability* formally means: "the probability that [a system] will perform a required function without failure under stated conditions for a stated period of time." 
 
@@ -16,12 +17,11 @@ The focuses of creating reliable systems are:
 - Availability
 - Latency
 - Performance
-- Efficiency
+- Efficiency — in the utilisation rate of resources (using fewer computing resources).
 - Change management — since changes to live systems often account for around 70% of outages, we need strategies like progressive rollouts and rollbacks.
 - Monitoring
 - Emergency response
 - Capacity planning
-
 
 Google loosely enforces a 50/50 split between development and operations work for SREs. Coding skills are still critical.
 
@@ -38,6 +38,7 @@ In the traditional development/operations split, the operations team size would 
 > "One could equivalently view SRE as a specific implementation of DevOps with some idiosyncratic extensions."
 
 # Fundamentals
+- [[Knowledge/Engineering/SRE/Google Infrastructure|Google Infrastructure]]
 - [[Knowledge/Engineering/SRE/Error Budget|Error budget]]
 - [[Knowledge/Engineering/SRE/Monitoring|Monitoring]]
 
