@@ -10,9 +10,8 @@ kanban-plugin: basic
 - [ ] Buy algae wafer.
 - [ ] ==2== Get dad's opinion on prototype.
 - [ ] ==2== Clarify remaining goals into concrete steps. Get January ready. Perhaps print a calendar with checkboxes inside: wake up before \_\_, run, meditate, brush teeth.<br>Evening: worked out?, stopped at \_\_, journal.
-- [ ] ==1== Read about early career advice (especially specifically for software eng.)<br>This should influence your goals.<br>I think it makes sense to double down on making 2023 a year where I learn a fuckload about computing fundamentals and try mastering programming languages.
+- [x] ==1== Read about early career advice (especially specifically for software eng.)<br>This should influence your goals.<br>I think it makes sense to double down on making 2023 a year where I learn a fuckload about computing fundamentals and try mastering programming languages.
 - [ ] ==2== **(2 hours)** SRE book
-- [ ] ==8== **(1 hour)**<br>Clean up book notes and summarise How Not to Die.
 - [ ] ==6== Macbook transfer files
 - [x] ==1== What has really impressed you about new hires? Especially in software engineering. Read about this.
 - [x] ==1== Read about all sleep advice. Follow them religiously for today.<br>Don't drink water after x hours before bed.
