@@ -3,6 +3,8 @@ title: Google Tasks and Workflow
 ---
 
 ## First Few Days
+[[Knowledge/Soft Skills/Excelling as a Graduate|Excelling as a new software engineering graduate]].
+
 Some questions to ask:
 - Based on your personal experience, do you have any advice on *when* to ask for help?
 - What do you consider are the strongest signals that an L3 is ready to transition to an L4 engineer?

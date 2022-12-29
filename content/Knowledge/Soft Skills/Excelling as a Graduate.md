@@ -10,3 +10,4 @@ title: Excelling as a Graduate
 - **Don't be a hotshot junior**. You'll cringe at yourself and fall into arrogant thinking patterns.
 - Document everything you do. My personal thoughts are to do this every day. Don't let a day slip by where you didn't know what you focused on. Start from day 1 of your professional working life.
 - **Just ship it**. Get it out even if it's very crude.
+- Know your main programming language, *to the bottom*.
