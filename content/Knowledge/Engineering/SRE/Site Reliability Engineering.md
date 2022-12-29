@@ -17,7 +17,7 @@ The focuses of creating reliable systems are:
 - Latency
 - Performance
 - Efficiency
-- Change management
+- Change management — since changes to live systems often account for around 70% of outages, we need strategies like progressive rollouts and rollbacks.
 - Monitoring
 - Emergency response
 - Capacity planning
@@ -33,7 +33,7 @@ Google loosely enforces a 50/50 split between development and operations work fo
 
 Costs of running software after reaching production typically constitute 40-90%, meaning it's almost never the case that deployed software requires less attention from software engineers.
 
-In the traditional development/operations split, the operations team size would scale linearly with service size. A primary focus of SRE is automating away the needs for a growing operations team. The SRE team size scales sublinearly with service size.
+In the traditional development/operations split, the operations team size would scale linearly with service size. A primary focus of SRE is automating away the needs for a growing operations team and removing humans from the loop as much as possible. The SRE team size scales sublinearly with service size.
 
 > "One could equivalently view SRE as a specific implementation of DevOps with some idiosyncratic extensions."
 
