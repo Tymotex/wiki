@@ -3,13 +3,14 @@ title: Google Tasks and Workflow
 ---
 
 ## First Few Days
-
 Some questions to ask:
 - Based on your personal experience, do you have any advice on *when* to ask for help?
 - What do you consider are the strongest signals that an L3 is ready to transition to an L4 engineer?
 - How different do you feel now compared to when you first started out? (Maybe be more specific here)
 - Do you have any advice to would give to yourself when you were just starting out your career in software engineering?
 - Is there anything you're learning about recently?
+- Do you have any thoughts on how to best absorb all the information in the first few weeks?
+- 
 
 ## Workflow Checklist
 - Use a tiled window manager such as i3.

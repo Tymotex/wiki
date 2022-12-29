@@ -8,3 +8,5 @@ title: Excelling as a Graduate
     "I'd appreciate it if you could point me in the next direction."
 - Technical skills are abundant and aren't sufficient alone to impress people. You must be extremely technically competent *and* someone with excellent communication skills.
 - **Don't be a hotshot junior**. You'll cringe at yourself and fall into arrogant thinking patterns.
+- Document everything you do. My personal thoughts are to do this every day. Don't let a day slip by where you didn't know what you focused on. Start from day 1 of your professional working life.
+- **Just ship it**. Get it out even if it's very crude.
