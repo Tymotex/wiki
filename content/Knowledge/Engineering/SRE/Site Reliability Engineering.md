@@ -10,8 +10,11 @@ SREs are software engineers whose focus is to create *reliable*, scalable softwa
 
 > "Reliability is the most fundamental feature of any product" — Ben Treynor Sloss.
 
+> "SRE is what happens when you ask a software engineer to design an operations team." — Ben Treynor Sloss.
+
 > "Software Engineering has this in common with having children: the labour before the birth is painful and difficult, but the labour after the birth is where you actually spend most of your effort."
 
 Costs of running software after reaching production typically constitute 40-90%, meaning it's almost never the case that deployed software requires less attention from software engineers.
 
+In the traditional development/operations split, the operations team size would scale linearly with service size. A primary focus of SRE is automating away most of the needs for a growing operations team.
 
