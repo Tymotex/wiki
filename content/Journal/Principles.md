@@ -5,7 +5,11 @@ title: Principles
 >"Waste no more time arguing about what a good man should be. Be one." — Marcus Aurelius.
 
 ## Principles
-Following these principles makes my life meaningful.
+
+- I'm honest. I don't lie or delude myself about what I am.
+
+
+
 1. I love my family and will do anything for them. I know that becoming the best version of myself is the most reliable way to make them and myself happy.
 2. I am conscientious, orderly and disciplined.
 3. I am stoic.
