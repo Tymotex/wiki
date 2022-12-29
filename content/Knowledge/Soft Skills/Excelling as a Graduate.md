@@ -2,6 +2,7 @@
 title: Excelling as a Graduate
 ---
 
+- Be a sponge and ruthlessly seek to maximise knowledge by asking questions. You're in a perfect position to do so because you're not expected to know much.
 - Learn how to ask for help, *properly*. Show that you've exhausted yourself and have taken reasonable initiative, *always*.
     Explain your understanding of the problem, your goals, and your assumptions. 
     List all the things you tried. Explain why each failed.

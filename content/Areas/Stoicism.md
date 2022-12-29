@@ -23,3 +23,5 @@ Stocisim's origin is credited to Zeno.
 > "We suffer more often in imagination than in reality." — Seneca.
 
 > "Man cannot remake himself without suffering, for he is both the marble and the sculptor." — Alexis Carrell.
+
+> “Emotion is data, not a directive.” — Susan David
