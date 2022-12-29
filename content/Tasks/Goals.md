@@ -2,22 +2,15 @@
 title: Goals
 ---
 
-- **Career**
-    - Get promoted to L4. Work your ass off. Don't think about starting your own venture, you need this time working under someone else so you can learn from them. Leave your dreams of entrepreneurship to later.
-    - Get C++ readability certification.
-- **Programming**
-    - Read technical books:
-        - Fundamentals of Software Architecture
-        - Clean Code
-        - Site Reliability Engineering
-        - Software Engineering at Google
-    - ... work on some projects. I'm not sure what yet.
-    - ... contribute to open source projects. I'm not sure what yet.
-- **Reading**
-    - Read at least 1 book a fortnight on average.
-    - Read the 3 ancient Stoic books.
-    - Read On Writing Well.
-    - Read A Brief History of Time.
+# 2023
+These are all my goals:
+1. **(Career)** Get promoted to L4 at Google.
+2. **(Career)** Get C++ readability.
+3. **(Career)** Read 1 technical book a month, on average.
+4. **(Career)** Ship 1 interesting personal project.
+5. **(Personal)** Read 1 book a fortnight, on average.
+6. 
+
 - **Love** — this isn't going to be a focus. I'm a worthless young man and need to build myself up first.
     - You must increase your value: looks, career, integrity.
     - Ask out someone and go on at least 1 date.
