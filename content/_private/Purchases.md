@@ -10,7 +10,7 @@ title: Purchases
 - [x] Oregano seeds
 - [x] Hair cream/paste
 - [x] Hair spray
-- [ ] SPF moisturiser, or standalone sunscreen
+- [x] SPF moisturiser, or standalone sunscreen
 - [x] CeraVe hydrating cleanser
 - [ ] Meditations book
 - [ ] Protein powder
