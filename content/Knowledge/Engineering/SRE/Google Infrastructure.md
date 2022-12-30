@@ -19,10 +19,11 @@ Resource allocation is handled by [[Knowledge/Engineering/SRE/Borg|Borg]].
     - Colossus is the backbone of Google Cloud services and apps like YouTube, Drive, Gmail, etc.
     - It's a successor of Google File System (GFS), which was something that inspired the development of Hadoop, an open-source distributed filesystem.
 3. **Bigtable** is a NoSQL DBMS offered as a service.
-4. **Spanner** is a SQL DBMS, also offered as a service.
+4. **Spanner** is a SQL DBMS, also offered as a service. It's *globally-consistent*, meaning that you can have confidence that data accessed anywhere is always up to date.
 ![[Knowledge/Engineering/SRE/assets/google-storage-stack.png|400]]
 ([source](https://sre.google/sre-book/production-environment/))
 
 # Flashcards
 - What are the 5 technologies constituting Google's storage stack?
-    - They're D, Colossus, Bigtable, Spanner and Blobstore. D sits at the lowest level as a fileserver on almost every machine in a datacentre. Colossus wraps around D to create a distributed cluster filesystem.
+    - They're D, Colossus, Bigtable, Spanner and Blobstore. D sits at the lowest level as a fileserver on almost every machine in a datacentre. Colossus wraps around D to create a distributed cluster filesystem and is a dependency of Bigtable (NoSQL database service) and Spanner (SQL database service).
+- 
