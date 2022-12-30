@@ -3,9 +3,12 @@ title: Site Reliability Engineering
 ---
 
 **Questions**:
-- 
+- How is Colossus run? Is some slave instance running on all machines?
+- Colossus is said to be a cluster-wide filesystem. In data centres, a cluster is a group of racks. Does a single instance of Colossus manage exactly 1 of these physical clusters?
 
 ---
+
+![[Knowledge/Engineering/SRE/assets/data-centre-wallpaper.png|700]]
 
 SREs are software engineers whose focus is to create *reliable*, scalable software systems. *Reliability* formally means: "the probability that [a system] will perform a required function without failure under stated conditions for a stated period of time." 
 
