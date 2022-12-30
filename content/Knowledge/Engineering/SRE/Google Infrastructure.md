@@ -29,4 +29,6 @@ Resource allocation is handled by [[Knowledge/Engineering/SRE/Borg|Borg]].
 # RPCs
 All Google services communicate with each other through RPCs (remote procedure calls), supported by an infrastructure called **Stubby**, or the open-source alternative: **gRPC**. RPCs are exactly what they sound like — you're just calling a function, but it's just running on a different machine on possibly a different network. *Making RPC calls is often exactly like making local function calls, if you don't look under the hood*.
 
-Data is transferred through protobufs (protocol buffers).
+### Protobufs
+Data is transferred through protobufs (protocol buffers), which is a data serialisation format developed by Google. Other examples of data serialisation formats include XML. In an RPC, the client and server needs to know the data serialisation format and structure of the data. This is done through defining the protobuf structure with PBDL (protobuf definition language).
+- Protobufs are smaller (since it's binary encoded) and can contain more complex data than XML. 
