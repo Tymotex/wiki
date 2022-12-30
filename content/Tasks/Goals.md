@@ -2,54 +2,39 @@
 title: Goals
 ---
 
-TODO: check out Google tasks.
-- What's your goal for Google next year? Get promoted to L4.
+- **Career**
+    - Get promoted to L4. Work your ass off. Don't think about starting your own venture, you need this time working under someone else so you can learn from them. Leave your dreams of entrepreneurship to later.
+    - Get C++ readability certification.
+- **Programming**
+    - Read technical books:
+        - Fundamentals of Software Architecture
+        - Clean Code
+        - Site Reliability Engineering
+        - Software Engineering at Google
+    - ... work on some projects. I'm not sure what yet.
+    - ... contribute to open source projects. I'm not sure what yet.
+- **Reading**
+    - Read at least 1 book a fortnight on average.
+    - Read the 3 ancient Stoic books.
+    - Read On Writing Well.
+    - Read A Brief History of Time.
+- **Love** — this isn't going to be a focus. I'm a worthless young man and need to build myself up first.
+    - Ask out someone and go on at least 1 date.
+- **Health**
+    - End the year between 76kg (24.5 BMI) to 80kg (25.8 BMI). The 24.5 BMI is apparently most attractive according to women while 25.8 BMI is most aesthetic according to men.
+    - Squat 150kg (or 2x bodyweight). 
+    - Deadlift 160kg (or 2.2x bodyweight).
+    - Bench 120kg (or 1.65x bodyweight).
+    - Strict barbell curl 45kg.
+- **Family**
+    - Help mum and dad get low-stress regular income.
+- **Self-Improvement**
+    - Continue to meditate 15-20 mins every day.
+    - Actually stick to a schedule... Seriously, you've actually never done this before.
+    - Something related to conquering social fears.
 
-# 2022 Oct → Dec
-I only have to focus on 4 things this year: career, investing, reading, and lifting. 
 
-## Career
-- Finish Konflux and have it usable by the public.
-- Finish MVP for math website.
-- Write 1 blog post (probably on building a second brain).
-- Learn about procedural generation and start the app idea you had.
-- Get mum 1 client.
-- Complete these books:
-    - Fundamentals of Software Architecture
-    - Clean Code
-    - Site Reliability Engineering
-    - Software Engineering at Google
 
-## Investing
-Building financial intelligence.
-- [x] Do a mock run through the full process of buying a house. Pretend as if you were a real buyer.
-- [x] Invest $1000 in *something*.
 
-## Reading
-- [ ] Learn more about law. Fill a glossary of around 50 words. Know them all.
-- [x] Learn more about nutrition. (Done by reading How Not to Die)
-- [ ] Read **Spark**
-- [ ] Read **The Psychology of Selling**
-- [ ] Read **The Obstacle Is the Way**
-- [ ] Read **On Writing Well**
-- [ ] Read **Seven Habits**
-- Read books on science: 
-    - [ ] **A Brief History of Time**
-    - [ ] **The Selfish Gene**
 
-## Lifting
-- Get to 74kg by the end of 2022.
-- Squat 140kg.
-- Deadlift 140kg.
-- Bench press 110kg.
-- Overhead press 72.5kg.
 
-Update on early December: 
-
-# 2023+
-## Career
-- Get to L4 at the end of 2023.
-- Get to L5 at the end of 2025.
-
-## Lifting
-- After hitting 1.5x bench, 2x squat, 2.2x deadlift, consider competing.

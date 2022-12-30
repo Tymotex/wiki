@@ -19,5 +19,5 @@ title: Google Tasks and Workflow
 - Take parents out to dinner.
 - Walk along Darling Harbour bridge.
 - Meet friends to chill.
-- Read a book or articles in a cafe.
-- Attend some skills class that's running in the city.
+- Study or read a book in a cafe.
+- Attend some skills class in the city.

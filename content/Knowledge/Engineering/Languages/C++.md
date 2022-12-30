@@ -968,7 +968,11 @@ Foo foo;
 Foo bar(std::move(foo));   // Read this like: "moving foo's contents to bar."
 ```
 
-> `std::move` doesn't actually move anything, which is a bit misleading. It just converts an lvalue to rvalue reference ([technically an xvalue](https://en.cppreference.com/w/cpp/utility/move)) so as to invoke the move constructor. It has zero side effects and behaves very much like a typecast. The actual 'moving' itself is done by the move constructor.
+Once you've used `move(foo)`, you mustn't use `foo` again. Because it's error prone, Bjarne recommends to use it sparingly and only when the performance improvements justify it.
+
+> `std::move` doesn't actually move anything, which is a bit misleading. It just converts an lvalue to rvalue reference so as to invoke the move constructor. It has zero side effects and behaves very much like a typecast. The actual 'moving' itself is done by the move constructor.
+> 
+> A less mislead name for `std::move` would have been `rvalue_cast`, according to Bjarne.
 > 
 > `std::move(foo)` basically says "you are now allowed to steal resources from `foo`".
 
@@ -1097,9 +1101,41 @@ int main() {
 ```
 
 ### Concepts [TODO]
-Since in many situations we don't want to accept *any* type in our template, we can specify constraints with predicates, which we call *concepts*.
+Concepts are predicates that are used to apply constraints to the type arguments you pass to a template function or class. The main reason to use concepts is to get the compiler to be better at preventing misuage.
+- This is from C++20. Prior to C++20, you'd rely on [[Knowledge/Engineering/Languages/C++#Type Traits [TODO]|type traits]] with `static_assert`s, or simply trusting programmers to follow documentation on how to use a template correctly.
+- Useful concepts are provided in the [standard `<concepts>` header](https://en.cppreference.com/w/cpp/concepts).
 
-This is a C++20 feature.
+TODO: notes on concept-based overloading, defining concepts.
+```cpp
+template <...>
+    requires
+
+// The equivalent and less verbose way to use concepts without requirements clauses:
+template <...>
+```
+
+- You can overload template functions: depending on the type arguments, run a different generic algorithm.
+
+```cpp
+template <typename T, typename U = T>
+concept EqualityComparable =
+    requires (T a, U b) {
+        { a == b } -> bool;
+        { a != b } -> bool;
+        { b == a } -> bool;
+        { b != a } -> bool;
+    }
+
+// ...
+static_assert(EqualityComparable<int, double>);
+static_assert(EqualityComparable<int>);          
+static_assert(EqualityComparable<char>);          
+static_assert(EqualityComparable<char, string>);  // Fails.
+```
+
+
+### Type Traits [TODO]
+
 
 ### Deduction Guides [TODO]
 This is for aiding type inference.
@@ -1248,7 +1284,7 @@ The STL containers support different iterator categories:
 (sourced from [GeeksForGeeks](https://www.geeksforgeeks.org/))
 
 ## Random C++ Features
-Smaller but important C++ details.
+Other important C++ details.
 
 ### Structured Bindings
 You can unpack values in C++17, similar to how you destructure objects in JavaScript. It's just syntactic sugar.
@@ -1534,7 +1570,7 @@ int main() {
 ### Compile-Time If [TODO]
 `if constexpr() { ... }`. C++17.
 
-### Volatile
+### Volatile [TODO]
 
 
 ### Extern
@@ -1555,6 +1591,9 @@ int main() {
 int foo = 42;    
 ```
 Compiling the above with `g++ -o main main.cc foo.cc` and it just works.
+
+### Fold Expressions [TODO]
+
 
 # Appendix:
 All the notes under this section are meant to be topics or details you don’t need to care much about to program effectively with C++.
@@ -1706,7 +1745,7 @@ Some simple Q-and-A notes to be used as flashcards.
 - Write a valid function signature for: a copy constructor, copy assignment operator overload, move constructor and move assignment operator overload.
     - `Foo(const Foo& other)`, `Foo& operator=(const Foo& other)`, `Foo(Foo&& other)`, `Foo& operator=(Foo&& other)`.
 - What is std::move?
-    - It's a function you use to help you invoke the move constructor or the move assignment operator. It converts an lvalue to an rvalue reference (well, technically an xvalue, I think). It doesn't do any actual moving itself.
+    - It's a function you use to help you invoke the move constructor or the move assignment operator. It converts an lvalue to an rvalue reference. It doesn't do any actual moving itself.
 - What's `thread_local`?
 - How do you define a function template?
 - How do you define a class template? How do you define the methods of a class template outside of the class definition?
@@ -1725,6 +1764,12 @@ Some simple Q-and-A notes to be used as flashcards.
     - You have to wrap each case in curly braces. E.g. `case foo: { ... }`.
 - Should you always use range-based for loops?
     - In general yes, but with exceptions. Eg. you should not use it when you are erasing values, inserting something into the middle of something, etc., basically anytime you need to manipulate the position of the iterator, you’d have to fall back to the ugly for loop.
+- What are the 5 main iterator categories? How do they relate to each other?
+    - They are: input, output, forward, bidirectional, random access.
+- Why should I use `make_unique` to create `unique_ptr`s instead of directly constructing them using `new` like in: `unique_ptr<Foo>(new Foo(...))`?
+    - It's exception safe, meaning if `foo(unique_ptr<X>(new X), unique_ptr<Y>(new Y))` fails, there are no resource leaks. It avoids usage of `new` and `delete`, which is always recommended for modern C++ code. It's more readable since you specify `Foo` only once compared to twice: `make_unique<Foo>`.
+- Explain the difference between `unique_ptr` and `shared_ptr`.
+    - `unique_ptr` represents sole ownership while `shared_ptr` represents shared ownership. A `unique_ptr` deletes the object it's hosting once it goes out of scope. A `shared_ptr` does the same only if it is the last remaining owner of the object it's hosting. The copy constructor and assignment operator are disabled in `unique_ptr` and only allows for move semantics. In `shared_ptr`, copy and move are enabled.
 
 ## Questions
 Some questions I have that are answered:

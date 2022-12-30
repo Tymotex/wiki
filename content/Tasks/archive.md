@@ -719,12 +719,63 @@ kanban-plugin: basic
 - [x] ==1== **(2 hours)** Chapter 6 C++.
 - [x] Go get your shirt and pants tailored at Top Ryde.
 
+## **Saturday** *[[Journal/2022-12-24|2022-12-24]]* (6)
+
+- [x] 🏆 Purpose: C++, then everything else.
+- [x] **(60 mins)** Clean out the entirety of 'Old Notes'.
+- [x] **(45 mins)** Finish all notes on iterators and implement an iterator yourself.
+- [x] ==1== Start reading stoicism FAQ: https://www.reddit.com/r/Stoicism/wiki/intro_faq/#wiki_why_study_stoicism.3F
+- [x] ==8== Make a plan to grind out the math website in record time.
+- [x] Clean your rooms.
+- [x] ==1== Beg mum to repair my jeans and alter my chinos.
+
+## **Sunday** *[[Journal/2022-12-25|2022-12-25]]* (6)
+
+- [x] 🏆 Purpose: reboot, C++
+- [x] ==3== Write about your heroes.
+- [x] ==2== Do your Google onboarding.
+- [x] ==1== Bubbler scheduler.
+- [x] ==1== Ask mum if dayi would like origami.
+
+## **Monday** *[[Journal/2022-12-26|2022-12-26]]* (6)
+
+- [x] 🏆 Purpose: fucking Figma, then SRE book, then Meditations.
+- [x] **(2 hours)** Finish first draft of Figma prototype for math website.
+- [x] ==4== Write your goals for next year (and the remainder of this year).
+
+## **Tuesday** *[[Journal/2022-12-27|2022-12-27]]* (6)
+
+- [x] 🏆 Purpose: C++, sre
+- [x] **(1 hour)** Smart pointers.
+- [x] **(1 hour)** Finish reading containers chapter.
+- [x] Book avatar 2
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings

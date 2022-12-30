@@ -123,6 +123,9 @@ Ikigai by Francesc Miralles and Hector Garcia. 'Ikigai' means 'reason for being'
 ### Discipline is Destiny
 [[Reading/Discipline is Destiny|Discipline is Destiny]] by Ryan Holiday.
 
+### The Way of the Superior Man
+
+
 ---
 ## Science
 ### Why We Sleep
