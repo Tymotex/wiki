@@ -27,6 +27,7 @@ Some questions to ask:
 
 ## Ideas
 - From the first days, begin writing ELI5 resources for Nooglers and people new to SRE.
+- Contribute a few source code documentation CLs to begin with.
 
 ## Workflow Checklist
 - Use a tiled window manager such as i3.
