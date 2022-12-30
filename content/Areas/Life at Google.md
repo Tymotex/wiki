@@ -15,6 +15,7 @@ Some questions to ask:
 - What are the consequences of not meeting SLA for Storage services? I'm curious because they're not user-facing.
 - How often do disastrous outages actually happen for Storage services?
 - What's been the most disastrous outage you've experienced?
+- Can you think of any unique challenges faced by Storage SRE that are 
 - Are there ever intentional outages caused on the Storage services like there are for services like Chubby?
 - Can I stay behind in the office after work to read or work on my own personal projects.
 - How often is the work that the team does considered toil?
