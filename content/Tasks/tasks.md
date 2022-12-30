@@ -2,23 +2,18 @@
 kanban-plugin: basic
 ---
 
-## **Friday** *[[Journal/2022-12-30|2022-12-30]]* (6)
-
-- [x] ==2== **(2 hours)** SRE book
-- [ ] Change water and clean the air conditioner.
-- [ ] **(45 mins)** Finish string chapter C++ Start IO chapter c++
-- [ ] Research the best ways to learn new vocabulary and use them.
-- [ ] Transfer phone and camera photos for dayi
-- [ ] ==2== Get dad's opinion on prototype.
-- [ ] ==1== Take a physique picture.
-- [x] Clear gCal and set a proper schedule (after researching how to make and stick to one).
-
 ## **Saturday** *[[Journal/2022-12-31|2022-12-31]]* (6)
 
 - [ ] 🏆 Purpose
 - [ ] 🌞 Morning routine
 - [ ] 🌙 Evening routine
 - [ ] **(10 mins)** Monthly Review.
+- [ ] ==1== Change water and clean the air conditioner.
+- [ ] ==1== **(45 mins)** Finish string chapter C++ Start IO chapter c++
+- [ ] ==1== Research the best ways to learn new vocabulary and use them.
+- [ ] ==1== Transfer phone and camera photos for dayi
+- [ ] ==3== Get dad's opinion on prototype.
+- [ ] ==2== Take a physique picture.
 
 ## **Sunday** *[[Journal/2023-01-01|2023-01-01]]* (6)
 
@@ -48,12 +43,18 @@ kanban-plugin: basic
 
 - [ ] 🏆 Purpose
 
+## **Saturday** *[[Journal/2023-01-07|2023-01-07]]* (6)
+
+- [ ] 🏆 Purpose
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 {"kanban-plugin":"basic"}
 ```

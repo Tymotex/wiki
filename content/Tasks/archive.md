@@ -765,12 +765,19 @@ kanban-plugin: basic
 - [x] ==3== How to prevent afternoon food coma? What are *all* the strategies?<br><br>Okay they're basically:<br>- Sleep well (obviously)<br>- Stay hydrated (this is probably the one I was least careful about)<br>- Eat lighter meals but more frequently<br>- Don't eat a fuckload of carbs and proteins. <br>- Also don't double down on fatty foods. It contributes to food coma as well.<br>- A general rule: eat light, stay hydrated. Eat more frequently to compensate for a less filling meal.<br>- Get some light exercise in, somehow.
 - [x] ==1== **(45 mins)** Pick a protein powder.
 
+## **Friday** *[[Journal/2022-12-30|2022-12-30]]* (6)
+
+- [x] ==2== **(2 hours)** SRE book
+- [x] Clear gCal and set a proper schedule (after researching how to make and stick to one).
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
