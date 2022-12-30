@@ -12,7 +12,11 @@ Some questions to ask:
 - Do you have any advice to would give to yourself when you were just starting out your career in software engineering?
 - Is there anything you're learning about recently?
 - Do you have any thoughts on how to best absorb all the information in the first few weeks?
+- How are the reliability targets determined for low-level services like for Storage? (it must be different to how they're determined for user-facing services like Gmail)
 - How elaborate is the process of determining the reliability target and SLOs for a service? Do they change after being set?
+
+## Ideas
+- From the first days, begin writing ELI5 resources for Nooglers and people new to SRE.
 
 ## Workflow Checklist
 - Use a tiled window manager such as i3.
