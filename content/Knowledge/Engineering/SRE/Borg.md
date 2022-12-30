@@ -8,4 +8,5 @@ A distributed 'cluster operating system' that handles computing resource allocat
 
 Borg runs *jobs*, which are indefinitely running services or one-off things like a MapReduce. *Jobs* consist of 1 or more identical *tasks*. 
 
-**BNS** (Borg Naming Service) is a level of indirection necessary for Borg to identify tasks (similar to DNS and IP addresses).
+## BNS
+**BNS** (Borg Naming Service) is a level of indirection necessary for Borg to identify tasks (similar to DNS and IP addresses). It maps a unique string like `/bns/<cluster>/<user>/<job_name>/<task_number>` to an `<IP address>:<port>`.

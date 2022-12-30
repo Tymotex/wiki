@@ -10,6 +10,7 @@ These are all my goals:
 4. **(Career)** Ship 1 interesting personal project.
 5. **(Personal)** Read 1 book a fortnight, on average.
 6. **(Personal)** Make a schedule that you stick to for at least 3 months.
+6. **(Personal)** Don't watch porn this year. Not even once. Masturbate no more than 4 times a month.
 9. **(Personal)** Ensure mum and dad have low-stress regular income by the end of the first quarter.
 7. **(Personal)** Talk to people and make new friends (this goal is unformulated at the moment).
 8. **(Personal)** Ask at least 1 person out successfully and go on at least 1 date.
