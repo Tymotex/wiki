@@ -24,5 +24,9 @@ Resource allocation is handled by [[Knowledge/Engineering/SRE/Borg|Borg]].
 ([source](https://sre.google/sre-book/production-environment/))
 
 # Utility
-- Chubby — a distributed lock service with an API that mimics a filesystem. It's used to store some small pieces of data and is responsible for coordinating access to that data.
-- Borgmon
+- Chubby — a distributed lock service with an API that mimics a filesystem. It's used to store and coordinate access to some small pieces of data that you want to ensure is strongly-consistent. It's also used for *leader election*.
+
+# RPCs
+All Google services communicate with each other through RPCs (remote procedure calls), supported by an infrastructure called **Stubby**, or the open-source alternative: **gRPC**. RPCs are exactly what they sound like — you're just calling a function, but it's just running on a different machine on possibly a different network. *Making RPC calls is often exactly like making local function calls, if you don't look under the hood*.
+
+Data is transferred through protobufs (protocol buffers).
