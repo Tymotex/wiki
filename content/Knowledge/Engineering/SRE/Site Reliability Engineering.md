@@ -5,6 +5,7 @@ title: Site Reliability Engineering
 **Questions**:
 - How is Colossus run? Is some slave instance running on all machines?
 - Colossus is said to be a cluster-wide filesystem. In data centres, a cluster is a group of racks. Does a single instance of Colossus manage exactly 1 of these physical clusters?
+- What exactly *are jobs* in Borg? Are they like containerised binaries?
 
 ---
 
