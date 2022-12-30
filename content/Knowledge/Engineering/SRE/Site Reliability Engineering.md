@@ -45,13 +45,9 @@ In the traditional development/operations split, the operations team size would 
 # Fundamentals
 - [[Knowledge/Engineering/SRE/Google Infrastructure|Google Infrastructure]]
 - [[Knowledge/Engineering/SRE/Error Budget|Error budget]]
-- [[Knowledge/Engineering/SRE/Monitoring|Monitoring]]
-- [[Knowledge/Engineering/SRE/Canary|Canary]]
-
-
-
-
-
+- [[Knowledge/Engineering/SRE/SLIs, SLOs, SLAs|SLIs, SLOs and SLAs]]
+- [[Knowledge/Engineering/SRE/Monitoring|Monitoring]] TODO
+- [[Knowledge/Engineering/SRE/Canary|Canary]] TODO
 
 # Flashcards
 - What are the 5 technologies constituting Google's storage stack?
