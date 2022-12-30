@@ -15,7 +15,7 @@ Resource allocation is handled by [[Knowledge/Engineering/SRE/Borg|Borg]].
 
 # Storage
 1. **D** is the low-level file server that runs on almost all machines.
-2. **Colossus** is a *distributed cluster filesystem* that wraps around D. A distributed filesystem is one 
+2. **Colossus** is a *distributed cluster filesystem* that wraps around D. A distributed filesystem is one that is spread out across multiple machines but presents a single logical interface to the client. From the client's perspective, they wouldn't know they're interacting with a filesystem split across many machines.
     - Colossus is the backbone of Google Cloud services and apps like YouTube, Drive, Gmail, etc.
     - It's a successor of Google File System (GFS), which was something that inspired the development of Hadoop, an open-source distributed filesystem.
 3. **Bigtable** is a NoSQL DBMS offered as a service.
@@ -23,7 +23,6 @@ Resource allocation is handled by [[Knowledge/Engineering/SRE/Borg|Borg]].
 ![[Knowledge/Engineering/SRE/assets/google-storage-stack.png|400]]
 ([source](https://sre.google/sre-book/production-environment/))
 
-# Flashcards
-- What are the 5 technologies constituting Google's storage stack?
-    - They're D, Colossus, Bigtable, Spanner and Blobstore. D sits at the lowest level as a fileserver on almost every machine in a datacentre. Colossus wraps around D to create a distributed cluster filesystem and is a dependency of Bigtable (NoSQL database service) and Spanner (SQL database service).
-- 
+# Utility
+- Chubby — a distributed lock service with an API that mimics a filesystem. It's used to store some small pieces of data and is responsible for coordinating access to that data.
+- Borgmon

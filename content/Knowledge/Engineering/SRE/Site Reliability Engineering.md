@@ -50,3 +50,10 @@ In the traditional development/operations split, the operations team size would 
 
 
 
+
+# Flashcards
+- What are the 5 technologies constituting Google's storage stack?
+    - They're D, Colossus, Bigtable, Spanner and Blobstore. D sits at the lowest level as a fileserver on almost every machine in a datacentre. Colossus wraps around D to create a distributed cluster filesystem and is a dependency of Bigtable (NoSQL database service) and Spanner (SQL database service).
+- What is Borg?
+    - A distributed 'cluster operating system' which acts as a job scheduler. You give it jobs and say they need a certain number of CPU cores and RAM, and Borg will handle the rest — picking which machines to run the job's tasks and restarting the job's tasks when it fails, etc.
+
