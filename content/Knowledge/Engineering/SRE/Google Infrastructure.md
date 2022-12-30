@@ -32,3 +32,7 @@ All Google services communicate with each other through RPCs (remote procedure c
 ### Protobufs
 Data is transferred through protobufs (protocol buffers), which is a data serialisation format developed by Google. Other examples of data serialisation formats include XML. In an RPC, the client and server needs to know the data serialisation format and structure of the data. This is done through defining the protobuf structure with PBDL (protobuf definition language).
 - Protobufs are smaller (since it's binary encoded) and can contain more complex data than XML. 
+
+# Frontend Infrastructure
+Google's frontend infrastructure consists of a reverse proxy (GFE — Google Frontend) and a load balancer (GSLB — Global Software Load Balancer).
+
