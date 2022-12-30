@@ -19,12 +19,12 @@ Reliability is a function of:
 - *Mean time to failure (MTTF)*: time taken for system to fail.
 
 The focuses of creating reliable systems are:
-- Availability
-- Latency
+- Availability — usually reported as the percentage of time the service is able to respond.
+- Latency — how long it takes for a request to get a response.
 - Performance
 - Efficiency — in the utilisation rate of resources (using fewer computing resources).
 - Change management — since changes to live systems often account for around 70% of outages, we need strategies like progressive rollouts and rollbacks.
-- Monitoring
+- Monitoring — so we know whether we're meeting [[Knowledge/Engineering/SRE/SLIs, SLOs, SLAs|SLOs]].
 - Emergency response
 - Capacity planning
 
