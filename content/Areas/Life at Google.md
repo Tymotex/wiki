@@ -38,6 +38,7 @@ Some questions to ask:
     - [ ] How does Blaze exactly work? What language is it implemented in?
     - [ ] What is Rapid's relationship to Blaze? Does it invoke Blaze?
     - [ ] Who writes the Codelabs?
+    - [ ] I'm confused about what MPM is and how it fits into the release pipeline. Is it at all similar to npm?
 - [ ] Codelab goals! Work on codelabs for \_ hours.
 
 ## Ideas

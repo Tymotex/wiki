@@ -24,3 +24,11 @@ This month, I'll focus on settling into my job and getting used to a regular sch
 In my job, I will work hard for the purpose of *learning* and becoming more proficient. I will have the goal of reaching L4 in the back of my mind, but in the day-to-day, the goal is to learn and work hard. I am intrinsically motivated by learning and by hard work, and this is what will carry me through to the end goal — whatever I choose it to be.
 
 > "Don't spike dopamine prior to engaging in effort. And don't spike dopamine after engaging in effort. Learn to spike your dopamine from effort itself." — Andrew Huberman.
+
+Here are some books I want to finish this month:
+- [ ] **(Programming)** Site Reliability Engineering
+- [ ] **(Programming)** A Tour of C++
+- [ ] **(Programming)** Software Engineering at Google **(just get to around page 200)**
+- [ ] Meditations
+- [ ] The Way of the Superior Man
+- [ ] Never Eat Alone
