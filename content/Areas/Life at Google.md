@@ -12,11 +12,24 @@ Some questions to ask:
 - Do you have any advice to would give to yourself when you were just starting out your career in software engineering?
 - Is there anything you're learning about recently?
 - Do you have any thoughts on how to best absorb all the information in the first few weeks?
+- What are the consequences of not meeting SLA for Storage services? I'm curious because they're not user-facing.
+- How often do disastrous outages actually happen for Storage services?
+- What's been the most disastrous outage you've experienced?
+- Can you think of any unique challenges faced by Storage SRE that aren't faced by any other SRE team?
+- Are there ever intentional outages caused on the Storage services like there are for services like Chubby?
+- Can I stay behind in the office after work to read or work on my own personal projects.
+- How often is the work that the team does considered toil?
+- Do people usually have two sets of peripherals, one for home, one for work? E.g. one keyboard they buy is left at work while one keyboard is left at home?
+- How likely is it for something disastrous to happen to a Storage service without the monitoring services being able to pick up anything?
+- How reliable are the monitoring services? What if they experience an outage — who's watching the watchers?
 - How are the reliability targets determined for low-level services like for Storage? (it must be different to how they're determined for user-facing services like Gmail)
 - How elaborate is the process of determining the reliability target and SLOs for a service? Do they change after being set?
+- What are the events that contribute to the error rate?
+- How hard does monitoring impact a service's performance?
 
 ## Ideas
 - From the first days, begin writing ELI5 resources for Nooglers and people new to SRE.
+- Contribute a few source code documentation CLs to begin with.
 
 ## Workflow Checklist
 - Use a tiled window manager such as i3.

@@ -4,6 +4,7 @@ kanban-plugin: basic
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## **Saturday** *[[Journal/2022-12-24|2022-12-24]]* (6)
 
 - [x] 🏆 Purpose: C++, then everything else.
@@ -85,12 +86,19 @@ kanban-plugin: basic
 - [ ] ==1== Take a physique picture.
 - [x] Clear gCal and set a proper schedule (after researching how to make and stick to one).
 
+=======
+>>>>>>> 12553b3b7a58de581c1ed1b532c5216ca8e7bfb7
 ## **Saturday** *[[Journal/2022-12-31|2022-12-31]]* (6)
 
 - [ ] 🏆 Purpose
-- [ ] 🌞 Morning routine
-- [ ] 🌙 Evening routine
-- [ ] **(10 mins)** Monthly Review.
+- [ ] **(3 hours)** Get to page 80 SRE book.
+- [ ] Find those air plugs holy shit.
+- [ ] ==3== Get dad's opinion on prototype.
+- [ ] ==1== Transfer phone and camera photos for dayi
+- [ ] ==1== **(45 mins)** Finish string chapter C++ Start IO chapter c++
+- [ ] ==1== Research the best ways to learn new vocabulary and use them.
+- [x] ==2== Take a physique picture.
+- [x] ==1== Change water and clean the air conditioner.
 
 ## **Sunday** *[[Journal/2023-01-01|2023-01-01]]* (6)
 
@@ -120,12 +128,18 @@ kanban-plugin: basic
 
 - [ ] 🏆 Purpose
 
+## **Saturday** *[[Journal/2023-01-07|2023-01-07]]* (6)
+
+- [ ] 🏆 Purpose
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 {"kanban-plugin":"basic"}
 ```
