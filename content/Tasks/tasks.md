@@ -92,6 +92,7 @@ kanban-plugin: basic
 
 - [ ] 🏆 Purpose
 - [ ] **(3 hours)** Get to page 80 SRE book.
+- [ ] Add pH salt and aquarium salt. Test pH.
 - [ ] Find those air plugs holy shit.
 - [ ] ==3== Get dad's opinion on prototype.
 - [ ] ==1== Transfer phone and camera photos for dayi
@@ -138,8 +139,6 @@ kanban-plugin: basic
 
 
 
-%% kanban:settings
-## Archive
 %% kanban:settings
 {"kanban-plugin":"basic"}
 ```
