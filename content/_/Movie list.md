@@ -5,9 +5,9 @@ Movies that interest me:
 - The Matrix.
 - Fight Club.
 - A Silent Voice.
-- Your Lie in April.
 - Wolf of Wall Street.
 - The Godfather.
+- American Psycho.
 - ~~I Want to Eat Your Pancreas~~
 - ~~Your Name~~
 

@@ -750,12 +750,49 @@ kanban-plugin: basic
 - [x] **(1 hour)** Finish reading containers chapter.
 - [x] Book avatar 2
 
+## **Wednesday** *[[Journal/2022-12-28|2022-12-28]]* (6)
+
+- [x] ==1== **(1 hour)** Meditations
+
+## **Thursday** *[[Journal/2022-12-29|2022-12-29]]* (6)
+
+- [x] ==6== Macbook transfer files
+- [x] Buy algae wafer.
+- [x] ==2== Clarify remaining goals into concrete steps. Get January ready. Perhaps print a calendar with checkboxes inside: wake up before \_\_, run, meditate, brush teeth.<br>Evening: worked out?, stopped at \_\_, journal.
+- [x] ==1== Read about early career advice (especially specifically for software eng.)<br>This should influence your goals.<br>I think it makes sense to double down on making 2023 a year where I learn a fuckload about computing fundamentals and try mastering programming languages.
+- [x] ==1== What has really impressed you about new hires? Especially in software engineering. Read about this.
+- [x] ==1== Read about all sleep advice. Follow them religiously for today.<br>Don't drink water after x hours before bed.
+- [x] ==3== How to prevent afternoon food coma? What are *all* the strategies?<br><br>Okay they're basically:<br>- Sleep well (obviously)<br>- Stay hydrated (this is probably the one I was least careful about)<br>- Eat lighter meals but more frequently<br>- Don't eat a fuckload of carbs and proteins. <br>- Also don't double down on fatty foods. It contributes to food coma as well.<br>- A general rule: eat light, stay hydrated. Eat more frequently to compensate for a less filling meal.<br>- Get some light exercise in, somehow.
+- [x] ==1== **(45 mins)** Pick a protein powder.
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings

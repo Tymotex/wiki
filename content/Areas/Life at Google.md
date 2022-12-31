@@ -2,6 +2,22 @@
 title: Google Tasks and Workflow
 ---
 
+## First Few Days
+[[Knowledge/Soft Skills/Excelling as a Graduate|Excelling as a new software engineering graduate]].
+
+Some questions to ask:
+- Based on your personal experience, do you have any advice on *when* to ask for help?
+- What do you consider are the strongest signals that an L3 is ready to transition to an L4 engineer?
+- How different do you feel now compared to when you first started out? (Maybe be more specific here)
+- Do you have any advice to would give to yourself when you were just starting out your career in software engineering?
+- Is there anything you're learning about recently?
+- Do you have any thoughts on how to best absorb all the information in the first few weeks?
+- How are the reliability targets determined for low-level services like for Storage? (it must be different to how they're determined for user-facing services like Gmail)
+- How elaborate is the process of determining the reliability target and SLOs for a service? Do they change after being set?
+
+## Ideas
+- From the first days, begin writing ELI5 resources for Nooglers and people new to SRE.
+
 ## Workflow Checklist
 - Use a tiled window manager such as i3.
     - Have the same shortcuts as the ones you use on your main PC.

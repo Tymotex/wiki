@@ -2,39 +2,23 @@
 title: Goals
 ---
 
-- **Career**
-    - Get promoted to L4. Work your ass off. Don't think about starting your own venture, you need this time working under someone else so you can learn from them. Leave your dreams of entrepreneurship to later.
-    - Get C++ readability certification.
-- **Programming**
-    - Read technical books:
-        - Fundamentals of Software Architecture
-        - Clean Code
-        - Site Reliability Engineering
-        - Software Engineering at Google
-    - ... work on some projects. I'm not sure what yet.
-    - ... contribute to open source projects. I'm not sure what yet.
-- **Reading**
-    - Read at least 1 book a fortnight on average.
-    - Read the 3 ancient Stoic books.
-    - Read On Writing Well.
-    - Read A Brief History of Time.
-- **Love** — this isn't going to be a focus. I'm a worthless young man and need to build myself up first.
-    - Ask out someone and go on at least 1 date.
-- **Health**
-    - End the year between 76kg (24.5 BMI) to 80kg (25.8 BMI). The 24.5 BMI is apparently most attractive according to women while 25.8 BMI is most aesthetic according to men.
-    - Squat 150kg (or 2x bodyweight). 
-    - Deadlift 160kg (or 2.2x bodyweight).
-    - Bench 120kg (or 1.65x bodyweight).
-    - Strict barbell curl 45kg.
-- **Family**
-    - Help mum and dad get low-stress regular income.
-- **Self-Improvement**
-    - Continue to meditate 15-20 mins every day.
-    - Actually stick to a schedule... Seriously, you've actually never done this before.
-    - Something related to conquering social fears.
+# 2023
+These are all my goals:
+1. **(Career)** Get promoted to L4 at Google.
+2. **(Career)** Get C++ readability.
+3. **(Career)** Read 1 technical book a month, on average.
+4. **(Career)** Ship 1 interesting personal project.
+5. **(Personal)** Read 1 book a fortnight, on average.
+6. **(Personal)** Make a schedule that you stick to for at least 3 months.
+6. **(Personal)** Don't watch porn this year. Not even once. Masturbate no more than 4 times a month.
+9. **(Personal)** Ensure mum and dad have low-stress regular income by the end of the first quarter.
+7. **(Personal)** Talk to people and make new friends (this goal is unformulated at the moment).
+8. **(Personal)** Ask at least 1 person out successfully and go on at least 1 date.
+10. **(Gym)** End the year on 76kg (24.5 BMI) to 80kg (25.8 BMI).
+11. **(Gym)** Squat 2x body weight (150kg), deadlift 2.2x body weight (160kg), bench 1.65x body weight (120kg), strict curl 45kg.
+12. **(Gym)** Try Jiu Jitsu midyear, at least for the free trial.
 
-
-
-
+## January
+This month, I'll focus on settling into my job and getting used to a regular schedule. That's really just one goal this month: **make a schedule and stick to it for the whole month**.
 
 

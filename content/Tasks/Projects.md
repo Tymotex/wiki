@@ -59,7 +59,7 @@ kanban-plugin: basic
 - [x] **(1 hour)**<br>Nutrition deep-dive<br>#reading #recurring
 
 
-## [[Areas/Google Tasks and Workflow|Google]]
+## [[Areas/Life at Google|Google]]
 
 - [ ] **(1 hour)**<br>Read 'Software Engineering at Google' textbook.<br>#google #recurring
 - [ ] **(1 hour)**<br>Read 'Site Reliability Engineering' textbook.<br>#google #recurring
