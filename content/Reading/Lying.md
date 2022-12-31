@@ -2,6 +2,16 @@
 title: Lying
 ---
 
+💎 Obey the precept uncompromisingly: **never tell lies**.
+
+💎 White lies, when unpacked, are never the compassionate option. Telling a white lie denies the person their autonomy to act on true information and is a failure of friendship. Be tactful where possible, but never use compassionate deceit as a moral justification.
+
+💎 Your honesty, and reputation for it, makes everything you say much more meaningful to people. Your words are trusted and your praise is never mistaken to be flattery.
+
+💎 Lies, however innocuous, require continual maintenance. Why not live, *knowing with every fibre of your being* that you have nothing to hide and therefore nothing complicate your connection with people?
+
+---
+
 > Among the many paradoxes of human life, this is perhaps the most peculiar and consequential: We often behave in ways that are guaranteed to make us unhappy. Many of us spend our lives marching with open eyes toward remorse, regret, guilt, and disappointment.
 
 A distinction should be drawn between deception and lying.
@@ -19,4 +29,10 @@ A distinction should be drawn between deception and lying.
 
 > A white lie is simply a denial of these realities. It is a refusal to offer honest guidance in a storm. Even on so touchy a subject, lying seems a clear failure of friendship.
 
-> And what do our children learn about us in moments like these? Is this really the example we want to set for them? Failures of personal integrity, once revealed, are rarely fo
+> Failures of personal integrity, once revealed, are rarely forgotten. We can apologise, of course. And we can resolve to be more forthright in the future. But we cannot erase the bad impression we have left in the minds of other people.
+
+> I continue to find that a willingness to be honest — especially about truths that one might be expected to conceal — often leads to much more gratifying exchanges with other human beings.
+
+> Lying is, almost by definition, a refusal to cooperate with others.
+
+> How would your relationships change if you resolved never to lie again? What truths might suddenly come into view in your life? What kind of person would you become? And how might you change the peoples around you? It is worth finding out.
