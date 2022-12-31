@@ -30,6 +30,15 @@ Some questions to ask:
 - What exactly does 'turnup' mean? I can't find a precise definition for it.
 - When we talk about 'clusters', do we mean an arbitrarily sized group of machines, or do we mean a physical cluster in a data centre — exactly one group of racks?
 - Do the people in this team generally work independently on their own projects, or do they frequently collaborate on the same project?
+- Are SREs able to be swapped into the development team without much ramp up time?
+
+### First Tasks
+
+- [ ] Questions to learn the answer to and maybe write about:
+    - [ ] How does Blaze exactly work? What language is it implemented in?
+    - [ ] What is Rapid's relationship to Blaze? Does it invoke Blaze?
+    - [ ] Who writes the Codelabs?
+- [ ] Codelab goals! Work on codelabs for \_ hours.
 
 ## Ideas
 - From the first days, begin writing ELI5 resources for Nooglers and people new to SRE.

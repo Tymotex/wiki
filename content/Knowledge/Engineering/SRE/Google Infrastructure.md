@@ -36,3 +36,12 @@ Data is transferred through protobufs (protocol buffers), which is a data serial
 # Frontend Infrastructure
 Google's frontend infrastructure consists of a reverse proxy (GFE — Google Frontend) and a load balancer (GSLB — Global Software Load Balancer).
 
+# Release Infrastructure
+*Release* is the process of getting source code deployed to production. **Rapid** is a release automation system built by Google which pushes your code along a CI/CD pipeline where it is built, tested, then eventually deployed.
+
+Google's CI/CD pipeline consists of:
+- Building — making binaries from the source code. **Blaze** is Google's main build tool which can build binaries from their main languages: C++, Java, Python, Go, JavaScript.
+- Branching
+- Testing
+- Packaging
+- 
