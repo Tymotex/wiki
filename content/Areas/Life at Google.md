@@ -28,6 +28,7 @@ Some questions to ask:
 - What are the events that contribute to the error rate?
 - How hard does monitoring impact a service's performance?
 - What exactly does 'turnup' mean? I can't find a precise definition for it.
+- When we talk about 'clusters', do we mean an arbitrarily sized group of machines, or do we mean a physical cluster in a data centre — exactly one group of racks?
 
 ## Ideas
 - From the first days, begin writing ELI5 resources for Nooglers and people new to SRE.
