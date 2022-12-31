@@ -1,7 +1,5 @@
 ---
-
 kanban-plugin: basic
-
 ---
 
 ## **Sunday** *[[Journal/2023-01-01|2023-01-01]]* (6)
@@ -15,52 +13,43 @@ kanban-plugin: basic
 - [ ] ==2== Transfer phone and camera photos for dayi
 - [ ] Add aquarium salt. Check and tweak pH if necessary.
 
-
 ## **Monday** *[[Journal/2023-01-02|2023-01-02]]* (6)
 
 - [ ] 🏆 Purpose
-
 
 ## **Tuesday** *[[Journal/2023-01-03|2023-01-03]]* (6)
 
 - [ ] 🏆 Purpose
 
-
 ## **Wednesday** *[[Journal/2023-01-04|2023-01-04]]* (6)
 
 - [ ] 🏆 Purpose
-
 
 ## **Thursday** *[[Journal/2023-01-05|2023-01-05]]* (6)
 
 - [ ] 🏆 Purpose
 - [ ] Get a Bulknutrients sample.
 
-
 ## **Friday** *[[Journal/2023-01-06|2023-01-06]]* (6)
 
 - [ ] 🏆 Purpose
 
-
 ## **Saturday** *[[Journal/2023-01-07|2023-01-07]]* (6)
 
 - [ ] 🏆 Purpose
-
 
 ## **Sunday** *[[Journal/2023-01-08|2023-01-08]]* (6)
 
 - [ ] 🏆 Purpose
 - [ ] **(10 mins)** Weekly Review.
 
+***
 
 ## Archive
 
 
 
-
-
 %% kanban:settings
-```
 {"kanban-plugin":"basic"}
 ```
 %%
