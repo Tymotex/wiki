@@ -21,4 +21,5 @@ These are all my goals:
 ## January
 This month, I'll focus on settling into my job and getting used to a regular schedule. That's really just one goal this month: **make a schedule and stick to it for the whole month**.
 
+In my job, I will work hard for the purpose of *learning* and becoming more proficient. I will have the goal of reaching L4 in the back of my mind, but in the day-to-day, the goal is to learn and work hard. I am intrinsically motivated by learning and by hard work, and this is what will carry me through to the end goal — whatever I choose it to be.
 
