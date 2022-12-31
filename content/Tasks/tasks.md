@@ -1,7 +1,5 @@
 ---
-
 kanban-plugin: basic
-
 ---
 
 ## **Saturday** *[[Journal/2022-12-31|2022-12-31]]* (6)
@@ -17,7 +15,6 @@ kanban-plugin: basic
 - [x] ==2== Take a physique picture.
 - [x] ==1== Change water and clean the air conditioner.
 
-
 ## **Sunday** *[[Journal/2023-01-01|2023-01-01]]* (6)
 
 - [ ] 🏆 Purpose
@@ -25,50 +22,38 @@ kanban-plugin: basic
 - [ ] 🌙 Evening routine
 - [ ] **(10 mins)** Weekly Review.
 
-
 ## **Monday** *[[Journal/2023-01-02|2023-01-02]]* (6)
 
 - [ ] 🏆 Purpose
-
 
 ## **Tuesday** *[[Journal/2023-01-03|2023-01-03]]* (6)
 
 - [ ] 🏆 Purpose
 
-
 ## **Wednesday** *[[Journal/2023-01-04|2023-01-04]]* (6)
 
 - [ ] 🏆 Purpose
-
 
 ## **Thursday** *[[Journal/2023-01-05|2023-01-05]]* (6)
 
 - [ ] 🏆 Purpose
 - [ ] Get a Bulknutrients sample.
 
-
 ## **Friday** *[[Journal/2023-01-06|2023-01-06]]* (6)
 
 - [ ] 🏆 Purpose
-
 
 ## **Saturday** *[[Journal/2023-01-07|2023-01-07]]* (6)
 
 - [ ] 🏆 Purpose
 
+***
 
 ## Archive
-
-
-
-## Archive
-
-
 
 
 
 %% kanban:settings
-```
 {"kanban-plugin":"basic"}
 ```
 %%
