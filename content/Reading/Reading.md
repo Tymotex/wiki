@@ -152,7 +152,12 @@ Ikigai by Francesc Miralles and Hector Garcia. 'Ikigai' means 'reason for being'
 [[Reading/Property Investing For Dummies|Property Investing for Dummies]]
 
 ---
+## Philosophy
+### Meditations
 [[Reading/Meditations|Meditations]] by Marcus Aurelius. "If you desire to master pain, unroll this book and read with care."
+
+### Lying
+[[Reading/Lying|Lying]] by Sam Harris.
 
 # Reading List
 
