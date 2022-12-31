@@ -31,6 +31,7 @@ Some questions to ask:
 - When we talk about 'clusters', do we mean an arbitrarily sized group of machines, or do we mean a physical cluster in a data centre — exactly one group of racks?
 - Do the people in this team generally work independently on their own projects, or do they frequently collaborate on the same project?
 - Are SREs able to be swapped into the development team without much ramp up time?
+- How do you plan your workdays? Do you know of any strategies that work really well for you?
 
 ### First Tasks
 
