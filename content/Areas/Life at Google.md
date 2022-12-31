@@ -12,6 +12,7 @@ Some questions to ask:
 - Do you have any advice to would give to yourself when you were just starting out your career in software engineering?
 - Is there anything you're learning about recently?
 - Do you have any thoughts on how to best absorb all the information in the first few weeks?
+- Do we like to do daily or weekly standups in this team?
 - What are the consequences of not meeting SLA for Storage services? I'm curious because they're not user-facing.
 - How often do disastrous outages actually happen for Storage services?
 - What's been the most disastrous outage you've experienced?
@@ -26,6 +27,7 @@ Some questions to ask:
 - How elaborate is the process of determining the reliability target and SLOs for a service? Do they change after being set?
 - What are the events that contribute to the error rate?
 - How hard does monitoring impact a service's performance?
+- What exactly does 'turnup' mean? I can't find a precise definition for it.
 
 ## Ideas
 - From the first days, begin writing ELI5 resources for Nooglers and people new to SRE.
