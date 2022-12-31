@@ -770,12 +770,19 @@ kanban-plugin: basic
 - [x] ==2== **(2 hours)** SRE book
 - [x] Clear gCal and set a proper schedule (after researching how to make and stick to one).
 
+## **Saturday** *[[Journal/2022-12-31|2022-12-31]]* (6)
+
+- [x] ==2== Take a physique picture.
+- [x] ==1== Change water and clean the air conditioner.
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
