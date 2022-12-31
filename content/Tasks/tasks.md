@@ -15,6 +15,7 @@ kanban-plugin: basic
 - [ ] ==2== Transfer phone and camera photos for dayi
 - [ ] Add aquarium salt. Check and tweak pH if necessary.
 - [ ] Take notes on DNS until you can explain to a 5 year old.
+- [ ] Write some goals for the first week at Google.<br>E.g. meet everyone in the team, pop up to old teammates and contacts to say hi, set up my workflow as planned.<br><br>Plan my transport and things to bring to work.<br><br>Plan my journaling workflow.
 
 
 ## **Monday** *[[Journal/2023-01-02|2023-01-02]]* (6)
