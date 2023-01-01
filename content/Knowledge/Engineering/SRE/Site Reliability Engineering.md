@@ -47,7 +47,8 @@ In the traditional development/operations split, the operations team size would 
 - [[Knowledge/Engineering/SRE/Google Infrastructure|Google Infrastructure]]
 - [[Knowledge/Engineering/SRE/Error Budget|Error budget]]
 - [[Knowledge/Engineering/SRE/SLIs, SLOs, SLAs|SLIs, SLOs and SLAs]]
-- 
+- [[Knowledge/Engineering/SRE/Toil|Toil]]
+- [[Knowledge/Engineering/SRE/Troubleshooting|Troubleshooting]] TODO
 - [[Knowledge/Engineering/SRE/Monitoring|Monitoring]] TODO
 - [[Knowledge/Engineering/SRE/Canary|Canary]] TODO
 

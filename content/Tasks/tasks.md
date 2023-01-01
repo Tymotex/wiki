@@ -18,7 +18,7 @@ kanban-plugin: basic
 
 - [ ] 🏆 Purpose
 - [ ] Get dad's opinion on prototype.
-- [ ] **(3 hr 45 mins)** Get to page 175 SRE book.
+- [ ] **(3 hr 45 mins)** Read chap 10, then continue from chap 12. Get to page 175 SRE book.
 - [ ] One scoop of salt (7 more scoops after)
 - [ ] Take notes on DNS until you can explain to a 5 year old.
 - [ ] **(45 mins)** Finish string chapter C++ Start IO chapter c++

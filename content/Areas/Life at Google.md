@@ -35,6 +35,7 @@ Some questions to ask:
 - Do you have any programming book recommendations? 
 - Does every SRE rely on a playbook? Do you find it useful in your experience or are most problems novel?
 - What happens when both primary and secondary on-callers fail to mitigate a problem? Is the problem simply left to persist until the next workday?
+- Roughly what fraction of pages are from the monitoring system versus from human escalation?
 
 ### First Tasks
 
