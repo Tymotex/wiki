@@ -775,12 +775,22 @@ kanban-plugin: basic
 - [x] ==2== Take a physique picture.
 - [x] ==1== Change water and clean the air conditioner.
 
+## **Sunday** *[[Journal/2023-01-01|2023-01-01]]* (6)
+
+- [x] **(3 hours)** SRE book.
+- [x] Add aquarium salt. Check and tweak pH if necessary.
+- [x] ==1== Find those air plugs holy shit.
+- [x] ==2== Transfer phone and camera photos for dayi
+- [x] ==2== Research the best ways to learn new vocabulary and use them.
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
