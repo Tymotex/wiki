@@ -33,6 +33,8 @@ Some questions to ask:
 - Are SREs able to be swapped into the development team without much ramp up time?
 - How do you plan your workdays? Do you know of any strategies that work really well for you?
 - Do you have any programming book recommendations? 
+- Does every SRE rely on a playbook? Do you find it useful in your experience or are most problems novel?
+- What happens when both primary and secondary on-callers fail to mitigate a problem? Is the problem simply left to persist until the next workday?
 
 ### First Tasks
 
