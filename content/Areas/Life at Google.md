@@ -39,6 +39,7 @@ Some questions to ask:
 - If I wanted to deploy a simple web server to Google Cloud, does that web server end up as a job on Borg? If so, does that mean customers' jobs and internal jobs are all using the same set of physical computers?
 - What are the differences between Borgmon and Prometheus?
 - How common is it for an incident to fall through to the secondary on-caller.
+- Do SREs work on feature development often? Or is their development work mainly done to improve the reliability of the service?
 
 ### First Tasks
 

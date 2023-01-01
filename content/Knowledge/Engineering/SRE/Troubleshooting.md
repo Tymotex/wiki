@@ -5,10 +5,17 @@ title: Troubleshooting
 > Always approach the problem with a rational and calm mind. It's tempting to make knee-jerk solutions that simply exacerbate the problem.
 
 ![[Knowledge/Engineering/SRE/assets/troubleshooting-flowchart.png|450]]
-0. Know the *expected* state and the *actual* state.
-1. **Triage** — figure out what's wrong. Always the first step.
+([source](https://sre.google/sre-book/effective-troubleshooting/))
+1. Know the *expected* state and the *actual* state.
+2. **Triage** — figure out the scope of the issue.
+3. **Examine** — find misbehaving components. Use logs and graphs produced by the monitoring system.
+4. **Diagnose** — 
+5. **Test/Treat** — 
 
-This approach to troubleshooting mimics the scientific method:
+Don't jump to root cause analysis. The first priority is always to "make the system work as well as it can under the circumstances." I.e. **stop the bleeding first**.
+> "Novice pilots are taught that their first responsibility in an emergency is to fly the airplane; troubleshooting is secondary to getting the plane and everyone on it safely onto the ground. This approach is also applicable to computer systems: for example, if a bug is leading to possibly unrecoverable data corruption, freezing the system to prevent further failure may be better than letting this behaviour continue." — Google SRE book.
+
+This approach to troubleshooting roughly mimics the scientific method:
 1. Hypothesis — make a conjecture.
 2. What are the consequences you expect from this hypothesis?
 3. Seek or produce evidence that confirms or refutes the hypothesis.
