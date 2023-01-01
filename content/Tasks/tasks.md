@@ -26,6 +26,7 @@ kanban-plugin: basic
 - [ ] How to introduce self to coworkers?
 - [ ] How to make a strong first impression with coworkers?
 - [ ] Put the quotes files somewhere that can be modified in Obsidian.
+- [ ] Invest another 500 dollars? Or more?
 
 
 ## **Tuesday** *[[Journal/2023-01-03|2023-01-03]]* (6)
