@@ -783,12 +783,23 @@ kanban-plugin: basic
 - [x] ==2== Transfer phone and camera photos for dayi
 - [x] ==2== Research the best ways to learn new vocabulary and use them.
 
+## **Sunday** *[[Journal/2023-01-01|2023-01-01]]* (6)
+
+- [x] **(3 hours)** SRE book.
+- [x] Print out a habit tracker for January. Or draw one up in your notebook.<br><br>Read through James Clears workbook.
+- [x] Add aquarium salt. Check and tweak pH if necessary.
+- [x] ==1== Find those air plugs holy shit.
+- [x] ==2== Transfer phone and camera photos for dayi
+- [x] ==2== Research the best ways to learn new vocabulary and use them.
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
