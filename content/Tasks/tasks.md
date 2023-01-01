@@ -7,7 +7,6 @@ kanban-plugin: basic
 ## **Sunday** *[[Journal/2023-01-01|2023-01-01]]* (6)
 
 - [ ] Get to page 130 SRE book.
-- [ ] ==2== Research the best ways to learn new vocabulary and use them.
 - [ ] ==2== **(45 mins)** Finish string chapter C++ Start IO chapter c++
 - [ ] Print out a habit tracker for January. Or draw one up in your notebook.
 - [ ] ==4== Get dad's opinion on prototype.
@@ -18,6 +17,7 @@ kanban-plugin: basic
 - [ ] Write some goals for the first week at Google.<br>E.g. meet everyone in the team, pop up to old teammates and contacts to say hi, set up my workflow as planned.<br><br>Plan my transport and things to bring to work.<br><br>Plan my journaling workflow.
 - [ ] How to introduce self to coworkers?
 - [ ] How to make a strong first impression with coworkers?
+- [x] ==2== Research the best ways to learn new vocabulary and use them.
 
 
 ## **Monday** *[[Journal/2023-01-02|2023-01-02]]* (6)
