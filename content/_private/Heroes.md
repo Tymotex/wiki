@@ -52,4 +52,4 @@ He got shot on-stage for a speech one time, survived by sheer chance, and still 
 - Joe Rogan — for his open-mindedness and celebration of other people.
 - Bjarne Stroustrup — for his devotion to computer science and skill in programming.
 - Jordan Peterson — for his eloquence, integrity and guidance during testing times.
-- Felix Kjellberg — for his growth as a person. I watched him purely for entertainment when I was young. Revisiting him several years later, I have witnessed him making mistakes and taking responsibility for them, acknowledging the importance of his influence o
+- Felix Kjellberg — for his growth as a person. I watched him purely for entertainment when I was young. Revisiting him several years later, I have witnessed him making mistakes and taking responsibility for them, acknowledging the importance of his influence over his young audience, I have seen him become well-read, health-conscious, rational in times of chaos, and get married. His moral standards and development as a person are things to aspire to.
