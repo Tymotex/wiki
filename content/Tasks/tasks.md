@@ -6,8 +6,8 @@ kanban-plugin: basic
 
 ## **Sunday** *[[Journal/2023-01-01|2023-01-01]]* (6)
 
-- [ ] **(3 hours)** SRE book.
-- [ ] Print out a habit tracker for January. Or draw one up in your notebook.<br><br>Read through James Clears workbook.
+- [x] **(3 hours)** SRE book.
+- [x] Print out a habit tracker for January. Or draw one up in your notebook.<br><br>Read through James Clears workbook.
 - [x] Add aquarium salt. Check and tweak pH if necessary.
 - [x] ==1== Find those air plugs holy shit.
 - [x] ==2== Transfer phone and camera photos for dayi
@@ -25,6 +25,7 @@ kanban-plugin: basic
 - [ ] Write some goals for the first week at Google.<br>E.g. meet everyone in the team, pop up to old teammates and contacts to say hi, set up my workflow as planned.<br><br>Plan my transport and things to bring to work.<br><br>Plan my journaling workflow.
 - [ ] How to introduce self to coworkers?
 - [ ] How to make a strong first impression with coworkers?
+- [ ] Put the quotes files somewhere that can be modified in Obsidian.
 
 
 ## **Tuesday** *[[Journal/2023-01-03|2023-01-03]]* (6)
