@@ -10,4 +10,4 @@
 
 ---
 ![[Tasks/assets/pale-blue-dot.png|500]]
-Image of Earth, taken from a distance of 6 billion kilometres in 1990 by NASA's Voyager 1.
+**The Pale Blue Dot**. An image of Earth, taken from a distance of 6 billion kilometres in 1990 by NASA's Voyager 1.

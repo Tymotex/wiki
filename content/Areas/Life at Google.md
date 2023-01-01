@@ -36,6 +36,8 @@ Some questions to ask:
 - Does every SRE rely on a playbook? Do you find it useful in your experience or are most problems novel?
 - What happens when both primary and secondary on-callers fail to mitigate a problem? Is the problem simply left to persist until the next workday?
 - Roughly what fraction of pages are from the monitoring system versus from human escalation?
+- If I wanted to deploy a simple web server to Google Cloud, does that web server end up as a job on Borg? If so, does that mean customers' jobs and internal jobs are all using the same set of physical computers?
+- What are the differences between Borgmon and Prometheus?
 
 ### First Tasks
 
