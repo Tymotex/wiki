@@ -2,7 +2,11 @@
 title: Stoicism
 ---
 
-Stoicism is a life philosophy concerned with how to flourish as human beings, rationally.
+Stoicism is a life philosophy concerned with how to flourish as human beings, rationally. Some core ideas are:
+- **Dichotomy of control**: learn to separate events into those that you can control and those you can't.
+- ***Amor fati*, the art of acquiescence** — truly accept the things you can't control. The main thing that's in your control is your attitude and response to the things out of your control.
+- ***Memento mori*, remember death** — 
+
 
 ## Getting Started
 Start with reading the work by the ancients:
