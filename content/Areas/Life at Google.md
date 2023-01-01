@@ -32,6 +32,7 @@ Some questions to ask:
 - Do the people in this team generally work independently on their own projects, or do they frequently collaborate on the same project?
 - Are SREs able to be swapped into the development team without much ramp up time?
 - How do you plan your workdays? Do you know of any strategies that work really well for you?
+- Do you have any programming book recommendations? 
 
 ### First Tasks
 
