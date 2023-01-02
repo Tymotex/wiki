@@ -9,7 +9,6 @@ kanban-plugin: basic
 - [ ] **(3 hours)** Get to page 225 SRE book.
 - [ ] **(45 mins)** Read through James Clear's workbook.
 - [ ] Invest another 500 dollars? Or more?
-- [ ] One scoop of salt (6 more scoops after)
 - [ ] Take notes on DNS until you can explain to a 5 year old.
 - [ ] **(45 mins)** Finish string chapter C++ Start IO chapter c++
 - [ ] Write some goals for the first week at Google.<br>E.g. meet everyone in the team, pop up to old teammates and contacts to say hi, set up my workflow as planned.<br><br>Plan my transport and things to bring to work.<br><br>Plan my journaling workflow.
@@ -18,7 +17,8 @@ kanban-plugin: basic
 - [ ] Set up syncthing for Obsidian.
 - [ ] Fix timz.dev indexing problem.
 - [ ] **(25 mins)** Plan tasks for Math website. What's the end goal and what are the mini milestones that need to be accomplished to get there?
-- [ ] Check Aeron manual and tweak your chair perfectly.
+- [x] One scoop of salt (6 more scoops after)
+- [x] Check Aeron manual and tweak your chair perfectly.
 
 
 ## **Wednesday** *[[Journal/2023-01-04|2023-01-04]]* (6)
