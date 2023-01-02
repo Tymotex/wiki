@@ -32,6 +32,7 @@ kanban-plugin: basic
 - [ ] 🏆 Purpose
 - [ ] Get a Bulknutrients sample.
 - [ ] One scoop of salt (4 more scoops after)
+- [ ] Change aquarium water (15%)
 
 
 ## **Friday** *[[Journal/2023-01-06|2023-01-06]]* (6)

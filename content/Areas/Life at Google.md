@@ -45,6 +45,7 @@ Some questions to ask:
 - How can I see past postmortems from this team?
 - Are past outages tracked by this team using Outalator? May I see them?
 - Are the metrics like MTTF and MTTR known for our services?
+- What's the logic behind automated rollback? How do I know under which conditions this can happen?
 
 ### First Tasks
 
