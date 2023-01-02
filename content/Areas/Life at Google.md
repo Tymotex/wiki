@@ -46,6 +46,7 @@ Some questions to ask:
 - Are past outages tracked by this team using Outalator? May I see them?
 - Are the metrics like MTTF and MTTR known for our services?
 - What's the logic behind automated rollback? How do I know under which conditions this can happen?
+    - Do SREs ever have to worry about the security of services? It seems like one thing that threatens reliability. Are our services safe from DDoS attacks (or does the impact of that get reduced by some protective layers)?
 
 ### First Tasks
 
