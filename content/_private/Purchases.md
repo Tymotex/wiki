@@ -4,6 +4,7 @@ title: Purchases
 
 - [x] Hair dryer (cheap but reliable with good reviews)
 - [ ] Convenient smoothie blender.
+- [ ] Nice cave or castle for plecos to shelter in.
 - [x] Fitbit for Mum.
 - [ ] ~~Budget kitchen scale~~ (this is overkill)
 - [x] ~~Loop Quiet~~ (got cheaper ear plugs)
