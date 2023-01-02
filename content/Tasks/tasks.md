@@ -52,6 +52,7 @@ kanban-plugin: basic
 - [ ] 🏆 Purpose
 - [ ] **(10 mins)** Weekly Review.
 - [ ] Two scoops of salt
+- [ ] Update LinkedIn job status.
 
 
 ## **Monday** *[[Journal/2023-01-09|2023-01-09]]* (6)
