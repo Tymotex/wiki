@@ -44,6 +44,7 @@ Some questions to ask:
 - Do SREs work on feature development often? Or is their development work mainly done to improve the reliability of the service?
 - How can I see past postmortems from this team?
 - Are past outages tracked by this team using Outalator? May I see them?
+- Are the metrics like MTTF and MTTR known for our services?
 
 ### First Tasks
 
