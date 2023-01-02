@@ -792,12 +792,22 @@ kanban-plugin: basic
 - [x] ==2== Transfer phone and camera photos for dayi
 - [x] ==2== Research the best ways to learn new vocabulary and use them.
 
+## **Monday** *[[Journal/2023-01-02|2023-01-02]]* (6)
+
+- [x] Get dad's opinion on prototype.
+- [x] One scoop of salt (7 more scoops after)
+- [x] Put the quotes files somewhere that can be modified in Obsidian.
+- [x] Why do I struggle to focus on reading textbooks?
+- [x] **(3 hr 45 mins)** Read chap 10, then continue from chap 12. Get to page 175 SRE book.
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
