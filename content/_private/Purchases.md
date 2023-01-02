@@ -14,6 +14,7 @@ title: Purchases
 - [x] CeraVe hydrating cleanser
 - [ ] Meditations book
 - [ ] Protein powder
+- [ ] Cheap gravel vacuum
 - [x] Light blue OCBD, or white
 - [x] Navy chinos
 - [ ] Another OCBD, either: grey, light red or white.

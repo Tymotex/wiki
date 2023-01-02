@@ -23,6 +23,7 @@ Some questions to ask:
 - Do people usually have two sets of peripherals, one for home, one for work? E.g. one keyboard they buy is left at work while one keyboard is left at home?
 - How likely is it for something disastrous to happen to a Storage service without the monitoring services being able to pick up anything?
 - How reliable are the monitoring services? What if they experience an outage — who's watching the watchers?
+- How reliable are the tools or services you use to apply a fix in an incident? What if they break? E.g. what if the rollback mechanism does not behave correctly?
 - How are the reliability targets determined for low-level services like for Storage? (it must be different to how they're determined for user-facing services like Gmail)
 - How elaborate is the process of determining the reliability target and SLOs for a service? Do they change after being set?
 - What are the events that contribute to the error rate?
