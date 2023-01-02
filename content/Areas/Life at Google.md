@@ -26,6 +26,7 @@ Some questions to ask:
 - How reliable are the tools or services you use to apply a fix in an incident? What if they break? E.g. what if the rollback mechanism does not behave correctly?
 - How are the reliability targets determined for low-level services like for Storage? (it must be different to how they're determined for user-facing services like Gmail)
 - How elaborate is the process of determining the reliability target and SLOs for a service? Do they change after being set?
+- If Google's largest datacentre got nuked, would most of the services still be alive?
 - What are the events that contribute to the error rate?
 - How hard does monitoring impact a service's performance?
 - What exactly does 'turnup' mean? I can't find a precise definition for it.
