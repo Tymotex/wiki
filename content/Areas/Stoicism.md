@@ -8,6 +8,8 @@ Stoicism is a life philosophy concerned with how to flourish as human beings, ra
 - ***Memento mori*, remember death** — a reminder that your time is running out, and redirect your focus to the things that matter.
 - **Virtues** — your only job is to be a *good man*. Embody temperance, compassion, courage and honesty. Doing so is what constitutes a meaningful life.
 
+In essence: accept things, focus only on your attitude and actions, remember the finitude of life so that you focus on the essentials, and be a good man.
+
 ## Getting Started
 Start with reading the work by the ancients:
 - Meditations — Marcus Aurelius
