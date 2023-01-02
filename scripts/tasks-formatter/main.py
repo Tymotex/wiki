@@ -44,7 +44,7 @@ def generate_journal_entries(journal_directory_path: str, journal_template_file_
 
 def main(tasks_file_path: str, archived_tasks_file_path: str,
         journal_directory_path: str, journal_template_file_path: str,
-        journal_variables_file_path: str, num_future_dates: int = 7):
+        journal_variables_file_path: str, num_future_dates: int = 50):
     print(Fore.BLUE + "Formatting Tasks..." + Style.RESET_ALL)
     format_tasks(tasks_file_path, archived_tasks_file_path, num_future_dates)
 
