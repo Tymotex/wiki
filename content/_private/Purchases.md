@@ -18,8 +18,8 @@ title: Purchases
 - [ ] Cheap gravel vacuum
 - [x] Light blue OCBD, or white
 - [x] Navy chinos
-- [ ] Another OCBD, either: grey, light red or white.
-- [ ] (Uniqlo) 2 x Basic grey shirts.
+- [x] Another OCBD, either: grey, light red or white.
+- [x] (Uniqlo) Basic grey shirt.
 - [ ] (Uniqlo) Turtleneck wine colour.
 - [ ] Messenger bag
 - [ ] Mechanical keyboard for home (as a hobby?)

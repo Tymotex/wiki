@@ -7,15 +7,11 @@ kanban-plugin: basic
 ## **Tuesday** *[[Journal/2023-01-03|2023-01-03]]* (6)
 
 - [ ] **(45 mins)** Read through James Clear's workbook.
-- [ ] Invest another 500 dollars? Or more?
 - [ ] Take notes on DNS until you can explain to a 5 year old.
 - [ ] **(45 mins)** Finish string chapter C++ Start IO chapter c++
-- [ ] Write some goals for the first week at Google.<br>E.g. meet everyone in the team, pop up to old teammates and contacts to say hi, set up my workflow as planned.<br><br>Plan my transport and things to bring to work.<br><br>Plan my journaling workflow.
-- [ ] How to introduce self to coworkers?
-- [ ] How to make a strong first impression with coworkers?
-- [ ] Set up syncthing for Obsidian.
-- [ ] Fix timz.dev indexing problem.
 - [ ] **(25 mins)** Plan tasks for Math website. What's the end goal and what are the mini milestones that need to be accomplished to get there?
+- [x] Invest another 500 dollars? Or more?
+- [x] Fix timz.dev indexing problem.
 - [x] Figure out how to transfer photos between iphone and ipad.
 - [x] One scoop of salt (6 more scoops after)
 - [x] Check Aeron manual and tweak your chair perfectly.
@@ -26,6 +22,10 @@ kanban-plugin: basic
 ## **Wednesday** *[[Journal/2023-01-04|2023-01-04]]* (6)
 
 - [ ] 🏆 Purpose
+- [ ] Write some goals for the first week at Google.<br>E.g. meet everyone in the team, pop up to old teammates and contacts to say hi, set up my workflow as planned.<br><br>Plan my transport and things to bring to work.<br><br>Plan my journaling workflow.
+- [ ] How to introduce self to coworkers?
+- [ ] How to make a strong first impression with coworkers?
+- [ ] Set up syncthing for Obsidian.
 - [ ] One scoop of salt (5 more scoops after)
 
 
