@@ -3,7 +3,7 @@ title: DNS
 description: DNS
 ---
 
-DNS (domain name system) is a [[Knowledge/Engineering/Architecture/Distributed System|distributed system]] that maps **domain names to [[Knowledge/Engineering/Networking/IP Addresses|IP addresses]]**, e.g. a DNS query for `timz.dev` can resolve to `76.76.21.21`. Think of DNS as a distributed database, actually. The whole point of the DNS system is to allow for you to talk to computers through human-readable domain names (and also)
+DNS (domain name system) is a [[Knowledge/Engineering/Architecture/Distributed System|distributed system]] that maps **domain names to [[Knowledge/Engineering/Networking/IP Addresses|IP addresses]]**, e.g. a DNS query for `timz.dev` can resolve to `76.76.21.21`. Think of DNS as a distributed database, actually. The whole point of the DNS system is to allow for you to talk to computers through human-readable domain names. That extra layer of indirection also allows for more security and for changing the underlying machine without affecting users (`timz.dev` could be migrated to a different host).
 
 The DNS system consists of a globally spanning network of **DNS servers**, also called **name servers**, each of which is responsible for handling the mappings belonging to their part of the **hierarchical namespace**. 
 ![[Knowledge/Engineering/Networking/assets/hierarchical-namespace.png|500]]
@@ -15,6 +15,13 @@ Initially, all domain name to IP address mappings were stored in a single `hosts
 Resource records.
 
 Authoritative name servers hold the resource records for each domain name it manages.
+
+## DNS Resolution
+Suppose you want to visit `timz.dev`.
+1. You start a Chrome web browser process and search for `timz.dev`.
+2. Chrome asks the local DNS resolver for the IP address of `timz.dev`.
+3. If the mapping doesn't exist in the cache, the DNS resolver forwards the request to the root DNS server.
+
 
 # Flashcards
 - What is the hierarchical namespace?
