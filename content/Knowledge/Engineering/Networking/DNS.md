@@ -19,9 +19,16 @@ Authoritative name servers hold the resource records for each domain name it man
 ## DNS Resolution
 Suppose you want to visit `timz.dev`.
 1. You start a Chrome web browser process and search for `timz.dev`.
-2. Chrome asks the local DNS resolver for the IP address of `timz.dev`.
-3. If the mapping doesn't exist in the cache, the DNS resolver forwards the request to the root DNS server.
+2. Chrome asks the **local DNS resolver** for the IP address of `timz.dev`.
+    - The local DNS resolver is just a process running on your machine, or in your local network, which helps you resolve DNS requests.
+3. If the mapping doesn't exist in the cache, the DNS resolver forwards the request to the **root DNS server**.
+4. The root DNS server tells the resolver which TLD DNS server for `*.dev` to talk to.
+5. The TLD DNS server tells the resolver which authoritative nameserver to talk to.
+6. The authoritative nameserver gives the resolve the IP address, which it caches for next time.
 
+There are 2 ways resolution happens — *iteratively* or *recursively*.
+![[Knowledge/Engineering/Networking/assets/iterative-vs-recursive-dns-resolution.png|700]]
+([source](https://gaia.cs.umass.edu/kurose_ross/interactive/dns_query.php))
 
 # Flashcards
 - What is the hierarchical namespace?
