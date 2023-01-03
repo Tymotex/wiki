@@ -7,15 +7,21 @@ DNS (domain name system) is a [[Knowledge/Engineering/Architecture/Distributed S
 
 The DNS system consists of a globally spanning network of **DNS servers**, also called **name servers**, each of which is responsible for handling the mappings belonging to their part of the **hierarchical namespace**. 
 - Nameservers are just machines that have a process running that listens to incoming DNS requests.
-- At each non-leaf node, a DNS request can be forwarded to the appropriate child. The leaf nodes are the **authoritative name servers**, which actually store the domain name to IP address mappings. *In resolving a DNS request, you are simply traversing this tree on a path to a leaf to get your answer*.
+- At each non-leaf node, a DNS request can be forwarded to the appropriate child. The leaf nodes are the **authoritative name servers**, which actually store the domain name to IP address mappings in a file on their filesystem. *In resolving a DNS request, you are simply traversing this tree on a path to a leaf to get your answer*.
 ![[Knowledge/Engineering/Networking/assets/hierarchical-namespace.png|500]]
 
 Initially, all domain name to IP address mappings were stored in a single `hosts.txt` file managed by Stanford Research Institute. This centralised approach DNS system clearly wouldn't scale well, so now we have a distributed network of name servers instead.
 
 ## DNS Resource Records
-Resource records.
+Authoritative name servers hold *resource records* for each domain name it manages. They're just some important information the nameserver knows about the domain.
 
-Authoritative name servers hold the resource records for each domain name it manages.
+There are different kinds of resource records:
+- **A** — the direct domain to IP address mapping.
+- **CNAME** — a domain alias, e.g. mapping `foo.com` to `bar.com`.
+- **NS** — the authoritative nameservers for a domain. This is what is telling the DNS resolver which DNS server it should hop to next in their domain name resolution.
+- ... and others like MX, TXT, etc.
+
+Resource records have a TTL (time to live) field which instructs the resolver on how long it should cache that knowledge for.
 
 ## DNS Resolution
 Suppose you want to visit `timz.dev` for the first time.
