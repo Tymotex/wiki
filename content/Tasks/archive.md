@@ -800,12 +800,24 @@ kanban-plugin: basic
 - [x] Why do I struggle to focus on reading textbooks?
 - [x] **(3 hr 45 mins)** Read chap 10, then continue from chap 12. Get to page 175 SRE book.
 
+## **Tuesday** *[[Journal/2023-01-03|2023-01-03]]* (6)
+
+- [x] Invest another 500 dollars? Or more?
+- [x] Fix timz.dev indexing problem.
+- [x] Figure out how to transfer photos between iphone and ipad.
+- [x] One scoop of salt (6 more scoops after)
+- [x] Check Aeron manual and tweak your chair perfectly.
+- [x] **(3 hours)** Get to page 225 SRE book.
+- [x] Soak beans
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings

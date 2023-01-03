@@ -2,20 +2,6 @@
 kanban-plugin: basic
 ---
 
-## **Tuesday** *[[Journal/2023-01-03|2023-01-03]]* (6)
-
-- [ ] **(45 mins)** Read through James Clear's workbook.
-- [ ] Take notes on DNS until you can explain to a 5 year old.
-- [ ] **(45 mins)** Finish string chapter C++ Start IO chapter c++
-- [ ] **(25 mins)** Plan tasks for Math website. What's the end goal and what are the mini milestones that need to be accomplished to get there?
-- [x] Invest another 500 dollars? Or more?
-- [x] Fix timz.dev indexing problem.
-- [x] Figure out how to transfer photos between iphone and ipad.
-- [x] One scoop of salt (6 more scoops after)
-- [x] Check Aeron manual and tweak your chair perfectly.
-- [x] **(3 hours)** Get to page 225 SRE book.
-- [x] Soak beans
-
 ## **Wednesday** *[[Journal/2023-01-04|2023-01-04]]* (6)
 
 - [ ] 🏆 Purpose
@@ -24,6 +10,10 @@ kanban-plugin: basic
 - [ ] How to make a strong first impression with coworkers?
 - [ ] Set up syncthing for Obsidian.
 - [ ] One scoop of salt (5 more scoops after)
+- [ ] ==1== **(45 mins)** Read through James Clear's workbook.
+- [ ] ==1== Take notes on DNS until you can explain to a 5 year old.
+- [ ] ==1== **(45 mins)** Finish string chapter C++ Start IO chapter c++
+- [ ] ==1== **(25 mins)** Plan tasks for Math website. What's the end goal and what are the mini milestones that need to be accomplished to get there?
 
 ## **Thursday** *[[Journal/2023-01-05|2023-01-05]]* (6)
 
@@ -237,12 +227,18 @@ kanban-plugin: basic
 
 - [ ] 🏆 Purpose
 
+## **Thursday** *[[Journal/2023-02-23|2023-02-23]]* (6)
+
+- [ ] 🏆 Purpose
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 {"kanban-plugin":"basic"}
 ```
