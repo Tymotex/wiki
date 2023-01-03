@@ -6,7 +6,6 @@ kanban-plugin: basic
 
 ## **Tuesday** *[[Journal/2023-01-03|2023-01-03]]* (6)
 
-- [ ] Figure out how to transfer photos between iphone and ipad.
 - [ ] **(45 mins)** Read through James Clear's workbook.
 - [ ] Invest another 500 dollars? Or more?
 - [ ] Take notes on DNS until you can explain to a 5 year old.
@@ -17,6 +16,7 @@ kanban-plugin: basic
 - [ ] Set up syncthing for Obsidian.
 - [ ] Fix timz.dev indexing problem.
 - [ ] **(25 mins)** Plan tasks for Math website. What's the end goal and what are the mini milestones that need to be accomplished to get there?
+- [x] Figure out how to transfer photos between iphone and ipad.
 - [x] One scoop of salt (6 more scoops after)
 - [x] Check Aeron manual and tweak your chair perfectly.
 - [x] **(3 hours)** Get to page 225 SRE book.
