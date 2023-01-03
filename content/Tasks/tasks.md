@@ -18,7 +18,7 @@ kanban-plugin: basic
 - [ ] Answer all flashcard questions in C++ notes.
 - [ ] Maybe write a C++ program that extracts out all flashcards and dumps them to a few markdown files?
 - [ ] Find a good computer science history book. Put it somewhere you'll know to read.
-- [ ] Pick the most accessible computer science academic paper and read it fully today.
+- [ ] Pick the most accessible computer science academic paper and read it fully today.<br><br>Shannon?<br>Garbage collection?
 - [ ] Null references billion dollar mistake
 
 
