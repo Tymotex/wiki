@@ -52,4 +52,3 @@ The DNS protocol is an [[Knowledge/Engineering/Networking/OSI Model|application 
     - The web browser asks the local DNS resolver for the IP address of `timz.dev`. The local DNS resolver then asks the root nameserver for the IP address. The resolver gets told to go to a TLD nameserver and ask for the IP address of `timz.dev`. The resolver gets told to go the authoritative nameserver, who contains the A record (the direct mapping from domain name to IP address). The resolver tells the browser its answer and the browser begins to establish a connection and request resources via HTTP.
 - Does the DNS protocol rely on UDP or TCP?
     - It relies on UDP typically. Because it needs to talk to so many different machines, TCP would be a bit too slow.
-
