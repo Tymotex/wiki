@@ -810,12 +810,18 @@ kanban-plugin: basic
 - [x] **(3 hours)** Get to page 225 SRE book.
 - [x] Soak beans
 
+## **Wednesday** *[[Journal/2023-01-04|2023-01-04]]* (6)
+
+- [x] ==1== Take notes on DNS until you can explain to a 5 year old.
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
