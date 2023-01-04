@@ -18,13 +18,13 @@ kanban-plugin: basic
 - [ ] Write some goals for the first week at Google.<br>E.g. meet everyone in the team, pop up to old teammates and contacts to say hi, set up my workflow as planned.<br><br>Plan my transport and things to bring to work.<br><br>Plan my journaling workflow.
 - [ ] How to introduce self to coworkers?
 - [ ] How to make a strong first impression with coworkers?
-- [ ] ==1== Finish WoftSM (skip the useless parts)
 - [ ] ==1== Transfer Dayi's camera photos.
 - [ ] ==1== Answer all flashcard questions in C++ notes.
 - [ ] ==1== Maybe write a C++ program that extracts out all flashcards and dumps them to a few markdown files?
 - [ ] ==1== Find a good computer science history book. Put it somewhere you'll know to read.
 - [ ] ==1== Pick the most accessible computer science academic paper and read it fully today.<br><br>Shannon?<br>Garbage collection?
 - [ ] ==1== Null references billion dollar mistake
+- [x] ==1== Finish WoftSM (skip the useless parts)
 
 
 ## **Friday** *[[Journal/2023-01-06|2023-01-06]]* (6)
