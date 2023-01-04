@@ -6,6 +6,7 @@ kanban-plugin: basic
 
 ## **Wednesday** *[[Journal/2023-01-04|2023-01-04]]* (6)
 
+- [ ] Transfer Dayi's camera photos.
 - [ ] Write some goals for the first week at Google.<br>E.g. meet everyone in the team, pop up to old teammates and contacts to say hi, set up my workflow as planned.<br><br>Plan my transport and things to bring to work.<br><br>Plan my journaling workflow.
 - [ ] How to introduce self to coworkers?
 - [ ] How to make a strong first impression with coworkers?
@@ -28,6 +29,7 @@ kanban-plugin: basic
 - [ ] Get a Bulknutrients sample.
 - [ ] One scoop of salt (4 more scoops after)
 - [ ] Change aquarium water (15%)
+- [ ] **(3 hours)** Get to page 300 SRE book.
 
 
 ## **Friday** *[[Journal/2023-01-06|2023-01-06]]* (6)
