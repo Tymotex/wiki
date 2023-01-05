@@ -7,7 +7,6 @@ kanban-plugin: basic
 ## **Friday** *[[Journal/2023-01-06|2023-01-06]]* (6)
 
 - [ ] **(3 hours)** Get to page 350 SRE book
-- [ ] One scoop of salt (3 more scoops after)
 - [ ] ==2== Transfer Dayi's camera photos.
 - [ ] ==3== **(45 mins)** Read through James Clear's workbook.
 - [ ] ==2== **(1 hour)** Meditations
@@ -23,6 +22,7 @@ kanban-plugin: basic
 - [ ] ==2== Null references billion dollar mistake
 - [x] ==1== Change aquarium water (15%)
 - [x] ==1== 2 scoops of salt (4 more scoops after)
+- [x] One scoop of salt (3 more scoops after)
 
 
 ## **Saturday** *[[Journal/2023-01-07|2023-01-07]]* (6)
