@@ -6,7 +6,7 @@ title: Google Tasks and Workflow
 [[Knowledge/Soft Skills/Excelling as a Graduate|Excelling as a new software engineering graduate]].
 
 Some questions to ask:
-- Based on your personal experience, do you have any advice on *when* to ask for help?
+- How did you make the decision between SRE and a development role? I assume that if you're able to consider SRE, then you are perfectly capable of doing well as a developer.
 - What do you consider are the strongest signals that an L3 is ready to transition to an L4 engineer?
 - How different do you feel now compared to when you first started out? (Maybe be more specific here)
 - Do you have any advice to would give to yourself when you were just starting out your career in software engineering?
