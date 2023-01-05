@@ -2,32 +2,27 @@
 kanban-plugin: basic
 ---
 
-## **Thursday** *[[Journal/2023-01-05|2023-01-05]]* (6)
-
-- [x] **(3 hours)** Get to page 300 SRE book.
-- [ ] ==2== **(45 mins)** Finish string chapter C++ Start IO chapter c++
-- [ ] ==2== **(45 mins)** Read through James Clear's workbook.
-- [ ] ==2== **(25 mins)** Plan tasks for Math website. What's the end goal and what are the mini milestones that need to be accomplished to get there?
-- [ ] ==1== **(1 hour)** Meditations
-- [ ] Change aquarium water (15%)
-- [ ] 2 scoops of salt (4 more scoops after)
-- [ ] Set up syncthing for Obsidian.
-- [ ] Write some goals for the first week at Google.<br>E.g. meet everyone in the team, pop up to old teammates and contacts to say hi, set up my workflow as planned.<br><br>Plan my transport and things to bring to work.<br><br>Plan my journaling workflow.
-- [ ] How to introduce self to coworkers?
-- [ ] How to make a strong first impression with coworkers?
-- [ ] ==1== Transfer Dayi's camera photos.
-- [ ] ==1== Answer all flashcard questions in C++ notes.
-- [ ] ==1== Maybe write a C++ program that extracts out all flashcards and dumps them to a few markdown files?
-- [ ] ==1== Find a good computer science history book. Put it somewhere you'll know to read.
-- [ ] ==1== Pick the most accessible computer science academic paper and read it fully today.<br><br>Shannon?<br>Garbage collection?
-- [ ] ==1== Null references billion dollar mistake
-- [x] ==1== Finish WoftSM (skip the useless parts)
-
 ## **Friday** *[[Journal/2023-01-06|2023-01-06]]* (6)
 
 - [ ] 🏆 Purpose
 - [ ] One scoop of salt (3 more scoops after)
 - [ ] Get a Bulknutrients sample.
+- [ ] ==3== **(45 mins)** Finish string chapter C++ Start IO chapter c++
+- [ ] ==3== **(45 mins)** Read through James Clear's workbook.
+- [ ] ==3== **(25 mins)** Plan tasks for Math website. What's the end goal and what are the mini milestones that need to be accomplished to get there?
+- [ ] ==2== **(1 hour)** Meditations
+- [ ] ==1== Change aquarium water (15%)
+- [ ] ==1== 2 scoops of salt (4 more scoops after)
+- [ ] ==1== Set up syncthing for Obsidian.
+- [ ] ==1== Write some goals for the first week at Google.<br>E.g. meet everyone in the team, pop up to old teammates and contacts to say hi, set up my workflow as planned.<br><br>Plan my transport and things to bring to work.<br><br>Plan my journaling workflow.
+- [ ] ==1== How to introduce self to coworkers?
+- [ ] ==1== How to make a strong first impression with coworkers?
+- [ ] ==2== Transfer Dayi's camera photos.
+- [ ] ==2== Answer all flashcard questions in C++ notes.
+- [ ] ==2== Maybe write a C++ program that extracts out all flashcards and dumps them to a few markdown files?
+- [ ] ==2== Find a good computer science history book. Put it somewhere you'll know to read.
+- [ ] ==2== Pick the most accessible computer science academic paper and read it fully today.<br><br>Shannon?<br>Garbage collection?
+- [ ] ==2== Null references billion dollar mistake
 
 ## **Saturday** *[[Journal/2023-01-07|2023-01-07]]* (6)
 
@@ -238,12 +233,18 @@ kanban-plugin: basic
 
 - [ ] 🏆 Purpose
 
+## **Saturday** *[[Journal/2023-02-25|2023-02-25]]* (6)
+
+- [ ] 🏆 Purpose
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 {"kanban-plugin":"basic"}
 ```

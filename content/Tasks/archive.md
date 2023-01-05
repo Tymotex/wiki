@@ -814,12 +814,19 @@ kanban-plugin: basic
 
 - [x] ==1== Take notes on DNS until you can explain to a 5 year old.
 
+## **Thursday** *[[Journal/2023-01-05|2023-01-05]]* (6)
+
+- [x] **(3 hours)** Get to page 300 SRE book.
+- [x] ==1== Finish WoftSM (skip the useless parts)
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
