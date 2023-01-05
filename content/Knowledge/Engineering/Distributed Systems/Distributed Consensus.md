@@ -9,7 +9,7 @@ Consensus algorithms help with things like leader election, where nodes need to 
 Distributed consensus algorithms help distributed systems achieve consistency.
 
 ## Paxos [TODO]
-The Paxos algorithm, first described by Leslie Lamport, is used to get a distributed system's nodes to agree on one value despite failures.
+The Paxos algorithm, first described by Leslie Lamport, is used to get a distributed system's nodes to agree on one value despite failures. It's name is inspired by the Greek Paxos islands where Lamport imagined generals needing to communicate.
 
 Basically, it's democracy — the majority of nodes have to agree on a value.
 - There are proposers and acceptors. Proposers broadcast a value and acceptors will vote yes or no. When more than 50% have voted yes, consensus is reached.

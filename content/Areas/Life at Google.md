@@ -14,6 +14,7 @@ Some questions to ask:
 - Do you have any thoughts on how to best absorb all the information in the first few weeks?
 - Do we like to do daily or weekly standups in this team?
 - What are the consequences of not meeting SLA for Storage services? I'm curious because they're not user-facing.
+- I feel like my knowledge in distributed systems is lacking. Do you think this is something that is worth understanding better?
 - How often do disastrous outages actually happen for Storage services?
 - What's been the most disastrous outage you've experienced?
 - Can you think of any unique challenges faced by Storage SRE that aren't faced by any other SRE team?
