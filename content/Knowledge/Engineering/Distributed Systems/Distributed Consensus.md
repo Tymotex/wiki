@@ -7,11 +7,11 @@ title: Distributed Consensus
 Distributed consensus algorithms help distributed systems achieve consistency.
 
 ## Paxos [TODO]
-The Paxos algorithm, first described by Leslie Lamport, is used to get a distributed system's nodes to agree on one value.
+The Paxos algorithm, first described by Leslie Lamport, is used to get a distributed system's nodes to agree on one value despite failures.
 
-- There are proposers, acceptors and learners.
-    - Nodes can take multiple roles.
+Basically, it's democracy — the majority of nodes have to agree on a value.
+- There are proposers and acceptors. Proposers broadcast a value and acceptors will vote yes or no. When more than 50% have voted yes, consensus is reached.
+    - Nodes can be both proposers and acceptors.
 - All nodes are willing to 'change their mind' and agree to any value, provided that the majority agrees on it.
-- 
 
-It's basically democracy — the majority of nodes have to agree on a value.
+
