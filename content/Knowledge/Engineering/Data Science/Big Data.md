@@ -6,4 +6,4 @@ title: Big Data
 
 Structured data includes things like CSVs, spreadsheets, database records, etc. while unstructured data includes things like pictures, emails, etc.
 
-Big data usually necessitates the usage of [[Knowledge/Engineering/Architecture/Distributed System|distributed systems]] in order to tolerate the massive storage and processing requirements.
+Big data usually necessitates the usage of [[Knowledge/Engineering/Distributed Systems/Distributed Systems|distributed systems]] in order to tolerate the massive storage and processing requirements.
