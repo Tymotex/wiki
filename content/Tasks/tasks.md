@@ -7,14 +7,10 @@ kanban-plugin: basic
 ## **Friday** *[[Journal/2023-01-06|2023-01-06]]* (6)
 
 - [ ] **(3 hours)** Get to page 350 SRE book
-- [ ] ==2== Transfer Dayi's camera photos.
 - [ ] ==3== **(45 mins)** Read through James Clear's workbook.
 - [ ] ==2== **(1 hour)** Meditations
 - [ ] ==3== **(45 mins)** Finish string chapter C++ Start IO chapter c++
 - [ ] ==3== **(25 mins)** Plan tasks for Math website. What's the end goal and what are the mini milestones that need to be accomplished to get there?
-- [ ] ==1== Write some goals for the first week at Google.<br>E.g. meet everyone in the team, pop up to old teammates and contacts to say hi, set up my workflow as planned.<br><br>Plan my transport and things to bring to work.<br><br>Plan my journaling workflow.
-- [ ] ==1== How to introduce self to coworkers?
-- [ ] ==1== How to make a strong first impression with coworkers?
 - [ ] ==2== Answer all flashcard questions in C++ notes.
 - [ ] ==2== Maybe write a C++ program that extracts out all flashcards and dumps them to a few markdown files?
 - [ ] ==2== Find a good computer science history book. Put it somewhere you'll know to read.
@@ -23,12 +19,16 @@ kanban-plugin: basic
 - [x] ==1== Change aquarium water (15%)
 - [x] ==1== 2 scoops of salt (4 more scoops after)
 - [x] One scoop of salt (3 more scoops after)
+- [x] ==2== Transfer Dayi's camera photos.
 
 
 ## **Saturday** *[[Journal/2023-01-07|2023-01-07]]* (6)
 
 - [ ] 🏆 Purpose
 - [ ] One scoop of salt (2 more scoops after)
+- [ ] ==1== Write some goals for the first week at Google.<br>E.g. meet everyone in the team, pop up to old teammates and contacts to say hi, set up my workflow as planned.<br><br>Plan my transport and things to bring to work.<br><br>Plan my journaling workflow.
+- [ ] ==1== How to make a strong first impression with coworkers?
+- [ ] ==1== How to introduce self to coworkers?
 
 
 ## **Sunday** *[[Journal/2023-01-08|2023-01-08]]* (6)
