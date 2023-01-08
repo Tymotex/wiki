@@ -3,7 +3,7 @@ title: DNS
 description: DNS
 ---
 
-DNS (domain name system) is a [[Knowledge/Engineering/Architecture/Distributed System|distributed system]] that maps **domain names to [[Knowledge/Engineering/Networking/IP Addresses|IP addresses]]**, e.g. a DNS query for `timz.dev` can resolve to `76.76.21.21`. Think of DNS as a distributed database, actually. The whole point of the DNS system is to allow for you to talk to computers through human-readable domain names. That extra layer of indirection also allows for more security and for changing the underlying machine without affecting users (`timz.dev` could be migrated to a different host).
+DNS (domain name system) is a [[Knowledge/Engineering/Distributed Systems/Distributed Systems|distributed system]] that maps **domain names to [[Knowledge/Engineering/Networking/IP Addresses|IP addresses]]**, e.g. a DNS query for `timz.dev` can resolve to `76.76.21.21`. Think of DNS as a distributed database, actually. The whole point of the DNS system is to allow for you to talk to computers through human-readable domain names. That extra layer of indirection also allows for more security and for changing the underlying machine without affecting users (`timz.dev` could be migrated to a different host).
 
 The DNS system consists of a globally spanning network of **DNS servers**, also called **name servers**, each of which is responsible for handling the mappings belonging to their part of the **hierarchical namespace**. 
 - Nameservers are just machines that have a process running that listens to incoming DNS requests.

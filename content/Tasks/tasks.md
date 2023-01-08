@@ -4,63 +4,35 @@ kanban-plugin: basic
 
 ---
 
-## **Wednesday** *[[Journal/2023-01-04|2023-01-04]]* (6)
-
-- [ ] Finish WoftSM (skip the useless parts)
-- [ ] **(1 hour)** Meditations
-- [ ] Transfer Dayi's camera photos.
-- [ ] ==1== **(45 mins)** Read through James Clear's workbook.
-- [ ] ==1== **(45 mins)** Finish string chapter C++ Start IO chapter c++
-- [ ] ==1== **(25 mins)** Plan tasks for Math website. What's the end goal and what are the mini milestones that need to be accomplished to get there?
-- [ ] Answer all flashcard questions in C++ notes.
-- [ ] Maybe write a C++ program that extracts out all flashcards and dumps them to a few markdown files?
-- [ ] Find a good computer science history book. Put it somewhere you'll know to read.
-- [ ] Pick the most accessible computer science academic paper and read it fully today.<br><br>Shannon?<br>Garbage collection?
-- [ ] Null references billion dollar mistake
-- [x] ==1== Take notes on DNS until you can explain to a 5 year old.
-
-
-## **Thursday** *[[Journal/2023-01-05|2023-01-05]]* (6)
-
-- [ ] 🏆 Purpose
-- [ ] Get a Bulknutrients sample.
-- [ ] 2 scoops of salt (4 more scoops after)
-- [ ] Change aquarium water (15%)
-- [ ] Set up syncthing for Obsidian.
-- [ ] **(3 hours)** Get to page 300 SRE book.
-- [ ] Write some goals for the first week at Google.<br>E.g. meet everyone in the team, pop up to old teammates and contacts to say hi, set up my workflow as planned.<br><br>Plan my transport and things to bring to work.<br><br>Plan my journaling workflow.
-- [ ] How to introduce self to coworkers?
-- [ ] How to make a strong first impression with coworkers?
-
-
-## **Friday** *[[Journal/2023-01-06|2023-01-06]]* (6)
-
-- [ ] 🏆 Purpose
-- [ ] One scoop of salt (3 more scoops after)
-
-
-## **Saturday** *[[Journal/2023-01-07|2023-01-07]]* (6)
-
-- [ ] 🏆 Purpose
-- [ ] One scoop of salt (2 more scoops after)
-
-
-## **Sunday** *[[Journal/2023-01-08|2023-01-08]]* (6)
-
-- [ ] 🏆 Purpose
-- [ ] **(10 mins)** Weekly Review.
-- [ ] Two scoops of salt
-- [ ] Update LinkedIn job status.<br>Update GitHub profile description.<br>Update timz.dev description.
-
-
 ## **Monday** *[[Journal/2023-01-09|2023-01-09]]* (6)
 
-- [ ] 🏆 Purpose
+- [x] Workday tasks
+- [ ] Wear blue oxford and chinos.<br>Drink coffee.
+- [ ] Out the door by 7:35, **latest**.
+- [ ] Pack bag:<br>- Both laptops, each fully charged.<br>- Security keys (including USB-C adapter)<br>- Government ID, passport<br>- Water<br>- Notebook + pen
+- [ ] Filter out all your questions. Put it all in Google docs.
+- [ ] Fill in habit tracker
+- [ ] Measure aquarium ph. Tweak
+- [x] Write some goals for the first week at Google.<br>E.g. meet everyone in the team, pop up to old teammates and contacts to say hi, set up my workflow as planned.<br><br>Plan my transport and things to bring to work.<br><br>Plan my journaling workflow.
+- [x] ==3== How to introduce self to coworkers?
+- [x] ==3== How to make a strong first impression with coworkers?
+- [x] ==3== **(3 hours)** Get to page 350 SRE book
+- [x] ==1== Update LinkedIn job status.<br>Update GitHub profile description.<br>Update timz.dev description.
 
 
 ## **Tuesday** *[[Journal/2023-01-10|2023-01-10]]* (6)
 
-- [ ] 🏆 Purpose
+- [ ] Write an email to Raymond.<br>Let him know where you're at, your plans for today and the week. Ask for recommendations for what else to work on.<br>Let him know I'm open to attending any meetings the team is attending.<br>Let him know that I'm ready to introduce myself to coworkers.
+- [ ] ==5== Maybe write a C++ program that extracts out all flashcards and dumps them to a few markdown files?
+- [ ] ==5== Pick the most accessible computer science academic paper and read it fully today.<br><br>Shannon?<br>Garbage collection?
+- [ ] Apply online for Australian citizenship.
+- [ ] ==5== Null references billion dollar mistake
+- [ ] ==5== Answer all flashcard questions in C++ notes.
+- [ ] ==6== **(45 mins)** Read through James Clear's workbook.
+- [ ] ==6== **(45 mins)** Finish string chapter C++ Start IO chapter c++
+- [ ] ==6== **(25 mins)** Plan tasks for Math website. What's the end goal and what are the mini milestones that need to be accomplished to get there?
+- [ ] ==5== Find a good computer science history book. Put it somewhere you'll know to read.
+- [ ] Finish management chapters SRE book.
 
 
 ## **Wednesday** *[[Journal/2023-01-11|2023-01-11]]* (6)
@@ -76,6 +48,7 @@ kanban-plugin: basic
 ## **Friday** *[[Journal/2023-01-13|2023-01-13]]* (6)
 
 - [ ] 🏆 Purpose
+- [ ] Add my colleagues on LinkedIn?
 
 
 ## **Saturday** *[[Journal/2023-01-14|2023-01-14]]* (6)
@@ -289,6 +262,33 @@ kanban-plugin: basic
 ## **Thursday** *[[Journal/2023-02-23|2023-02-23]]* (6)
 
 - [ ] 🏆 Purpose
+
+
+## **Friday** *[[Journal/2023-02-24|2023-02-24]]* (6)
+
+- [ ] 🏆 Purpose
+
+
+## **Saturday** *[[Journal/2023-02-25|2023-02-25]]* (6)
+
+- [ ] 🏆 Purpose
+
+
+## **Sunday** *[[Journal/2023-02-26|2023-02-26]]* (6)
+
+- [ ] 🏆 Purpose
+- [ ] **(10 mins)** Weekly Review.
+
+
+## **Monday** *[[Journal/2023-02-27|2023-02-27]]* (6)
+
+- [ ] 🏆 Purpose
+
+
+## **Tuesday** *[[Journal/2023-02-28|2023-02-28]]* (6)
+
+- [ ] 🏆 Purpose
+- [ ] **(10 mins)** Monthly Review.
 
 
 ## Archive

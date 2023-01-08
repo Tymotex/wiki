@@ -1,5 +1,0 @@
----
-title: Distributed System
----
-
-TODO.

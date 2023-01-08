@@ -3,17 +3,30 @@ title: Google Tasks and Workflow
 ---
 
 ## First Few Days
+- [ ] Set up Obsidian workflow (after approval). If no approved, set up alternative workflow.
+- [ ] Set up laptop environment (with window manager, shortcuts, etc.)
+- [ ] Set up CiderV environment (with all your usual VSCode extensions and shortcuts).
+- [ ] Finish SRE book.
+- [ ] Codelabs?
+
+[[Areas/Google/Day One at Google|Day One at Google]]
+
 [[Knowledge/Soft Skills/Excelling as a Graduate|Excelling as a new software engineering graduate]].
 
 Some questions to ask:
-- Based on your personal experience, do you have any advice on *when* to ask for help?
+- Any idea what kind of first task I might get to?
+- Importance of competency with C++? Any other languages or technologies that I should be familiar with?
+- Why is X done like this? (e.g. why is this architecture leader-follower?)
+- How did you make the decision between SRE and a development role? I assume that if you're able to consider SRE, then you are perfectly capable of doing well as a developer.
 - What do you consider are the strongest signals that an L3 is ready to transition to an L4 engineer?
 - How different do you feel now compared to when you first started out? (Maybe be more specific here)
 - Do you have any advice to would give to yourself when you were just starting out your career in software engineering?
 - Is there anything you're learning about recently?
+- Can I use Obsidian?
 - Do you have any thoughts on how to best absorb all the information in the first few weeks?
 - Do we like to do daily or weekly standups in this team?
 - What are the consequences of not meeting SLA for Storage services? I'm curious because they're not user-facing.
+- I feel like my knowledge in distributed systems is lacking. Do you think this is something that is worth understanding better?
 - How often do disastrous outages actually happen for Storage services?
 - What's been the most disastrous outage you've experienced?
 - Can you think of any unique challenges faced by Storage SRE that aren't faced by any other SRE team?

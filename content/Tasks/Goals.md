@@ -28,7 +28,8 @@ In my job, I will work hard for the purpose of *learning* and becoming more prof
 Here are some books I want to finish this month:
 - [ ] **(Programming)** Site Reliability Engineering
 - [ ] **(Programming)** A Tour of C++
-- [ ] **(Programming)** Software Engineering at Google **(just get to around page 200)**
 - [ ] Meditations
-- [ ] The Way of the Superior Man
-- [ ] Never Eat Alone
+- [ ] The Obstacle is the Way
+- [ ] On Writing Well.
+- [x] The Way of the Superior Man
+- [ ] ~~Never Eat Alone~~
