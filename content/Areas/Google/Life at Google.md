@@ -3,12 +3,19 @@ title: Google Tasks and Workflow
 ---
 
 ## First Few Days
+- [ ] Set up Obsidian workflow (after approval). If no approved, set up alternative workflow.
+- [ ] Set up laptop environment (with window manager, shortcuts, etc.)
+- [ ] Set up CiderV environment (with all your usual VSCode extensions and shortcuts).
+- [ ] Finish SRE book.
+- [ ] Codelabs?
+
 [[Areas/Google/Day One at Google|Day One at Google]]
 
 [[Knowledge/Soft Skills/Excelling as a Graduate|Excelling as a new software engineering graduate]].
 
 Some questions to ask:
 - Any idea what kind of first task I might get to?
+- Importance of competency with C++? Any other languages or technologies that I should be familiar with?
 - Why is X done like this? (e.g. why is this architecture leader-follower?)
 - How did you make the decision between SRE and a development role? I assume that if you're able to consider SRE, then you are perfectly capable of doing well as a developer.
 - What do you consider are the strongest signals that an L3 is ready to transition to an L4 engineer?

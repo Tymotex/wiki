@@ -8,17 +8,16 @@ kanban-plugin: basic
 
 - [ ] Reread credentials appointment requirements
 - [ ] Set up camera and microphone. Check they work.
-- [ ] Finish management chapters SRE book.
-- [ ] ==3== Write some goals for the first week at Google.<br>E.g. meet everyone in the team, pop up to old teammates and contacts to say hi, set up my workflow as planned.<br><br>Plan my transport and things to bring to work.<br><br>Plan my journaling workflow.
-- [ ] ==3== How to introduce self to coworkers?
-- [ ] ==3== How to make a strong first impression with coworkers?
+- [x] Write some goals for the first week at Google.<br>E.g. meet everyone in the team, pop up to old teammates and contacts to say hi, set up my workflow as planned.<br><br>Plan my transport and things to bring to work.<br><br>Plan my journaling workflow.
+- [x] ==3== How to introduce self to coworkers?
+- [x] ==3== How to make a strong first impression with coworkers?
 - [x] ==3== **(3 hours)** Get to page 350 SRE book
 - [x] ==1== Update LinkedIn job status.<br>Update GitHub profile description.<br>Update timz.dev description.
 
 
 ## **Tuesday** *[[Journal/2023-01-10|2023-01-10]]* (6)
 
-- [ ] Wear blue oxford and chinos.
+- [ ] Wear blue oxford and chinos.<br>Drink coffee.
 - [ ] Filter out all your questions.
 - [ ] Write an email to Raymond.<br>Let him know where you're at, your plans for today and the week. Ask for recommendations for what else to work on.<br>Let him know I'm open to attending any meetings the team is attending.<br>Let him know that I'm ready to introduce myself to coworkers.
 - [ ] ==5== Maybe write a C++ program that extracts out all flashcards and dumps them to a few markdown files?
@@ -30,6 +29,7 @@ kanban-plugin: basic
 - [ ] ==6== **(45 mins)** Finish string chapter C++ Start IO chapter c++
 - [ ] ==6== **(25 mins)** Plan tasks for Math website. What's the end goal and what are the mini milestones that need to be accomplished to get there?
 - [ ] ==5== Find a good computer science history book. Put it somewhere you'll know to read.
+- [ ] Finish management chapters SRE book.
 
 
 ## **Wednesday** *[[Journal/2023-01-11|2023-01-11]]* (6)
