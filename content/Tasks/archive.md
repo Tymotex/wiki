@@ -819,12 +819,29 @@ kanban-plugin: basic
 - [x] **(3 hours)** Get to page 300 SRE book.
 - [x] ==1== Finish WoftSM (skip the useless parts)
 
+## **Friday** *[[Journal/2023-01-06|2023-01-06]]* (6)
+
+- [x] ==1== Change aquarium water (15%)
+- [x] ==1== 2 scoops of salt (4 more scoops after)
+- [x] One scoop of salt (3 more scoops after)
+- [x] ==2== Transfer Dayi's camera photos.
+
+## **Saturday** *[[Journal/2023-01-07|2023-01-07]]* (6)
+
+
+
+## **Sunday** *[[Journal/2023-01-08|2023-01-08]]* (6)
+
+
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
