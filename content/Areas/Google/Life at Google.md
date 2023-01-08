@@ -3,7 +3,7 @@ title: Google Tasks and Workflow
 ---
 
 ## First Few Days
-
+[[Areas/Google/Day One at Google|Day One at Google]]
 
 [[Knowledge/Soft Skills/Excelling as a Graduate|Excelling as a new software engineering graduate]].
 
