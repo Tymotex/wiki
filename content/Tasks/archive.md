@@ -834,12 +834,18 @@ kanban-plugin: basic
 
 
 
+## **Sunday** *[[Journal/2023-01-08|2023-01-08]]* (6)
+
+- [x] Reread credentials appointment requirements
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
