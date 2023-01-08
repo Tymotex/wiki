@@ -8,11 +8,14 @@ title: Google Tasks and Workflow
 [[Knowledge/Soft Skills/Excelling as a Graduate|Excelling as a new software engineering graduate]].
 
 Some questions to ask:
+- Any idea what kind of first task I might get to?
+- Why is X done like this? (e.g. why is this architecture leader-follower?)
 - How did you make the decision between SRE and a development role? I assume that if you're able to consider SRE, then you are perfectly capable of doing well as a developer.
 - What do you consider are the strongest signals that an L3 is ready to transition to an L4 engineer?
 - How different do you feel now compared to when you first started out? (Maybe be more specific here)
 - Do you have any advice to would give to yourself when you were just starting out your career in software engineering?
 - Is there anything you're learning about recently?
+- Can I use Obsidian?
 - Do you have any thoughts on how to best absorb all the information in the first few weeks?
 - Do we like to do daily or weekly standups in this team?
 - What are the consequences of not meeting SLA for Storage services? I'm curious because they're not user-facing.
