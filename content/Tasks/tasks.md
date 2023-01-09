@@ -6,6 +6,9 @@ kanban-plugin: basic
 
 ## **Monday** *[[Journal/2023-01-09|2023-01-09]]* (6)
 
+- [ ] Do all of Raymonds tasks.
+- [ ] Cut nails
+- [ ] Figure out all bus arrival times inthe morning
 - [x] Workday tasks
 - [ ] Wear blue oxford and chinos.<br>Drink coffee.
 - [ ] Out the door by 7:35, **latest**.
@@ -18,10 +21,12 @@ kanban-plugin: basic
 - [x] ==3== How to make a strong first impression with coworkers?
 - [x] ==3== **(3 hours)** Get to page 350 SRE book
 - [x] ==1== Update LinkedIn job status.<br>Update GitHub profile description.<br>Update timz.dev description.
+- [ ] Delete that video...
 
 
 ## **Tuesday** *[[Journal/2023-01-10|2023-01-10]]* (6)
 
+- [ ] **Google tasks**: bring Dell monitor to work. Bring laptop stand. Bring usbc charging cable
 - [ ] Write an email to Raymond.<br>Let him know where you're at, your plans for today and the week. Ask for recommendations for what else to work on.<br>Let him know I'm open to attending any meetings the team is attending.<br>Let him know that I'm ready to introduce myself to coworkers.
 - [ ] ==5== Maybe write a C++ program that extracts out all flashcards and dumps them to a few markdown files?
 - [ ] ==5== Pick the most accessible computer science academic paper and read it fully today.<br><br>Shannon?<br>Garbage collection?

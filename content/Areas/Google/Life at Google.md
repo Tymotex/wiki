@@ -7,7 +7,10 @@ title: Google Tasks and Workflow
 - [ ] Set up laptop environment (with window manager, shortcuts, etc.)
 - [ ] Set up CiderV environment (with all your usual VSCode extensions and shortcuts).
 - [ ] Finish SRE book.
+- [ ] Write notes on all your services. Be able to explain them to your coworkers. Ask them for feedback.
+- [ ] Look into the readability approval process. When could I get it?
 - [ ] Codelabs?
+- [ ] Schedule meetings with other coworkers.
 
 [[Areas/Google/Day One at Google|Day One at Google]]
 
@@ -48,18 +51,18 @@ Some questions to ask:
 - Are SREs able to be swapped into the development team without much ramp up time?
 - How do you plan your workdays? Do you know of any strategies that work really well for you?
 - Do you have any programming book recommendations? 
-- Does every SRE rely on a playbook? Do you find it useful in your experience or are most problems novel?
+- Does every SRE team rely on a playbook? Do you find it useful in your experience or are most problems novel?
+- How common is it for an incident to fall through to the secondary on-caller.
 - What happens when both primary and secondary on-callers fail to mitigate a problem? Is the problem simply left to persist until the next workday?
 - Roughly what fraction of pages are from the monitoring system versus from human escalation?
 - If I wanted to deploy a simple web server to Google Cloud, does that web server end up as a job on Borg? If so, does that mean customers' jobs and internal jobs are all using the same set of physical computers?
 - What are the differences between Borgmon and Prometheus?
-- How common is it for an incident to fall through to the secondary on-caller.
 - Do SREs work on feature development often? Or is their development work mainly done to improve the reliability of the service?
 - How can I see past postmortems from this team?
 - Are past outages tracked by this team using Outalator? May I see them?
 - Are the metrics like MTTF and MTTR known for our services?
 - What's the logic behind automated rollback? How do I know under which conditions this can happen?
-    - Do SREs ever have to worry about the security of services? It seems like one thing that threatens reliability. Are our services safe from DDoS attacks (or does the impact of that get reduced by some protective layers)?
+- Do SREs ever have to worry about the security of services? It seems like one thing that threatens reliability. Are our services safe from DDoS attacks (or does the impact of that get reduced by some protective layers)?
 
 ### First Tasks
 

@@ -3,11 +3,10 @@ title: Day One at Google
 ---
 
 ## Tasks
-- [ ] Email Raymond.
-- [ ] Credential appointment.
+- [x] Credential appointment.
+- [ ] Super form
 - [ ] Email other coworkers.
 - [ ] Email old coworkers and mentors.
-- [ ] (Optional) Meet other coworkers.
 
 ## Introduction
 Good morning <>. I'm Tim Zhang. I graduated from UNSW recently. I've interned at Google before, I was on the data acquisition SRE team. 
