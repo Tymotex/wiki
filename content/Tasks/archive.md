@@ -838,12 +838,27 @@ kanban-plugin: basic
 
 - [x] Reread credentials appointment requirements
 
+## **Monday** *[[Journal/2023-01-09|2023-01-09]]* (6)
+
+- [x] Workday tasks
+- [x] Write some goals for the first week at Google.<br>E.g. meet everyone in the team, pop up to old teammates and contacts to say hi, set up my workflow as planned.<br><br>Plan my transport and things to bring to work.<br><br>Plan my journaling workflow.
+- [x] ==3== How to introduce self to coworkers?
+- [x] ==3== How to make a strong first impression with coworkers?
+- [x] ==3== **(3 hours)** Get to page 350 SRE book
+- [x] ==1== Update LinkedIn job status.<br>Update GitHub profile description.<br>Update timz.dev description.
+
+## **Tuesday** *[[Journal/2023-01-10|2023-01-10]]* (6)
+
+
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
