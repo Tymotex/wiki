@@ -2,38 +2,22 @@
 kanban-plugin: basic
 ---
 
-## **Wednesday** *[[Journal/2023-01-11|2023-01-11]]* (6)
-
-- [x] ==2== Fill in habit tracker
-- [ ] ==2== Measure aquarium ph. Tweak
-- [x] ==2== Delete that video...
-- [x] ==1== **Google tasks**: bring Dell monitor to work. Bring laptop stand. Bring usbc charging cable
-- [x] ==1== Write an email to Raymond.<br>Let him know where you're at, your plans for today and the week. Ask for recommendations for what else to work on.<br>Let him know I'm open to attending any meetings the team is attending.<br>Let him know that I'm ready to introduce myself to coworkers.
-- [ ] ==6== Maybe write a C++ program that extracts out all flashcards and dumps them to a few markdown files?
-- [ ] ==1== Apply online for Australian citizenship.
-- [ ] ==6== Answer all flashcard questions in C++ notes.
-- [ ] ==7== **(45 mins)** Read through James Clear's workbook.
-- [ ] ==7== **(45 mins)** Finish string chapter C++ Start IO chapter c++
-- [ ] ==7== **(25 mins)** Plan tasks for Math website. What's the end goal and what are the mini milestones that need to be accomplished to get there?
-- [ ] ==1== Finish management chapters SRE book.
-
-## **Thursday** *[[Journal/2023-01-12|2023-01-12]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Friday** *[[Journal/2023-01-13|2023-01-13]]* (6)
-
-- [ ] 🏆 Purpose
-- [ ] Add my colleagues on LinkedIn?
-
-## **Saturday** *[[Journal/2023-01-14|2023-01-14]]* (6)
-
-- [ ] 🏆 Purpose
-
 ## **Sunday** *[[Journal/2023-01-15|2023-01-15]]* (6)
 
 - [ ] 🏆 Purpose
 - [ ] **(10 mins)** Weekly Review.
+- [ ] ==6== Measure aquarium ph. Tweak
+- [ ] ==10== Maybe write a C++ program that extracts out all flashcards and dumps them to a few markdown files?
+- [ ] ==5== Apply online for Australian citizenship.
+- [ ] ==10== Answer all flashcard questions in C++ notes.
+- [ ] ==11== **(45 mins)** Read through James Clear's workbook.
+- [ ] ==11== **(45 mins)** Finish string chapter C++ Start IO chapter c++
+- [ ] ==11== **(25 mins)** Plan tasks for Math website. What's the end goal and what are the mini milestones that need to be accomplished to get there?
+- [ ] ==5== Finish management chapters SRE book.
+- [ ] ==3== 🏆 Purpose
+- [ ] ==2== 🏆 Purpose
+- [ ] ==2== Add my colleagues on LinkedIn?
+- [ ] ==1== 🏆 Purpose
 
 ## **Monday** *[[Journal/2023-01-16|2023-01-16]]* (6)
 
@@ -228,12 +212,31 @@ kanban-plugin: basic
 
 - [ ] 🏆 Purpose
 
+## **Friday** *[[Journal/2023-03-03|2023-03-03]]* (6)
+
+- [ ] 🏆 Purpose
+
+## **Saturday** *[[Journal/2023-03-04|2023-03-04]]* (6)
+
+- [ ] 🏆 Purpose
+
+## **Sunday** *[[Journal/2023-03-05|2023-03-05]]* (6)
+
+- [ ] 🏆 Purpose
+- [ ] **(10 mins)** Weekly Review.
+
+## **Monday** *[[Journal/2023-03-06|2023-03-06]]* (6)
+
+- [ ] 🏆 Purpose
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 {"kanban-plugin":"basic"}
 ```
