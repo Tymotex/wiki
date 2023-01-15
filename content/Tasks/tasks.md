@@ -10,6 +10,7 @@ kanban-plugin: basic
 - [x] ==6== Measure aquarium ph. Tweak
 - [x] ==2== Add my colleagues on LinkedIn?
 - [ ] Plan your gym visits to Google. Maybe make a calendar event.
+- [ ] Read Bupa coverage.
 
 
 ## **Monday** *[[Journal/2023-01-16|2023-01-16]]* (6)
