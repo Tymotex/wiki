@@ -26,7 +26,7 @@ kanban-plugin: basic
 
 ## **Tuesday** *[[Journal/2023-01-10|2023-01-10]]* (6)
 
-- [ ] **Google tasks**: bring Dell monitor to work. Bring laptop stand. Bring usbc charging cable
+- [ ] **Google tasks**: bring Dell monitor to work. Bring laptop stand. Bring usbc charging cable. Bring jumper
 - [ ] Write an email to Raymond.<br>Let him know where you're at, your plans for today and the week. Ask for recommendations for what else to work on.<br>Let him know I'm open to attending any meetings the team is attending.<br>Let him know that I'm ready to introduce myself to coworkers.
 - [ ] ==5== Maybe write a C++ program that extracts out all flashcards and dumps them to a few markdown files?
 - [ ] ==5== Pick the most accessible computer science academic paper and read it fully today.<br><br>Shannon?<br>Garbage collection?
