@@ -8,6 +8,7 @@ kanban-plugin: basic
 - [x] Find a brown switch mechanical keyboard to use at work.
 
 ## **Sunday** *[[Journal/2023-01-22|2023-01-22]]* (6)
+
 - [ ] **(10 mins)** Weekly Review.
 - [ ] **(25 mins)** Plan tasks for Math website. What's the end goal and what are the mini milestones that need to be accomplished to get there?
 - [ ] Maybe write a C++ program that extracts out all flashcards and dumps them to a few markdown files?
@@ -229,6 +230,8 @@ kanban-plugin: basic
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 {"kanban-plugin":"basic"}
 ```
