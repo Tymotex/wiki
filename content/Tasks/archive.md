@@ -870,12 +870,42 @@ kanban-plugin: basic
 
 
 
+## **Sunday** *[[Journal/2023-01-15|2023-01-15]]* (6)
+
+- [x] ==5== Apply online for Australian citizenship.
+- [x] ==6== Measure aquarium ph. Tweak
+- [x] ==2== Add my colleagues on LinkedIn?
+- [x] Plan your gym visits to Google. Maybe make a calendar event.
+- [x] Read Bupa coverage.
+
+## **Monday** *[[Journal/2023-01-16|2023-01-16]]* (6)
+
+
+
+## **Tuesday** *[[Journal/2023-01-17|2023-01-17]]* (6)
+
+
+
+## **Wednesday** *[[Journal/2023-01-18|2023-01-18]]* (6)
+
+
+
+## **Thursday** *[[Journal/2023-01-19|2023-01-19]]* (6)
+
+
+
+## **Friday** *[[Journal/2023-01-20|2023-01-20]]* (6)
+
+
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
