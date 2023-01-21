@@ -6,8 +6,6 @@ kanban-plugin: basic
 
 - [x] ==5== Read SD card of camera and its usbs. If there's stuff, then transfer to your laptop.
 - [x] Find a brown switch mechanical keyboard to use at work.
-- [ ] i3status blocks for personal and work computer.
-
 
 ## **Sunday** *[[Journal/2023-01-22|2023-01-22]]* (6)
 - [ ] **(10 mins)** Weekly Review.
