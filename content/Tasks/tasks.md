@@ -4,26 +4,20 @@ kanban-plugin: basic
 
 ## **Saturday** *[[Journal/2023-01-21|2023-01-21]]* (6)
 
-- [ ] 🏆 Purpose
+- [x] ==5== Read SD card of camera and its usbs. If there's stuff, then transfer to your laptop.
+- [x] Find a brown switch mechanical keyboard to use at work.
+- [ ] i3status blocks for personal and work computer.
+
+
+## **Sunday** *[[Journal/2023-01-22|2023-01-22]]* (6)
+- [ ] **(10 mins)** Weekly Review.
 - [ ] **(25 mins)** Plan tasks for Math website. What's the end goal and what are the mini milestones that need to be accomplished to get there?
+- [ ] Maybe write a C++ program that extracts out all flashcards and dumps them to a few markdown files?
 - [ ] **(45 mins)** Read through James Clear's workbook.
 - [ ] **(45 mins)** Finish string chapter C++ Start IO chapter c++
-- [ ] Maybe write a C++ program that extracts out all flashcards and dumps them to a few markdown files?
 - [ ] Answer all flashcard questions in C++ notes.
 - [ ] Finish management chapters SRE book.
 - [ ] Begin and plan the Australian citizenship acquisition process.
-- [ ] ==5== 🏆 Purpose
-- [ ] ==5== Read SD card of camera and its usbs. If there's stuff, then transfer to your laptop.
-- [ ] ==5== Find a brown switch mechanical keyboard to use at work.
-- [ ] ==4== 🏆 Purpose
-- [ ] ==3== 🏆 Purpose
-- [ ] ==2== 🏆 Purpose
-- [ ] ==1== 🏆 Purpose
-
-## **Sunday** *[[Journal/2023-01-22|2023-01-22]]* (6)
-
-- [ ] 🏆 Purpose
-- [ ] **(10 mins)** Weekly Review.
 
 ## **Monday** *[[Journal/2023-01-23|2023-01-23]]* (6)
 
