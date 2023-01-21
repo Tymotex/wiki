@@ -6,6 +6,8 @@ kanban-plugin: basic
 
 ## Programming & Career
 
+- [ ] Write a C++ SMTP server that pushes tasks emailed to it to your obsidian codebase.
+- [ ] Make the finance dashboard to take control of your finances.
 - [ ] **(1 hour)**<br>Determine what the next steps would be to getting a language school started.<br>#project #mum
 - [ ] [[_/Writing first blog  and publishing on Medium.]]
 - [ ] Get started with your procedural generation project.
