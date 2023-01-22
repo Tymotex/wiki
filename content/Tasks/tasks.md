@@ -9,8 +9,10 @@ kanban-plugin: basic
 - [ ] Export WakaTime data and cancel it. Make a task to set up a free alternative.
 - [ ] **(45 mins)** Finish string chapter C++ Start IO chapter c++
 - [x] Fully migrate to corp phone.
-- [ ] Cut nails
+- [ ] Clear all emails. Unsub james clear
+- [x] Cut nails
 - [ ] How to use an iron. Fix that jacket crase.
+- [ ] Fix screen tearing on monitor.
 
 
 ## **Monday** *[[Journal/2023-01-23|2023-01-23]]* (6)
