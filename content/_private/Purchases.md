@@ -22,6 +22,7 @@ title: Purchases
 - [x] Navy chinos
 - [x] Another OCBD, either: grey, light red or white.
 - [x] (Uniqlo) Basic grey shirt.
+- [x] Pixel 6 Pro screen protector (should be tax deductible)
 - [ ] (Uniqlo) Turtleneck wine colour.
 - [ ] Messenger bag
 - [ ] Mechanical keyboard for home (as a hobby?)
