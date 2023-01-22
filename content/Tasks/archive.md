@@ -898,12 +898,21 @@ kanban-plugin: basic
 
 
 
+## **Saturday** *[[Journal/2023-01-21|2023-01-21]]* (6)
+
+- [x] ==5== Read SD card of camera and its usbs. If there's stuff, then transfer to your laptop.
+- [x] Find a brown switch mechanical keyboard to use at work.
+- [x] Try get the docking station working.
+- [x] Read how to focus deeply in an open office.
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
