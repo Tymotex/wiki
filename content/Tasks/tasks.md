@@ -8,8 +8,9 @@ kanban-plugin: basic
 
 - [ ] Export WakaTime data and cancel it. Make a task to set up a free alternative.
 - [ ] **(45 mins)** Finish string chapter C++ Start IO chapter c++
-- [ ] Fully migrate to corp phone.
+- [x] Fully migrate to corp phone.
 - [ ] Cut nails
+- [ ] How to use an iron. Fix that jacket crase.
 
 
 ## **Monday** *[[Journal/2023-01-23|2023-01-23]]* (6)
@@ -48,6 +49,7 @@ kanban-plugin: basic
 - [ ] Read this: ## read this: https://headrush.typepad.com/creating_passionate_users/2005/09/conversational_.html
 - [ ] Maybe write a C++ program that extracts out all flashcards and dumps them to a few markdown files?
 - [ ] Downgrade Vultr.
+- [ ] What the fuck do I do with my hair?<br>Find hairstyles that you like.<br>Find a hair stylist that you can go to.
 
 
 ## **Sunday** *[[Journal/2023-01-29|2023-01-29]]* (6)
