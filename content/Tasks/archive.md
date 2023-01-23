@@ -905,12 +905,23 @@ kanban-plugin: basic
 - [x] Try get the docking station working.
 - [x] Read how to focus deeply in an open office.
 
+## **Sunday** *[[Journal/2023-01-22|2023-01-22]]* (6)
+
+- [x] Export WakaTime data and cancel it. Make a task to set up a free alternative.
+- [x] Fully migrate to corp phone.
+- [x] Clear all emails. Unsub james clear
+- [x] Cut nails
+- [x] How to use an iron. Fix that jacket crase.
+- [x] Fix screen tearing on monitor.
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
