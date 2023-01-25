@@ -914,12 +914,26 @@ kanban-plugin: basic
 - [x] How to use an iron. Fix that jacket crase.
 - [x] Fix screen tearing on monitor.
 
+## **Monday** *[[Journal/2023-01-23|2023-01-23]]* (6)
+
+
+
+## **Tuesday** *[[Journal/2023-01-24|2023-01-24]]* (6)
+
+
+
+## **Wednesday** *[[Journal/2023-01-25|2023-01-25]]* (6)
+
+
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings

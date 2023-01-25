@@ -2,23 +2,14 @@
 kanban-plugin: basic
 ---
 
-## **Monday** *[[Journal/2023-01-23|2023-01-23]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Tuesday** *[[Journal/2023-01-24|2023-01-24]]* (6)
-
-- [ ] 🏆 Purpose
-- [ ] Prepare for Jiu Jitsu tomorrow.
-- [ ] **(45 mins)** Finish string chapter C++ Start IO chapter c++
-
-## **Wednesday** *[[Journal/2023-01-25|2023-01-25]]* (6)
-
-- [ ] 🏆 Purpose
-
 ## **Thursday** *[[Journal/2023-01-26|2023-01-26]]* (6)
 
 - [ ] 🏆 Purpose
+- [ ] ==3== 🏆 Purpose
+- [ ] ==2== 🏆 Purpose
+- [ ] ==2== Prepare for Jiu Jitsu tomorrow.
+- [ ] ==2== **(45 mins)** Finish string chapter C++ Start IO chapter c++
+- [ ] ==1== 🏆 Purpose
 
 ## **Friday** *[[Journal/2023-01-27|2023-01-27]]* (6)
 
@@ -228,12 +219,26 @@ kanban-plugin: basic
 
 - [ ] 🏆 Purpose
 
+## **Wednesday** *[[Journal/2023-03-15|2023-03-15]]* (6)
+
+- [ ] 🏆 Purpose
+
+## **Thursday** *[[Journal/2023-03-16|2023-03-16]]* (6)
+
+- [ ] 🏆 Purpose
+
+## **Friday** *[[Journal/2023-03-17|2023-03-17]]* (6)
+
+- [ ] 🏆 Purpose
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 {"kanban-plugin":"basic"}
 ```
