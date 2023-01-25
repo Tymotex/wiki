@@ -4,12 +4,7 @@ kanban-plugin: basic
 
 ## **Thursday** *[[Journal/2023-01-26|2023-01-26]]* (6)
 
-- [ ] 🏆 Purpose
-- [ ] ==3== 🏆 Purpose
-- [ ] ==2== 🏆 Purpose
-- [ ] ==2== Prepare for Jiu Jitsu tomorrow.
-- [ ] ==2== **(45 mins)** Finish string chapter C++ Start IO chapter c++
-- [ ] ==1== 🏆 Purpose
+- [ ] Figure out what haircut to get. You'll need one. Either get a medium-length styled cut or a crew cut. Leaning towards medium-length cut.
 
 ## **Friday** *[[Journal/2023-01-27|2023-01-27]]* (6)
 
@@ -33,6 +28,7 @@ kanban-plugin: basic
 - [ ] Finish management chapters SRE book.
 - [ ] **(10 mins)** Weekly Review.
 - [ ] Remind Waleed and Arthur about lunch/dinner.
+- [ ]  **(45 mins)** Finish string chapter C++ Start IO chapter c++
 
 ## **Monday** *[[Journal/2023-01-30|2023-01-30]]* (6)
 
