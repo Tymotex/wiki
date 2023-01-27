@@ -926,12 +926,22 @@ kanban-plugin: basic
 
 
 
+## **Thursday** *[[Journal/2023-01-26|2023-01-26]]* (6)
+
+- [x] Figure out what haircut to get. You'll need one. Either get a medium-length styled cut or a crew cut. Leaning towards medium-length cut.
+
+## **Friday** *[[Journal/2023-01-27|2023-01-27]]* (6)
+
+
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
