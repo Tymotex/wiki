@@ -4,20 +4,11 @@ kanban-plugin: basic
 
 ## **Saturday** *[[Journal/2023-02-04|2023-02-04]]* (6)
 
-- [ ] 🏆 Purpose
 - [ ] Buy 2 new fish: 1 angelfish and 1 gourami maybe?<br><br>It's better to have fewer fish. We form better connections with them and it is far easier to take care of.
 - [ ] Read this: ## read this: https://headrush.typepad.com/creating_passionate_users/2005/09/conversational_.html
 - [ ] Begin reading the software engineering at Google book.
-- [ ] Ask Dom when he wants to come.
 - [ ] ==7== Finish management chapters SRE book.
 - [ ] ==7== **(45 mins)** Finish string chapter C++ Start IO chapter c++
-- [ ] ==6== **(10 mins)** Weekly Review.
-- [ ] ==5== 🏆 Purpose
-- [ ] ==4== 🏆 Purpose
-- [ ] ==4== **(10 mins)** Monthly Review.
-- [ ] ==3== 🏆 Purpose
-- [ ] ==2== 🏆 Purpose
-- [ ] ==1== 🏆 Purpose
 
 ## **Sunday** *[[Journal/2023-02-05|2023-02-05]]* (6)
 
@@ -52,6 +43,7 @@ kanban-plugin: basic
 ## **Saturday** *[[Journal/2023-02-11|2023-02-11]]* (6)
 
 - [ ] 🏆 Purpose
+- [ ] Ask Dom when he wants to come.
 
 ## **Sunday** *[[Journal/2023-02-12|2023-02-12]]* (6)
 
