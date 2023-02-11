@@ -15,4 +15,4 @@ Wants:
 
 > "Few people are ever quite perfect as those we've never been able to speak to." ([source](https://www.youtube.com/watch?v=00SLmJuJ1Ig&ab_channel=TheSchoolofLife))
 
-> "The difficult thing about unrequited love is that we're denied the chance to get to know someone better — and therefore to realise that they are, in the end, human like all of us."
+> "The difficult thing about unrequited love is that we're denied the chance to get to know someone better — and therefore to realise that they are, in the end, human like all of us." ([source](https://www.youtube.com/watch?v=00SLmJuJ1Ig&ab_channel=TheSchoolofLife))
