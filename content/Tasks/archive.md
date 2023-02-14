@@ -990,12 +990,26 @@ kanban-plugin: basic
 
 
 
+## **Saturday** *[[Journal/2023-02-11|2023-02-11]]* (6)
+
+
+
+## **Sunday** *[[Journal/2023-02-12|2023-02-12]]* (6)
+
+
+
+## **Monday** *[[Journal/2023-02-13|2023-02-13]]* (6)
+
+
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
