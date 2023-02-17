@@ -8,23 +8,14 @@ kanban-plugin: basic
 
 - [ ] Clean up Obsidian tasks. Clear daily template.
 - [ ] Throw out trash.
-- [ ] ==13== Read this: ## read this: https://headrush.typepad.com/creating_passionate_users/2005/09/conversational_.html
+- [x] ==13== Read this: ## read this: https://headrush.typepad.com/creating_passionate_users/2005/09/conversational_.html
 - [ ] ==13== Begin reading the software engineering at Google book.
-- [ ] ==20== Finish management chapters SRE book.
 - [ ] ==20== **(45 mins)** Finish string chapter C++ Start IO chapter c++
 - [ ] ==12== 🏆 Purpose
 - [ ] ==12== **(10 mins)** Weekly Review.
 - [ ] ==12== Downgrade Vultr.
 - [ ] ==12== **(2 hours)**<br>Jenkins tutorial
-- [ ] ==12== Answer all flashcard questions in C++ notes.
-- [ ] ==12== **(25 mins)** Plan tasks for Math website. What's the end goal and what are the mini milestones that need to be accomplished to get there?
-- [ ] ==12== Maybe write a C++ program that extracts out all flashcards and dumps them to a few markdown files?
-- [ ] ==5== 🏆 Purpose
-- [ ] ==5== **(10 mins)** Weekly Review.
-- [ ] ==4== 🏆 Purpose
-- [ ] ==2== 🏆 Purpose
-- [ ] ==1== 🏆 Purpose
-- [ ] Buy either Keychron 75% or Nuphy 75%.
+- [ ] Downgrade woolworths
 
 
 ## **Saturday** *[[Journal/2023-02-18|2023-02-18]]* (6)
@@ -68,7 +59,11 @@ kanban-plugin: basic
 ## **Saturday** *[[Journal/2023-02-25|2023-02-25]]* (6)
 
 - [ ] 🏆 Purpose
+- [ ] ==20== Finish management chapters SRE book.
+- [ ] ==12== Answer all flashcard questions in C++ notes.
+- [ ] ==12== Maybe write a C++ program that extracts out all flashcards and dumps them to a few markdown files?
 - [ ] ==7== Buy 2 new fish: 1 angelfish and 1 gourami maybe?<br><br>It's better to have fewer fish. We form better connections with them and it is far easier to take care of.
+- [ ] ==12== **(25 mins)** Plan tasks for Math website. What's the end goal and what are the mini milestones that need to be accomplished to get there?
 
 
 ## **Sunday** *[[Journal/2023-02-26|2023-02-26]]* (6)
@@ -299,7 +294,11 @@ kanban-plugin: basic
 
 
 
+***
 
+## Archive
+
+- [ ] ==1== 🏆 Purpose
 
 %% kanban:settings
 ```
