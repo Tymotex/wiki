@@ -2,36 +2,27 @@
 kanban-plugin: basic
 ---
 
-## **Tuesday** *[[Journal/2023-02-14|2023-02-14]]* (6)
-
-- [ ] 🏆 Purpose
-- [ ] ==3== Ask Dom when he wants to come.
-- [ ] ==10== Read this: ## read this: https://headrush.typepad.com/creating_passionate_users/2005/09/conversational_.html
-- [ ] ==10== Begin reading the software engineering at Google book.
-- [ ] ==17== Finish management chapters SRE book.
-- [ ] ==17== **(45 mins)** Finish string chapter C++ Start IO chapter c++
-- [ ] ==9== 🏆 Purpose
-- [ ] ==9== **(10 mins)** Weekly Review.
-- [ ] ==9== Downgrade Vultr.
-- [ ] ==9== **(2 hours)**<br>Jenkins tutorial
-- [ ] ==9== Answer all flashcard questions in C++ notes.
-- [ ] ==9== **(25 mins)** Plan tasks for Math website. What's the end goal and what are the mini milestones that need to be accomplished to get there?
-- [ ] ==9== Maybe write a C++ program that extracts out all flashcards and dumps them to a few markdown files?
-- [ ] ==2== 🏆 Purpose
-- [ ] ==2== **(10 mins)** Weekly Review.
-- [ ] ==1== 🏆 Purpose
-
-## **Wednesday** *[[Journal/2023-02-15|2023-02-15]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Thursday** *[[Journal/2023-02-16|2023-02-16]]* (6)
-
-- [ ] 🏆 Purpose
-
 ## **Friday** *[[Journal/2023-02-17|2023-02-17]]* (6)
 
 - [ ] 🏆 Purpose
+- [ ] ==3== 🏆 Purpose
+- [ ] ==6== Ask Dom when he wants to come.
+- [ ] ==13== Read this: ## read this: https://headrush.typepad.com/creating_passionate_users/2005/09/conversational_.html
+- [ ] ==13== Begin reading the software engineering at Google book.
+- [ ] ==20== Finish management chapters SRE book.
+- [ ] ==20== **(45 mins)** Finish string chapter C++ Start IO chapter c++
+- [ ] ==12== 🏆 Purpose
+- [ ] ==12== **(10 mins)** Weekly Review.
+- [ ] ==12== Downgrade Vultr.
+- [ ] ==12== **(2 hours)**<br>Jenkins tutorial
+- [ ] ==12== Answer all flashcard questions in C++ notes.
+- [ ] ==12== **(25 mins)** Plan tasks for Math website. What's the end goal and what are the mini milestones that need to be accomplished to get there?
+- [ ] ==12== Maybe write a C++ program that extracts out all flashcards and dumps them to a few markdown files?
+- [ ] ==5== 🏆 Purpose
+- [ ] ==5== **(10 mins)** Weekly Review.
+- [ ] ==4== 🏆 Purpose
+- [ ] ==2== 🏆 Purpose
+- [ ] ==1== 🏆 Purpose
 
 ## **Saturday** *[[Journal/2023-02-18|2023-02-18]]* (6)
 
@@ -231,12 +222,26 @@ kanban-plugin: basic
 
 - [ ] 🏆 Purpose
 
+## **Thursday** *[[Journal/2023-04-06|2023-04-06]]* (6)
+
+- [ ] 🏆 Purpose
+
+## **Friday** *[[Journal/2023-04-07|2023-04-07]]* (6)
+
+- [ ] 🏆 Purpose
+
+## **Saturday** *[[Journal/2023-04-08|2023-04-08]]* (6)
+
+- [ ] 🏆 Purpose
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 {"kanban-plugin":"basic"}
 ```
