@@ -33,6 +33,7 @@ kanban-plugin: basic
 
 - [ ] Buy nuphy air75. https://nuphy.com/products/air75
 - [ ] Find shorts to buy. Try malefashionadvice first, then check Uniqlo.
+- [ ] Docking station for x1 carbon.
 
 
 ## **Sunday** *[[Journal/2023-02-19|2023-02-19]]* (6)
