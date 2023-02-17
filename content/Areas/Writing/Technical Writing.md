@@ -2,4 +2,6 @@
 title: Technical Writing
 ---
 
-> "If you want people to learn and remember what you write, say it conversationally." ([source](https://headrush.typepad.com/creating_passionate_users/2005/09/conversational_.html))
+> "If you want people to learn and remember what you write, say it conversationally." I.e. *write the way you talk*. ([source](https://headrush.typepad.com/creating_passionate_users/2005/09/conversational_.html))
+
+

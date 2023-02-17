@@ -8,8 +8,6 @@ kanban-plugin: basic
 
 - [ ] Clean up Obsidian tasks. Clear daily template.
 - [ ] Throw out trash.
-- [ ] ==3== 🏆 Purpose
-- [ ] ==6== Ask Dom when he wants to come.
 - [ ] ==13== Read this: ## read this: https://headrush.typepad.com/creating_passionate_users/2005/09/conversational_.html
 - [ ] ==13== Begin reading the software engineering at Google book.
 - [ ] ==20== Finish management chapters SRE book.
