@@ -27,6 +27,7 @@ kanban-plugin: basic
 - [ ] ==4== 🏆 Purpose
 - [ ] ==2== 🏆 Purpose
 - [ ] ==1== 🏆 Purpose
+- [ ] Buy either Keychron 75% or Nuphy 75%.
 
 
 ## **Saturday** *[[Journal/2023-02-18|2023-02-18]]* (6)
