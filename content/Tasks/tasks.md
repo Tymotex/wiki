@@ -6,7 +6,6 @@ kanban-plugin: basic
 
 ## **Friday** *[[Journal/2023-02-17|2023-02-17]]* (6)
 
-- [ ] Find shorts to buy. Try malefashionadvice first, then check Uniqlo.
 - [ ] Clean up Obsidian tasks. Clear daily template.
 - [ ] Throw out trash.
 - [ ] ==3== 🏆 Purpose
@@ -32,8 +31,8 @@ kanban-plugin: basic
 
 ## **Saturday** *[[Journal/2023-02-18|2023-02-18]]* (6)
 
-- [ ] 🏆 Purpose
-- [ ] ==7== Buy 2 new fish: 1 angelfish and 1 gourami maybe?<br><br>It's better to have fewer fish. We form better connections with them and it is far easier to take care of.
+- [ ] Buy nuphy air75. https://nuphy.com/products/air75
+- [ ] Find shorts to buy. Try malefashionadvice first, then check Uniqlo.
 
 
 ## **Sunday** *[[Journal/2023-02-19|2023-02-19]]* (6)
@@ -70,6 +69,7 @@ kanban-plugin: basic
 ## **Saturday** *[[Journal/2023-02-25|2023-02-25]]* (6)
 
 - [ ] 🏆 Purpose
+- [ ] ==7== Buy 2 new fish: 1 angelfish and 1 gourami maybe?<br><br>It's better to have fewer fish. We form better connections with them and it is far easier to take care of.
 
 
 ## **Sunday** *[[Journal/2023-02-26|2023-02-26]]* (6)
