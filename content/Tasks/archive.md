@@ -1014,12 +1014,27 @@ kanban-plugin: basic
 
 
 
+## **Friday** *[[Journal/2023-02-17|2023-02-17]]* (6)
+
+- [x] ==13== Read this: ## read this: https://headrush.typepad.com/creating_passionate_users/2005/09/conversational_.html
+- [x] Downgrade woolworths
+
+## **Saturday** *[[Journal/2023-02-18|2023-02-18]]* (6)
+
+
+
+## **Sunday** *[[Journal/2023-02-19|2023-02-19]]* (6)
+
+
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
