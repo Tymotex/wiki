@@ -2,22 +2,19 @@
 kanban-plugin: basic
 ---
 
-## **Monday** *[[Journal/2023-02-20|2023-02-20]]* (6)
-
-- [ ] 🏆 Purpose
-- [ ] ==3== Clean up Obsidian tasks. Clear daily template.
-- [ ] ==3== Throw out trash.
-- [ ] ==16== Begin reading the software engineering at Google book.
-- [ ] ==15== Downgrade Vultr.
-- [ ] ==2== Buy nuphy air75. https://nuphy.com/products/air75
-- [ ] ==2== Find shorts to buy. Try malefashionadvice first, then check Uniqlo.
-- [ ] ==2== Docking station for x1 carbon.
-- [ ] ==1== 🏆 Purpose
-- [ ] ==1== **(10 mins)** Weekly Review.
-
 ## **Tuesday** *[[Journal/2023-02-21|2023-02-21]]* (6)
 
 - [ ] 🏆 Purpose
+- [ ] ==1== 🏆 Purpose
+- [ ] ==4== Clean up Obsidian tasks. Clear daily template.
+- [ ] ==4== Throw out trash.
+- [ ] ==17== Begin reading the software engineering at Google book.
+- [ ] ==16== Downgrade Vultr.
+- [ ] ==3== Buy nuphy air75. https://nuphy.com/products/air75
+- [ ] ==3== Find shorts to buy. Try malefashionadvice first, then check Uniqlo.
+- [ ] ==3== Docking station for x1 carbon.
+- [ ] ==2== 🏆 Purpose
+- [ ] ==2== **(10 mins)** Weekly Review.
 
 ## **Wednesday** *[[Journal/2023-02-22|2023-02-22]]* (6)
 
@@ -233,12 +230,18 @@ kanban-plugin: basic
 
 - [ ] 🏆 Purpose
 
+## **Wednesday** *[[Journal/2023-04-12|2023-04-12]]* (6)
+
+- [ ] 🏆 Purpose
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
