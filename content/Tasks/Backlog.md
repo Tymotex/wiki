@@ -15,11 +15,11 @@ kanban-plugin: basic
 - [ ] Try out [Gource](https://www.youtube.com/watch?v=DDhPBtzRuLY&ab_channel=MikeM%C3%B8llerNielsen)
 - [ ] Submit portfolio to bestfolio.
 - [ ] Refine all your course notes and make them appear in search results.
+- [ ] Read 1 **academic paper** (eg. Claude Shannon's information theory paper).
 - [ ] Read a **concurrency** textbook.
 - [ ] Read a **software architecture** book.
 - [ ] Read a **distributed systems** textbook.
 - [ ] Attend 1 **conference.**
-- [ ] Read 1 **academic paper** (eg. Claude Shannon's information theory paper).
 - [ ] Make a plan for learning AI, long-term.
 - [ ] Obsidian plugin idea: notion-like gallery.
 - [ ] Vanguard will open a super fund in 2022.
@@ -28,6 +28,7 @@ kanban-plugin: basic
 - [ ] Open an issue/PR for `obsidian-kanban` for better keyboard accessibility (and power user agility).
 - [ ] Get Australian citizenship
 - [ ] **Python personal finance tracking.**
+- [ ] Find a good computer science history book. Put it somewhere you'll know to read.
 
 
 ## Self-Improvement

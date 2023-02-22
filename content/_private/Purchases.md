@@ -5,6 +5,7 @@ title: Purchases
 - [x] Hair dryer (cheap but reliable with good reviews)
 - [ ] Convenient smoothie blender.
 - [ ] Nice cave or castle for plecos to shelter in.
+- [ ] How to Win Friends and Influence People.
 - [x] Fitbit for Mum.
 - [ ] ~~Budget kitchen scale~~ (this is overkill)
 - [x] ~~Loop Quiet~~ (got cheaper ear plugs)
@@ -13,6 +14,7 @@ title: Purchases
 - [x] Hair spray
 - [x] SPF moisturiser, or standalone sunscreen
 - [x] CeraVe hydrating cleanser
+- [ ] Laptop stand, mount or arm.
 - [ ] Meditations book
 - [ ] Protein powder
 - [ ] Cheap gravel vacuum
@@ -24,23 +26,23 @@ title: Purchases
 - [ ] Messenger bag
 - [ ] Mechanical keyboard for home (as a hobby?)
 - [ ] Chino shorts (for Summer).
-- Blackout curtains for better sleep.
-- Blue light filter glasses.
-- Cooling mattress pad (or other sleep cooling accessories)
-- Liquid chalk
-- Barbell maintenance items (nylon brush with firm bristles, wd-40, 3-in-1 multi-purpose oil)
-- Plate rack.
-- Squat shoes.
-- Deadlift shoes/slippers.
-- SBD knee sleeves.
-- Powerlifting belt.
-- Weighted dip belt.
-- Rubber weight plates.
-- Smaller weight plates (eg. 1kg).
-- Better, safer power rack for bench press, squatting and pressing.
-- Better barbell with sharper knurlings
-- Adjustable dumbbell set.
-- Good pillow.
-- Cooling blanket.
-- Cooling mattress or bed temperature controller.
-- Meditation bench
+- [ ] Blackout curtains for better sleep.
+- [ ] Blue light filter glasses.
+- [ ] Cooling mattress pad (or other sleep cooling accessories)
+- [ ] Liquid chalk
+- [ ] Barbell maintenance items (nylon brush with firm bristles, wd-40, 3-in-1 multi-purpose oil)
+- [ ] Plate rack.
+- [ ] Squat shoes.
+- [ ] Deadlift shoes/slippers.
+- [ ] SBD knee sleeves.
+- [ ] Powerlifting belt.
+- [ ] Weighted dip belt.
+- [ ] Rubber weight plates.
+- [ ] Smaller weight plates (eg. 1kg).
+- [ ] Better, safer power rack for bench press, squatting and pressing.
+- [ ] Better barbell with sharper knurlings
+- [ ] Adjustable dumbbell set.
+- [ ] Good pillow.
+- [ ] Cooling blanket.
+- [ ] Cooling mattress or bed temperature controller.
+- [ ] Meditation bench

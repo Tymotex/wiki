@@ -838,12 +838,58 @@ kanban-plugin: basic
 
 - [x] Reread credentials appointment requirements
 
+## **Monday** *[[Journal/2023-01-09|2023-01-09]]* (6)
+
+- [x] Workday tasks
+- [x] Write some goals for the first week at Google.<br>E.g. meet everyone in the team, pop up to old teammates and contacts to say hi, set up my workflow as planned.<br><br>Plan my transport and things to bring to work.<br><br>Plan my journaling workflow.
+- [x] ==3== How to introduce self to coworkers?
+- [x] ==3== How to make a strong first impression with coworkers?
+- [x] ==3== **(3 hours)** Get to page 350 SRE book
+- [x] ==1== Update LinkedIn job status.<br>Update GitHub profile description.<br>Update timz.dev description.
+
+## **Tuesday** *[[Journal/2023-01-10|2023-01-10]]* (6)
+
+
+
+## **Wednesday** *[[Journal/2023-01-11|2023-01-11]]* (6)
+
+- [x] ==2== Fill in habit tracker
+- [x] ==2== Delete that video...
+- [x] ==1== **Google tasks**: bring Dell monitor to work. Bring laptop stand. Bring usbc charging cable
+- [x] ==1== Write an email to Raymond.<br>Let him know where you're at, your plans for today and the week. Ask for recommendations for what else to work on.<br>Let him know I'm open to attending any meetings the team is attending.<br>Let him know that I'm ready to introduce myself to coworkers.
+
+## **Thursday** *[[Journal/2023-01-12|2023-01-12]]* (6)
+
+
+
+## **Friday** *[[Journal/2023-01-13|2023-01-13]]* (6)
+
+
+
+## **Saturday** *[[Journal/2023-01-14|2023-01-14]]* (6)
+
+
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
