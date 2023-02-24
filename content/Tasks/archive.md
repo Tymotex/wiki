@@ -1043,12 +1043,18 @@ kanban-plugin: basic
 
 
 
+## **Friday** *[[Journal/2023-02-24|2023-02-24]]* (6)
+
+
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
