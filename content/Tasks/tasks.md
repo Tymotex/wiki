@@ -4,9 +4,6 @@ kanban-plugin: basic
 
 ## **Friday** *[[Journal/2023-02-24|2023-02-24]]* (6)
 
-- [ ] 🏆 Purpose
-- [ ] ==3== 🏆 Purpose
-- [ ] ==4== 🏆 Purpose
 - [ ] ==7== Clean up Obsidian tasks. Clear daily template.
 - [ ] ==7== Throw out trash.
 - [ ] ==20== Begin reading the software engineering at Google book.
@@ -14,10 +11,6 @@ kanban-plugin: basic
 - [ ] ==6== Buy nuphy air75. https://nuphy.com/products/air75
 - [ ] ==6== Find shorts to buy. Try malefashionadvice first, then check Uniqlo.
 - [ ] ==6== Docking station for x1 carbon.
-- [ ] ==5== 🏆 Purpose
-- [ ] ==5== **(10 mins)** Weekly Review.
-- [ ] ==2== 🏆 Purpose
-- [ ] ==1== 🏆 Purpose
 
 ## **Saturday** *[[Journal/2023-02-25|2023-02-25]]* (6)
 
