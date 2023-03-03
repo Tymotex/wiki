@@ -14,6 +14,7 @@ TODO: this article is really worth re-reading: https://jamesclear.com/reading-co
 **My favourite books**:
 - Man's Search for Meaning by Viktor Frankl.
 - Deep Work by Cal Newport.
+- Meditations by Marcus Aurelius (Hays translation).
 
 ---
 ## Software Engineering
@@ -139,7 +140,10 @@ Ikigai by Francesc Miralles and Hector Garcia. 'Ikigai' means 'reason for being'
 - Exercise tunes your neurotransmitter, hormones and growth factor to evolutionarily-optimal levels, rendering you bulletproof against stress, anxiety and depression, consistently leaving you ready to rise to life's challenges.
 
 ### How to Not Die
-[[Reading/How Not to Die|How to Not Die]] 
+[[Reading/How Not to Die|How to Not Die]] by Michael Greger.
+
+### The Selfish Gene
+[[Reading/The Selfish Gene|The Selfish Gene]] by Richard Dawkins.
 
 ---
 
@@ -159,6 +163,6 @@ Ikigai by Francesc Miralles and Hector Garcia. 'Ikigai' means 'reason for being'
 ### Lying
 [[Reading/Lying|Lying]] by Sam Harris.
 
-# Reading List
+### Waking Up
+[[Reading/Waking Up|Waking Up]] by Sam Harris.
 
-- Never Finished — David Goggins
