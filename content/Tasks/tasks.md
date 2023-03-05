@@ -2,43 +2,37 @@
 kanban-plugin: basic
 ---
 
-## **Saturday** *[[Journal/2023-03-04|2023-03-04]]* (6)
-
-- [ ] 🏆 Purpose
-- [ ] ==12== **(2 hours)**<br>Jenkins tutorial
-- [ ] ==7== 🏆 Purpose
-- [ ] ==27== Finish management chapters SRE book.
-- [ ] ==19== Answer all flashcard questions in C++ notes.
-- [ ] ==19== Maybe write a C++ program that extracts out all flashcards and dumps them to a few markdown files?
-- [ ] ==27== **(45 mins)** Finish string chapter C++ Start IO chapter c++
-- [ ] ==14== Buy 2 new fish: 1 angelfish and 1 gourami maybe?<br><br>It's better to have fewer fish. We form better connections with them and it is far easier to take care of.
-- [ ] ==19== **(25 mins)** Plan tasks for Math website. What's the end goal and what are the mini milestones that need to be accomplished to get there?
-- [ ] ==15== Clean up Obsidian tasks. Clear daily template.
-- [ ] ==15== Throw out trash.
-- [ ] ==28== Begin reading the software engineering at Google book.
-- [ ] ==27== Downgrade Vultr.
-- [ ] ==14== Buy nuphy air75. https://nuphy.com/products/air75
-- [ ] ==14== Find shorts to buy. Try malefashionadvice first, then check Uniqlo.
-- [ ] ==14== Docking station for x1 carbon.
-- [ ] ==6== 🏆 Purpose
-- [ ] ==6== **(10 mins)** Weekly Review.
-- [ ] ==6== Remind Dom about meeting tomorrow.
-- [ ] ==5== 🏆 Purpose
-- [ ] ==5== Sign up for free trial Jiu Jitsu at SJJA Gladesville.
-- [ ] ==4== 🏆 Purpose
-- [ ] ==4== **(10 mins)** Monthly Review.
-- [ ] ==3== 🏆 Purpose
-- [ ] ==2== 🏆 Purpose
-- [ ] ==1== 🏆 Purpose
-
-## **Sunday** *[[Journal/2023-03-05|2023-03-05]]* (6)
-
-- [ ] 🏆 Purpose
-- [ ] **(10 mins)** Weekly Review.
-
 ## **Monday** *[[Journal/2023-03-06|2023-03-06]]* (6)
 
 - [ ] 🏆 Purpose
+- [ ] ==2== 🏆 Purpose
+- [ ] ==14== **(2 hours)**<br>Jenkins tutorial
+- [ ] ==9== 🏆 Purpose
+- [ ] ==29== Finish management chapters SRE book.
+- [ ] ==21== Answer all flashcard questions in C++ notes.
+- [ ] ==21== Maybe write a C++ program that extracts out all flashcards and dumps them to a few markdown files?
+- [ ] ==29== **(45 mins)** Finish string chapter C++ Start IO chapter c++
+- [ ] ==16== Buy 2 new fish: 1 angelfish and 1 gourami maybe?<br><br>It's better to have fewer fish. We form better connections with them and it is far easier to take care of.
+- [ ] ==21== **(25 mins)** Plan tasks for Math website. What's the end goal and what are the mini milestones that need to be accomplished to get there?
+- [ ] ==17== Clean up Obsidian tasks. Clear daily template.
+- [ ] ==17== Throw out trash.
+- [ ] ==30== Begin reading the software engineering at Google book.
+- [ ] ==29== Downgrade Vultr.
+- [ ] ==16== Buy nuphy air75. https://nuphy.com/products/air75
+- [ ] ==16== Find shorts to buy. Try malefashionadvice first, then check Uniqlo.
+- [ ] ==16== Docking station for x1 carbon.
+- [ ] ==8== 🏆 Purpose
+- [ ] ==8== **(10 mins)** Weekly Review.
+- [ ] ==8== Remind Dom about meeting tomorrow.
+- [ ] ==7== 🏆 Purpose
+- [ ] ==7== Sign up for free trial Jiu Jitsu at SJJA Gladesville.
+- [ ] ==6== 🏆 Purpose
+- [ ] ==6== **(10 mins)** Monthly Review.
+- [ ] ==5== 🏆 Purpose
+- [ ] ==4== 🏆 Purpose
+- [ ] ==3== 🏆 Purpose
+- [ ] ==1== 🏆 Purpose
+- [ ] ==1== **(10 mins)** Weekly Review.
 
 ## **Tuesday** *[[Journal/2023-03-07|2023-03-07]]* (6)
 
@@ -238,12 +232,22 @@ kanban-plugin: basic
 
 - [ ] **(10 mins)** Weekly Review.
 
+## **Monday** *[[Journal/2023-04-24|2023-04-24]]* (6)
+
+
+
+## **Tuesday** *[[Journal/2023-04-25|2023-04-25]]* (6)
+
+
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
