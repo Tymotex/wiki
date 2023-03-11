@@ -2,57 +2,42 @@
 kanban-plugin: basic
 ---
 
-## **Monday** *[[Journal/2023-03-06|2023-03-06]]* (6)
-
-- [ ] 🏆 Purpose
-- [ ] ==2== 🏆 Purpose
-- [ ] ==14== **(2 hours)**<br>Jenkins tutorial
-- [ ] ==9== 🏆 Purpose
-- [ ] ==29== Finish management chapters SRE book.
-- [ ] ==21== Answer all flashcard questions in C++ notes.
-- [ ] ==21== Maybe write a C++ program that extracts out all flashcards and dumps them to a few markdown files?
-- [ ] ==29== **(45 mins)** Finish string chapter C++ Start IO chapter c++
-- [ ] ==16== Buy 2 new fish: 1 angelfish and 1 gourami maybe?<br><br>It's better to have fewer fish. We form better connections with them and it is far easier to take care of.
-- [ ] ==21== **(25 mins)** Plan tasks for Math website. What's the end goal and what are the mini milestones that need to be accomplished to get there?
-- [ ] ==17== Clean up Obsidian tasks. Clear daily template.
-- [ ] ==17== Throw out trash.
-- [ ] ==30== Begin reading the software engineering at Google book.
-- [ ] ==29== Downgrade Vultr.
-- [ ] ==16== Buy nuphy air75. https://nuphy.com/products/air75
-- [ ] ==16== Find shorts to buy. Try malefashionadvice first, then check Uniqlo.
-- [ ] ==16== Docking station for x1 carbon.
-- [ ] ==8== 🏆 Purpose
-- [ ] ==8== **(10 mins)** Weekly Review.
-- [ ] ==8== Remind Dom about meeting tomorrow.
-- [ ] ==7== 🏆 Purpose
-- [ ] ==7== Sign up for free trial Jiu Jitsu at SJJA Gladesville.
-- [ ] ==6== 🏆 Purpose
-- [ ] ==6== **(10 mins)** Monthly Review.
-- [ ] ==5== 🏆 Purpose
-- [ ] ==4== 🏆 Purpose
-- [ ] ==3== 🏆 Purpose
-- [ ] ==1== 🏆 Purpose
-- [ ] ==1== **(10 mins)** Weekly Review.
-
-## **Tuesday** *[[Journal/2023-03-07|2023-03-07]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Wednesday** *[[Journal/2023-03-08|2023-03-08]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Thursday** *[[Journal/2023-03-09|2023-03-09]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Friday** *[[Journal/2023-03-10|2023-03-10]]* (6)
-
-- [ ] 🏆 Purpose
-
 ## **Saturday** *[[Journal/2023-03-11|2023-03-11]]* (6)
 
 - [ ] 🏆 Purpose
+- [ ] ==5== 🏆 Purpose
+- [ ] ==7== 🏆 Purpose
+- [ ] ==19== **(2 hours)**<br>Jenkins tutorial
+- [ ] ==14== 🏆 Purpose
+- [ ] ==34== Finish management chapters SRE book.
+- [ ] ==26== Answer all flashcard questions in C++ notes.
+- [ ] ==26== Maybe write a C++ program that extracts out all flashcards and dumps them to a few markdown files?
+- [ ] ==34== **(45 mins)** Finish string chapter C++ Start IO chapter c++
+- [ ] ==21== Buy 2 new fish: 1 angelfish and 1 gourami maybe?<br><br>It's better to have fewer fish. We form better connections with them and it is far easier to take care of.
+- [ ] ==26== **(25 mins)** Plan tasks for Math website. What's the end goal and what are the mini milestones that need to be accomplished to get there?
+- [ ] ==22== Clean up Obsidian tasks. Clear daily template.
+- [ ] ==22== Throw out trash.
+- [ ] ==35== Begin reading the software engineering at Google book.
+- [ ] ==34== Downgrade Vultr.
+- [ ] ==21== Buy nuphy air75. https://nuphy.com/products/air75
+- [ ] ==21== Find shorts to buy. Try malefashionadvice first, then check Uniqlo.
+- [ ] ==21== Docking station for x1 carbon.
+- [ ] ==13== 🏆 Purpose
+- [ ] ==13== **(10 mins)** Weekly Review.
+- [ ] ==13== Remind Dom about meeting tomorrow.
+- [ ] ==12== 🏆 Purpose
+- [ ] ==12== Sign up for free trial Jiu Jitsu at SJJA Gladesville.
+- [ ] ==11== 🏆 Purpose
+- [ ] ==11== **(10 mins)** Monthly Review.
+- [ ] ==10== 🏆 Purpose
+- [ ] ==9== 🏆 Purpose
+- [ ] ==8== 🏆 Purpose
+- [ ] ==6== 🏆 Purpose
+- [ ] ==6== **(10 mins)** Weekly Review.
+- [ ] ==4== 🏆 Purpose
+- [ ] ==3== 🏆 Purpose
+- [ ] ==2== 🏆 Purpose
+- [ ] ==1== 🏆 Purpose
 
 ## **Sunday** *[[Journal/2023-03-12|2023-03-12]]* (6)
 
@@ -240,12 +225,35 @@ kanban-plugin: basic
 
 
 
+## **Wednesday** *[[Journal/2023-04-26|2023-04-26]]* (6)
+
+
+
+## **Thursday** *[[Journal/2023-04-27|2023-04-27]]* (6)
+
+
+
+## **Friday** *[[Journal/2023-04-28|2023-04-28]]* (6)
+
+
+
+## **Saturday** *[[Journal/2023-04-29|2023-04-29]]* (6)
+
+
+
+## **Sunday** *[[Journal/2023-04-30|2023-04-30]]* (6)
+
+- [ ] **(10 mins)** Weekly Review.
+- [ ] **(10 mins)** Monthly Review.
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
