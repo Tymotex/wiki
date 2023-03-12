@@ -870,12 +870,225 @@ kanban-plugin: basic
 
 
 
+## **Sunday** *[[Journal/2023-01-15|2023-01-15]]* (6)
+
+- [x] ==5== Apply online for Australian citizenship.
+- [x] ==6== Measure aquarium ph. Tweak
+- [x] ==2== Add my colleagues on LinkedIn?
+- [x] Plan your gym visits to Google. Maybe make a calendar event.
+- [x] Read Bupa coverage.
+
+## **Monday** *[[Journal/2023-01-16|2023-01-16]]* (6)
+
+
+
+## **Tuesday** *[[Journal/2023-01-17|2023-01-17]]* (6)
+
+
+
+## **Wednesday** *[[Journal/2023-01-18|2023-01-18]]* (6)
+
+
+
+## **Thursday** *[[Journal/2023-01-19|2023-01-19]]* (6)
+
+
+
+## **Friday** *[[Journal/2023-01-20|2023-01-20]]* (6)
+
+
+
+## **Saturday** *[[Journal/2023-01-21|2023-01-21]]* (6)
+
+- [x] ==5== Read SD card of camera and its usbs. If there's stuff, then transfer to your laptop.
+- [x] Find a brown switch mechanical keyboard to use at work.
+- [x] Try get the docking station working.
+- [x] Read how to focus deeply in an open office.
+
+## **Sunday** *[[Journal/2023-01-22|2023-01-22]]* (6)
+
+- [x] Export WakaTime data and cancel it. Make a task to set up a free alternative.
+- [x] Fully migrate to corp phone.
+- [x] Clear all emails. Unsub james clear
+- [x] Cut nails
+- [x] How to use an iron. Fix that jacket crase.
+- [x] Fix screen tearing on monitor.
+
+## **Monday** *[[Journal/2023-01-23|2023-01-23]]* (6)
+
+
+
+## **Tuesday** *[[Journal/2023-01-24|2023-01-24]]* (6)
+
+
+
+## **Wednesday** *[[Journal/2023-01-25|2023-01-25]]* (6)
+
+
+
+## **Thursday** *[[Journal/2023-01-26|2023-01-26]]* (6)
+
+- [x] Figure out what haircut to get. You'll need one. Either get a medium-length styled cut or a crew cut. Leaning towards medium-length cut.
+
+## **Friday** *[[Journal/2023-01-27|2023-01-27]]* (6)
+
+
+
+## **Saturday** *[[Journal/2023-01-28|2023-01-28]]* (6)
+
+
+
+## **Sunday** *[[Journal/2023-01-29|2023-01-29]]* (6)
+
+
+
+## **Monday** *[[Journal/2023-01-30|2023-01-30]]* (6)
+
+
+
+## **Tuesday** *[[Journal/2023-01-31|2023-01-31]]* (6)
+
+
+
+## **Wednesday** *[[Journal/2023-02-01|2023-02-01]]* (6)
+
+
+
+## **Thursday** *[[Journal/2023-02-02|2023-02-02]]* (6)
+
+
+
+## **Friday** *[[Journal/2023-02-03|2023-02-03]]* (6)
+
+
+
+## **Saturday** *[[Journal/2023-02-04|2023-02-04]]* (6)
+
+
+
+## **Sunday** *[[Journal/2023-02-05|2023-02-05]]* (6)
+
+
+
+## **Monday** *[[Journal/2023-02-06|2023-02-06]]* (6)
+
+
+
+## **Tuesday** *[[Journal/2023-02-07|2023-02-07]]* (6)
+
+
+
+## **Wednesday** *[[Journal/2023-02-08|2023-02-08]]* (6)
+
+
+
+## **Thursday** *[[Journal/2023-02-09|2023-02-09]]* (6)
+
+
+
+## **Friday** *[[Journal/2023-02-10|2023-02-10]]* (6)
+
+
+
+## **Saturday** *[[Journal/2023-02-11|2023-02-11]]* (6)
+
+
+
+## **Sunday** *[[Journal/2023-02-12|2023-02-12]]* (6)
+
+
+
+## **Monday** *[[Journal/2023-02-13|2023-02-13]]* (6)
+
+
+
+## **Tuesday** *[[Journal/2023-02-14|2023-02-14]]* (6)
+
+
+
+## **Wednesday** *[[Journal/2023-02-15|2023-02-15]]* (6)
+
+
+
+## **Thursday** *[[Journal/2023-02-16|2023-02-16]]* (6)
+
+
+
+## **Friday** *[[Journal/2023-02-17|2023-02-17]]* (6)
+
+- [x] ==13== Read this: ## read this: https://headrush.typepad.com/creating_passionate_users/2005/09/conversational_.html
+- [x] Downgrade woolworths
+
+## **Saturday** *[[Journal/2023-02-18|2023-02-18]]* (6)
+
+
+
+## **Sunday** *[[Journal/2023-02-19|2023-02-19]]* (6)
+
+
+
+## **Monday** *[[Journal/2023-02-20|2023-02-20]]* (6)
+
+
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
