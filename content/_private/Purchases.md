@@ -16,7 +16,7 @@ title: Purchases
 - [x] CeraVe hydrating cleanser
 - [ ] Laptop stand, mount or arm.
 - [ ] Meditations book
-- [ ] Protein powder
+- [x] Protein powder
 - [ ] Cheap gravel vacuum
 - [x] Light blue OCBD, or white
 - [x] Navy chinos
