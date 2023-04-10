@@ -5,7 +5,7 @@ title: Purchases
 - [x] Hair dryer (cheap but reliable with good reviews)
 - [ ] Convenient smoothie blender.
 - [ ] Nice cave or castle for plecos to shelter in.
-- [ ] How to Win Friends and Influence People.
+- [x] How to Win Friends and Influence People.
 - [x] Fitbit for Mum.
 - [ ] ~~Budget kitchen scale~~ (this is overkill)
 - [x] ~~Loop Quiet~~ (got cheaper ear plugs)
@@ -15,7 +15,7 @@ title: Purchases
 - [x] SPF moisturiser, or standalone sunscreen
 - [x] CeraVe hydrating cleanser
 - [ ] Laptop stand, mount or arm.
-- [ ] Meditations book
+- [x] Meditations book
 - [x] Protein powder
 - [ ] Cheap gravel vacuum
 - [x] Light blue OCBD, or white
@@ -23,11 +23,10 @@ title: Purchases
 - [x] Another OCBD, either: grey, light red or white.
 - [x] (Uniqlo) Basic grey shirt.
 - [x] Pixel 6 Pro screen protector (should be tax deductible)
-- [ ] (Uniqlo) Turtleneck wine colour.
+- [x] (Uniqlo) Turtleneck wine colour.
 - [ ] Messenger bag
 - [ ] Mechanical keyboard for home (as a hobby?)
 - [ ] Chino shorts (for Summer).
-- [ ] Blackout curtains for better sleep.
 - [ ] Blue light filter glasses.
 - [ ] Cooling mattress pad (or other sleep cooling accessories)
 - [ ] Liquid chalk

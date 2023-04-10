@@ -73,5 +73,58 @@ This sounds exactly what the lovechild of Jocko Willink and Sam Harris would say
 
 > So other people hurt me? That's their problem. Their character and actions are not mine. What is done to me is ordained by nature, what I do by my own.
 
+> Soon you'll be ashes, or bones. A mere name, at most — and even that is just a sound, an echo.
 
+> Then what is to be prized? An audience clapping? No. No more than the clacking of their tongues. Which is all that public praise amounts to — a clacking of tongues. So we throw out other people's recognition What's left for us to prize? I think it's this: to do (and not do) what we were designed for.
 
+> Alexander the Great and his mule driver both died and the same thing happened to both. They were absorbed alike into the life force of the world, or dissolved alike into atoms.
+
+> Disgraceful: for the soul to give up when the body is still going strong.
+
+> Our lives are short. The only rewards of our existence here are an unstained character and unselfish acts.
+
+> It's normal to feel pain in your hands and feet, if you're using your feet as feet and your hands as hands. And for a human being to feel stress is normal — if he's living a normal human life. And if it's normal, how can it be bad?
+
+> Asia and Europe: distant recesses of the universe. The ocean: a drop of water. Mount Athos: a molehill. The present: a split second in eternity. Minuscule, transitory insignificant.
+
+> You take things you don't control and define them as "good" or "bad." And so of course when the "bad" things happen, or the "good" ones don't, you blame the gods and feel hatred for the people responsible — or those you decide to make responsible. Much of our bad behaviour stems from trying to apply those criteria. If we limited "good" and "bad" to our own actions, we'd have no call to challenge God, or to treat other people as enemies.
+
+> When you need encouragement, think of the qualities the people around you have: this one's energy, that one's modesty, another's generosity, and so on. Nothing is as encouraging as when virtues are visibly embodied in the people around us, when we're practically showered with them. It's good to keep this in mind.
+
+> Evil: the same old thing. No matter what happens, keep this in mind: It's the same old thing, from one end of the world to the other. It fills the history books, ancient and modern, and the cities, and the houses too. Nothing new at all. Familiar, transient.
+
+> Chronic pain is always endurable: the intelligence maintains serenity by cutting itself off from the body, the mind remains undiminished.
+
+> And in most cases what Epicurus said should help: that pain is neither unbearable nor unending, as long as you keep in mind its limits and don't magnify them in your imagination.
+
+> Perfection of character: to live your last day, every day, without frenzy, or sloth, or pretense.
+
+ > If it's in your control, why do you do it? If it's in someone else's, then who are you blaming? Atoms? The gods? Stupid either way.
+
+> Don't let your imagination be crushed by life as a whole. Don't try to picture everything bad that could possibly happen. Stick with the situation at hand, and ask, "Why is this so unbearable? Why can't I endure it?" You'll be embarrassed to answer.
+
+> Work: Not to rouse pity, not to win sympathy or admiration. Only this: Activity. Stillness. As the logos of the state requires.
+
+> Enter their minds, and you'll find the judges you're so afraid of, and how judiciously they judge themselves>
+
+> When we cease from activity, or follow a thought to its conclusion, it's a kind of death. And it doesn't harm us. Think about your life: childhood, boyhood, youth, old age. Every transformation a kind of dying. Was that so terrible?
+
+> When you face someone's insults, hatred, whatever... look at his soul. Get inside him. Look at what sort of person he is. You'll find you don't need to strain to impress him.
+
+> You can discard most of the junk that clutters your mind — things that exist only there — and clear out space for yourself: ... by comprehending the scale of the world... by contemplating infinite time... by thinking of the speed with which things change — each part of every thing; the narrow space between our birth and death; the infinite time before; the equally unbounded time that follows.
+
+> What else did you expect from helping someone out? Isn't it enough that you've done what your nature demands? You want a salary for it too? As if your eyes expected a reward for seeing, or your feet for walking. That's what they were made for. By doing what they were designed to do, they're performing their function. Whereas humans were made to help others. And when we do help others — or help them to do something — we're doing what we were designed for. We perform our function.
+
+> Whatever happens to you has been waiting to happen since the beginning of time. The twining strands of fate wove both of them together: your own existence and the things that happen to you.
+
+> To stop talking about what the good man is like, and just be one.
+
+> Continual awareness of all time and space, of the size and life span of the things around us. A grape seed in infinite space. A half twist of a corkscrew against eternity.
+
+> When face with people's bad behaviour, turn around and ask when *you* have acted like that. When you saw money as a good, or pleasure, or social position. Your anger will subside as soon as you recognise that they acted under compulsion (what else could they do?).
+
+> To be patient and cheerful with everyone, including them. Ready to show them their mistake. Not spitefully, or to show off my own self-control, but in an honest, upright way... That's what we should be like inside, and never let the gods catch us feeling anger or resentment.
+
+> It never ceases to amaze me: we all love ourselves more than other people, but care more about their opinion than our own.
+
+> ... that if you were suddenly lifted up and could see life and its variety from a vast height, and at the same time all the things around you, in the sky and beyond it, you'd see how pointless it is.
