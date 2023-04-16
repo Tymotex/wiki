@@ -17,7 +17,8 @@ title: Purchases
 - [ ] Laptop stand, mount or arm.
 - [x] Meditations book
 - [x] Protein powder
-- [ ] Cheap gravel vacuum
+- [ ] Cheap gravel vacuum.
+- [ ] Sound machine for ambient sleep noises.
 - [x] Light blue OCBD, or white
 - [x] Navy chinos
 - [x] Another OCBD, either: grey, light red or white.
