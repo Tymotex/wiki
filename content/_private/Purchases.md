@@ -25,8 +25,8 @@ title: Purchases
 - [x] Pixel 6 Pro screen protector (should be tax deductible)
 - [x] (Uniqlo) Turtleneck wine colour.
 - [ ] Messenger bag
-- [ ] Mechanical keyboard for home (as a hobby?)
-- [ ] Chino shorts (for Summer).
+- [ ] Smart drink bottle
+- [x] Mechanical keyboard for home (as a hobby?)
 - [ ] Blue light filter glasses.
 - [ ] Cooling mattress pad (or other sleep cooling accessories)
 - [ ] Liquid chalk
@@ -46,3 +46,6 @@ title: Purchases
 - [ ] Cooling blanket.
 - [ ] Cooling mattress or bed temperature controller.
 - [ ] Meditation bench
+
+## Archive
+- [ ] Chino shorts (for Summer).
