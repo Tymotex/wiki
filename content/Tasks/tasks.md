@@ -74,8 +74,6 @@ kanban-plugin: basic
 
 - [ ] 🏆 Purpose
 
-=======
->>>>>>> 865e34f5d476c82455989ce2a20a76c670466c98
 ## **Saturday** *[[Journal/2023-03-11|2023-03-11]]* (6)
 
 - [ ] 🏆 Purpose
