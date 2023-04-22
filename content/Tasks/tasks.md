@@ -2,20 +2,6 @@
 kanban-plugin: basic
 ---
 
-## **Tuesday** *[[Journal/2023-02-21|2023-02-21]]* (6)
-
-- [ ] 🏆 Purpose
-- [ ] ==1== 🏆 Purpose
-- [ ] ==4== Clean up Obsidian tasks. Clear daily template.
-- [ ] ==4== Throw out trash.
-- [ ] ==17== Begin reading the software engineering at Google book.
-- [ ] ==16== Downgrade Vultr.
-- [ ] ==3== Buy nuphy air75. https://nuphy.com/products/air75
-- [ ] ==3== Find shorts to buy. Try malefashionadvice first, then check Uniqlo.
-- [ ] ==3== Docking station for x1 carbon.
-- [ ] ==2== 🏆 Purpose
-- [ ] ==2== **(10 mins)** Weekly Review.
-
 ## **Wednesday** *[[Journal/2023-02-22|2023-02-22]]* (6)
 
 - [ ] 🏆 Purpose
@@ -29,14 +15,6 @@ kanban-plugin: basic
 - [ ] 🏆 Purpose
 
 ## **Saturday** *[[Journal/2023-02-25|2023-02-25]]* (6)
-
-- [ ] 🏆 Purpose
-- [ ] ==20== Finish management chapters SRE book.
-- [ ] ==12== Answer all flashcard questions in C++ notes.
-- [ ] ==12== Maybe write a C++ program that extracts out all flashcards and dumps them to a few markdown files?
-- [ ] ==20== **(45 mins)** Finish string chapter C++ Start IO chapter c++
-- [ ] ==7== Buy 2 new fish: 1 angelfish and 1 gourami maybe?<br><br>It's better to have fewer fish. We form better connections with them and it is far easier to take care of.
-- [ ] ==12== **(25 mins)** Plan tasks for Math website. What's the end goal and what are the mini milestones that need to be accomplished to get there?
 
 ## **Sunday** *[[Journal/2023-02-26|2023-02-26]]* (6)
 
