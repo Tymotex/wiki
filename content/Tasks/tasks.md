@@ -2,292 +2,107 @@
 kanban-plugin: basic
 ---
 
-## **Wednesday** *[[Journal/2023-02-22|2023-02-22]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Thursday** *[[Journal/2023-02-23|2023-02-23]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Friday** *[[Journal/2023-02-24|2023-02-24]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Saturday** *[[Journal/2023-02-25|2023-02-25]]* (6)
-
-## **Sunday** *[[Journal/2023-02-26|2023-02-26]]* (6)
-
-- [ ] 🏆 Purpose
-- [ ] **(10 mins)** Weekly Review.
-- [ ] Remind Dom about meeting tomorrow.
-
-## **Monday** *[[Journal/2023-02-27|2023-02-27]]* (6)
-
-- [ ] 🏆 Purpose
-- [ ] Sign up for free trial Jiu Jitsu at SJJA Gladesville.
-
-## **Tuesday** *[[Journal/2023-02-28|2023-02-28]]* (6)
-
-- [ ] 🏆 Purpose
-- [ ] **(10 mins)** Monthly Review.
-
-## **Wednesday** *[[Journal/2023-03-01|2023-03-01]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Thursday** *[[Journal/2023-03-02|2023-03-02]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Friday** *[[Journal/2023-03-03|2023-03-03]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Saturday** *[[Journal/2023-03-04|2023-03-04]]* (6)
-
-- [ ] 🏆 Purpose
-- [ ] ==12== **(2 hours)**<br>Jenkins tutorial
-
-## **Sunday** *[[Journal/2023-03-05|2023-03-05]]* (6)
-
-- [ ] 🏆 Purpose
-- [ ] **(10 mins)** Weekly Review.
-
-## **Monday** *[[Journal/2023-03-06|2023-03-06]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Tuesday** *[[Journal/2023-03-07|2023-03-07]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Wednesday** *[[Journal/2023-03-08|2023-03-08]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Thursday** *[[Journal/2023-03-09|2023-03-09]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Friday** *[[Journal/2023-03-10|2023-03-10]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Saturday** *[[Journal/2023-03-11|2023-03-11]]* (6)
-
-- [ ] 🏆 Purpose
-- [ ] ==5== 🏆 Purpose
-- [ ] ==7== 🏆 Purpose
-- [ ] ==19== **(2 hours)**<br>Jenkins tutorial
-- [ ] ==14== 🏆 Purpose
-- [ ] ==34== Finish management chapters SRE book.
-- [ ] ==26== Answer all flashcard questions in C++ notes.
-- [ ] ==26== Maybe write a C++ program that extracts out all flashcards and dumps them to a few markdown files?
-- [ ] ==34== **(45 mins)** Finish string chapter C++ Start IO chapter c++
-- [ ] ==21== Buy 2 new fish: 1 angelfish and 1 gourami maybe?<br><br>It's better to have fewer fish. We form better connections with them and it is far easier to take care of.
-- [ ] ==26== **(25 mins)** Plan tasks for Math website. What's the end goal and what are the mini milestones that need to be accomplished to get there?
-- [ ] ==22== Clean up Obsidian tasks. Clear daily template.
-- [ ] ==22== Throw out trash.
-- [ ] ==35== Begin reading the software engineering at Google book.
-- [ ] ==34== Downgrade Vultr.
-- [ ] ==21== Buy nuphy air75. https://nuphy.com/products/air75
-- [ ] ==21== Find shorts to buy. Try malefashionadvice first, then check Uniqlo.
-- [ ] ==21== Docking station for x1 carbon.
-- [ ] ==13== 🏆 Purpose
-- [ ] ==13== **(10 mins)** Weekly Review.
-- [ ] ==13== Remind Dom about meeting tomorrow.
-- [ ] ==12== 🏆 Purpose
-- [ ] ==12== Sign up for free trial Jiu Jitsu at SJJA Gladesville.
-- [ ] ==11== 🏆 Purpose
-- [ ] ==11== **(10 mins)** Monthly Review.
-- [ ] ==10== 🏆 Purpose
-- [ ] ==9== 🏆 Purpose
-- [ ] ==8== 🏆 Purpose
-- [ ] ==6== 🏆 Purpose
-- [ ] ==6== **(10 mins)** Weekly Review.
-- [ ] ==4== 🏆 Purpose
-- [ ] ==3== 🏆 Purpose
-- [ ] ==2== 🏆 Purpose
-- [ ] ==1== 🏆 Purpose
-
-## **Sunday** *[[Journal/2023-03-12|2023-03-12]]* (6)
-
-- [ ] 🏆 Purpose
-- [ ] **(10 mins)** Weekly Review.
-
-## **Monday** *[[Journal/2023-03-13|2023-03-13]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Tuesday** *[[Journal/2023-03-14|2023-03-14]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Wednesday** *[[Journal/2023-03-15|2023-03-15]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Thursday** *[[Journal/2023-03-16|2023-03-16]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Friday** *[[Journal/2023-03-17|2023-03-17]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Saturday** *[[Journal/2023-03-18|2023-03-18]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Sunday** *[[Journal/2023-03-19|2023-03-19]]* (6)
-
-- [ ] 🏆 Purpose
-- [ ] **(10 mins)** Weekly Review.
-
-## **Monday** *[[Journal/2023-03-20|2023-03-20]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Tuesday** *[[Journal/2023-03-21|2023-03-21]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Wednesday** *[[Journal/2023-03-22|2023-03-22]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Thursday** *[[Journal/2023-03-23|2023-03-23]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Friday** *[[Journal/2023-03-24|2023-03-24]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Saturday** *[[Journal/2023-03-25|2023-03-25]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Sunday** *[[Journal/2023-03-26|2023-03-26]]* (6)
-
-- [ ] 🏆 Purpose
-- [ ] **(10 mins)** Weekly Review.
-
-## **Monday** *[[Journal/2023-03-27|2023-03-27]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Tuesday** *[[Journal/2023-03-28|2023-03-28]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Wednesday** *[[Journal/2023-03-29|2023-03-29]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Thursday** *[[Journal/2023-03-30|2023-03-30]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Friday** *[[Journal/2023-03-31|2023-03-31]]* (6)
-
-- [ ] 🏆 Purpose
-- [ ] **(10 mins)** Monthly Review.
-
-## **Saturday** *[[Journal/2023-04-01|2023-04-01]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Sunday** *[[Journal/2023-04-02|2023-04-02]]* (6)
-
-- [ ] 🏆 Purpose
-- [ ] **(10 mins)** Weekly Review.
-
-## **Monday** *[[Journal/2023-04-03|2023-04-03]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Tuesday** *[[Journal/2023-04-04|2023-04-04]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Wednesday** *[[Journal/2023-04-05|2023-04-05]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Thursday** *[[Journal/2023-04-06|2023-04-06]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Friday** *[[Journal/2023-04-07|2023-04-07]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Saturday** *[[Journal/2023-04-08|2023-04-08]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Sunday** *[[Journal/2023-04-09|2023-04-09]]* (6)
-
-- [ ] 🏆 Purpose
-- [ ] **(10 mins)** Weekly Review.
-
-## **Monday** *[[Journal/2023-04-10|2023-04-10]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Tuesday** *[[Journal/2023-04-11|2023-04-11]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Wednesday** *[[Journal/2023-04-12|2023-04-12]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Thursday** *[[Journal/2023-04-13|2023-04-13]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Friday** *[[Journal/2023-04-14|2023-04-14]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Saturday** *[[Journal/2023-04-15|2023-04-15]]* (6)
-
-- [ ] 🏆 Purpose
-
-## **Sunday** *[[Journal/2023-04-16|2023-04-16]]* (6)
-
-- [ ] **(10 mins)** Weekly Review.
-
-## **Monday** *[[Journal/2023-04-17|2023-04-17]]* (6)
-
-
-
-## **Tuesday** *[[Journal/2023-04-18|2023-04-18]]* (6)
-
-
-
-## **Wednesday** *[[Journal/2023-04-19|2023-04-19]]* (6)
-
-
-
-## **Thursday** *[[Journal/2023-04-20|2023-04-20]]* (6)
-
-
-
-## **Friday** *[[Journal/2023-04-21|2023-04-21]]* (6)
-
-
-
-## **Saturday** *[[Journal/2023-04-22|2023-04-22]]* (6)
-
-
-
 ## **Sunday** *[[Journal/2023-04-23|2023-04-23]]* (6)
 
 - [ ] **(10 mins)** Weekly Review.
+- [ ] ==60== 🏆 Purpose
+- [ ] ==59== 🏆 Purpose
+- [ ] ==58== 🏆 Purpose
+- [ ] ==56== 🏆 Purpose
+- [ ] ==56== **(10 mins)** Weekly Review.
+- [ ] ==56== Remind Dom about meeting tomorrow.
+- [ ] ==55== 🏆 Purpose
+- [ ] ==55== Sign up for free trial Jiu Jitsu at SJJA Gladesville.
+- [ ] ==54== 🏆 Purpose
+- [ ] ==54== **(10 mins)** Monthly Review.
+- [ ] ==53== 🏆 Purpose
+- [ ] ==52== 🏆 Purpose
+- [ ] ==51== 🏆 Purpose
+- [ ] ==50== 🏆 Purpose
+- [ ] ==62== **(2 hours)**<br>Jenkins tutorial
+- [ ] ==49== 🏆 Purpose
+- [ ] ==49== **(10 mins)** Weekly Review.
+- [ ] ==48== 🏆 Purpose
+- [ ] ==47== 🏆 Purpose
+- [ ] ==46== 🏆 Purpose
+- [ ] ==45== 🏆 Purpose
+- [ ] ==44== 🏆 Purpose
+- [ ] ==43== 🏆 Purpose
+- [ ] ==48== 🏆 Purpose
+- [ ] ==50== 🏆 Purpose
+- [ ] ==62== **(2 hours)**<br>Jenkins tutorial
+- [ ] ==57== 🏆 Purpose
+- [ ] ==77== Finish management chapters SRE book.
+- [ ] ==69== Answer all flashcard questions in C++ notes.
+- [ ] ==69== Maybe write a C++ program that extracts out all flashcards and dumps them to a few markdown files?
+- [ ] ==77== **(45 mins)** Finish string chapter C++ Start IO chapter c++
+- [ ] ==64== Buy 2 new fish: 1 angelfish and 1 gourami maybe?<br><br>It's better to have fewer fish. We form better connections with them and it is far easier to take care of.
+- [ ] ==69== **(25 mins)** Plan tasks for Math website. What's the end goal and what are the mini milestones that need to be accomplished to get there?
+- [ ] ==65== Clean up Obsidian tasks. Clear daily template.
+- [ ] ==65== Throw out trash.
+- [ ] ==78== Begin reading the software engineering at Google book.
+- [ ] ==77== Downgrade Vultr.
+- [ ] ==64== Buy nuphy air75. https://nuphy.com/products/air75
+- [ ] ==64== Find shorts to buy. Try malefashionadvice first, then check Uniqlo.
+- [ ] ==64== Docking station for x1 carbon.
+- [ ] ==56== 🏆 Purpose
+- [ ] ==56== **(10 mins)** Weekly Review.
+- [ ] ==56== Remind Dom about meeting tomorrow.
+- [ ] ==55== 🏆 Purpose
+- [ ] ==55== Sign up for free trial Jiu Jitsu at SJJA Gladesville.
+- [ ] ==54== 🏆 Purpose
+- [ ] ==54== **(10 mins)** Monthly Review.
+- [ ] ==53== 🏆 Purpose
+- [ ] ==52== 🏆 Purpose
+- [ ] ==51== 🏆 Purpose
+- [ ] ==49== 🏆 Purpose
+- [ ] ==49== **(10 mins)** Weekly Review.
+- [ ] ==47== 🏆 Purpose
+- [ ] ==46== 🏆 Purpose
+- [ ] ==45== 🏆 Purpose
+- [ ] ==44== 🏆 Purpose
+- [ ] ==42== 🏆 Purpose
+- [ ] ==42== **(10 mins)** Weekly Review.
+- [ ] ==41== 🏆 Purpose
+- [ ] ==40== 🏆 Purpose
+- [ ] ==39== 🏆 Purpose
+- [ ] ==38== 🏆 Purpose
+- [ ] ==37== 🏆 Purpose
+- [ ] ==36== 🏆 Purpose
+- [ ] ==35== 🏆 Purpose
+- [ ] ==35== **(10 mins)** Weekly Review.
+- [ ] ==34== 🏆 Purpose
+- [ ] ==33== 🏆 Purpose
+- [ ] ==32== 🏆 Purpose
+- [ ] ==31== 🏆 Purpose
+- [ ] ==30== 🏆 Purpose
+- [ ] ==29== 🏆 Purpose
+- [ ] ==28== 🏆 Purpose
+- [ ] ==28== **(10 mins)** Weekly Review.
+- [ ] ==27== 🏆 Purpose
+- [ ] ==26== 🏆 Purpose
+- [ ] ==25== 🏆 Purpose
+- [ ] ==24== 🏆 Purpose
+- [ ] ==23== 🏆 Purpose
+- [ ] ==23== **(10 mins)** Monthly Review.
+- [ ] ==22== 🏆 Purpose
+- [ ] ==21== 🏆 Purpose
+- [ ] ==21== **(10 mins)** Weekly Review.
+- [ ] ==20== 🏆 Purpose
+- [ ] ==19== 🏆 Purpose
+- [ ] ==18== 🏆 Purpose
+- [ ] ==17== 🏆 Purpose
+- [ ] ==16== 🏆 Purpose
+- [ ] ==15== 🏆 Purpose
+- [ ] ==14== 🏆 Purpose
+- [ ] ==14== **(10 mins)** Weekly Review.
+- [ ] ==13== 🏆 Purpose
+- [ ] ==12== 🏆 Purpose
+- [ ] ==11== 🏆 Purpose
+- [ ] ==10== 🏆 Purpose
+- [ ] ==9== 🏆 Purpose
+- [ ] ==8== 🏆 Purpose
+- [ ] ==7== **(10 mins)** Weekly Review.
 
 ## **Monday** *[[Journal/2023-04-24|2023-04-24]]* (6)
 
@@ -318,12 +133,186 @@ kanban-plugin: basic
 - [ ] **(10 mins)** Weekly Review.
 - [ ] **(10 mins)** Monthly Review.
 
+## **Monday** *[[Journal/2023-05-01|2023-05-01]]* (6)
+
+
+
+## **Tuesday** *[[Journal/2023-05-02|2023-05-02]]* (6)
+
+
+
+## **Wednesday** *[[Journal/2023-05-03|2023-05-03]]* (6)
+
+
+
+## **Thursday** *[[Journal/2023-05-04|2023-05-04]]* (6)
+
+
+
+## **Friday** *[[Journal/2023-05-05|2023-05-05]]* (6)
+
+
+
+## **Saturday** *[[Journal/2023-05-06|2023-05-06]]* (6)
+
+
+
+## **Sunday** *[[Journal/2023-05-07|2023-05-07]]* (6)
+
+- [ ] **(10 mins)** Weekly Review.
+
+## **Monday** *[[Journal/2023-05-08|2023-05-08]]* (6)
+
+
+
+## **Tuesday** *[[Journal/2023-05-09|2023-05-09]]* (6)
+
+
+
+## **Wednesday** *[[Journal/2023-05-10|2023-05-10]]* (6)
+
+
+
+## **Thursday** *[[Journal/2023-05-11|2023-05-11]]* (6)
+
+
+
+## **Friday** *[[Journal/2023-05-12|2023-05-12]]* (6)
+
+
+
+## **Saturday** *[[Journal/2023-05-13|2023-05-13]]* (6)
+
+
+
+## **Sunday** *[[Journal/2023-05-14|2023-05-14]]* (6)
+
+- [ ] **(10 mins)** Weekly Review.
+
+## **Monday** *[[Journal/2023-05-15|2023-05-15]]* (6)
+
+
+
+## **Tuesday** *[[Journal/2023-05-16|2023-05-16]]* (6)
+
+
+
+## **Wednesday** *[[Journal/2023-05-17|2023-05-17]]* (6)
+
+
+
+## **Thursday** *[[Journal/2023-05-18|2023-05-18]]* (6)
+
+
+
+## **Friday** *[[Journal/2023-05-19|2023-05-19]]* (6)
+
+
+
+## **Saturday** *[[Journal/2023-05-20|2023-05-20]]* (6)
+
+
+
+## **Sunday** *[[Journal/2023-05-21|2023-05-21]]* (6)
+
+- [ ] **(10 mins)** Weekly Review.
+
+## **Monday** *[[Journal/2023-05-22|2023-05-22]]* (6)
+
+
+
+## **Tuesday** *[[Journal/2023-05-23|2023-05-23]]* (6)
+
+
+
+## **Wednesday** *[[Journal/2023-05-24|2023-05-24]]* (6)
+
+
+
+## **Thursday** *[[Journal/2023-05-25|2023-05-25]]* (6)
+
+
+
+## **Friday** *[[Journal/2023-05-26|2023-05-26]]* (6)
+
+
+
+## **Saturday** *[[Journal/2023-05-27|2023-05-27]]* (6)
+
+
+
+## **Sunday** *[[Journal/2023-05-28|2023-05-28]]* (6)
+
+- [ ] **(10 mins)** Weekly Review.
+
+## **Monday** *[[Journal/2023-05-29|2023-05-29]]* (6)
+
+
+
+## **Tuesday** *[[Journal/2023-05-30|2023-05-30]]* (6)
+
+
+
+## **Wednesday** *[[Journal/2023-05-31|2023-05-31]]* (6)
+
+- [ ] **(10 mins)** Monthly Review.
+
+## **Thursday** *[[Journal/2023-06-01|2023-06-01]]* (6)
+
+
+
+## **Friday** *[[Journal/2023-06-02|2023-06-02]]* (6)
+
+
+
+## **Saturday** *[[Journal/2023-06-03|2023-06-03]]* (6)
+
+
+
+## **Sunday** *[[Journal/2023-06-04|2023-06-04]]* (6)
+
+- [ ] **(10 mins)** Weekly Review.
+
+## **Monday** *[[Journal/2023-06-05|2023-06-05]]* (6)
+
+
+
+## **Tuesday** *[[Journal/2023-06-06|2023-06-06]]* (6)
+
+
+
+## **Wednesday** *[[Journal/2023-06-07|2023-06-07]]* (6)
+
+
+
+## **Thursday** *[[Journal/2023-06-08|2023-06-08]]* (6)
+
+
+
+## **Friday** *[[Journal/2023-06-09|2023-06-09]]* (6)
+
+
+
+## **Saturday** *[[Journal/2023-06-10|2023-06-10]]* (6)
+
+
+
+## **Sunday** *[[Journal/2023-06-11|2023-06-11]]* (6)
+
+- [ ] **(10 mins)** Weekly Review.
+
+## **Monday** *[[Journal/2023-06-12|2023-06-12]]* (6)
+
+
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
