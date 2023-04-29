@@ -13,6 +13,7 @@ These are all my goals:
 7. **(Personal)** Talk to people and make new friends (this goal is unformulated at the moment).
 	- As of mid Feb, I've made quite a lot of connections. I think after a little longer, I'd be able to call them friends :). I feel like I've stepped out of my shell a lot in the last few weeks after starting my job at Google.
 8. **(Personal)** Ask at least 1 person out successfully and go on at least 1 date.
+	- I should ask out Cleo this year. I'm attracted to her. I'm not ashamed or afraid of any consequences. Put a date to this.
 9. **(Personal)** Meditate at least 10 mins every day.
 10. **(Gym)** Run 5km every day for a month at any pace.
 11. **(Gym)** Run at least 3km for 90% of your days, except sick days.
