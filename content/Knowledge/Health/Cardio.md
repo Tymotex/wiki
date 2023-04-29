@@ -8,14 +8,18 @@ VO2 Max is highly correlated with longevity, apparently more so than any other h
 
 TODO: stroke volume.
 
-
-
-Being able to sustain a conversation
+*Max heart rate* is the highest heart rate you can achieve. The formula to estimate it is $220 - \texttt{age}$.
 
 ## Zones
-
-- 80-90% 
+Heart rate zones 
+1. **Zone 1** — 50-60% of max heart rate.
+    - You'll hit this when walking.
+2. **Zone 2** — 60-70% of max heart rate.
+3. **Zone 3** — 70-80% of max heart rate.
+4. **Zone 4** — 80-90% of max heart rate.
     - You can say a couple of words, but not dying.
+5. **Zone 5** — 90-100% of max heart rate.
+
 
 ## Interval Training
 
