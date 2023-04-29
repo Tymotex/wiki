@@ -2,14 +2,14 @@
 title: Cardio
 ---
 
-VO2 Max (volume oxygen max, or maximal oxygen consumption). Once a week.
+## VO2 Max
+VO2 Max (volume oxygen max, or maximal oxygen consumption). VO2 Max is highly correlated with longevity, apparently more so than any other health metric known so far.
 
-VO2 Max is highly correlated with longevity, apparently more so than any other health metric known so far.
-
-*Max heart rate* is the highest heart rate you can achieve. The formula to estimate it is $220 - \texttt{age}$.
 
 ## Zones
-Heart rate zones:
+*Max heart rate* is the highest heart rate you can achieve. The formula to estimate it is $220 - \texttt{age}$.
+
+Heart rate zones are percentage ranges of your max heart rate:
 1. **Zone 1** — 50-60% of max heart rate.
     - You'll hit this when walking.
 2. **Zone 2** — 60-70% of max heart rate.
