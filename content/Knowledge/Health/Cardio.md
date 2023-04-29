@@ -15,13 +15,17 @@ Heart rate zones
 1. **Zone 1** — 50-60% of max heart rate.
     - You'll hit this when walking.
 2. **Zone 2** — 60-70% of max heart rate.
+    - You can pass the *talk test* and speak in full sentences without gasping for breath.
+    - You would typically spend most of your time in this zone.
 3. **Zone 3** — 70-80% of max heart rate.
 4. **Zone 4** — 80-90% of max heart rate.
-    - You can say a couple of words, but not dying.
+    - You can say a couple of words, but are not dying.
 5. **Zone 5** — 90-100% of max heart rate.
 
 
 ## Interval Training
+
+Interval training is about alternat
 
 
 The idea is to stretch the heart.
