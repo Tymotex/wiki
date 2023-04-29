@@ -25,5 +25,5 @@ Heart rate zones:
 
 Typical structure of a run including HIIT:
 1. Warm-up in zone 1 for 5 mins.
-2. 6 sets of intervals where you sprint for 30 seconds, then recover for 60 seconds at a slower pace.
+2. 10 sets of intervals where you sprint for 30 seconds, then recover for 60 seconds at a slower pace.
 3. Cool-down in zone 1 for 5 mins.
