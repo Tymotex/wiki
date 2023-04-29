@@ -6,12 +6,10 @@ VO2 Max (volume oxygen max, or maximal oxygen consumption). Once a week.
 
 VO2 Max is highly correlated with longevity, apparently more so than any other health metric known so far.
 
-TODO: stroke volume.
-
 *Max heart rate* is the highest heart rate you can achieve. The formula to estimate it is $220 - \texttt{age}$.
 
 ## Zones
-Heart rate zones 
+Heart rate zones:
 1. **Zone 1** — 50-60% of max heart rate.
     - You'll hit this when walking.
 2. **Zone 2** — 60-70% of max heart rate.
@@ -22,18 +20,10 @@ Heart rate zones
     - You can say a couple of words, but are not dying.
 5. **Zone 5** — 90-100% of max heart rate.
 
-
 ## Interval Training
+*HIIT* (high intensity interval training) is about alternating between high and low intensity recovery segments in your runs. For some reason, the stress this exerts on the heart is extremely beneficial for increasing your VO2 max.
 
-Interval training is about alternat
-
-
-The idea is to stretch the heart.
-
-It's very stressful on the heart and should not be done until well trained.
-
-When am I ready?
-
-## Programming
-
-
+Typical structure of a run including HIIT:
+1. Warm-up in zone 1 for 5 mins.
+2. 6 sets of intervals where you sprint for 30 seconds, then recover for 60 seconds at a slower pace.
+3. Cool-down in zone 1 for 5 mins.
