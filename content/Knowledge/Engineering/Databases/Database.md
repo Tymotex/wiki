@@ -7,6 +7,3 @@ A **database** is just a collection of data that is arranged in a way that is ea
 - **Non-relational databases** are those where you don't use tables. Instead they could be:
     - **Document-oriented** — essentially all your data is stored as JSONs, which we call *documents*.
     - **Graph** — we model the data as a [[Knowledge/Engineering/Algorithms/Graph|graph]], storing it as nodes and edges.
-
-
-
