@@ -14,5 +14,13 @@ CREATE INDEX name_index ON Users (FirstName);
 ```
 Once defined, the database engine will make sure to attempt an index lookup any time there's a query on `FirstName`.
 
+In addition to faster lookups, an index on a column `FirstName` makes it faster to sort the original table by `FirstName`, grouping by `FirstName`, and joining tables.
+
+**How it improves join performance.** Joining tables is about matching the rows of two tables together based on a shared column's value. If the two tables define an index on that shared column, then it's faster to locate the rows that should be joined. If only one table defines an index on the shared column, it'll still be faster than if you had no indexes at all.
+
 ## Composite Index
-You can create database indexes on multiple columns.
+You can create database indexes on multiple columns. For example, this index would make it faster to resolve queries like `SELECT * FROM Users WHERE FirstName = "Linus" AND LastName = "Torvalds"`.
+```sql
+CREATE INDEX name_index ON Users (FirstName, LastName);
+```
+
