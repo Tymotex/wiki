@@ -8,14 +8,12 @@ These are all my goals:
 3. **(Career)** Read 1 technical book a month, on average.
 5. **(Personal)** Read 1 book a fortnight, on average.
 6. **(Personal)** Don't watch porn this year. Not even once.
-9. **(Personal)** Ensure mum starts her Chinese school.
 4. **(Personal)** Ship 1 interesting personal project.
 7. **(Personal)** Talk to people and make new friends (this goal is unformulated at the moment).
 	- As of mid Feb, I've made quite a lot of connections. I think after a little longer, I'd be able to call them friends :). I feel like I've stepped out of my shell a lot in the last few weeks after starting my job at Google.
 8. **(Personal)** Ask at least 1 person out successfully and go on at least 1 date.
-	- I should ask out Cleo this year. I'm attracted to her. I'm not ashamed or afraid of any consequences. Put a date to this.
-9. **(Personal)** Meditate at least 10 mins every day.
-10. **(Gym)** Run 5km every day for a month at any pace.
+9. **(Personal)** Meditate at least 10 mins every day from May onwards.
+10. **(Gym)** Begin running 5km every day at any pace.
 11. **(Gym)** Run at least 3km for 90% of your days, except sick days.
 12. **(Gym)** Push yourself extremely hard on a run once, like your life is on the line.
 13. **(Gym)** End the year between 76kg (24.5 BMI) to 80kg (25.8 BMI).
