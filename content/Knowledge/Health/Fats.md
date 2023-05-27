@@ -5,7 +5,7 @@ title: Fats
 A **fat** is an [ester](https://en.wikipedia.org/wiki/Ester) of [[Knowledge/Health/Fatty Acids|fatty acids]]. Fats are a type of *lipid*, although they're often used synonymously.
 ![[Knowledge/Health/assets/fat-esterification.png|500]]
 
-Vegetable oil's molecular structure looks like this, for example:
+The molecular structure of vegetable oil looks like this, for example:
 ![[Knowledge/Health/assets/vegetable-oil-molecular-structure.png|400]]
 
 ## Unsaturated Fats
@@ -19,7 +19,14 @@ There are:
 - **Monounsaturated fats** — contains exactly one double bond.
     - Sourced from avocados, nuts, seeds, plant oils for example.
 - **Polyunsaturated fats** — contains more than one double bond.
-    - *Omega-3* fats are important polyunsaturated fats sourced mainly from fish, nuts, seeds, that cannot be synthesised by the body.
+    - Polyunsaturated fats can be subdivided into omega fatty acids like omega-3 and omega-6.
+        - *Omega-3* fats are important polyunsaturated fats sourced mainly from fish, nuts and seeds. They cannot be synthesised by the body.
+        - The number, 3 and 6 in 'omega-3' and 'omega-6', just mean the position of the double bond in the fatty acid carbon chain. It happens that omega-1, omega-2, etc. are not common in natural-occurring foods, so we don’t discuss them as much as omega-3 and omega-6.
+
+Plant-based oils are not necessarily better for you than animal fat because they’re much more susceptible to oxidation, which produces toxic byproducts like aldehydes which are believed to be contributors to heart disease, Alzheimer’s, etc.
+- Monounsaturated fats are much more vulnerable to oxidation. Polyunsaturated fats are an order of magnitude even worse (hence why olive oil should be stored in a cool dark place as light and heat speed up oxidation).
+- The processing required to produce many plant-based oils involves subjecting the oil to very high temperatures.
+- Extra virgin olive oil is probably the least bad widely available plant-based oil because it's the least refined.
 
 ### Trans Fat
 The double bond in unsaturated fats allows for 2 possible arrangements of atoms: *cis* and *trans*.
