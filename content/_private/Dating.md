@@ -9,6 +9,10 @@ title: Dating
     - You’re not going to see this girl again.
     - You are a polite, reserve and respectful person. You won’t be received as a creep — you’ll be a shy and awkward nerd at worst.
     - Remember, the goal of this is personal development. Rejection is winning. Keep that in mind and the load should be lifted from your shoulders. Only good can come of this.
+    - They're just a 110-pound sack of flesh and bones. They're just as gross as you too.
+
+### The Approach
+After introducing yourself, just say the first thing that comes to your head. That's it. Don't go in with a script, this is part of the development.
 
 ### Where to meet women
 - University campuses
@@ -46,3 +50,16 @@ Wants:
 
 > "The difficult thing about unrequited love is that we're denied the chance to get to know someone better — and therefore to realise that they are, in the end, human like all of us." ([source](https://www.youtube.com/watch?v=00SLmJuJ1Ig&ab_channel=TheSchoolofLife))
 
+## Game
+
+### Conversation
+
+Literally just voice the first thing that comes to mind, even if it's odd.
+
+For getting-to-know-them questions, remember FORD:
+- **Family**
+    - 
+- **Occupation**
+    - What did you want to do as a kid?
+- **Recreation**
+- **Dreams**
