@@ -2,7 +2,8 @@
 title: Sleep Hygiene
 ---
 
-Sleep should be treated as a non-negotiable commitment. It should never be traded away for anything else.
+Sleep should be treated as a *non-negotiable commitment*. It should never be traded away for anything else. Good sleep improves you on every dimension in life. Likewise, bad sleep diminishes you in every dimension. Excluding exercise, there's almost nothing else that impacts your quality of life as much as sleep
+
 
 ## Sleep Hygiene
 - Sleep and wake at the same time.
