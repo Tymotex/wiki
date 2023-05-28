@@ -2,6 +2,9 @@
 title: Sleep Hygiene
 ---
 
+Sleep should be treated as a non-negotiable commitment. It should never be traded away for anything else.
+
+## Sleep Hygiene
 - Sleep and wake at the same time.
 - Get your bedroom as dark and quiet as possible. 
 - 18.3°C is about the optimal bedroom temperature.
