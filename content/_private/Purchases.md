@@ -33,7 +33,8 @@ title: Purchases
 - [ ] Tongue cleaner (used by Bryan Johnson)
 - [ ] Sunlight simulation lamp for waking up
 - [ ] Blue light filter glasses.
-- [ ] Cooling mattress pad (or other sleep cooling accessories)
+- [ ] Cooling mattress (or other sleep cooling accessories)
+- [ ] Air filters for better sleep (used by Bryan Johnson)?
 - [ ] Liquid chalk
 - [ ] Barbell maintenance items (nylon brush with firm bristles, wd-40, 3-in-1 multi-purpose oil)
 - [ ] Plate rack.
