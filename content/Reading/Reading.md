@@ -127,6 +127,8 @@ Ikigai by Francesc Miralles and Hector Garcia. 'Ikigai' means 'reason for being'
 ### The Way of the Superior Man
 [[Reading/The Way of the Superior Man|The Way of the Superior Man]] by Davide Deida.
 
+### Your Money or Your Life
+[[Reading/Your Money or Your Life|Your Money or Your Life]]
 
 ---
 ## Science
