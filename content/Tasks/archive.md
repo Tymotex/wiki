@@ -1511,12 +1511,42 @@ kanban-plugin: basic
 
 
 
+## **Sunday** *[[Journal/2023-06-04|2023-06-04]]* (6)
+
+
+
+## **Monday** *[[Journal/2023-06-05|2023-06-05]]* (6)
+
+
+
+## **Tuesday** *[[Journal/2023-06-06|2023-06-06]]* (6)
+
+
+
+## **Wednesday** *[[Journal/2023-06-07|2023-06-07]]* (6)
+
+
+
+## **Thursday** *[[Journal/2023-06-08|2023-06-08]]* (6)
+
+
+
+## **Friday** *[[Journal/2023-06-09|2023-06-09]]* (6)
+
+
+
+## **Saturday** *[[Journal/2023-06-10|2023-06-10]]* (6)
+
+
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
