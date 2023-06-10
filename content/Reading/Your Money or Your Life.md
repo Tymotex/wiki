@@ -4,9 +4,9 @@ title: Your Money or Your Life
 
 💎 The only resource you really have is time and willpower. This is the currency you spend to acquire money.
 
-💎 Define *enough*. Until you do, no amount will be enough.
+💎 Define *enough* precisely, in exact numbers. Until you do, no amount will be enough. Try detach completely from your ego and envy while defining enough.
 
-💎 
+💎 Track every cent that goes into and out of your life. Break it down finely by categories that are entirely unique to you.
 
 ---
 
@@ -34,7 +34,11 @@ There is a lot of happiness that can be derived from the simplest pleasures, you
 Once you get a handle on your life, you may realise that you're part of a larger social fabric. Something integral to happiness is your selfless contributions to that social fabric.
 > "A human being is part of a whole, called by us "Universe," a part limited in time and space. He experiences himself, his thoughts and feelings, as something separated from the rest — a kind of optical delusion of his consciousness. This delusion is a kind of prison for us, restricting us to our personal desires and to affection for a few persons nearest us. Our task must be to free ourselves from this prison by widening our circles of compassion to embrace all living creatures and the whole of nature in its beauty." — Albert Einstein
 
-You'd 
-> 
+After achieving financial independence, you should still pursue skill acquisition and remain marketable for even greater security. This is essential to giving back to your community, perhaps you could learn a few trades or interesting in-demand skills.
+> Post-financial independence, you will still be part of the economy. Keep building skills and you'll stay FI and also be able to make money again should the need arise. Having diverse skills and abilities is one key to resilience — the capacity to thrive no matter what happens in the financial markets. Honing your skills gives you leverage, freedom and choice. This diversity of abilities is one form of wealth that you can build over a lifetime to challenge yourself, to do for others, to be of use in your community, to make money if needed, and to meet life with courage.
 
+There are always reasonable tactics to achieve 'enough' on less, or reduce your consumption in satisfying ways.
 > Some clever FIers actually live in low-budget countries for part of the year to refill low coffers without having to go back to a job. Major costs such as housing, transportation, and food are all considerably cheaper, plus you get the joy of traveling rolled right into daily life!
+
+A neglected part of wealth is your *social capital*. This is a measure of the quality of your relationships and how interconnected and large your social network is. Community is one of the most reliable sources of happiness.
+> Whom can you turn to when you need help? Who will listen to you with compassion? Who would bring you meals when you are sick? Who will celebrate your joys? Our human bonds of love and loyalty have always gotten us through the night — and life. Mobility, urbanisation, and careerism have sucked the time out of our lives for what award-winning author Riane Eisler calls the caring economy — but FIers are reversing that trend. Not only does this caring economy make life less expensive, it makes life richer in precisely what life is truly for: giving and receiving. Maybe Uncle Harry came over to fix the faucet. Later you go to your friend Lily's house to pay the favour forward with what Uncle Harry taught you. Then you get sick and Lily drops off some get-well-soon soup. And on it goes, in this currency of belonging.
