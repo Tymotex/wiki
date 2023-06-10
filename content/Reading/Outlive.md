@@ -8,6 +8,9 @@ title: Outlive
 There are primarily 4 sources of death and suffering in today's world. Together, they account for the vast majority of deaths. Reducing your risk for all 4 should massively extend your lifespan and healthspan.
 > Four Horsemen: heart disease, cancer, neurodegenerative disease, or type 2 diabetes and related metabolic dysfunction.
 
+After reading this book, you realise how much suffering you could mitigate by learning and implementing simple practices to improve your health.
+> "Avoidable human misery is more often caused not so much by stupidity as by ignorance, particularly our ignorance about ourselves." — Carl Sagan.
+
 ## Exerise
 > Exercise is by far the most potent longevity "drug". No other intervention does nearly as much to prolong our lifespan and preserve our cognitive and physical function.
 
@@ -20,12 +23,19 @@ There is an interesting molecule, rapamycin, that is the only molecule ever show
 The reasoning behind why rapamycin extends life is that it interacts with **mTOR** which is a protein complex that basically syncs the availability of nutrients and cell division. Abundant food → mTOR drives cell division. Food scarce → mTOR slows cell division.
 > rapamycin acted directly on a very important intracellular protein complex called mTOR. The job of mTOR is basically to balance an organism's need to grow and reproduce against the availability of nutrients. When food is plentiful, mTOR is activated and the cell (or the organism) goes into growth mode, producing new proteins and undergoing cell division, as with the ultimate goal of reproduction. When nutrients are scarce, mTOR is suppressed and cells go into a kind of "recycling" mode, breaking down cellular components and generally cleaning house.
 
-> Reducing the amount of nutrients available to a cell see
-
 The deprivation of nutrients (i.e. eating less) has been historically observed to extend life.
 > This idea goes all the way back to Hippocrates, but more modern experiments have demonstrated, over and over, that reducing the food intake of lab animals could lengthen their lives.
 
 The lifespan extension from caloric restriction is quite significant. In mice, it could extend lifespan by ≥ 15%.
 > The results have been remarkably consistent. Studies dating back to the 1930s have found that limiting caloric intake can lengthen the lifespan of a mouse or a rat by anywhere from 15 to 45%, depending on the age of onset and degree of restriction. Not only that, but the underfed animals also seem to be markedly healthier for their age, developing fewer spontaneous tumours than normally fed mice.
+
+## Metabolism
+
+### Insulin
+If there is excess glucose in our bloodstream after digestion, the liver will eventually convert a fraction of that glucose to **glycogen** through a process called **glycogenesis**. Glycogen is essentially a polymer of glucose. The process of breaking glycogen down back to individual glucose molecules is called **glycogenolysis**. Enzymes are responsible for driving these processes.
+> One of the liver's many important jobs is to convert glycogen back to glucose and then release it as needed to maintain blood glucose levels at a steady state, known as **glucose homeostasis**.
+
+Glycogen looks like this: it's a bunch of glucose molecules, branching out from a central enzyme called **glycogenin**. This is a cross-sectional view:
+![[Reading/assets/glycogen-molecular-structure.png|400]]
 
 
