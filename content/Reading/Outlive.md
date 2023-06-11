@@ -32,10 +32,17 @@ The lifespan extension from caloric restriction is quite significant. In mice, i
 ## Metabolism
 
 ### Insulin
+When glucose is absorbed into our bloodstream after digestion, special cells in the pancreas known as pancreatic beta cells which have special glucose transporter proteins in its membrane that can pull in glucose, then trigger a corresponding release of **insulin** into the bloodstream. Insulin reaches pretty much every cell in the body which have special receptors on its membrane to detect insulin. Different kinds of cells respond differently to insulin:
+- Muscle cells — pull in more glucose to fuel muscle contraction.
+- Fat cells — store more glucose as fat.
+- Liver cells — store more glycogen.
+- Brain neurons — tune down appetite, and other things.
+
 If there is excess glucose in our bloodstream after digestion, the liver will eventually convert a fraction of that glucose to **glycogen** through a process called **glycogenesis**. Glycogen is essentially a polymer of glucose. The process of breaking glycogen down back to individual glucose molecules is called **glycogenolysis**. Enzymes are responsible for driving these processes.
 > One of the liver's many important jobs is to convert glycogen back to glucose and then release it as needed to maintain blood glucose levels at a steady state, known as **glucose homeostasis**.
 
 Glycogen looks like this: it's a bunch of glucose molecules, branching out from a central enzyme called **glycogenin**. This is a cross-sectional view:
 ![[Reading/assets/glycogen-molecular-structure.png|400]]
 
+If there is so much glucose that it exceeds what can be reasonably stored as glycogen, then the liver converts the *glucose to fatty acids* through a process called **lipogenesis**. Your fat cells are also capable of executing lipogenesis. Once fatty acids are produced, they combine with a 
 
