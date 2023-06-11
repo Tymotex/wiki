@@ -61,7 +61,7 @@ Lipids like cholesterol and triglycerides can't be transported in the blood dire
 Apolipoprotein B is the main biomarker that (almost certainly) has a causal effect with atherosclerosis. LDL cholesterol carries apoB.
 > Each lipoprotein particle is enwrapped by one or more large molecules, called apolipoproteins, that provide structure, stability, and, most importantly solubility to the particle. **HDL** particles are wrapped in a type of molecule called apolipoprotein A (apoA), while **LDL** is encased in apolipoprotein B (apoB)... every sinlge lipoprotein that contributes to atherosclerosis — not only LDL but several others — carries this apoB protein signature.
 
-Note that cholesterol is an essential molecule in *every cell* of your body. It's something you need, and your liver is capable of synthesising it. What makes cholesterol harmful is the unfortunate tendency for lipoproteins carrying apoB to get stuck in your arterial walls when it was meant to , forming deposits of 
+Note that cholesterol is an essential molecule in *every cell* of your body. It's something you need, and your liver is capable of synthesising it. What makes cholesterol harmful is the unfortunate tendency for lipoproteins carrying apoB to get stuck in your arterial walls, forming large deposits that eventually turn into calcium plaque which can rupture and clog your arteries. Lipoproteins carrying apoA however can pass through the blood vessel wall to reach cells without issue.
 
 Your apoB levels are measurable in a blood test.
 
