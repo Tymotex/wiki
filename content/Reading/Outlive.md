@@ -11,11 +11,6 @@ There are primarily 4 sources of death and suffering in today's world. Together,
 After reading this book, you realise how much suffering you could mitigate by learning and implementing simple practices to improve your health.
 > "Avoidable human misery is more often caused not so much by stupidity as by ignorance, particularly our ignorance about ourselves." — Carl Sagan.
 
-## Exerise
-> Exercise is by far the most potent longevity "drug". No other intervention does nearly as much to prolong our lifespan and preserve our cognitive and physical function.
-
-> The data are unambiguous: exercise not only delays actual death but also prevents both cognitive and physical decline, better than any other intervention.
-
 ## Caloric Restriction
 There is an interesting molecule, rapamycin, that is the only molecule ever shown to extend lifespan of mammals. The effect has been reproduced by many researchers in many environments on many animals, all showing a consistent effect of lifespan extension.
 > The reason rapamycin has so many diverse applications is thanks to a property that Sehgal had observed, but never explored, which is that it tends to slow down the process of cellular growth and division.
@@ -54,7 +49,7 @@ Fat can be stored in two ways: as **subcutaneous fat** (right under your skin, a
 Fructose is treated differently by the body. It happens to be much easier for it to be stored as fat. It's not concerning to eat fruit in general though because the fiber buffers the release of fructose into the bloodstream. Drinking fruit juice directly can contribute to your risk of NAFLD (non-alcoholic fatty liver disease).
 > It is very difficult to get fat from eating too many apples, for example, because the fructose in the apple enters our system relatively slowly, mixed with fiber and water, and our gut and out metabolism can handle it normally.
 
-## Heart Disease
+## Atherosclerosis
 Lipids like cholesterol and triglycerides can't be transported in the blood directly because it's not soluble in blood plasma. Instead it's encapsulated in a lipoprotein, which is a structure made of a phospholipid shell, that *can* be transported in blood. Inside that shell, we have triglycerides and cholesterol.
 ![[Reading/assets/lipoprotein-structure.png|400]]
 
@@ -68,4 +63,21 @@ Your apoB levels are measurable in a blood test.
 It's generally widely accepted now that *dietary cholesterol*, meaning direct ingestion of cholesterol molecules, does not actually contribute to increased blood cholesterol. 
 > The vast majority of the cholesterol in our circulation is actually produced by our own cells. Nevertheless, US dietary guidelines warned Americans away from consuming foods high in cholesterol for decades.
 
-Saturated fats, however, do directly contribute to increased blood cholesterol.
+Saturated fats, however, do directly contribute to increased LDL cholesterol in two ways:
+1. It signals to the liver to pump out more LDL cholesterol.
+2. It dampens the LDL cholesterol receptors in the liver cells thereby reducing the clearance of LDL cholesterol from the bloodstream.
+> First, it seems saturated fat contributes directly to the synthesis of excess cholesterol. Second, and more importantly, excess saturated fat causes the liver to reduce expression of LDL receptors, thereby reducing the amount of LDL removed from circulation.
+
+## Cancer
+
+
+
+## Exerise
+> Exercise is by far the most potent longevity "drug". No other intervention does nearly as much to prolong our lifespan and preserve our cognitive and physical function.
+
+> The data are unambiguous: exercise not only delays actual death but also prevents both cognitive and physical decline, better than any other intervention.
+
+## Exerise
+> Exercise is by far the most potent longevity "drug". No other intervention does nearly as much to prolong our lifespan and preserve our cognitive and physical function.
+
+> The data are unambiguous: exercise not only delays actual death but also prevents both cognitive and physical decline, better than any other intervention.
