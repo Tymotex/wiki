@@ -55,4 +55,17 @@ Fructose is treated differently by the body. It happens to be much easier for it
 > It is very difficult to get fat from eating too many apples, for example, because the fructose in the apple enters our system relatively slowly, mixed with fiber and water, and our gut and out metabolism can handle it normally.
 
 ## Heart Disease
-Lipids like cholesterol and triglycerides can't be transported 
+Lipids like cholesterol and triglycerides can't be transported in the blood directly because it's not soluble in blood plasma. Instead it's encapsulated in a lipoprotein, which is a structure made of a phospholipid shell, that *can* be transported in blood. Inside that shell, we have triglycerides and cholesterol.
+![[Reading/assets/lipoprotein-structure.png|400]]
+
+Apolipoprotein B is the main biomarker that (almost certainly) has a causal effect with atherosclerosis. LDL cholesterol carries apoB.
+> Each lipoprotein particle is enwrapped by one or more large molecules, called apolipoproteins, that provide structure, stability, and, most importantly solubility to the particle. **HDL** particles are wrapped in a type of molecule called apolipoprotein A (apoA), while **LDL** is encased in apolipoprotein B (apoB)... every sinlge lipoprotein that contributes to atherosclerosis — not only LDL but several others — carries this apoB protein signature.
+
+Note that cholesterol is an essential molecule in *every cell* of your body. It's something you need, and your liver is capable of synthesising it. What makes cholesterol harmful is the unfortunate tendency for lipoproteins carrying apoB to get stuck in your arterial walls when it was meant to , forming deposits of 
+
+Your apoB levels are measurable in a blood test.
+
+It's generally widely accepted now that *dietary cholesterol*, meaning direct ingestion of cholesterol molecules, does not actually contribute to increased blood cholesterol. 
+> The vast majority of the cholesterol in our circulation is actually produced by our own cells. Nevertheless, US dietary guidelines warned Americans away from consuming foods high in cholesterol for decades.
+
+Saturated fats, however, do directly contribute to increased blood cholesterol.
