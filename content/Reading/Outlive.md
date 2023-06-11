@@ -29,9 +29,7 @@ The deprivation of nutrients (i.e. eating less) has been historically observed t
 The lifespan extension from caloric restriction is quite significant. In mice, it could extend lifespan by ≥ 15%.
 > The results have been remarkably consistent. Studies dating back to the 1930s have found that limiting caloric intake can lengthen the lifespan of a mouse or a rat by anywhere from 15 to 45%, depending on the age of onset and degree of restriction. Not only that, but the underfed animals also seem to be markedly healthier for their age, developing fewer spontaneous tumours than normally fed mice.
 
-## Metabolism
-
-### Insulin
+## Insulin
 When glucose is absorbed into our bloodstream after digestion, special cells in the pancreas known as pancreatic beta cells which have special glucose transporter proteins in its membrane that can pull in glucose, then trigger a corresponding release of **insulin** into the bloodstream. Insulin reaches pretty much every cell in the body which have special receptors on its membrane to detect insulin. Different kinds of cells respond differently to insulin:
 - Muscle cells — pull in more glucose to fuel muscle contraction.
 - Fat cells — store more glucose as fat.
@@ -44,5 +42,17 @@ If there is excess glucose in our bloodstream after digestion, the liver will ev
 Glycogen looks like this: it's a bunch of glucose molecules, branching out from a central enzyme called **glycogenin**. This is a cross-sectional view:
 ![[Reading/assets/glycogen-molecular-structure.png|400]]
 
-If there is so much glucose that it exceeds what can be reasonably stored as glycogen, then the liver converts the *glucose to fatty acids* through a process called **lipogenesis**. Your fat cells are also capable of executing lipogenesis. Once fatty acids are produced, they combine with a 
+If there is so much glucose that it exceeds what can be reasonably stored as glycogen, then the liver converts the *glucose to fatty acids* through a process called **lipogenesis**. Your fat cells are also capable of executing lipogenesis. Once fatty acids are produced, they combine with a glycerol molecule to form a **triglyceride** molecule.
+![[Reading/assets/triglyercide-formation.png|600]]
+([source](https://ib.bioninja.com.au/standard-level/topic-2-molecular-biology/23-carbohydrates-and-lipids/triglycerides.html))
 
+Triglycerides then get transported by **lipoproteins** where they get carried to various tissues in the body to be deposited as fat for long-term storage.
+
+Fat can be stored in two ways: as **subcutaneous fat** (right under your skin, above your muscle tissue) and as **visceral fat** (surrounding your organs, like your liver, intestines, etc. which is not visible externally). We strongly prefer gaining subcutaneous fat over visceral fat, because visceral fat is associated with heart disease, type 2 diabetes, cancer, etc. Genetics play a big role in determining how much fat is stored as visceral fat. Notably, cortisol shifts fat over to visceral. 
+> Cortisol is especially potent, with a double-edged effect of depleting subcutaneous fat (which is generally beneficial) and replacing it with more harmful visceral fat. This is one reason why stress levels and sleep, both of which affect cortisol release, are pertinent to metabolism.
+
+Fructose is treated differently by the body. It happens to be much easier for it to be stored as fat. It's not concerning to eat fruit in general though because the fiber buffers the release of fructose into the bloodstream. Drinking fruit juice directly can contribute to your risk of NAFLD (non-alcoholic fatty liver disease).
+> It is very difficult to get fat from eating too many apples, for example, because the fructose in the apple enters our system relatively slowly, mixed with fiber and water, and our gut and out metabolism can handle it normally.
+
+## Heart Disease
+Lipids like cholesterol and triglycerides can't be transported 
