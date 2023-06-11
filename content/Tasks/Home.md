@@ -6,6 +6,7 @@
 - [[Tasks/Life Roadmap|Life Roadmap]]
 - [[Journal/Principles|Principles]]
 - [[_private/Heroes|Heroes]]
+- [[Family Ideas]]
 
 ---
 ![[Tasks/assets/pale-blue-dot.png|500]]
