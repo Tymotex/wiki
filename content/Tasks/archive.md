@@ -1539,12 +1539,18 @@ kanban-plugin: basic
 
 
 
+## **Sunday** *[[Journal/2023-06-11|2023-06-11]]* (6)
+
+
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings

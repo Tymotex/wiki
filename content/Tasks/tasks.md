@@ -2,120 +2,116 @@
 kanban-plugin: basic
 ---
 
-## **Sunday** *[[Journal/2023-06-11|2023-06-11]]* (6)
+## **Monday** *[[Journal/2023-06-12|2023-06-12]]* (6)
 
-- [ ] **(10 mins)** Weekly Review.
-- [ ] ==7== **(10 mins)** Weekly Review.
-- [ ] ==14== **(10 mins)** Weekly Review.
-- [ ] ==42== **(10 mins)** Weekly Review.
-- [ ] ==42== **(10 mins)** Monthly Review.
-- [ ] ==49== **(10 mins)** Weekly Review.
+- [ ] ==1== **(10 mins)** Weekly Review.
+- [ ] ==8== **(10 mins)** Weekly Review.
+- [ ] ==15== **(10 mins)** Weekly Review.
+- [ ] ==43== **(10 mins)** Weekly Review.
+- [ ] ==43== **(10 mins)** Monthly Review.
+- [ ] ==50== **(10 mins)** Weekly Review.
+- [ ] ==110== 🏆 Purpose
 - [ ] ==109== 🏆 Purpose
 - [ ] ==108== 🏆 Purpose
-- [ ] ==107== 🏆 Purpose
-- [ ] ==105== 🏆 Purpose
-- [ ] ==105== **(10 mins)** Weekly Review.
-- [ ] ==105== Remind Dom about meeting tomorrow.
-- [ ] ==104== 🏆 Purpose
-- [ ] ==104== Sign up for free trial Jiu Jitsu at SJJA Gladesville.
-- [ ] ==103== 🏆 Purpose
-- [ ] ==103== **(10 mins)** Monthly Review.
-- [ ] ==102== 🏆 Purpose
-- [ ] ==101== 🏆 Purpose
-- [ ] ==100== 🏆 Purpose
-- [ ] ==99== 🏆 Purpose
-- [ ] ==111== **(2 hours)**<br>Jenkins tutorial
-- [ ] ==98== 🏆 Purpose
-- [ ] ==98== **(10 mins)** Weekly Review.
-- [ ] ==97== 🏆 Purpose
-- [ ] ==96== 🏆 Purpose
-- [ ] ==95== 🏆 Purpose
-- [ ] ==94== 🏆 Purpose
-- [ ] ==93== 🏆 Purpose
-- [ ] ==92== 🏆 Purpose
-- [ ] ==97== 🏆 Purpose
-- [ ] ==99== 🏆 Purpose
-- [ ] ==111== **(2 hours)**<br>Jenkins tutorial
 - [ ] ==106== 🏆 Purpose
-- [ ] ==126== Finish management chapters SRE book.
-- [ ] ==118== Answer all flashcard questions in C++ notes.
-- [ ] ==118== Maybe write a C++ program that extracts out all flashcards and dumps them to a few markdown files?
-- [ ] ==126== **(45 mins)** Finish string chapter C++ Start IO chapter c++
-- [ ] ==113== Buy 2 new fish: 1 angelfish and 1 gourami maybe?<br><br>It's better to have fewer fish. We form better connections with them and it is far easier to take care of.
-- [ ] ==118== **(25 mins)** Plan tasks for Math website. What's the end goal and what are the mini milestones that need to be accomplished to get there?
-- [ ] ==114== Clean up Obsidian tasks. Clear daily template.
-- [ ] ==114== Throw out trash.
-- [ ] ==127== Begin reading the software engineering at Google book.
-- [ ] ==126== Downgrade Vultr.
-- [ ] ==113== Buy nuphy air75. https://nuphy.com/products/air75
-- [ ] ==113== Find shorts to buy. Try malefashionadvice first, then check Uniqlo.
-- [ ] ==113== Docking station for x1 carbon.
+- [ ] ==106== **(10 mins)** Weekly Review.
+- [ ] ==106== Remind Dom about meeting tomorrow.
 - [ ] ==105== 🏆 Purpose
-- [ ] ==105== **(10 mins)** Weekly Review.
-- [ ] ==105== Remind Dom about meeting tomorrow.
+- [ ] ==105== Sign up for free trial Jiu Jitsu at SJJA Gladesville.
 - [ ] ==104== 🏆 Purpose
-- [ ] ==104== Sign up for free trial Jiu Jitsu at SJJA Gladesville.
+- [ ] ==104== **(10 mins)** Monthly Review.
 - [ ] ==103== 🏆 Purpose
-- [ ] ==103== **(10 mins)** Monthly Review.
 - [ ] ==102== 🏆 Purpose
 - [ ] ==101== 🏆 Purpose
 - [ ] ==100== 🏆 Purpose
+- [ ] ==112== **(2 hours)**<br>Jenkins tutorial
+- [ ] ==99== 🏆 Purpose
+- [ ] ==99== **(10 mins)** Weekly Review.
 - [ ] ==98== 🏆 Purpose
-- [ ] ==98== **(10 mins)** Weekly Review.
+- [ ] ==97== 🏆 Purpose
 - [ ] ==96== 🏆 Purpose
 - [ ] ==95== 🏆 Purpose
 - [ ] ==94== 🏆 Purpose
 - [ ] ==93== 🏆 Purpose
+- [ ] ==98== 🏆 Purpose
+- [ ] ==100== 🏆 Purpose
+- [ ] ==112== **(2 hours)**<br>Jenkins tutorial
+- [ ] ==107== 🏆 Purpose
+- [ ] ==127== Finish management chapters SRE book.
+- [ ] ==119== Answer all flashcard questions in C++ notes.
+- [ ] ==119== Maybe write a C++ program that extracts out all flashcards and dumps them to a few markdown files?
+- [ ] ==127== **(45 mins)** Finish string chapter C++ Start IO chapter c++
+- [ ] ==114== Buy 2 new fish: 1 angelfish and 1 gourami maybe?<br><br>It's better to have fewer fish. We form better connections with them and it is far easier to take care of.
+- [ ] ==119== **(25 mins)** Plan tasks for Math website. What's the end goal and what are the mini milestones that need to be accomplished to get there?
+- [ ] ==115== Clean up Obsidian tasks. Clear daily template.
+- [ ] ==115== Throw out trash.
+- [ ] ==128== Begin reading the software engineering at Google book.
+- [ ] ==127== Downgrade Vultr.
+- [ ] ==114== Buy nuphy air75. https://nuphy.com/products/air75
+- [ ] ==114== Find shorts to buy. Try malefashionadvice first, then check Uniqlo.
+- [ ] ==114== Docking station for x1 carbon.
+- [ ] ==106== 🏆 Purpose
+- [ ] ==106== **(10 mins)** Weekly Review.
+- [ ] ==106== Remind Dom about meeting tomorrow.
+- [ ] ==105== 🏆 Purpose
+- [ ] ==105== Sign up for free trial Jiu Jitsu at SJJA Gladesville.
+- [ ] ==104== 🏆 Purpose
+- [ ] ==104== **(10 mins)** Monthly Review.
+- [ ] ==103== 🏆 Purpose
+- [ ] ==102== 🏆 Purpose
+- [ ] ==101== 🏆 Purpose
+- [ ] ==99== 🏆 Purpose
+- [ ] ==99== **(10 mins)** Weekly Review.
+- [ ] ==97== 🏆 Purpose
+- [ ] ==96== 🏆 Purpose
+- [ ] ==95== 🏆 Purpose
+- [ ] ==94== 🏆 Purpose
+- [ ] ==92== 🏆 Purpose
+- [ ] ==92== **(10 mins)** Weekly Review.
 - [ ] ==91== 🏆 Purpose
-- [ ] ==91== **(10 mins)** Weekly Review.
 - [ ] ==90== 🏆 Purpose
 - [ ] ==89== 🏆 Purpose
 - [ ] ==88== 🏆 Purpose
 - [ ] ==87== 🏆 Purpose
 - [ ] ==86== 🏆 Purpose
 - [ ] ==85== 🏆 Purpose
+- [ ] ==85== **(10 mins)** Weekly Review.
 - [ ] ==84== 🏆 Purpose
-- [ ] ==84== **(10 mins)** Weekly Review.
 - [ ] ==83== 🏆 Purpose
 - [ ] ==82== 🏆 Purpose
 - [ ] ==81== 🏆 Purpose
 - [ ] ==80== 🏆 Purpose
 - [ ] ==79== 🏆 Purpose
 - [ ] ==78== 🏆 Purpose
+- [ ] ==78== **(10 mins)** Weekly Review.
 - [ ] ==77== 🏆 Purpose
-- [ ] ==77== **(10 mins)** Weekly Review.
 - [ ] ==76== 🏆 Purpose
 - [ ] ==75== 🏆 Purpose
 - [ ] ==74== 🏆 Purpose
 - [ ] ==73== 🏆 Purpose
+- [ ] ==73== **(10 mins)** Monthly Review.
 - [ ] ==72== 🏆 Purpose
-- [ ] ==72== **(10 mins)** Monthly Review.
 - [ ] ==71== 🏆 Purpose
+- [ ] ==71== **(10 mins)** Weekly Review.
 - [ ] ==70== 🏆 Purpose
-- [ ] ==70== **(10 mins)** Weekly Review.
 - [ ] ==69== 🏆 Purpose
 - [ ] ==68== 🏆 Purpose
 - [ ] ==67== 🏆 Purpose
 - [ ] ==66== 🏆 Purpose
 - [ ] ==65== 🏆 Purpose
 - [ ] ==64== 🏆 Purpose
+- [ ] ==64== **(10 mins)** Weekly Review.
 - [ ] ==63== 🏆 Purpose
-- [ ] ==63== **(10 mins)** Weekly Review.
 - [ ] ==62== 🏆 Purpose
 - [ ] ==61== 🏆 Purpose
 - [ ] ==60== 🏆 Purpose
 - [ ] ==59== 🏆 Purpose
 - [ ] ==58== 🏆 Purpose
-- [ ] ==57== 🏆 Purpose
-- [ ] ==56== **(10 mins)** Weekly Review.
-- [ ] ==35== **(10 mins)** Weekly Review.
-- [ ] ==28== **(10 mins)** Weekly Review.
-- [ ] ==21== **(10 mins)** Weekly Review.
-- [ ] ==11== **(10 mins)** Monthly Review.
-
-## **Monday** *[[Journal/2023-06-12|2023-06-12]]* (6)
-
-
+- [ ] ==57== **(10 mins)** Weekly Review.
+- [ ] ==36== **(10 mins)** Weekly Review.
+- [ ] ==29== **(10 mins)** Weekly Review.
+- [ ] ==22== **(10 mins)** Weekly Review.
+- [ ] ==12== **(10 mins)** Monthly Review.
 
 ## **Tuesday** *[[Journal/2023-06-13|2023-06-13]]* (6)
 
@@ -313,12 +309,18 @@ kanban-plugin: basic
 
 - [ ] **(10 mins)** Monthly Review.
 
+## **Tuesday** *[[Journal/2023-08-01|2023-08-01]]* (6)
+
+
+
 ***
 
 ## Archive
 
 
 
+%% kanban:settings
+## Archive
 %% kanban:settings
 ## Archive
 %% kanban:settings
