@@ -67,3 +67,37 @@ For getting-to-know-them questions, remember FORD:
 - **Dreams**
 
 ## Online Dating
+
+## Dates
+### Checklist
+- Hygiene:
+	- No bad breath.
+	- No body odour.
+	- Nails (finger and toes) should be short and clean.
+	- Shower.
+- Style:
+	- Use strong hold hair products to style your hair (this tip is specific to me).
+	- Wear boxer briefs that make you feel confident.
+- Scent:
+	- Use deodorant or cologne.
+- What to bring:
+	- Mints. They'd probably appreciate one too.
+	- Two sources of money: credit/debit card and cash. Having just one source is unreliable and you may need to spill over to the other source.
+- Preparation:
+	- Ensure the place you planned to go to is actually open. Make a reservation to guarantee a spot.
+	- Refresh on [[_private/Dating#Conversation|conversation starters]].
+	- Scout out the place beforehand if the area is new to you. Ensure you don't get lost on the day.
+	- Transportation... TODO.
+	- Get a bicep, shoulder and chest pump right before you leave.
+
+During the date:
+- Speak in a lower tone.
+- Speak slower and louder.
+- How to smoothly hold her hands? Literally just take them when it feels appropriate. *If she knows she's on a date with you, she probably wants to hold your hand too*. If that fails, abort. Nothing would have happened anyway.
+
+### Ideas
+For first dates, optimise for chances to get to know her (i.e. prefer interactive dates, so no movies).
+- Prefer smaller, local restaurants over fancier restaurants
+
+### First Kiss
+When it feels like you're really close, just ask.
