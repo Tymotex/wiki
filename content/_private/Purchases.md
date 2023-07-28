@@ -29,10 +29,11 @@ title: Purchases
 - [ ] Smart drink bottle
 - [x] Mechanical keyboard for home (as a hobby?)
 - [ ] CeraVe facial moisturising lotion (used by Bryan Johnson)
-- [ ] Tea tree oil mouthwash (used by Bryan Johnson)
+- [x] Tea tree oil mouthwash (used by Bryan Johnson)
 - [ ] Tongue cleaner (used by Bryan Johnson)
 - [ ] Sunlight simulation lamp for waking up
 - [ ] Blue light filter glasses.
+- [ ] Turmeric.
 - [ ] Cooling mattress (or other sleep cooling accessories)
 - [ ] Air filters for better sleep (used by Bryan Johnson)?
 - [ ] Liquid chalk

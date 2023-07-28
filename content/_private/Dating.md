@@ -2,6 +2,8 @@
 title: Dating
 ---
 
+## Basics
+
 ## Cold Approaching
 **Don’t think, just go.** The sooner you go, the better. Get out of your head, you won’t be any more prepared after you get jacked or shredded, that’s too long away.
 - Try get a friend who’s also into developing themselves to go with you on cold approaches.
@@ -66,7 +68,13 @@ For getting-to-know-them questions, remember FORD:
 - **Recreation**
 - **Dreams**
 
+### Sexual Escalation
+TODO.
+
+Staying cool, calm, and collected while demonstrating sexual attraction to her tends to be seductive.
+
 ## Online Dating
+TODO.
 
 ## Dates
 ### Checklist
@@ -75,6 +83,8 @@ For getting-to-know-them questions, remember FORD:
 	- No body odour.
 	- Nails (finger and toes) should be short and clean.
 	- Shower.
+	- Shave.
+	- Trim nose hair.
 - Style:
 	- Use strong hold hair products to style your hair (this tip is specific to me).
 	- Wear boxer briefs that make you feel confident.
@@ -95,9 +105,40 @@ During the date:
 - Speak slower and louder.
 - How to smoothly hold her hands? Literally just take them when it feels appropriate. *If she knows she's on a date with you, she probably wants to hold your hand too*. If that fails, abort. Nothing would have happened anyway.
 
-### Ideas
+### Date Ideas
 For first dates, optimise for chances to get to know her (i.e. prefer interactive dates, so no movies).
 - Prefer smaller, local restaurants over fancier restaurants
 
-### First Kiss
-When it feels like you're really close, just ask.
+Some example things to do. Aim to pick at least 2 venues and activities, with 3 being ideal.
+- Royal Botanic Garden.
+- Chinese Garden of Friendship.
+- Museums or galleries.
+- Venues for walks/hikes, scenery:
+	- Along Rhodes, Gladesville, Wentworth Point.
+	- Darling Harbour bridge, Barangaroo Reserve, Opera House, Botanic Gardens.
+	- Observatory Hill Park.
+	- Harbour Bridge.
+	- Wendy Whiteley's Secret Garden.
+	- Sydney Park.
+	- Centennial Parkland.
+- Aquarium or zoo.
+- Ice Skating.
+- Bookstores (e.g. Kinokuniya, Dymocks).
+- Picnic.
+- Geocache?
+- Luna Park.
+- Horse riding.
+- Climbing the pylons on the harbour bridge.
+- Explore an unfamiliar suburb.
+- Sydney Observatory. See [https://powerhouse.com.au/visit/sydney-observatory](https://powerhouse.com.au/visit/sydney-observatory).
+- Mall date.
+- Couples classes: dance, pottery, painting, yoga, cooking.
+- Amusement park.
+- Escape room.
+- Arcade.
+- Comedy shows.
+- Their place or mine, and the area around there.
+- Kayaking.
+- Rooftop stargazing, watching the sunrise and sunset.
+- Volunteering.
+- Mini-golf.

@@ -78,6 +78,9 @@ Ikigai by Francesc Miralles and Hector Garcia. 'Ikigai' means 'reason for being'
 - Don't retire.
 - Be a good friend and be well integrated in your community.
 
+### Models
+[[Reading/Models|Models]] by Mark Manson.
+
 ### The Male Advantage
 [[Reading/The Male Advantage|The Male Advantage]] by Kris Sturmey.
 
