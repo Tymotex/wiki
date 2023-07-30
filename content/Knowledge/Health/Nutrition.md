@@ -25,8 +25,8 @@ description: Nutrition
 - [[Knowledge/Health/Cholesterol|Cholesterol]] TODO
 - [[Knowledge/Health/Carbohydrates|Carbohydrates]] TODO
 - Proteins
-- Vitamins
-- Minerals
+- [[Knowledge/Health/Vitamins|Vitamins]]
+- [[Knowledge/Health/Minerals|Minerals]]
 
 ## Proteins
 

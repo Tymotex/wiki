@@ -142,3 +142,15 @@ Some example things to do. Aim to pick at least 2 venues and activities, with 3 
 - Rooftop stargazing, watching the sunrise and sunset.
 - Volunteering.
 - Mini-golf.
+
+### Past Dates
+#### Date 1 with Jiaru
+- Bus together at 12:30pm at Gladesville. (I will get there before then). Estimated 30 mins.
+- Walk to Royal Botanic Garden via Hyde Park. Estimated 30 mins.
+- Explore and sit down. Order at cafe if hungry. Estimated 1.5 hours max (time yourself)
+- Walk along the coast, past Barangaroo Reserve to Chinese Garden. Estimated 50 mins. Alternatively catch ferry, estimated 20 mins.
+- Explore and sit down for maybe 45 mins.
+- Dinner nearby. Maybe dessert. 40 mins.
+- Head home and walk her home. 40 mins.
+
+#### Date 2 with Jiaru
