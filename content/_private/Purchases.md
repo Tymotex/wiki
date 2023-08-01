@@ -32,9 +32,11 @@ title: Purchases
 - [ ] CeraVe facial moisturising lotion (used by Bryan Johnson)
 - [x] Tea tree oil mouthwash (used by Bryan Johnson)
 - [ ] Tongue cleaner (used by Bryan Johnson)
+- [ ] Motion-activated nightlight
 - [ ] Sunlight simulation lamp for waking up
 - [ ] Blue light filter glasses.
 - [ ] Turmeric.
+- [ ] Matcha powder.
 - [ ] Cooling mattress (or other sleep cooling accessories)
 - [ ] Air filters for better sleep (used by Bryan Johnson)?
 - [ ] Liquid chalk
