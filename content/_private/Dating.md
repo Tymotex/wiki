@@ -93,6 +93,12 @@ TODO.
 - What to bring:
 	- Mints. They'd probably appreciate one too.
 	- Two sources of money: credit/debit card and cash. Having just one source is unreliable and you may need to spill over to the other source.
+	- Sanitiser.
+	- Conditional items:
+		- Spare hoodie for her to steal.
+		- Bottled water.
+		- Sunscreen.
+		- Umbrella.
 - Preparation:
 	- Ensure the place you planned to go to is actually open. Make a reservation to guarantee a spot.
 	- Refresh on [[_private/Dating#Conversation|conversation starters]].
@@ -116,6 +122,7 @@ Some example things to do. Aim to pick at least 2 venues and activities, with 3 
 - Venues for walks/hikes, scenery:
 	- Along Rhodes, Gladesville, Wentworth Point.
 	- Darling Harbour bridge, Barangaroo Reserve, Opera House, Botanic Gardens.
+		- There are fireworks every Saturday at 8:30pm.
 	- Observatory Hill Park.
 	- Harbour Bridge.
 	- Wendy Whiteley's Secret Garden.

@@ -3,7 +3,8 @@ title: Purchases
 ---
 
 - [x] Hair dryer (cheap but reliable with good reviews)
-- [ ] Convenient smoothie blender.
+- [x] Convenient smoothie blender.
+	- Bought by mum.
 - [ ] Nice cave or castle for plecos to shelter in.
 - [x] How to Win Friends and Influence People.
 - [x] Fitbit for Mum.
@@ -14,7 +15,7 @@ title: Purchases
 - [x] Hair spray
 - [x] SPF moisturiser, or standalone sunscreen
 - [x] CeraVe hydrating cleanser
-- [ ] Laptop stand, mount or arm.
+- [ ] Laptop stand, mount or arm for WFH.
 - [x] Meditations book
 - [x] Protein powder
 - [ ] Cheap gravel vacuum.
