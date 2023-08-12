@@ -2,7 +2,7 @@
 title: Tim's Dev Wiki
 ---
 
-Hi! I'm Tim, a computer science student at the University of New South Wales. 
+Hi! I'm Tim, a software engineer at Google. I studied computer science at the University of New South Wales. 
 
 Welcome to my personal developer wiki. Learning is incredibly chaotic — this is my attempt to establish some semblance of order to my monkey brain. This wiki contains things I learn about software engineering, computer science and a bunch of other areas of study. Since mid 2022, I finally decided to ditch [Notion](https://notion.so/) for [Obsidian](https://obsidian.md/) as my knowledge management system. I'm sharing this with the hope that it helps or inspires whoever stumbles upon it 😃.
 

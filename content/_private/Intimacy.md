@@ -91,35 +91,13 @@ Kissing horizontally after pushing her down:
 
 ## Anatomy
 ![[_private/assets/vagina-diagram.png|600]]
-![[_private/assets/real-vagina-labeled.png|250]]
+
 - The clitoral glans has pretty much the same number of nerve endings as a penis. It's very sensitive. The smaller it is, the more sensitive it is
 - Think of labia majora as the 'big outer lips' and the labia minora as the 'small inner lips'.
 - The labia majora will conceal most of everything.
 
 ## Fingering
-
 - **Don't jab**. Don't poke.
 
 ## Talking Dirty
-
 - Make them laugh. It works just as well during sex as outside of it.
-
-## Massaging
-
-### Pussy
-
-
-## Things I like
-- Cunnilingus.
-- French kissing.
-- Kissing and being kissed on the neck.
-- Hearing them moan and breathing heavily.
-- Lingerie and thigh-high socks.
-- Harnesses, garter belts, thigh and waist garters, under butt straps.
-- Hearing them moan, breathing heavy.
-- Getting and receiving hickeys.
-- Being straddled.
-- Handholding.
-- Cuddling.
-- Being scratched, pinched, hit.
-- Tickling.
