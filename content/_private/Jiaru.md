@@ -9,6 +9,7 @@
 	- Strawberries and blueberries, but not raspberries.
 	- Watermelon.
 	- Croissants.
+	- Yum cha (prawn dumpling, prawn rice noodle roll, chicken feet, etc.j)
 - Anime.
 - Minimalism.
 - Horses.
@@ -54,3 +55,13 @@
 - When we talked through our feelings the day after our first date together at her place. I made the mistake of sexually escalating with her prematurely, but I got an exciting glimpse of someone I'd have so much chemistry with in bed.
 - When I made the mistake of telling my parents about her family situation, then they made assertions about how I'd never be happy with her and that I should break up with her as soon as I could to prevent unnecessary suffering.
 - When she told me I made her upset, and how guilty and disappointed in myself I was after hearing that. I promised thereafter to not make that kind of mistake again, and I intend to honour that promise. My opinion of myself is seriously on the line from this point on.
+
+## Date ideas
+Date ideas specific to us:
+- Reading a textbook together at a library.
+- Running together along a scenic route.
+
+## What she likes physically
+- Hugging while straddling.
+- Me being dominant and rough with her. Aggressively making out with her, kissing her neck.
+

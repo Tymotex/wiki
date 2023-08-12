@@ -103,7 +103,7 @@ TODO.
 	- Ensure the place you planned to go to is actually open. Make a reservation to guarantee a spot.
 	- Refresh on [[_private/Dating#Conversation|conversation starters]].
 	- Scout out the place beforehand if the area is new to you. Ensure you don't get lost on the day.
-	- Transportation... TODO.
+	- Transportation...
 	- Get a bicep, shoulder and chest pump right before you leave.
 
 During the date:
