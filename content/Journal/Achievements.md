@@ -19,7 +19,7 @@ In roughly chronological order:
 - Landed a job as a tutor in my second year.
 - Got amazing feedback from my students (5.72/6, 5.89/6, 5.89/6 across the 3 terms I taught).
 - Developed Tactile-DS and used it to help teach my lessons.
-- Asked out the most impressive and smartest girl I've ever met and dated briefly for a few months.
+- Asked out the most impressive and smartest girl I've ever met and dated for a few months.
 - Won my first ever hackathon: the Accenture Hack-for-Good hackathon, beating 36 other teams across Australia.
 - Landed a role in CSESoc as a project lead for a new project, Structs.sh. I lead a team of 8 for a year.
 - Got 1st place in SENG2021 out of ~200 students. Developed Employ.me.
