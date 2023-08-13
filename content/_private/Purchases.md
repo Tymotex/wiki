@@ -56,6 +56,3 @@ title: Purchases
 - [ ] Cooling blanket.
 - [ ] Cooling mattress or bed temperature controller.
 - [ ] Meditation bench
-
-## Archive
-- [ ] Chino shorts (for Summer).

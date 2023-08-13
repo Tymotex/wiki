@@ -3,8 +3,6 @@ title: Planning Trips
 description: Planning Trips
 ---
 
-- Is there a best time to visit the destination?
-
 ## Airlines
 There are 4 major airlines: Qantas, Virgin, Jetstar and Tigerair. 
 - Qantas and Virgin cost more than Jetstar and Tigerair.
@@ -13,6 +11,10 @@ There are 4 major airlines: Qantas, Virgin, Jetstar and Tigerair.
     - As of 2022, none of them have caused fatalities in recent years ([source](https://www.choice.com.au/travel/on-holidays/airlines/articles/australian-domestic-airlines-compared)).
     - Qantas owns Jetstar and Virgin owns Tigerair. The safety standards are apparently equivalent.
 ## Accommodation
+TODO.
+
+## Timing
+- Is there a best time to visit the destination?
 
 ## Reducing Costs
 Plane tickets are typically cheapest:
