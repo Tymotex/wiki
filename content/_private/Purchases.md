@@ -20,7 +20,7 @@ title: Purchases
 - [x] Protein powder
 - [ ] Cheap gravel vacuum.
 - [ ] Sound machine for ambient sleep noises.
-- [ ] Compressed air for cleaning.
+- [ ] Compressed air gun for cleaning.
 - [x] Light blue OCBD, or white
 - [x] Navy chinos
 - [x] Another OCBD, either: grey, light red or white.
@@ -37,9 +37,10 @@ title: Purchases
 - [ ] Motion-activated nightlight
 - [ ] Sunlight simulation lamp for waking up
 - [ ] Blue light filter glasses.
-- [ ] Turmeric.
-- [ ] Matcha powder.
-- [ ] Chilli powder.
+- [x] Turmeric.
+- [x] Matcha powder.
+- [x] Chilli powder.
+- [ ] Paprika.
 - [ ] Cooling mattress (or other sleep cooling accessories)
 - [ ] Air filters for better sleep (used by Bryan Johnson)?
 - [ ] ~~Liquid chalk~~
@@ -53,7 +54,7 @@ title: Purchases
 - [ ] Rubber weight plates.
 - [ ] Smaller weight plates (eg. 1kg).
 - [ ] Better, safer power rack for bench press, squatting and pressing.
-- [ ] Better barbell with sharper knurlings
+- [ ] Better barbell with sharper knurlings.
 - [ ] Adjustable dumbbell set.
 - [ ] Good pillow.
 - [ ] Cooling blanket.
