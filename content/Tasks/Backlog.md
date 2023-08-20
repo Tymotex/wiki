@@ -24,11 +24,11 @@ kanban-plugin: basic
 - [ ] Attend 1 **conference.**
 - [ ] Make a plan for learning AI, long-term.
 - [ ] Obsidian plugin idea: notion-like gallery.
-- [ ] Vanguard will open a super fund in 2022.
+- [x] Vanguard will open a super fund in 2022.
 - [ ] [[_/WebAssembly Rust Snake tutorial]]
 - [ ] [[_/Write email thanking Josh Comeau]]
 - [ ] Open an issue/PR for `obsidian-kanban` for better keyboard accessibility (and power user agility).
-- [ ] Get Australian citizenship
+- [x] Get Australian citizenship
 - [ ] **Python personal finance tracking.**
 - [ ] Find a good computer science history book. Put it somewhere you'll know to read.
 
