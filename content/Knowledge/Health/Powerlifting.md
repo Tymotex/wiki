@@ -147,3 +147,14 @@ The deadlift mainly targets hamstrings, glutes, back and lats, and to a lesser e
 ## Front Squat
 ![[Knowledge/Health/assets/front-squat.gif|300]]
 ([sourced from Men'sHealth](https://www.menshealth.com/uk/building-muscle/a755607/how-to-master-the-squat/))
+
+## Lifting Belt
+- In general, prefer leather belts over suede or velcro.
+- Should be wide and thick all around the belt. Powerlifting belts tend to be around 4 inches wide and 10mm or 13mm thick.
+	- Bodybuilding belts tend to be thinner, tapering off in thickness in the front.
+	 - In competition, your belt must be 4 inches or less in width and 13mm or less in thickness.
+
+### Using It
+- How high you keep the belt is a matter of comfort more than anything else.
+- Prefer only using the belt for heavy sets and allow yourself to naturally develop core strength over normal working sets.
+

@@ -20,6 +20,7 @@ title: Purchases
 - [x] Protein powder
 - [ ] Cheap gravel vacuum.
 - [ ] Sound machine for ambient sleep noises.
+- [ ] Compressed air for cleaning.
 - [x] Light blue OCBD, or white
 - [x] Navy chinos
 - [x] Another OCBD, either: grey, light red or white.
@@ -28,6 +29,7 @@ title: Purchases
 - [x] (Uniqlo) Turtleneck wine colour.
 - [ ] Messenger bag
 - [ ] Smart drink bottle
+- [ ] Guitar strings
 - [x] Mechanical keyboard for home (as a hobby?)
 - [ ] CeraVe facial moisturising lotion (used by Bryan Johnson)
 - [x] Tea tree oil mouthwash (used by Bryan Johnson)
@@ -37,9 +39,10 @@ title: Purchases
 - [ ] Blue light filter glasses.
 - [ ] Turmeric.
 - [ ] Matcha powder.
+- [ ] Chilli powder.
 - [ ] Cooling mattress (or other sleep cooling accessories)
 - [ ] Air filters for better sleep (used by Bryan Johnson)?
-- [ ] Liquid chalk
+- [ ] ~~Liquid chalk~~
 - [ ] Barbell maintenance items (nylon brush with firm bristles, wd-40, 3-in-1 multi-purpose oil)
 - [ ] Plate rack.
 - [ ] Squat shoes.

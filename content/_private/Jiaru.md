@@ -4,25 +4,25 @@
 	- Steak (there was some steakhouse in Auckland she liked).
 	- Takoyaki.
 	- Sashimi.
-	- Salted caramel.
+	- Salted caramel ice cream.
 	- Bingsu (especially mango).
 	- Strawberries and blueberries, but not raspberries.
 	- Watermelon.
 	- White peach.
 	- Croissants.
-	- Yum cha (prawn dumpling, prawn rice noodle roll, chicken feet, etc.j)
+	- Yum cha (prawn dumpling, prawn rice noodle roll, chicken feet, etc.)
 	- Milkflower, Coco (but not Chatime, Gong cha, Sharetea, etc.).
 	- Malatang.
 	- Pho.
 	- Corn.
-- Anime.
-- Minimalism.
-- Horses.
-- Japan.
+	- Jianbing guozi.
 
 ## My promises
 - Never to share anything private between us with anyone.
 - That I won't ever associate her behaviour with her past experiences.
+- That I won't give up on resolving problems with her. That I won't allow myself to become resentful or upset at her for a long time.
+- Not to let it get to my head when others express interest in me (as part of mate choice copying).
+- Not to put down my partner in front of others or act in a way that communicates lack of asymmetrical interest.
 
 ## Why I like her
 - Smart, on the same wavelength, intellectually.
@@ -35,7 +35,7 @@
 - That we share a very compatible sense of humour. That she's also autistic.
 - How deeply emotional our bond can be. That she is willing to be vulnerable with me and put her trust in me.
 - That our communication with each other gets better each time.
-- That we have respect for each other.
+- That we have respect and admiration for each other.
 - That we support each other's lifestyle and goals and will encourage each other to put forward the best self we can in the world. She feels like someone I can grow with.
 - That she is independent, but is willing to value a partner very highly in her life.
 - That she's introverted but able to operate very well in social settings.
@@ -43,9 +43,16 @@
 - That we can spend a dull moment with one another and feel so much joy.
 - That I could hold her in my arms for hours staring at the ceiling and time will fly. How everything feels so blissful and *right* when I do.
 - That we have the same love language.
-- How she does cute gestures to show that she cares, like sharing ideas about what to do together, leaving an origami heart in my badge, etc.
+- That she's just the right amount of clingy, sentimental and affectionate, all the while being an independent, complete person by herself.
+- That she cares a great deal about not giving up, and for me to not give up. The confidence she gives me that we'd put our best efforts towards resolving problems together. That she has the emotional intelligence to understand when her emotions cloud her judgement and how that might negatively impact the way she resolves problems.
+- How rational she is, and that I can have faith that she won't make decisions that are driven by passion alone.
+- How she does cute gestures to show that she cares, like sharing ideas about what to do together, leaving an origami heart in my badge, stealing my hoodie, etc.
 - How beautiful and adorable I find her. All the little lovable things about her face, hair and skin.
-- That I lust for her body, that we have sexual chemistry.
+- That I lust for her body, and that we have exciting sexual chemistry. How much she turns me on.
+- That she finds me cute, even the things I like least about myself.
+- That she feels strongly against lying and deceiving.
+- That she does not hold grudges and can forgive.
+- That she doesn't seek attention and has genuine platonic relationships with men.
 
 ## Memories
 - When I saw her for the first time in Google Meet during the internship, I thought she was cute.
@@ -72,6 +79,7 @@
 - Our second date in Macquarie Shopping Center.
 - When I walked across the Darling Harbour bridge over to Milkflower in Darling Square to get lychee yoghurt for her after her dinner with other Googlers in World Square.
 - When we worked in Wharf 7 together and held each other in a meeting room.
+- (2023-08-13) When I finished City2Surf and we met up together in the city for pancakes, photos and food, then went to her home together. That day, I asked her to be my girlfriend and we had a heartfelt conversation about what we wanted out of the relationship. It gave me confidence that we'd be good for each other.
 
 ## Date ideas
 Date ideas specific to us:
@@ -94,4 +102,10 @@ Date ideas specific to us:
 - Electronics, something related to software engineering maybe.
 - Books.
 	- Ikigai.
- 
+- Something related to:
+	- Minimalism.
+	- Anime.
+	- Japan.
+	- Cooking.
+	- Productivity.
+	 
