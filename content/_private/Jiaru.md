@@ -1,4 +1,3 @@
-
 ## What she likes
 - **Food**
 	- Steak (there was some steakhouse in Auckland she liked).
@@ -112,6 +111,7 @@ Date ideas specific to us:
 - Stuffed animals.
 	- Tux.
 - Electronics, something related to software engineering maybe.
+	- Drone? She expressed some interest in this before.
 - Books.
 	- Ikigai.
 - Something related to:

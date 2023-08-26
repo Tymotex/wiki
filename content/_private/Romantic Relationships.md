@@ -28,3 +28,13 @@ TODO.
 - Never get defensive.
 
 A good rule for ensuring both people feel heard and understood: "Each person can speak up for themselves *only after* they have first restated the ideas and feelings of the previous speaker accurately *and to that speaker's satisfaction*."
+
+## Period
+When your girlfriend is on her period, treat her like a queen:
+- Ask her whether she needs anything.
+- Extra hugs, kisses and affection in general.
+- Gift favourite food and drinks.
+- Massage.
+- Warm water bottles help to reduce pain from cramps.
+
+Never ask "is it because you're on your period?"
