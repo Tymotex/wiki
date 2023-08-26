@@ -40,7 +40,8 @@ title: Purchases
 - [x] Turmeric.
 - [x] Matcha powder.
 - [x] Chilli powder.
-- [ ] Paprika.
+- [x] Paprika.
+- [ ] Massage oil.
 - [ ] Cooling mattress (or other sleep cooling accessories)
 - [ ] Air filters for better sleep (used by Bryan Johnson)?
 - [ ] ~~Liquid chalk~~

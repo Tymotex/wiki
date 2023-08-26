@@ -24,6 +24,19 @@
 - Not to let it get to my head when others express interest in me (as part of mate choice copying).
 - Not to put down my partner in front of others or act in a way that communicates lack of asymmetrical interest.
 
+## Date ideas
+Date ideas specific to us:
+- Recurring:
+	- Reading a textbook together at a library.
+	- Running together along a scenic route.
+	- Studying together, in the library or elsewhere.
+	- Exploring some new place together.
+	- Cooking together.
+- Others:
+	- Swimming together.
+	- Coastal hike somewhere, e.g. around Rose Bay.
+	- Movie at her place or mine. E.g. Oppenheimer.
+
 ## Why I like her
 - Smart, on the same wavelength, intellectually.
 - Ambitious and hard working, but not overly so.
@@ -53,6 +66,8 @@
 - That she feels strongly against lying and deceiving.
 - That she does not hold grudges and can forgive.
 - That she doesn't seek attention and has genuine platonic relationships with men.
+- That she isn't a 'grass is greener' person, and that she pre-emptively takes action to prevent spiraling down that line of thought. That she values relationship equity, that you shouldn't exit a good relationship in pursuit of 'better'.
+- That she plans entire days to spend with me.
 
 ## Memories
 - When I saw her for the first time in Google Meet during the internship, I thought she was cute.
@@ -80,13 +95,6 @@
 - When I walked across the Darling Harbour bridge over to Milkflower in Darling Square to get lychee yoghurt for her after her dinner with other Googlers in World Square.
 - When we worked in Wharf 7 together and held each other in a meeting room.
 - (2023-08-13) When I finished City2Surf and we met up together in the city for pancakes, photos and food, then went to her home together. That day, I asked her to be my girlfriend and we had a heartfelt conversation about what we wanted out of the relationship. It gave me confidence that we'd be good for each other.
-
-## Date ideas
-Date ideas specific to us:
-- Reading a textbook together at a library.
-- Running together along a scenic route.
-- Malatang.
-- Dessert (bingsu, bubble tea, yoghurt, etc.).
 
 ## What she likes physically
 - Hugging while straddling.
