@@ -54,6 +54,10 @@
 - That she does not hold grudges and can forgive.
 - That she doesn't seek attention and has genuine platonic relationships with men.
 
+## Things I wish were different
+- That she didn't have casual sex partners.
+- That she didn't have a disabling fear of bugs.
+
 ## Memories
 - When I saw her for the first time in Google Meet during the internship, I thought she was cute.
 - When I saw her intern presentation, I thought she was a put-together person.
