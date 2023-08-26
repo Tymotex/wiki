@@ -69,6 +69,10 @@ Date ideas specific to us:
 - That she isn't a 'grass is greener' person, and that she pre-emptively takes action to prevent spiraling down that line of thought. That she values relationship equity, that you shouldn't exit a good relationship in pursuit of 'better'.
 - That she plans entire days to spend with me.
 
+## Things I wish were different
+- That she didn't have casual sex partners.
+- That she didn't have a disabling fear of bugs.
+
 ## Memories
 - When I saw her for the first time in Google Meet during the internship, I thought she was cute.
 - When I saw her intern presentation, I thought she was a put-together person.
