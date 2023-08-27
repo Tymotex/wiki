@@ -76,3 +76,11 @@ In many cases, storing data as a JSON offers better **locality** than storing on
 	}
 }
 ```
+
+**ID or raw string?** Often when designing the data model, you have a choice of making a string field an ID (which might come from a dropdown of fixed options) or a raw string which (might come from a freeform input field that the user types in).
+- Reasons for using IDs:
+    - It never needs to change because it has no human-readable meaning.
+    - It reduces duplication, reduces risk of inconsistency between redundant copies, and makes updates have less overhead. Generally, this is the main idea behind **normalisation** in databases.
+- Reasons *not* to use IDs:
+    - Unlike relational databases, document-oriented databases may not support joins on IDs or have weak support for them. In that case, you'd have to do multiple queries... '*the work of making the join is shifted from the database to the application code.*'
+    - 
