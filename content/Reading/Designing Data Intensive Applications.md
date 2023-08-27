@@ -83,4 +83,4 @@ In many cases, storing data as a JSON offers better **locality** than storing on
     - It reduces duplication, reduces risk of inconsistency between redundant copies, and makes updates have less overhead. Generally, this is the main idea behind **normalisation** in databases.
 - Reasons *not* to use IDs:
     - Unlike relational databases, document-oriented databases may not support joins on IDs or have weak support for them. In that case, you'd have to do multiple queries... '*the work of making the join is shifted from the database to the application code.*'
-    - 
+
