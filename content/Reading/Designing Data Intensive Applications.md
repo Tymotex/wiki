@@ -13,7 +13,7 @@ CPU clock speed improvements have saturated. Unless they can continue to improve
 - **Scalability**: when data/traffic/complexity grows, the system should toelrate that growth.
 - **Maintainability**: how easy is this system to change.
 
-There are a few universal things data-intensive software always need to do:****
+There are a few universal things data-intensive software always need to do:
 - **Databases** - store stuff persistently.
 - **Caches** - keep results of operations that were expensive to run.
 - **Search indexes** - search through data quickly by using a supporting data structure called a search index.
