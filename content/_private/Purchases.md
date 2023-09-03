@@ -8,6 +8,7 @@ These may be recurring.
 - [x] Matcha powder.
 - [x] Chilli powder.
 - [x] Paprika.
+- [ ] Miso paste.
 
 ## Quality of LIfe
 - [ ] Very good main monitor for home.
