@@ -2,44 +2,15 @@
 title: Purchases
 ---
 
-- [x] Hair dryer (cheap but reliable with good reviews)
-- [x] Convenient smoothie blender.
-	- Bought by mum.
-- [ ] Nice cave or castle for plecos to shelter in.
-- [x] How to Win Friends and Influence People.
-- [x] Fitbit for Mum.
-- [ ] ~~Budget kitchen scale~~ (this is overkill)
-- [x] ~~Loop Quiet~~ (got cheaper ear plugs)
-- [x] Oregano seeds
-- [x] Hair cream/paste
-- [x] Hair spray
-- [x] SPF moisturiser, or standalone sunscreen
-- [x] CeraVe hydrating cleanser
-- [ ] Laptop stand, mount or arm for WFH.
-- [x] Meditations book
-- [x] Protein powder
-- [ ] Cheap gravel vacuum.
-- [ ] Sound machine for ambient sleep noises.
-- [ ] Compressed air gun for cleaning.
-- [x] Light blue OCBD, or white
-- [x] Navy chinos
-- [x] Another OCBD, either: grey, light red or white.
-- [x] (Uniqlo) Basic grey shirt.
-- [x] Pixel 6 Pro screen protector (should be tax deductible)
-- [x] (Uniqlo) Turtleneck wine colour.
-- [ ] Messenger bag
-- [ ] Smart drink bottle
-- [ ] Guitar strings
-- [x] Mechanical keyboard for home (as a hobby?)
-- [x] Tea tree oil mouthwash (used by Bryan Johnson)
-
 ## Food Items
+These may be recurring.
 - [x] Turmeric.
 - [x] Matcha powder.
 - [x] Chilli powder.
 - [x] Paprika.
 
 ## Quality of LIfe
+- [ ] Very good main monitor for home.
 - [ ] Good pillow.
 - [ ] Cooling blanket.
 - [ ] Meditation bench
@@ -50,9 +21,16 @@ title: Purchases
 - [ ] Motion-activated nightlight
 - [ ] Sunlight simulation lamp for waking up
 - [ ] Blue light filter glasses.
-p
+- [ ] CeraVe facial moisturising lotion (used by Bryan Johnson)
+- [ ] Smart drink bottle
+- [ ] Laptop stand, mount or arm for WFH.
+- [ ] Sound machine for ambient sleep noises.
+- [ ] Budget kitchen scale.
 
 ## Hobbies
+- [ ] Ice skates
+- [ ] Compressed air gun for cleaning.
+- [ ] Cheap gravel vacuum.
 - [ ] Barbell maintenance items (nylon brush with firm bristles, wd-40, 3-in-1 multi-purpose oil)
 - [ ] Plate rack.
 - [ ] Squat shoes.
@@ -65,3 +43,32 @@ p
 - [ ] Better, safer power rack for bench press, squatting and pressing.
 - [ ] Better barbell with sharper knurlings.
 - [ ] Adjustable dumbbell set.
+- [ ] Guitar strings
+
+## Clothes
+- [ ] Messenger bag
+
+## Past Purchases
+- [x] Hair dryer (cheap but reliable with good reviews)
+- [x] Convenient smoothie blender.
+	- Bought by mum.
+- [x] Nice cave or castle for plecos to shelter in.
+    - Got it off Temu.
+- [x] How to Win Friends and Influence People.
+- [x] Fitbit for Mum.
+- [x] ~~Loop Quiet~~ (got cheaper ear plugs)
+- [x] Oregano seeds
+- [x] Hair cream/paste
+- [x] Hair spray
+- [x] SPF moisturiser, or standalone sunscreen
+- [x] CeraVe hydrating cleanser
+- [x] Meditations book
+- [x] Protein powder
+- [x] Light blue OCBD, or white
+- [x] Navy chinos
+- [x] Another OCBD, either: grey, light red or white.
+- [x] (Uniqlo) Basic grey shirt.
+- [x] Pixel 6 Pro screen protector (should be tax deductible)
+- [x] (Uniqlo) Turtleneck wine colour.
+- [x] Mechanical keyboard for home (as a hobby?)
+- [x] Tea tree oil mouthwash (used by Bryan Johnson)
