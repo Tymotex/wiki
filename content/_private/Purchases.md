@@ -37,10 +37,6 @@ title: Purchases
 - [ ] Motion-activated nightlight
 - [ ] Sunlight simulation lamp for waking up
 - [ ] Blue light filter glasses.
-- [x] Turmeric.
-- [x] Matcha powder.
-- [x] Chilli powder.
-- [x] Paprika.
 - [ ] Massage oil.
 - [ ] Cooling mattress (or other sleep cooling accessories)
 - [ ] Air filters for better sleep (used by Bryan Johnson)?
@@ -61,3 +57,10 @@ title: Purchases
 - [ ] Cooling blanket.
 - [ ] Cooling mattress or bed temperature controller.
 - [ ] Meditation bench
+
+**Food Items**:
+- [x] Turmeric.
+- [x] Matcha powder.
+- [x] Chilli powder.
+- [x] Paprika.
+
