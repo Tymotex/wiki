@@ -31,16 +31,28 @@ title: Purchases
 - [ ] Smart drink bottle
 - [ ] Guitar strings
 - [x] Mechanical keyboard for home (as a hobby?)
-- [ ] CeraVe facial moisturising lotion (used by Bryan Johnson)
 - [x] Tea tree oil mouthwash (used by Bryan Johnson)
+
+## Food Items
+- [x] Turmeric.
+- [x] Matcha powder.
+- [x] Chilli powder.
+- [x] Paprika.
+
+## Quality of LIfe
+- [ ] Good pillow.
+- [ ] Cooling blanket.
+- [ ] Meditation bench
+- [ ] Massage oil.
+- [ ] Cooling mattress (or other sleep cooling accessories)
+- [ ] Air filters for better sleep (used by Bryan Johnson)?
 - [ ] Tongue cleaner (used by Bryan Johnson)
 - [ ] Motion-activated nightlight
 - [ ] Sunlight simulation lamp for waking up
 - [ ] Blue light filter glasses.
-- [ ] Massage oil.
-- [ ] Cooling mattress (or other sleep cooling accessories)
-- [ ] Air filters for better sleep (used by Bryan Johnson)?
-- [ ] ~~Liquid chalk~~
+p
+
+## Hobbies
 - [ ] Barbell maintenance items (nylon brush with firm bristles, wd-40, 3-in-1 multi-purpose oil)
 - [ ] Plate rack.
 - [ ] Squat shoes.
@@ -53,14 +65,3 @@ title: Purchases
 - [ ] Better, safer power rack for bench press, squatting and pressing.
 - [ ] Better barbell with sharper knurlings.
 - [ ] Adjustable dumbbell set.
-- [ ] Good pillow.
-- [ ] Cooling blanket.
-- [ ] Cooling mattress or bed temperature controller.
-- [ ] Meditation bench
-
-**Food Items**:
-- [x] Turmeric.
-- [x] Matcha powder.
-- [x] Chilli powder.
-- [x] Paprika.
-
